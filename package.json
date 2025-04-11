@@ -3,15 +3,30 @@
   "displayName": "Lynx Keymap",
   "description": "Popular Lynx keybindings for Visual Studio Code",
   "version": "0.0.1",
+  "publisher": "bastndev",
+  "license": "MIT",
   "engines": {
     "vscode": "^1.43.0"
   },
-  "categories": [
-    "Keymaps"
-  ],
+  "categories": ["Keymaps"],
+  "keywords": ["keymap", "lynx", "keyboard", "shortcuts"],
+  "icon": "icon.png",
   "galleryBanner": {
     "color": "#66be8b",
     "theme": "light"
+  },
+  "homepage": "https://github.com/bastndev/Lynx-Keymap#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bastndev/Lynx-Keymap"
+  },
+  "bugs": {
+    "url": "https://github.com/bastndev/Lynx-Keymap/issues"
+  },
+  "author": {
+    "name": "Gohit Bastian",
+    "email": "gobasdev@gmail.com",
+    "url": "https://www.bastndev.com"
   },
   "contributes": {
     "keybindings": [      
