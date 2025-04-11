@@ -9,18 +9,25 @@
   "categories": [
     "Keymaps"
   ],
+  "galleryBanner": {
+    "color": "#66be8b",
+    "theme": "light"
+  },
   "contributes": {
     "keybindings": [
       {
         "key": "ctrl+1",
-        "command": "explorer.focus"
+        "mac": "cmd+1",
+        "command": "workbench.view.explorer"
       },
       {
         "key": "ctrl+2",
+        "mac": "cmd+2",
         "command": "workbench.view.scm"
       },
       {
         "key": "ctrl+3",
+        "mac": "cmd+3",
         "command": "workbench.view.extensions"
       }
     ]
