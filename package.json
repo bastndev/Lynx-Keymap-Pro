@@ -1,0 +1,28 @@
+{
+  "name": "lynx-keymap",
+  "displayName": "Lynx Keymap",
+  "description": "Popular Lynx keybindings for Visual Studio Code",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.43.0"
+  },
+  "categories": [
+    "Keymaps"
+  ],
+  "contributes": {
+    "keybindings": [
+      {
+        "key": "ctrl+1",
+        "command": "explorer.focus"
+      },
+      {
+        "key": "ctrl+2",
+        "command": "workbench.view.scm"
+      },
+      {
+        "key": "ctrl+3",
+        "command": "workbench.view.extensions"
+      }
+    ]
+  }
+}
