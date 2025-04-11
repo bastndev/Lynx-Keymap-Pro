@@ -70,6 +70,16 @@
         "key": "pagedown",
         "mac": "pagedown",
         "command": "workbench.action.terminal.toggleTerminal"
+      },
+
+      {
+        "key": "ctrl+`",
+        "mac": "ctrl+`",
+        "command": "aipopup.action.modal.generate"
+      },{
+        "key": "ctrl+shift+`",
+        "mac": "ctrl+shift+`",
+        "command": "aichat.newchataction"
       }
 
     ]
