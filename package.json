@@ -80,6 +80,37 @@
         "key": "ctrl+shift+`",
         "mac": "ctrl+shift+`",
         "command": "aichat.newchataction"
+      },
+
+      {
+        "key": "alt+c",
+        "mac": "alt+c",
+        "command": "explorer.newFile"
+      },{
+        "key": "alt+v",
+        "mac": "alt+v",
+        "command": "explorer.newFolder"
+      },
+
+
+      {
+        "key": "insert",
+        "mac": "insert",
+        "command": "workbench.action.debug.start"
+      },{
+        "key": "alt+insert",
+        "mac": "alt+insert",
+        "command": "workbench.action.debug.restart"
+      },{
+        "key": "end",
+        "mac": "end",
+        "command": "workbench.action.debug.stop"
+      },
+
+      {
+        "key": "pageup",
+        "mac": "pageup",
+        "command": "markdown.showPreviewToSide"
       }
 
     ]
