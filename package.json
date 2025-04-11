@@ -14,7 +14,7 @@
     "theme": "light"
   },
   "contributes": {
-    "keybindings": [
+    "keybindings": [      
       {
         "key": "ctrl+1",
         "mac": "cmd+1",
@@ -29,7 +29,26 @@
         "key": "ctrl+3",
         "mac": "cmd+3",
         "command": "workbench.view.extensions"
+      },
+
+      {
+        "key": "ctrl+alt+1",
+        "mac": "ctrl+alt+1",
+        "command": "cursor.generateGitCommitMessage"
+      },            
+      {
+        "key": "ctrl+alt+2",
+        "mac": "cmd+alt+2",
+        "command": "git.stageAll",
+        "when": "scmProvider == git"
+      },
+      {
+        "key": "ctrl+alt+3",
+        "mac": "cmd+alt+3",
+        "command": "git.unstageAll",
+        "when": "scmProvider == git"
       }
+      
     ]
   }
 }
