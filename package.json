@@ -19,13 +19,11 @@
         "key": "ctrl+1",
         "mac": "cmd+1",
         "command": "workbench.view.explorer"
-      },
-      {
+      },{
         "key": "ctrl+2",
         "mac": "cmd+2",
         "command": "workbench.view.scm"
-      },
-      {
+      },{
         "key": "ctrl+3",
         "mac": "cmd+3",
         "command": "workbench.view.extensions"
@@ -35,20 +33,45 @@
         "key": "ctrl+alt+1",
         "mac": "ctrl+alt+1",
         "command": "cursor.generateGitCommitMessage"
-      },            
-      {
+      },{
         "key": "ctrl+alt+2",
         "mac": "cmd+alt+2",
         "command": "git.stageAll",
         "when": "scmProvider == git"
-      },
-      {
+      },{
         "key": "ctrl+alt+3",
         "mac": "cmd+alt+3",
         "command": "git.unstageAll",
         "when": "scmProvider == git"
-      }
+      },
       
+      {
+        "key": "ctrl+enter",
+        "mac": "cmd+enter",
+        "command": "git.commit",
+        "when": "scmProvider == git"
+      },{
+        "key": "ctrl+alt+enter",
+        "mac": "cmd+alt+enter",
+        "command": "git.push",
+        "when": "scmProvider == git"
+      },
+
+      {
+        "key": "alt+f",
+        "mac": "alt+f",
+        "command": "editor.action.formatSelection",
+        "when": "editorTextFocus && !editorReadonly"
+      },{
+        "key": "pagedown",
+        "mac": "pagedown",
+        "command": "workbench.action.togglePanel"
+      },{
+        "key": "pagedown",
+        "mac": "pagedown",
+        "command": "workbench.action.terminal.toggleTerminal"
+      }
+
     ]
   }
 }
