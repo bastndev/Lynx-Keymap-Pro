@@ -2,7 +2,7 @@
   "name": "lynx-keymap",
   "displayName": "Lynx Keymap",
   "description": "Popular Lynx keybindings for Visual Studio Code",
-  "version": "0.0.1",
+  "version": "0.2.1",
   "publisher": "bastndev",
   "license": "MIT",
   "engines": {
@@ -12,8 +12,8 @@
   "keywords": ["keymap", "lynx", "keyboard", "shortcuts"],
   "icon": "icon.png",
   "galleryBanner": {
-    "color": "#66be8b",
-    "theme": "light"
+    "color": "#0a0a0a",
+    "theme": "dark"
   },
   "homepage": "https://github.com/bastndev/Lynx-Keymap#readme",
   "repository": {

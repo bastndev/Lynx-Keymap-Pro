@@ -25,8 +25,8 @@ This extension provides a customized set of keyboard shortcuts to enhance your p
 | New File                      | `Alt+C`           | `Alt+C`           | `Alt+C`           |
 | New Folder                    | `Alt+V`           | `Alt+V`           | `Alt+V`           |
 | **AI Features**               |                   |                   |                   |
-| Open AI Popup Modal           | `Ctrl+`           | `⌘+`              | `Ctrl+`           |
-| Open AI Chat                  | `Ctrl+Shift+`     | `⌘+Shift+`        | `Ctrl+Shift+`     |
+| Open AI Popup Modal           |  Ctrl+`           |  ⌘+`              | Ctrl+`           |
+| Open AI Chat                  |  Ctrl+Shift+`     |  ⌘+Shift+`        | Ctrl+Shift+`     |
 | **Debugging**                 |                   |                   |                   |
 | Start Debugging               | `Insert`          | `Insert`          | `Insert`          |
 | Restart Debugging             | `Alt+Insert`      | `Alt+Insert`      | `Alt+Insert`      |
