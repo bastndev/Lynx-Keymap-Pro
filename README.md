@@ -4,54 +4,32 @@ This extension provides a customized set of keyboard shortcuts to enhance your p
 
 ## Keyboard Shortcuts
 
-## Navigation & View Management
-
 | Command                       | Windows           | macOS             | Linux             |
 |-------------------------------|-------------------|-------------------|-------------------|
+| **Navigation & View Management** |                   |                   |                 |
 | Show Explorer view            | `Ctrl+1`          | `⌘+1`             | `Ctrl+1`          |
 | Show Source Control view      | `Ctrl+2`          | `⌘+2`             | `Ctrl+2`          |
 | Show Extensions view          | `Ctrl+3`          | `⌘+3`             | `Ctrl+3`          |
 | Toggle Panel/Terminal         | `PageDown`        | `PageDown`        | `PageDown`        |
 | Show Markdown Preview         | `PageUp`          | `PageUp`          | `PageUp`          |
-
-## Git Operations
-
-| Command                       | Windows           | macOS             | Linux             |
-|-------------------------------|-------------------|-------------------|-------------------|
+| **Git Operations**            |                   |                   |                   |
 | Generate Git Commit Message   | `Ctrl+Alt+1`      | `Ctrl+Alt+1`      | `Ctrl+Alt+1`      |
 | Stage All Changes             | `Ctrl+Alt+2`      | `⌘+Alt+2`         | `Ctrl+Alt+2`      |
 | Unstage All Changes           | `Ctrl+Alt+3`      | `⌘+Alt+3`         | `Ctrl+Alt+3`      |
 | Commit Changes                | `Ctrl+Enter`      | `⌘+Enter`         | `Ctrl+Enter`      |
 | Push Changes                  | `Ctrl+Alt+Enter`  | `⌘+Alt+Enter`     | `Ctrl+Alt+Enter`  |
-
-## Editor Operations
-
-| Command                       | Windows           | macOS             | Linux             |
-|-------------------------------|-------------------|-------------------|-------------------|
+| **Editor Operations**         |                   |                   |                   |
 | Format Selection              | `Alt+F`           | `Alt+F`           | `Alt+F`           |
-
-## File Operations
-
-| Command                       | Windows           | macOS             | Linux             |
-|-------------------------------|-------------------|-------------------|-------------------|
+| **File Operations**           |                   |                   |                   |
 | New File                      | `Alt+C`           | `Alt+C`           | `Alt+C`           |
 | New Folder                    | `Alt+V`           | `Alt+V`           | `Alt+V`           |
-
-## AI Features
-
-| Command                       | Windows           | macOS             | Linux             |
-|-------------------------------|-------------------|-------------------|-------------------|
-| Open AI Popup Modal           | ` Ctrl+` `        | ` ⌘+` `           | ` Ctrl+` `        |
-| Open AI Chat                  | ` Ctrl+Shift+` `  | ` ⌘+Shift+` `     | ` Ctrl+Shift+` `  |
-
-## Debugging
-
-| Command                       | Windows           | macOS             | Linux             |
-|-------------------------------|-------------------|-------------------|-------------------|
+| **AI Features**               |                   |                   |                   |
+| Open AI Popup Modal           | ` Ctrl+` `        | ` ⌘+` `          | ` Ctrl+` `        |
+| Open AI Chat                  | ` Ctrl+Shift+` `  | ` ⌘+Shift+` `    | ` Ctrl+Shift+` `  |
+| **Debugging**                 |                   |                   |                   |
 | Start Debugging               | `Insert`          | `Insert`          | `Insert`          |
 | Restart Debugging             | `Alt+Insert`      | `Alt+Insert`      | `Alt+Insert`      |
 | Stop Debugging                | `End`             | `End`             | `End`             |
-
 
 ---
 
