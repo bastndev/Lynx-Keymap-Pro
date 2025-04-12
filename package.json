@@ -89,11 +89,11 @@
 
       {
         "key": "ctrl+`",
-        "mac": "ctrl+`",
+        "mac": "cmd+`",
         "command": "aipopup.action.modal.generate"
       },{
         "key": "ctrl+shift+`",
-        "mac": "ctrl+shift+`",
+        "mac": "cmd+shift+`",
         "command": "aichat.newchataction"
       },
 
