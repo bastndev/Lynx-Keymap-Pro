@@ -2,7 +2,7 @@
   "name": "lynx-keymap",
   "displayName": "Lynx Keymap",
   "description": "Popular Lynx keybindings for Visual Studio Code",
-  "version": "0.2.1",
+  "version": "0.3.1",
   "publisher": "bastndev",
   "license": "MIT",
   "engines": {
@@ -75,8 +75,7 @@
       {
         "key": "alt+f",
         "mac": "alt+f",
-        "command": "editor.action.formatSelection",
-        "when": "editorTextFocus && !editorReadonly"
+        "command": "editor.action.formatDocument"
       },{
         "key": "pagedown",
         "mac": "pagedown",
@@ -126,6 +125,12 @@
         "key": "pageup",
         "mac": "pageup",
         "command": "markdown.showPreviewToSide"
+      },
+
+      {
+        "key": "ctrl+k f",
+        "mac": "cmd+k f",
+        "command": "workbench.action.closeFolder"
       }
 
     ]
