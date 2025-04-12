@@ -4,9 +4,10 @@ This extension provides a customized set of keyboard shortcuts to enhance your p
 
 ## Keyboard Shortcuts
 
+
 | Command                       | Windows           | macOS             | Linux             |
 |-------------------------------|-------------------|-------------------|-------------------|
-| **Navigation & View Management** |                   |                   |                 |
+| **Navigation & View Management** |                   |                   |                   |
 | Show Explorer view            | `Ctrl+1`          | `⌘+1`             | `Ctrl+1`          |
 | Show Source Control view      | `Ctrl+2`          | `⌘+2`             | `Ctrl+2`          |
 | Show Extensions view          | `Ctrl+3`          | `⌘+3`             | `Ctrl+3`          |
@@ -24,12 +25,13 @@ This extension provides a customized set of keyboard shortcuts to enhance your p
 | New File                      | `Alt+C`           | `Alt+C`           | `Alt+C`           |
 | New Folder                    | `Alt+V`           | `Alt+V`           | `Alt+V`           |
 | **AI Features**               |                   |                   |                   |
-| Open AI Popup Modal           | ` Ctrl+` `        | ` ⌘+` `          | ` Ctrl+` `        |
-| Open AI Chat                  | ` Ctrl+Shift+` `  | ` ⌘+Shift+` `    | ` Ctrl+Shift+` `  |
+| Open AI Popup Modal           | `Ctrl+`           | `⌘+`              | `Ctrl+`           |
+| Open AI Chat                  | `Ctrl+Shift+`     | `⌘+Shift+`        | `Ctrl+Shift+`     |
 | **Debugging**                 |                   |                   |                   |
 | Start Debugging               | `Insert`          | `Insert`          | `Insert`          |
 | Restart Debugging             | `Alt+Insert`      | `Alt+Insert`      | `Alt+Insert`      |
 | Stop Debugging                | `End`             | `End`             | `End`             |
+
 
 ---
 
