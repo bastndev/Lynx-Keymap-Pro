@@ -3,26 +3,131 @@
   "displayName": "Lynx Keymap",
   "description": "Popular Lynx keybindings for Visual Studio Code",
   "version": "0.0.1",
+  "publisher": "bastndev",
+  "license": "MIT",
   "engines": {
     "vscode": "^1.43.0"
   },
-  "categories": [
-    "Keymaps"
-  ],
+  "categories": ["Keymaps"],
+  "keywords": ["keymap", "lynx", "keyboard", "shortcuts"],
+  "icon": "icon.png",
+  "galleryBanner": {
+    "color": "#66be8b",
+    "theme": "light"
+  },
+  "homepage": "https://github.com/bastndev/Lynx-Keymap#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bastndev/Lynx-Keymap"
+  },
+  "bugs": {
+    "url": "https://github.com/bastndev/Lynx-Keymap/issues"
+  },
+  "author": {
+    "name": "Gohit Bastian",
+    "email": "gobasdev@gmail.com",
+    "url": "https://www.bastndev.com"
+  },
   "contributes": {
-    "keybindings": [
+    "keybindings": [      
       {
         "key": "ctrl+1",
-        "command": "explorer.focus"
-      },
-      {
+        "mac": "cmd+1",
+        "command": "workbench.view.explorer"
+      },{
         "key": "ctrl+2",
+        "mac": "cmd+2",
         "command": "workbench.view.scm"
-      },
-      {
+      },{
         "key": "ctrl+3",
+        "mac": "cmd+3",
         "command": "workbench.view.extensions"
+      },
+
+      {
+        "key": "ctrl+alt+1",
+        "mac": "ctrl+alt+1",
+        "command": "cursor.generateGitCommitMessage"
+      },{
+        "key": "ctrl+alt+2",
+        "mac": "cmd+alt+2",
+        "command": "git.stageAll",
+        "when": "scmProvider == git"
+      },{
+        "key": "ctrl+alt+3",
+        "mac": "cmd+alt+3",
+        "command": "git.unstageAll",
+        "when": "scmProvider == git"
+      },
+      
+      {
+        "key": "ctrl+enter",
+        "mac": "cmd+enter",
+        "command": "git.commit",
+        "when": "scmProvider == git"
+      },{
+        "key": "ctrl+alt+enter",
+        "mac": "cmd+alt+enter",
+        "command": "git.push",
+        "when": "scmProvider == git"
+      },
+
+      {
+        "key": "alt+f",
+        "mac": "alt+f",
+        "command": "editor.action.formatSelection",
+        "when": "editorTextFocus && !editorReadonly"
+      },{
+        "key": "pagedown",
+        "mac": "pagedown",
+        "command": "workbench.action.togglePanel"
+      },{
+        "key": "pagedown",
+        "mac": "pagedown",
+        "command": "workbench.action.terminal.toggleTerminal"
+      },
+
+      {
+        "key": "ctrl+`",
+        "mac": "cmd+`",
+        "command": "aipopup.action.modal.generate"
+      },{
+        "key": "ctrl+shift+`",
+        "mac": "cmd+shift+`",
+        "command": "aichat.newchataction"
+      },
+
+      {
+        "key": "alt+c",
+        "mac": "alt+c",
+        "command": "explorer.newFile"
+      },{
+        "key": "alt+v",
+        "mac": "alt+v",
+        "command": "explorer.newFolder"
+      },
+
+
+      {
+        "key": "insert",
+        "mac": "insert",
+        "command": "workbench.action.debug.start"
+      },{
+        "key": "alt+insert",
+        "mac": "alt+insert",
+        "command": "workbench.action.debug.restart"
+      },{
+        "key": "end",
+        "mac": "end",
+        "command": "workbench.action.debug.stop"
+      },
+
+      {
+        "key": "pageup",
+        "mac": "pageup",
+        "command": "markdown.showPreviewToSide"
       }
+
     ]
   }
 }
