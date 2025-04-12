@@ -1,37 +1,53 @@
-# VS Code Keymap Extension
+# 🎹 VS Code Custom Keybindings
 
-This extension provides a customized set of keyboard shortcuts to enhance your productivity in VS Code.
+Custom keyboard shortcuts for Visual Studio Code to improve navigation, Git workflows, AI tools, debugging, and file management.
 
-## Keyboard Shortcuts
+Compatible with **Windows** 🪟, **macOS** 🍎, and **Linux** 🐧.
 
+---
 
-| Command                       | Windows           | macOS             | Linux             |
-|-------------------------------|-------------------|-------------------|-------------------|
-| **Navigation & View Management** |                   |                   |                   |
-| Show Explorer view            | `Ctrl+1`          | `⌘+1`             | `Ctrl+1`          |
-| Show Source Control view      | `Ctrl+2`          | `⌘+2`             | `Ctrl+2`          |
-| Show Extensions view          | `Ctrl+3`          | `⌘+3`             | `Ctrl+3`          |
-| Toggle Panel/Terminal         | `PageDown`        | `PageDown`        | `PageDown`        |
-| Show Markdown Preview         | `PageUp`          | `PageUp`          | `PageUp`          |
-| **Git Operations**            |                   |                   |                   |
-| Generate Git Commit Message   | `Ctrl+Alt+1`      | `Ctrl+Alt+1`      | `Ctrl+Alt+1`      |
-| Stage All Changes             | `Ctrl+Alt+2`      | `⌘+Alt+2`         | `Ctrl+Alt+2`      |
-| Unstage All Changes           | `Ctrl+Alt+3`      | `⌘+Alt+3`         | `Ctrl+Alt+3`      |
-| Commit Changes                | `Ctrl+Enter`      | `⌘+Enter`         | `Ctrl+Enter`      |
-| Push Changes                  | `Ctrl+Alt+Enter`  | `⌘+Alt+Enter`     | `Ctrl+Alt+Enter`  |
-| **Editor Operations**         |                   |                   |                   |
-| Format Selection              | `Alt+F`           | `Alt+F`           | `Alt+F`           |
-| **File Operations**           |                   |                   |                   |
-| New File                      | `Alt+C`           | `Alt+C`           | `Alt+C`           |
-| New Folder                    | `Alt+V`           | `Alt+V`           | `Alt+V`           |
-| **AI Features**               |                   |                   |                   |
-| Open AI Popup Modal           |  Ctrl+`           |  ⌘+`              | Ctrl+`           |
-| Open AI Chat                  |  Ctrl+Shift+`     |  ⌘+Shift+`        | Ctrl+Shift+`     |
-| **Debugging**                 |                   |                   |                   |
-| Start Debugging               | `Insert`          | `Insert`          | `Insert`          |
-| Restart Debugging             | `Alt+Insert`      | `Alt+Insert`      | `Alt+Insert`      |
-| Stop Debugging                | `End`             | `End`             | `End`             |
+| 🧭 **Navigation & View Management**     | 🪟 Windows        | 🍎 macOS         | 🐧 Linux         |
+|----------------------------------------|------------------|------------------|------------------|
+| 📁 Open Explorer                        | `Ctrl + 1`       | `⌘ + 1`          | `Ctrl + 1`       |
+| 🔁 Open Source Control (SCM)           | `Ctrl + 2`       | `⌘ + 2`          | `Ctrl + 2`       |
+| 🧩 Open Extensions View                 | `Ctrl + 3`       | `⌘ + 3`          | `Ctrl + 3`       |
+| 📝 Markdown Preview to Side            | `PageUp`         | `PageUp`         | `PageUp`         |
+| 📊 Toggle Bottom Panel                 | `PageDown`       | `PageDown`       | `PageDown`       |
+| 💻 Toggle Terminal                     | `PageDown`       | `PageDown`       | `PageDown`       |
+| 📂 Close Folder                        | `Ctrl + K F`     | `⌘ + K F`        | `Ctrl + K F`     |
 
+---
+
+| 🔧 **Git Operations**                 | 🪟 Windows        | 🍎 macOS         | 🐧 Linux         |
+|--------------------------------------|------------------|------------------|------------------|
+| ✍️ Generate Commit Message (AI)       | `Ctrl + Alt + 1` | `Ctrl + Alt + 1` | `Ctrl + Alt + 1` |
+| ✅ Stage All Changes                  | `Ctrl + Alt + 2` | `⌘ + ⌥ + 2`      | `Ctrl + Alt + 2` |
+| ❌ Unstage All                        | `Ctrl + Alt + 3` | `⌘ + ⌥ + 3`      | `Ctrl + Alt + 3` |
+| 💾 Git Commit                         | `Ctrl + Enter`   | `⌘ + Enter`      | `Ctrl + Enter`   |
+| 🚀 Git Push                           | `Ctrl + Alt + Enter` | `⌘ + ⌥ + Enter` | `Ctrl + Alt + Enter` |
+
+---
+
+| 🤖 **AI Tools**                      | 🪟 Windows        | 🍎 macOS         | 🐧 Linux         |
+|--------------------------------------|------------------|------------------|------------------|
+| ✨ Generate Content (Modal)           | `Ctrl + \``      | `⌘ + \``         | `Ctrl + \``      |
+| 💬 New Chat with AI                  | `Ctrl + Shift + \`` | `⌘ + ⇧ + \``  | `Ctrl + Shift + \`` |
+
+---
+
+| 📁 **File & Code Editing**           | 🪟 Windows        | 🍎 macOS         | 🐧 Linux         |
+|--------------------------------------|------------------|------------------|------------------|
+| 📄 New File                          | `Alt + C`        | `⌥ + C`          | `Alt + C`        |
+| 📁 New Folder                        | `Alt + V`        | `⌥ + V`          | `Alt + V`        |
+| 🧹 Format Document                   | `Alt + F`        | `⌥ + F`          | `Alt + F`        |
+
+---
+
+| 🐞 **Debugging**                     | 🪟 Windows        | 🍎 macOS         | 🐧 Linux         |
+|--------------------------------------|------------------|------------------|------------------|
+| ▶️ Start Debugging                   | `Insert`         | `Insert`         | `Insert`         |
+| 🔄 Restart Debugging                 | `Alt + Insert`   | `⌥ + Insert`     | `Alt + Insert`   |
+| ⏹️ Stop Debugging                    | `End`            | `End`            | `End`            |
 
 ---
 
