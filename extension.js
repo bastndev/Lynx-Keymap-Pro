@@ -1,7 +1,7 @@
 const vscode = require('vscode');
 
 function activate(context) {
-    // Command for AI commit generation
+    // Command for AI commit generation [ctrl+alt+1]
     let commitDisposable = vscode.commands.registerCommand('lynx-keymap.generateAICommit', async function () {
         const commitCommands = [
             'icube.gitGenerateCommitMessage', //Trae-AI
@@ -12,7 +12,7 @@ function activate(context) {
         await executeFirstAvailableCommand(commitCommands, 'No AI commit generators available');
     });
 
-    // Command for AI Popup
+    // Command for AI Popup [ctrl+`]
     let popupDisposable = vscode.commands.registerCommand('lynx-keymap.executeAIPopup', async function () {
         const popupCommands = [
             'aipopup.action.modal.generate',
@@ -23,18 +23,18 @@ function activate(context) {
         await executeFirstAvailableCommand(popupCommands, 'No AI chat providers available');
     });
 
-    // Command to open AI chat
+    // TODO: Command to open AI chat [ctrl+shift+tab]
     let chatDisposable = vscode.commands.registerCommand('lynx-keymap.openAIChat', async function () {
         const chatCommands = [
             'workbench.action.chat.icube.open',
-            '!aichat.newchataction',
-            'workbench.panel.chat'
+            'aichat.newchataction',
+            'workbench.panel.chat',
         ];
 
         await executeFirstAvailableCommand(chatCommands, 'No AI chat providers available');
     });
 
-    // Command to create a new AI session
+    // Command to create a new AI session [ctrl+alt+`]
     let newSessionDisposable = vscode.commands.registerCommand('lynx-keymap.createNewAISession', async function () {
         const newSessionCommands = [
             'workbench.action.icube.chatSidebarNg.createNewSession',
@@ -45,7 +45,7 @@ function activate(context) {
         await executeFirstAvailableCommand(newSessionCommands, 'No AI providers available');
     });
 
-    // Command to show AI history
+    // Command to show AI history [ctrl+shift+`]
     let historyDisposable = vscode.commands.registerCommand('lynx-keymap.showAIHistory', async function () {
         const historyCommands = [
             'workbench.action.icube.chatSidebarNg.showHistory',
