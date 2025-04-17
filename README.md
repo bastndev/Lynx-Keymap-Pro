@@ -2,7 +2,8 @@
 
 Custom keyboard shortcuts for Visual Studio Code to improve navigation, Git workflows, AI tools, debugging, and file management.
 
-| Command                      | 🍎 macOS       | 🪟 Windows         | 🐧 Linux           |
+
+| Command                      | 🍎 macOS       | 🟦 Windows         | 🐧 Linux           |
 | ---------------------------- | -------------- | ------------------ | ------------------ |
 | Open Explorer                | ⌘ + 1          | Ctrl + 1           | Ctrl + 1           |
 | Open Source Control (SCM)    | ⌘ + 2          | Ctrl + 2           | Ctrl + 2           |
@@ -30,6 +31,7 @@ Custom keyboard shortcuts for Visual Studio Code to improve navigation, Git work
 | Restart Debugging            | ⌥ + Insert     | Alt + Insert       | Alt + Insert       |
 | Stop Debugging               | End            | End                | End                |
 
+
 # Installation
 
 1. Open (Ctrl+P)
@@ -37,7 +39,7 @@ Custom keyboard shortcuts for Visual Studio Code to improve navigation, Git work
 
 ## Contributors
 
-Here is the project link if you want to collaborate: [[>\_ ] code](https://github.com/bastndev/Lynx-keymap).
+Here is the project link if you want to collaborate: [[>_ ] code](https://github.com/bastndev/Lynx-keymap).
 
 | [![bastndev](https://github.com/bastndev.png?size=100)](https://github.com/bastndev) |
 | :----------------------------------------------------------------------------------: |
