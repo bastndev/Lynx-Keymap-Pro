@@ -1,8 +1,8 @@
 {
   "name": "lynx-keymap",
-  "displayName": "Lynx Keymap",
-  "description": "Popular Lynx keybindings for Visual Studio Code",
-  "version": "0.4.5",
+  "displayName": "Lynx Keymap + AI 75%",
+  "description": "Available now: VSCode, Cursor AI, Windsurf & Trae AI | Firebase Studio",
+  "version": "0.4.8",
   "publisher": "bastndev",
   "license": "MIT",
   "engines": {
