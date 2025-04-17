@@ -216,6 +216,13 @@
         "key": "shift+escape",
         "mac": "shift+escape",
         "command": "workbench.action.closeFolder"
+      },
+
+      {"//": "---- --- -- -: trash :D"},
+      {
+        "key": "alt+0",
+        "mac": "alt+0",
+        "command": ""
       }
     ]
   }

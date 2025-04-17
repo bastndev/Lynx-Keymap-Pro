@@ -72,27 +72,18 @@ function activate(context) {
 }
 
 async function executeFirstAvailableCommand(commands, errorMessage) {
-    const allCommands = await vscode.commands.getCommands(true); // true para incluir comandos internos
+    const allCommands = await vscode.commands.getCommands(true);
     for (const cmd of commands) {
-        // console.log(`Checking command: ${cmd}`); // Descomenta para depurar si es necesario
         if (allCommands.includes(cmd)) {
             try {
-                // console.log(`Executing command: ${cmd}`); // Descomenta para depurar si es necesario
                 await vscode.commands.executeCommand(cmd);
-                return; // Ejecuta el primero que encuentra y sale
+                return;
             } catch (error) {
                 console.error(`Error executing command ${cmd}:`, error);
-                // Considera mostrar un mensaje de error al usuario si la ejecución falla
-                // vscode.window.showErrorMessage(`Failed to execute AI command: ${cmd}`);
-                // Decide si continuar buscando el siguiente comando o detenerse
-                // Por ahora, continuaremos al siguiente en caso de error al ejecutar
             }
-        } else {
-             // console.log(`Command not available: ${cmd}`); // Descomenta para depurar si es necesario
         }
     }
-    // Si ningún comando de la lista estaba disponible o todos fallaron al ejecutarse
-    vscode.window.showWarningMessage(errorMessage); // Usar showWarningMessage quizás sea mejor que showInformationMessage
+    vscode.window.showWarningMessage(errorMessage);
 }
 
 function deactivate() { }
