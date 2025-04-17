@@ -2,7 +2,7 @@
   "name": "lynx-keymap",
   "displayName": "Lynx Keymap",
   "description": "Popular Lynx keybindings for Visual Studio Code",
-  "version": "0.3.8",
+  "version": "0.4.0",
   "publisher": "bastndev",
   "license": "MIT",
   "engines": {
