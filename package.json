@@ -202,11 +202,16 @@
       {
         "key": "pageup",
         "mac": "pageup",
-        "command": "markdown.showPreviewToSide"
+        "command": "git.viewChanges"
       },
       {
         "key": "ctrl+pageup",
-        "mac": "ctrl+pageup",
+        "mac": "cmd+pageup",
+        "command": "markdown.showPreviewToSide"
+      },
+      {
+        "key": "alt+pageup",
+        "mac": "alt+pageup",
         "command": "workbench.action.closeActiveEditor"
       },
 
