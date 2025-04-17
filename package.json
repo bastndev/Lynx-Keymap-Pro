@@ -38,7 +38,7 @@
   "activationEvents": [
     "onCommand:lynx-keymap.generateAICommit",
     "onCommand:lynx-keymap.executeAIPopup",
-    "onCommand:lynx-keymap.openAIChat",
+    "onCommand:lynx-keymap.openAIChat", 
     "onCommand:lynx-keymap.createNewAISession",
     "onCommand:lynx-keymap.showAIHistory"
   ],
@@ -54,7 +54,7 @@
         "title": "Open AI Chat Interface"
       },
       {
-        "command": "lynx-keymap.openAIChat",
+        "command": "lynx-keymap.openAIChat", 
         "title": "Open AI Chat"
       },
       {
@@ -97,8 +97,8 @@
         "command": "explorer.newFolder"
       },
       {
-        "key": "ctrl+tab",
-        "mac": "ctrl+tab",
+        "key": "ctrl+shift+tab",
+        "mac": "ctrl+shift+tab",
         "command": "workbench.action.toggleSidebarVisibility"
       },
 
@@ -164,8 +164,8 @@
         "command": "lynx-keymap.executeAIPopup"
       },
       {
-        "key": "ctrl+shift+tab",
-        "mac": "cmd+shift+tab",
+        "key": "ctrl+tab",
+        "mac": "cmd+tab",
         "command": "lynx-keymap.openAIChat"
       },
       {
@@ -197,7 +197,7 @@
         "command": "workbench.action.debug.stop"
       },
 
-      
+
       {"//": "---- --- -- -: Open & close Markdown :"},
       {
         "key": "pageup",
