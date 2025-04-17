@@ -220,10 +220,9 @@
 
       {"//": "---- --- -- -: trash :D"},
       {
-        "key": "alt+0",
-        "mac": "alt+0",
-        "command": ""
-      }
+        "key": "ctrl+enter",
+        "command": "-github.copilot.generate"
+      }           
     ]
   }
 }
