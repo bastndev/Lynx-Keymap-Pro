@@ -187,7 +187,13 @@
         "mac": "cmd+alt+end",
         "command": "lynx-keymap.toggleInlineSuggest"
       },
-
+      {
+        "key": "ctrl+backspace",
+        "mac": "cmd+backspace",
+        "command": "inlineChat.close",
+        "when": "inlineChatFocused"
+      },
+      
 
       {"//": "---- --- -- -:4: Run Project & refresh & stop :"},
       {

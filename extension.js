@@ -6,10 +6,11 @@ function activate(context) {
     // Command for AI commit generation  [ctrl+alt+1]
     let commitDisposable = vscode.commands.registerCommand('lynx-keymap.generateAICommit', async function () {
         const commitCommands = [
-            'windsurf.generateCommitMessage',
-            'icube.gitGenerateCommitMessage',
-            'cursor.generateGitCommitMessage',
-            'github.copilot.git.generateCommitMessage'
+            'windsurf.generateCommitMessage',               // 0: Windsurf
+            'github.copilot.git.generateCommitMessage',     // 1: Vscode
+            'cursor.generateGitCommitMessage',              // 2: Cursor-AI
+            'icube.gitGenerateCommitMessage',               // 3: Trae-AI
+            // Don;t have a Firebase equivalent for this    // 4: Firebase.Studio
         ];
         await executeFirstAvailableCommand(commitCommands, 'No AI commit generators available');
     });
@@ -17,11 +18,11 @@ function activate(context) {
     // Command for AI Popup  [ctrl+`]
     let popupDisposable = vscode.commands.registerCommand('lynx-keymap.executeAIPopup', async function () {
         const popupCommands = [
+            'windsurf.prioritized.command.open',    // 0: Windsurf    
             'inlineChat.start',                     // 1: Vscode   
             'aipopup.action.modal.generate',        // 2: Cursor-AI  
-            'windsurf.prioritized.command.open',    // 3: Windsurf    
-            'icube.inlineChat.start',               // 4: Trae-AI
-            'workbench.action.terminal.chat.start'  // 5: Firebase.Studio
+            'icube.inlineChat.start',               // 3: Trae-AI
+            'workbench.action.terminal.chat.start'  // 4: Firebase.Studio
         ];
         await executeFirstAvailableCommand(popupCommands, 'No AI chat providers available');
     });
@@ -29,11 +30,11 @@ function activate(context) {
     // Command to open AI chat  [ctrl+tab]
     let chatDisposable = vscode.commands.registerCommand('lynx-keymap.openAIChat', async function () {
         const chatCommands = [
+            'windsurf.prioritized.chat.open',    // 0: Windsurf
             'workbench.panel.chat',              // 1: Vscode
             'aichat.newchataction',              // 2: Cursor-AI
-            'windsurf.prioritized.chat.open',    // 3: Windsurf
-            'workbench.action.chat.icube.open',  // 4: Trae-AI
-            'aichat.prompt'                      // 5: Firebase.Studio
+            'workbench.action.chat.icube.open',  // 3: Trae-AI
+            'aichat.prompt'                      // 4: Firebase.Studio
         ];
         await executeFirstAvailableCommand(chatCommands, 'No AI chat providers available');
     });
@@ -41,11 +42,11 @@ function activate(context) {
     // Command to create a new AI session  [ctrl+alt+`]
     let newSessionDisposable = vscode.commands.registerCommand('lynx-keymap.createNewAISession', async function () {
         const newSessionCommands = [
+            'windsurf.prioritized.chat.openNewConversation',        // 0: Windsurf
             'workbench.action.chat.newEditSession',                 // 1: Vscode
             'composer.createNew',                                   // 2: Cursor-AI
-            'windsurf.prioritized.chat.openNewConversation',        // 3: Windsurf
-            'workbench.action.icube.chatSidebarNg.createNewSession',// 4: Trae-AI
-            // Don;t have a Firebase equivalent for this            // 5: Firebase.Studio
+            'workbench.action.icube.chatSidebarNg.createNewSession',// 3: Trae-AI
+            // Don;t have a Firebase equivalent for this            // 4: Firebase.Studio
         ];
         await executeFirstAvailableCommand(newSessionCommands, 'No AI providers available to create a new session');
     });
@@ -53,11 +54,11 @@ function activate(context) {
     // Command to show AI history  [ctrl+shift+`]
     let historyDisposable = vscode.commands.registerCommand('lynx-keymap.showAIHistory', async function () {
         const historyCommands = [
+            // Windsurf doesn't have a history command          // 0: Windsurf
             'workbench.action.chat.history' ,                   // 1: Vscode
             'composer.showComposerHistory',                     // 2: Cursor-AI           
-            // Windsurf doesn't have a history command          // 3: Windsurf
-            'workbench.action.icube.chatSidebarNg.showHistory', // 4: trae-AI
-            // Firebase doesn't have a history command          // 5: Firebase.Studio
+            'workbench.action.icube.chatSidebarNg.showHistory', // 3: Trae-AI
+            // Firebase doesn't have a history command          // 4: Firebase.Studio
         ];
         await executeFirstAvailableCommand(historyCommands, 'No AI history available');
     });
