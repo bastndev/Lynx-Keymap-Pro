@@ -1,8 +1,8 @@
 {
   "name": "lynx-keymap",
   "displayName": "Lynx Keymap + AI 75%",
-  "description": "Available now: VSCode, Cursor AI, Windsurf & Trae AI | Firebase Studio",
-  "version": "0.4.8",
+  "description": "Available now: VSCode, Cursor AI, Windsurf & Trae AI | Firebase Studio and ++",
+  "version": "0.5.0",
   "publisher": "bastndev",
   "license": "MIT",
   "engines": {
@@ -13,8 +13,15 @@
   ],
   "keywords": [
     "keymap",
-    "lynx",
-    "keyboard",
+    "Vscode",
+    "Cursor",
+    "Trae",
+    "Windsurf",
+    "AI",
+    "Firebase",
+    "Studio",
+    "Keybinding",
+    "Keybindings",
     "shortcuts"
   ],
   "icon": "icon.png",
@@ -217,7 +224,7 @@
         "command": "workbench.action.closeFolder"
       },
 
-      
+
       {"//": "---- --- -- -: trash :D"},
       {
         "key": "ctrl+enter",
