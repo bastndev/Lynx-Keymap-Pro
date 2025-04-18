@@ -47,21 +47,20 @@
 | Generate AI Commit Message                  | Ctrl + Alt + 1 | Ctrl + Alt + 1   | Ctrl + Alt + 1   |
 
 > [!IMPORTANT]
-> Now available with the following backtick equivalents:
->
+> Now available with the following backtick equivalents: 🌎
+> 
 > ```javascript
 > exports.BACKTICK_EQUIVALENTS = [
->     '`',
->     'º',
->     "'",
->     '²',
->     '^',
->     'ё',
->     '~',
->     '半角/全角',
+>     '`',    // Standard backtick (US, international) ← PRIMARY SYMBOL
+>     'º',    // Degree symbol (Spanish, Portuguese)
+>     "'",    // Single quote (Global)
+>     '²',    // Superscript two (European)
+>     '^',    // Caret (Global)
+>     'ё',    // Cyrillic letter (Russian)
+>     '~',    // Tilde (Global)
+>     '半角/全角', // Japanese character
 > ];
 > ```
-
 
 # Installation
 
