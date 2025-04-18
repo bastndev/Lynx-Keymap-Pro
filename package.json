@@ -160,9 +160,9 @@
 
 
       {"//": "----- ---- --- -- -:3: AI Vscode-Cursor-Trae-Windsurf :"},
-      {"//": "Tecla Backtick y sus equivalentes en diferentes distribuciones de teclado"},
+      {"//": "Backtick key and its equivalents in different keyboard layouts"},
       
-      {"//": "executeAIPopup - Backtick y equivalentes"},
+      {"//": "executeAIPopup - Backtick and equivalents"},
       {
         "key": "ctrl+`",
         "mac": "cmd+`",
