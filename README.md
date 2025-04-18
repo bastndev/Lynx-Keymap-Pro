@@ -1,34 +1,68 @@
-# 🎹 VS Code Custom Keybindings
+![Use Extension](images/tec.png)
 
-Custom keyboard shortcuts for Visual Studio Code to improve navigation, Git workflows, AI tools, debugging, and file management.
+<p align="center"><span style="color:gray;">Available for Windows, macOS, and Linux</span></p>
+</br>
 
-| Command                      | 🍎 macOS       | 🪟 Windows         | 🐧 Linux           |
-| ---------------------------- | -------------- | ------------------ | ------------------ |
-| Open Explorer                | ⌘ + 1          | Ctrl + 1           | Ctrl + 1           |
-| Open Source Control (SCM)    | ⌘ + 2          | Ctrl + 2           | Ctrl + 2           |
-| Open Extensions View         | ⌘ + 3          | Ctrl + 3           | Ctrl + 3           |
-| -                            | -              | -                  | -                  |
-| Markdown Preview to Side     | PageUp         | PageUp             | PageUp             |
-| Toggle Bottom Panel          | PageDown       | PageDown           | PageDown           |
-| Toggle Terminal              | PageDown       | PageDown           | PageDown           |
-| -                            | -              | -                  | -                  |
-| Close Folder                 | ⌘ + K F        | Ctrl + K F         | Ctrl + K F         |
-| Generate Commit Message (AI) | Ctrl + Alt + 1 | Ctrl + Alt + 1     | Ctrl + Alt + 1     |
-| Stage All Changes            | ⌘ + ⌥ + 2      | Ctrl + Alt + 2     | Ctrl + Alt + 2     |
-| Unstage All                  | ⌘ + ⌥ + 3      | Ctrl + Alt + 3     | Ctrl + Alt + 3     |
-| Git Commit                   | ⌘ + Enter      | Ctrl + Enter       | Ctrl + Enter       |
-| Git Push                     | ⌘ + ⌥ + Enter  | Ctrl + Alt + Enter | Ctrl + Alt + Enter |
-| -                            | -              | -                  | -                  |
-| Generate Content (Modal)     | ⌘ + `          | Ctrl + `           | Ctrl + `           |
-| New Chat with AI             | ⌘ + ⇧ + `      | Ctrl + Shift + `   | Ctrl + Shift + `   |
-| -                            | -              | -                  | -                  |
-| New File                     | ⌥ + C          | Alt + C            | Alt + C            |
-| New Folder                   | ⌥ + V          | Alt + V            | Alt + V            |
-| Format Document              | ⌥ + F          | Alt + F            | Alt + F            |
-| -                            | -              | -                  | -                  |
-| Start Debugging              | Insert         | Insert             | Insert             |
-| Restart Debugging            | ⌥ + Insert     | Alt + Insert       | Alt + Insert       |
-| Stop Debugging               | End            | End                | End                |
+### ► How to Use Standard Keybindings
+
+| Command                    | 🍎 macOS           | 🟦 Windows         | 🐧 Linux           |
+| :------------------------- | :----------------- | :----------------- | :----------------- |
+| Open Explorer              | ⌘ + 1              | Ctrl + 1           | Ctrl + 1           |
+| Open Source Control (SCM)  | ⌘ + 2              | Ctrl + 2           | Ctrl + 2           |
+| Open Extensions View       | ⌘ + 3              | Ctrl + 3           | Ctrl + 3           |
+| Toggle Sidebar Visibility  | Ctrl + Shift + Tab | Ctrl + Shift + Tab | Ctrl + Shift + Tab |
+| -                          | -                  | -                  | -                  |
+| New File                   | ⌥ + C              | Alt + C            | Alt + C            |
+| New Folder                 | ⌥ + V              | Alt + V            | Alt + V            |
+| Close Active Editor        | ⌥ + PageUp         | Alt + PageUp       | Alt + PageUp       |
+| Close Folder               | Shift + Esc        | Shift + Esc        | Shift + Esc        |
+| -                          | -                  | -                  | -                  |
+| Generate AI Commit Message | Ctrl + Alt + 1     | Ctrl + Alt + 1     | Ctrl + Alt + 1     |
+| Stage All Changes          | ⌘ + ⌥ + 2          | Ctrl + Alt + 2     | Ctrl + Alt + 2     |
+| Unstage All Changes        | ⌘ + ⌥ + 3          | Ctrl + Alt + 3     | Ctrl + Alt + 3     |
+| Git Commit                 | ⌘ + Enter          | Ctrl + Enter       | Ctrl + Enter       |
+| Git Push                   | ⌘ + ⌥ + Enter      | Ctrl + Alt + Enter | Ctrl + Alt + Enter |
+| View Git Changes           | PageUp             | PageUp             | PageUp             |
+| -                          | -                  | -                  | -                  |
+| Format Document            | ⌥ + F              | Alt + F            | Alt + F            |
+| Toggle Bottom Panel        | PageDown           | PageDown           | PageDown           |
+| Toggle Terminal            | PageDown           | PageDown           | PageDown           |
+| Markdown Preview to Side   | ⌘ + PageUp         | Ctrl + PageUp      | Ctrl + PageUp      |
+| -                          | -                  | -                  | -                  |
+| Start Debugging            | Insert             | Insert             | Insert             |
+| Restart Debugging          | Ctrl + Insert      | Ctrl + Insert      | Ctrl + Insert      |
+| Stop Debugging             | End                | End                | End                |
+
+### ► AI Features Keybindings
+
+| Command                                     | 🍎 macOS       | 🟦 Windows       | 🐧 Linux         |
+| :------------------------------------------ | :------------- | :--------------- | :--------------- |
+| Open AI Chat Interface (Popup/Modal)        | ⌘ + `          | Ctrl + `         | Ctrl + `         |
+| Open AI Chat (Panel/View)                   | ⌘ + Tab        | Ctrl + Tab       | Ctrl + Tab       |
+| Create New AI Session                       | ⌘ + ⌥ + `      | Ctrl + Alt + `   | Ctrl + Alt + `   |
+| Show AI Chat History                        | ⌘ + ⇧ + `      | Ctrl + Shift + ` | Ctrl + Shift + ` |
+| Toggle Inline Suggestions (AI Autocomplete) | ⌘ + ⌥ + End    | Ctrl + Alt + End | Ctrl + Alt + End |
+| Close Inline Chat                           | ⌘ + Backspace  | Ctrl + Backspace | Ctrl + Backspace |
+| -                                           | -              | -                | -                |
+| Generate AI Commit Message                  | Ctrl + Alt + 1 | Ctrl + Alt + 1   | Ctrl + Alt + 1   |
+
+</br>
+
+> [!TIP]
+> Now available with the following backtick equivalents: 🌎
+> 
+> ```javascript
+> exports.BACKTICK_EQUIVALENTS = [
+>     '`',    // Standard backtick (US, international) ← PRIMARY SYMBOL
+>     'º',    // Degree symbol (Spanish, Portuguese)
+>     "'",    // Single quote (Global)
+>     '²',    // Superscript two (European)
+>     '^',    // Caret (Global)
+>     'ё',    // Cyrillic letter (Russian)
+>     '~',    // Tilde (Global)
+>     '半角/全角', // Japanese character
+> ];
+> ```
 
 # Installation
 
@@ -50,6 +84,5 @@ Here is the project link if you want to collaborate: [[>\_ ] code](https://githu
 - [Youtube](https://www.youtube.com/@bastndev) - For more content about Lynx and programming,
 
 ## Release Notes
-
 
 **Enjoy your new keybindings! Suggestions or feedback? Open an issue or contribute.**
