@@ -1,8 +1,10 @@
 const vscode = require('vscode');
+// Importamos las utilidades de teclado
+// Nota: Si lo prefieres usar JavaScript puro en lugar de TypeScript, puedes adaptar el código
 
 function activate(context) {
     console.log('Congratulations, your extension "lynx-keymap" is now active!');
-
+    
     // Command for AI commit generation  [ctrl+alt+1]
     let commitDisposable = vscode.commands.registerCommand('lynx-keymap.generateAICommit', async function () {
         const commitCommands = [
@@ -10,12 +12,12 @@ function activate(context) {
             'github.copilot.git.generateCommitMessage',     // 1: Vscode
             'cursor.generateGitCommitMessage',              // 2: Cursor-AI
             'icube.gitGenerateCommitMessage',               // 3: Trae-AI
-            // Don;t have a Firebase equivalent for this    // 4: Firebase.Studio
+            // Don't have a Firebase equivalent for this    // 4: Firebase.Studio
         ];
         await executeFirstAvailableCommand(commitCommands, 'No AI commit generators available');
     });
 
-    // Command for AI Popup  [ctrl+`]
+    // Command for AI Popup  [ctrl+` and equivalents - managed in package.json]
     let popupDisposable = vscode.commands.registerCommand('lynx-keymap.executeAIPopup', async function () {
         const popupCommands = [
             'windsurf.prioritized.command.open',    // 0: Windsurf    
@@ -39,19 +41,19 @@ function activate(context) {
         await executeFirstAvailableCommand(chatCommands, 'No AI chat providers available');
     });
 
-    // Command to create a new AI session  [ctrl+alt+`]
+    // Command to create a new AI session  [ctrl+alt+` and equivalents - managed in package.json]
     let newSessionDisposable = vscode.commands.registerCommand('lynx-keymap.createNewAISession', async function () {
         const newSessionCommands = [
             'windsurf.prioritized.chat.openNewConversation',        // 0: Windsurf
             'workbench.action.chat.newEditSession',                 // 1: Vscode
             'composer.createNew',                                   // 2: Cursor-AI
             'workbench.action.icube.chatSidebarNg.createNewSession',// 3: Trae-AI
-            // Don;t have a Firebase equivalent for this            // 4: Firebase.Studio
+            // Don't have a Firebase equivalent for this            // 4: Firebase.Studio
         ];
         await executeFirstAvailableCommand(newSessionCommands, 'No AI providers available to create a new session');
     });
 
-    // Command to show AI history  [ctrl+shift+`]
+    // Command to show AI history  [ctrl+shift+` and equivalents - managed in package.json]
     let historyDisposable = vscode.commands.registerCommand('lynx-keymap.showAIHistory', async function () {
         const historyCommands = [
             // Windsurf doesn't have a history command          // 0: Windsurf
@@ -107,7 +109,6 @@ async function executeFirstAvailableCommand(commands, errorMessage) {
     }
     vscode.window.showWarningMessage(errorMessage);
 }
-
 
 function deactivate() { }
 
