@@ -46,6 +46,23 @@
 | -                                           | -              | -                | -                |
 | Generate AI Commit Message                  | Ctrl + Alt + 1 | Ctrl + Alt + 1   | Ctrl + Alt + 1   |
 
+> [!IMPORTANT]
+> Now available with the following backtick equivalents:
+>
+> ```javascript
+> exports.BACKTICK_EQUIVALENTS = [
+>     '`',
+>     'º',
+>     "'",
+>     '²',
+>     '^',
+>     'ё',
+>     '~',
+>     '半角/全角',
+> ];
+> ```
+
+
 # Installation
 
 1. Open (Ctrl+P)
