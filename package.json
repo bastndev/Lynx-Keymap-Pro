@@ -40,7 +40,8 @@
     "onCommand:lynx-keymap.executeAIPopup",
     "onCommand:lynx-keymap.openAIChat", 
     "onCommand:lynx-keymap.createNewAISession",
-    "onCommand:lynx-keymap.showAIHistory"
+    "onCommand:lynx-keymap.showAIHistory",
+    "onCommand:lynx-keymap.toggleInlineSuggest" 
   ],
   "main": "./extension.js",
   "contributes": {
@@ -64,6 +65,9 @@
       {
         "command": "lynx-keymap.showAIHistory",
         "title": "Show AI Chat History"
+      },{
+        "command": "lynx-keymap.toggleInlineSuggest",
+        "title": "Toggle Inline Suggestions (AI Autocomplete)"
       }
     ],
     "keybindings": [
@@ -181,7 +185,7 @@
       {
         "key": "ctrl+alt+end",
         "mac": "cmd+alt+end",
-        "command": "github.copilot.completions.toggle"
+        "command": "lynx-keymap.toggleInlineSuggest"
       },
 
 
