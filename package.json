@@ -23,7 +23,10 @@
     "Keybinding",
     "Keybindings",
     "shortcuts",
-    "2025"
+    "2025",
+    "Windows",
+    "Linux",
+    "MacOS"
   ],
   "icon": "icon.png",
   "galleryBanner": {
