@@ -1,8 +1,9 @@
 ![Use Extension](images/tec.png)
 
 <p align="center"><span style="color:gray;">Available for Windows, macOS, and Linux</span></p>
+</br>
 
-### How to use Standard Keybindings
+### ► How to Use Standard Keybindings
 
 | Command                    | 🍎 macOS           | 🟦 Windows         | 🐧 Linux           |
 | :------------------------- | :----------------- | :----------------- | :----------------- |
@@ -32,7 +33,7 @@
 | Restart Debugging          | Ctrl + Insert      | Ctrl + Insert      | Ctrl + Insert      |
 | Stop Debugging             | End                | End                | End                |
 
-### AI Features Keybindings
+### ► AI Features Keybindings
 
 | Command                                     | 🍎 macOS       | 🟦 Windows       | 🐧 Linux         |
 | :------------------------------------------ | :------------- | :--------------- | :--------------- |
