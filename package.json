@@ -49,20 +49,16 @@
       {
         "command": "lynx-keymap.generateAICommit",
         "title": "Generate AI Commit Message"
-      },
-      {
+      },{
         "command": "lynx-keymap.executeAIPopup",
         "title": "Open AI Chat Interface"
-      },
-      {
+      },{
         "command": "lynx-keymap.openAIChat", 
         "title": "Open AI Chat"
-      },
-      {
+      },{
         "command": "lynx-keymap.createNewAISession",
         "title": "Create New AI Session"
-      },
-      {
+      },{
         "command": "lynx-keymap.showAIHistory",
         "title": "Show AI Chat History"
       },{
@@ -76,13 +72,11 @@
         "key": "ctrl+1",
         "mac": "cmd+1",
         "command": "workbench.view.explorer"
-      },
-      {
+      },{
         "key": "ctrl+2",
         "mac": "cmd+2",
         "command": "workbench.view.scm"
-      },
-      {
+      },{
         "key": "ctrl+3",
         "mac": "cmd+3",
         "command": "workbench.view.extensions"
@@ -94,13 +88,11 @@
         "key": "alt+c",
         "mac": "alt+c",
         "command": "explorer.newFile"
-      },
-      {
+      },{
         "key": "alt+v",
         "mac": "alt+v",
         "command": "explorer.newFolder"
-      },
-      {
+      },{
         "key": "ctrl+shift+tab",
         "mac": "ctrl+shift+tab",
         "command": "workbench.action.toggleSidebarVisibility"
@@ -113,14 +105,12 @@
         "key": "ctrl+alt+1",
         "mac": "ctrl+alt+1",
         "command": "lynx-keymap.generateAICommit"
-      },
-      {
+      },{
         "key": "ctrl+alt+2",
         "mac": "cmd+alt+2",
         "command": "git.stageAll",
         "when": "scmProvider == git"
-      },
-      {
+      },{
         "key": "ctrl+alt+3",
         "mac": "cmd+alt+3",
         "command": "git.unstageAll",
@@ -134,8 +124,7 @@
         "mac": "cmd+enter",
         "command": "git.commit",
         "when": "scmProvider == git && sideBarFocus"
-      },
-      {
+      },{
         "key": "ctrl+alt+enter",
         "mac": "cmd+alt+enter",
         "command": "git.push",
@@ -148,13 +137,11 @@
         "key": "alt+f",
         "mac": "alt+f",
         "command": "editor.action.formatDocument"
-      },
-      {
+      },{
         "key": "pagedown",
         "mac": "pagedown",
         "command": "workbench.action.togglePanel"
-      },
-      {
+      },{
         "key": "pagedown",
         "mac": "pagedown",
         "command": "workbench.action.terminal.toggleTerminal"
@@ -166,23 +153,19 @@
         "key": "ctrl+`",
         "mac": "cmd+`",
         "command": "lynx-keymap.executeAIPopup"
-      },
-      {
+      },{
         "key": "ctrl+tab",
         "mac": "cmd+tab",
         "command": "lynx-keymap.openAIChat"
-      },
-      {
+      },{
         "key": "ctrl+alt+`",
         "mac": "cmd+alt+`",
         "command": "lynx-keymap.createNewAISession"
-      },
-      {
+      },{
         "key": "ctrl+shift+`",
         "mac": "cmd+shift+`",
         "command": "lynx-keymap.showAIHistory"
-      },
-      {
+      },{
         "key": "ctrl+alt+end",
         "mac": "cmd+alt+end",
         "command": "lynx-keymap.toggleInlineSuggest"
@@ -200,13 +183,11 @@
         "key": "insert",
         "mac": "insert",
         "command": "workbench.action.debug.start"
-      },
-      {
+      },{
         "key": "ctrl+insert",
         "mac": "ctrl+insert",
         "command": "workbench.action.debug.restart"
-      },
-      {
+      },{
         "key": "end",
         "mac": "end",
         "command": "workbench.action.debug.stop"
@@ -218,13 +199,11 @@
         "key": "pageup",
         "mac": "pageup",
         "command": "git.viewChanges"
-      },
-      {
+      },{
         "key": "ctrl+pageup",
         "mac": "cmd+pageup",
         "command": "markdown.showPreviewToSide"
-      },
-      {
+      },{
         "key": "alt+pageup",
         "mac": "alt+pageup",
         "command": "workbench.action.closeActiveEditor"
@@ -238,6 +217,7 @@
         "command": "workbench.action.closeFolder"
       },
 
+      
       {"//": "---- --- -- -: trash :D"},
       {
         "key": "ctrl+enter",
