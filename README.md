@@ -46,7 +46,9 @@
 | -                                           | -              | -                | -                |
 | Generate AI Commit Message                  | Ctrl + Alt + 1 | Ctrl + Alt + 1   | Ctrl + Alt + 1   |
 
-> [!IMPORTANT]
+</br>
+
+> [!TIP]
 > Now available with the following backtick equivalents: 🌎
 > 
 > ```javascript
