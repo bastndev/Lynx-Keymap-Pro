@@ -178,6 +178,11 @@
         "mac": "cmd+shift+`",
         "command": "lynx-keymap.showAIHistory"
       },
+      {
+        "key": "ctrl+alt+end",
+        "mac": "cmd+alt+end",
+        "command": "github.copilot.completions.toggle"
+      },
 
 
       {"//": "---- --- -- -:4: Run Project & refresh & stop :"},
