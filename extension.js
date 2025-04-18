@@ -1,6 +1,4 @@
 const vscode = require('vscode');
-// Importamos las utilidades de teclado
-// Nota: Si lo prefieres usar JavaScript puro en lugar de TypeScript, puedes adaptar el código
 
 function activate(context) {
     console.log('Congratulations, your extension "lynx-keymap" is now active!');
