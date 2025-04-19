@@ -35,32 +35,33 @@
 
 ### ► AI Features Keybindings
 
-| Command                                     | 🍎 macOS       | 🟦 Windows       | 🐧 Linux         |
-| :------------------------------------------ | :------------- | :--------------- | :--------------- |
-| Open AI Chat Interface (Popup/Modal)        | ⌘ + `          | Ctrl + `         | Ctrl + `         |
-| Open AI Chat (Panel/View)                   | ⌘ + Tab        | Ctrl + Tab       | Ctrl + Tab       |
-| Create New AI Session                       | ⌘ + ⌥ + `      | Ctrl + Alt + `   | Ctrl + Alt + `   |
-| Show AI Chat History                        | ⌘ + ⇧ + `      | Ctrl + Shift + ` | Ctrl + Shift + ` |
-| Toggle Inline Suggestions (AI Autocomplete) | ⌘ + ⌥ + End    | Ctrl + Alt + End | Ctrl + Alt + End |
-| Close Inline Chat                           | ⌘ + Backspace  | Ctrl + Backspace | Ctrl + Backspace |
-| -                                           | -              | -                | -                |
-| Generate AI Commit Message                  | Ctrl + Alt + 1 | Ctrl + Alt + 1   | Ctrl + Alt + 1   |
+| Command                                     | 🍎 macOS         | 🟦 Windows             | 🐧 Linux              |
+| :------------------------------------------ | :--------------- | :--------------------- | :-------------------- |
+| Open AI Chat Interface (Popup/Modal)        | ⌘ + `            | Ctrl + `               | Ctrl + `              |
+| Open AI Chat (Panel/View)                   | ⌘ + Tab          | Ctrl + Tab             | Ctrl + Tab            |
+| Create New AI Session                       | ⌘ + ⌥ + `        | Ctrl + Alt + `         | Ctrl + Alt + `        |
+| Show AI Chat History                        | ⌘ + ⇧ + `        | Ctrl + Shift + `       | Ctrl + Shift + `      |
+| Toggle Inline Suggestions (AI Autocomplete) | ⌘ + ⌥ + End      | Ctrl + Alt + End       | Ctrl + Alt + End      |
+| Close Inline Chat                           | ⌘ + ⌥ +Backspace | Ctrl + Alt + Backspace | Ctrl + Alt+ Backspace |
+| -                                           | -                | -                      | -                     |
+| Generate AI Commit Message                  | Ctrl + Alt + 1   | Ctrl + Alt + 1         | Ctrl + Alt + 1        |
 
-</br>
+**[>_ ]**
 
 > [!TIP]
 > Now available with the following backtick equivalents: 🌎
-> 
+>
 > ```javascript
 > exports.BACKTICK_EQUIVALENTS = [
->     '`',    // Standard backtick (US, international) ← PRIMARY SYMBOL
->     'º',    // Degree symbol (Spanish, Portuguese)
->     "'",    // Single quote (Global)
->     '²',    // Superscript two (European)
->     '^',    // Caret (Global)
->     'ё',    // Cyrillic letter (Russian)
->     '~',    // Tilde (Global)
->     '半角/全角', // Japanese character
+>   '`', // [STANDARD BACKTICK]
+>   'º', // Degree symbol (Spanish, Portuguese)
+>   "'", // Single quote (Global)
+>   '²', // Superscript two (European)
+>   '^', // Caret (Global)
+>   'ё', // Cyrillic letter (Russian)
+>   '~', // Tilde (Global)
+>   '半角/全角', // Japanese character
+>   '|', //  (Spanish- Latam)
 > ];
 > ```
 

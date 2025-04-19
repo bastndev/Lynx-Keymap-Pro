@@ -1,8 +1,8 @@
 {
   "name": "lynx-keymap",
   "displayName": "Lynx Keymap + AI 75%",
-  "description": "Available now: Optimized for AI development with VSCode, Cursor AI, Windsurf & Trae AI. Enhanced productivity for Firebase Studio and MORE.",
-  "version": "0.5.8",
+  "description": "Available now: VSCode, Cursor AI, Windsurf & Trae AI. + (Firebase Studio).",
+  "version": "0.6.0",
   "publisher": "bastndev",
   "license": "MIT",
   "engines": {
@@ -15,10 +15,10 @@
     "keybindings",
     "keymap",
     "Vscode",
+    "AI",
     "Cursor",
     "Trae",
     "Windsurf",
-    "AI",
     "Firebase studio",
     "Keybinding",
     "Keybindings",
@@ -54,7 +54,7 @@
     "onCommand:lynx-keymap.showAIHistory",
     "onCommand:lynx-keymap.toggleInlineSuggest" 
   ],
-  "main": "./extension.js",
+  "main": "./src/extension.js",
   "contributes": {
     "commands": [
       {
@@ -188,6 +188,11 @@
         "mac": "cmd+²",
         "command": "lynx-keymap.executeAIPopup"
       },
+      {
+        "key": "ctrl+|",
+        "mac": "cmd+|",
+        "command": "lynx-keymap.executeAIPopup"
+      },
       
       {"//": "openAIChat - normal"},
       {
@@ -222,6 +227,11 @@
         "mac": "cmd+alt+²",
         "command": "lynx-keymap.createNewAISession"
       },
+      {
+        "key": "ctrl+alt+|",
+        "mac": "cmd+alt+|",
+        "command": "lynx-keymap.createNewAISession"
+      },
       
       {"//": "showAIHistory - Backtick and equivalents"},
       {
@@ -249,16 +259,21 @@
         "mac": "cmd+shift+²",
         "command": "lynx-keymap.showAIHistory"
       },
+      {
+        "key": "ctrl+shift+|",
+        "mac": "cmd+shift+|",
+        "command": "lynx-keymap.showAIHistory"
+      },
       
-      {"//": "toggleInlineSuggest and other commands unchanged"},
+      {"//": "--- -- - toggleInlineSuggest and other commands unchanged"},
       {
         "key": "ctrl+alt+end",
         "mac": "cmd+alt+end",
         "command": "lynx-keymap.toggleInlineSuggest"
       },
       {
-        "key": "ctrl+backspace",
-        "mac": "cmd+backspace",
+        "key": "ctrl+alt+backspace",
+        "mac": "cmd+alt+backspace",
         "command": "inlineChat.close",
         "when": "inlineChatFocused"
       },
