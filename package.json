@@ -54,7 +54,7 @@
     "onCommand:lynx-keymap.showAIHistory",
     "onCommand:lynx-keymap.toggleInlineSuggest" 
   ],
-  "main": "./extension.js",
+  "main": "./src/extension.js",
   "contributes": {
     "commands": [
       {
