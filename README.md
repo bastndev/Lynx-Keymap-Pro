@@ -44,7 +44,7 @@
 | Toggle Inline Suggestions (AI Autocomplete) | `⌘ + ⌥ + End`       | `Ctrl + Alt + End`       | `Ctrl + Alt + End`       |
 | Close Inline Chat                           | `⌘ + ⌥ + Backspace` | `Ctrl + Alt + Backspace` | `Ctrl + Alt + Backspace` |
 | -                                           | `-`                 | `-`                      | `-`                      |
-| Generate AI Commit Message                  | `Ctrl + Alt + 1`    | `Ctrl + Alt + 1`         | `Ctrl + Alt + 1`         |
+| Generate AI Commit Message                  | `⌘ + Alt + 1`       | `Ctrl + Alt + 1`         | `Ctrl + Alt + 1`         |
 
 ### Now
 
