@@ -44,11 +44,7 @@
 | Toggle Inline Suggestions (AI Autocomplete) | ⌘ + ⌥ + End      | Ctrl + Alt + End       | Ctrl + Alt + End      |
 | Close Inline Chat                           | ⌘ + ⌥ +Backspace | Ctrl + Alt + Backspace | Ctrl + Alt+ Backspace |
 
-
-| Generate AI Commit Message                  | Ctrl + Alt + 1   | Ctrl + Alt + 1         | Ctrl + Alt + 1        |
-| -                                           | -                | -                      | -                     |
-
-**[>_ ]**
+| Generate AI Commit Message | Ctrl + Alt + 1 | Ctrl + Alt + 1 | Ctrl + Alt + 1 |
 
 > [!TIP]
 > Now available with the following backtick equivalents: 🌎
