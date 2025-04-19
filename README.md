@@ -35,16 +35,16 @@
 
 ### ► AI Features Keybindings
 
-| Command                                     | 🍎 macOS         | 🟦 Windows             | 🐧 Linux              |
-| :------------------------------------------ | :--------------- | :--------------------- | :-------------------- |
-| Open AI Chat Interface (Popup/Modal)        | ⌘ + `            | Ctrl + `               | Ctrl + `              |
-| Open AI Chat (Panel/View)                   | ⌘ + Tab          | Ctrl + Tab             | Ctrl + Tab            |
-| Create New AI Session                       | ⌘ + ⌥ + `        | Ctrl + Alt + `         | Ctrl + Alt + `        |
-| Show AI Chat History                        | ⌘ + ⇧ + `        | Ctrl + Shift + `       | Ctrl + Shift + `      |
-| Toggle Inline Suggestions (AI Autocomplete) | ⌘ + ⌥ + End      | Ctrl + Alt + End       | Ctrl + Alt + End      |
-| Close Inline Chat                           | ⌘ + ⌥ +Backspace | Ctrl + Alt + Backspace | Ctrl + Alt+ Backspace |
-| -                                           | -                | -                      | -                     |
-| Generate AI Commit Message                  | Ctrl + Alt + 1   | Ctrl + Alt + 1         | Ctrl + Alt + 1        |
+| Command                                     | 🍎 macOS            | 🟦 Windows               | 🐧 Linux                 |
+| :------------------------------------------ | :------------------ | :----------------------- | :----------------------- |
+| Open AI Chat Interface (Popup/Modal)        | ` ⌘ + ``  `         | ` Ctrl + ``  `           | ` Ctrl + ``  `           |
+| Open AI Chat (Panel/View)                   | `⌘ + Tab`           | `Ctrl + Tab`             | `Ctrl + Tab`             |
+| Create New AI Session                       | ` ⌘ + ⌥ + ``  `     | ` Ctrl + Alt + ``  `     | ` Ctrl + Alt + ``  `     |
+| Show AI Chat History                        | ` ⌘ + ⇧ + ``  `     | ` Ctrl + Shift + ``  `   | ` Ctrl + Shift + ``  `   |
+| Toggle Inline Suggestions (AI Autocomplete) | `⌘ + ⌥ + End`       | `Ctrl + Alt + End`       | `Ctrl + Alt + End`       |
+| Close Inline Chat                           | `⌘ + ⌥ + Backspace` | `Ctrl + Alt + Backspace` | `Ctrl + Alt + Backspace` |
+| -                                           | `-`                 | `-`                      | `-`                      |
+| Generate AI Commit Message                  | `Ctrl + Alt + 1`    | `Ctrl + Alt + 1`         | `Ctrl + Alt + 1`         |
 
 ### Now
 
