@@ -188,6 +188,11 @@
         "mac": "cmd+²",
         "command": "lynx-keymap.executeAIPopup"
       },
+      {
+        "key": "ctrl+|",
+        "mac": "cmd+|",
+        "command": "lynx-keymap.executeAIPopup"
+      },
       
       {"//": "openAIChat - normal"},
       {
@@ -222,6 +227,11 @@
         "mac": "cmd+alt+²",
         "command": "lynx-keymap.createNewAISession"
       },
+      {
+        "key": "ctrl+alt+|",
+        "mac": "cmd+alt+|",
+        "command": "lynx-keymap.createNewAISession"
+      },
       
       {"//": "showAIHistory - Backtick and equivalents"},
       {
@@ -249,16 +259,21 @@
         "mac": "cmd+shift+²",
         "command": "lynx-keymap.showAIHistory"
       },
+      {
+        "key": "ctrl+shift+|",
+        "mac": "cmd+shift+|",
+        "command": "lynx-keymap.showAIHistory"
+      },
       
-      {"//": "toggleInlineSuggest and other commands unchanged"},
+      {"//": "--- -- - toggleInlineSuggest and other commands unchanged"},
       {
         "key": "ctrl+alt+end",
         "mac": "cmd+alt+end",
         "command": "lynx-keymap.toggleInlineSuggest"
       },
       {
-        "key": "ctrl+backspace",
-        "mac": "cmd+backspace",
+        "key": "ctrl+alt+backspace",
+        "mac": "cmd+alt+backspace",
         "command": "inlineChat.close",
         "when": "inlineChatFocused"
       },
