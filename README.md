@@ -61,7 +61,7 @@
 >   "ё", // Cyrillic letter (Russian)
 >   "~", // Tilde (Global)
 >   "半角/全角", // Japanese character
->   "|", // Vertical bar (Spanish)
+>   "|", //  (Spanish- Latam)
 > ];
 > ```
 
