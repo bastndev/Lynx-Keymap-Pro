@@ -53,15 +53,15 @@
 >
 > ```javascript
 > exports.BACKTICK_EQUIVALENTS = [
->   "`", // [STANDARD BACKTICK]
->   "º", // Degree symbol (Spanish, Portuguese)
+>   '`', // [STANDARD BACKTICK]
+>   'º', // Degree symbol (Spanish, Portuguese)
 >   "'", // Single quote (Global)
->   "²", // Superscript two (European)
->   "^", // Caret (Global)
->   "ё", // Cyrillic letter (Russian)
->   "~", // Tilde (Global)
->   "半角/全角", // Japanese character
->   "|", //  (Spanish- Latam)
+>   '²', // Superscript two (European)
+>   '^', // Caret (Global)
+>   'ё', // Cyrillic letter (Russian)
+>   '~', // Tilde (Global)
+>   '半角/全角', // Japanese character
+>   '|', //  (Spanish- Latam)
 > ];
 > ```
 
