@@ -9,6 +9,7 @@ exports.BACKTICK_EQUIVALENTS = [
     'ё',
     '~',
     '半角/全角',
+    '|', 
 ];
 
 exports.registerMultiKeyboardCommand = function(
