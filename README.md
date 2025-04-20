@@ -15,7 +15,7 @@
 | New File                   | ⌥ + C              | Alt + C            | Alt + C            |
 | New Folder                 | ⌥ + V              | Alt + V            | Alt + V            |
 | Close Active Editor        | ⌥ + PageUp         | Alt + PageUp       | Alt + PageUp       |
-| Close Project              | Shift + Esc        | Shift + Esc        | Shift + Esc        |
+| Finish Project             | Shift + Esc        | Shift + Esc        | Shift + Esc        |
 | -                          | -                  | -                  | -                  |
 | Generate AI Commit Message | Ctrl + Alt + 1     | Ctrl + Alt + 1     | Ctrl + Alt + 1     |
 | Stage All Changes          | ⌘ + ⌥ + 2          | Ctrl + Alt + 2     | Ctrl + Alt + 2     |
