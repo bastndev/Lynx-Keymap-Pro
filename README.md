@@ -35,33 +35,37 @@
 
 ### ► AI Features Keybindings
 
-| Command                                     | 🍎 macOS            | 🟦 Windows               | 🐧 Linux                 |
-| :------------------------------------------ | :------------------ | :----------------------- | :----------------------- |
-| Open AI Chat Interface (Popup/Modal)        | ` ⌘ + ``  `         | ` Ctrl + ``  `           | ` Ctrl + ``  `           |
-| Open AI Chat (Panel/View)                   | `⌘ + Tab`           | `Ctrl + Tab`             | `Ctrl + Tab`             |
-| Create New AI Session                       | ` ⌘ + ⌥ + ``  `     | ` Ctrl + Alt + ``  `     | ` Ctrl + Alt + ``  `     |
-| Show AI Chat History                        | ` ⌘ + ⇧ + ``  `     | ` Ctrl + Shift + ``  `   | ` Ctrl + Shift + ``  `   |
-| Toggle Inline Suggestions (AI Autocomplete) | `⌘ + ⌥ + End`       | `Ctrl + Alt + End`       | `Ctrl + Alt + End`       |
-| Close Inline Chat                           | `⌘ + ⌥ + Backspace` | `Ctrl + Alt + Backspace` | `Ctrl + Alt + Backspace` |
-| -                                           | `-`                 | `-`                      | `-`                      |
-| Generate AI Commit Message                  | `⌘ + Alt + 1`       | `Ctrl + Alt + 1`         | `Ctrl + Alt + 1`         |
+| Command                                     | 🍎 macOS            | 🟦 Windows                 | 🐧 Linux                   |
+| :------------------------------------------ | :------------------ | :------------------------- | :------------------------- |
+| Open AI Chat Interface (Popup/Modal)        | ⌘ + [Backquote]     | Ctrl + [Backquote]         | Ctrl + [Backquote]         |
+| Open AI Chat (Panel/View)                   | ⌘ + Tab             | Ctrl + Tab                 | Ctrl + Tab                 |
+| Create New AI Session                       | ⌘ + ⌥ + [Backquote] | Ctrl + Alt + [Backquote]   | Ctrl + Alt + [Backquote]   |
+| Show AI Chat History                        | ⌘ + ⇧ + [Backquote] | Ctrl + Shift + [Backquote] | Ctrl + Shift + [Backquote] |
+| Toggle Inline Suggestions (AI Autocomplete) | ⌘ + ⌥ + End         | Ctrl + Alt + End           | Ctrl + Alt + End           |
+| Close Inline Chat                           | ⌘ + ⌥ + Backspace   | Ctrl + Alt + Backspace     | Ctrl + Alt + Backspace     |
+| -                                           | -                   | -                          | -                          |
+| Generate AI Commit Message                  | ⌘ + Alt + 1         | Ctrl + Alt + 1             | Ctrl + Alt + 1             |
 
-### Now
-
-> [!TIP]
-> Now available with the following backtick equivalents: 🌎
+> [!IMPORTANT]
+> **Now [Backquote] = [`] supports all languages 🌎**
 >
-> ```javascript
+> ```js
 > exports.BACKTICK_EQUIVALENTS = [
->   '`', // [STANDARD BACKTICK]
->   'º', // Degree symbol (Spanish, Portuguese)
->   "'", // Single quote (Global)
->   '²', // Superscript two (European)
->   '^', // Caret (Global)
->   'ё', // Cyrillic letter (Russian)
->   '~', // Tilde (Global)
->   '半角/全角', // Japanese character
->   '|', //  (Spanish- Latam)
+>   ([Backquote] = '`'), // English, US
+>   ([Backquote] = 'º'), // Spanish (Spain)
+>   ([Backquote] = "'"), // French, German
+>   ([Backquote] = '²'), // French
+>   ([Backquote] = '^'), // German, Swiss
+>   ([Backquote] = 'ё'), // Russian
+>   ([Backquote] = '~'), // Portuguese, Italian
+>   ([Backquote] = '半角/全角'), // Japanese
+>   ([Backquote] = '|'), // Spanish (Latin America)
+>   ([Backquote] = '¬'), // UK, Latin America
+>   ([Backquote] = '¨'), // German, Swedish
+>   ([Backquote] = '´'), // Portuguese (Latin America)
+>   ([Backquote] = '₺'), // Turkish
+>   ([Backquote] = '₤'), // Italian
+>   ([Backquote] = ''), // And MORE
 > ];
 > ```
 
