@@ -46,6 +46,8 @@
 | -                                           | -                   | -                          | -                          |
 | Generate AI Commit Message                  | ⌘ + Alt + 1         | Ctrl + Alt + 1             | Ctrl + Alt + 1             |
 
+</br>
+
 > [!IMPORTANT] > **Now [Backquote] = [ ` ] supports all languages 🌎**
 >
 > ```js
