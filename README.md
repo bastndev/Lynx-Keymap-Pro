@@ -1,4 +1,4 @@
-![Use Extension](images/tec.png)
+![Use Extension](assets/images/technologies.png)
 
 <p align="center"><span style="color:gray;">Available for Windows, macOS, and Linux</span></p>
 </br>
@@ -47,7 +47,7 @@
 | Generate AI Commit Message                  | ⌘ + Alt + 1         | Ctrl + Alt + 1             | Ctrl + Alt + 1             |
 
 > [!IMPORTANT]
-> **Now [Backquote] = [`] supports all languages 🌎**
+> **Now [Backquote] = [ ` ] supports all languages 🌎**
 >
 > ```js
 > exports.BACKTICK_EQUIVALENTS = [

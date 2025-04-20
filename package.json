@@ -28,7 +28,7 @@
     "Linux",
     "MacOS"
   ],
-  "icon": "icon.png",
+  "icon": "assets/icon.png",
   "galleryBanner": {
     "color": "#0a0a0a",
     "theme": "dark"
