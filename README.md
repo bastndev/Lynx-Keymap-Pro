@@ -46,8 +46,7 @@
 | -                                           | -                   | -                          | -                          |
 | Generate AI Commit Message                  | ⌘ + Alt + 1         | Ctrl + Alt + 1             | Ctrl + Alt + 1             |
 
-> [!IMPORTANT]
-> **Now [Backquote] = [ ` ] supports all languages 🌎**
+> [!IMPORTANT] > **Now [Backquote] = [ ` ] supports all languages 🌎**
 >
 > ```js
 > exports.BACKTICK_EQUIVALENTS = [
@@ -77,12 +76,11 @@ Launch _Quick Open_
 - <img src="https://developer.apple.com/favicon.ico" width=16 height=16/> macOS `⌘P`
 - <img src="https://www.microsoft.com/favicon.ico" width=16 height=16/> Windows `Ctrl+P`
 
-
 Paste the following command and press `Enter`:
+
 ```
 ext install bastndev.lynx-keymap
 ```
-
 
 ## Contributors
 
