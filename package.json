@@ -2,7 +2,7 @@
   "name": "lynx-keymap",
   "displayName": "Lynx Keymap + AI 75%",
   "description": "Available now: VSCode, Cursor AI, Windsurf & Trae AI. + (Firebase Studio).",
-  "version": "0.6.2",
+  "version": "0.6.5",
   "publisher": "bastndev",
   "license": "MIT",
   "engines": {
@@ -28,7 +28,7 @@
     "Linux",
     "MacOS"
   ],
-  "icon": "icon.png",
+  "icon": "assets/icon.png",
   "galleryBanner": {
     "color": "#0a0a0a",
     "theme": "dark"
@@ -49,10 +49,10 @@
   "activationEvents": [
     "onCommand:lynx-keymap.generateAICommit",
     "onCommand:lynx-keymap.executeAIPopup",
-    "onCommand:lynx-keymap.openAIChat", 
+    "onCommand:lynx-keymap.openAIChat",
     "onCommand:lynx-keymap.createNewAISession",
     "onCommand:lynx-keymap.showAIHistory",
-    "onCommand:lynx-keymap.toggleInlineSuggest" 
+    "onCommand:lynx-keymap.toggleInlineSuggest"
   ],
   "main": "./src/extension.js",
   "contributes": {
@@ -64,7 +64,7 @@
         "command": "lynx-keymap.executeAIPopup",
         "title": "Open AI Chat Interface"
       },{
-        "command": "lynx-keymap.openAIChat", 
+        "command": "lynx-keymap.openAIChat",
         "title": "Open AI Chat"
       },{
         "command": "lynx-keymap.createNewAISession",
@@ -160,111 +160,36 @@
 
 
       {"//": "----- ---- --- -- -:3: AI Vscode-Cursor-Trae-Windsurf :"},
-      {"//": "Backtick key and its equivalents in different keyboard layouts"},
-      
-      {"//": "executeAIPopup - Backtick and equivalents"},
+      {"//": "Backtick key"},
+
+      {"//": "executeAIPopup - Backtick"},
       {
-        "key": "ctrl+`",
-        "mac": "cmd+`",
-        "command": "lynx-keymap.executeAIPopup"
-      },{
-        "key": "ctrl+º",
-        "mac": "cmd+º",
-        "command": "lynx-keymap.executeAIPopup"
-      },{
-        "key": "ctrl+'",
-        "mac": "cmd+'",
-        "command": "lynx-keymap.executeAIPopup"
-      },{
-        "key": "ctrl+^",
-        "mac": "cmd+^",
-        "command": "lynx-keymap.executeAIPopup"
-      },{
-        "key": "ctrl+~",
-        "mac": "cmd+~",
-        "command": "lynx-keymap.executeAIPopup"
-      },{
-        "key": "ctrl+²",
-        "mac": "cmd+²",
+        "key": "ctrl+[Backquote]",
+        "mac": "cmd+[Backquote]",
         "command": "lynx-keymap.executeAIPopup"
       },
-      {
-        "key": "ctrl+|",
-        "mac": "cmd+|",
-        "command": "lynx-keymap.executeAIPopup"
-      },
-      
+
       {"//": "openAIChat - normal"},
       {
         "key": "ctrl+tab",
         "mac": "cmd+tab",
         "command": "lynx-keymap.openAIChat"
       },
-      
-      {"//": "createNewAISession - Backtick and equivalents"},
+
+      {"//": "createNewAISession - Backtick"},
       {
-        "key": "ctrl+alt+`",
-        "mac": "cmd+alt+`",
-        "command": "lynx-keymap.createNewAISession"
-      },{
-        "key": "ctrl+alt+º",
-        "mac": "cmd+alt+º",
-        "command": "lynx-keymap.createNewAISession"
-      },{
-        "key": "ctrl+alt+'",
-        "mac": "cmd+alt+'",
-        "command": "lynx-keymap.createNewAISession"
-      },{
-        "key": "ctrl+alt+^",
-        "mac": "cmd+alt+^",
-        "command": "lynx-keymap.createNewAISession"
-      },{
-        "key": "ctrl+alt+~",
-        "mac": "cmd+alt+~",
-        "command": "lynx-keymap.createNewAISession"
-      },{
-        "key": "ctrl+alt+²",
-        "mac": "cmd+alt+²",
+        "key": "ctrl+alt+[Backquote]",
+        "mac": "cmd+alt+[Backquote]",
         "command": "lynx-keymap.createNewAISession"
       },
+
+      {"//": "showAIHistory - Backtick"},
       {
-        "key": "ctrl+alt+|",
-        "mac": "cmd+alt+|",
-        "command": "lynx-keymap.createNewAISession"
-      },
-      
-      {"//": "showAIHistory - Backtick and equivalents"},
-      {
-        "key": "ctrl+shift+`",
-        "mac": "cmd+shift+`",
-        "command": "lynx-keymap.showAIHistory"
-      },{
-        "key": "ctrl+shift+º",
-        "mac": "cmd+shift+º",
-        "command": "lynx-keymap.showAIHistory"
-      },{
-        "key": "ctrl+shift+'",
-        "mac": "cmd+shift+'",
-        "command": "lynx-keymap.showAIHistory"
-      },{
-        "key": "ctrl+shift+^",
-        "mac": "cmd+shift+^",
-        "command": "lynx-keymap.showAIHistory"
-      },{
-        "key": "ctrl+shift+~",
-        "mac": "cmd+shift+~",
-        "command": "lynx-keymap.showAIHistory"
-      },{
-        "key": "ctrl+shift+²",
-        "mac": "cmd+shift+²",
+        "key": "ctrl+shift+[Backquote]",
+        "mac": "cmd+shift+[Backquote]",
         "command": "lynx-keymap.showAIHistory"
       },
-      {
-        "key": "ctrl+shift+|",
-        "mac": "cmd+shift+|",
-        "command": "lynx-keymap.showAIHistory"
-      },
-      
+
       {"//": "--- -- - toggleInlineSuggest and other commands unchanged"},
       {
         "key": "ctrl+alt+end",
@@ -277,7 +202,7 @@
         "command": "inlineChat.close",
         "when": "inlineChatFocused"
       },
-      
+
 
       {"//": "---- --- -- -:4: Run Project & refresh & stop :"},
       {
@@ -323,7 +248,7 @@
       {
         "key": "ctrl+enter",
         "command": "-github.copilot.generate"
-      }           
+      }
     ]
   }
 }
