@@ -69,10 +69,20 @@
 > ];
 > ```
 
-# Installation
+## Installation
 
-1. Open (Ctrl+P)
-2. paste `ext install bastndev.lynx-theme`
+Launch _Quick Open_
+
+- <img src="https://www.kernel.org/theme/images/logos/favicon.png" width=16 height=16/> Linux `Ctrl+P`
+- <img src="https://developer.apple.com/favicon.ico" width=16 height=16/> macOS `⌘P`
+- <img src="https://www.microsoft.com/favicon.ico" width=16 height=16/> Windows `Ctrl+P`
+
+
+Paste the following command and press `Enter`:
+```
+ext install bastndev.lynx-keymap
+```
+
 
 ## Contributors
 
