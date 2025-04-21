@@ -95,10 +95,8 @@ Here is the project link if you want to collaborate: [[>\_ ] code](https://githu
 
 ## About Me
 
-- [X](https://twitter.com/bastndev) - Best for asking questions and discussing issues.
-- [Discord](https://discord.com/invite/bgzvzP6aZH) - Best for hanging out with the community.
-- [Youtube](https://www.youtube.com/@bastndev) - For more content about Lynx and programming,
-
-## Release Notes
+- 🐦 [X](https://twitter.com/bastndev) - For questions and discussions.
+- 💬 [Discord](https://discord.com/invite/bgzvzP6aZH) - For community interaction.
+- ▶️ [Youtube](https://www.youtube.com/@bastndev) - For content about Lynx and programming.
 
 **Enjoy your new keybindings! Suggestions or feedback? Open an issue or contribute.**
