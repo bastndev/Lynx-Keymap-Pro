@@ -31,8 +31,10 @@
 | -                          | -               | -                  | -                  |
 | Format Document            | ⌥ + F           | Alt + F            | Alt + F            |
 | Toggle Bottom Panel        | PageDown        | PageDown           | PageDown           |
-| Toggle Terminal            | PageDown        | PageDown           | PageDown           |
 | Markdown Preview to Side   | ⌘ + PageUp      | Ctrl + PageUp      | Ctrl + PageUp      |
+| Open/close Terminal        | PageDown        | PageDown           | PageDown           |
+| Open/close D'console       | ⌘ + PageDown    | Ctrl + PageDown    | Ctrl + PageDown    |
+| Open GitLens               | ⌥ + PageDown    | Alt + PageDown     | Alt +PageDown      |
 | -                          | -               | -                  | -                  |
 | Start Debugging            | Insert          | Insert             | Insert             |
 | Restart Debugging          | ⌘ + Insert      | Ctrl + Insert      | Ctrl + Insert      |
