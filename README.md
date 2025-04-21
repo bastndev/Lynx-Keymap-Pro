@@ -48,7 +48,7 @@
 
 </br>
 
-> [!IMPORTANT]
+> [!TIP]
 > Now **[Backquote] = [ ` ]** supports all languages 🌎
 >
 > ```ts
