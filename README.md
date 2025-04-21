@@ -37,12 +37,12 @@
 
 | Command                                     | 🍎 macOS            | 🟦 Windows                 | 🐧 Linux                   |
 | :------------------------------------------ | :------------------ | :------------------------- | :------------------------- |
-| Open AI Chat Interface (Popup/Modal)        | ⌘ + [Backquote]     | Ctrl + [Backquote]         | Ctrl + [Backquote]         |
+| Open AI Chat Interface (Popup/Modal)        | ⌘ + `Backquote`     | Ctrl + `Backquote`         | Ctrl + `Backquote`         |
 | Open AI Chat (Panel/View)                   | ⌘ + Tab             | Ctrl + Tab                 | Ctrl + Tab                 |
-| Create New AI Session                       | ⌘ + ⌥ + [Backquote] | Ctrl + Alt + [Backquote]   | Ctrl + Alt + [Backquote]   |
-| Show AI Chat History                        | ⌘ + ⇧ + [Backquote] | Ctrl + Shift + [Backquote] | Ctrl + Shift + [Backquote] |
+| Create New AI Session                       | ⌘ + ⌥ + `Backquote` | Ctrl + Alt + `Backquote`   | Ctrl + Alt + `Backquote`   |
+| Show AI Chat History                        | ⌘ + ⇧ + `Backquote` | Ctrl + Shift + `Backquote` | Ctrl + Shift + `Backquote` |
 | Toggle Inline Suggestions (AI Autocomplete) | ⌘ + ⌥ + End         | Ctrl + Alt + End           | Ctrl + Alt + End           |
-| Close Inline Chat                           | ⌘ + ⌥ + Backspace   | Ctrl + Alt + Backspace     | Ctrl + Alt + Backspace     |
+| Close Inline Chat                           | ⌘ + ⌥ + `Backspace` | Ctrl + Alt + `Backspace`   | Ctrl + Alt + `Backspace`   |
 | -                                           | -                   | -                          | -                          |
 | Generate AI Commit Message                  | ⌘ + Alt + 1         | Ctrl + Alt + 1             | Ctrl + Alt + 1             |
 
@@ -53,21 +53,21 @@
 >
 > ```ts
 > exports.BACKTICK_EQUIVALENTS = [
->   { '[Backquote]': '`' }, // English, US
->   { '[Backquote]': 'º' }, // Spanish (Spain)
->   { '[Backquote]': "'" }, // French, German
->   { '[Backquote]': '²' }, // French
->   { '[Backquote]': '^' }, // German, Swiss
->   { '[Backquote]': 'ё' }, // Russian
->   { '[Backquote]': '~' }, // Portuguese, Italian
->   { '[Backquote]': '半角/全角' }, // Japanese
->   { '[Backquote]': '|' }, // Spanish (Latin America)
->   { '[Backquote]': '¬' }, // UK, Latin America
->   { '[Backquote]': '¨' }, // German, Swedish
->   { '[Backquote]': '´' }, // Portuguese (Latin America)
->   { '[Backquote]': '₺' }, // Turkish
->   { '[Backquote]': '₤' }, // Italian
->   { '[Backquote]': '' }, // And MORE...
+>   { Backquote: '`' }, // English, US
+>   { Backquote: 'º' }, // Spanish (Spain)
+>   { Backquote: "'" }, // French, German
+>   { Backquote: '²' }, // French
+>   { Backquote: '^' }, // German, Swiss
+>   { Backquote: 'ё' }, // Russian
+>   { Backquote: '~' }, // Portuguese, Italian
+>   { Backquote: '半角/全角' }, // Japanese
+>   { Backquote: '|' }, // Spanish (Latin America)
+>   { Backquote: '¬' }, // UK, Latin America
+>   { Backquote: '¨' }, // German, Swedish
+>   { Backquote: '´' }, // Portuguese (Latin America)
+>   { Backquote: '₺' }, // Turkish
+>   { Backquote: '₤' }, // Italian
+>   { Backquote: '' }, // And MORE...
 > ];
 > ```
 
