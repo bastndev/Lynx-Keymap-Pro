@@ -1,7 +1,10 @@
 ![Use Extension](assets/images/technologies.png)
 
-<p align="center"><span style="color:gray;">Available for Windows, macOS, and Linux</span></p>
-</br>
+<p align="center">
+    <a href="https://marketplace.visualstudio.com/items?itemName=bastndev.lynx-keymap"><img src="https://vsmarketplacebadges.dev/version-short/bastndev.lynx-keymap.jpg?style=for-the-badge&colorA=009945&colorB=EEEEEE&color=000000&label=VERSION" alt="Version"></a>&nbsp;
+    <a href="https://marketplace.visualstudio.com/items?itemName=bastndev.lynx-keymap"><img src="https://vsmarketplacebadges.dev/rating-short/bastndev.lynx-keymap.jpg?style=for-the-badge&colorA=009945&colorB=EEEEEE&color=000000&label=Rating" alt="Rating"></a>&nbsp;
+    <a href="https://marketplace.visualstudio.com/items?itemName=bastndev.lynx-keymap"><img src="https://vsmarketplacebadges.dev/installs-short/bastndev.lynx-keymap.jpg?style=for-the-badge&colorA=009945&colorB=EEEEEE&color=000000&label=Installs" alt="Installs"></a>&nbsp;
+</p>
 
 ### ► How to Use Standard Keybindings
 
@@ -35,20 +38,21 @@
 
 ### ► AI Features Keybindings
 
-| Command                                     | 🍎 macOS            | 🟦 Windows                 | 🐧 Linux                   |
-| :------------------------------------------ | :------------------ | :------------------------- | :------------------------- |
-| Open AI Chat Interface (Popup/Modal)        | ⌘ + `Backquote`     | Ctrl + `Backquote`         | Ctrl + `Backquote`         |
-| Open AI Chat (Panel/View)                   | ⌘ + Tab             | Ctrl + Tab                 | Ctrl + Tab                 |
-| Create New AI Session                       | ⌘ + ⌥ + `Backquote` | Ctrl + Alt + `Backquote`   | Ctrl + Alt + `Backquote`   |
-| Show AI Chat History                        | ⌘ + ⇧ + `Backquote` | Ctrl + Shift + `Backquote` | Ctrl + Shift + `Backquote` |
-| Toggle Inline Suggestions (AI Autocomplete) | ⌘ + ⌥ + End         | Ctrl + Alt + End           | Ctrl + Alt + End           |
-| Close Inline Chat                           | ⌘ + ⌥ + `Backspace` | Ctrl + Alt + `Backspace`   | Ctrl + Alt + `Backspace`   |
-| -                                           | -                   | -                          | -                          |
-| Generate AI Commit Message                  | ⌘ + Alt + 1         | Ctrl + Alt + 1             | Ctrl + Alt + 1             |
+| Command                         | 🍎 macOS            | 🟦 Windows                 | 🐧 Linux                   |
+| :------------------------------ | :------------------ | :------------------------- | :------------------------- |
+| AI Chat Interface (Popup/Modal) | ⌘ + `Backquote`     | Ctrl + `Backquote`         | Ctrl + `Backquote`         |
+| AI Chat (Panel/View)            | ⌘ + Tab             | Ctrl + Tab                 | Ctrl + Tab                 |
+| Create New AI Session           | ⌘ + ⌥ + `Backquote` | Ctrl + Alt + `Backquote`   | Ctrl + Alt + `Backquote`   |
+| Show AI Chat History            | ⌘ + ⇧ + `Backquote` | Ctrl + Shift + `Backquote` | Ctrl + Shift + `Backquote` |
+| Toggle Inline Suggestions (AI)  | ⌘ + ⌥ + End         | Ctrl + Alt + End           | Ctrl + Alt + End           |
+| Close Inline Chat               | ⌘ + ⌥ + `Backspace` | Ctrl + Alt + `Backspace`   | Ctrl + Alt + `Backspace`   |
+| -                               | -                   | -                          | -                          |
+| Generate AI Commit Message      | ⌘ + Alt + 1         | Ctrl + Alt + 1             | Ctrl + Alt + 1             |
 
 </br>
 
 > [!IMPORTANT]
+>
 > Now **`Backquote` = ( ` )** supports all languages 🌎
 >
 > ```ts
