@@ -48,27 +48,28 @@
 
 </br>
 
-> [!IMPORTANT] > **Now [Backquote] = [ ` ] supports all languages 🌎**
->
-> ```js
-> exports.BACKTICK_EQUIVALENTS = [
->   ([Backquote] = '`'), // English, US
->   ([Backquote] = 'º'), // Spanish (Spain)
->   ([Backquote] = "'"), // French, German
->   ([Backquote] = '²'), // French
->   ([Backquote] = '^'), // German, Swiss
->   ([Backquote] = 'ё'), // Russian
->   ([Backquote] = '~'), // Portuguese, Italian
->   ([Backquote] = '半角/全角'), // Japanese
->   ([Backquote] = '|'), // Spanish (Latin America)
->   ([Backquote] = '¬'), // UK, Latin America
->   ([Backquote] = '¨'), // German, Swedish
->   ([Backquote] = '´'), // Portuguese (Latin America)
->   ([Backquote] = '₺'), // Turkish
->   ([Backquote] = '₤'), // Italian
->   ([Backquote] = ''), // And MORE...
-> ];
-> ```
+> [!IMPORTANT]
+> Now **[Backquote] = [ ` ] supports all languages 🌎**
+
+```ts
+exports.BACKTICK_EQUIVALENTS = [
+  { '[Backquote]': '`' }, // English, US
+  { '[Backquote]': 'º' }, // Spanish (Spain)
+  { '[Backquote]': "'" }, // French, German
+  { '[Backquote]': '²' }, // French
+  { '[Backquote]': '^' }, // German, Swiss
+  { '[Backquote]': 'ё' }, // Russian
+  { '[Backquote]': '~' }, // Portuguese, Italian
+  { '[Backquote]': '半角/全角' }, // Japanese
+  { '[Backquote]': '|' }, // Spanish (Latin America)
+  { '[Backquote]': '¬' }, // UK, Latin America
+  { '[Backquote]': '¨' }, // German, Swedish
+  { '[Backquote]': '´' }, // Portuguese (Latin America)
+  { '[Backquote]': '₺' }, // Turkish
+  { '[Backquote]': '₤' }, // Italian
+  { '[Backquote]': '' }, // And MORE...
+];
+```
 
 ## Installation
 

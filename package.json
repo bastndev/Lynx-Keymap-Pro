@@ -78,7 +78,6 @@
       }
     ],
     "keybindings": [
-      {"//": "---- --- -- -:1: Activity Bar"},
       {
         "key": "ctrl+1",
         "mac": "cmd+1",
@@ -93,8 +92,8 @@
         "command": "workbench.view.extensions"
       },
 
-
-      {"//": "----- ---- --- -- -: Side Bar :"},
+      
+      
       {
         "key": "alt+c",
         "mac": "alt+c",
@@ -110,8 +109,7 @@
       },
 
 
-      {"//": "---- --- -- -: Side Bar: + GIT-GitHub + AI :"},
-      {"//": "VScode-CursorAI-TraeAI-Windsurf :"},
+
       {
         "key": "ctrl+alt+1",
         "mac": "ctrl+alt+1",
@@ -129,7 +127,7 @@
       },
 
 
-      {"//": "-- -: Side Bar: + Commit & push :"},
+
       {
         "key": "ctrl+enter",
         "mac": "cmd+enter",
@@ -143,7 +141,7 @@
       },
 
 
-      {"//": "---- --- -- -:2: FormatDocument & terminal :"},
+
       {
         "key": "alt+f",
         "mac": "alt+f",
@@ -159,38 +157,31 @@
       },
 
 
-      {"//": "----- ---- --- -- -:3: AI Vscode-Cursor-Trae-Windsurf :"},
-      {"//": "Backtick key"},
 
-      {"//": "executeAIPopup - Backtick"},
       {
         "key": "ctrl+[Backquote]",
         "mac": "cmd+[Backquote]",
         "command": "lynx-keymap.executeAIPopup"
       },
 
-      {"//": "openAIChat - normal"},
       {
         "key": "ctrl+tab",
         "mac": "cmd+tab",
         "command": "lynx-keymap.openAIChat"
       },
 
-      {"//": "createNewAISession - Backtick"},
       {
         "key": "ctrl+alt+[Backquote]",
         "mac": "cmd+alt+[Backquote]",
         "command": "lynx-keymap.createNewAISession"
       },
 
-      {"//": "showAIHistory - Backtick"},
       {
         "key": "ctrl+shift+[Backquote]",
         "mac": "cmd+shift+[Backquote]",
         "command": "lynx-keymap.showAIHistory"
       },
 
-      {"//": "--- -- - toggleInlineSuggest and other commands unchanged"},
       {
         "key": "ctrl+alt+end",
         "mac": "cmd+alt+end",
@@ -204,7 +195,7 @@
       },
 
 
-      {"//": "---- --- -- -:4: Run Project & refresh & stop :"},
+
       {
         "key": "insert",
         "mac": "insert",
@@ -220,7 +211,7 @@
       },
 
 
-      {"//": "---- --- -- -: Open & close Markdown :"},
+
       {
         "key": "pageup",
         "mac": "pageup",
@@ -236,7 +227,7 @@
       },
 
 
-      {"//": "---- --- -- -: End Project :"},
+
       {
         "key": "shift+escape",
         "mac": "shift+escape",
@@ -244,7 +235,7 @@
       },
 
 
-      {"//": "---- --- -- -: trash :D"},
+
       {
         "key": "ctrl+enter",
         "command": "-github.copilot.generate"
