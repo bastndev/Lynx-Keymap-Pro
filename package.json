@@ -109,16 +109,15 @@
       },
 
 
-
       {
         "key": "ctrl+alt+1",
-        "mac": "ctrl+alt+1",
-        "command": "lynx-keymap.generateAICommit"
-      },{
-        "key": "ctrl+alt+2",
-        "mac": "cmd+alt+2",
+        "mac": "cmd+alt+1",
         "command": "git.stageAll",
         "when": "scmProvider == git"
+      },{
+        "key": "ctrl+alt+2",
+        "mac": "ctrl+alt+2",
+        "command": "lynx-keymap.generateAICommit"
       },{
         "key": "ctrl+alt+3",
         "mac": "cmd+alt+3",

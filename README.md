@@ -1,4 +1,4 @@
-![Use Extension](assets/images/technologies.png)
+![Use Extension](https://raw.githubusercontent.com/bastndev/Lynx-Keymap/refs/heads/main/assets/images/technologies.png)
 
 <p align="center">
     <a href="https://marketplace.visualstudio.com/items?itemName=bastndev.lynx-keymap"><img src="https://vsmarketplacebadges.dev/version-short/bastndev.lynx-keymap.jpg?style=for-the-badge&colorA=009945&colorB=EEEEEE&color=000000&label=VERSION" alt="Version"></a>&nbsp;
@@ -6,35 +6,37 @@
     <a href="https://marketplace.visualstudio.com/items?itemName=bastndev.lynx-keymap"><img src="https://vsmarketplacebadges.dev/installs-short/bastndev.lynx-keymap.jpg?style=for-the-badge&colorA=009945&colorB=EEEEEE&color=000000&label=Installs" alt="Installs"></a>&nbsp;
 </p>
 
+</br>
+
 ### ► How to Use Standard Keybindings
 
-| Command                    | 🍎 macOS           | 🟦 Windows         | 🐧 Linux           |
-| :------------------------- | :----------------- | :----------------- | :----------------- |
-| Open Explorer              | ⌘ + 1              | Ctrl + 1           | Ctrl + 1           |
-| Open Source Control (SCM)  | ⌘ + 2              | Ctrl + 2           | Ctrl + 2           |
-| Open Extensions View       | ⌘ + 3              | Ctrl + 3           | Ctrl + 3           |
-| Toggle Sidebar Visibility  | Ctrl + Shift + Tab | Ctrl + Shift + Tab | Ctrl + Shift + Tab |
-| -                          | -                  | -                  | -                  |
-| New File                   | ⌥ + C              | Alt + C            | Alt + C            |
-| New Folder                 | ⌥ + V              | Alt + V            | Alt + V            |
-| Close Active Editor        | ⌥ + PageUp         | Alt + PageUp       | Alt + PageUp       |
-| Finish Project             | Shift + Esc        | Shift + Esc        | Shift + Esc        |
-| -                          | -                  | -                  | -                  |
-| Generate AI Commit Message | Ctrl + Alt + 1     | Ctrl + Alt + 1     | Ctrl + Alt + 1     |
-| Stage All Changes          | ⌘ + ⌥ + 2          | Ctrl + Alt + 2     | Ctrl + Alt + 2     |
-| Unstage All Changes        | ⌘ + ⌥ + 3          | Ctrl + Alt + 3     | Ctrl + Alt + 3     |
-| Git Commit                 | ⌘ + Enter          | Ctrl + Enter       | Ctrl + Enter       |
-| Git Push                   | ⌘ + ⌥ + Enter      | Ctrl + Alt + Enter | Ctrl + Alt + Enter |
-| View Git Changes           | PageUp             | PageUp             | PageUp             |
-| -                          | -                  | -                  | -                  |
-| Format Document            | ⌥ + F              | Alt + F            | Alt + F            |
-| Toggle Bottom Panel        | PageDown           | PageDown           | PageDown           |
-| Toggle Terminal            | PageDown           | PageDown           | PageDown           |
-| Markdown Preview to Side   | ⌘ + PageUp         | Ctrl + PageUp      | Ctrl + PageUp      |
-| -                          | -                  | -                  | -                  |
-| Start Debugging            | Insert             | Insert             | Insert             |
-| Restart Debugging          | Ctrl + Insert      | Ctrl + Insert      | Ctrl + Insert      |
-| Stop Debugging             | End                | End                | End                |
+| Command                    | 🍎 macOS        | 🟦 Windows         | 🐧 Linux           |
+| :------------------------- | :-------------- | :----------------- | :----------------- |
+| Open Explorer              | ⌘ + 1           | Ctrl + 1           | Ctrl + 1           |
+| Open Source Control (SCM)  | ⌘ + 2           | Ctrl + 2           | Ctrl + 2           |
+| Open Extensions View       | ⌘ + 3           | Ctrl + 3           | Ctrl + 3           |
+| Toggle Sidebar Visibility  | ⌘ + Shift + Tab | Ctrl + Shift + Tab | Ctrl + Shift + Tab |
+| -                          | -               | -                  | -                  |
+| New File                   | ⌥ + C           | Alt + C            | Alt + C            |
+| New Folder                 | ⌥ + V           | Alt + V            | Alt + V            |
+| Close Active Editor        | ⌥ + PageUp      | Alt + PageUp       | Alt + PageUp       |
+| Finish Project             | Shift + Esc     | Shift + Esc        | Shift + Esc        |
+| -                          | -               | -                  | -                  |
+| Stage All Changes          | ⌘ + ⌥ + 1       | Ctrl + Alt + 1     | Ctrl + Alt + 1     |
+| Generate AI Commit Message | ⌘ + ⌥ + 2       | Ctrl + Alt + 2     | Ctrl + Alt + 2     |
+| Unstage All Changes        | ⌘ + ⌥ + 3       | Ctrl + Alt + 3     | Ctrl + Alt + 3     |
+| Git Commit                 | ⌘ + Enter       | Ctrl + Enter       | Ctrl + Enter       |
+| Git Push                   | ⌘ + ⌥ + Enter   | Ctrl + Alt + Enter | Ctrl + Alt + Enter |
+| View Git Changes           | PageUp          | PageUp             | PageUp             |
+| -                          | -               | -                  | -                  |
+| Format Document            | ⌥ + F           | Alt + F            | Alt + F            |
+| Toggle Bottom Panel        | PageDown        | PageDown           | PageDown           |
+| Toggle Terminal            | PageDown        | PageDown           | PageDown           |
+| Markdown Preview to Side   | ⌘ + PageUp      | Ctrl + PageUp      | Ctrl + PageUp      |
+| -                          | -               | -                  | -                  |
+| Start Debugging            | Insert          | Insert             | Insert             |
+| Restart Debugging          | ⌘ + Insert      | Ctrl + Insert      | Ctrl + Insert      |
+| Stop Debugging             | End             | End                | End                |
 
 ### ► AI Features Keybindings
 
@@ -47,7 +49,7 @@
 | Toggle Inline Suggestions (AI)  | ⌘ + ⌥ + End         | Ctrl + Alt + End           | Ctrl + Alt + End           |
 | Close Inline Chat               | ⌘ + ⌥ + `Backspace` | Ctrl + Alt + `Backspace`   | Ctrl + Alt + `Backspace`   |
 | -                               | -                   | -                          | -                          |
-| Generate AI Commit Message      | ⌘ + Alt + 1         | Ctrl + Alt + 1             | Ctrl + Alt + 1             |
+| Generate AI Commit Message      | ⌘ + ⌥ + 2           | Ctrl + Alt + 2             | Ctrl + Alt + 2             |
 
 </br>
 
