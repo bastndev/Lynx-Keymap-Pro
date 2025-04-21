@@ -99,17 +99,11 @@ Here is the project link if you want to collaborate: [[>\_ ] code](https://githu
 - 💬 [Discord](https://discord.com/invite/bgzvzP6aZH) - For community interaction.
 - ▶️ [Youtube](https://www.youtube.com/@bastndev) - For content about Lynx and programming.
 
-**Enjoy your new keybindings! Suggestions or feedback? Open an issue or contribute.**
-[MORE](https://marketplace.visualstudio.com/publishers/bastndev)
-
-# README
-
-## Bastndev VS Code Extensions
-
-A curated list of official VS Code extensions by **bastndev**, complete with icons, installation links, and concise descriptions.
-
 | Icon                                                                                                                                                | Name                                                                                                   | Description                                                                                                                                     |
 | --------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------- |
 | ![](https://bastndev.gallerycdn.vsassets.io/extensions/bastndev/lynx-js-snippets/0.2.0/1745166683713/Microsoft.VisualStudio.Services.Icons.Default) | [Lynx-js Snippets .tsx](https://marketplace.visualstudio.com/items?itemName=bastndev.lynx-js-snippets) | A powerful collection of Lynx.js snippets (for TypeScript & React) that speeds up common coding patterns.                                       |
 | ![](https://bastndev.gallerycdn.vsassets.io/extensions/bastndev/lynx-theme/0.1.2/1744898058774/Microsoft.VisualStudio.Services.Icons.Default)       | [Lynx Theme](https://marketplace.visualstudio.com/items?itemName=bastndev.lynx-theme)                  | A sleek, customizable theme for VS Code with built‑in support for Cursor‑AI, Windsurf & Trae‑AI integrations.                                   |
 | ![](https://bastndev.gallerycdn.vsassets.io/extensions/bastndev/lynxjs-pack/0.1.8/1745206864969/Microsoft.VisualStudio.Services.Icons.Default)      | [LynxJS Pack](https://marketplace.visualstudio.com/items?itemName=bastndev.lynxjs-pack)                | An all‑in‑one toolkit for LynxJS mobile/web development—bundles keymap, snippets & AI tools like Cursor AI, Windsurf, Trae AI, Firebase Studio. |
+
+**Enjoy your new keybindings! Suggestions or feedback? Open an issue or contribute.**
+[MORE](https://marketplace.visualstudio.com/publishers/bastndev)
