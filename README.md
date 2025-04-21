@@ -49,7 +49,7 @@
 </br>
 
 > [!IMPORTANT]
-> Now **Backquote = [ ` ]** supports all languages 🌎
+> Now **Backquote = ( ` )** supports all languages 🌎
 >
 > ```ts
 > exports.BACKTICK_EQUIVALENTS = [
