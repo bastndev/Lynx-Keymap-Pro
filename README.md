@@ -37,37 +37,37 @@
 
 | Command                                     | 🍎 macOS            | 🟦 Windows                 | 🐧 Linux                   |
 | :------------------------------------------ | :------------------ | :------------------------- | :------------------------- |
-| Open AI Chat Interface (Popup/Modal)        | ⌘ + [Backquote]     | Ctrl + [Backquote]         | Ctrl + [Backquote]         |
+| Open AI Chat Interface (Popup/Modal)        | ⌘ + `Backquote`     | Ctrl + `Backquote`         | Ctrl + `Backquote`         |
 | Open AI Chat (Panel/View)                   | ⌘ + Tab             | Ctrl + Tab                 | Ctrl + Tab                 |
-| Create New AI Session                       | ⌘ + ⌥ + [Backquote] | Ctrl + Alt + [Backquote]   | Ctrl + Alt + [Backquote]   |
-| Show AI Chat History                        | ⌘ + ⇧ + [Backquote] | Ctrl + Shift + [Backquote] | Ctrl + Shift + [Backquote] |
+| Create New AI Session                       | ⌘ + ⌥ + `Backquote` | Ctrl + Alt + `Backquote`   | Ctrl + Alt + `Backquote`   |
+| Show AI Chat History                        | ⌘ + ⇧ + `Backquote` | Ctrl + Shift + `Backquote` | Ctrl + Shift + `Backquote` |
 | Toggle Inline Suggestions (AI Autocomplete) | ⌘ + ⌥ + End         | Ctrl + Alt + End           | Ctrl + Alt + End           |
-| Close Inline Chat                           | ⌘ + ⌥ + Backspace   | Ctrl + Alt + Backspace     | Ctrl + Alt + Backspace     |
+| Close Inline Chat                           | ⌘ + ⌥ + `Backspace` | Ctrl + Alt + `Backspace`   | Ctrl + Alt + `Backspace`   |
 | -                                           | -                   | -                          | -                          |
 | Generate AI Commit Message                  | ⌘ + Alt + 1         | Ctrl + Alt + 1             | Ctrl + Alt + 1             |
 
 </br>
 
-> [!TIP]
-> Now **Backquote = [ ` ]** supports all languages 🌎
+> [!IMPORTANT]
+> Now **`Backquote` = ( ` )** supports all languages 🌎
 >
 > ```ts
 > exports.BACKTICK_EQUIVALENTS = [
->   { '[Backquote]': '`' }, // English, US
->   { '[Backquote]': 'º' }, // Spanish (Spain)
->   { '[Backquote]': "'" }, // French, German
->   { '[Backquote]': '²' }, // French
->   { '[Backquote]': '^' }, // German, Swiss
->   { '[Backquote]': 'ё' }, // Russian
->   { '[Backquote]': '~' }, // Portuguese, Italian
->   { '[Backquote]': '半角/全角' }, // Japanese
->   { '[Backquote]': '|' }, // Spanish (Latin America)
->   { '[Backquote]': '¬' }, // UK, Latin America
->   { '[Backquote]': '¨' }, // German, Swedish
->   { '[Backquote]': '´' }, // Portuguese (Latin America)
->   { '[Backquote]': '₺' }, // Turkish
->   { '[Backquote]': '₤' }, // Italian
->   { '[Backquote]': '' }, // And MORE...
+>   { Backquote: '`' }, // English, US
+>   { Backquote: 'º' }, // Spanish (Spain)
+>   { Backquote: "'" }, // French, German
+>   { Backquote: '²' }, // French
+>   { Backquote: '^' }, // German, Swiss
+>   { Backquote: 'ё' }, // Russian
+>   { Backquote: '~' }, // Portuguese, Italian
+>   { Backquote: '半角/全角' }, // Japanese
+>   { Backquote: '|' }, // Spanish (Latin America)
+>   { Backquote: '¬' }, // UK, Latin America
+>   { Backquote: '¨' }, // German, Swedish
+>   { Backquote: '´' }, // Portuguese (Latin America)
+>   { Backquote: '₺' }, // Turkish
+>   { Backquote: '₤' }, // Italian
+>   { Backquote: '' }, // And MORE...
 > ];
 > ```
 
@@ -99,4 +99,13 @@ Here is the project link if you want to collaborate: [[>\_ ] code](https://githu
 - 💬 [Discord](https://discord.com/invite/bgzvzP6aZH) - For community interaction.
 - ▶️ [Youtube](https://www.youtube.com/@bastndev) - For content about Lynx and programming.
 
-**Enjoy your new keybindings! Suggestions or feedback? Open an issue or contribute.**
+</br>
+
+| Icon                                                                                                                                                | Name                                                                                                   | Description                                                                                                                                     |
+| --------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------- |
+| ![](https://bastndev.gallerycdn.vsassets.io/extensions/bastndev/lynx-js-snippets/0.2.0/1745166683713/Microsoft.VisualStudio.Services.Icons.Default) | [Lynx-js Snippets .tsx](https://marketplace.visualstudio.com/items?itemName=bastndev.lynx-js-snippets) | A powerful collection of Lynx.js snippets (for TypeScript & React) that speeds up common coding patterns.                                       |
+| ![](https://bastndev.gallerycdn.vsassets.io/extensions/bastndev/lynx-theme/0.1.2/1744898058774/Microsoft.VisualStudio.Services.Icons.Default)       | [Lynx Theme](https://marketplace.visualstudio.com/items?itemName=bastndev.lynx-theme)                  | A sleek, customizable theme for VS Code with built‑in support for Cursor‑AI, Windsurf & Trae‑AI integrations.                                   |
+| ![](https://bastndev.gallerycdn.vsassets.io/extensions/bastndev/lynxjs-pack/0.1.8/1745206864969/Microsoft.VisualStudio.Services.Icons.Default)      | [LynxJS Pack](https://marketplace.visualstudio.com/items?itemName=bastndev.lynxjs-pack)                | An all‑in‑one toolkit for LynxJS mobile/web development—bundles keymap, snippets & AI tools like Cursor AI, Windsurf, Trae AI, Firebase Studio. |
+
+**Enjoy 🎉 your new keybindings! Suggestions or feedback? Open an issue or contribute.**
+[MORE](https://marketplace.visualstudio.com/publishers/bastndev)
