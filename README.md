@@ -107,5 +107,5 @@ Here is the project link if you want to collaborate: [[>\_ ] code](https://githu
 | ![](https://bastndev.gallerycdn.vsassets.io/extensions/bastndev/lynx-theme/0.1.2/1744898058774/Microsoft.VisualStudio.Services.Icons.Default)       | [Lynx Theme](https://marketplace.visualstudio.com/items?itemName=bastndev.lynx-theme)                  | A sleek, customizable theme for VS Code with built‑in support for Cursor‑AI, Windsurf & Trae‑AI integrations.                                   |
 | ![](https://bastndev.gallerycdn.vsassets.io/extensions/bastndev/lynxjs-pack/0.1.8/1745206864969/Microsoft.VisualStudio.Services.Icons.Default)      | [LynxJS Pack](https://marketplace.visualstudio.com/items?itemName=bastndev.lynxjs-pack)                | An all‑in‑one toolkit for LynxJS mobile/web development—bundles keymap, snippets & AI tools like Cursor AI, Windsurf, Trae AI, Firebase Studio. |
 
-**Enjoy your new keybindings! Suggestions or feedback? Open an issue or contribute.**
-[MORE 🎉](https://marketplace.visualstudio.com/publishers/bastndev)
+**Enjoy 🎉 your new keybindings! Suggestions or feedback? Open an issue or contribute.**
+[MORE](https://marketplace.visualstudio.com/publishers/bastndev)
