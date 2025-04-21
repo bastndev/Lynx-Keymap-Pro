@@ -48,25 +48,26 @@
 
 </br>
 
-> [!IMPORTANT] > **Now [Backquote] = [ ` ] supports all languages 🌎**
+> [!TIP]
+> Now **Backquote = [ ` ]** supports all languages 🌎
 >
-> ```js
+> ```ts
 > exports.BACKTICK_EQUIVALENTS = [
->   ([Backquote] = '`'), // English, US
->   ([Backquote] = 'º'), // Spanish (Spain)
->   ([Backquote] = "'"), // French, German
->   ([Backquote] = '²'), // French
->   ([Backquote] = '^'), // German, Swiss
->   ([Backquote] = 'ё'), // Russian
->   ([Backquote] = '~'), // Portuguese, Italian
->   ([Backquote] = '半角/全角'), // Japanese
->   ([Backquote] = '|'), // Spanish (Latin America)
->   ([Backquote] = '¬'), // UK, Latin America
->   ([Backquote] = '¨'), // German, Swedish
->   ([Backquote] = '´'), // Portuguese (Latin America)
->   ([Backquote] = '₺'), // Turkish
->   ([Backquote] = '₤'), // Italian
->   ([Backquote] = ''), // And MORE...
+>   { '[Backquote]': '`' }, // English, US
+>   { '[Backquote]': 'º' }, // Spanish (Spain)
+>   { '[Backquote]': "'" }, // French, German
+>   { '[Backquote]': '²' }, // French
+>   { '[Backquote]': '^' }, // German, Swiss
+>   { '[Backquote]': 'ё' }, // Russian
+>   { '[Backquote]': '~' }, // Portuguese, Italian
+>   { '[Backquote]': '半角/全角' }, // Japanese
+>   { '[Backquote]': '|' }, // Spanish (Latin America)
+>   { '[Backquote]': '¬' }, // UK, Latin America
+>   { '[Backquote]': '¨' }, // German, Swedish
+>   { '[Backquote]': '´' }, // Portuguese (Latin America)
+>   { '[Backquote]': '₺' }, // Turkish
+>   { '[Backquote]': '₤' }, // Italian
+>   { '[Backquote]': '' }, // And MORE...
 > ];
 > ```
 
@@ -94,10 +95,8 @@ Here is the project link if you want to collaborate: [[>\_ ] code](https://githu
 
 ## About Me
 
-- [X](https://twitter.com/bastndev) - Best for asking questions and discussing issues.
-- [Discord](https://discord.com/invite/bgzvzP6aZH) - Best for hanging out with the community.
-- [Youtube](https://www.youtube.com/@bastndev) - For more content about Lynx and programming,
-
-## Release Notes
+- 🐦 [X](https://twitter.com/bastndev) - For questions and discussions.
+- 💬 [Discord](https://discord.com/invite/bgzvzP6aZH) - For community interaction.
+- ▶️ [Youtube](https://www.youtube.com/@bastndev) - For content about Lynx and programming.
 
 **Enjoy your new keybindings! Suggestions or feedback? Open an issue or contribute.**
