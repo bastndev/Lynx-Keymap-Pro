@@ -99,6 +99,8 @@ Here is the project link if you want to collaborate: [[>\_ ] code](https://githu
 - 💬 [Discord](https://discord.com/invite/bgzvzP6aZH) - For community interaction.
 - ▶️ [Youtube](https://www.youtube.com/@bastndev) - For content about Lynx and programming.
 
+</br>
+
 | Icon                                                                                                                                                | Name                                                                                                   | Description                                                                                                                                     |
 | --------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------- |
 | ![](https://bastndev.gallerycdn.vsassets.io/extensions/bastndev/lynx-js-snippets/0.2.0/1745166683713/Microsoft.VisualStudio.Services.Icons.Default) | [Lynx-js Snippets .tsx](https://marketplace.visualstudio.com/items?itemName=bastndev.lynx-js-snippets) | A powerful collection of Lynx.js snippets (for TypeScript & React) that speeds up common coding patterns.                                       |
