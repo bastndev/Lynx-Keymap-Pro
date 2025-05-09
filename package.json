@@ -216,16 +216,16 @@
 
 
       {
-        "key": "insert",
-        "mac": "insert",
+        "key": "alt+o",
+        "mac": "alt+o",
         "command": "workbench.action.debug.start"
       },{
-        "key": "ctrl+insert",
-        "mac": "ctrl+insert",
+        "key": "alt+i",
+        "mac": "alt+i",
         "command": "workbench.action.debug.restart"
       },{
-        "key": "end",
-        "mac": "end",
+        "key": "alt+p",
+        "mac": "alt+p",
         "command": "workbench.action.debug.stop"
       },
 
