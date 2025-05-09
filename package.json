@@ -254,9 +254,10 @@
       },
 
 
-
+      
       {
         "key": "ctrl+enter",
+        "mac": "cmd+enter",
         "command": "-github.copilot.generate"
       }
     ]
