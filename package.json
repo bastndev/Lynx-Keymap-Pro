@@ -91,8 +91,8 @@
         "mac": "cmd+3",
         "command": "workbench.view.extensions"
       },
-
       
+
       
       {
         "key": "alt+c",
@@ -146,21 +146,32 @@
         "mac": "alt+f",
         "command": "editor.action.formatDocument"
       },{
-        "key": "pagedown",
-        "mac": "pagedown",
-        "command": "workbench.action.togglePanel"
+        "key": "alr+---",
+        "mac": "alt+---",
+        "command": "workbench.action.togglePanel",
+        "when": "editorTextFocus"
       },{
-        "key": "pagedown",
-        "mac": "pagedown",
-        "command": "workbench.action.terminal.toggleTerminal"
-      },{
-        "key": "ctrl+pagedown",
-        "mac": "cmd+pagedown",
+        "key": "alt+q",
+        "mac": "alt+q",
         "command": "workbench.debug.action.toggleRepl"
       },{
-        "key": "alt+pagedown",
-        "mac": "alt+pagedown",
+        "key": "alt+w",
+        "mac": "alt+w",
+        "command": "workbench.action.terminal.toggleTerminal"
+      },{
+        "key": "alt+e",
+        "mac": "alt+e",
         "command": "gitlens.showGraph"
+      },
+      {
+        "key": "alt+e",
+        "mac": "alt+e",
+        "command": "workbench.action.closePanel"
+      },
+      {
+        "key": "alt+r",
+        "mac": "alt+r",
+        "command": "workbench.action.togglePanel"
       },
 
 
