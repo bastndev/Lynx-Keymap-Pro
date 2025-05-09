@@ -110,17 +110,17 @@
 
 
       {
-        "key": "ctrl+alt+1",
+        "key": "alt+1",
         "mac": "cmd+alt+1",
         "command": "git.stageAll",
         "when": "scmProvider == git"
       },{
-        "key": "ctrl+alt+2",
+        "key": "alt+2",
         "mac": "ctrl+alt+2",
         "command": "lynx-keymap.generateAICommit"
       },{
-        "key": "ctrl+alt+3",
-        "mac": "cmd+alt+3",
+        "key": "alt+3",
+        "mac": "alt+3",
         "command": "git.unstageAll",
         "when": "scmProvider == git"
       },
@@ -128,8 +128,8 @@
 
 
       {
-        "key": "ctrl+enter",
-        "mac": "cmd+enter",
+        "key": "alt+enter",
+        "mac": "alt+enter",
         "command": "git.commit",
         "when": "scmProvider == git && sideBarFocus"
       },{
