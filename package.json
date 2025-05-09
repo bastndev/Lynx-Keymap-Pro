@@ -190,25 +190,25 @@
       },
 
       {
-        "key": "ctrl+alt+[Backquote]",
-        "mac": "cmd+alt+[Backquote]",
+        "key": "alt+a",
+        "mac": "alt+a",
         "command": "lynx-keymap.createNewAISession"
       },
 
       {
-        "key": "ctrl+shift+[Backquote]",
-        "mac": "cmd+shift+[Backquote]",
+        "key": "alt+s",
+        "mac": "alt+s",
         "command": "lynx-keymap.showAIHistory"
       },
 
       {
-        "key": "ctrl+alt+end",
-        "mac": "cmd+alt+end",
+        "key": "alt+d",
+        "mac": "alt+d",
         "command": "lynx-keymap.toggleInlineSuggest"
       },
       {
-        "key": "ctrl+alt+backspace",
-        "mac": "cmd+alt+backspace",
+        "key": "alt+enter",
+        "mac": "alt+enter",
         "command": "inlineChat.close",
         "when": "inlineChatFocused"
       },
