@@ -220,28 +220,28 @@
         "mac": "alt+o",
         "command": "workbench.action.debug.start"
       },{
-        "key": "alt+i",
-        "mac": "alt+i",
-        "command": "workbench.action.debug.restart"
-      },{
         "key": "alt+p",
         "mac": "alt+p",
+        "command": "workbench.action.debug.restart"
+      },{
+        "key": "alt+i",
+        "mac": "alt+i",
         "command": "workbench.action.debug.stop"
       },
 
 
 
       {
-        "key": "pageup",
-        "mac": "pageup",
+        "key": "alt+l",
+        "mac": "alt+l",
         "command": "git.viewChanges"
       },{
-        "key": "ctrl+pageup",
-        "mac": "cmd+pageup",
+        "key": "alt+k",
+        "mac": "alt+k",
         "command": "markdown.showPreviewToSide"
       },{
-        "key": "alt+pageup",
-        "mac": "alt+pageup",
+        "key": "ctrl+alt+k",
+        "mac": "ctrl+alt+k",
         "command": "workbench.action.closeActiveEditor"
       },
 
