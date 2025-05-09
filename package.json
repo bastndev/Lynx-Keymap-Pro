@@ -1,8 +1,8 @@
 {
-  "name": "lynx-keymap-75",
-  "displayName": "Lynx Keymap 75% Keyboard",
-  "description": "Available now: VSCode, Cursor AI, Windsurf & Trae AI. + (Firebase Studio) & (+ AI). ",
-  "version": "0.7.2",
+  "name": "lynx-keymap",
+  "displayName": "Lynx Keymap",
+  "description": "Available now: VSCode, Cursor AI, Windsurf & Trae AI. + (Firebase Studio) & (+AI). ",
+  "version": "0.8.0",
   "publisher": "bastndev",
   "license": "MIT",
   "engines": {
@@ -91,8 +91,8 @@
         "mac": "cmd+3",
         "command": "workbench.view.extensions"
       },
-
       
+
       
       {
         "key": "alt+c",
@@ -110,17 +110,17 @@
 
 
       {
-        "key": "ctrl+alt+1",
-        "mac": "cmd+alt+1",
+        "key": "alt+1",
+        "mac": "alt+1",
         "command": "git.stageAll",
         "when": "scmProvider == git"
       },{
-        "key": "ctrl+alt+2",
-        "mac": "ctrl+alt+2",
+        "key": "alt+2",
+        "mac": "alt+2",
         "command": "lynx-keymap.generateAICommit"
       },{
-        "key": "ctrl+alt+3",
-        "mac": "cmd+alt+3",
+        "key": "alt+3",
+        "mac": "alt+3",
         "command": "git.unstageAll",
         "when": "scmProvider == git"
       },
@@ -128,8 +128,8 @@
 
 
       {
-        "key": "ctrl+enter",
-        "mac": "cmd+enter",
+        "key": "alt+enter",
+        "mac": "alt+enter",
         "command": "git.commit",
         "when": "scmProvider == git && sideBarFocus"
       },{
@@ -146,21 +146,32 @@
         "mac": "alt+f",
         "command": "editor.action.formatDocument"
       },{
-        "key": "pagedown",
-        "mac": "pagedown",
-        "command": "workbench.action.togglePanel"
+        "key": "alr+---",
+        "mac": "alt+---",
+        "command": "workbench.action.togglePanel",
+        "when": "editorTextFocus"
       },{
-        "key": "pagedown",
-        "mac": "pagedown",
-        "command": "workbench.action.terminal.toggleTerminal"
-      },{
-        "key": "ctrl+pagedown",
-        "mac": "cmd+pagedown",
+        "key": "alt+q",
+        "mac": "alt+q",
         "command": "workbench.debug.action.toggleRepl"
       },{
-        "key": "alt+pagedown",
-        "mac": "alt+pagedown",
+        "key": "alt+w",
+        "mac": "alt+w",
+        "command": "workbench.action.terminal.toggleTerminal"
+      },{
+        "key": "alt+e",
+        "mac": "alt+e",
         "command": "gitlens.showGraph"
+      },
+      {
+        "key": "alt+e",
+        "mac": "alt+e",
+        "command": "workbench.action.closePanel"
+      },
+      {
+        "key": "alt+r",
+        "mac": "alt+r",
+        "command": "workbench.action.togglePanel"
       },
 
 
@@ -179,25 +190,25 @@
       },
 
       {
-        "key": "ctrl+alt+[Backquote]",
-        "mac": "cmd+alt+[Backquote]",
+        "key": "alt+a",
+        "mac": "alt+a",
         "command": "lynx-keymap.createNewAISession"
       },
 
       {
-        "key": "ctrl+shift+[Backquote]",
-        "mac": "cmd+shift+[Backquote]",
+        "key": "alt+s",
+        "mac": "alt+s",
         "command": "lynx-keymap.showAIHistory"
       },
 
       {
-        "key": "ctrl+alt+end",
-        "mac": "cmd+alt+end",
+        "key": "alt+d",
+        "mac": "alt+d",
         "command": "lynx-keymap.toggleInlineSuggest"
       },
       {
-        "key": "ctrl+alt+backspace",
-        "mac": "cmd+alt+backspace",
+        "key": "alt+enter",
+        "mac": "alt+enter",
         "command": "inlineChat.close",
         "when": "inlineChatFocused"
       },
@@ -205,32 +216,32 @@
 
 
       {
-        "key": "insert",
-        "mac": "insert",
+        "key": "alt+o",
+        "mac": "alt+o",
         "command": "workbench.action.debug.start"
       },{
-        "key": "ctrl+insert",
-        "mac": "ctrl+insert",
+        "key": "alt+p",
+        "mac": "alt+p",
         "command": "workbench.action.debug.restart"
       },{
-        "key": "end",
-        "mac": "end",
+        "key": "alt+i",
+        "mac": "alt+i",
         "command": "workbench.action.debug.stop"
       },
 
 
 
       {
-        "key": "pageup",
-        "mac": "pageup",
+        "key": "alt+l",
+        "mac": "alt+l",
         "command": "git.viewChanges"
       },{
-        "key": "ctrl+pageup",
-        "mac": "cmd+pageup",
+        "key": "alt+k",
+        "mac": "alt+k",
         "command": "markdown.showPreviewToSide"
       },{
-        "key": "alt+pageup",
-        "mac": "alt+pageup",
+        "key": "ctrl+alt+k",
+        "mac": "ctrl+alt+k",
         "command": "workbench.action.closeActiveEditor"
       },
 
@@ -246,6 +257,7 @@
 
       {
         "key": "ctrl+enter",
+        "mac": "cmd+enter",
         "command": "-github.copilot.generate"
       }
     ]

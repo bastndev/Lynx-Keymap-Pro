@@ -8,7 +8,7 @@
 
 </br>
 
-### ► How to Use Standard Keybindings
+### ► Lynx Keymap — Standard Keybindings
 
 | Command                    | 🍎 macOS        | 🟦 Windows         | 🐧 Linux           |
 | :------------------------- | :-------------- | :----------------- | :----------------- |
@@ -19,41 +19,31 @@
 | -                          | -               | -                  | -                  |
 | New File                   | ⌥ + C           | Alt + C            | Alt + C            |
 | New Folder                 | ⌥ + V           | Alt + V            | Alt + V            |
-| Close Active Editor        | ⌥ + PageUp      | Alt + PageUp       | Alt + PageUp       |
-| Finish Project             | Shift + Esc     | Shift + Esc        | Shift + Esc        |
+| Close Panel                | ⌥ + E           | Alt + E            | Alt + E            |
+| Toggle Panel               | ⌥ + R           | Alt + R            | Alt + R            |
+| Toggle Bottom Panel        | ⌥ + ---         | Alt + ---          | Alt + ---          |
+| Toggle Debug Console       | ⌥ + Q           | Alt + Q            | Alt + Q            |
+| Toggle Terminal            | ⌥ + W           | Alt + W            | Alt + W            |
+| Open GitLens               | ⌥ + E           | Alt + E            | Alt + E            |
 | -                          | -               | -                  | -                  |
-| Stage All Changes          | ⌘ + ⌥ + 1       | Ctrl + Alt + 1     | Ctrl + Alt + 1     |
-| Generate AI Commit Message | ⌘ + ⌥ + 2       | Ctrl + Alt + 2     | Ctrl + Alt + 2     |
-| Unstage All Changes        | ⌘ + ⌥ + 3       | Ctrl + Alt + 3     | Ctrl + Alt + 3     |
-| Git Commit                 | ⌘ + Enter       | Ctrl + Enter       | Ctrl + Enter       |
+| Stage All Changes          | ⌥ + 1           | Alt + 1            | Alt + 1            |
+| Generate AI Commit Message | ⌥ + 2           | Alt + 2            | Alt + 2            |
+| Unstage All Changes        | ⌥ + 3           | Alt + 3            | Alt + 3            |
+| Git Commit                 | ⌥ + Enter       | Alt + Enter        | Alt + Enter        |
 | Git Push                   | ⌘ + ⌥ + Enter   | Ctrl + Alt + Enter | Ctrl + Alt + Enter |
-| View Git Changes           | PageUp          | PageUp             | PageUp             |
 | -                          | -               | -                  | -                  |
 | Format Document            | ⌥ + F           | Alt + F            | Alt + F            |
-| Toggle Bottom Panel        | PageDown        | PageDown           | PageDown           |
-| Markdown Preview to Side   | ⌘ + PageUp      | Ctrl + PageUp      | Ctrl + PageUp      |
-| Open/close Terminal        | PageDown        | PageDown           | PageDown           |
-| Open/close D'console       | ⌘ + PageDown    | Ctrl + PageDown    | Ctrl + PageDown    |
-| Open GitLens               | ⌥ + PageDown    | Alt + PageDown     | Alt +PageDown      |
-| -                          | -               | -                  | -                  |
-| Start Debugging            | Insert          | Insert             | Insert             |
-| Restart Debugging          | ⌘ + Insert      | Ctrl + Insert      | Ctrl + Insert      |
-| Stop Debugging             | End             | End                | End                |
 
-### ► AI Features Keybindings
+### ► AI Features Keybindings (Lynx Keymap)
 
-| Command                         | 🍎 macOS            | 🟦 Windows                 | 🐧 Linux                   |
-| :------------------------------ | :------------------ | :------------------------- | :------------------------- |
-| AI Chat Interface (Popup/Modal) | ⌘ + `Backquote`     | Ctrl + `Backquote`         | Ctrl + `Backquote`         |
-| AI Chat (Panel/View)            | ⌘ + Tab             | Ctrl + Tab                 | Ctrl + Tab                 |
-| Create New AI Session           | ⌘ + ⌥ + `Backquote` | Ctrl + Alt + `Backquote`   | Ctrl + Alt + `Backquote`   |
-| Show AI Chat History            | ⌘ + ⇧ + `Backquote` | Ctrl + Shift + `Backquote` | Ctrl + Shift + `Backquote` |
-| Toggle Inline Suggestions (AI)  | ⌘ + ⌥ + End         | Ctrl + Alt + End           | Ctrl + Alt + End           |
-| Close Inline Chat               | ⌘ + ⌥ + `Backspace` | Ctrl + Alt + `Backspace`   | Ctrl + Alt + `Backspace`   |
-| -                               | -                   | -                          | -                          |
-| Generate AI Commit Message      | ⌘ + ⌥ + 2           | Ctrl + Alt + 2             | Ctrl + Alt + 2             |
-
-</br>
+| Command                         | 🍎 macOS | 🟦 Windows | 🐧 Linux   |
+| :------------------------------ | :------- | :--------- | :--------- |
+| AI Chat Interface (Popup/Modal) | ⌘ + `    | Ctrl + `   | Ctrl + `   |
+| AI Chat (Panel/View)            | ⌘ + Tab  | Ctrl + Tab | Ctrl + Tab |
+| Create New AI Session           | ⌥ + A    | Alt + A    | Alt + A    |
+| Show AI Chat History            | ⌥ + S    | Alt + S    | Alt + S    |
+| Toggle Inline Suggestions (AI)  | —        | —          | —          |
+| Generate AI Commit Message      | ⌥ + 2    | Alt + 2    | Alt + 2    |
 
 > [!IMPORTANT]
 >
