@@ -111,12 +111,12 @@
 
       {
         "key": "alt+1",
-        "mac": "cmd+alt+1",
+        "mac": "alt+1",
         "command": "git.stageAll",
         "when": "scmProvider == git"
       },{
         "key": "alt+2",
-        "mac": "ctrl+alt+2",
+        "mac": "alt+2",
         "command": "lynx-keymap.generateAICommit"
       },{
         "key": "alt+3",
@@ -254,7 +254,7 @@
       },
 
 
-      
+
       {
         "key": "ctrl+enter",
         "mac": "cmd+enter",
