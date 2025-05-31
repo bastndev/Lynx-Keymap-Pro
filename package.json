@@ -104,7 +104,7 @@
         "command": "explorer.newFolder"
       },{
         "key": "ctrl+shift+tab",
-        "mac": "ctrl+shift+tab",
+        "mac": "cmd+shift+tab",
         "command": "workbench.action.toggleSidebarVisibility"
       },
 
@@ -241,15 +241,15 @@
         "command": "markdown.showPreviewToSide"
       },{
         "key": "ctrl+alt+k",
-        "mac": "ctrl+alt+k",
+        "mac": "cmd+alt+k",
         "command": "workbench.action.closeActiveEditor"
       },
 
 
 
       {
-        "key": "shift+escape",
-        "mac": "shift+escape",
+        "key": "alt+escape",
+        "mac": "alt+escape",
         "command": "workbench.action.closeFolder"
       },
 
