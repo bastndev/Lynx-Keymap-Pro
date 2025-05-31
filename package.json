@@ -182,7 +182,6 @@
         "mac": "cmd+[Backquote]",
         "command": "lynx-keymap.executeAIPopup"
       },
-
       {
         "key": "ctrl+tab",
         "mac": "cmd+tab",
@@ -194,25 +193,29 @@
         "mac": "alt+a",
         "command": "lynx-keymap.createNewAISession"
       },
-
       {
         "key": "alt+s",
         "mac": "alt+s",
         "command": "lynx-keymap.showAIHistory"
       },
-
       {
         "key": "alt+d",
         "mac": "alt+d",
-        "command": "lynx-keymap.toggleInlineSuggest"
+        "command": "workbench.action.chat.attachContext"
       },
+
+
       {
         "key": "alt+enter",
         "mac": "alt+enter",
         "command": "inlineChat.close",
         "when": "inlineChatFocused"
       },
-
+      {
+        "key": "ctrl+enter",
+        "mac": "cmd+enter",
+        "command": "-github.copilot.generate"
+      },
 
 
       {
@@ -252,13 +255,11 @@
         "mac": "alt+escape",
         "command": "workbench.action.closeFolder"
       },
-
-
-
+      
       {
-        "key": "ctrl+enter",
-        "mac": "cmd+enter",
-        "command": "-github.copilot.generate"
+        "key": "alt+--des",
+        "mac": "alt+--des",
+        "command": "lynx-keymap.toggleInlineSuggest"
       }
     ]
   }
