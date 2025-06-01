@@ -10,40 +10,48 @@
 
 ### ► Lynx Keymap — Standard Keybindings
 
-| Command                    | 🍎 macOS        | 🟦 Windows         | 🐧 Linux           |
+| Command                    | 🍎 macos        | 🟦 windows         | 🐧 linux           |
 | :------------------------- | :-------------- | :----------------- | :----------------- |
-| Open Explorer              | ⌘ + 1           | Ctrl + 1           | Ctrl + 1           |
-| Open Source Control (SCM)  | ⌘ + 2           | Ctrl + 2           | Ctrl + 2           |
-| Open Extensions View       | ⌘ + 3           | Ctrl + 3           | Ctrl + 3           |
-| Toggle Sidebar Visibility  | ⌘ + Shift + Tab | Ctrl + Shift + Tab | Ctrl + Shift + Tab |
+| open explorer              | ⌘ + 1           | ctrl + 1           | ctrl + 1           |
+| open source control (scm)  | ⌘ + 2           | ctrl + 2           | ctrl + 2           |
+| open extensions view       | ⌘ + 3           | ctrl + 3           | ctrl + 3           |
+| toggle sidebar visibility  | ⌘ + shift + tab | ctrl + shift + tab | ctrl + shift + tab |
 | -                          | -               | -                  | -                  |
-| New File                   | ⌥ + C           | Alt + C            | Alt + C            |
-| New Folder                 | ⌥ + V           | Alt + V            | Alt + V            |
-| Close Panel                | ⌥ + E           | Alt + E            | Alt + E            |
-| Toggle Panel               | ⌥ + R           | Alt + R            | Alt + R            |
-| Toggle Bottom Panel        | ⌥ + ---         | Alt + ---          | Alt + ---          |
-| Toggle Debug Console       | ⌥ + Q           | Alt + Q            | Alt + Q            |
-| Toggle Terminal            | ⌥ + W           | Alt + W            | Alt + W            |
-| Open GitLens               | ⌥ + E           | Alt + E            | Alt + E            |
+| new file                   | ⌥ + c           | alt + c            | alt + c            |
+| new folder                 | ⌥ + v           | alt + v            | alt + v            |
+| close panel                | ⌥ + e           | alt + e            | alt + e            |
+| toggle debug console       | ⌥ + q           | alt + q            | alt + q            |
+| toggle terminal            | ⌥ + w           | alt + w            | alt + w            |
+| open gitlens               | ⌥ + e           | alt + e            | alt + e            |
+| format document            | ⌥ + f           | alt + f            | alt + f            |
 | -                          | -               | -                  | -                  |
-| Stage All Changes          | ⌥ + 1           | Alt + 1            | Alt + 1            |
-| Generate AI Commit Message | ⌥ + 2           | Alt + 2            | Alt + 2            |
-| Unstage All Changes        | ⌥ + 3           | Alt + 3            | Alt + 3            |
-| Git Commit                 | ⌥ + Enter       | Alt + Enter        | Alt + Enter        |
-| Git Push                   | ⌘ + ⌥ + Enter   | Ctrl + Alt + Enter | Ctrl + Alt + Enter |
+| stage all changes          | ⌥ + 1           | alt + 1            | alt + 1            |
+| generate ai commit message | ⌥ + 2           | alt + 2            | alt + 2            |
+| unstage all changes        | ⌥ + 3           | alt + 3            | alt + 3            |
+| git commit                 | ⌥ + enter       | alt + enter        | alt + enter        |
+| git push                   | ⌘ + ⌥ + enter   | ctrl + alt + enter | ctrl + alt + enter |
+| view git changes           | ⌥ + l           | alt + l            | alt + l            |
 | -                          | -               | -                  | -                  |
-| Format Document            | ⌥ + F           | Alt + F            | Alt + F            |
+| start debugging            | ⌥ + p           | alt + p            | alt + p            |
+| restart debugging          | ⌥ + o           | alt + o            | alt + o            |
+| stop debugging             | ⌥ + i           | alt + i            | alt + i            |
+| -                          | -               | -                  | -                  |
+| show markdown preview      | ⌥ + m           | alt + m            | alt + m            |
+| close active editor        | ⌘ + ⌥ + m       | ctrl + alt + m     | ctrl + alt + m     |
+| close folder               | ⌥ + esc         | alt + esc          | alt + esc          |
 
 ### ► AI Features Keybindings (Lynx Keymap)
 
-| Command                         | 🍎 macOS | 🟦 Windows | 🐧 Linux   |
+| command                         | 🍎 macos | 🟦 windows | 🐧 linux   |
 | :------------------------------ | :------- | :--------- | :--------- |
-| AI Chat Interface (Popup/Modal) | ⌘ + `    | Ctrl + `   | Ctrl + `   |
-| AI Chat (Panel/View)            | ⌘ + Tab  | Ctrl + Tab | Ctrl + Tab |
-| Create New AI Session           | ⌥ + A    | Alt + A    | Alt + A    |
-| Show AI Chat History            | ⌥ + S    | Alt + S    | Alt + S    |
-| Toggle Inline Suggestions (AI)  | —        | —          | —          |
-| Generate AI Commit Message      | ⌥ + 2    | Alt + 2    | Alt + 2    |
+| ai chat interface (popup/modal) | ⌘ + `    | ctrl + `   | ctrl + `   |
+| ai chat (panel/view)            | ⌘ + tab  | ctrl + tab | ctrl + tab |
+| create new ai session           | ⌥ + a    | alt + a    | alt + a    |
+| show ai chat history            | ⌥ + s    | alt + s    | alt + s    |
+| attach ai context               | ⌥ + d    | alt + d    | alt + d    |
+| toggle inline suggestions (ai)  | ⌘ + esc  | ctrl + esc | ctrl + esc |
+
+</br>
 
 > [!IMPORTANT]
 >

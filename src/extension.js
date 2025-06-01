@@ -3,7 +3,7 @@ const vscode = require('vscode');
 function activate(context) {
     console.log('Congratulations, your extension "lynx-keymap" is now active!');
     
-    // Command for AI commit generation  [ctrl+alt+1]
+    // Command for AI commit generation  [alt+1]
     let commitDisposable = vscode.commands.registerCommand('lynx-keymap.generateAICommit', async function () {
         const commitCommands = [
             'windsurf.generateCommitMessage',               // 0: Windsurf
@@ -15,7 +15,7 @@ function activate(context) {
         await executeFirstAvailableCommand(commitCommands, 'No AI commit generators available');
     });
 
-    // Command for AI Popup  [ctrl+` and equivalents - managed in package.json]
+    // Command for AI Popup  [ctrl+`] and equivalents - managed in package.json
     let popupDisposable = vscode.commands.registerCommand('lynx-keymap.executeAIPopup', async function () {
         const popupCommands = [
             'windsurf.prioritized.command.open',    // 0: Windsurf    
@@ -39,28 +39,40 @@ function activate(context) {
         await executeFirstAvailableCommand(chatCommands, 'No AI chat providers available');
     });
 
-    // Command to create a new AI session  [ctrl+alt+` and equivalents - managed in package.json]
+    // Command to create a new AI session  [alt+a] and equivalents - managed in package.json
     let newSessionDisposable = vscode.commands.registerCommand('lynx-keymap.createNewAISession', async function () {
         const newSessionCommands = [
-            'windsurf.prioritized.chat.openNewConversation',        // 0: Windsurf
-            'workbench.action.chat.newEditSession',                 // 1: Vscode
-            'composer.createNew',                                   // 2: Cursor-AI
-            'workbench.action.icube.chatSidebarNg.createNewSession',// 3: Trae-AI
-            // Don't have a Firebase equivalent for this            // 4: Firebase.Studio
+            'windsurf.prioritized.chat.openNewConversation',          // 0: Windsurf
+            'workbench.action.chat.newEditSession',                  // 1: Vscode
+            'composer.createNew',                                    // 2: Cursor-AI
+            'workbench.action.icube.chatSidebarNg.createNewSession', // 3: Trae-AI
+            //'workbench.action.chat.newChat'  NF-now                    // 4: Firebase.Studio
         ];
         await executeFirstAvailableCommand(newSessionCommands, 'No AI providers available to create a new session');
     });
 
-    // Command to show AI history  [ctrl+shift+` and equivalents - managed in package.json]
+    // Command to show AI history  [alt+s] and equivalents - managed in package.json
     let historyDisposable = vscode.commands.registerCommand('lynx-keymap.showAIHistory', async function () {
         const historyCommands = [
-            // Windsurf doesn't have a history command          // 0: Windsurf
+            'composer.showComposerHistory',                     // 2: Cursor-AI          
+            // ---- ---- ---- ---- ---- ---- --- -- -           // 0: Windsurf
             'workbench.action.chat.history' ,                   // 1: Vscode
-            'composer.showComposerHistory',                     // 2: Cursor-AI           
             'workbench.action.icube.chatSidebarNg.showHistory', // 3: Trae-AI
-            // Firebase doesn't have a history command          // 4: Firebase.Studio
+            // Firebase doesn't have a history   NF-now         // 4: Firebase.Studio
         ];
         await executeFirstAvailableCommand(historyCommands, 'No AI history available');
+    });
+
+    // Command for AI attach context  [alt+d]
+    let attachContextDisposable = vscode.commands.registerCommand('lynx-keymap.attachAIContext', async function () {
+        const attachContextCommands = [
+            //---- ---- ----- --- -- -                  // 0: Windsurf
+            'workbench.action.chat.attachContext',      // 1: Vscode
+            'composer.openAddContextMenu',              // 2: Cursor-AI
+            'icube.chat.attachContext',                 // 3: Trae-AI
+            //'Workbench.action.openWorkspace' NF-now   // 4: Firebase.Studio
+        ];
+        await executeFirstAvailableCommand(attachContextCommands, 'No AI context attachment available');
     });
 
     // New command to toggle inline suggestions
@@ -85,6 +97,7 @@ function activate(context) {
         chatDisposable,
         newSessionDisposable,
         historyDisposable,
+        attachContextDisposable,
         toggleSuggestDisposable
     );
 }
