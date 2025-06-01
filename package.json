@@ -52,6 +52,7 @@
     "onCommand:lynx-keymap.openAIChat",
     "onCommand:lynx-keymap.createNewAISession",
     "onCommand:lynx-keymap.showAIHistory",
+    "onCommand:lynx-keymap.attachAIContext",
     "onCommand:lynx-keymap.toggleInlineSuggest"
   ],
   "main": "./src/extension.js",
@@ -72,6 +73,9 @@
       },{
         "command": "lynx-keymap.showAIHistory",
         "title": "Show AI Chat History"
+      },{
+        "command": "lynx-keymap.attachAIContext",
+        "title": "Attach Context to AI Chat"
       },{
         "command": "lynx-keymap.toggleInlineSuggest",
         "title": "Toggle Inline Suggestions (AI Autocomplete)"
@@ -173,6 +177,7 @@
         "command": "lynx-keymap.openAIChat"
       },
 
+      
       {
         "key": "alt+a",
         "mac": "alt+a",
@@ -184,7 +189,7 @@
       },{
         "key": "alt+d",
         "mac": "alt+d",
-        "command": "workbench.action.chat.attachContext"
+        "command": "lynx-keymap.attachAIContext"
       },
 
 
