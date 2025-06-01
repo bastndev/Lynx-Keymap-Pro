@@ -17,27 +17,30 @@
 | open extensions view       | ⌘ + 3           | ctrl + 3           | ctrl + 3           |
 | toggle sidebar visibility  | ⌘ + shift + tab | ctrl + shift + tab | ctrl + shift + tab |
 | -                          | -               | -                  | -                  |
-| new file                   | ⌥ + c           | alt + c            | alt + c            |
-| new folder                 | ⌥ + v           | alt + v            | alt + v            |
-| close panel                | ⌥ + e           | alt + e            | alt + e            |
-| toggle debug console       | ⌥ + q           | alt + q            | alt + q            |
-| toggle terminal            | ⌥ + w           | alt + w            | alt + w            |
-| open gitlens               | ⌥ + e           | alt + e            | alt + e            |
-| format document            | ⌥ + f           | alt + f            | alt + f            |
-| -                          | -               | -                  | -                  |
 | stage all changes          | ⌥ + 1           | alt + 1            | alt + 1            |
 | generate ai commit message | ⌥ + 2           | alt + 2            | alt + 2            |
 | unstage all changes        | ⌥ + 3           | alt + 3            | alt + 3            |
 | git commit                 | ⌥ + enter       | alt + enter        | alt + enter        |
 | git push                   | ⌘ + ⌥ + enter   | ctrl + alt + enter | ctrl + alt + enter |
-| view git changes           | ⌥ + l           | alt + l            | alt + l            |
+| -                          | -               | -                  | -                  |
+| new file                   | ⌥ + c           | alt + c            | alt + c            |
+| new folder                 | ⌥ + v           | alt + v            | alt + v            |
+| -                          | -               | -                  | -                  |
+| toggle debug console       | ⌥ + q           | alt + q            | alt + q            |
+| toggle terminal            | ⌥ + w           | alt + w            | alt + w            |
+| open gitlens               | ⌥ + e           | alt + e            | alt + e            |
+| close panel                | ⌥ + e           | alt + e            | alt + e            |
 | -                          | -               | -                  | -                  |
 | start debugging            | ⌥ + p           | alt + p            | alt + p            |
 | restart debugging          | ⌥ + o           | alt + o            | alt + o            |
 | stop debugging             | ⌥ + i           | alt + i            | alt + i            |
 | -                          | -               | -                  | -                  |
+| format document            | ⌥ + f           | alt + f            | alt + f            |
+| view git changes           | ⌥ + l           | alt + l            | alt + l            |
+| -                          | -               | -                  | -                  |
 | show markdown preview      | ⌥ + m           | alt + m            | alt + m            |
 | close active editor        | ⌘ + ⌥ + m       | ctrl + alt + m     | ctrl + alt + m     |
+| -                          | -               | -                  | -                  |
 | close folder               | ⌥ + esc         | alt + esc          | alt + esc          |
 
 ### ► AI Features Keybindings (Lynx Keymap)
