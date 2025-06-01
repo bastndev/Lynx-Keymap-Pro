@@ -43,10 +43,10 @@ function activate(context) {
     let newSessionDisposable = vscode.commands.registerCommand('lynx-keymap.createNewAISession', async function () {
         const newSessionCommands = [
             'windsurf.prioritized.chat.openNewConversation',          // 0: Windsurf
-            'workbench.action.chat.newEditSession',                  // 1: Vscode
-            'composer.createNew',                                    // 2: Cursor-AI
-            'workbench.action.icube.chatSidebarNg.createNewSession', // 3: Trae-AI
-            //'workbench.action.chat.newChat'  NF-now                    // 4: Firebase.Studio
+            'workbench.action.chat.newEditSession',                   // 1: Vscode
+            'composer.createNew',                                     // 2: Cursor-AI
+            'workbench.action.icube.aiChatSidebar.createNewSession',  // 3: Trae-AI
+            //'workbench.action.chat.newChat'  NF-now                 // 4: Firebase.Studio
         ];
         await executeFirstAvailableCommand(newSessionCommands, 'No AI providers available to create a new session');
     });
@@ -57,7 +57,7 @@ function activate(context) {
             'composer.showComposerHistory',                     // 2: Cursor-AI          
             // ---- ---- ---- ---- ---- ---- --- -- -           // 0: Windsurf
             'workbench.action.chat.history' ,                   // 1: Vscode
-            'workbench.action.icube.chatSidebarNg.showHistory', // 3: Trae-AI
+            'workbench.action.icube.aiChatSidebar.showHistory', // 3: Trae-AI
             // Firebase doesn't have a history   NF-now         // 4: Firebase.Studio
         ];
         await executeFirstAvailableCommand(historyCommands, 'No AI history available');
@@ -69,7 +69,7 @@ function activate(context) {
             //---- ---- ----- --- -- -                  // 0: Windsurf
             'workbench.action.chat.attachContext',      // 1: Vscode
             'composer.openAddContextMenu',              // 2: Cursor-AI
-            'icube.chat.attachContext',                 // 3: Trae-AI
+            //'---- ---- --- --- -- - ',                // 3: Trae-AI
             //'Workbench.action.openWorkspace' NF-now   // 4: Firebase.Studio
         ];
         await executeFirstAvailableCommand(attachContextCommands, 'No AI context attachment available');
