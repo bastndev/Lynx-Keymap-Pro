@@ -238,12 +238,12 @@
 
 
       {
-        "key": "alt+escape",
-        "mac": "alt+escape",
+        "key": "ctrl+delete",
+        "mac": "cmd+delete",
         "command": "workbench.action.closeFolder"
       },{
-        "key": "ctrl+escape",
-        "mac": "cmd+escape",
+        "key": "alt+capslock",
+        "mac": "alt+capslock",
         "command": "lynx-keymap.toggleInlineSuggest"
       }
     ]
