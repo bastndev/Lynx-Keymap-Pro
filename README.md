@@ -43,7 +43,7 @@
 | close active editor        | ⌘ + ⌥ + M       | Ctrl + Alt + M     | Ctrl + Alt + M     |
 | -                          | -               | -                  | -                  |
 | deactivate & activate (AI) | ⌥ + CAPSLOCK    | Alt + CAPSLOCK     | Alt + CAPSLOCK     |
-| finish project ❌          | ⌘ + Delete      | Ctrl + Delete      | Ctrl + Delete      |
+| Finish project ❌          | ⌘ + Delete      | Ctrl + Delete      | Ctrl + Delete      |
 
 ### ► [AI] Commands Easy (Lynx Keymap)
 
