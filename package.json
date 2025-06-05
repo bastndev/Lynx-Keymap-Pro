@@ -194,14 +194,14 @@
 
 
       {
+        "key": "ctrl+enter",
+        "mac": "cmd+enter",
+        "command": "-github.copilot.generate"
+      },{
         "key": "alt+enter",
         "mac": "alt+enter",
         "command": "inlineChat.close",
         "when": "inlineChatFocused"
-      },{
-        "key": "ctrl+enter",
-        "mac": "cmd+enter",
-        "command": "-github.copilot.generate"
       },
 
 

@@ -55,6 +55,9 @@
 | show (AI) chat history            | ⌥ + S        | Alt + S        | Alt + S        |
 | attach (AI) context               | ⌥ + D        | Alt + D        | Alt + D        |
 | deactivate & activate (AI)        | ⌥ + CAPSLOCK | Alt + CAPSLOCK | Alt + CAPSLOCK |
+| -                                 | -            | -              | -              |
+| accept (AI) generated code ✅     | ⌘ + Enter    | Ctrl + Enter   | Ctrl + Enter   |
+| reject (AI) generated code 🚫     | ⌥ + Enter    | Alt + Enter    | Alt + Enter    |
 
 </br>
 
