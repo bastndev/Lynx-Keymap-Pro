@@ -42,18 +42,19 @@
 | show markdown preview      | ⌥ + M           | Alt + M            | Alt + M            |
 | close active editor        | ⌘ + ⌥ + M       | Ctrl + Alt + M     | Ctrl + Alt + M     |
 | -                          | -               | -                  | -                  |
-| close folder               | ⌥ + Esc         | Alt + Esc          | Alt + Esc          |
+| deactivate & activate (AI) | ⌥ + CAPSLOCK    | Alt + CAPSLOCK     | Alt + CAPSLOCK     |
+| close project ❌           | ⌘ + Delete      | Ctrl + Delete      | Ctrl + Delete      |
 
-### ► AI Features Keybindings (Lynx Keymap)
+### ► [AI] Commands Easy (Lynx Keymap)
 
-| command                         | 🍎 macos | 🟦 windows | 🐧 linux   |
-| :------------------------------ | :------- | :--------- | :--------- |
-| ai chat interface (popup/modal) | ⌘ + `    | Ctrl + `   | Ctrl + `   |
-| ai chat (panel/view)            | ⌘ + Tab  | Ctrl + Tab | Ctrl + Tab |
-| create new ai session           | ⌥ + A    | Alt + A    | Alt + A    |
-| show ai chat history            | ⌥ + S    | Alt + S    | Alt + S    |
-| attach ai context               | ⌥ + D    | Alt + D    | Alt + D    |
-| toggle inline suggestions (ai)  | ⌘ + Esc  | Ctrl + Esc | Ctrl + Esc |
+| command                           | 🍎 macos     | 🟦 windows     | 🐧 linux       |
+| :-------------------------------- | :----------- | :------------- | :------------- |
+| (AI) chat interface (popup/modal) | ⌘ + `        | Ctrl + `       | Ctrl + `       |
+| (AI) chat (panel/view)            | ⌘ + Tab      | Ctrl + Tab     | Ctrl + Tab     |
+| create new (AI) session           | ⌥ + A        | Alt + A        | Alt + A        |
+| show (AI) chat history            | ⌥ + S        | Alt + S        | Alt + S        |
+| attach (AI) context               | ⌥ + D        | Alt + D        | Alt + D        |
+| deactivate & activate (AI)        | ⌥ + CAPSLOCK | Alt + CAPSLOCK | Alt + CAPSLOCK |
 
 </br>
 
