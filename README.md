@@ -4,6 +4,7 @@
     <a href="https://marketplace.visualstudio.com/items?itemName=bastndev.lynx-keymap"><img src="https://vsmarketplacebadges.dev/version-short/bastndev.lynx-keymap.jpg?style=for-the-badge&colorA=009945&colorB=EEEEEE&color=000000&label=VERSION" alt="Version"></a>&nbsp;
     <a href="https://marketplace.visualstudio.com/items?itemName=bastndev.lynx-keymap"><img src="https://vsmarketplacebadges.dev/rating-short/bastndev.lynx-keymap.jpg?style=for-the-badge&colorA=009945&colorB=EEEEEE&color=000000&label=Rating" alt="Rating"></a>&nbsp;
     <a href="https://marketplace.visualstudio.com/items?itemName=bastndev.lynx-keymap"><img src="https://vsmarketplacebadges.dev/installs-short/bastndev.lynx-keymap.jpg?style=for-the-badge&colorA=009945&colorB=EEEEEE&color=000000&label=Installs" alt="Installs"></a>&nbsp;
+    <a href="https://github.com/sponsors/bastndev"><img src="https://raw.githubusercontent.com/bastndev/Lynx-Theme/main/assets/images/sponsor.png" width="30px" alt="Sponsor Github"></a>
 </p>
 
 </br>
@@ -41,18 +42,19 @@
 | show markdown preview      | ⌥ + M           | Alt + M            | Alt + M            |
 | close active editor        | ⌘ + ⌥ + M       | Ctrl + Alt + M     | Ctrl + Alt + M     |
 | -                          | -               | -                  | -                  |
-| close folder               | ⌥ + Esc         | Alt + Esc          | Alt + Esc          |
+| deactivate & activate (AI) | ⌥ + CAPSLOCK    | Alt + CAPSLOCK     | Alt + CAPSLOCK     |
+| close project ❌           | ⌘ + Delete      | Ctrl + Delete      | Ctrl + Delete      |
 
-### ► AI Features Keybindings (Lynx Keymap)
+### ► [AI] Commands Easy (Lynx Keymap)
 
-| command                         | 🍎 macos | 🟦 windows | 🐧 linux   |
-| :------------------------------ | :------- | :--------- | :--------- |
-| ai chat interface (popup/modal) | ⌘ + `    | Ctrl + `   | Ctrl + `   |
-| ai chat (panel/view)            | ⌘ + Tab  | Ctrl + Tab | Ctrl + Tab |
-| create new ai session           | ⌥ + A    | Alt + A    | Alt + A    |
-| show ai chat history            | ⌥ + S    | Alt + S    | Alt + S    |
-| attach ai context               | ⌥ + D    | Alt + D    | Alt + D    |
-| toggle inline suggestions (ai)  | ⌘ + Esc  | Ctrl + Esc | Ctrl + Esc |
+| command                           | 🍎 macos     | 🟦 windows     | 🐧 linux       |
+| :-------------------------------- | :----------- | :------------- | :------------- |
+| (AI) chat interface (popup/modal) | ⌘ + `        | Ctrl + `       | Ctrl + `       |
+| (AI) chat (panel/view)            | ⌘ + Tab      | Ctrl + Tab     | Ctrl + Tab     |
+| create new (AI) session           | ⌥ + A        | Alt + A        | Alt + A        |
+| show (AI) chat history            | ⌥ + S        | Alt + S        | Alt + S        |
+| attach (AI) context               | ⌥ + D        | Alt + D        | Alt + D        |
+| deactivate & activate (AI)        | ⌥ + CAPSLOCK | Alt + CAPSLOCK | Alt + CAPSLOCK |
 
 </br>
 
@@ -116,5 +118,5 @@ Here is the project link if you want to collaborate: [[>\_ ] code](https://githu
 | ![](https://bastndev.gallerycdn.vsassets.io/extensions/bastndev/lynx-theme/0.1.2/1744898058774/Microsoft.VisualStudio.Services.Icons.Default)       | [Lynx Theme](https://marketplace.visualstudio.com/items?itemName=bastndev.lynx-theme)                  | A sleek, customizable theme for VS Code with built‑in support for Cursor‑AI, Windsurf & Trae‑AI integrations.                                   |
 | ![](https://bastndev.gallerycdn.vsassets.io/extensions/bastndev/lynxjs-pack/0.1.8/1745206864969/Microsoft.VisualStudio.Services.Icons.Default)      | [LynxJS Pack](https://marketplace.visualstudio.com/items?itemName=bastndev.lynxjs-pack)                | An all‑in‑one toolkit for LynxJS mobile/web development—bundles keymap, snippets & AI tools like Cursor AI, Windsurf, Trae AI, Firebase Studio. |
 
-**Enjoy 🎉 your new keybindings! Suggestions or feedback? Open an issue or contribute.**
+**Enjoy 🎉 your new keybindings! Suggestions or feedback? [Open an issue](https://github.com/bastndev/Lynx-Keymap/issues) or contribute.**
 [MORE](https://marketplace.visualstudio.com/publishers/bastndev)
