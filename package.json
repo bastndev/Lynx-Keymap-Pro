@@ -165,8 +165,8 @@
         "mac": "alt+e",
         "command": "gitlens.showGraph"
       },{
-        "key": "pagedown",
-        "mac": "pagedown",
+        "key": "alt+e",
+        "mac": "alt+e",
         "command": "workbench.action.togglePanel"
       },
 

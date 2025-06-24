@@ -26,6 +26,7 @@
 | unstage all changes        | ⌥ + 3           | Alt + 3            | Alt + 3            |
 | git commit                 | ⌥ + Enter       | Alt + Enter        | Alt + Enter        |
 | git push                   | ⌘ + ⌥ + Enter   | Ctrl + Alt + Enter | Ctrl + Alt + Enter |
+| git pull                   | ⌥ + Escape      | Alt + Escape       | Alt + Escape       |
 | -                          | -               | -                  | -                  |
 | toggle debug console       | ⌥ + Q           | Alt + Q            | Alt + Q            |
 | toggle terminal            | ⌥ + W           | Alt + W            | Alt + W            |
@@ -41,6 +42,9 @@
 | -                          | -               | -                  | -                  |
 | show markdown preview      | ⌥ + M           | Alt + M            | Alt + M            |
 | close active editor        | ⌘ + ⌥ + M       | Ctrl + Alt + M     | Ctrl + Alt + M     |
+| -                          | -               | -                  | -                  |
+| comment line               | ⌘ + /           | Cmd + /            | Cmd + /            |
+| comment block              | ⌥ + /           | Alt + /            | Alt + /            |
 | -                          | -               | -                  | -                  |
 | deactivate & activate (AI) | ⌥ + CAPSLOCK    | Alt + CAPSLOCK     | Alt + CAPSLOCK     |
 | Finish project ❌          | ⌘ + Delete      | Ctrl + Delete      | Ctrl + Delete      |
