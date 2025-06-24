@@ -139,6 +139,11 @@
         "mac": "cmd+alt+enter",
         "command": "git.push",
         "when": "scmProvider == git"
+      },{
+        "key": "alt+escape",
+        "mac": "alt+escape",
+        "command": "git.pull",
+        "when": "scmProvider == git"
       },
 
 
