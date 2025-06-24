@@ -167,10 +167,10 @@
       },{
         "key": "alt+e",
         "mac": "alt+e",
-        "command": "workbench.action.togglePanel"
+        "command": "workbench.action.closePanel"
       },
 
-
+      
 
       {
         "key": "ctrl+[Backquote]",
