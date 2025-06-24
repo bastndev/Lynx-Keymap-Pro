@@ -26,6 +26,7 @@
 | unstage all changes        | ⌥ + 3           | Alt + 3            | Alt + 3            |
 | git commit                 | ⌥ + Enter       | Alt + Enter        | Alt + Enter        |
 | git push                   | ⌘ + ⌥ + Enter   | Ctrl + Alt + Enter | Ctrl + Alt + Enter |
+| git pull                   | ⌥ + Escape      | Alt + Escape       | Alt + Escape       |
 | -                          | -               | -                  | -                  |
 | toggle debug console       | ⌥ + Q           | Alt + Q            | Alt + Q            |
 | toggle terminal            | ⌥ + W           | Alt + W            | Alt + W            |
@@ -41,6 +42,9 @@
 | -                          | -               | -                  | -                  |
 | show markdown preview      | ⌥ + M           | Alt + M            | Alt + M            |
 | close active editor        | ⌘ + ⌥ + M       | Ctrl + Alt + M     | Ctrl + Alt + M     |
+| -                          | -               | -                  | -                  |
+| comment line               | ⌘ + /           | Cmd + /            | Cmd + /            |
+| comment block              | ⌥ + /           | Alt + /            | Alt + /            |
 | -                          | -               | -                  | -                  |
 | deactivate & activate (AI) | ⌥ + CAPSLOCK    | Alt + CAPSLOCK     | Alt + CAPSLOCK     |
 | Finish project ❌          | ⌘ + Delete      | Ctrl + Delete      | Ctrl + Delete      |
@@ -115,11 +119,11 @@ Here is the project link if you want to collaborate: [[>\_ ] code](https://githu
 
 </br>
 
-| Icon                                                                                                                                                | Name                                                                                                   | Description                                                                                                                                     |
-| --------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------- |
-| ![](https://bastndev.gallerycdn.vsassets.io/extensions/bastndev/lynx-js-snippets/0.2.0/1745166683713/Microsoft.VisualStudio.Services.Icons.Default) | [Lynx-js Snippets .tsx](https://marketplace.visualstudio.com/items?itemName=bastndev.lynx-js-snippets) | A powerful collection of Lynx.js snippets (for TypeScript & React) that speeds up common coding patterns.                                       |
-| ![](https://bastndev.gallerycdn.vsassets.io/extensions/bastndev/lynx-theme/0.1.2/1744898058774/Microsoft.VisualStudio.Services.Icons.Default)       | [Lynx Theme](https://marketplace.visualstudio.com/items?itemName=bastndev.lynx-theme)                  | A sleek, customizable theme for VS Code with built‑in support for Cursor‑AI, Windsurf & Trae‑AI integrations.                                   |
-| ![](https://bastndev.gallerycdn.vsassets.io/extensions/bastndev/lynxjs-pack/0.1.8/1745206864969/Microsoft.VisualStudio.Services.Icons.Default)      | [LynxJS Pack](https://marketplace.visualstudio.com/items?itemName=bastndev.lynxjs-pack)                | An all‑in‑one toolkit for LynxJS mobile/web development—bundles keymap, snippets & AI tools like Cursor AI, Windsurf, Trae AI, Firebase Studio. |
+| Icon                                                                                                                                                                                                                                    | Name                                                          | Description                                                                                                                                     |
+| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
+| [<img src="https://bastndev.gallerycdn.vsassets.io/extensions/bastndev/lynx-keymap-75/0.2.0/1750804766630/Microsoft.VisualStudio.Services.Icons.Default">](https://marketplace.visualstudio.com/items?itemName=bastndev.lynx-keymap-75) | [Lynx Keymap 75%](https://github.com/bastndev/Lynx-Keymap-75) | An all‑in‑one toolkit for LynxJS mobile/web development—bundles keymap, snippets & AI tools like Cursor AI, Windsurf, Trae AI, Firebase Studio. |
+| [<img src="https://bastndev.gallerycdn.vsassets.io/extensions/bastndev/lynx-theme/0.1.2/1744898058774/Microsoft.VisualStudio.Services.Icons.Default">](https://marketplace.visualstudio.com/items?itemName=bastndev.lynx-theme)         | [Lynx Theme](https://github.com/bastndev/Lynx-Theme)          | A sleek, customizable VS Code theme with built‑in support for Cursor‑AI, Windsurf & Trae‑AI integrations.                                       |
+| [<img src="https://bastndev.gallerycdn.vsassets.io/extensions/bastndev/lynxjs-pack/0.1.8/1745206864969/Microsoft.VisualStudio.Services.Icons.Default">](https://marketplace.visualstudio.com/items?itemName=bastndev.lynxjs-pack)       | [LynxJS Pack](https://github.com/bastndev/LynxJs-Packge)      | An all‑in‑one toolkit for LynxJS mobile/web development—bundles keymap, snippets & AI tools like Cursor AI, Windsurf, Trae AI, Firebase Studio. |
 
 **Enjoy 🎉 your new keybindings! Suggestions or feedback? [Open an issue](https://github.com/bastndev/Lynx-Keymap/issues) or contribute.**
 [MORE](https://marketplace.visualstudio.com/publishers/bastndev)

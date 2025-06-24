@@ -2,7 +2,7 @@
   "name": "lynx-keymap",
   "displayName": "Lynx Keymap",
   "description": "Available now: VSCode, Cursor AI, Windsurf & Trae AI. + (Firebase Studio) & (+AI). ",
-  "version": "0.9.3",
+  "version": "0.9.5",
   "publisher": "bastndev",
   "license": "MIT",
   "engines": {
@@ -139,6 +139,11 @@
         "mac": "cmd+alt+enter",
         "command": "git.push",
         "when": "scmProvider == git"
+      },{
+        "key": "alt+escape",
+        "mac": "alt+escape",
+        "command": "git.pull",
+        "when": "scmProvider == git"
       },
 
 
@@ -165,7 +170,7 @@
         "command": "workbench.action.closePanel"
       },
 
-
+      
 
       {
         "key": "ctrl+[Backquote]",
@@ -233,6 +238,18 @@
         "key": "ctrl+alt+m",
         "mac": "cmd+alt+m",
         "command": "workbench.action.closeActiveEditor"
+      },
+
+
+
+      {
+        "key": "cmd+/",
+        "mac": "cmd+/",
+        "command": "lynx-keymap.toggleInlineSuggest"
+      },{
+        "key": "alt+/",
+        "mac": "alt+/",
+        "command": "editor.action.blockComment"
       },
 
 
