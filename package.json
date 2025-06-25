@@ -122,7 +122,7 @@
         "key": "alt+2",
         "mac": "alt+2",
         "command": "lynx-keymap.generateAICommit",
-        "when": "scmProvider == git && sideBarFocus"
+        "when": "scmProvider == git"
       },{
         "key": "alt+3",
         "mac": "alt+3",
@@ -134,7 +134,7 @@
         "key": "alt+enter",
         "mac": "alt+enter",
         "command": "git.commit",
-        "when": "scmProvider == git && sideBarFocus"
+        "when": "scmProvider == git"
       },{
         "key": "ctrl+alt+enter",
         "mac": "cmd+alt+enter",
