@@ -242,6 +242,16 @@
       },
 
 
+      {
+        "key": "ctrl+j",
+        "mac": "cmd+j",
+        "command": "workbench.action.openSettings"
+      },{
+        "key": "alt+j",
+        "mac": "alt+j",
+        "command": "workbench.action.openSettingsJson"
+      },
+
 
       {
         "key": "ctrl+/",
