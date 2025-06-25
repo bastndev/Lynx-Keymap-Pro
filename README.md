@@ -43,6 +43,9 @@
 | show markdown preview        | ⌥ + M           | Alt + M            | Alt + M            |
 | close active editor          | ⌘ + ⌥ + M       | Ctrl + Alt + M     | Ctrl + Alt + M     |
 | -                            | -               | -                  | -                  |
+| open settings                | ⌘ + J           | Ctrl + J           | Ctrl + J           |
+| open settings (JSON)         | ⌥ + J           | Alt + J            | Alt + J            |
+| -                            | -               | -                  | -                  |
 | comment line                 | ⌘ + /           | Cmd + /            | Cmd + /            |
 | comment block                | ⌥ + /           | Alt + /            | Alt + /            |
 | -                            | -               | -                  | -                  |
