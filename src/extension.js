@@ -67,8 +67,8 @@ function activate(context) {
     let attachContextDisposable = vscode.commands.registerCommand('lynx-keymap.attachAIContext', async function () {
         const attachContextCommands = [
             //---- ---- ----- --- -- -                  // 0: Windsurf
-            'workbench.action.chat.attachContext',      // 1: Vscode
             'composer.openAddContextMenu',              // 2: Cursor-AI
+            'workbench.action.chat.attachContext',      // 1: Vscode
             //'---- ---- --- --- -- - ',                // 3: Trae-AI
             //'Workbench.action.openWorkspace' NF-now   // 4: Firebase.Studio
         ];
