@@ -259,6 +259,10 @@
         "mac": "cmd+escape",
         "command": "lynx-keymap.toggleInlineSuggest"
       },{
+        "key": "ctrl+backspace",
+        "mac": "cmd+backspace",
+        "command": "deleteWordLeft"
+      },{
         "key": "ctrl+delete",
         "mac": "cmd+delete",
         "command": "workbench.action.closeFolder"
