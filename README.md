@@ -22,7 +22,7 @@
 | new folder                 | ⌥ + V           | Alt + V            | Alt + V            |
 | -                          | -               | -                  | -                  |
 | stage all changes          | ⌥ + 1           | Alt + 1            | Alt + 1            |
-| generate AI commit message | ⌥ + 2           | Ctrl + Alt + 2     | Ctrl + Alt + 2     |
+| generate AI commit message | ⌥ + 2           | Alt + 2            | Alt + 2            |
 | unstage all changes        | ⌥ + 3           | Alt + 3            | Alt + 3            |
 | git commit                 | ⌥ + Enter       | Alt + Enter        | Alt + Enter        |
 | git push                   | ⌘ + ⌥ + Enter   | Ctrl + Alt + Enter | Ctrl + Alt + Enter |

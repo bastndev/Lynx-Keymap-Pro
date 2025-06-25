@@ -119,9 +119,10 @@
         "command": "git.stageAll",
         "when": "scmProvider == git"
       },{
-        "key": "ctrl+alt+2",
-        "mac": "cmd+alt+2",
-        "command": "lynx-keymap.generateAICommit"
+        "key": "alt+2",
+        "mac": "alt+2",
+        "command": "lynx-keymap.generateAICommit",
+        "when": "scmProvider == git && sideBarFocus"
       },{
         "key": "alt+3",
         "mac": "alt+3",
