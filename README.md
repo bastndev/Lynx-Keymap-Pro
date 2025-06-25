@@ -26,7 +26,7 @@
 | unstage all changes        | ⌥ + 3           | Alt + 3            | Alt + 3            |
 | git commit                 | ⌥ + Enter       | Alt + Enter        | Alt + Enter        |
 | git push                   | ⌘ + ⌥ + Enter   | Ctrl + Alt + Enter | Ctrl + Alt + Enter |
-| git pull                   | ⌥ + ESC         | Alt + Esc          | Alt + ESC          |
+| git pull                   | ⌥ + ESC         | Alt + ESC          | Alt + ESC          |
 | -                          | -               | -                  | -                  |
 | toggle debug console       | ⌥ + Q           | Alt + Q            | Alt + Q            |
 | toggle terminal            | ⌥ + W           | Alt + W            | Alt + W            |
