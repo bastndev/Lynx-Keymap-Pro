@@ -119,9 +119,10 @@
         "command": "git.stageAll",
         "when": "scmProvider == git"
       },{
-        "key": "ctrl+alt+2",
-        "mac": "cmd+alt+2",
-        "command": "lynx-keymap.generateAICommit"
+        "key": "alt+2",
+        "mac": "alt+2",
+        "command": "lynx-keymap.generateAICommit",
+        "when": "scmProvider == git"
       },{
         "key": "alt+3",
         "mac": "alt+3",
@@ -133,7 +134,7 @@
         "key": "alt+enter",
         "mac": "alt+enter",
         "command": "git.commit",
-        "when": "scmProvider == git && sideBarFocus"
+        "when": "scmProvider == git"
       },{
         "key": "ctrl+alt+enter",
         "mac": "cmd+alt+enter",
@@ -240,6 +241,20 @@
         "command": "workbench.action.closeActiveEditor"
       },
 
+
+      {
+        "key": "ctrl+j",
+        "mac": "cmd+j",
+        "command": "workbench.action.openSettings"
+      },{
+        "key": "ctrl+,",
+        "mac": "cmd+,",
+        "command": ""
+      },{
+        "key": "alt+j",
+        "mac": "alt+j",
+        "command": "workbench.action.openSettingsJson"
+      },
 
 
       {
