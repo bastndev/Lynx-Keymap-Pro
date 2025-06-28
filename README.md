@@ -37,11 +37,11 @@
 | restart debugging            | ⌥ + O           | Alt + O            | Alt + O            |
 | stop debugging               | ⌥ + I           | Alt + I            | Alt + I            |
 | -                            | -               | -                  | -                  |
-| format document              | ⌥ + F           | Alt + F            | Alt + F            |
-| -                            | -               | -                  | -                  |
 | view git changes             | ⌥ + L           | Alt + L            | Alt + L            |
 | show markdown preview        | ⌥ + M           | Alt + M            | Alt + M            |
-| close active editor          | ⌘ + ⌥ + M       | Ctrl + Alt + M     | Ctrl + Alt + M     |
+| -                            | -               | -                  | -                  |
+| format document              | ⌥ + F           | Alt + F            | Alt + F            |
+| close tab                    | ⌘ + W           | Ctrl + W           | Ctrl + W           |
 | -                            | -               | -                  | -                  |
 | open settings                | ⌘ + J           | Ctrl + J           | Ctrl + J           |
 | open settings (JSON)         | ⌥ + J           | Alt + J            | Alt + J            |
