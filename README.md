@@ -66,6 +66,9 @@
 | -                                 | -            | -              | -              |
 | accept (AI) generated code ✅     | ⌘ + Enter    | Ctrl + Enter   | Ctrl + Enter   |
 | reject (AI) generated code 🚫     | ⌥ + Enter    | Alt + Enter    | Alt + Enter    |
+| -                                 | -            | -              | -              |
+| 🆕 agent select (AI)              | ⌥ + Z        | Alt + Z        | Alt + Z        |
+| 🆕 pick model (AI)                | ⌥ + X        | Alt + X        | Alt + X        |
 
 </br>
 
