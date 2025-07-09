@@ -3,7 +3,7 @@
 <p align="center">
     <a href="https://marketplace.visualstudio.com/items?itemName=bastndev.lynx-keymap"><img src="https://vsmarketplacebadges.dev/version-short/bastndev.lynx-keymap.jpg?style=for-the-badge&colorA=fa9905&colorB=EEEEEE&color=000000&label=VERSION" alt="Version"></a>&nbsp;
     <a href="https://marketplace.visualstudio.com/items?itemName=bastndev.lynx-keymap"><img src="https://vsmarketplacebadges.dev/rating-short/bastndev.lynx-keymap.jpg?style=for-the-badge&colorA=e06a1e&colorB=EEEEEE&color=000000&label=Rating" alt="Rating"></a>&nbsp;
-    <a href="https://marketplace.visualstudio.com/items?itemName=bastndev.lynx-keymap"><img src="https://vsmarketplacebadges.dev/installs-short/bastndev.lynx-keymap.jpg?style=for-the-badge&colorA=c83534&colorB=EEEEEE&color=000000&label=Installs" alt="Installs"></a>&nbsp;
+    <a href="https://marketplace.visualstudio.com/items?itemName=bastndev.lynx-keymap"><img src="https://vsmarketplacebadges.dev/installs-short/bastndev.lynx-keymap.jpg?style=for-the-badge&colorA=dd4636&colorB=EEEEEE&color=000000&label=Installs" alt="Installs"></a>&nbsp;
     <a href="https://github.com/sponsors/bastndev"><img src="https://raw.githubusercontent.com/bastndev/Lynx-Keymap/main/assets/images/sponsor.png" width="30px" alt="Sponsor Github"></a>
 </p>
 
@@ -68,7 +68,7 @@
 | reject (AI) generated code 🚫      | ⌥ + Enter    | Alt + Enter    | Alt + Enter    |
 | -                                  | -            | -              | -              |
 | agent select (AI) 🔁 (only-VScode) | ⌥ + Z        | Alt + Z        | Alt + Z        |
-| pick model (AI)      (only-VScode) | ⌥ + X        | Alt + X        | Alt + X        |
+| pick model (AI) (only-VScode)      | ⌥ + X        | Alt + X        | Alt + X        |
 
 </br>
 
