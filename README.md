@@ -1,9 +1,9 @@
-[![Use Extension](https://raw.githubusercontent.com/bastndev/Lynx-Keymap/refs/heads/main/assets/images/banner-orange.png)](https://github.com/bastndev/Lynx-Keymap)
+[![Use Extension](https://raw.githubusercontent.com/bastndev/Lynx-Keymap/refs/heads/main/assets/images/banner.png)](https://github.com/bastndev/Lynx-Keymap)
 
 <p align="center">
-    <a href="https://marketplace.visualstudio.com/items?itemName=bastndev.lynx-keymap"><img src="https://vsmarketplacebadges.dev/version-short/bastndev.lynx-keymap.jpg?style=for-the-badge&colorA=c83534&colorB=EEEEEE&color=000000&label=VERSION" alt="Version"></a>&nbsp;
+    <a href="https://marketplace.visualstudio.com/items?itemName=bastndev.lynx-keymap"><img src="https://vsmarketplacebadges.dev/version-short/bastndev.lynx-keymap.jpg?style=for-the-badge&colorA=fa9905&colorB=EEEEEE&color=000000&label=VERSION" alt="Version"></a>&nbsp;
     <a href="https://marketplace.visualstudio.com/items?itemName=bastndev.lynx-keymap"><img src="https://vsmarketplacebadges.dev/rating-short/bastndev.lynx-keymap.jpg?style=for-the-badge&colorA=e06a1e&colorB=EEEEEE&color=000000&label=Rating" alt="Rating"></a>&nbsp;
-    <a href="https://marketplace.visualstudio.com/items?itemName=bastndev.lynx-keymap"><img src="https://vsmarketplacebadges.dev/installs-short/bastndev.lynx-keymap.jpg?style=for-the-badge&colorA=fa9905&colorB=EEEEEE&color=000000&label=Installs" alt="Installs"></a>&nbsp;
+    <a href="https://marketplace.visualstudio.com/items?itemName=bastndev.lynx-keymap"><img src="https://vsmarketplacebadges.dev/installs-short/bastndev.lynx-keymap.jpg?style=for-the-badge&colorA=c83534&colorB=EEEEEE&color=000000&label=Installs" alt="Installs"></a>&nbsp;
     <a href="https://github.com/sponsors/bastndev"><img src="https://raw.githubusercontent.com/bastndev/Lynx-Keymap/main/assets/images/sponsor.png" width="30px" alt="Sponsor Github"></a>
 </p>
 
@@ -121,7 +121,7 @@ Here is the project link if you want to collaborate: [[>\_ ] code](https://githu
 ## About Me
 
 - [🐦 X](https://twitter.com/bastndev) - For questions and discussions.
-- 📽️ [Youtube](https://www.youtube.com/@bastndev) - Code, Software and development insights.
+- 🔴 [Youtube](https://www.youtube.com/@bastndev?sub_confirmation=1) - Code, Software and development insights.
 - 💼 [Linkedin](https://www.linkedin.com/in/bastndev) - Professional networking and career updates.
 
 </br>
