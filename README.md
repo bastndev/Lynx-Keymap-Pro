@@ -1,4 +1,4 @@
-[![Use Extension](https://raw.githubusercontent.com/bastndev/Lynx-Keymap/refs/heads/main/assets/images/banner.png)](https://github.com/bastndev/Lynx-Keymap)
+[![Use Extension](https://raw.githubusercontent.com/bastndev/Lynx-Keymap/refs/heads/main/assets/images/banne2.png)](https://github.com/bastndev/Lynx-Keymap)
 
 <p align="center">
     <a href="https://marketplace.visualstudio.com/items?itemName=bastndev.lynx-keymap"><img src="https://vsmarketplacebadges.dev/version-short/bastndev.lynx-keymap.jpg?style=for-the-badge&colorA=c83534&colorB=EEEEEE&color=000000&label=VERSION" alt="Version"></a>&nbsp;
