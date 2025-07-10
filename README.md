@@ -30,8 +30,7 @@
 | -                            | -               | -                  | -                  |
 | format document              | ⌥ + F           | Alt + F            | Alt + F            |
 | format selection             | ⌘ + ⌥ + F       | Ctrl + Alt + F     | Ctrl + Alt + F     |
-| -                            | -               | -                  | -                  |
-| close tab                    | ⌘ + W           | Ctrl + W           | Ctrl + W           |
+| organize imports             | ⌥ + Shift + F   | Shift + Alt + F    | Shift + Alt + F    |
 | -                            | -               | -                  | -                  |
 | open & close debug console   | ⌥ + Q           | Alt + Q            | Alt + Q            |
 | open & close terminal        | ⌥ + W           | Alt + W            | Alt + W            |
@@ -51,6 +50,11 @@
 | comment line                 | ⌘ + /           | Ctrl + /           | Ctrl + /           |
 | comment block                | ⌥ + /           | Alt + /            | Alt + /            |
 | -                            | -               | -                  | -                  |
+| copy lines up                | ⌥ + Shift + ↑   | Alt + Shift + ↑    | Alt + Shift + ↑    |
+| copy lines down              | ⌥ + Shift + ↓   | Alt + Shift + ↓    | Alt + Shift + ↓    |
+| insert cursor above          | ⌘ + ↑           | Ctrl + ↑           | Ctrl + ↑           |
+| insert cursor below          | ⌘ + ↓           | Ctrl + ↓           | Ctrl + ↓           |
+| -                            | -               | -                  | -                  |
 | deactivate & activate (AI)   | ⌘ + Esc         | Ctrl + Esc         | Ctrl + Esc         |
 | delete word left             | ⌘ + Backspace   | Ctrl + Backspace   | Ctrl + Backspace   |
 | close folder                 | ⌘ + Delete      | Ctrl + Delete      | Ctrl + Delete      |
@@ -69,8 +73,8 @@
 | accept (AI) generated code ✅     | ⌘ + Enter    | Ctrl + Enter   | Ctrl + Enter   |
 | reject (AI) generated code 🚫     | ⌥ + Enter    | Alt + Enter    | Alt + Enter    |
 | -                                 | -            | -              | -              |
-| ask, agent, edit 🔁 (only-VScode) | ⌥ + Z        | Alt + Z        | Alt + Z        |
-| pick model (AI) (only-VScode)     | ⌥ + X        | Alt + X        | Alt + X        |
+| ask, agent, edit 🔁 (𝚘𝚗𝚕𝚢-𝚅𝚂𝚌𝚘𝚍𝚎) | ⌥ + Z        | Alt + Z        | Alt + Z        |
+| pick (AI) model (𝚘𝚗𝚕𝚢-𝚅𝚂𝚌𝚘𝚍𝚎)     | ⌥ + X        | Alt + X        | Alt + X        |
 
 </br>
 
