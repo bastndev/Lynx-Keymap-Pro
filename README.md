@@ -26,7 +26,11 @@
 | unstage all changes files    | ⌥ + 3           | Alt + 3            | Alt + 3            |
 | git commit                   | ⌥ + Enter       | Alt + Enter        | Alt + Enter        |
 | git push                     | ⌘ + ⌥ + Enter   | Ctrl + Alt + Enter | Ctrl + Alt + Enter |
-| git pull                     | ⌥ + ESC         | Alt + ESC          | Alt + ESC          |
+| git pull                     | ⌥ + Esc         | Alt + Esc          | Alt + Esc          |
+| -                            | -               | -                  | -                  |
+| format document              | ⌥ + F           | Alt + F            | Alt + F            |
+| format selection             | ⌘ + ⌥ + F       | Ctrl + Alt + F     | Ctrl + Alt + F     |
+| organize imports             | ⇧ + ⌥ + F       | Shift + Alt + F    | Shift + Alt + F    |
 | -                            | -               | -                  | -                  |
 | open & close debug console   | ⌥ + Q           | Alt + Q            | Alt + Q            |
 | open & close terminal        | ⌥ + W           | Alt + W            | Alt + W            |
@@ -40,18 +44,15 @@
 | view git changes             | ⌥ + L           | Alt + L            | Alt + L            |
 | show markdown preview        | ⌥ + M           | Alt + M            | Alt + M            |
 | -                            | -               | -                  | -                  |
-| format document              | ⌥ + F           | Alt + F            | Alt + F            |
-| close tab                    | ⌘ + W           | Ctrl + W           | Ctrl + W           |
-| -                            | -               | -                  | -                  |
 | open settings                | ⌘ + J           | Ctrl + J           | Ctrl + J           |
 | open settings (JSON)         | ⌥ + J           | Alt + J            | Alt + J            |
 | -                            | -               | -                  | -                  |
-| comment line                 | ⌘ + /           | Cmd + /            | Cmd + /            |
+| comment line                 | ⌘ + /           | Ctrl + /           | Ctrl + /           |
 | comment block                | ⌥ + /           | Alt + /            | Alt + /            |
 | -                            | -               | -                  | -                  |
-| deactivate & activate (AI)   | ⌥ + CAPSLOCK    | Alt + CAPSLOCK     | Alt + CAPSLOCK     |
-| Delete txt paragraph         | ⌘ + Backspace   | ctrl + Backspace   | ctrl + Backspace   |
-| Finish project ❌            | ⌘ + Delete      | Ctrl + Delete      | Ctrl + Delete      |
+| deactivate & activate (AI)   | ⌘ + Esc         | Ctrl + Esc         | Ctrl + Esc         |
+| delete word left             | ⌘ + Backspace   | Ctrl + Backspace   | Ctrl + Backspace   |
+| close folder                 | ⌘ + Delete      | Ctrl + Delete      | Ctrl + Delete      |
 
 ### ► [AI] Commands Easy (Lynx Keymap)
 
