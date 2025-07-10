@@ -73,8 +73,8 @@
 | accept (AI) generated code ✅     | ⌘ + Enter    | Ctrl + Enter   | Ctrl + Enter   |
 | reject (AI) generated code 🚫     | ⌥ + Enter    | Alt + Enter    | Alt + Enter    |
 | -                                 | -            | -              | -              |
-| ask, agent, edit 🔁 𝚘𝚗𝚕𝚢-𝚅𝚂𝚌𝚘𝚍𝚎   | ⌥ + Z        | Alt + Z        | Alt + Z        |
-| pick (AI) model 𝚘𝚗𝚕𝚢-𝚅𝚂𝚌𝚘𝚍𝚎       | ⌥ + X        | Alt + X        | Alt + X        |
+| ask, agent, edit 🔁 ᵒⁿˡʸ-ᵛˢᶜᵒᵈᵉ   | ⌥ + Z        | Alt + Z        | Alt + Z        |
+| pick (AI) model ᵒⁿˡʸ-ᵛˢᶜᵒᵈᵉ    | ⌥ + X        | Alt + X        | Alt + X        |
 
 </br>
 
