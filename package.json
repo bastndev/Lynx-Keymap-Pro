@@ -2,7 +2,7 @@
   "name": "lynx-keymap",
   "displayName": "Lynx Keymap",
   "description": "Available now: VSCode, Cursor AI, Windsurf & Trae AI. + (Firebase Studio) & (+AI). ",
-  "version": "1.1.2",
+  "version": "1.1.3",
   "publisher": "bastndev",
   "license": "MIT",
   "engines": {
@@ -288,6 +288,24 @@
         "command": "editor.action.blockComment"
       },
 
+
+      {
+        "key": "alt+shift+up",
+        "mac": "alt+shift+up",
+        "command": "editor.action.copyLinesUpAction"
+      },{
+        "key": "alt+shift+down",
+        "mac": "alt+shift+down",
+        "command": "editor.action.copyLinesDownAction"
+      },{
+        "key": "ctrl+up",
+        "mac": "cmd+up",
+        "command": "editor.action.insertCursorAbove"
+      },{
+        "key": "ctrl+down",
+        "mac": "cmd+down",
+        "command": "editor.action.insertCursorBelow"
+      },
 
 
       {
