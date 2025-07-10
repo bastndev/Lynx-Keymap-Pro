@@ -30,7 +30,8 @@
 | -                            | -               | -                  | -                  |
 | format document              | ⌥ + F           | Alt + F            | Alt + F            |
 | format selection             | ⌘ + ⌥ + F       | Ctrl + Alt + F     | Ctrl + Alt + F     |
-| organize imports             | ⇧ + ⌥ + F       | Shift + Alt + F    | Shift + Alt + F    |
+| -                            | -               | -                  | -                  |
+| close tab                    | ⌘ + W           | Ctrl + W           | Ctrl + W           |
 | -                            | -               | -                  | -                  |
 | open & close debug console   | ⌥ + Q           | Alt + Q            | Alt + Q            |
 | open & close terminal        | ⌥ + W           | Alt + W            | Alt + W            |
@@ -56,20 +57,20 @@
 
 ### ► [AI] Commands Easy (Lynx Keymap)
 
-| command                             | 🍎 macos     | 🟦 windows     | 🐧 linux       |
-| :---------------------------------- | :----------- | :------------- | :------------- |
-| (AI) chat interface (popup/modal)   | ⌘ + `        | Ctrl + `       | Ctrl + `       |
-| (AI) chat (panel/view)              | ⌘ + Tab      | Ctrl + Tab     | Ctrl + Tab     |
-| create new (AI) session             | ⌥ + A        | Alt + A        | Alt + A        |
-| show (AI) chat history              | ⌥ + S        | Alt + S        | Alt + S        |
-| attach (AI) context                 | ⌥ + D        | Alt + D        | Alt + D        |
-| deactivate & activate (AI)          | ⌥ + CAPSLOCK | Alt + CAPSLOCK | Alt + CAPSLOCK |
-| -                                   | -            | -              | -              |
-| accept (AI) generated code ✅       | ⌘ + Enter    | Ctrl + Enter   | Ctrl + Enter   |
-| reject (AI) generated code 🚫       | ⌥ + Enter    | Alt + Enter    | Alt + Enter    |
-| -                                   | -            | -              | -              |
-| ask, agent, edit (🔁) `only-VScode` | ⌥ + Z        | Alt + Z        | Alt + Z        |
-| pick model (AI) `only-VScode`       | ⌥ + X        | Alt + X        | Alt + X        |
+| command                           | 🍎 macos     | 🟦 windows     | 🐧 linux       |
+| :-------------------------------- | :----------- | :------------- | :------------- |
+| (AI) chat interface (popup/modal) | ⌘ + `        | Ctrl + `       | Ctrl + `       |
+| (AI) chat (panel/view)            | ⌘ + Tab      | Ctrl + Tab     | Ctrl + Tab     |
+| create new (AI) session           | ⌥ + A        | Alt + A        | Alt + A        |
+| show (AI) chat history            | ⌥ + S        | Alt + S        | Alt + S        |
+| attach (AI) context               | ⌥ + D        | Alt + D        | Alt + D        |
+| deactivate & activate (AI)        | ⌥ + CAPSLOCK | Alt + CAPSLOCK | Alt + CAPSLOCK |
+| -                                 | -            | -              | -              |
+| accept (AI) generated code ✅     | ⌘ + Enter    | Ctrl + Enter   | Ctrl + Enter   |
+| reject (AI) generated code 🚫     | ⌥ + Enter    | Alt + Enter    | Alt + Enter    |
+| -                                 | -            | -              | -              |
+| ask, agent, edit 🔁 (only-VScode) | ⌥ + Z        | Alt + Z        | Alt + Z        |
+| pick model (AI) (only-VScode)     | ⌥ + X        | Alt + X        | Alt + X        |
 
 </br>
 
