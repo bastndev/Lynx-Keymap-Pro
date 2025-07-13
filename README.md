@@ -21,7 +21,7 @@
 
 </br>
 
-### ► Lynx Keymap — Standard Keybindings
+### Lynx Keymap — Standard Keybindings
 
 | Command                      | 🍎 macOS        | 🟦 Windows           | 🐧 Linux             |
 | :--------------------------- | :-------------- | :------------------- | :------------------- |
@@ -72,14 +72,14 @@
 | delete word left             | `⌘ + Backspace` | `Ctrl + Backspace`   | `Ctrl + Backspace`   |
 | close folder                 | `⌘ + Delete`    | `Ctrl + Delete`      | `Ctrl + Delete`      |
 
-### ► [AI] Commands Easy (Lynx Keymap)
+### ► (AI ✨) Commands Easy
 
 | Command                                 | 🍎 macOS    | 🟦 Windows     | 🐧 Linux       |
 | :-------------------------------------- | :---------- | :------------- | :------------- |
 | (AI) chat interface (popup/modal)       | ` ⌘ + ``  ` | ` Ctrl + ``  ` | ` Ctrl + ``  ` |
-| (AI) chat (panel/view)                  | `⇧ + Tab`   | `Shift + Tab`  | `Shift + Tab`  |
+| (AI) chat (open/close) x2 click first   | `⇧ + Tab`   | `Shift + Tab`  | `Shift + Tab`  |
 | create new (AI) session                 | `⌥ + A`     | `Alt + A`      | `Alt + A`      |
-| show (AI) chat history                  | `⌥ + S`     | `Alt + S`      | `Alt + S`      |
+| show (AI) history                       | `⌥ + S`     | `Alt + S`      | `Alt + S`      |
 | attach (AI) context                     | `⌥ + D`     | `Alt + D`      | `Alt + D`      |
 | deactivate & activate (AI)              | `⌥ + Esc`   | `Alt + Esc`    | `Alt + Esc`    |
 | -                                       | -           | -              | -              |
