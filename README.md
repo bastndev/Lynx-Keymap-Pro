@@ -74,21 +74,21 @@
 
 ### ► [AI] Commands Easy (Lynx Keymap)
 
-| command                                 | 🍎 macos  | 🟦 windows    | 🐧 linux      |
-| :-------------------------------------- | :-------- | :------------ | :------------ |
-| (AI) chat interface (popup/modal)       | ⌘ + `     | Ctrl + `      | Ctrl + `      |
-| (AI) chat (panel/view)                  | ⌘ + Tab   | Ctrl + Tab    | Ctrl + Tab    |
-| create new (AI) session                 | ⌥ + A     | Alt + A       | Alt + A       |
-| show (AI) chat history                  | ⌥ + S     | Alt + S       | Alt + S       |
-| attach (AI) context                     | ⌥ + D     | Alt + D       | Alt + D       |
-| deactivate & activate (AI)              | ⌥ + Esc   | Alt + Esc     | Alt + Esc     |
-| -                                       | -         | -             | -             |
-| accept (AI) generated code ✅           | ⌘ + Enter | Ctrl + Enter  | Ctrl + Enter  |
-| reject (AI) generated code 🚫           | ⌥ + Enter | Alt + Enter   | Alt + Enter   |
-| -                                       | -         | -             | -             |
-| ask, agent, edit 🔁 ᵒⁿˡʸ-ᵛˢᶜᵒᵈᵉ         | ⌥ + Z     | Alt + Z       | Alt + Z       |
-| pick (AI) model ᵒⁿˡʸ-ᵛˢᶜᵒᵈᵉ             | ⌥ + X     | Alt + X       | Alt + X       |
-| maximized & minimize (AI) `ᵒⁿˡʸ-ᵛˢᶜᵒᵈᵉ` | `⇧ + Esc` | `Shift + Esc` | `Shift + Esc` |
+| command                               | 🍎 macos  | 🟦 windows   | 🐧 linux     |
+| :------------------------------------ | :-------- | :----------- | :----------- |
+| (AI) chat interface (popup/modal)     | ⌘ + `     | Ctrl + `     | Ctrl + `     |
+| (AI) chat (panel/view)                | ⌘ + Tab   | Ctrl + Tab   | Ctrl + Tab   |
+| create new (AI) session               | ⌥ + A     | Alt + A      | Alt + A      |
+| show (AI) chat history                | ⌥ + S     | Alt + S      | Alt + S      |
+| attach (AI) context                   | ⌥ + D     | Alt + D      | Alt + D      |
+| deactivate & activate (AI)            | ⌥ + Esc   | Alt + Esc    | Alt + Esc    |
+| -                                     | -         | -            | -            |
+| accept (AI) generated code ✅         | ⌘ + Enter | Ctrl + Enter | Ctrl + Enter |
+| reject (AI) generated code 🚫         | ⌥ + Enter | Alt + Enter  | Alt + Enter  |
+| -                                     | -         | -            | -            |
+| ask, agent, edit 🔁 ᵒⁿˡʸ-ᵛˢᶜᵒᵈᵉ       | ⌥ + Z     | Alt + Z      | Alt + Z      |
+| pick (AI) model ᵒⁿˡʸ-ᵛˢᶜᵒᵈᵉ           | ⌥ + X     | Alt + X      | Alt + X      |
+| maximized & minimize (AI) ᵒⁿˡʸ-ᵛˢᶜᵒᵈᵉ | ⇧ + Esc   | Shift + Esc  | Shift + Esc  |
 
 </br>
 
