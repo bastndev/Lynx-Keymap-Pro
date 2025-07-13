@@ -117,8 +117,8 @@
         "mac": "alt+v",
         "command": "explorer.newFolder"
       },{
-        "key": "ctrl+shift+tab",
-        "mac": "cmd+shift+tab",
+        "key": "ctrl+tab",
+        "mac": "cmd+tab",
         "command": "workbench.action.toggleSidebarVisibility"
       },
 
@@ -200,8 +200,8 @@
         "mac": "cmd+[Backquote]",
         "command": "lynx-keymap.executeAIPopup"
       },{
-        "key": "ctrl+tab",
-        "mac": "cmd+tab",
+        "key": "shift+tab",
+        "mac": "shift+tab",
         "command": "lynx-keymap.openAIChat"
       },
 
