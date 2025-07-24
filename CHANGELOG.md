@@ -28,10 +28,10 @@ Discover more extensions at [bastndev.com/extensions](https://bastndev.com/exten
 ## Changelog
 
 Following semantic versioning principles for consistent and predictable releases.
-
-## [2.0.6] - 2025-07-24
+## [2.0.7] - 2025-07-24
 
 ### Added
+- **Distinctive Logo Enhancement**: Added a unique element to the logo/icon for better distinction (icon itself unchanged, but now visually differentiated)
 - **Professional Changelog**: Complete changelog documentation with comprehensive version history
 - **Repository Star Button**: New ⭐️ button linking directly to GitHub repository for easy starring and support
 - **Kiro Editor Support**: Full keymap integration with Kiro code editor
