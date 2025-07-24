@@ -1,32 +1,30 @@
 {
   "name": "lynx-keymap",
   "displayName": "Lynx Keymap",
-  "description": "Available now: VSCode, Cursor AI, Windsurf & Trae AI. + (Firebase Studio) & (+AI). ",
-  "version": "2.0.1",
+  "description": "Available now: VSCode • Cursor • Windsurf • Trae.ai • Kiro & (Firebase Studio)... 雨",
+  "version": "2.0.3",
   "publisher": "bastndev",
   "license": "MIT",
   "engines": {
-    "vscode": "^1.43.0"
+		"vscode": "^1.74.0"
   },
-  "categories": [
-    "Keymaps",
-    "Programming Languages",
-    "AI",
-    "Debuggers",
-    "Chat"
-  ],
+  "categories": ["Keymaps", "Other"],
   "keywords": [
+    "lynx",
+    "keymaps", 
     "keybindings",
-    "keymap",
+    "shortcuts",
+    "productivity",
     "Vscode",
-    "AI",
-    "Cursor-AI",
-    "Trae",
+    "Cursor",
+    "Trae.ai",
     "Windsurf",
     "Firebase studio",
-    "Keybinding",
-    "Keybindings",
-    "shortcuts",
+    "Kiro",
+    "ai-editors",
+    "cross-platform",
+    "developer-tools",
+    "workflow",
     "2025",
     "Windows",
     "Linux",
@@ -48,7 +46,10 @@
   "author": {
     "name": "Gohit Bastian",
     "email": "gobasdev@gmail.com",
-    "url": "https://www.bastndev.com"
+    "url": "https://bastndev.com"
+  },
+  "sponsor": {
+    "url": "https://github.com/sponsors/bastndev"
   },
   "activationEvents": [
     "onStartupFinished"
@@ -346,6 +347,13 @@
         "key": "ctrl+delete",
         "mac": "cmd+delete",
         "command": "workbench.action.closeFolder"
+      },
+
+
+      {
+        "key": "shift+alt+t",
+        "mac": "shift+alt+t",
+        "command": "workbench.action.selectTheme"
       }
     ]
   }
