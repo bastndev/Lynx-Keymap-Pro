@@ -12,6 +12,7 @@ const COMMAND_PREFIX = 'lynx-keymap';
 
 // AI Platform Command Mappings
 const AI_COMMANDS = {
+  // [Alt+2]
   COMMIT: [
     'windsurf.generateCommitMessage',                     // Windsurf
     'github.copilot.git.generateCommitMessage',           // VSCode
@@ -19,35 +20,46 @@ const AI_COMMANDS = {
     'icube.gitGenerateCommitMessage',                     // Trae AI
   ],
   
+  // [Ctrl+`]
   POPUP: [
     'windsurf.prioritized.command.open',                  // Windsurf
     'inlineChat.start',                                   // VSCode
     'aipopup.action.modal.generate',                      // Cursor AI
     'icube.inlineChat.start',                             // Trae AI
     'workbench.action.terminal.chat.start',               // Firebase Studio
+    'kiroAgent.inlineChat.start',                         // Kiro
   ],
   
+  // [Shift+Tab]
   CHAT: [
+    'kiroAgent.continueGUIView.focus',                    // Kiro
     'windsurf.prioritized.chat.open',                     // Windsurf
     'workbench.panel.chat',                               // VSCode
     'aichat.newchataction',                               // Cursor AI
     'workbench.action.chat.icube.open',                   // Trae AI
     'aichat.prompt',                                      // Firebase Studio
   ],
-  
+
+  // [Shift+Esc] --- Future
+
+  // [Alt+A]
   NEW_SESSION: [
     'windsurf.prioritized.chat.openNewConversation',      // Windsurf
     'workbench.action.chat.newEditSession',               // VSCode
     'composer.createNew',                                 // Cursor AI
     'workbench.action.icube.aiChatSidebar.createNewSession', // Trae AI
+    'kiroAgent.newSession'                                // Kiro
   ],
   
+  // [Alt+S]
   HISTORY: [
+    'kiroAgent.viewHistoryChats',                         // Kiro
     'workbench.action.chat.history',                      // VSCode
     'composer.showComposerHistory',                       // Cursor AI
     'workbench.action.icube.aiChatSidebar.showHistory',   // Trae AI
   ],
   
+  // [Alt+D]
   ATTACH_CONTEXT: [
     'workbench.action.chat.attachContext',                // VSCode
     'composer.openAddContextMenu',                        // Cursor AI
