@@ -28,7 +28,13 @@ Discover more extensions at [bastndev.com/extensions](https://bastndev.com/exten
 ## Changelog
 
 Following semantic versioning principles for consistent and predictable releases.
-## [2.0.7] - 2025-07-24
+
+## [2.0.8] - 2025-07-24
+
+### Changed
+- **Renamed Extension**: Changed name from "Lynx Keymap" to "Lynx Keymap Pro" for enhanced branding and clarity
+
+## [2.0.6] - 2025-07-23
 
 ### Added
 - **Distinctive Logo Enhancement**: Added a unique element to the logo/icon for better distinction (icon itself unchanged, but now visually differentiated)
