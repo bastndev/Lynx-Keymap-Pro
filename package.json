@@ -2,7 +2,7 @@
   "name": "lynx-keymap",
   "displayName": "Lynx Keymap",
   "description": "Available now: VSCode • Cursor • Windsurf • Trae.ai • Kiro & (Firebase Studio)... 雨",
-  "version": "2.0.3",
+  "version": "2.0.6",
   "publisher": "bastndev",
   "license": "MIT",
   "engines": {
@@ -25,12 +25,12 @@
     "cross-platform",
     "developer-tools",
     "workflow",
-    "2025",
     "Windows",
     "Linux",
-    "MacOS"
+    "MacOS",
+    "2025"
   ],
-  "icon": "assets/icon.png",
+  "icon": "icon.png",
   "galleryBanner": {
     "color": "#0a0a0a",
     "theme": "dark"
