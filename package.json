@@ -1,8 +1,8 @@
 {
   "name": "lynx-keymap",
-  "displayName": "Lynx Keymap",
+  "displayName": "Lynx Keymap Pro",
   "description": "Available now: VSCode • Cursor • Windsurf • Trae.ai • Kiro & (Firebase Studio)... 雨",
-  "version": "2.0.7",
+  "version": "2.0.8",
   "publisher": "bastndev",
   "license": "MIT",
   "engines": {
@@ -35,13 +35,13 @@
     "color": "#0a0a0a",
     "theme": "dark"
   },
-  "homepage": "https://github.com/bastndev/Lynx-Keymap#readme",
+  "homepage": "https://github.com/bastndev/Lynx-Keymap-Pro#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/bastndev/Lynx-Keymap"
+    "url": "https://github.com/bastndev/Lynx-Keymap-Pro"
   },
   "bugs": {
-    "url": "https://github.com/bastndev/Lynx-Keymap/issues"
+    "url": "https://github.com/bastndev/Lynx-Keymap-Pro/issues"
   },
   "author": {
     "name": "Gohit Bastian",
