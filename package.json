@@ -69,6 +69,10 @@
         "key"    : "ctrl+3",
         "mac"    : "cmd+3",
         "command": "workbench.view.extensions"
+      },{
+        "key"    : "ctrl+4",
+        "mac"    : "cmd+4",
+        "command": "f1-toggles.focus"
       },
       
 
