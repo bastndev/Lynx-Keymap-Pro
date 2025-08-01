@@ -311,8 +311,8 @@
       },      
 
       {
-        "key"    : "ctrl+alt+pagedown",
-        "mac"    : "cmd+alt+pagedown",
+        "key"    : "ctrl+alt+,",
+        "mac"    : "cmd+alt+,",
         "command": "lynx-keymap.toggleStatusBarColor"
       },
 
