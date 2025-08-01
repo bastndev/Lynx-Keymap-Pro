@@ -1,2 +1,3 @@
-src/extension.js
 package.json
+
+src/keymaps/ai-keymap-config.js
