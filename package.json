@@ -72,7 +72,7 @@
       },{
         "key"    : "ctrl+4",
         "mac"    : "cmd+4",
-        "command": "f1-toggles.focus"
+        "command": "lynx-keymap.checkF1Toggles"
       },
       
 
@@ -146,7 +146,7 @@
       },{
         "key"    : "alt+e",
         "mac"    : "alt+e",
-        "command": "gitlens.showGraph"
+        "command": "lynx-keymap.checkGitLens"
       },{
         "key"    : "alt+r",
         "mac"    : "alt+r",
@@ -373,6 +373,14 @@
       {
         "command": "lynx-keymap.toggleStatusBarColor",
         "title"  : "Toggle (Status Bar) Color"
+      },
+
+      {
+      "command": "lynx-keymap.checkF1Toggles",
+      "title"  : "Check F1-Toggles Extension and Execute"
+      },{
+      "command": "lynx-keymap.checkGitLens",
+      "title"  : "Check GitLens Extension and Execute"
       }
     ]
 }
