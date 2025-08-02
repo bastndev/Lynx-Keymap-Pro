@@ -8,7 +8,7 @@ Lynx Keymap — created by @bastndev — supercharges your workflow with curated
 
 - **VS Code** - Microsoft Visual Studio Code
 - **Cursor AI** - AI-first code editor
-- **Windsurf** - AI-powered development environment  
+- **Windsurf** - AI-powered development environment
 - **Trae AI** - AI coding assistant
 - **Firebase Studio** - Google's development platform
 
@@ -28,6 +28,25 @@ Discover more extensions at [bastndev.com/extensions](https://bastndev.com/exten
 ## Changelog
 
 Following semantic versioning principles for consistent and predictable releases.
+
+## [2.1.0] - 2025-08-02
+
+### Added
+- **Personalized Notifications**: Customizable notification settings for keymap actions and AI events
+- **New Keyboard Shortcuts**: Enhanced productivity with additional keymaps
+  - `Shift + Alt + T` — Select theme (quick theme switching)
+  - `Shift + Alt + R` — Reload window (instant environment refresh)
+  - `Shift + Alt + E` — Go to line (precise navigation)
+  - `Shift + Alt + W` — Expand line selection (enhanced text selection)
+
+### Improved
+- **Readme Enhancements**: Updated and reorganized README for better clarity, usability, and onboarding experience
+  - Clearer feature descriptions
+  - Improved visual structure
+  - More accessible setup instructions
+- **Community Documentation**: Professional contribution guidelines
+  - `CODE_OF_CONDUCT.md` — Community standards and behavior guidelines
+  - `CONTRIBUTING.md` — Developer contribution instructions and workflow
 
 ## [2.0.8] - 2025-07-24
 
@@ -78,7 +97,7 @@ Following semantic versioning principles for consistent and predictable releases
 - **Firebase Studio Integration**: Complete keymap support for Firebase development workflow
 - **Enhanced Debugging Controls**: Refined debugging shortcuts for better workflow
   - `Alt + P` - Start debugging
-  - `Alt + O` - Restart debugging  
+  - `Alt + O` - Restart debugging
   - `Alt + I` - Stop debugging
 
 ### Changed
@@ -129,7 +148,6 @@ Following semantic versioning principles for consistent and predictable releases
 ## [1.0.0] - 2025-07-11
 
 ## Added International Keyboard Support
-
 Lynx Keymap supports backquote key equivalents for international keyboards:
 
 - 🇺🇸 English: `` ` ``
@@ -149,7 +167,7 @@ Lynx Keymap supports backquote key equivalents for international keyboards:
 ### Added
 - **Cursor AI Support**: Complete keymap integration for Cursor AI editor
 - **AI Chat Interface**: Universal AI interaction shortcuts
-  - `Ctrl + `` ` - AI chat interface popup/modal
+  - ` Ctrl + ``  ` - AI chat interface popup/modal
   - `Shift + Tab` - Toggle AI chat (double-click first)
   - `Alt + A` - Create new AI session
 
