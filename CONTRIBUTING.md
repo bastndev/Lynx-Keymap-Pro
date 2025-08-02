@@ -106,8 +106,8 @@ You can enhance any of our current shortcut categories:
 - **File Management** (`Alt+C/V`)
 - **Git Operations** (`Alt+1/2/3/4`, `Alt+Enter`)
 - **AI Integration** (`Ctrl+\``, `Shift+Tab`, `Alt+A/S/D`)
-- **Development** (`Alt+F`, `Insert`, `Alt+Insert`)
-- **Visual Management** (`Ctrl+Alt+PgDn`, `Alt+Z`)
+- **Development** (`Alt+F`, `Alt+P`, `Alt+O`)
+- **Visual Management** (`Ctrl+Alt+,`, `Alt+Z`)
 
 ### 4. Enhancing AI Integration
 
@@ -202,7 +202,7 @@ Before submitting, please test with:
 - ✅ **Navigation shortcuts** (Ctrl+1/2/3, Ctrl+Tab)
 - ✅ **Git operations** (Alt+1/2/3/4, Alt+Enter)
 - ✅ **AI integration** (Ctrl+`, Shift+Tab, Alt+A/S/D)
-- ✅ **Development tools** (Alt+F, Insert, debugging)
+- ✅ **Development tools** (Alt+F, Alt+P, debugging)
 - ✅ **Visual management** (color toggles, macros)
 
 **Keyboard layouts:**
