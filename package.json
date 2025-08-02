@@ -72,7 +72,7 @@
       },{
         "key"    : "ctrl+4",
         "mac"    : "cmd+4",
-        "command": "lynx-keymap.checkF1Toggles"
+        "command": "lynx-keymap.checkF1QuickSwitch"
       },
       
 
@@ -376,8 +376,8 @@
       },
 
       {
-      "command": "lynx-keymap.checkF1Toggles",
-      "title"  : "Check F1-Toggles Extension and Execute"
+      "command": "lynx-keymap.checkF1QuickSwitch",
+      "title"  : "Check F1-QuickSwitch Extension and Execute"
       },{
       "command": "lynx-keymap.checkGitLens",
       "title"  : "Check GitLens Extension and Execute"

@@ -41,9 +41,9 @@ function activate(context) {
     () => macroManager.executeColorAndAgentMacro()
   );
 
-  // Command with extension check - F1 Toggles [ctrl+4]
-  let checkF1TogglesDisposable = vscode.commands.registerCommand(
-    'lynx-keymap.checkF1Toggles',
+  // Command with extension check - F1 QuickSwitch [ctrl+4]
+  let checkF1QuickSwitchDisposable = vscode.commands.registerCommand(
+    'lynx-keymap.checkF1QuickSwitch',
     () =>
       extensionCheckerInstance.checkAndExecuteCommand(
         'f1-toggles.focus',
@@ -66,7 +66,7 @@ function activate(context) {
     toggleStatusBarColorDisposable,
     cycleIconColorDisposable,
     colorAndAgentMacroDisposable,
-    checkF1TogglesDisposable,
+    checkF1QuickSwitchDisposable,
     checkGitLensDisposable
   );
 }
