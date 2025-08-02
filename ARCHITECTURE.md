@@ -99,7 +99,7 @@ graph TB
 
 1. **Install**: Search "Lynx Keymap Pro" in VS Code Extensions
 2. **Activate**: Restart VS Code - shortcuts are automatically active
-3. **Test**: Press `Ctrl+1` (Explorer), `Alt+2` (AI Commit), `Ctrl+Alt+PgDn` (Color Toggle)
+3. **Test**: Press `Ctrl+1` (Explorer), `Alt+2` (AI Commit), `Ctrl+Alt+,` (Color Toggle)
 
 ## Project Structure
 
@@ -156,11 +156,11 @@ lynx-keymap-pro/
 |                 | `Shift+Tab`      | AI chat panel                      |
 |                 | `Alt+A/S/D`      | New session/History/Context        |
 |                 | `Alt+X`          | AI model picker                    |
-| **Visual**      | `Ctrl+Alt+PgDn`  | Status bar color                   |
+| **Visual**      | `Ctrl+Alt+,`     | Status bar color                   |
 |                 | `Alt+Z`          | Macro (agent + color)              |
 | **Development** | `Alt+F`          | Format document                    |
-|                 | `Insert`         | Start debugging                    |
-|                 | `Alt+Insert`     | Restart debugging                  |
+|                 | `Alt+P`          | Start debugging                    |
+|                 | `Alt+O`          | Restart debugging                  |
 
 ## Multi-Editor Support
 

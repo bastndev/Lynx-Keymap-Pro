@@ -138,7 +138,7 @@ ext install bastndev.lynx-keymap
 
 ## Contributors
 
-If you want to contribute, check the guidelines: [[>_ᅠ]](https://github.com/bastndev/Lynx-Keymap/blob/main/CONTRIBUTING.md) .
+If you want to contribute, check the guidelines: [[>_ᅠ]](https://github.com/bastndev/Lynx-Keymap-Pro/blob/main/CONTRIBUTING.md) .
 
 | [![bastndev](https://github.com/bastndev.png?size=100)](https://www.bastndev.com/) |
 | :--------------------------------------------------------------------------------: |
