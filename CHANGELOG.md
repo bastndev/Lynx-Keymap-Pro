@@ -29,6 +29,25 @@ Discover more extensions at [bastndev.com/extensions](https://bastndev.com/exten
 
 Following semantic versioning principles for consistent and predictable releases.
 
+## [2.1.0] - 2025-08-02
+
+### Added
+- **Personalized Notifications**: Customizable notification settings for keymap actions and AI events
+- **New Keyboard Shortcuts**: Enhanced productivity with additional keymaps  
+  - `Shift + Alt + T` — Select theme (quick theme switching)  
+  - `Shift + Alt + R` — Reload window (instant environment refresh)  
+  - `Shift + Alt + E` — Go to line (precise navigation)  
+  - `Shift + Alt + W` — Expand line selection (enhanced text selection)
+
+### Improved
+- **Readme Enhancements**: Updated and reorganized README for better clarity, usability, and onboarding experience  
+  - Clearer feature descriptions  
+  - Improved visual structure  
+  - More accessible setup instructions
+- **Community Documentation**: Professional contribution guidelines  
+  - `CODE_OF_CONDUCT.md` — Community standards and behavior guidelines  
+  - `CONTRIBUTING.md` — Developer contribution instructions and workflow
+
 ## [2.0.8] - 2025-07-24
 
 ### Changed
