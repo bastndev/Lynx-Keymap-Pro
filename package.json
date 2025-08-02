@@ -174,16 +174,16 @@
 
       
       {
-        "key"    : "ctrl+j",
-        "mac"    : "cmd+j",
+        "key"    : "alt+j",
+        "mac"    : "alt+j",
         "command": "workbench.action.openSettings"
       },{
         "key"    : "ctrl+,",
         "mac"    : "cmd+,",
         "command": ""
       },{
-        "key"    : "alt+j",
-        "mac"    : "alt+j",
+        "key"    : "ctrl+j",
+        "mac"    : "cmd+j",
         "command": "workbench.action.openSettingsJson"
       },
 

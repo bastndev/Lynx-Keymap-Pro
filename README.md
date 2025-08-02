@@ -12,13 +12,13 @@
 
 ## New 🧪 (experimental) keymaps
 
-| Command                                 | 🍎 macOS    | 🟦 Windows       | 🐧 Linux         |
-| :-------------------------------------- | :---------- | :--------------- | :--------------- |
-| 🧪 ask, agent, edit 🔁 `ᵒⁿˡʸ-ᵛˢᶜᵒᵈᵉ`    | `⌥ + Z`     | `Alt + Z`        | `Alt + Z`        |
-| 🧪 bottom color change 🟦 🟩 🔲         | `⌘ + ⌥ + P` | `Ctrl + Alt + P` | `Ctrl + Alt + P` |
-| -                                       | -           | -                | -                |
-| pick (AI) model `ᵒⁿˡʸ-ᵛˢᶜᵒᵈᵉ`           | `⌥ + X`     | `Alt + X`        | `Alt + X`        |
-| maximized & minimize (AI) `ᵒⁿˡʸ-ᵛˢᶜᵒᵈᵉ` | `⇧ + Esc`   | `Shift + Esc`    | `Shift + Esc`    |
+| Command                                 | 🍎 macOS    | 🟦 Windows        | 🐧 Linux          |
+| :-------------------------------------- | :---------- | :---------------- | :---------------- |
+| 🧪 ask, agent, edit 🔁 `ᵒⁿˡʸ-ᵛˢᶜᵒᵈᵉ`    | `⌥ + Z`     | `Alt + Z`         | `Alt + Z`         |
+| 🧪 bottom color change 🟦 🟩 🔲         | `⌘ + ⌥ + P` | `Ctrl + Alt + P`  | `Ctrl + Alt + P`  |
+| -                                       | -           | -                 | -                 |
+| pick (AI) model `ᵒⁿˡʸ-ᵛˢᶜᵒᵈᵉ`           | `⌥ + X`     | `Alt + X`         | `Alt + X`         |
+| maximized & minimize (AI) `ᵒⁿˡʸ-ᵛˢᶜᵒᵈᵉ` | `⇧ + Esc`   | `Shift + Esc`     | `Shift + Esc`     |
 | select theme (VSCode & more)            | `⇧ + ⌥ + T` | `Shift + Alt + T` | `Shift + Alt + T` |
 
 </br>
@@ -59,8 +59,8 @@
 | view git changes             | `⌥ +` L         | `Alt +` L            | `Alt +` L            |
 | show markdown preview        | `⌥ +` M         | `Alt +` M            | `Alt +` M            |
 | -                            | -               | -                    | -                    |
-| open settings                | `⌘ +` J         | `Ctrl +` J           | `Ctrl +` J           |
-| open settings (JSON)         | `⌥ +` J         | `Alt +` J            | `Alt +` J            |
+| open settings (JSON)         | `⌘ +` J         | `Ctrl +` J           | `Ctrl +` J           |
+| open settings                | `⌥ +` J         | `Alt +` J            | `Alt +` J            |
 | -                            | -               | -                    | -                    |
 | comment line                 | `⌘ +` /         | `Ctrl +` /           | `Ctrl +` /           |
 | comment block                | `⌥ +` /         | `Alt +` /            | `Alt +` /            |
@@ -148,11 +148,11 @@ Here is the project link if you want to collaborate: [[>\_ ] code](https://githu
 
 </br>
 
-| Icon                                                                                                                                                                                                                                    | Name                                                          | Description                                                                                                                                     |
-| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
+| Icon                                                                                                                                                                                                                                    | Name                                                              | Description                                                                                                                                     |
+| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
 | [<img src="https://bastndev.gallerycdn.vsassets.io/extensions/bastndev/lynx-keymap-75/0.2.0/1750804766630/Microsoft.VisualStudio.Services.Icons.Default">](https://marketplace.visualstudio.com/items?itemName=bastndev.lynx-keymap-75) | [Lynx Keymap-Pro 75%](https://github.com/bastndev/Lynx-Keymap-75) | An all‑in‑one toolkit for LynxJS mobile/web development—bundles keymap, snippets & AI tools like Cursor AI, Windsurf, Trae AI, Firebase Studio. |
-| [<img src="https://bastndev.gallerycdn.vsassets.io/extensions/bastndev/lynx-theme/0.1.2/1744898058774/Microsoft.VisualStudio.Services.Icons.Default">](https://marketplace.visualstudio.com/items?itemName=bastndev.lynx-theme)         | [Lynx Theme](https://github.com/bastndev/Lynx-Theme)          | A sleek, customizable VS Code theme with built‑in support for Cursor‑AI, Windsurf & Trae‑AI integrations.                                       |
-| [<img src="https://bastndev.gallerycdn.vsassets.io/extensions/bastndev/lynxjs-pack/0.1.8/1745206864969/Microsoft.VisualStudio.Services.Icons.Default">](https://marketplace.visualstudio.com/items?itemName=bastndev.lynxjs-pack)       | [LynxJS Pack](https://github.com/bastndev/LynxJs-Packge)      | An all‑in‑one toolkit for LynxJS mobile/web development—bundles keymap, snippets & AI tools like Cursor AI, Windsurf, Trae AI, Firebase Studio. |
+| [<img src="https://bastndev.gallerycdn.vsassets.io/extensions/bastndev/lynx-theme/0.1.2/1744898058774/Microsoft.VisualStudio.Services.Icons.Default">](https://marketplace.visualstudio.com/items?itemName=bastndev.lynx-theme)         | [Lynx Theme](https://github.com/bastndev/Lynx-Theme)              | A sleek, customizable VS Code theme with built‑in support for Cursor‑AI, Windsurf & Trae‑AI integrations.                                       |
+| [<img src="https://bastndev.gallerycdn.vsassets.io/extensions/bastndev/lynxjs-pack/0.1.8/1745206864969/Microsoft.VisualStudio.Services.Icons.Default">](https://marketplace.visualstudio.com/items?itemName=bastndev.lynxjs-pack)       | [LynxJS Pack](https://github.com/bastndev/LynxJs-Packge)          | An all‑in‑one toolkit for LynxJS mobile/web development—bundles keymap, snippets & AI tools like Cursor AI, Windsurf, Trae AI, Firebase Studio. |
 
 **Enjoy 🎉 your new keybindings! Suggestions or feedback? [Open an issue](https://github.com/bastndev/Lynx-Keymap-Pro/issues) or contribute.**
 [MORE](https://marketplace.visualstudio.com/publishers/bastndev)
