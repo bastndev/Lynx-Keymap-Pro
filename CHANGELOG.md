@@ -34,7 +34,7 @@ Following semantic versioning principles for consistent and predictable releases
 ### Changed
 - Updated extension showcase table description in `README.md`
 
-## [2.1.2] - 2025-08-02
+## [2.1.0] - 2025-08-02
 
 ### Added
 - **Personalized Notifications**: Customizable notification settings for keymap actions and AI events
