@@ -29,7 +29,12 @@ Discover more extensions at [bastndev.com/extensions](https://bastndev.com/exten
 
 Following semantic versioning principles for consistent and predictable releases.
 
-## [2.1.1] - 2025-08-02
+## [2.1.3] - 2025-08-03
+
+### Changed
+- Updated extension showcase table description in `README.md`
+
+## [2.1.0] - 2025-08-02
 
 ### Added
 - **Personalized Notifications**: Customizable notification settings for keymap actions and AI events
