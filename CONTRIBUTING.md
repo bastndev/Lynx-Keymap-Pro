@@ -51,7 +51,7 @@ This will help you make more effective contributions and understand where your c
 ### Testing Your Changes
 
 - **Press `F5`** to launch a new VS Code window with your keymap loaded
-- **Alternative**: If you have the extension installed, test shortcuts directly
+- **Alternative**: If you have "Lynx Keymap Pro" extension, press `Alt+P`
 - **Test across editors**: Verify shortcuts work in VS Code, Cursor, Windsurf, etc.
 - **Test keyboard variants**: Ensure compatibility with different Pro layouts
 
