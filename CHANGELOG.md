@@ -29,7 +29,7 @@ Discover more extensions at [bastndev.com/extensions](https://bastndev.com/exten
 
 Following semantic versioning principles for consistent and predictable releases.
 
-## [2.1.4] - 2025-08-11
+## [2.1.5] - 2025-08-11
 
 ### Added
 - **New Keymap**: Added shortcut `Alt + ,` (`alt+,`) for sending the right arrow sequence in the terminal (`workbench.action.terminal.sendSequence` with `\u001b[C`).
