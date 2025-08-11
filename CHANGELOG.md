@@ -31,6 +31,13 @@ Following semantic versioning principles for consistent and predictable releases
 
 ## [2.1.4] - 2025-08-11
 
+### Added
+- **New Keymap**: Added shortcut `Alt + ,` (`alt+,`) for sending the right arrow sequence in the terminal (`workbench.action.terminal.sendSequence` with `\u001b[C`).
+- **Status Bar Color**: Added new shortcut for setting the status bar color to blue.
+
+### Changed
+- **Enhanced Shortcut**: Updated the keymap for sending `PgDn` in the terminal to include `Ctrl` on all platforms (`ctrl+alt+backspace` on Windows/Linux, `cmd+alt+backspace` on macOS).
+
 ## [2.1.3] - 2025-08-03
 
 ### Changed
