@@ -29,6 +29,8 @@ Discover more extensions at [bastndev.com/extensions](https://bastndev.com/exten
 
 Following semantic versioning principles for consistent and predictable releases.
 
+## [2.1.4] - 2025-08-11
+
 ## [2.1.3] - 2025-08-03
 
 ### Changed
