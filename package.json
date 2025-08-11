@@ -261,7 +261,7 @@
         "args"   : {"text": "\u0001\u000b"},
         "when"   : "terminalFocus"
       },{
-        "key"    : "alt+,", 
+        "key"    : "alt+,",
         "mac"    : "alt+,",
         "command": "workbench.action.terminal.sendSequence",
         "args"   : {"text": "\u001b[C"},

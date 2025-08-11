@@ -25,59 +25,60 @@
 
 ### Lynx Keymap-Pro — Standard Keybindings
 
-| Command                           | 🍎 macOS         | 🟦 Windows           | 🐧 Linux             |
-| :-------------------------------- | :--------------- | :------------------- | :------------------- |
-| open explorer                     | `⌘ +` 1          | `Ctrl +` 1           | `Ctrl +` 1           |
-| open source control (scm)         | `⌘ +` 2          | `Ctrl +` 2           | `Ctrl +` 2           |
-| open extensions                   | `⌘ +` 3          | `Ctrl +` 3           | `Ctrl +` 3           |
-| open F1-Quick Switch              | `⌘ +` 4          | `Ctrl +` 4           | `Ctrl +` 4           |
-| close & open sidebar              | `⌘ +` Tab        | `Ctrl +` Tab         | `Ctrl +` Tab         |
-| -                                 | -                | -                    | -                    |
-| new file                          | `⌥ +` C          | `Alt +` C            | `Alt +` C            |
-| new folder                        | `⌥ +` V          | `Alt +` V            | `Alt +` V            |
-| -                                 | -                | -                    | -                    |
-| Git: stage all changes            | `⌥ +` 1          | `Alt +` 1            | `Alt +` 1            |
-| Git: generate commit message (AI) | `⌥ +` 2          | `Alt +` 2            | `Alt +` 2            |
-| Git: unstage all changes          | `⌥ +` 3          | `Alt +` 3            | `Alt +` 3            |
-| git pull                          | `⌥ +` 4          | `Alt +` 4            | `Alt +` 4            |
-| git commit                        | `⌥ +` Return     | `Alt +` Enter        | `Alt +` Enter        |
-| git push                          | `⌘ + ⌥ +` Return | `Ctrl + Alt +` Enter | `Ctrl + Alt +` Enter |
-| -                                 | -                | -                    | -                    |
-| format document                   | `⌥ +` F          | `Alt +` F            | `Alt +` F            |
-| format selection                  | `⌘ + ⌥ +` F      | `Ctrl + Alt +` F     | `Ctrl + Alt +` F     |
-| organize imports                  | `⇧ + ⌥ +` F      | `Shift + Alt +` F    | `Shift + Alt +` F    |
-| -                                 | -                | -                    | -                    |
-| open & close debug console        | `⌥ +` Q          | `Alt +` Q            | `Alt +` Q            |
-| open & close terminal             | `⌥ +` W          | `Alt +` W            | `Alt +` W            |
-| open gitlens                      | `⌥ +` E          | `Alt +` E            | `Alt +` E            |
-| close & open panel                | `⌥ +` R          | `Alt +` R            | `Alt +` R            |
-| -                                 | -                | -                    | -                    |
-| 🆕 select theme                   | `⇧ + ⌥ +` T      | `Shift + Alt +` T    | `Shift + Alt +` T    |
-| 🆕 reload window                  | `⇧ + ⌥ +` R      | `Shift + Alt +` R    | `Shift + Alt +` R    |
-| 🆕 go to line (n.º)               | `⇧ + ⌥ +` E      | `Shift + Alt +` E    | `Shift + Alt +` E    |
-| 🆕 expand line selection          | `⇧ + ⌥ +` W      | `Shift + Alt +` W    | `Shift + Alt +` W    |
-| -                                 | -                | -                    | -                    |
-| start debugging                   | `⌥ +` P          | `Alt +` P            | `Alt +` P            |
-| restart debugging                 | `⌥ +` O          | `Alt +` O            | `Alt +` O            |
-| stop debugging                    | `⌥ +` I          | `Alt +` I            | `Alt +` I            |
-| -                                 | -                | -                    | -                    |
-| view git changes                  | `⌥ +` L          | `Alt +` L            | `Alt +` L            |
-| show markdown preview             | `⌥ +` M          | `Alt +` M            | `Alt +` M            |
-| -                                 | -                | -                    | -                    |
-| open settings (JSON)              | `⌘ +` J          | `Ctrl +` J           | `Ctrl +` J           |
-| open settings                     | `⌥ +` J          | `Alt +` J            | `Alt +` J            |
-| -                                 | -                | -                    | -                    |
-| comment line                      | `⌘ +` /          | `Ctrl +` /           | `Ctrl +` /           |
-| comment block                     | `⌥ +` /          | `Alt +` /            | `Alt +` /            |
-| -                                 | -                | -                    | -                    |
-| copy lines up                     | `⌥ + ⇧ +` ↑      | `Alt + Shift +` ↑    | `Alt + Shift +` ↑    |
-| copy lines down                   | `⌥ + ⇧ +` ↓      | `Alt + Shift +` ↓    | `Alt + Shift +` ↓    |
-| insert cursor above               | `⌘ +` ↑          | `Ctrl +` ↑           | `Ctrl +` ↑           |
-| insert cursor below               | `⌘ +` ↓          | `Ctrl +` ↓           | `Ctrl +` ↓           |
-| -                                 | -                | -                    | -                    |
-| delete word left                  | `⌘ +` Backspace  | `Ctrl +` Backspace   | `Ctrl +` Backspace   |
-| terminal clear line               | `⌥ +` Backspace  | `Alt +` Backspace    | `Alt +` Backspace    |
-| Close Project                     | `⌘ +` Delete     | `Ctrl +` Delete      | `Ctrl +` Delete      |
+| Command                           | 🍎 macOS            | 🟦 Windows               | 🐧 Linux                 |
+| :-------------------------------- | :------------------ | :----------------------- | :----------------------- |
+| open explorer                     | `⌘ +` 1             | `Ctrl +` 1               | `Ctrl +` 1               |
+| open source control (scm)         | `⌘ +` 2             | `Ctrl +` 2               | `Ctrl +` 2               |
+| open extensions                   | `⌘ +` 3             | `Ctrl +` 3               | `Ctrl +` 3               |
+| open F1-Quick Switch              | `⌘ +` 4             | `Ctrl +` 4               | `Ctrl +` 4               |
+| close & open sidebar              | `⌘ +` Tab           | `Ctrl +` Tab             | `Ctrl +` Tab             |
+| -                                 | -                   | -                        | -                        |
+| new file                          | `⌥ +` C             | `Alt +` C                | `Alt +` C                |
+| new folder                        | `⌥ +` V             | `Alt +` V                | `Alt +` V                |
+| -                                 | -                   | -                        | -                        |
+| Git: stage all changes            | `⌥ +` 1             | `Alt +` 1                | `Alt +` 1                |
+| Git: generate commit message (AI) | `⌥ +` 2             | `Alt +` 2                | `Alt +` 2                |
+| Git: unstage all changes          | `⌥ +` 3             | `Alt +` 3                | `Alt +` 3                |
+| git pull                          | `⌥ +` 4             | `Alt +` 4                | `Alt +` 4                |
+| git commit                        | `⌥ +` Return        | `Alt +` Enter            | `Alt +` Enter            |
+| git push                          | `⌘ + ⌥ +` Return    | `Ctrl + Alt +` Enter     | `Ctrl + Alt +` Enter     |
+| -                                 | -                   | -                        | -                        |
+| format document                   | `⌥ +` F             | `Alt +` F                | `Alt +` F                |
+| format selection                  | `⌘ + ⌥ +` F         | `Ctrl + Alt +` F         | `Ctrl + Alt +` F         |
+| organize imports                  | `⇧ + ⌥ +` F         | `Shift + Alt +` F        | `Shift + Alt +` F        |
+| -                                 | -                   | -                        | -                        |
+| open & close debug console        | `⌥ +` Q             | `Alt +` Q                | `Alt +` Q                |
+| open & close terminal             | `⌥ +` W             | `Alt +` W                | `Alt +` W                |
+| open gitlens                      | `⌥ +` E             | `Alt +` E                | `Alt +` E                |
+| close & open panel                | `⌥ +` R             | `Alt +` R                | `Alt +` R                |
+| -                                 | -                   | -                        | -                        |
+| select theme                      | `⇧ + ⌥ +` T         | `Shift + Alt +` T        | `Shift + Alt +` T        |
+| reload window                     | `⇧ + ⌥ +` R         | `Shift + Alt +` R        | `Shift + Alt +` R        |
+| go to line (n.º)                  | `⇧ + ⌥ +` E         | `Shift + Alt +` E        | `Shift + Alt +` E        |
+| expand line selection             | `⇧ + ⌥ +` W         | `Shift + Alt +` W        | `Shift + Alt +` W        |
+| -                                 | -                   | -                        | -                        |
+| start debugging                   | `⌥ +` P             | `Alt +` P                | `Alt +` P                |
+| restart debugging                 | `⌥ +` O             | `Alt +` O                | `Alt +` O                |
+| stop debugging                    | `⌥ +` I             | `Alt +` I                | `Alt +` I                |
+| -                                 | -                   | -                        | -                        |
+| view git changes                  | `⌥ +` L             | `Alt +` L                | `Alt +` L                |
+| show markdown preview             | `⌥ +` M             | `Alt +` M                | `Alt +` M                |
+| -                                 | -                   | -                        | -                        |
+| open settings (JSON)              | `⌘ +` J             | `Ctrl +` J               | `Ctrl +` J               |
+| open settings                     | `⌥ +` J             | `Alt +` J                | `Alt +` J                |
+| -                                 | -                   | -                        | -                        |
+| comment line                      | `⌘ +` /             | `Ctrl +` /               | `Ctrl +` /               |
+| comment block                     | `⌥ +` /             | `Alt +` /                | `Alt +` /                |
+| -                                 | -                   | -                        | -                        |
+| copy lines up                     | `⌥ + ⇧ +` ↑         | `Alt + Shift +` ↑        | `Alt + Shift +` ↑        |
+| copy lines down                   | `⌥ + ⇧ +` ↓         | `Alt + Shift +` ↓        | `Alt + Shift +` ↓        |
+| insert cursor above               | `⌘ +` ↑             | `Ctrl +` ↑               | `Ctrl +` ↑               |
+| insert cursor below               | `⌘ +` ↓             | `Ctrl +` ↓               | `Ctrl +` ↓               |
+| -                                 | -                   | -                        | -                        |
+| delete word left                  | `⌘ +` Backspace     | `Ctrl +` Backspace       | `Ctrl +` Backspace       |
+| terminal clear line               | `⌘ + ⌥ +` Backspace | `Ctrl + Alt +` Backspace | `Ctrl + Alt +` Backspace |
+| terminal complete word line       | `⌥ +` ,             | `Alt +` ,                | `Alt +` ,                |
+| Close Project                     | `⌘ +` Delete        | `Ctrl +` Delete          | `Ctrl +` Delete          |
 
 ### ► (AI ✨) Commands Easy
 
@@ -152,11 +153,11 @@ If you want to contribute, check the guidelines: [[>_ᅠ]](https://github.com/ba
 
 </br>
 
-| Icon                                                                                                                                                                                                                                            | Name                                                          | Description                                                                                                                                                                                                                                                                                               |
-| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [![Lynx Theme Pro](https://bastndev.gallerycdn.vsassets.io/extensions/bastndev/lynx-theme/0.1.2/1744898058774/Microsoft.VisualStudio.Services.Icons.Default)](https://marketplace.visualstudio.com/items?itemName=bastndev.lynx-theme)          | [Lynx Theme Pro](https://github.com/bastndev/Lynx-Theme)      | A professional extension with six available themes: Dark, Light, Night, Ghibli, Coffee, and Kiro—with integrated icons. Each theme is optimized to offer a more pleasant visual experience.                                                                                                                |
-| [![Lynx Keymap 75%](https://bastndev.gallerycdn.vsassets.io/extensions/bastndev/lynx-keymap-75/0.2.0/1750804766630/Microsoft.VisualStudio.Services.Icons.Default)](https://marketplace.visualstudio.com/items?itemName=bastndev.lynx-keymap-75) | [Lynx Keymap 75%](https://github.com/bastndev/Lynx-Keymap-75) | Standardizes keyboard shortcuts optimized for 75% keyboards. Compatible with any code editor. Enhances developer efficiency and experience. |
-| [![F1-Quick Switch](https://bastndev.gallerycdn.vsassets.io/extensions/bastndev/f1/0.2.1/1752544035624/Microsoft.VisualStudio.Services.Icons.Default)](https://marketplace.visualstudio.com/items?itemName=bastndev.f1)                         | [F1-Quick Switch](https://github.com/bastndev/F1)             | Allows you to control editor functions and manage extensions directly from the keyboard, streamlining your workflow with configurable shortcuts. |
+| Icon                                                                                                                                                                                                                                            | Name                                                          | Description                                                                                                                                                                                 |
+| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [![Lynx Theme Pro](https://bastndev.gallerycdn.vsassets.io/extensions/bastndev/lynx-theme/0.1.2/1744898058774/Microsoft.VisualStudio.Services.Icons.Default)](https://marketplace.visualstudio.com/items?itemName=bastndev.lynx-theme)          | [Lynx Theme Pro](https://github.com/bastndev/Lynx-Theme)      | A professional extension with six available themes: Dark, Light, Night, Ghibli, Coffee, and Kiro—with integrated icons. Each theme is optimized to offer a more pleasant visual experience. |
+| [![Lynx Keymap 75%](https://bastndev.gallerycdn.vsassets.io/extensions/bastndev/lynx-keymap-75/0.2.0/1750804766630/Microsoft.VisualStudio.Services.Icons.Default)](https://marketplace.visualstudio.com/items?itemName=bastndev.lynx-keymap-75) | [Lynx Keymap 75%](https://github.com/bastndev/Lynx-Keymap-75) | Standardizes keyboard shortcuts optimized for 75% keyboards. Compatible with any code editor. Enhances developer efficiency and experience.                                                 |
+| [![F1-Quick Switch](https://bastndev.gallerycdn.vsassets.io/extensions/bastndev/f1/0.2.1/1752544035624/Microsoft.VisualStudio.Services.Icons.Default)](https://marketplace.visualstudio.com/items?itemName=bastndev.f1)                         | [F1-Quick Switch](https://github.com/bastndev/F1)             | Allows you to control editor functions and manage extensions directly from the keyboard, streamlining your workflow with configurable shortcuts.                                            |
 
 **Ready! 🚀 Your keybindings are configured. If you find any bugs or have feedback, you can [Open an issue](https://github.com/bastndev/Lynx-Keymap-Pro/issues).**
 
