@@ -23,11 +23,25 @@ Lynx Keymap — created by @bastndev — supercharges your workflow with curated
 
 Discover more extensions at [bastndev.com/extensions](https://bastndev.com/extensions)
 
----
+</br>
+
+<!-- --- -->
+
+## [2.1.8] - 2025-09-03
+
+### Improved
+- **icons-painter.js Logic**: Refined the logic for icon rendering to enhance reliability and maintainability.
+- **Keymap Load Time**: Optimized keymap loading for faster startup and reduced latency across supported editors.
+
+### Added
+- **AI Window Control in Cursor**: Implemented new shortcuts to open and close the AI window in Cursor editor for streamlined workflow.
+
 
 ## Changelog
 
 Following semantic versioning principles for consistent and predictable releases.
+
+---
 
 ## [2.1.5] - 2025-08-11
 
@@ -38,10 +52,14 @@ Following semantic versioning principles for consistent and predictable releases
 ### Changed
 - **Enhanced Shortcut**: Updated the keymap for sending `PgDn` in the terminal to include `Ctrl` on all platforms (`ctrl+alt+backspace` on Windows/Linux, `cmd+alt+backspace` on macOS).
 
+---
+
 ## [2.1.3] - 2025-08-03
 
 ### Changed
 - Updated extension showcase table description in `README.md`
+
+---
 
 ## [2.1.0] - 2025-08-02
 
@@ -62,10 +80,14 @@ Following semantic versioning principles for consistent and predictable releases
   - `CODE_OF_CONDUCT.md` — Community standards and behavior guidelines
   - `CONTRIBUTING.md` — Developer contribution instructions and workflow
 
+---
+
 ## [2.0.8] - 2025-07-24
 
 ### Changed
 - **Renamed Extension**: Changed name from "Lynx Keymap" to "Lynx Keymap Pro" for enhanced branding and clarity
+
+---
 
 ## [2.0.6] - 2025-07-23
 
@@ -88,6 +110,8 @@ Following semantic versioning principles for consistent and predictable releases
 - Enhanced stability for AI command integrations
 - Improved shortcut reliability in Kiro environment
 
+---
+
 ## [2.0.1] - 2025-07-23
 
 ### Added
@@ -104,6 +128,8 @@ Following semantic versioning principles for consistent and predictable releases
 - Better handling of international keyboard layouts for backquote key
 - Resolved conflicts with native VS Code shortcuts
 - Enhanced AI command stability across different editors
+
+---
 
 ## [2.0.0] - 2025-07-20
 
@@ -122,6 +148,8 @@ Following semantic versioning principles for consistent and predictable releases
 - Resolved debugging command conflicts
 - Better error handling for AI integrations
 
+---
+
 ## [1.1.3] - 2025-07-18
 
 ### Added
@@ -133,6 +161,8 @@ Following semantic versioning principles for consistent and predictable releases
 ### Changed
 - Enhanced AI command documentation with clear VS Code-only indicators
 - Improved table formatting for better visual navigation
+
+---
 
 ## [1.1.2] - 2025-07-15
 
@@ -147,6 +177,8 @@ Following semantic versioning principles for consistent and predictable releases
 - Improved Git command reliability across different editors
 - Better handling of AI-generated commit messages
 
+---
+
 ## [1.1.1] - 2025-07-12
 
 ### Added
@@ -158,6 +190,8 @@ Following semantic versioning principles for consistent and predictable releases
 ### Changed
 - Streamlined file management shortcuts for better ergonomics
 - Updated documentation with emoji indicators for better navigation
+
+---
 
 ## [1.0.0] - 2025-07-11
 
@@ -176,6 +210,8 @@ Lynx Keymap supports backquote key equivalents for international keyboards:
 - 🇬🇧 UK: `¬`
 - And many more...
 
+---
+
 ## [0.9.1] - 2025-07-10
 
 ### Added
@@ -189,6 +225,8 @@ Lynx Keymap supports backquote key equivalents for international keyboards:
 - Resolved AI chat interface conflicts between different editors
 - Improved AI command consistency across platforms
 
+---
+
 ## [0.8.0] - 2025-07-08
 
 ### Added
@@ -200,6 +238,8 @@ Lynx Keymap supports backquote key equivalents for international keyboards:
 ### Changed
 - Improved code formatting workflow integration
 - Better documentation structure and examples
+
+---
 
 ## [0.6.9] - 2025-07-05
 
@@ -217,6 +257,8 @@ Lynx Keymap supports backquote key equivalents for international keyboards:
 - Improved panel switching reliability
 - Better Git command integration
 
+---
+
 ## [0.6.0] - 2025-07-01
 
 ### Added
@@ -230,6 +272,8 @@ Lynx Keymap supports backquote key equivalents for international keyboards:
 - Established core shortcut foundation
 - Improved keyboard navigation workflow
 
+---
+
 ## [0.3.0] - 2025-06-25
 
 ### Added
@@ -241,12 +285,16 @@ Lynx Keymap supports backquote key equivalents for international keyboards:
 - Enhanced cross-platform compatibility
 - Improved international user experience
 
+---
+
 ## [0.1.0] - 2025-06-20
 
 ### Added
 - **Basic Shortcuts**: Fundamental development shortcuts
 - **Editor Integration**: Initial VS Code keymap implementation
 - **Documentation**: Basic usage instructions and shortcut tables
+
+---
 
 ## [0.0.1] - 2025-04-26
 
