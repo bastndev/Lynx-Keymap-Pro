@@ -1,84 +1,165 @@
 const vscode = require('vscode');
 
 class ColorManager {
+  static CONFIG = {
+    WORKBENCH_KEY: 'workbench.colorCustomizations',
+    ICON_KEY: 'icon.foreground',
+    TARGET: vscode.ConfigurationTarget.Global
+  };
+
+  static COLORS = [
+    { value: '#008dfa', name: 'Blue' },
+    { value: '#10B981', name: 'Green' },
+    { value: null, name: 'Default' }
+  ];
+
   constructor() {
-    this.colors = [
-      { value: '#008dfa', name: 'Blue' },
-      { value: '#07cc4cff', name: 'Green' },
-      { value: null, name: 'Default' },
-    ];
-    this.currentColorIndex = this.colors.length - 1; // Start with default color
-    this.configKey = 'workbench.colorCustomizations';
-    this.iconKey = 'icon.foreground';
+    this.colors = [...ColorManager.COLORS];
+    this.currentColorIndex = this.colors.length - 1; // Default fallback
+    this._syncWithCurrentState();
+  }
+
+  /**
+   * Synchronizes the manager with the current VS Code color state
+   * @private
+   */
+  _syncWithCurrentState() {
+    try {
+      const config = vscode.workspace.getConfiguration();
+      const customizations = config.get(ColorManager.CONFIG.WORKBENCH_KEY, {});
+      const currentIconColor = customizations[ColorManager.CONFIG.ICON_KEY];
+
+      // Find the index of the current color
+      const foundIndex = this.colors.findIndex(color => color.value === currentIconColor);
+      
+      if (foundIndex !== -1) {
+        this.currentColorIndex = foundIndex;
+      } else {
+        // If current color is not in predefined colors, assume default
+        this.currentColorIndex = this.colors.length - 1;
+      }
+    } catch (error) {
+      console.error('Error syncing color state:', error);
+      // Fallback to default
+      this.currentColorIndex = this.colors.length - 1;
+    }
+  }
+
+  /**
+   * Manually refresh/sync the current state (useful after external changes)
+   */
+  async refreshState() {
+    this._syncWithCurrentState();
+    return this.getStatus();
   }
 
   /**
    * Cycles through available colors
-   * @returns {Promise<boolean>} Success status
    */
   async cycleIconColor() {
     try {
-      this.currentColorIndex =
-        (this.currentColorIndex + 1) % this.colors.length;
-      return await this._updateIconColor(this.getCurrentColor().value);
+      // Always sync before cycling to ensure we're starting from the correct state
+      this._syncWithCurrentState();
+      
+      this.currentColorIndex = (this.currentColorIndex + 1) % this.colors.length;
+      const currentColor = this.getCurrentColor();
+      
+      await this._updateIconColor(currentColor.value);
+      
+      return { 
+        success: true, 
+        color: currentColor 
+      };
     } catch (error) {
-      return this._handleError('Error cycling icon color', error);
+      return this._createErrorResult('Error cycling icon color', error);
     }
   }
 
   /**
    * Resets color to default value
-   * @returns {Promise<boolean>} Success status
    */
   async resetToDefault() {
     try {
-      this.currentColorIndex = this.colors.length - 1; // Default is last
+      this.currentColorIndex = this.colors.length - 1;
+      
       const config = vscode.workspace.getConfiguration();
-      const customizations = { ...config.get(this.configKey, {}) };
-
-      delete customizations[this.iconKey];
-
+      const customizations = { ...config.get(ColorManager.CONFIG.WORKBENCH_KEY, {}) };
+      
+      delete customizations[ColorManager.CONFIG.ICON_KEY];
+      
       await config.update(
-        this.configKey,
-        customizations,
-        vscode.ConfigurationTarget.Global
+        ColorManager.CONFIG.WORKBENCH_KEY,
+        Object.keys(customizations).length ? customizations : undefined,
+        ColorManager.CONFIG.TARGET
       );
 
-      return true;
+      return { success: true };
     } catch (error) {
-      return this._handleError('Error resetting icon color', error);
+      return this._createErrorResult('Error resetting icon color', error);
     }
   }
 
   /**
    * Sets a specific color by name
-   * @param {string} colorName - Name of the color to set
-   * @returns {Promise<boolean>} Success status
    */
   async setColorByName(colorName) {
+    if (!colorName || typeof colorName !== 'string') {
+      return { success: false, error: 'Invalid color name provided' };
+    }
+
     const colorIndex = this.colors.findIndex(
-      (color) => color.name.toLowerCase() === colorName.toLowerCase()
+      color => color.name.toLowerCase() === colorName.toLowerCase().trim()
     );
 
     if (colorIndex === -1) {
-      return false;
+      return { 
+        success: false, 
+        error: `Color '${colorName}' not found. Available colors: ${this.getAvailableColorNames().join(', ')}` 
+      };
     }
 
-    this.currentColorIndex = colorIndex;
-    return await this._updateIconColor(this.getCurrentColor().value);
+    try {
+      this.currentColorIndex = colorIndex;
+      const currentColor = this.getCurrentColor();
+      
+      await this._updateIconColor(currentColor.value);
+      
+      return { 
+        success: true, 
+        color: currentColor 
+      };
+    } catch (error) {
+      return this._createErrorResult('Error setting color by name', error);
+    }
+  }
+
+  /**
+   * Sets a custom color
+   */
+  async setCustomColor(hexColor, name = 'Custom') {
+    if (!this._isValidHexColor(hexColor)) {
+      return { success: false, error: 'Invalid hex color format' };
+    }
+
+    try {
+      await this._updateIconColor(hexColor);
+      
+      const customColor = { value: hexColor, name };
+      return { success: true, color: customColor };
+    } catch (error) {
+      return this._createErrorResult('Error setting custom color', error);
+    }
   }
 
   /**
    * Gets current color object
-   * @returns {Object} Current color object with value and name
    */
   getCurrentColor() {
-    return this.colors[this.currentColorIndex];
+    return { ...this.colors[this.currentColorIndex] };
   }
 
   /**
    * Gets current color name
-   * @returns {string} Current color name
    */
   getCurrentColorName() {
     return this.getCurrentColor().name;
@@ -86,52 +167,96 @@ class ColorManager {
 
   /**
    * Gets all available colors
-   * @returns {Array} Array of color objects
    */
   getAvailableColors() {
-    return [...this.colors];
+    return this.colors.map(color => ({ ...color }));
   }
 
   /**
-   * Private method to update icon color in VS Code settings
-   * @param {string|null} colorValue - Hex color value or null for default
-   * @returns {Promise<boolean>} Success status
-   * @private
+   * Gets all available color names
    */
-  async _updateIconColor(colorValue) {
+  getAvailableColorNames() {
+    return this.colors.map(color => color.name);
+  }
+
+  /**
+   * Checks if a color exists by name
+   */
+  hasColor(colorName) {
+    return this.colors.some(
+      color => color.name.toLowerCase() === colorName.toLowerCase().trim()
+    );
+  }
+
+  /**
+   * Gets current manager status information
+   */
+  getStatus() {
+    const currentColor = this.getCurrentColor();
+    return {
+      currentColor: currentColor.name,
+      currentValue: currentColor.value,
+      totalColors: this.colors.length,
+      availableColors: this.getAvailableColorNames(),
+      currentIndex: this.currentColorIndex
+    };
+  }
+
+  /**
+   * Gets the actual color from VS Code settings (for debugging/verification)
+   */
+  getActualVSCodeColor() {
     try {
       const config = vscode.workspace.getConfiguration();
-      const customizations = { ...config.get(this.configKey, {}) };
-
-      if (colorValue === null) {
-        delete customizations[this.iconKey];
-      } else {
-        customizations[this.iconKey] = colorValue;
-      }
-
-      await config.update(
-        this.configKey,
-        customizations,
-        vscode.ConfigurationTarget.Global
-      );
-
-      return true;
+      const customizations = config.get(ColorManager.CONFIG.WORKBENCH_KEY, {});
+      return customizations[ColorManager.CONFIG.ICON_KEY] || null;
     } catch (error) {
-      console.error('Error updating icon color:', error);
-      return false;
+      console.error('Error getting actual VS Code color:', error);
+      return null;
     }
   }
 
   /**
-   * Private method to handle errors consistently
-   * @param {string} message - Error message
-   * @param {Error} error - Error object
-   * @returns {boolean} Always returns false
+   * Updates icon color in VS Code settings
    * @private
    */
-  _handleError(message, error) {
-    console.error(message, error);
-    return false;
+  async _updateIconColor(colorValue) {
+    const config = vscode.workspace.getConfiguration();
+    const customizations = { ...config.get(ColorManager.CONFIG.WORKBENCH_KEY, {}) };
+
+    if (colorValue === null) {
+      delete customizations[ColorManager.CONFIG.ICON_KEY];
+    } else {
+      customizations[ColorManager.CONFIG.ICON_KEY] = colorValue;
+    }
+
+    await config.update(
+      ColorManager.CONFIG.WORKBENCH_KEY,
+      Object.keys(customizations).length ? customizations : undefined,
+      ColorManager.CONFIG.TARGET
+    );
+  }
+
+  /**
+   * Creates consistent error results
+   * @private
+   */
+  _createErrorResult(message, error) {
+    const errorMessage = `${message}: ${error.message}`;
+    console.error(errorMessage, error);
+    
+    return { 
+      success: false, 
+      error: errorMessage 
+    };
+  }
+
+  /**
+   * Validates hexadecimal color format
+   * @private
+   */
+  _isValidHexColor(color) {
+    return typeof color === 'string' && /^#([0-9A-F]{3}){1,2}$/i.test(color);
   }
 }
 

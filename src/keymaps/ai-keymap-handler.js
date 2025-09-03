@@ -7,6 +7,9 @@ const { AI_COMMANDS_CONFIG, KEYMAP_CONFIG } = require('./ai-keymap-config');
 class AICommandsManager {
   constructor() {
     this.disposables = [];
+    this.availableCommandsCache = null;
+    this.cacheTimestamp = 0;
+    this.cacheExpiry = 5 * 60 * 1000; // 5 minutes
   }
 
   /**
@@ -34,8 +37,8 @@ class AICommandsManager {
    * Executes first available command from list
    */
   async executeFirstAvailableCommand(commands, errorMessage) {
-    // Get available commands
-    const allCommands = await vscode.commands.getCommands(true);
+    // Get available commands with caching
+    const allCommands = await this.getAvailableCommands();
 
     // Try each command until one succeeds
     for (const cmd of commands) {
@@ -54,6 +57,20 @@ class AICommandsManager {
 
     // Show warning if no commands worked
     vscode.window.showWarningMessage(errorMessage);
+  }
+
+  /**
+   * Gets available commands with caching
+   */
+  async getAvailableCommands() {
+    const now = Date.now();
+    if (this.availableCommandsCache && (now - this.cacheTimestamp) < this.cacheExpiry) {
+      return this.availableCommandsCache;
+    }
+
+    this.availableCommandsCache = await vscode.commands.getCommands(true);
+    this.cacheTimestamp = now;
+    return this.availableCommandsCache;
   }
 
   /**
