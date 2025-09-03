@@ -41,8 +41,18 @@
   "sponsor": {
     "url": "https://github.com/sponsors/bastndev"
   },
+
   "activationEvents": [
-    "onStartupFinished"
+    "onStartupFinished",
+
+    "onCommand:lynx-keymap.generateAICommit",
+    "onCommand:lynx-keymap.executeAIPopup",
+    "onCommand:lynx-keymap.openAndCloseAIChat",
+    "onCommand:lynx-keymap.createNewAISession",
+    "onCommand:lynx-keymap.showAIHistory",
+    "onCommand:lynx-keymap.attachAIContext",
+
+    "onCommand:lynx-keymap.executeColorAndAgentMacro"
   ],
   "main": "./src/extension.js",
   "contributes": {
