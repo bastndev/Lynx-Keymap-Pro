@@ -11,6 +11,7 @@ Lynx Keymap — created by @bastndev — supercharges your workflow with curated
 - **Windsurf** - AI-powered development environment
 - **Trae AI** - AI coding assistant
 - **Firebase Studio** - Google's development platform
+- **Kiro** - Modern code editor with AI-powered features
 
 ## Key Features
 
