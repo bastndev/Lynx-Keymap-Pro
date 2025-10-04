@@ -16,6 +16,9 @@ class ExtensionChecker {
     };
     this.activeTimeouts = new Set();
     this.installationInProgress = new Set();
+    this.maxTimeouts = 10; // Limit concurrent timeouts
+    this.timeoutCleanupInterval = null;
+    this.startTimeoutCleanup();
   }
 
   async checkAndExecuteCommand(commandId, context) {
@@ -57,12 +60,49 @@ class ExtensionChecker {
   }
 
   createTimeout(callback, delay) {
+    // Prevent timeout overflow
+    if (this.activeTimeouts.size >= this.maxTimeouts) {
+      console.warn('Maximum timeouts reached, clearing oldest ones');
+      this.clearOldestTimeouts(Math.floor(this.maxTimeouts / 2));
+    }
+
     const timeout = setTimeout(() => {
       this.activeTimeouts.delete(timeout);
-      callback();
+      if (typeof callback === 'function') {
+        try {
+          callback();
+        } catch (error) {
+          console.error('Timeout callback error:', error);
+        }
+      }
     }, delay);
+    
     this.activeTimeouts.add(timeout);
     return timeout;
+  }
+
+  /**
+   * Clears oldest timeouts to prevent memory leaks
+   */
+  clearOldestTimeouts(count) {
+    const timeoutsArray = Array.from(this.activeTimeouts);
+    for (let i = 0; i < Math.min(count, timeoutsArray.length); i++) {
+      clearTimeout(timeoutsArray[i]);
+      this.activeTimeouts.delete(timeoutsArray[i]);
+    }
+  }
+
+  /**
+   * Starts automatic timeout cleanup
+   */
+  startTimeoutCleanup() {
+    // Clean up every 30 seconds
+    this.timeoutCleanupInterval = setInterval(() => {
+      if (this.activeTimeouts.size > this.maxTimeouts) {
+        console.log(`Cleaning up excess timeouts: ${this.activeTimeouts.size}`);
+        this.clearOldestTimeouts(this.activeTimeouts.size - this.maxTimeouts);
+      }
+    }, 30000);
   }
 
   showTemporaryNotification(message, duration = 2000) {
@@ -179,6 +219,12 @@ class ExtensionChecker {
   dispose() {
     this.clearAllTimeouts();
     this.installationInProgress.clear();
+    
+    // Clear cleanup interval
+    if (this.timeoutCleanupInterval) {
+      clearInterval(this.timeoutCleanupInterval);
+      this.timeoutCleanupInterval = null;
+    }
   }
 }
 

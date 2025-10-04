@@ -10,6 +10,12 @@ class MacroManager {
    * @param {Array} commandSequence - Array of objects {command: string, delay?: number}
    */
   async executeSequence(commandSequence) {
+    // Validate parameters
+    if (!Array.isArray(commandSequence) || commandSequence.length === 0) {
+      vscode.window.showErrorMessage('Invalid command sequence provided');
+      return;
+    }
+
     if (this.isExecuting) {
       vscode.window.showWarningMessage(
         'Macro already executing, please wait...'
@@ -23,7 +29,19 @@ class MacroManager {
       for (let i = 0; i < commandSequence.length; i++) {
         const step = commandSequence[i];
 
-        await vscode.commands.executeCommand(step.command);
+        // Validate step structure
+        if (!step || typeof step.command !== 'string') {
+          console.error('Invalid command step:', step);
+          continue;
+        }
+
+        try {
+          await vscode.commands.executeCommand(step.command);
+          console.log(`Executed macro step: ${step.command}`);
+        } catch (stepError) {
+          console.error(`Failed to execute step ${step.command}:`, stepError);
+          // Continue with next step instead of failing entire macro
+        }
 
         if (step.delay && i < commandSequence.length - 1) {
           await this.delay(step.delay);

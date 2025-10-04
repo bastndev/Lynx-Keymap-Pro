@@ -12,14 +12,17 @@ class SmartWebviewExtension {
         displayName: 'Compare Code',
         marketplaceSearch: 'bastndev.compare-code',
         originalKeybinding: 'shift+alt+\\',
-        webviewCommand: 'compare-code.compareFiles', // Real command from the images
-        originalCommand: 'Compare Code', // Original command name
+        webviewCommand: 'compare-code.compareFiles',
+        originalCommand: 'Compare Code',
       },
     };
 
     this.activeTimeouts = new Set();
     this.installationInProgress = new Set();
-    this.webviewInstances = new Map(); // Track active webviews to prevent duplicates
+    this.webviewInstances = new Map();
+    this.maxTimeouts = 10; // Limit concurrent timeouts
+    this.timeoutCleanupInterval = null;
+    this.startTimeoutCleanup();
   }
 
   /**
@@ -257,12 +260,49 @@ class SmartWebviewExtension {
   }
 
   createTimeout(callback, delay) {
+    // Prevent timeout overflow
+    if (this.activeTimeouts.size >= this.maxTimeouts) {
+      console.warn('Maximum webview timeouts reached, clearing oldest ones');
+      this.clearOldestTimeouts(Math.floor(this.maxTimeouts / 2));
+    }
+
     const timeout = setTimeout(() => {
       this.activeTimeouts.delete(timeout);
-      callback();
+      if (typeof callback === 'function') {
+        try {
+          callback();
+        } catch (error) {
+          console.error('Webview timeout callback error:', error);
+        }
+      }
     }, delay);
+    
     this.activeTimeouts.add(timeout);
     return timeout;
+  }
+
+  /**
+   * Clears oldest timeouts to prevent memory leaks
+   */
+  clearOldestTimeouts(count) {
+    const timeoutsArray = Array.from(this.activeTimeouts);
+    for (let i = 0; i < Math.min(count, timeoutsArray.length); i++) {
+      clearTimeout(timeoutsArray[i]);
+      this.activeTimeouts.delete(timeoutsArray[i]);
+    }
+  }
+
+  /**
+   * Starts automatic timeout cleanup
+   */
+  startTimeoutCleanup() {
+    // Clean up every 30 seconds
+    this.timeoutCleanupInterval = setInterval(() => {
+      if (this.activeTimeouts.size > this.maxTimeouts) {
+        console.log(`Cleaning up excess webview timeouts: ${this.activeTimeouts.size}`);
+        this.clearOldestTimeouts(this.activeTimeouts.size - this.maxTimeouts);
+      }
+    }, 30000);
   }
 
   /**
@@ -272,6 +312,12 @@ class SmartWebviewExtension {
     this.clearAllTimeouts();
     this.installationInProgress.clear();
     this.webviewInstances.clear();
+    
+    // Clear cleanup interval
+    if (this.timeoutCleanupInterval) {
+      clearInterval(this.timeoutCleanupInterval);
+      this.timeoutCleanupInterval = null;
+    }
   }
 }
 
