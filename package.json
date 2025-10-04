@@ -2,7 +2,7 @@
   "name": "lynx-keymap",
   "displayName": "Lynx Keymap Pro",
   "description": "Available now: VSCode • Cursor • Windsurf • Trae.ai • Kiro & (Firebase Studio)... 雨",
-  "version": "2.1.8",
+  "version": "2.2.0",
   "publisher": "bastndev",
   "license": "MIT",
   "engines": {
@@ -52,7 +52,9 @@
     "onCommand:lynx-keymap.showAIHistory",
     "onCommand:lynx-keymap.attachAIContext",
 
-    "onCommand:lynx-keymap.executeColorAndAgentMacro"
+    "onCommand:lynx-keymap.executeColorAndAgentMacro",
+    "onCommand:lynx-keymap.checkF1QuickSwitch",
+    "onCommand:lynx-keymap.checkCompareCode"
   ],
   "main": "./src/extension.js",
   "contributes": {
@@ -73,6 +75,14 @@
         "key"    : "ctrl+4",
         "mac"    : "cmd+4",
         "command": "lynx-keymap.checkF1QuickSwitch"
+      },{
+        "key"    : "shift+alt+\\",
+        "mac"    : "shift+alt+\\",
+        "command": "-Compare Code"
+      },{
+        "key"    : "shift+alt+\\",
+        "mac"    : "shift+alt+\\",
+        "command": "lynx-keymap.checkCompareCode"
       },
       
 
@@ -176,7 +186,7 @@
       {
         "key"    : "alt+j",
         "mac"    : "alt+j",
-        "command": "workbench.action.openSettings"
+        "command": "workbench.action.openSettingsJson"
       },{
         "key"    : "ctrl+,",
         "mac"    : "cmd+,",
@@ -184,7 +194,7 @@
       },{
         "key"    : "ctrl+j",
         "mac"    : "cmd+j",
-        "command": "workbench.action.openSettingsJson"
+        "command": "workbench.action.openSettings"
       },
 
 
@@ -387,6 +397,9 @@
       },{
       "command": "lynx-keymap.checkGitLens",
       "title"  : "Check GitLens Extension and Execute"
+      },{
+      "command": "lynx-keymap.checkCompareCode",
+      "title"  : "Check Compare Code Extension and Execute"
       }
     ]
 }

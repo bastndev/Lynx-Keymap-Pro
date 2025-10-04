@@ -35,8 +35,21 @@ class AICommandsManager {
 
   /**
    * Executes first available command from list
+   * @param {Array} commands - Array of command strings to try
+   * @param {string} errorMessage - Message to show if no commands work
    */
   async executeFirstAvailableCommand(commands, errorMessage) {
+    // Validate parameters
+    if (!Array.isArray(commands) || commands.length === 0) {
+      console.error('Invalid commands array provided:', commands);
+      vscode.window.showWarningMessage(errorMessage || 'No commands available');
+      return;
+    }
+
+    if (!errorMessage || typeof errorMessage !== 'string') {
+      errorMessage = 'Command execution failed';
+    }
+
     // Get available commands with caching
     const allCommands = await this.getAvailableCommands();
 
@@ -61,16 +74,26 @@ class AICommandsManager {
 
   /**
    * Gets available commands with caching
+   * @returns {Promise<Array>} Array of available command strings
    */
   async getAvailableCommands() {
     const now = Date.now();
-    if (this.availableCommandsCache && (now - this.cacheTimestamp) < this.cacheExpiry) {
+    if (
+      this.availableCommandsCache &&
+      now - this.cacheTimestamp < this.cacheExpiry
+    ) {
       return this.availableCommandsCache;
     }
 
-    this.availableCommandsCache = await vscode.commands.getCommands(true);
-    this.cacheTimestamp = now;
-    return this.availableCommandsCache;
+    try {
+      this.availableCommandsCache = await vscode.commands.getCommands(true);
+      this.cacheTimestamp = now;
+      return this.availableCommandsCache;
+    } catch (error) {
+      console.error('Failed to get available commands:', error);
+      // Return cached commands if available, otherwise empty array
+      return this.availableCommandsCache || [];
+    }
   }
 
   /**
