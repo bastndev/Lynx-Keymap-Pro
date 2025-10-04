@@ -53,6 +53,7 @@
     "onCommand:lynx-keymap.attachAIContext",
 
     "onCommand:lynx-keymap.executeColorAndAgentMacro",
+    "onCommand:lynx-keymap.checkF1QuickSwitch",
     "onCommand:lynx-keymap.checkCompareCode"
   ],
   "main": "./src/extension.js",
