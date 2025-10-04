@@ -93,7 +93,7 @@
 | pick (AI) model ᵒⁿˡʸ-ᵛˢᶜᵒᵈᵉ            | ⌥ + X      | Alt + X      | Alt + X      |
 | maximized & minimize (AI) ᵒⁿˡʸ-ᵛˢᶜᵒᵈᵉ  | ⇧ + Esc    | Shift + Esc  | Shift + Esc  |
 
-### ► Only VScode avaible
+### ► Only VSCode available
 
 | Command                      | 🍎 macOS    | 🟦 Windows       | 🐧 Linux         |
 | :--------------------------- | :---------- | :--------------- | :--------------- |
