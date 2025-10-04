@@ -29,11 +29,17 @@ Discover more extensions at [bastndev.com/extensions](https://bastndev.com/exten
 <!-- --- -->
 
 ## [2.2.0] - 2025-10-04
+
 ### Added
 - **Compare Code Extension Integration**: Introduced new shortcut `Shift + Alt + \` (`shift+alt+\`) to instantly activate the Compare Code extension
 
-### Refactor
-- **README.md**: Refactor Readme add new Shortcuts
+### Changed
+- **Settings Shortcuts**: Swapped keybindings for settings access
+  - `Ctrl + J` / `⌘ + J` - Open settings (JSON)
+  - `Alt + J` / `⌥ + J` - Open settings (UI)
+
+### Improved
+- **README.md**: Refactored documentation to include new shortcuts and updated settings keybindings
 
 ---
 
