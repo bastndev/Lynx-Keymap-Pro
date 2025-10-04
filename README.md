@@ -172,7 +172,7 @@ If you want to contribute, check the guidelines: [[>_ᅠ]](https://github.com/ba
   <p><strong>Made with 🧡 by <a href="https://bastndev.com/extensions">@bastndev</a></strong></p>
   
   **Enjoy 🎉 Your (Lynx Keymap Pro) are now installed!**  
-  *If you find any bugs or have feedback, you can [open an issue](https://github.com/bastndev/Lynx-Keymap-75/issues)*
+  *If you find any bugs or have feedback, you can [open an issue](https://github.com/bastndev/Lynx-Keymap-Pro/issues)*
 </div>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
