@@ -3,7 +3,7 @@ const vscode = require('vscode');
 class ExtensionChecker {
   constructor() {
     this.extensionDependencies = {
-      'f1-toggles.focus': {
+      'workbench.view.extension.f1-functions': {
         extensionId: 'bastndev.f1',
         displayName: 'F1-Quick Switch',
         marketplaceSearch: 'bastndev.f1',

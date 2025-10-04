@@ -4,11 +4,13 @@ const MacroManager = require('./editor-ui/icons/macros');
 const StatusBarManager = require('./editor-ui/status-bar');
 const AICommandsManager = require('./keymaps/ai-keymap-handler');
 const ExtensionChecker = require('./notifications/extension-checker');
+const SmartWebviewExtension = require('./notifications/smart-checker-webview');
 
 // Global instances
 let statusBarManagerInstance;
 let aiCommandsManagerInstance;
 let extensionCheckerInstance;
+let smartWebviewExtensionInstance;
 
 function activate(context) {
   // Initialize managers
@@ -17,11 +19,14 @@ function activate(context) {
   statusBarManagerInstance = new StatusBarManager(context);
   aiCommandsManagerInstance = new AICommandsManager();
   extensionCheckerInstance = new ExtensionChecker();
+  smartWebviewExtensionInstance = new SmartWebviewExtension();
 
   // Register AI commands
   aiCommandsManagerInstance.registerCommands(context);
   // Register extension checker commands
   extensionCheckerInstance.registerCheckCommands(context);
+  // Register webview extension commands
+  smartWebviewExtensionInstance.registerWebviewCommands(context);
 
   // Status bar - [ctrl+alt+pagedown]
   let toggleStatusBarColorDisposable = vscode.commands.registerCommand(
@@ -46,7 +51,7 @@ function activate(context) {
     'lynx-keymap.checkF1QuickSwitch',
     () =>
       extensionCheckerInstance.checkAndExecuteCommand(
-        'f1-toggles.focus',
+        'workbench.view.extension.f1-functions',
         context
       )
   );
@@ -61,6 +66,9 @@ function activate(context) {
       )
   );
 
+  // Command with webview extension check - Compare Code [shift+alt+\]
+  // Note: This command is now registered automatically by smartWebviewExtensionInstance.registerWebviewCommands()
+
   // Register commands with VSCode
   context.subscriptions.push(
     toggleStatusBarColorDisposable,
@@ -68,6 +76,7 @@ function activate(context) {
     colorAndAgentMacroDisposable,
     checkF1QuickSwitchDisposable,
     checkGitLensDisposable
+    // checkCompareCodeDisposable is now registered automatically by smartWebviewExtensionInstance
   );
 }
 
@@ -77,6 +86,9 @@ async function deactivate() {
   }
   if (aiCommandsManagerInstance) {
     aiCommandsManagerInstance.dispose();
+  }
+  if (smartWebviewExtensionInstance) {
+    smartWebviewExtensionInstance.dispose();
   }
 }
 

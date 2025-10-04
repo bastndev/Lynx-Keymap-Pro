@@ -73,6 +73,14 @@
         "key"    : "ctrl+4",
         "mac"    : "cmd+4",
         "command": "lynx-keymap.checkF1QuickSwitch"
+      },{
+        "key"    : "shift+alt+\\",
+        "mac"    : "shift+alt+\\",
+        "command": "-Compare Code"
+      },{
+        "key"    : "shift+alt+\\",
+        "mac"    : "shift+alt+\\",
+        "command": "lynx-keymap.checkCompareCode"
       },
       
 
@@ -176,7 +184,7 @@
       {
         "key"    : "alt+j",
         "mac"    : "alt+j",
-        "command": "workbench.action.openSettings"
+        "command": "workbench.action.openSettingsJson"
       },{
         "key"    : "ctrl+,",
         "mac"    : "cmd+,",
@@ -184,7 +192,7 @@
       },{
         "key"    : "ctrl+j",
         "mac"    : "cmd+j",
-        "command": "workbench.action.openSettingsJson"
+        "command": "workbench.action.openSettings"
       },
 
 
@@ -387,6 +395,9 @@
       },{
       "command": "lynx-keymap.checkGitLens",
       "title"  : "Check GitLens Extension and Execute"
+      },{
+      "command": "lynx-keymap.checkCompareCode",
+      "title"  : "Check Compare Code Extension and Execute"
       }
     ]
 }
