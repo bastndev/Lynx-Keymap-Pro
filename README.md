@@ -9,7 +9,7 @@
     <a href="https://github.com/bastndev/Lynx-Keymap-Pro"><img src="https://raw.githubusercontent.com/bastndev/Lynx-Keymap-Pro/main/assets/images/star.png" width="26.6px" alt="Github Star ⭐️"></a>
 </p>
 
-</br>
+<br>
 
 ## New 🧪 (experimental) keymaps
 
@@ -17,7 +17,7 @@
 | :----------------- | :---------- | :---------------- | :---------------- |
 | Compare Code - 🄽🄴🅆 | `⇧ + ⌥ + \` | `Shift + Alt + \` | `Shift + Alt + \` |
 
-</br>
+<br>
 
 ### Lynx Keymap-Pro — Standard Keybindings
 
@@ -103,7 +103,7 @@
 | Select (AI) model            | `⌥ + X`     | `Alt + X`        | `Alt + X`        |
 | Toggle (AI) Panel Size       | `⇧ + Esc`   | `Shift + Esc`    | `Shift + Esc`    |
 
-</br>
+<br>
 
 > [!IMPORTANT]
 >
@@ -158,7 +158,7 @@ If you want to contribute, check the guidelines: [[>_ᅠ]](https://github.com/ba
 - 🔴 [Youtube](https://www.youtube.com/@bastndev?sub_confirmation=1) - Code, Software and development insights.
 - 💼 [Linkedin](https://www.linkedin.com/in/bastndev) - Professional networking and career updates.
 
-</br>
+<br>
 
 | Icon                                                                                                                                                                                                                                            | Name                                                          | Description                                                                                                                                                                                 |
 | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

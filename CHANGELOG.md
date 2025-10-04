@@ -24,7 +24,7 @@ Lynx Keymap — created by @bastndev — supercharges your workflow with curated
 
 Discover more extensions at [bastndev.com/extensions](https://bastndev.com/extensions)
 
-</br>
+<br>
 
 <!-- --- -->
 
