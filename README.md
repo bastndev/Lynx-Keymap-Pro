@@ -171,7 +171,6 @@ If you want to contribute, check the guidelines: [[>_ᅠ]](https://github.com/ba
   
   **Enjoy 🎉 Your (Lynx Keymap Pro) are now installed!**  
   *If you find any bugs or have feedback, you can [open an issue](https://github.com/bastndev/Lynx-Keymap-75/issues)*
-</div
-
+</div>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
