@@ -28,6 +28,15 @@ Discover more extensions at [bastndev.com/extensions](https://bastndev.com/exten
 
 <!-- --- -->
 
+## [2.2.0] - 2025-10-04
+### Added
+- **Compare Code Extension Integration**: Introduced new shortcut `Shift + Alt + \` (`shift+alt+\`) to instantly activate the Compare Code extension
+
+### Refactor
+- **README.md**: Refactor Readme add new Shortcuts
+
+---
+
 ## [2.1.8] - 2025-09-03
 
 ### Improved
