@@ -27,19 +27,23 @@ Discover more extensions at [bastndev.com/extensions](https://bastndev.com/exten
 <br>
 
 <!-- --- -->
-
 ## [2.2.0] - 2025-10-04
 
 ### Added
-- **Compare Code Extension Integration**: Introduced new shortcut `Shift + Alt + \` (`shift+alt+\`) to instantly activate the Compare Code extension
+- **Compare Code Extension Integration**: New shortcut `Shift + Alt + \` to instantly activate the Compare Code extension for side-by-side file comparison
+- **AI-Enhanced Extension Discovery**: Improved extension installation workflow with intelligent recommendations
+- **Prettier Integration**: Enhanced code formatting with automatic Prettier configuration detection
 
 ### Changed
-- **Settings Shortcuts**: Swapped keybindings for settings access
-  - `Ctrl + J` / `⌘ + J` - Open settings (JSON)
-  - `Alt + J` / `⌥ + J` - Open settings (UI)
+- **Settings Shortcuts**: Optimized keybindings for faster settings access
+  - `Ctrl + J` / `⌘ + J` — Open settings (JSON) for direct configuration editing
+  - `Alt + J` / `⌥ + J` — Open settings (UI) for visual preference management
 
 ### Improved
-- **README.md**: Refactored documentation to include new shortcuts and updated settings keybindings
+- **AI Command Reliability**: Enhanced stability and response time for AI-powered features across all supported editors
+- **Extension Installation Flow**: Streamlined extension discovery and installation process with better error handling
+- **Code Formatting Logic**: Refined Prettier integration with automatic format-on-save detection and configuration
+- **Documentation**: Updated README.md with new shortcuts, clearer installation instructions, and enhanced troubleshooting guide
 
 ---
 
