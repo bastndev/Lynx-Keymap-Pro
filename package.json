@@ -52,7 +52,8 @@
     "onCommand:lynx-keymap.showAIHistory",
     "onCommand:lynx-keymap.attachAIContext",
 
-    "onCommand:lynx-keymap.executeColorAndAgentMacro"
+    "onCommand:lynx-keymap.executeColorAndAgentMacro",
+    "onCommand:lynx-keymap.checkCompareCode"
   ],
   "main": "./src/extension.js",
   "contributes": {

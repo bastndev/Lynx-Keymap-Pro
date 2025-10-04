@@ -39,12 +39,25 @@ class SmartWebviewExtension {
       return;
     }
 
+    // FAST PATH: If extension is already active, execute directly
+    if (extension.isActive) {
+      try {
+        await vscode.commands.executeCommand(dependency.webviewCommand);
+        console.log(`Fast path: Successfully opened webview: ${dependency.displayName}`);
+        return;
+      } catch (error) {
+        console.log(`Fast path failed, falling back to full logic: ${error.message}`);
+        // Fall through to full logic if fast path fails
+      }
+    }
+
+    // FULL LOGIC: For activation and complex scenarios
     try {
       // Ensure extension is activated
       if (!extension.isActive) {
         await extension.activate();
-        // Wait a bit for activation to complete
-        await new Promise((resolve) => setTimeout(resolve, 500));
+        // Reduced wait time for activation
+        await new Promise((resolve) => setTimeout(resolve, 200));
       }
 
       // Check if webview is already open to prevent duplicates
@@ -72,10 +85,10 @@ class SmartWebviewExtension {
       await vscode.commands.executeCommand(dependency.webviewCommand);
       console.log(`Successfully opened webview: ${dependency.displayName}`);
 
-      // Clean up tracking after a delay
+      // Reduced cleanup time for faster response
       this.createTimeout(() => {
         this.webviewInstances.delete(dependency.extensionId);
-      }, 2000);
+      }, 500);
     } catch (error) {
       this.webviewInstances.delete(dependency.extensionId);
       throw error;
@@ -89,9 +102,9 @@ class SmartWebviewExtension {
     const lastOpened = this.webviewInstances.get(extensionId);
     if (!lastOpened) return false;
 
-    // Consider webview "open" if opened within last 2 seconds
+    // Reduced duplicate prevention window for faster response
     const timeDiff = Date.now() - lastOpened;
-    return timeDiff < 2000;
+    return timeDiff < 500;
   }
 
   /**
