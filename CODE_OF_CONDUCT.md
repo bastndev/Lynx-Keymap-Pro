@@ -46,7 +46,7 @@ For detailed guidelines on how to contribute, please see our [Contributing Guide
 
 ## Reporting Issues and Contact
 
-If you experience or witness behavior that violates these guidelines, please report it by email to: **gobasdev@gmail.com**
+If you experience or witness behavior that violates these guidelines, please report it by email to: **dev@bastndev.com**
 
 ### Important: Email Subject Line Format
 
