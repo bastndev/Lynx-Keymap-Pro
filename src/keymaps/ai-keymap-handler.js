@@ -53,8 +53,26 @@ class AICommandsManager {
     // Get available commands with caching
     const allCommands = await this.getAvailableCommands();
 
-    // Try each command until one succeeds
+    // 1. Prioritize Antigravity commands
+    // Find any command that starts with 'antigravity.' in the input list
+    const antigravityCmd = commands.find(cmd => cmd.startsWith('antigravity.'));
+    
+    if (antigravityCmd && allCommands.includes(antigravityCmd)) {
+      try {
+        await vscode.commands.executeCommand(antigravityCmd);
+        console.log(`Successfully executed prioritized command: ${antigravityCmd}`);
+        return;
+      } catch (error) {
+        console.error(`Failed to execute prioritized command ${antigravityCmd}:`, error);
+        // If it fails, fall through to the normal loop
+      }
+    }
+
+    // 2. Try each command until one succeeds
     for (const cmd of commands) {
+      // Skip if we already tried this antigravity command and it failed
+      if (cmd === antigravityCmd) continue;
+
       if (allCommands.includes(cmd)) {
         try {
           await vscode.commands.executeCommand(cmd);

@@ -11,6 +11,7 @@ const AI_COMMANDS_CONFIG = {
     'icube.gitGenerateCommitMessage',                     // 3: Trae-AI
     // Don't have a Firebase equivalent for this          // 4: Firebase.Studio
     // ---- ---- ---- ---- --- -- -                       // 5: Kiro
+    'antigravity.generateCommitMessage'                   // 6: Antigravity
   ],
 
   // AI POPUP COMMANDS MARK:[Ctrl`]
@@ -21,6 +22,7 @@ const AI_COMMANDS_CONFIG = {
     'icube.inlineChat.start',                             // 3: Trae-AI
     'workbench.action.terminal.chat.start',               // 4: Firebase.Studio
     'kiroAgent.inlineChat.start',                         // 5: Kiro
+    'antigravity.prioritized.command.open',               // 6: Antigravity
   ],
 
   // AI CHAT COMMANDS MARK:[Shift+Tab]
@@ -31,6 +33,7 @@ const AI_COMMANDS_CONFIG = {
     'workbench.action.chat.icube.open',                   // 3: Trae-AI
     'aichat.prompt',                                      // 4: Firebase.Studio
     'workbench.action.toggleAuxiliaryBar',                // 5: Kiro
+    // ---- ---- ---- ---- --- -- -                       // 6: Antigravity
   ],
 
   // NEW AI SESSION COMMANDS MARK:[Alt+A]
@@ -39,8 +42,9 @@ const AI_COMMANDS_CONFIG = {
     'workbench.action.chat.newEditSession',                  // 1: Vscode
     'composer.createNew',                                    // 2: Cursor-AI
     'workbench.action.icube.aiChatSidebar.createNewSession', // 3: Trae-AI
-    // 'workbench.action.chat.newChat' NF-now                // 4: Firebase.Studio
-    'kiroAgent.newSession'                                   // 5: Kiro
+    // 'workbench.action.chat.newEditSession' NF-now         // 4: Firebase.Studio
+    'kiroAgent.newSession',                                  // 5: Kiro
+    'antigravity.prioritized.chat.openNewConversation',      // 6: Antigravity
   ],
 
   // AI HISTORY COMMANDS MARK:[Alt+S]
@@ -51,6 +55,7 @@ const AI_COMMANDS_CONFIG = {
     'workbench.action.chat.history',                      // 1: Vscode
     'workbench.action.icube.aiChatSidebar.showHistory',   // 3: Trae-AI
     // Firebase doesn't have a history NF-now             // 4: Firebase.Studio
+    // ---- ---- ---- ---- --- -- -                       // 6: Antigravity
   ],
 
   // AI ATTACH CONTEXT COMMANDS MARK:[Alt+D]
@@ -61,6 +66,7 @@ const AI_COMMANDS_CONFIG = {
     // ---- ---- --- --- -- -                            // 3: Trae-AI
     // 'Workbench.action.openWorkspace' NF-now           // 4: Firebase.Studio
     // ---- ---- ---- ---- --- -- -                      // 5: Kiro
+    // ---- ---- ---- ---- --- -- -                      // 6: Antigravity
   ],
 };
 
