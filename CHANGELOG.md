@@ -2,7 +2,7 @@
 
 🚀 **Supercharge Your Workflow** 🚀
 
-Lynx Keymap — created by @bastndev — supercharges your workflow with curated keybindings for VSCode, seamlessly integrating AI tools like Cursor-AI and Trae-AI. ⌨️ Get instant access to essential commands for files, Git, debugging, AI sessions, and more.
+Lynx Keymap  — supercharges your workflow with curated keybindings for VSCode, seamlessly integrating AI tools like Cursor-AI and Trae-AI. ⌨️ Get instant access to essential commands for files, Git, debugging, AI sessions, and more.
 
 ## Supported Environments
 
@@ -22,7 +22,7 @@ Lynx Keymap — created by @bastndev — supercharges your workflow with curated
 - **Experimental Features**: Cutting-edge shortcuts for the latest AI development tools
 - **Developer Optimized**: Carefully curated shortcuts for maximum productivity
 
-Discover more extensions at [bastndev.com/extensions](https://bastndev.com/extensions)
+  Discover more extensions [here](https://gohit.xyz/)
 
 <br>
 
