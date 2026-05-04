@@ -2,6 +2,8 @@
   "cSpell.words": [
     "aichat",
     "aipopup",
+    "audiovolumedown",
+    "audiovolumeup",
     "Backquote",
     "Backsp",
     "bastndev",
@@ -12,13 +14,21 @@
     "keymap",
     "Keymaps",
     "Kiro",
-    "Latam",
     "newchataction",
-    "onCommand",
-    "𝚘𝚗𝚕𝚢",
     "ᵒⁿˡʸ",
-    "𝚂𝚌𝚘𝚍𝚎",
     "Trae",
     "ᵛˢᶜᵒᵈᵉ"
-  ]
+  ],
+  "atm.codeSpell.customWords": [
+    "keymap",
+    "checker",
+    "copilot",
+    "icube",
+    "aipopup",
+    "cloudcode",
+    "shortcut",
+    "capslock",
+    "auxiliary",
+    "opencode"
+  ],
 }
