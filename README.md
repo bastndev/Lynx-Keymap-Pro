@@ -88,7 +88,6 @@
 | Terminal — Clear Line                 | `⌘ + ⌥ + Backspace`     | `Ctrl + Alt + Backspace`     |    ✅     |
 | Terminal — Complete Word              | `⌥ + ,`                 | `Alt + ,`                    |    ✅     |
 | Maximize / Minimize Panel             | `⌘ + Esc`               | `Ctrl + Esc`                 |    ✅     |
-| Toggle Panel                          | `Page Down`             | `Page Down`                  |    ✅     |
 | -                                     | -                       | -                            |    N/A    |
 | **Smart Close** — AI Chat or Terminal | `⌘ + CapsLock`          | `Ctrl + CapsLock`            |    ✅     |
 | Create New AI Session                 | `⌥ + A`                 | `Alt + A`                    |    ✅     |
@@ -118,7 +117,7 @@
 | Unstage All                | `⌥ + 3`          | `Alt + 3`            | `Alt + 3`            |
 | Commit                     | `⌥ + Return`     | `Alt + Enter`        | `Alt + Enter`        |
 | Push                       | `⌘ + ⌥ + Return` | `Ctrl + Alt + Enter` | `Ctrl + Alt + Enter` |
-| View Git Changes           | `End`            | `End`                | `End`                |
+| View Git Changes           | `⌥ + L`          | `Alt + L`            | `Alt + L`            |
 | Open GitLab                | `⌘ + Q`          | `Ctrl + Q`           | `Ctrl + Q`           |
 
 ---
@@ -131,19 +130,17 @@
 | Open Settings (JSON)  | `⌥ + J`         | `Alt + J`             | `Alt + J`             |
 | Select Theme          | `⇧ + ⌥ + T`     | `Shift + Alt + T`     | `Shift + Alt + T`     |
 | Reload Window         | `⇧ + ⌥ + R`     | `Shift + Alt + R`     | `Shift + Alt + R`     |
-| Zoom In ( 🛞 right )  | `⇧ + ⌥ + Vol +` | `Shift + Alt + Vol +` | `Shift + Alt + Vol +` |
-| Zoom Out ( 🛞 left )  | `⇧ + ⌥ + Vol -` | `Shift + Alt + Vol -` | `Shift + Alt + Vol -` |
-| Show Markdown Preview | `Page Up`       | `Page Up`             | `Page Up`             |
+| Show Markdown Preview | `⌥ + M`         | `Alt + M`             | `Alt + M`             |
 
 ---
 
-## 🐛 Debugging
+## ▶️ Debugging
 
 | Command           | 🍎 macOS     | 🟦 Windows      | 🐧 Linux        |
 | :---------------- | :----------- | :-------------- | :-------------- |
-| Start Debugging   | `Insert`     | `Insert`        | `Insert`        |
-| Restart Debugging | `⌥ + Insert` | `Alt + Insert`  | `Alt + Insert`  |
-| Stop Debugging    | `⌘ + Insert` | `Ctrl + Insert` | `Ctrl + Insert` |
+| Start Debugging   | `⌥ + P`      | `Alt + P`       | `Alt + P`       |
+| Restart Debugging | `⌥ + O`      | `Alt + O`       | `Alt + O`       |
+| Stop Debugging    | `⌥ + I`      | `Alt + I`       | `Alt + I`       |
 
 ---
 
