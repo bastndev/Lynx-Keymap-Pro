@@ -1,215 +1,65 @@
 # Lynx Keymap Pro Architecture
 
 ## Overview
+**Lynx Keymap Pro** is a high-performance extension designed to unify keyboard shortcuts across major AI-powered editors (VS Code, Cursor, Windsurf, Trae, etc.). Optimized for Pro layouts, it provides a seamless developer experience with intelligent AI command fallback.
 
-**Lynx Keymap Pro** standardizes keyboard shortcuts across all code editors, specifically adapted for professional keyboards. It enables developers to use key combinations to access any functionality with precision and consistency, optimizing development workflow with a unified and efficient experience regardless of the editor used.
-
-**Available now**: VS Code • Cursor • Windsurf • Trae.ai • Kiro • Firebase Studio
-
-### Key Value Propositions
-
-- **🎯 Professional Keyboard Optimization**: Tailored shortcuts that maximize compact layout efficiency
-- **🌐 Universal Editor Support**: Consistent experience across 6 major code editors
-- **🤖 Intelligent AI Integration**: Smart fallback system for AI commands across platforms
-- **⚡ Enhanced Productivity**: Streamlined workflows through optimized key combinations
-- **🎨 Visual Customization**: Dynamic color management for improved visual feedback
-- **🔄 Macro Automation**: Complex command sequences with precise timing control
-
-## Architecture Diagram
-
+## Core Architecture
 ```mermaid
-graph TB
-    subgraph "📦 Lynx Keymap Pro Extension"
-        direction TB
-        A[package.json<br/>📋 Main Configuration]
-
-        subgraph "🎯 Core Systems"
-            direction TB
-            E[AICommandsManager<br/>🤖 AI Integration]
-            F[StatusBarManager<br/>🎨 Color Management]
-            G[ColorManager<br/>🎯 Icon Colors]
-            H[MacroManager<br/>⚡ Command Sequences]
-        end
-
-        subgraph "🌐 Multi-Editor Support"
-            direction LR
-            K[🌊 Windsurf]
-            L[📝 VS Code]
-            M[🎯 Cursor-AI]
-            N[🚀 Trae-AI]
-            O[🔥 Firebase Studio]
-            P[🤖 Kiro]
-        end
+graph TD
+    A[package.json] --> B[Extension Entry]
+    B --> C[AI Controller]
+    B --> D[Terminal Manager]
+    B --> E[Notifications]
+    
+    subgraph "AI System"
+        C --> C1[Editor Detection]
+        C1 --> C2[Command Fallback]
     end
-
-    subgraph "🎯 VS Code Integration"
-        direction TB
-        W[Extension Host<br/>🏠 Runtime]
-        Z[User Interface<br/>👤 Editor Experience]
+    
+    subgraph "Supported Editors"
+        C2 --> Windsurf
+        C2 --> Cursor
+        C2 --> Trae
+        C2 --> VSCode
     end
-
-    %% Main connections
-    A --> E
-    A --> F
-    A --> G
-    A --> H
-    E --> K
-    E --> L
-    E --> M
-    E --> N
-    E --> O
-    E --> P
-    A -.-> W
-    W --> Z
-
-    %% Styling
-    classDef mainConfig fill:#ff6b6b,stroke:#333,stroke-width:2px,color:#fff
-    classDef managers fill:#4ecdc4,stroke:#333,stroke-width:2px,color:#fff
-    classDef editors fill:#dda0dd,stroke:#333,stroke-width:2px,color:#000
-    classDef integration fill:#a8e6cf,stroke:#333,stroke-width:2px,color:#000
-
-    class A mainConfig
-    class E,F,G,H managers
-    class K,L,M,N,O,P editors
-    class W,Z integration
 ```
-
-## 🎹 Professional Keyboard Layout
-
-> - 🎯 Optimized Keys: Alt, Ctrl, Insert, Delete, Page Up/Down, Function Keys
-
-```
-┌─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬──────────┐
-│ Esc │ F1  │ F2  │ F3  │ F4  │ F5  │ F6  │ F7  │ F8  │ F9  │ F10 │ F11 │ F12 │   Del    │
-├─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼──────────┤
-│  `  │  1  │  2  │  3  │  4  │  5  │  6  │  7  │  8  │  9  │  0  │  -  │  =  │ Backsp   │
-├─────┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬───────┤
-│  Tab   │  Q  │  W  │  E  │  R  │  T  │  Y  │  U  │  I  │  O  │  P  │  [  │  ]  │   \   │
-├────────┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴───────┤
-│   Caps   │  A  │  S  │  D  │  F  │  G  │  H  │  J  │  K  │  L  │  ;  │  '  │   Enter   │
-├──────────┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴───────────┤
-│    Shift    │  Z  │  X  │  C  │  V  │  B  │  N  │  M  │  ,  │  .  │  /  │    Shift     │
-├─────┬───────┼─────┴─┬───┴─────┴─────┴─────┴─────┴─────┴─┬───┴─┬───┴─────┬───┬─────┬────┤
-│     │       │       │               Space               │     │         │   │  ⌃  │    │
-│ Fn  │ Ctrl  │ Alt   │                                   │ Alt │  Cmd    │ ← │  ⌄  │ →  │
-└─────┴───────┴───────┴───────────────────────────────────┴─────┴─────────┴───┴─────┴────┘
-```
-
-## ⚡ Quick Start
-
-1. **Install**: Search "Lynx Keymap Pro" in VS Code Extensions
-2. **Activate**: Restart VS Code - shortcuts are automatically active
-3. **Test**: Press `Ctrl+1` (Explorer), `Alt+2` (AI Commit), `Ctrl+Alt+,` (Color Toggle)
 
 ## Project Structure
-
-```
-lynx-keymap-pro/
-├── src/
-│   ├── extension.js              # Main entry point
-│   ├── editor-ui/                # UI components
-│   │   ├── status-bar.js         # Status bar colors
-│   │   └── icons/
-│   │       ├── icon-painter.js   # Icon colors
-│   │       └── macros.js         # Macro system
-│   └── keymaps/                  # Keyboard mappings
-│       ├── ai-keymap-config.js   # AI commands
-│       └── ai-keymap-handler.js  # AI execution
-├── assets/                       # Resources
-├── package.json                  # Extension config
-└── README.md                     # Documentation
+```text
+src/
+├── extension.ts              # Entry point & Manager registration
+├── keymaps/
+│   ├── ai/
+│   │   ├── configs.ts        # Editor signatures & AI commands
+│   │   └── controller.ts     # Detection & Fallback logic
+│   └── terminal/
+│       ├── shared.ts         # Panel state & persistence
+│       ├── side-panel.ts     # Left/Right toggle logic
+│       └── bottom-panel.ts   # Bottom toggle logic
+└── notifications/
+    ├── info.ts               # Standard notifications
+    └── whith-buttons.ts      # Interactive UI alerts
 ```
 
-## Key Features
+## Key Systems
 
-### 🤖 AI Management System
+### 🤖 AI Controller
+The AI system uses a **Priority-Based Fallback**. It detects the active editor type (e.g., Windsurf vs. Cursor) and maps a single Lynx command (like `lynx.toggleSuggestionAI`) to the specific native command of that editor.
 
-- **Smart Detection**: Automatically detects available AI providers
-- **Intelligent Fallback**: Priority-based command execution across editors
-- **Universal Commands**: Same shortcuts work in all supported editors
+### 📟 Terminal Management
+Deterministic terminal toggling that ensures UI stability. It manages panel positions (Left, Right, Bottom) while preserving terminal session state and labels.
 
-### 🎨 Visual Management
+### 🔔 Smart Notifications
+Centralized system for user feedback, handling everything from simple info messages to complex installation prompts for dependency extensions.
 
-- **Status Bar Colors**: 5-color rotation with smart history (Green, Blue, Orange, Lemon, Red)
-- **Icon Colors**: Blue → Green → Default cycle
-- **Smart Selection**: Prevents recent color repetition
+## Essential Shortcuts
+| Shortcut | Action |
+| :--- | :--- |
+| `Ctrl+1/2/3` | Navigation (Explorer/SCM/Ext) |
+| `Alt+W/E` | Terminal (Side/Bottom) |
+| `Alt+1/2/3` | Git (Stage/Commit/Unstage) |
+| `Shift+Alt+D` | Toggle AI Suggestions |
+| `Alt+Z` | AI Agent Mode |
 
-### ⚡ Macro System
-
-- **Command Sequences**: Execute multiple commands with precise timing
-- **Execution Lock**: Prevents concurrent macro conflicts
-- **Error Recovery**: Robust handling of failed commands
-
-## Keyboard Shortcuts
-
-| Category        | Shortcut         | Action                             |
-| --------------- | ---------------- | ---------------------------------- |
-| **Navigation**  | `Ctrl+1/2/3`     | Explorer/Source Control/Extensions |
-|                 | `Ctrl+Tab`       | Toggle sidebar                     |
-|                 | `Alt+C/V`        | New file/folder                    |
-| **Git**         | `Alt+1/3`        | Stage/Unstage all                  |
-|                 | `Alt+2`          | AI commit message                  |
-|                 | `Alt+4`          | Git pull                           |
-|                 | `Alt+Enter`      | Git commit                         |
-|                 | `Ctrl+Alt+Enter` | Git push                           |
-| **AI**          | `Ctrl+\``        | AI chat popup                      |
-|                 | `Shift+Tab`      | AI chat panel                      |
-|                 | `Alt+A/S/D`      | New session/History/Context        |
-|                 | `Alt+X`          | AI model picker                    |
-| **Visual**      | `Ctrl+Alt+,`     | Status bar color                   |
-|                 | `Alt+Z`          | Macro (agent + color)              |
-| **Development** | `Alt+F`          | Format document                    |
-|                 | `Alt+P`          | Start debugging                    |
-|                 | `Alt+O`          | Restart debugging                  |
-
-## Multi-Editor Support
-
-**Priority-Based Fallback System**: Same shortcuts work across all editors through intelligent command detection.
-
-| Editor                 | Priority | AI Features              |
-| ---------------------- | -------- | ------------------------ |
-| 🌊 **Windsurf**        | 0        | Advanced AI capabilities |
-| 📝 **VS Code**         | 1        | Standard implementation  |
-| 🎯 **Cursor-AI**       | 2        | Specialized AI tools     |
-| 🚀 **Trae-AI**         | 3        | Alternative AI provider  |
-| 🔥 **Firebase Studio** | 4        | Basic AI support         |
-| 🤖 **Kiro**            | 5        | Emerging platform        |
-
-**How it works**: Extension detects available commands and automatically uses the best option for your current editor.
-
-## Installation & Requirements
-
-### Requirements
-
-- **VS Code**: Version 1.74.0 or higher
-- **Operating System**: Windows, macOS, Linux
-- **Keyboard**: Professional layout recommended (works with any keyboard)
-
-### Installation
-
-1. Open VS Code Extensions (`Ctrl+Shift+X`)
-2. Search "Lynx Keymap Pro"
-3. Click Install
-4. Restart VS Code
-5. Shortcuts are automatically active
-
-### Migration from Other Keymaps
-
-- **From default VS Code**: All standard shortcuts preserved, new ones added
-- **From Vim/Emacs**: Can be used alongside existing keymaps
-- **From other extensions**: Disable conflicting keymap extensions first
-
-## Conclusion
-
-**Lynx Keymap Pro** delivers a unified keyboard shortcut experience across all major code editors, specifically optimized for professional keyboard layouts. By standardizing key combinations and providing intelligent AI integration, it eliminates the friction of switching between editors while maximizing productivity.
-
-### Key Benefits
-
-- **🎯 Professional Keyboard Optimized**: Purpose-built for compact layouts with maximum efficiency
-- **🌐 Universal Compatibility**: Same shortcuts across 6 major editors
-- **🤖 Smart AI Integration**: Intelligent fallback system for AI commands
-- **⚡ Enhanced Productivity**: Streamlined workflows through optimized combinations
-- **🎨 Visual Feedback**: Dynamic color management for improved UX
-- **🔄 Macro Automation**: Complex command sequences with precise timing
-
-**Result**: A maintainable, scalable system that adapts to your tools rather than forcing you to adapt to different shortcut schemes. Perfect for developers who value consistency and efficiency in their development environment.
+---
+*Optimized for Pro layouts. Unified across all AI editors.*

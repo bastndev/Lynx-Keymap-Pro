@@ -1,0 +1,6 @@
+{
+  "displayName": "Lynx Keymap Pro (KI-Orchestrator)",
+  "description": "Die ultimative Tastaturkürzel-Suite für KI-gestützte IDEs. ⚡️ Beschleunigen Sie Ihren Workflow in VSCode, Cursor, Windsurf, Trae.ai & Kiro mit intelligenter KI-Orchestrierung, Terminalwechsel mit einem Tastendruck und bewährten 75%-Tastaturlayouts. Hören Sie auf zu klicken. Fangen Sie an zu befehlen.",
+  "lynx.notification.ai.enabled": "({0}) KI-Vorschläge: AKTIVIERT ✅",
+  "lynx.notification.ai.disabled": "({0}) KI-Vorschläge: DEAKTIVIERT ❌"
+}

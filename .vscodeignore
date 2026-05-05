@@ -1,4 +1,18 @@
 .vscode/**
 .vscode-test/**
 .gitignore
+
+# ignore, 2026 
+.prettierignore
+bun.lock
+esbuild.js
+eslint.config.mjs
+tsconfig.json
 vsc-extension-quickstart.md
+AGENTS.md
+ARCHITECTURE.md
+CODE_OF_CONDUCT.md
+CONTRIBUTING.md
+src/**
+public/**
+dist/*.map
