@@ -90,20 +90,6 @@
 
 
 
-
-      {
-        "key"    : "alt+shift+audiovolumedown",
-        "mac"    : "alt+shift+audiovolumedown",
-        "command": "workbench.action.zoomOut",
-        "when"   : "editorTextFocus || !inputFocus"
-      },{
-        "key"    : "alt+shift+audiovolumeup",
-        "mac"    : "alt+shift+audiovolumeup",
-        "command": "workbench.action.zoomIn",
-        "when"   : "editorTextFocus || !inputFocus"
-      },
-      
-      
       {
         "key"    : "ctrl+backspace",
         "mac"    : "cmd+backspace",
@@ -148,31 +134,27 @@
 
 
       {
-        "key"    : "pagedown",
-        "mac"    : "pagedown",
-        "command": "workbench.action.togglePanel"
-      },{
-        "key"    : "pageup",
-        "mac"    : "pageup",
+        "key"    : "alt+m",
+        "mac"    : "alt+m",
         "command": "markdown.showPreviewToSide"
       },{
-        "key"    : "end",
-        "mac"    : "end",
+        "key"    : "alt+l",
+        "mac"    : "alt+l",
         "command": "git.viewChanges"
       },
       
       
       {
-        "key"    : "ctrl+insert",
-        "mac"    : "cmd+insert",
+        "key"    : "alt+i",
+        "mac"    : "alt+i",
         "command": "workbench.action.debug.stop"
       },{
-        "key"    : "alt+insert",
-        "mac"    : "alt+insert",
+        "key"    : "alt+o",
+        "mac"    : "alt+o",
         "command": "workbench.action.debug.restart"
       },{
-        "key"    : "insert",
-        "mac"    : "insert",
+        "key"    : "alt+p",
+        "mac"    : "alt+p",
         "command": "workbench.action.debug.start"
       },
 
