@@ -3,10 +3,10 @@
 ![Lynx Keymap pro](https://raw.githubusercontent.com/bastndev/Lynx-Keymap-pro/refs/heads/main/public/github/images/banner.png)
 
 <p align="center">
-  <img src="https://vsmarketplacebadges.dev/version-short/bastndev.lynx-keymap-pro.jpg?style=for-the-badge&colorA=eff6fc&colorB=EEEEEE&color=000000&label=VERSION" alt="Version">&nbsp;
-  <img src="https://vsmarketplacebadges.dev/downloads-short/bastndev.lynx-keymap-pro.jpg?style=for-the-badge&colorA=eff6fc&colorB=2ca562&color=000000&label=Downloads" alt="Downloads">&nbsp;
-  <img src="https://vsmarketplacebadges.dev/rating-short/bastndev.lynx-keymap-pro.jpg?style=for-the-badge&colorA=eff6fc&colorB=EEEEEE&color=000000&label=Rating" alt="Rating">&nbsp;
-  <a href="https://github.com/bastndev/Lynx-Keymap-pro"><img src="https://raw.githubusercontent.com/bastndev/Lynx-Keymap-pro/refs/heads/main/public/github/icon/star.png" width="26.6px" alt="Github Star ⭐️"></a>
+    <img src="https://vsmarketplacebadges.dev/version-short/bastndev.lynx-keymap.jpg?style=for-the-badge&colorA=fa9905&colorB=EEEEEE&color=000000&label=VERSION" alt="Version">&nbsp;
+    <img src="https://vsmarketplacebadges.dev/rating-short/bastndev.lynx-keymap.jpg?style=for-the-badge&colorA=e06a1e&colorB=EEEEEE&color=000000&label=Rating" alt="Rating">&nbsp;
+    <img src="https://vsmarketplacebadges.dev/downloads-short/bastndev.lynx-keymap.jpg?style=for-the-badge&colorA=dd4636&colorB=EEEEEE&color=000000&label=Downloads" alt="Downloads">&nbsp;
+    <a href="https://github.com/bastndev/Lynx-Keymap-pro"><img src="https://raw.githubusercontent.com/bastndev/Lynx-Keymap-pro/refs/heads/main/public/github/icon/star.png" width="26.6px" alt="Github Star ⭐️"></a>
 </p>
 
 <p align="center">
@@ -32,7 +32,7 @@
 
 <br>
 
-## 🧪 Tính năng thử nghiệm — `Mới`
+![Thử nghiệm — Mới](https://raw.githubusercontent.com/bastndev/Lynx-Keymap-pro/refs/heads/main/public/github/images/img/t-1.webp)
 
 | Lệnh                         | 🍎 macOS         | 🟦 Windows       | 🐧 Linux         |
 | :--------------------------- | :--------------- | :--------------- | :--------------- |
