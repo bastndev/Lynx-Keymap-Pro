@@ -32,7 +32,7 @@
 
 <br>
 
-![実験的機能 — 新機能](https://raw.githubusercontent.com/bastndev/Lynx-Keymap-pro/refs/heads/main/public/github/images/img/t-1.webp)
+## 🧪 実験的機能 — `新機能`
 
 | コマンド                     | 🍎 macOS         | 🟦 Windows       | 🐧 Linux         |
 | :--------------------------- | :--------------- | :--------------- | :--------------- |

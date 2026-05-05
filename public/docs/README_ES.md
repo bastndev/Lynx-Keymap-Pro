@@ -32,7 +32,7 @@
 
 <br>
 
-![Experimental — Nuevo](https://raw.githubusercontent.com/bastndev/Lynx-Keymap-pro/refs/heads/main/public/github/images/img/t-1.webp)
+## 🧪 Funciones Experimentales — `Nuevo`
 
 | Comando                      | 🍎 macOS         | 🟦 Windows       | 🐧 Linux         |
 | :--------------------------- | :--------------- | :--------------- | :--------------- |
