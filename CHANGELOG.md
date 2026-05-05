@@ -27,6 +27,13 @@ Lynx Keymap  — supercharges your workflow with curated keybindings for VSCode,
 <br>
 
 <!-- --- -->
+## [2.2.5] - 2026-05-05
+
+### Added
+- **Equalized with Lynx Keymap Pro**: Added new experimental keymap for AI Orchestrator features
+- **Better images**: in README.md for better preview
+
+---
 ## [2.2.0] - 2025-10-04
 
 ### Added
