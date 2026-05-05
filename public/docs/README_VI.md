@@ -32,7 +32,7 @@
 
 <br>
 
-![Thử nghiệm — Mới](https://raw.githubusercontent.com/bastndev/Lynx-Keymap-pro/refs/heads/main/public/github/images/img/t-1.webp)
+## 🧪 Tính năng thử nghiệm — `Mới`
 
 | Lệnh                         | 🍎 macOS         | 🟦 Windows       | 🐧 Linux         |
 | :--------------------------- | :--------------- | :--------------- | :--------------- |
