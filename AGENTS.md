@@ -2,56 +2,57 @@
 
 ## Project type
 
-VS Code extension (keymap + AI integration). No build step, no tests, no CI. Plain CommonJS (`require`).
+VS Code extension (keymap + AI integration). Written in **TypeScript**, bundled with **esbuild**, and managed with **Bun**.
 
 ## Commands
 
-- **Debug**: `F5` opens a new VS Code window with the extension loaded
-- **Reload after changes**: `Ctrl+R` / `Cmd+R` in the debug window, or use the Debug toolbar
-- **Format**: `npx prettier --write .` (config: singleQuote, 2-space indent, semi, trailingComma es5, printWidth 80)
-- **Package for marketplace**: `npx vsce package` (produces `.vsix`, already gitignored)
+- **Debug**: `F5` opens a new VS Code window with the extension loaded.
+- **Build**: `bun run compile` (runs `esbuild.js`).
+- **Watch**: `bun run watch` (rebuilds automatically on change).
+- **Format**: `npx prettier --write .`.
+- **Lint**: `bun run lint` (ESLint).
+- **Package**: `npx vsce package` (requires `bun run package` first to generate `dist/`).
 
 ## Architecture
 
-Entry point: `src/extension.js` — `activate()` instantiates all managers and registers commands.
+Entry point: `src/extension.ts` — `activate()` instantiates managers and registers commands.
 
 | Manager | File | Responsibility |
 |---------|------|----------------|
-| `AICommandsManager` | `src/keymaps/ai-keymap-handler.js` | Priority-based fallback: tries editor-specific AI commands (Windsurf → VS Code → Cursor → Trae → Firebase → Kiro → Antigravity) until one succeeds. Caches available commands for 5 min. |
-| `StatusBarManager` | `src/editor-ui/status-bar.js` | Toggles status bar color via `workbench.colorCustomizations` at **Workspace** target. Smart rotation (6 colors, avoids last 3 used). State stored in `workspaceState`. |
-| `ColorManager` | `src/editor-ui/icons/icon-painter.js` | Cycles icon foreground color (Blue → Green → Default) via `workbench.colorCustomizations` at **Global** target. |
-| `MacroManager` | `src/editor-ui/icons/macros.js` | Executes command sequences with delays. Has execution lock (`isExecuting`) to prevent concurrent runs. |
-| `ExtensionChecker` | `src/notifications/extension-checker.js` | Checks for optional extensions (F1-Quick Switch `bastndev.f1`, GitLens `eamodio.gitlens`), prompts install if missing, auto-executes command after install. |
-| `SmartWebviewExtension` | `src/notifications/smart-checker-webview.js` | Handles webview-based extensions (Compare Code `bastndev.compare-code`). Has fast-path for already-active extensions and duplicate-open prevention (500ms window). |
+| `AICommandsManager` | `src/keymaps/ai/controller.ts` | Detects active editor (Priority: Antigravity → Windsurf → Cursor → Trae → Kiro → Firebase → VSCode) and executes corresponding AI commands. |
+| `AIToggleManager` | `src/keymaps/ai/controller.ts` | Toggles AI suggestions across multiple providers by updating global configurations. |
+| `TerminalManager` | `src/keymaps/terminal/side-panel.ts` | Handles the lateral terminal (Left/Right) including settings persistence. |
+| `BottomTerminalManager` | `src/keymaps/terminal/bottom-panel.ts` | Handles the bottom terminal toggle. |
 
 ## Key gotchas
 
-- **Two color systems write to the same config key** (`workbench.colorCustomizations`) but at different targets: `ColorManager` uses `Global`, `StatusBarManager` uses `Workspace`. They can conflict if both are active.
-- **No test suite exists**. Verify changes manually by running F5 and testing the affected keybinding.
-- **No linting or typechecking**. Prettier is the only code quality tool configured.
-- **AI command fallback order matters**. New editor support is added by appending command IDs to the arrays in `src/keymaps/ai-keymap-config.js`. Antigravity commands are tried first regardless of array position.
-- **Keybindings are defined entirely in `package.json`** under `contributes.keybindings`. No runtime registration of keybindings.
-- **Commands registered in `extension.js` must match `package.json` commands array** for the Command Palette to show them.
+- **TypeScript Build**: You MUST run `bun run watch` or `bun run compile` for changes to take effect in the debug window. The entry point in `package.json` points to `dist/extension.js`.
+- **AI Detection**: Priority-based fallback. Detection is cached for 5 minutes (`CACHE_EXPIRY`). Use `resetDetection()` to force a refresh.
+- **Settings Persistence**: The extension saves original user settings (tabs, panel labels) before applying its own layout, and restores them when closing custom panels.
+- **No test suite exists**: Verify changes manually by running F5 and testing affected keybindings in the host editor.
+- **Keybindings**: Defined in `package.json`. Commands registered in `extension.ts` MUST match the command IDs in `package.json`.
+- **README Differentiation**: The main `README.md` uses an image for the Experimental section title (`![Experimental — New](...)`), whereas the localized READMEs in `public/docs/` use text headers (e.g., `## 🧪 Funciones Experimentales — Nuevo`). This is intentional to distinguish the primary documentation.
 
 ## Directory structure
 
 ```
 src/
-  extension.js              # Entry point, activate/deactivate
+  extension.ts              # Entry point
   keymaps/
-    ai-keymap-config.js     # AI command arrays per editor
-    ai-keymap-handler.js    # AICommandsManager class
-  editor-ui/
-    status-bar.js           # StatusBarManager class
-    icons/
-      icon-painter.js       # ColorManager class
-      macros.js             # MacroManager class
+    index.ts                # Main exports
+    ai/
+      controller.ts         # AICommandsManager & AIToggleManager
+      configs.ts            # AI Command maps and editor signatures
+    terminal/
+      side-panel.ts         # Lateral terminal logic
+      bottom-panel.ts       # Bottom terminal logic
+      shared.ts             # Common terminal settings & helpers
   notifications/
-    extension-checker.js    # ExtensionChecker class
-    smart-checker-webview.js # SmartWebviewExtension class
+    info.ts                 # Notification helpers
 ```
 
 ## Related files
 
-- `ARCHITECTURE.md` — detailed architecture doc with diagrams
-- `package.json` — all keybindings, commands, activation events, extension metadata
+- `ARCHITECTURE.md` — Detailed architecture documentation.
+- `package.json` — Keybindings, commands, and extension metadata.
+- `esbuild.js` — Build configuration.
