@@ -30,8 +30,21 @@ Lynx Keymap  — supercharges your workflow with curated keybindings for VSCode,
 ## [2.2.5] - 2026-05-05
 
 ### Added
-- **Equalized with Lynx Keymap Pro**: Added new experimental keymap for AI Orchestrator features
-- **Better images**: in README.md for better preview
+- **AI Orchestrator**: New experimental keymap features (Equalized with Lynx Keymap Pro).
+- **Bun Compile Task**: Added `bun-compile` to `.vscode/tasks.json` to streamline the build process.
+- **Spell-Check**: Added custom words and project-specific terminology to `.vscode/settings.json`.
+
+### Changed
+- **Documentation Overhaul**: Major rewrite of `ARCHITECTURE.md` and `CODE_OF_CONDUCT.md` for better readability and inclusivity.
+- **Launch Configuration**: Optimized `.vscode/launch.json` to utilize the new build task and output mapping.
+- **Prettier Migration**: Updated `.prettierignore` to support TypeScript configurations.
+
+### Improved
+- **Packaging**: Enhanced `.vscodeignore` to include build artifacts and source directories for a cleaner extension package.
+- **Visuals**: Updated `README.md` with higher-quality images for better previews.
+
+### Removed
+- **Legacy Config**: Removed `.prettierrc` to consolidate formatting rules and leverage defaults.
 
 ---
 ## [2.2.0] - 2025-10-04
