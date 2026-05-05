@@ -1,6 +1,6 @@
 # Contributing to Lynx Keymap Pro
 
-Before contributing, read the [**Architecture Guide**](https://github.com/bastndev/Lynx-Keymap-75/blob/main/ARCHITECTURE.md) — it explains how the keymap system, AI integration, and multi-editor support fit together.
+Before contributing, read the [**Architecture Guide**](https://github.com/bastndev/Lynx-Keymap-Pro/blob/main/ARCHITECTURE.md) — it explains how the keymap system, AI integration, and multi-editor support fit together.
 
 ---
 
@@ -83,11 +83,11 @@ Your PR description should include:
 
 ## Need Help?
 
-- **Bug or idea?** → [Open an issue](https://github.com/bastndev/Lynx-Keymap-75/issues)
-- **Architecture questions?** → [ARCHITECTURE.md](https://github.com/bastndev/Lynx-Keymap-75/blob/main/ARCHITECTURE.md)
+- **Bug or idea?** → [Open an issue](https://github.com/bastndev/Lynx-Keymap-Pro/issues)
+- **Architecture questions?** → [ARCHITECTURE.md](https://github.com/bastndev/Lynx-Keymap-Pro/blob/main/ARCHITECTURE.md)
 - **Contact** → bastndev@gohit.xyz
 
-Please follow our [Code of Conduct](https://github.com/bastndev/Lynx-Keymap-75/blob/main/CODE_OF_CONDUCT.md).
+Please follow our [Code of Conduct](https://github.com/bastndev/Lynx-Keymap-Pro/blob/main/CODE_OF_CONDUCT.md).
 
 ---
 

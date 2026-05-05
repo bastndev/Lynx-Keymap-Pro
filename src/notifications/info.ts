@@ -13,7 +13,7 @@ let nlsData: Record<string, string> | null = null;
 function getTranslation(key: string, ...args: string[]): string {
   if (!nlsData) {
     try {
-      const ext = vscode.extensions.getExtension('bastndev.lynx-keymap-75');
+      const ext = vscode.extensions.getExtension('bastndev.lynx-keymap');
       if (ext) {
         const lang = vscode.env.language;
         const rootPath = ext.extensionPath;
