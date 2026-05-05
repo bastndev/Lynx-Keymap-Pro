@@ -31,6 +31,7 @@ Entry point: `src/extension.ts` — `activate()` instantiates managers and regis
 - **Settings Persistence**: The extension saves original user settings (tabs, panel labels) before applying its own layout, and restores them when closing custom panels.
 - **No test suite exists**: Verify changes manually by running F5 and testing affected keybindings in the host editor.
 - **Keybindings**: Defined in `package.json`. Commands registered in `extension.ts` MUST match the command IDs in `package.json`.
+- **README Differentiation**: The main `README.md` uses an image for the Experimental section title (`![Experimental — New](...)`), whereas the localized READMEs in `public/docs/` use text headers (e.g., `## 🧪 Funciones Experimentales — Nuevo`). This is intentional to distinguish the primary documentation.
 
 ## Directory structure
 
