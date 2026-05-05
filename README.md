@@ -124,23 +124,23 @@
 
 ## 🛠️ Settings & Window
 
-| Command               | 🍎 macOS        | 🟦 Windows            | 🐧 Linux              |
-| :-------------------- | :-------------- | :-------------------- | :-------------------- |
-| Open Settings (UI)    | `⌘ + J`         | `Ctrl + J`            | `Ctrl + J`            |
-| Open Settings (JSON)  | `⌥ + J`         | `Alt + J`             | `Alt + J`             |
-| Select Theme          | `⇧ + ⌥ + T`     | `Shift + Alt + T`     | `Shift + Alt + T`     |
-| Reload Window         | `⇧ + ⌥ + R`     | `Shift + Alt + R`     | `Shift + Alt + R`     |
-| Show Markdown Preview | `⌥ + M`         | `Alt + M`             | `Alt + M`             |
+| Command               | 🍎 macOS    | 🟦 Windows        | 🐧 Linux          |
+| :-------------------- | :---------- | :---------------- | :---------------- |
+| Open Settings (UI)    | `⌘ + J`     | `Ctrl + J`        | `Ctrl + J`        |
+| Open Settings (JSON)  | `⌥ + J`     | `Alt + J`         | `Alt + J`         |
+| Select Theme          | `⇧ + ⌥ + T` | `Shift + Alt + T` | `Shift + Alt + T` |
+| Reload Window         | `⇧ + ⌥ + R` | `Shift + Alt + R` | `Shift + Alt + R` |
+| Show Markdown Preview | `⌥ + M`     | `Alt + M`         | `Alt + M`         |
 
 ---
 
 ## ▶️ Debugging
 
-| Command           | 🍎 macOS     | 🟦 Windows      | 🐧 Linux        |
-| :---------------- | :----------- | :-------------- | :-------------- |
-| Start Debugging   | `⌥ + P`      | `Alt + P`       | `Alt + P`       |
-| Restart Debugging | `⌥ + O`      | `Alt + O`       | `Alt + O`       |
-| Stop Debugging    | `⌥ + I`      | `Alt + I`       | `Alt + I`       |
+| Command           | 🍎 macOS | 🟦 Windows | 🐧 Linux  |
+| :---------------- | :------- | :--------- | :-------- |
+| Start Debugging   | `⌥ + P`  | `Alt + P`  | `Alt + P` |
+| Restart Debugging | `⌥ + O`  | `Alt + O`  | `Alt + O` |
+| Stop Debugging    | `⌥ + I`  | `Alt + I`  | `Alt + I` |
 
 ---
 
@@ -213,11 +213,11 @@ ext install bastndev.lynx-keymap-pro
   Complementary Extensions 🧩 
 </h2>
 
-| Extension                                                                                                                                                                                                         | Name/>                                                         | Description                                                                                                                                                                                                                                       |
-| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [![Lynx Keymap Pro](https://raw.githubusercontent.com/bastndev/Lynx-Keymap-Pro/refs/heads/main/icon.png)](https://open-vsx.org/extension/bastndev/lynx-keymap)                                      | [Lynx Keymap Pro](https://github.com/bastndev/Lynx-Keymap-Pro) | Standardizes keyboard shortcuts across all code editors, giving you instant access to any functionality with a single key combination — boosting your workflow and dev experience. **`If you have a normal keyboard, better download this one.`** |
-| [![ATM](https://open-vsx.org/api/bastndev/atm/1.9.4/file/icon.png)](https://open-vsx.org/extension/bastndev/atm)                                                                                                  | [ATM](https://github.com/bastndev/ATM)                         | An all-in-one toolkit 👻 that supercharges your workflow with essential features like Error Lens, Git Blame, Env Protection, and code screenshots across major editors.                                                                           |
-| [![Lynx Theme Pro](https://bastndev.gallerycdn.vsassets.io/extensions/bastndev/lynx-theme/0.1.2/1744898058774/Microsoft.VisualStudio.Services.Icons.Default)](https://open-vsx.org/extension/bastndev/lynx-theme) | [Lynx Theme Pro](https://github.com/bastndev/Lynx-Theme)       | A professional extension with six available themes: Dark, Light, Night, Ghibli, Coffee, and Kiro—with integrated icons. Each theme is optimized to offer a more pleasant visual experience.                                                       |
+| Extension                                                                                                                                                                                                                                       | Name/>                                                        | Description                                                                                                                                                                                                |
+| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [![Lynx Keymap 75%](https://bastndev.gallerycdn.vsassets.io/extensions/bastndev/lynx-keymap-75/0.2.0/1750804766630/Microsoft.VisualStudio.Services.Icons.Default)](https://marketplace.visualstudio.com/items?itemName=bastndev.lynx-keymap-75) | [Lynx Keymap 75%](https://github.com/bastndev/Lynx-Keymap-75) | Standardizes keyboard shortcuts optimized for 75% keyboards. Compatible with any code editor. Enhances developer efficiency and experience. **`If you have a normal keyboard, better download this one.`** |
+| [![ATM](https://open-vsx.org/api/bastndev/atm/1.9.4/file/icon.png)](https://open-vsx.org/extension/bastndev/atm)                                                                                                                                | [ATM](https://github.com/bastndev/ATM)                        | An all-in-one toolkit 👻 that supercharges your workflow with essential features like Error Lens, Git Blame, Env Protection, and code screenshots across major editors.                                    |
+| [![Lynx Theme Pro](https://bastndev.gallerycdn.vsassets.io/extensions/bastndev/lynx-theme/0.1.2/1744898058774/Microsoft.VisualStudio.Services.Icons.Default)](https://open-vsx.org/extension/bastndev/lynx-theme)                               | [Lynx Theme Pro](https://github.com/bastndev/Lynx-Theme)      | A professional extension with six available themes: Dark, Light, Night, Ghibli, Coffee, and Kiro—with integrated icons. Each theme is optimized to offer a more pleasant visual experience.                |
 
 <br>
 
