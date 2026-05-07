@@ -18,7 +18,9 @@
   <a href="https://github.com/bastndev/Lynx-Keymap-Pro/blob/main/public/docs/README_KO.md">한국어 🇰🇷</a> |
   <a href="https://github.com/bastndev/Lynx-Keymap-Pro/blob/main/public/docs/README_PT.md">Português 🇧🇷</a> |
   <a href="https://github.com/bastndev/Lynx-Keymap-Pro/blob/main/public/docs/README_RU.md">Русский 🇷🇺</a> |
-  <a href="https://github.com/bastndev/Lynx-Keymap-Pro/blob/main/public/docs/README_VI.md">Tiếng Việt 🇻🇳</a><span>...</span>
+  <a href="https://github.com/bastndev/Lynx-Keymap-Pro/blob/main/public/docs/README_VI.md">Tiếng Việt 🇻🇳</a> |
+  <a href="https://github.com/bastndev/Lynx-Keymap-Pro/blob/main/public/docs/README_AR.md">العربية 🇸🇦</a> |
+  <a href="https://github.com/bastndev/Lynx-Keymap-Pro/blob/main/public/docs/README_HI.md">हिन्दी 🇮🇳</a><span>...</span>
 </p>
 
 <br>
@@ -44,7 +46,7 @@
 <summary>👁️ View Screenshot</summary>
 <br>
 
-![OpenCode / ClaudeCode](https://raw.githubusercontent.com/bastndev/Lynx-Keymap-pro/refs/heads/main/public/github/images/screenshot/opencode.webp)
+![OpenCode / ClaudeCode](https://raw.githubusercontent.com/bastndev/Lynx-Keymap-pro/refs/heads/main/public/github/images/screenshot/CLI.webp)
 
 </details>
 
@@ -110,6 +112,8 @@
 
 ## 🔀 Git
 
+> To use these commands, you must first go to **Source Control** (as they do not work directly) or press the shortcut **_`Ctrl + 2`_**.
+
 | Command                    | 🍎 macOS         | 🟦 Windows           | 🐧 Linux             |
 | :------------------------- | :--------------- | :------------------- | :------------------- |
 | Stage All                  | `⌥ + 1`          | `Alt + 1`            | `Alt + 1`            |
@@ -118,7 +122,6 @@
 | Commit                     | `⌥ + Return`     | `Alt + Enter`        | `Alt + Enter`        |
 | Push                       | `⌘ + ⌥ + Return` | `Ctrl + Alt + Enter` | `Ctrl + Alt + Enter` |
 | View Git Changes           | `⌥ + L`          | `Alt + L`            | `Alt + L`            |
-| Open GitLab                | `⌘ + Q`          | `Ctrl + Q`           | `Ctrl + Q`           |
 
 ---
 
@@ -136,13 +139,22 @@
 
 ## ▶️ Debugging
 
-| Command           | 🍎 macOS | 🟦 Windows | 🐧 Linux  |
-| :---------------- | :------- | :--------- | :-------- |
-| Start Debugging   | `⌥ + P`  | `Alt + P`  | `Alt + P` |
-| Restart Debugging | `⌥ + O`  | `Alt + O`  | `Alt + O` |
-| Stop Debugging    | `⌥ + I`  | `Alt + I`  | `Alt + I` |
+| Command            | 🍎 macOS | 🟦 Windows | 🐧 Linux  |
+| :----------------- | :------- | :--------- | :-------- |
+| Start Debugging    | `⌥ + P`  | `Alt + P`  | `Alt + P` |
+| Restart Debugging  | `⌥ + O`  | `Alt + O`  | `Alt + O` |
+| Stop Debugging     | `⌥ + I`  | `Alt + I`  | `Alt + I` |
+| Open Debug Console | `⌥ + B`  | `Alt + B`  | `Alt + B` |
 
 ---
+
+<br>
+
+## 🧩 Extensions [+]
+
+| Command           | 🍎 macOS | 🟦 Windows | 🐧 Linux  |
+| :---------------- | :------- | :--------- | :-------- |
+| Open GitLab Panel | `⌥ + V`  | `Alt + V`  | `Alt + V` |
 
 <br>
 

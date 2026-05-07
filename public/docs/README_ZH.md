@@ -19,7 +19,9 @@
   <a href="https://github.com/bastndev/Lynx-Keymap-Pro/blob/main/public/docs/README_KO.md">한국어 🇰🇷</a> |
   <a href="https://github.com/bastndev/Lynx-Keymap-Pro/blob/main/public/docs/README_PT.md">Português 🇧🇷</a> |
   <a href="https://github.com/bastndev/Lynx-Keymap-Pro/blob/main/public/docs/README_RU.md">Русский 🇷🇺</a> |
-  <a href="https://github.com/bastndev/Lynx-Keymap-Pro/blob/main/public/docs/README_VI.md">Tiếng Việt 🇻🇳</a><span>...</span>
+  <a href="https://github.com/bastndev/Lynx-Keymap-Pro/blob/main/public/docs/README_VI.md">Tiếng Việt 🇻🇳</a> |
+  <a href="https://github.com/bastndev/Lynx-Keymap-Pro/blob/main/public/docs/README_AR.md">العربية 🇸🇦</a> |
+  <a href="https://github.com/bastndev/Lynx-Keymap-Pro/blob/main/public/docs/README_HI.md">हिन्दी 🇮🇳</a><span>...</span>
 </p>
 
 <br>
@@ -45,7 +47,7 @@
 <summary>👁️ 查看截图</summary>
 <br>
 
-![OpenCode / ClaudeCode](https://raw.githubusercontent.com/bastndev/Lynx-Keymap-pro/refs/heads/main/public/github/images/screenshot/opencode.webp)
+![OpenCode / ClaudeCode](https://raw.githubusercontent.com/bastndev/Lynx-Keymap-pro/refs/heads/main/public/github/images/screenshot/CLI.webp)
 
 </details>
 
@@ -142,8 +144,15 @@
 | 开始调试           | `⌥ + P`  | `Alt + P`  | `Alt + P` |
 | 重新启动调试       | `⌥ + O`  | `Alt + O`  | `Alt + O` |
 | 停止调试           | `⌥ + I`  | `Alt + I`  | `Alt + I` |
+| 打开调试控制台 | `⌥ + B`  | `Alt + B`  | `Alt + B` |
 
 ---
+
+## 🧩 扩展 [+]
+
+| 命令     | 🍎 macOS | 🟦 Windows | 🐧 Linux  |
+| :------- | :------- | :--------- | :-------- |
+| 打开 GitLab 面板 | `⌥ + V`  | `Alt + V`  | `Alt + V` |
 
 <br>
 

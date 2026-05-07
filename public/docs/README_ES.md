@@ -19,7 +19,9 @@
   <a href="https://github.com/bastndev/Lynx-Keymap-Pro/blob/main/public/docs/README_KO.md">한국어 🇰🇷</a> |
   <a href="https://github.com/bastndev/Lynx-Keymap-Pro/blob/main/public/docs/README_PT.md">Português 🇧🇷</a> |
   <a href="https://github.com/bastndev/Lynx-Keymap-Pro/blob/main/public/docs/README_RU.md">Русский 🇷🇺</a> |
-  <a href="https://github.com/bastndev/Lynx-Keymap-Pro/blob/main/public/docs/README_VI.md">Tiếng Việt 🇻🇳</a><span>...</span>
+  <a href="https://github.com/bastndev/Lynx-Keymap-Pro/blob/main/public/docs/README_VI.md">Tiếng Việt 🇻🇳</a> |
+  <a href="https://github.com/bastndev/Lynx-Keymap-Pro/blob/main/public/docs/README_AR.md">العربية 🇸🇦</a> |
+  <a href="https://github.com/bastndev/Lynx-Keymap-Pro/blob/main/public/docs/README_HI.md">हिन्दी 🇮🇳</a><span>...</span>
 </p>
 
 <br>
@@ -45,7 +47,7 @@
 <summary>👁️ Ver Captura de Pantalla</summary>
 <br>
 
-![OpenCode / ClaudeCode](https://raw.githubusercontent.com/bastndev/Lynx-Keymap-pro/refs/heads/main/public/github/images/screenshot/opencode.webp)
+![OpenCode / ClaudeCode](https://raw.githubusercontent.com/bastndev/Lynx-Keymap-pro/refs/heads/main/public/github/images/screenshot/CLI.webp)
 
 </details>
 
@@ -142,8 +144,15 @@
 | Iniciar Depuración | `⌥ + P`  | `Alt + P`  | `Alt + P` |
 | Reiniciar Depuración| `⌥ + O`  | `Alt + O`  | `Alt + O` |
 | Detener Depuración | `⌥ + I`  | `Alt + I`  | `Alt + I` |
+| Abrir Consola de Depuración | `⌥ + B`  | `Alt + B`  | `Alt + B` |
 
 ---
+
+## 🧩 Extensiones [+]
+
+| Comando      | 🍎 macOS | 🟦 Windows | 🐧 Linux  |
+| :----------- | :------- | :--------- | :-------- |
+| Abrir panel de GitLab | `⌥ + V`  | `Alt + V`  | `Alt + V` |
 
 <br>
 

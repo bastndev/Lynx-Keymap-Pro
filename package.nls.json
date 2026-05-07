@@ -1,6 +1,10 @@
 {
   "displayName": "Lynx Keymap Pro (AI Orchestrator)",
   "description": "The ultimate keyboard shortcut suite for AI-powered IDEs. ⚡️ Supercharge your workflow in VSCode, Cursor, Windsurf, Trae.ai & Kiro with intelligent AI orchestration, one-keystroke terminal switching, and battle-tested 75% keyboard layouts. Stop clicking. Start commanding.",
+
   "lynx.notification.ai.enabled": "({0}) AI Suggestions: ENABLED ✅",
-  "lynx.notification.ai.disabled": "({0}) AI Suggestions: DISABLED ❌"
+  "lynx.notification.ai.disabled": "({0}) AI Suggestions: DISABLED ❌",
+
+  "ATM.notification.install.required": "To use the GitLab panel, you need to install the \"ATM\" extension (@gohitx).",
+  "ATM.notification.install.action": "📥 Download and Install ATM"
 }

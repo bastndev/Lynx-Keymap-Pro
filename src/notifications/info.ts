@@ -10,7 +10,7 @@ import * as path from 'path';
 
 let nlsData: Record<string, string> | null = null;
 
-function getTranslation(key: string, ...args: string[]): string {
+export function getTranslation(key: string, ...args: string[]): string {
   if (!nlsData) {
     try {
       const ext = vscode.extensions.getExtension('bastndev.lynx-keymap');

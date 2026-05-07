@@ -1,5 +1,6 @@
 import * as vscode from 'vscode';
 import { AICommandsManager, AIToggleManager, BottomTerminalManager, TerminalManager, STORAGE_KEYS, PANEL_POSITIONS } from './keymaps';
+import { promptInstallAtmExtension } from './notifications/whith-buttons';
 
 let aiManager:             AICommandsManager     | undefined;
 let terminalManager:       TerminalManager       | undefined;
@@ -16,6 +17,21 @@ export async function activate(context: vscode.ExtensionContext) {
   terminalManager.registerCommands(context);
   bottomTerminalManager.registerCommands(context);
   aiToggleManager.registerCommands(context);
+
+  // Register GitLab panel wrapper command
+  const gitlabPanelCommand = vscode.commands.registerCommand('lynx-keymap.openGitlabPanel', async () => {
+    const atmExtension = vscode.extensions.getExtension('bastndev.atm');
+
+    if (atmExtension) {
+      if (!atmExtension.isActive) {
+        await atmExtension.activate();
+      }
+      vscode.commands.executeCommand('workbench.view.extension.gitlab-panel');
+    } else {
+      promptInstallAtmExtension();
+    }
+  });
+  context.subscriptions.push(gitlabPanelCommand);
 
   // Read previous position BEFORE resetting — needed for startup cleanup below.
   const prevPosition = context.workspaceState.get<string>(STORAGE_KEYS.PANEL_POSITION);
