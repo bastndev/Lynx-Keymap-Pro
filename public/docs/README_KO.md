@@ -19,7 +19,9 @@
   <a href="https://github.com/bastndev/Lynx-Keymap-Pro/blob/main/public/docs/README_KO.md">한국어 🇰🇷</a> |
   <a href="https://github.com/bastndev/Lynx-Keymap-Pro/blob/main/public/docs/README_PT.md">Português 🇧🇷</a> |
   <a href="https://github.com/bastndev/Lynx-Keymap-Pro/blob/main/public/docs/README_RU.md">Русский 🇷🇺</a> |
-  <a href="https://github.com/bastndev/Lynx-Keymap-Pro/blob/main/public/docs/README_VI.md">Tiếng Việt 🇻🇳</a><span>...</span>
+  <a href="https://github.com/bastndev/Lynx-Keymap-Pro/blob/main/public/docs/README_VI.md">Tiếng Việt 🇻🇳</a> |
+  <a href="https://github.com/bastndev/Lynx-Keymap-Pro/blob/main/public/docs/README_AR.md">العربية 🇸🇦</a> |
+  <a href="https://github.com/bastndev/Lynx-Keymap-Pro/blob/main/public/docs/README_HI.md">हिन्दी 🇮🇳</a><span>...</span>
 </p>
 
 <br>
@@ -142,8 +144,15 @@
 | 디버깅 시작      | `⌥ + P`  | `Alt + P`  | `Alt + P` |
 | 디버깅 다시 시작 | `⌥ + O`  | `Alt + O`  | `Alt + O` |
 | 디버깅 중지      | `⌥ + I`  | `Alt + I`  | `Alt + I` |
+| 디버그 콘솔 열기 | `⌥ + B`  | `Alt + B`  | `Alt + B` |
 
 ---
+
+## 🧩 확장 프로그램 [+]
+
+| 명령어     | 🍎 macOS | 🟦 Windows | 🐧 Linux  |
+| :--------- | :------- | :--------- | :-------- |
+| GitLab 패널 열기 | `⌥ + V`  | `Alt + V`  | `Alt + V` |
 
 <br>
 

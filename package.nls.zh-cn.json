@@ -2,5 +2,7 @@
   "displayName": "Lynx Keymap Pro (AI 编排器)",
   "description": "专为 AI 驱动的 IDE 打造的终极键盘快捷键套件。⚡️ 通过智能 AI 编排、一键终端切换和经过实战检验的 75% 键盘布局，提升您在 VSCode、Cursor、Windsurf、Trae.ai 和 Kiro 中的工作流程。停止点击，开始指挥。",
   "lynx.notification.ai.enabled": "({0}) AI 建议：已启用 ✅",
-  "lynx.notification.ai.disabled": "({0}) AI 建议：已禁用 ❌"
+  "lynx.notification.ai.disabled": "({0}) AI 建议：已禁用 ❌",
+  "ATM.notification.install.required": "要使用 GitLab 面板，您需要安装 \"ATM\" 扩展 (@gohitx)。",
+  "ATM.notification.install.action": "📥 下载并安装 ATM"
 }

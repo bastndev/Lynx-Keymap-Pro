@@ -19,7 +19,9 @@
   <a href="https://github.com/bastndev/Lynx-Keymap-Pro/blob/main/public/docs/README_KO.md">한국어 🇰🇷</a> |
   <a href="https://github.com/bastndev/Lynx-Keymap-Pro/blob/main/public/docs/README_PT.md">Português 🇧🇷</a> |
   <a href="https://github.com/bastndev/Lynx-Keymap-Pro/blob/main/public/docs/README_RU.md">Русский 🇷🇺</a> |
-  <a href="https://github.com/bastndev/Lynx-Keymap-Pro/blob/main/public/docs/README_VI.md">Tiếng Việt 🇻🇳</a><span>...</span>
+  <a href="https://github.com/bastndev/Lynx-Keymap-Pro/blob/main/public/docs/README_VI.md">Tiếng Việt 🇻🇳</a> |
+  <a href="https://github.com/bastndev/Lynx-Keymap-Pro/blob/main/public/docs/README_AR.md">العربية 🇸🇦</a> |
+  <a href="https://github.com/bastndev/Lynx-Keymap-Pro/blob/main/public/docs/README_HI.md">हिन्दी 🇮🇳</a><span>...</span>
 </p>
 
 <br>
@@ -142,8 +144,15 @@
 | Запустить отладку     | `⌥ + P`  | `Alt + P`  | `Alt + P` |
 | Перезапустить отладку | `⌥ + O`  | `Alt + O`  | `Alt + O` |
 | Остановить отладку    | `⌥ + I`  | `Alt + I`  | `Alt + I` |
+| Открыть консоль отладки | `⌥ + B`  | `Alt + B`  | `Alt + B` |
 
 ---
+
+## 🧩 Расширения [+]
+
+| Команда     | 🍎 macOS | 🟦 Windows | 🐧 Linux  |
+| :---------- | :------- | :--------- | :-------- |
+| Открыть панель GitLab | `⌥ + V`  | `Alt + V`  | `Alt + V` |
 
 <br>
 

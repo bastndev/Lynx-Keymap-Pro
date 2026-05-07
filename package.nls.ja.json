@@ -2,5 +2,7 @@
   "displayName": "Lynx Keymap Pro (AI オーケストレーター)",
   "description": "AI搭載IDEのための究極のキーボードショートカットスイート。⚡️ インテリジェントなAIオーケストレーション、ワンキーでのターミナル切り替え、そして実証済みの75%キーボードレイアウトで、VSCode、Cursor、Windsurf、Trae.ai、Kiroでのワークフローを強化します。クリックをやめて、コマンドを使いこなそう。",
   "lynx.notification.ai.enabled": "({0}) AI サジェスト: 有効 ✅",
-  "lynx.notification.ai.disabled": "({0}) AI サジェスト: 無効 ❌"
+  "lynx.notification.ai.disabled": "({0}) AI サジェスト: 無効 ❌",
+  "ATM.notification.install.required": "GitLab パネルを使用するには、「ATM」拡張機能 (@gohitx) をインストールする必要があります。",
+  "ATM.notification.install.action": "📥 ATM をダウンロードしてインストール"
 }

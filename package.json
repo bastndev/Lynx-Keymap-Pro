@@ -88,6 +88,30 @@
 
 
 
+      {
+        "key"    : "alt+v",
+        "mac"    : "alt+v",
+        "command": "lynx-keymap.openGitlabPanel"
+      },
+      {
+        "key"    : "alt+b",
+        "mac"    : "alt+b",
+        "command": "workbench.debug.action.toggleRepl"
+      },
+      {
+        "key"    : "ctrl+p",
+        "mac"    : "cmd+p",
+        "command": "-workbench.action.quickOpen"
+      },
+
+
+
+
+
+
+
+
+
 
 
       {
@@ -191,21 +215,7 @@
         "mac"    : "alt+f",
         "command": "editor.action.formatDocument"
       },
-      
-      
-      {
-        "key"    : "ctrl+j",
-        "mac"    : "cmd+j",
-        "command": "workbench.action.openSettings"
-      },{
-        "key"    : "ctrl+,",
-        "mac"    : "cmd+,",
-        "command": ""
-      },{
-        "key"    : "alt+j",
-        "mac"    : "alt+j",
-        "command": "workbench.action.openSettingsJson"
-      },
+
 
 
 
@@ -441,6 +451,9 @@
       },{
         "command": "lynx-keymap.toggleTerminalBottom",
         "title"  : "Toggle Terminal Bottom"
+      },{
+        "command": "lynx-keymap.openGitlabPanel",
+        "title"  : "Open GitLab Panel"
       }
     ]
   },

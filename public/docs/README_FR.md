@@ -19,7 +19,9 @@
   <a href="https://github.com/bastndev/Lynx-Keymap-Pro/blob/main/public/docs/README_KO.md">한국어 🇰🇷</a> |
   <a href="https://github.com/bastndev/Lynx-Keymap-Pro/blob/main/public/docs/README_PT.md">Português 🇧🇷</a> |
   <a href="https://github.com/bastndev/Lynx-Keymap-Pro/blob/main/public/docs/README_RU.md">Русский 🇷🇺</a> |
-  <a href="https://github.com/bastndev/Lynx-Keymap-Pro/blob/main/public/docs/README_VI.md">Tiếng Việt 🇻🇳</a><span>...</span>
+  <a href="https://github.com/bastndev/Lynx-Keymap-Pro/blob/main/public/docs/README_VI.md">Tiếng Việt 🇻🇳</a> |
+  <a href="https://github.com/bastndev/Lynx-Keymap-Pro/blob/main/public/docs/README_AR.md">العربية 🇸🇦</a> |
+  <a href="https://github.com/bastndev/Lynx-Keymap-Pro/blob/main/public/docs/README_HI.md">हिन्दी 🇮🇳</a><span>...</span>
 </p>
 
 <br>
@@ -142,8 +144,15 @@
 | Démarrer le Débogage   | `⌥ + P`  | `Alt + P`  | `Alt + P` |
 | Redémarrer le Débogage | `⌥ + O`  | `Alt + O`  | `Alt + O` |
 | Arrêter le Débogage    | `⌥ + I`  | `Alt + I`  | `Alt + I` |
+| Ouvrir la Console de Débogage | `⌥ + B`  | `Alt + B`  | `Alt + B` |
 
 ---
+
+## 🧩 Extensions [+]
+
+| Commande     | 🍎 macOS | 🟦 Windows | 🐧 Linux  |
+| :----------- | :------- | :--------- | :-------- |
+| Ouvrir le panneau GitLab | `⌥ + V`  | `Alt + V`  | `Alt + V` |
 
 <br>
 
