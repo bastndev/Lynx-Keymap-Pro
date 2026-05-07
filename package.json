@@ -87,7 +87,6 @@
 
 
 
-
       {
         "key"    : "alt+v",
         "mac"    : "alt+v",
@@ -98,13 +97,6 @@
         "mac"    : "alt+b",
         "command": "workbench.debug.action.toggleRepl"
       },
-      {
-        "key"    : "ctrl+p",
-        "mac"    : "cmd+p",
-        "command": "-workbench.action.quickOpen"
-      },
-
-
 
 
 
