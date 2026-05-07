@@ -28,12 +28,13 @@ Lynx Keymap  — supercharges your workflow with curated keybindings for VSCode,
 <!-- --- -->
 
 ---
-## [2.2.6] - 2026-05-07
+## [2.2.7] - 2026-05-07
 
 ### Added
 - **ATM**:
   - Added `alt+v` GitLab panel supported.
   - Added `alt+b` shortcut to debug current file is supported.
+  - Added  `NEW` Image CLI
 
 ---
 ## [2.2.5] - 2026-05-05
