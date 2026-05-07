@@ -139,21 +139,22 @@
 
 ## ▶️ Debugging
 
-| Command           | 🍎 macOS | 🟦 Windows | 🐧 Linux  |
-| :---------------- | :------- | :--------- | :-------- |
-| Start Debugging   | `⌥ + P`  | `Alt + P`  | `Alt + P` |
-| Restart Debugging | `⌥ + O`  | `Alt + O`  | `Alt + O` |
-| Stop Debugging    | `⌥ + I`  | `Alt + I`  | `Alt + I` |
-| Open Debug Console| `⌥ + B`  | `Alt + B`  | `Alt + B` |
+| Command            | 🍎 macOS | 🟦 Windows | 🐧 Linux  |
+| :----------------- | :------- | :--------- | :-------- |
+| Start Debugging    | `⌥ + P`  | `Alt + P`  | `Alt + P` |
+| Restart Debugging  | `⌥ + O`  | `Alt + O`  | `Alt + O` |
+| Stop Debugging     | `⌥ + I`  | `Alt + I`  | `Alt + I` |
+| Open Debug Console | `⌥ + B`  | `Alt + B`  | `Alt + B` |
 
 ---
+
 <br>
 
 ## 🧩 Extensions [+]
 
-| Command     | 🍎 macOS | 🟦 Windows | 🐧 Linux  |
-| :---------- | :------- | :--------- | :-------- |
-| Open GitLab Panel      | `⌥ + V`  | `Alt + V`  | `Alt + V` |
+| Command           | 🍎 macOS | 🟦 Windows | 🐧 Linux  |
+| :---------------- | :------- | :--------- | :-------- |
+| Open GitLab Panel | `⌥ + V`  | `Alt + V`  | `Alt + V` |
 
 <br>
 

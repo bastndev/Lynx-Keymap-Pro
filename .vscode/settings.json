@@ -29,6 +29,7 @@
     "shortcut",
     "capslock",
     "auxiliary",
-    "opencode"
+    "opencode",
+    "restart"
   ],
 }
