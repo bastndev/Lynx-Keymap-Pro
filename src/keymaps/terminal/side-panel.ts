@@ -3,6 +3,7 @@ import {
   STORAGE_KEYS,
   LOG_PREFIX,
   PANEL_POSITIONS,
+  LAYOUT_SETTLE_MS,
   saveOriginalSettings,
   restoreOriginalSettings,
   applyTerminalSettings,
@@ -99,11 +100,13 @@ export class TerminalManager extends BaseTerminalManager {
 
     // ─── Smart New Terminal: Context-aware terminal creation ─────────────────
     // Intercepts ctrl+backquote.
-    // • Side-panel or unknown state → closes AI chat to avoid layout conflicts.
-    // • Bottom mode only            → just creates a new terminal, AI chat stays untouched.
+    // • BOTTOM state      → create terminal only, AI chat stays untouched.
+    // • LEFT state        → close AI chat first to avoid side-panel layout conflicts.
+    // • undefined (none)  → same as LEFT; safe default avoids orphaned AuxBar.
     //
-    // NOTE: We invert the check (isInBottomPanel) so that unknown/undefined state
-    // defaults to closing the AI chat — matching the original safe behavior.
+    // NOTE: The check is intentionally inverted (isInBottomPanel) so that
+    // unknown/undefined state falls into the closing branch — matching the
+    // original safe behavior rather than accidentally leaving the AuxBar open.
     const smartNewTerminalCmd = vscode.commands.registerCommand(
       'lynx-keymap.smartNewTerminal',
       async () => {
@@ -112,14 +115,16 @@ export class TerminalManager extends BaseTerminalManager {
           const isInBottomPanel = current === PANEL_POSITIONS.BOTTOM;
 
           if (isInBottomPanel) {
-            // Bottom panel mode: just create terminal, leave AI chat alone
+            // Bottom panel: terminal.new is safe, AuxBar (AI chat) must not be touched.
             await vscode.commands.executeCommand('workbench.action.terminal.new');
           } else {
-            // Side-panel mode OR no special state: close AI chat to avoid layout conflicts
+            // Side-panel (LEFT) or no tracked state:
+            // Pre-close AuxBar so terminal.new finds a clean layout.
             await vscode.commands.executeCommand('workbench.action.closeAuxiliaryBar');
             await vscode.commands.executeCommand('workbench.action.terminal.new');
-            // Post-close after a short delay to catch any layout re-open
-            await new Promise(resolve => setTimeout(resolve, 150));
+            // VS Code may briefly re-assert the AuxBar after terminal.new.
+            // Wait for layout to settle, then close once more to catch that case.
+            await new Promise<void>(resolve => setTimeout(resolve, LAYOUT_SETTLE_MS));
             await vscode.commands.executeCommand('workbench.action.closeAuxiliaryBar');
           }
         } catch (error) {

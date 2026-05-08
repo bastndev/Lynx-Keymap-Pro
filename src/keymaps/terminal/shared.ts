@@ -24,6 +24,14 @@ export const PANEL_POSITIONS = {
   BOTTOM: 'bottom',
 } as const;
 
+/**
+ * Milliseconds to wait for the VS Code workbench layout to settle after
+ * a panel command (e.g. `terminal.new`). VS Code can briefly re-assert
+ * the auxiliary bar after certain commands; this delay lets that happen
+ * so a follow-up close is meaningful.
+ */
+export const LAYOUT_SETTLE_MS = 150;
+
 export async function saveOriginalSettings(context: vscode.ExtensionContext): Promise<void> {
   const terminalConfig  = vscode.workspace.getConfiguration(TERMINAL_CONFIG);
   const workbenchConfig = vscode.workspace.getConfiguration(WORKBENCH_CONFIG);
