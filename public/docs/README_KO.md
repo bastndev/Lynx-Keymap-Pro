@@ -16,7 +16,6 @@
   <a href="https://github.com/bastndev/Lynx-Keymap-Pro/blob/main/public/docs/README_DE.md">Deutsch 🇩🇪</a> |
   <a href="https://github.com/bastndev/Lynx-Keymap-Pro/blob/main/public/docs/README_FR.md">Français 🇫🇷</a> |
   <a href="https://github.com/bastndev/Lynx-Keymap-Pro/blob/main/public/docs/README_JA.md">日本語 🇯🇵</a> |
-  <a href="https://github.com/bastndev/Lynx-Keymap-Pro/blob/main/public/docs/README_KO.md">한국어 🇰🇷</a> |
   <a href="https://github.com/bastndev/Lynx-Keymap-Pro/blob/main/public/docs/README_PT.md">Português 🇧🇷</a> |
   <a href="https://github.com/bastndev/Lynx-Keymap-Pro/blob/main/public/docs/README_RU.md">Русский 🇷🇺</a> |
   <a href="https://github.com/bastndev/Lynx-Keymap-Pro/blob/main/public/docs/README_VI.md">Tiếng Việt 🇻🇳</a> |
@@ -36,12 +35,12 @@
 
 ## 🧪 실험적 기능 — `New`
 
-| 명령어                       | 🍎 macOS         | 🟦 Windows       | 🐧 Linux         |
-| :--------------------------- | :--------------- | :--------------- | :--------------- |
-| 프로젝트 터미널 전환         | `Alt + Q - W`    | `Alt + Q - W`    | `Alt + Q - W`    |
-| 터미널 닫기                 | `Alt + Q - E`    | `Alt + Q - E`    | `Alt + Q - E`    |
-| -                            | -                | -                | -                |
-| opencode/ClaudeCode          | `Alt + CapsLock` | `Alt + CapsLock` | `Alt + CapsLock` |
+| 명령어               | 🍎 macOS         | 🟦 Windows       | 🐧 Linux         |
+| :------------------- | :--------------- | :--------------- | :--------------- |
+| 프로젝트 터미널 전환 | `Alt + Q - W`    | `Alt + Q - W`    | `Alt + Q - W`    |
+| 터미널 닫기          | `Alt + Q - E`    | `Alt + Q - E`    | `Alt + Q - E`    |
+| -                    | -                | -                | -                |
+| opencode/ClaudeCode  | `Alt + CapsLock` | `Alt + CapsLock` | `Alt + CapsLock` |
 
 <details>
 <summary>👁️ 스크린샷 보기</summary>
@@ -113,47 +112,47 @@
 
 ## 🔀 Git
 
-> 이 명령어를 사용하려면 먼저 **소스 제어**로 이동해야 합니다(직접 작동하지 않으므로) 또는 단축키 **_`Ctrl + 2`_**를 누르세요.
+> 이 명령어를 사용하려면 먼저 **소스 제어**로 이동해야 합니다(직접 작동하지 않으므로) 또는 단축키 ***`Ctrl + 2`***를 누르세요.
 
-| 명령어                    | 🍎 macOS         | 🟦 Windows           | 🐧 Linux             |
-| :------------------------ | :--------------- | :------------------- | :------------------- |
-| 모두 스테이지             | `⌥ + 1`          | `Alt + 1`            | `Alt + 1`            |
-| AI 커밋 메시지 생성       | `⌥ + 2`          | `Alt + 2`            | `Alt + 2`            |
-| 모두 스테이지 해제        | `⌥ + 3`          | `Alt + 3`            | `Alt + 3`            |
-| 커밋                      | `⌥ + Return`     | `Alt + Enter`        | `Alt + Enter`        |
-| 푸시                      | `⌘ + ⌥ + Return` | `Ctrl + Alt + Enter` | `Ctrl + Alt + Enter` |
-| Git 변경 사항 보기        | `⌥ + L`          | `Alt + L`            | `Alt + L`            |
+| 명령어              | 🍎 macOS         | 🟦 Windows           | 🐧 Linux             |
+| :------------------ | :--------------- | :------------------- | :------------------- |
+| 모두 스테이지       | `⌥ + 1`          | `Alt + 1`            | `Alt + 1`            |
+| AI 커밋 메시지 생성 | `⌥ + 2`          | `Alt + 2`            | `Alt + 2`            |
+| 모두 스테이지 해제  | `⌥ + 3`          | `Alt + 3`            | `Alt + 3`            |
+| 커밋                | `⌥ + Return`     | `Alt + Enter`        | `Alt + Enter`        |
+| 푸시                | `⌘ + ⌥ + Return` | `Ctrl + Alt + Enter` | `Ctrl + Alt + Enter` |
+| Git 변경 사항 보기  | `⌥ + L`          | `Alt + L`            | `Alt + L`            |
 
 ---
 
 ## 🛠️ 설정 및 창
 
-| 명령어               | 🍎 macOS    | 🟦 Windows        | 🐧 Linux          |
-| :------------------ | :---------- | :---------------- | :---------------- |
-| 설정 열기 (UI)      | `⌘ + J`     | `Ctrl + J`        | `Ctrl + J`        |
-| 설정 열기 (JSON)    | `⌥ + J`     | `Alt + J`         | `Alt + J`         |
-| 테마 선택           | `⇧ + ⌥ + T` | `Shift + Alt + T` | `Shift + Alt + T` |
-| 창 다시 로드        | `⇧ + ⌥ + R` | `Shift + Alt + R` | `Shift + Alt + R` |
-| 마크다운 미리보기   | `⌥ + M`     | `Alt + M`         | `Alt + M`         |
+| 명령어            | 🍎 macOS    | 🟦 Windows        | 🐧 Linux          |
+| :---------------- | :---------- | :---------------- | :---------------- |
+| 설정 열기 (UI)    | `⌘ + J`     | `Ctrl + J`        | `Ctrl + J`        |
+| 설정 열기 (JSON)  | `⌥ + J`     | `Alt + J`         | `Alt + J`         |
+| 테마 선택         | `⇧ + ⌥ + T` | `Shift + Alt + T` | `Shift + Alt + T` |
+| 창 다시 로드      | `⇧ + ⌥ + R` | `Shift + Alt + R` | `Shift + Alt + R` |
+| 마크다운 미리보기 | `⌥ + M`     | `Alt + M`         | `Alt + M`         |
 
 ---
 
 ## ▶️ 디버깅
 
-| 명령어               | 🍎 macOS | 🟦 Windows | 🐧 Linux  |
-| :------------------- | :------- | :--------- | :-------- |
-| 디버깅 시작          | `⌥ + P`  | `Alt + P`  | `Alt + P` |
-| 디버깅 다시 시작     | `⌥ + O`  | `Alt + O`  | `Alt + O` |
-| 디버깅 중지          | `⌥ + I`  | `Alt + I`  | `Alt + I` |
-| 디버그 콘솔 열기     | `⌥ + B`  | `Alt + B`  | `Alt + B` |
+| 명령어           | 🍎 macOS | 🟦 Windows | 🐧 Linux  |
+| :--------------- | :------- | :--------- | :-------- |
+| 디버깅 시작      | `⌥ + P`  | `Alt + P`  | `Alt + P` |
+| 디버깅 다시 시작 | `⌥ + O`  | `Alt + O`  | `Alt + O` |
+| 디버깅 중지      | `⌥ + I`  | `Alt + I`  | `Alt + I` |
+| 디버그 콘솔 열기 | `⌥ + B`  | `Alt + B`  | `Alt + B` |
 
 ---
 
 ## 🧩 확장 프로그램 [+]
 
-| 명령어               | 🍎 macOS | 🟦 Windows | 🐧 Linux  |
-| :------------------- | :------- | :--------- | :-------- |
-| GitLab 패널 열기     | `⌥ + V`  | `Alt + V`  | `Alt + V` |
+| 명령어           | 🍎 macOS | 🟦 Windows | 🐧 Linux  |
+| :--------------- | :------- | :--------- | :-------- |
+| GitLab 패널 열기 | `⌥ + V`  | `Alt + V`  | `Alt + V` |
 
 <br>
 
@@ -248,11 +247,11 @@ ext install bastndev.lynx-keymap-pro
   보완 확장 프로그램 🧩 
 </h2>
 
-| 확장 프로그램                                                                                                                                                                                                              | 이름/>                                                        | 설명                                                                                                                                                                                                    |
-| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 확장 프로그램                                                                                                                                                                                                              | 이름/>                                                        | 설명                                                                                                                                                                               |
+| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [![Lynx Keymap 75%](https://bastndev.gallerycdn.vsassets.io/extensions/bastndev/lynx-keymap-75/2.0.4/1777933884935/Microsoft.VisualStudio.Services.Icons.Default)](https://open-vsx.org/extension/bastndev/lynx-keymap-75) | [Lynx Keymap 75%](https://github.com/bastndev/Lynx-Keymap-75) | 75% 키보드에 최적화된 표준 키보드 단축키입니다. 모든 코드 에디터와 호환되며 개발 효율성과 경험을 향상시킵니다. **`75% 키보드를 사용 중이라면 이것을 다운로드하는 것이 좋습니다.`** |
-| [![ATM](https://open-vsx.org/api/bastndev/atm/1.9.4/file/icon.png)](https://open-vsx.org/extension/bastndev/atm)                                                                                                           | [ATM](https://github.com/bastndev/ATM)                        | Error Lens, Git Blame, 환경 보호, 코드 스크린샷 등 핵심 기능을 통해 주요 에디터에서의 워크플로를 크게 향상시키는 올인원 툴킷 👻입니다.                                 |
-| [![Lynx Theme Pro](https://bastndev.gallerycdn.vsassets.io/extensions/bastndev/lynx-theme/5.0.1/1777191854738/Microsoft.VisualStudio.Services.Icons.Default)](https://open-vsx.org/extension/bastndev/lynx-theme)          | [Lynx Theme Pro](https://github.com/bastndev/Lynx-Theme)      | Dark, Light, Night, Ghibli, Coffee, Kiro 6가지 테마를 제공하는 전문 확장 프로그램입니다. 각 테마는 시각적 경험을 최적화하도록 설계되었습니다.             |
+| [![ATM](https://open-vsx.org/api/bastndev/atm/1.9.4/file/icon.png)](https://open-vsx.org/extension/bastndev/atm)                                                                                                           | [ATM](https://github.com/bastndev/ATM)                        | Error Lens, Git Blame, 환경 보호, 코드 스크린샷 등 핵심 기능을 통해 주요 에디터에서의 워크플로를 크게 향상시키는 올인원 툴킷 👻입니다.                                             |
+| [![Lynx Theme Pro](https://bastndev.gallerycdn.vsassets.io/extensions/bastndev/lynx-theme/5.0.1/1777191854738/Microsoft.VisualStudio.Services.Icons.Default)](https://open-vsx.org/extension/bastndev/lynx-theme)          | [Lynx Theme Pro](https://github.com/bastndev/Lynx-Theme)      | Dark, Light, Night, Ghibli, Coffee, Kiro 6가지 테마를 제공하는 전문 확장 프로그램입니다. 각 테마는 시각적 경험을 최적화하도록 설계되었습니다.                                      |
 
 <br>
 
