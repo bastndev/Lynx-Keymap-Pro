@@ -24,7 +24,6 @@ export const WORD_WRAP_LANGUAGES = new Set<string>([
 // Toggles word wrap globally across all open editors matching configured languages.
 export class WordWrapManager {
   private disposables: vscode.Disposable[] = [];
-  private isWrapOn = false;
 
   registerCommands(context: vscode.ExtensionContext): void {
     const cmd = vscode.commands.registerCommand('lynx-keymap.toggleWordWrap', () =>
@@ -50,8 +49,8 @@ export class WordWrapManager {
   }
 
   private async toggleWordWrap(): Promise<void> {
-    this.isWrapOn = !this.isWrapOn;
-    const value = this.isWrapOn ? 'on' : 'off';
+    const current = vscode.workspace.getConfiguration('editor').get<string>('wordWrap', 'off');
+    const value = current === 'on' ? 'off' : 'on';
 
     const editors = vscode.window.visibleTextEditors.filter((editor) =>
       WORD_WRAP_LANGUAGES.has(editor.document.languageId)
