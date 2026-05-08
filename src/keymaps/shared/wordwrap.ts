@@ -5,6 +5,18 @@ import * as vscode from 'vscode';
 export const WORD_WRAP_LANGUAGES = new Set<string>([
   'markdown',
   'json',
+  'plaintext',
+  'yaml',
+  'html',
+  'typescript',
+  'javascript',
+  'log',
+  'csv',
+  'xml',
+  'ini',
+  'toml',
+  'sql',
+  'astro',
 ]);
 
 // ─── Word Wrap Manager ───────────────────────────────────────────────────────
