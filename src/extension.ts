@@ -1,22 +1,25 @@
 import * as vscode from 'vscode';
-import { AICommandsManager, AIToggleManager, BottomTerminalManager, TerminalManager, STORAGE_KEYS, PANEL_POSITIONS } from './keymaps';
+import { AICommandsManager, AIToggleManager, BottomTerminalManager, TerminalManager, STORAGE_KEYS, PANEL_POSITIONS, WordWrapManager } from './keymaps';
 import { promptInstallAtmExtension } from './notifications/whith-buttons';
 
 let aiManager:             AICommandsManager     | undefined;
 let terminalManager:       TerminalManager       | undefined;
 let bottomTerminalManager: BottomTerminalManager | undefined;
 let aiToggleManager:       AIToggleManager       | undefined;
+let wordWrapManager:       WordWrapManager       | undefined;
 
 export async function activate(context: vscode.ExtensionContext) {
   aiManager             = new AICommandsManager();
   terminalManager       = new TerminalManager();
   bottomTerminalManager = new BottomTerminalManager();
-  aiToggleManager       = new AIToggleManager(aiManager); // shares detectEditor() cache
+  aiToggleManager       = new AIToggleManager(aiManager);
+  wordWrapManager       = new WordWrapManager();
 
   aiManager.registerCommands(context);
   terminalManager.registerCommands(context);
   bottomTerminalManager.registerCommands(context);
   aiToggleManager.registerCommands(context);
+  wordWrapManager.registerCommands(context);
 
   // Register GitLab panel wrapper command
   const gitlabPanelCommand = vscode.commands.registerCommand('lynx-keymap.openGitlabPanel', async () => {
@@ -57,4 +60,5 @@ export async function deactivate() {
   terminalManager?.dispose();
   bottomTerminalManager?.dispose();
   aiToggleManager?.dispose();
+  wordWrapManager?.dispose();
 }
