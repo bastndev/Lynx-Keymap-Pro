@@ -4,7 +4,7 @@ import {
   LOG_PREFIX,
   PANEL_POSITIONS,
   BaseTerminalManager,
-} from '../terminal/shared';
+} from '../../terminal/shared';
 
 export class DebugManager extends BaseTerminalManager {
 
