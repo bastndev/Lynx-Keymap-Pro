@@ -91,7 +91,6 @@
 | Terminal — Zeile löschen              | `⌘ + ⌥ + Backspace`     | `Ctrl + Alt + Backspace`     |    ✅     |
 | Terminal — Wort vervollständigen      | `⌥ + ,`                 | `Alt + ,`                    |    ✅     |
 | Panel maximieren / minimieren         | `⌘ + Esc`               | `Ctrl + Esc`                 |    ✅     |
-| Panel umschalten                      | `Page Down`             | `Page Down`                  |    ✅     |
 | -                                     | -                       | -                            |    N/A    |
 | **Smart Close** — AI-Chat oder Terminal| `⌘ + CapsLock`          | `Ctrl + CapsLock`            |    ✅     |
 | Neue AI-Sitzung erstellen              | `⌥ + A`                 | `Alt + A`                    |    ✅     |

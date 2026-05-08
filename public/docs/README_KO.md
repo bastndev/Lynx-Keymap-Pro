@@ -91,7 +91,6 @@
 | 터미널 — 줄 지우기                    | `⌘ + ⌥ + Backspace`     | `Ctrl + Alt + Backspace`     |    ✅     |
 | 터미널 — 단어 자동 완성               | `⌥ + ,`                 | `Alt + ,`                    |    ✅     |
 | 패널 최대화 / 최소화                  | `⌘ + Esc`               | `Ctrl + Esc`                 |    ✅     |
-| 패널 토글                             | `Page Down`             | `Page Down`                  |    ✅     |
 | -                                     | -                       | -                            |    N/A    |
 | **스마트 닫기** — AI 채팅 또는 터미널 | `⌘ + CapsLock`          | `Ctrl + CapsLock`            |    ✅     |
 | 새 AI 세션 만들기                     | `⌥ + A`                 | `Alt + A`                    |    ✅     |

@@ -91,7 +91,6 @@
 | Terminal — Limpar Linha               | `⌘ + ⌥ + Backspace`     | `Ctrl + Alt + Backspace`     |    ✅     |
 | Terminal — Completar Palavra          | `⌥ + ,`                 | `Alt + ,`                    |    ✅     |
 | Maximizar / Minimizar Painel          | `⌘ + Esc`               | `Ctrl + Esc`                 |    ✅     |
-| Alternar Painel                       | `Page Down`             | `Page Down`                  |    ✅     |
 | -                                     | -                       | -                            |    N/A    |
 | **Fechamento Inteligente** — IA       | `⌘ + CapsLock`          | `Ctrl + CapsLock`            |    ✅     |
 | Criar Nova Sessão de IA               | `⌥ + A`                 | `Alt + A`                    |    ✅     |

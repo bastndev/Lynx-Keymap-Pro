@@ -91,7 +91,6 @@
 | 终端 — 清除行                         | `⌘ + ⌥ + Backspace`     | `Ctrl + Alt + Backspace`     |    ✅     |
 | 终端 — 自动补全单词                   | `⌥ + ,`                 | `Alt + ,`                    |    ✅     |
 | 最大化/最小化面板                     | `⌘ + Esc`               | `Ctrl + Esc`                 |    ✅     |
-| 切换面板                              | `Page Down`             | `Page Down`                  |    ✅     |
 | -                                     | -                       | -                            |    N/A    |
 | **智能关闭** — AI 聊天或终端          | `⌘ + CapsLock`          | `Ctrl + CapsLock`            |    ✅     |
 | 创建新 AI 会话                        | `⌥ + A`                 | `Alt + A`                    |    ✅     |

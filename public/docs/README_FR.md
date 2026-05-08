@@ -91,7 +91,6 @@
 | Terminal — Effacer la Ligne           | `⌘ + ⌥ + Backspace`     | `Ctrl + Alt + Backspace`     |       ✅       |
 | Terminal — Compléter le Mot           | `⌥ + ,`                 | `Alt + ,`                    |       ✅       |
 | Maximizer / Minimiser le Panneau      | `⌘ + Esc`               | `Ctrl + Esc`                 |       ✅       |
-| Basculer le Panneau                   | `Page Down`             | `Page Down`                  |       ✅       |
 | -                                     | -                       | -                            |      N/A       |
 | **Fermeture Intelligente** — Chat IA  | `⌘ + CapsLock`          | `Ctrl + CapsLock`            |       ✅       |
 | Créer une Nouvelle Session IA         | `⌥ + A`                 | `Alt + A`                    |       ✅       |

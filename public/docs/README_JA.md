@@ -91,7 +91,6 @@
 | ターミナル — 行をクリア               | `⌘ + ⌥ + Backspace`     | `Ctrl + Alt + Backspace`     |      ✅      |
 | ターミナル — 単語補完                 | `⌥ + ,`                 | `Alt + ,`                    |      ✅      |
 | パネルの最大化 / 最小化               | `⌘ + Esc`               | `Ctrl + Esc`                 |      ✅      |
-| パネルの切り替え                      | `Page Down`             | `Page Down`                  |      ✅      |
 | -                                     | -                       | -                            |     N/A      |
 | **スマートクローズ** — AI or ターミナル| `⌘ + CapsLock`          | `Ctrl + CapsLock`            |      ✅      |
 | 新規 AI セッション作成                | `⌥ + A`                 | `Alt + A`                    |      ✅      |
