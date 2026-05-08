@@ -23,6 +23,11 @@ export async function activate(context: vscode.ExtensionContext) {
   aiToggleManager.registerCommands(context);
   wordWrapManager.registerCommands(context);
 
+  // Warm up AI detection cache for instant first keypress
+  aiManager.warmup().catch(error => {
+    console.warn(`${LOG_PREFIX} AI detection warmup failed:`, error);
+  });
+
   // Register GitLab panel wrapper command
   const gitlabPanelCommand = vscode.commands.registerCommand('lynx-keymap.openGitlabPanel', async () => {
     const atmExtension = vscode.extensions.getExtension('bastndev.atm');
