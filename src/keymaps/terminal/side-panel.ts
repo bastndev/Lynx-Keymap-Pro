@@ -97,6 +97,38 @@ export class TerminalManager extends BaseTerminalManager {
       }
     );
 
-    this.register(context, toggleCmd, smartCloseCmd);
+    // ─── Smart New Terminal: Context-aware terminal creation ─────────────────
+    // Intercepts ctrl+backquote.
+    // • Side-panel or unknown state → closes AI chat to avoid layout conflicts.
+    // • Bottom mode only            → just creates a new terminal, AI chat stays untouched.
+    //
+    // NOTE: We invert the check (isInBottomPanel) so that unknown/undefined state
+    // defaults to closing the AI chat — matching the original safe behavior.
+    const smartNewTerminalCmd = vscode.commands.registerCommand(
+      'lynx-keymap.smartNewTerminal',
+      async () => {
+        try {
+          const current = context.workspaceState.get<string>(STORAGE_KEYS.PANEL_POSITION);
+          const isInBottomPanel = current === PANEL_POSITIONS.BOTTOM;
+
+          if (isInBottomPanel) {
+            // Bottom panel mode: just create terminal, leave AI chat alone
+            await vscode.commands.executeCommand('workbench.action.terminal.new');
+          } else {
+            // Side-panel mode OR no special state: close AI chat to avoid layout conflicts
+            await vscode.commands.executeCommand('workbench.action.closeAuxiliaryBar');
+            await vscode.commands.executeCommand('workbench.action.terminal.new');
+            // Post-close after a short delay to catch any layout re-open
+            await new Promise(resolve => setTimeout(resolve, 150));
+            await vscode.commands.executeCommand('workbench.action.closeAuxiliaryBar');
+          }
+        } catch (error) {
+          console.error(`${LOG_PREFIX} Smart new terminal failed:`, error);
+          vscode.window.showErrorMessage(`New terminal failed: ${error instanceof Error ? error.message : String(error)}`);
+        }
+      }
+    );
+
+    this.register(context, toggleCmd, smartCloseCmd, smartNewTerminalCmd);
   }
 }

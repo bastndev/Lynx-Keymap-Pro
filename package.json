@@ -300,7 +300,7 @@
       },{
         "key"    : "ctrl+[Backquote]",
         "mac"    : "cmd+[Backquote]",
-        "command": "workbench.action.terminal.new"
+        "command": "lynx-keymap.smartNewTerminal"
       },
       
       {
@@ -439,6 +439,9 @@
       {
         "command": "lynx-keymap.toggleTerminalLeftAndRight",
         "title"  : "Toggle Terminal Left/Right"
+      },{
+        "command": "lynx-keymap.smartNewTerminal",
+        "title"  : "Smart New Terminal (context-aware: closes AI Chat only in side-panel mode)"
       },{
         "command": "lynx-keymap.toggleTerminalBottom",
         "title"  : "Toggle Terminal Bottom"
