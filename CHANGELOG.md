@@ -28,6 +28,20 @@ Lynx Keymap  — supercharges your workflow with curated keybindings for VSCode,
 <!-- --- -->
 
 ---
+## [2.3.0] - 2026-05-08
+
+### Added
+- **Smart Debug Console**: Added F5 keybinding and `smartDebugStart` command to automatically anchor the Debug Console to the bottom panel.
+- **Smart Terminal Layout**: Introduced context-aware `smartNewTerminal` command that handles layout conflicts between the terminal and AI chat seamlessly.
+- **Terminal State Management**: Added tracking and restoration of the terminal tab location when switching between different panel modes.
+
+### Improved
+- **Code Refactoring & Cleanup**: Centralized storage constants, simplified manager disposal logic in the extension lifecycle, cleaned up code/comments, and safely refactored shared directory structures.
+- **Terminal Logic**: Improved smart terminal creation logic with a configurable layout settle delay to prevent AuxBar re-assertion.
+- **Auxiliary Bar Optimization**: Implemented staggered retries for auxiliary bar cleanup to improve compatibility with aggressive restoration behavior.
+- **Panel Mechanics**: Fixed and prevented unnecessary panel repositioning when already set to bottom or left.
+
+---
 ## [2.2.9] - 2026-05-08
 
 ### Fixed
