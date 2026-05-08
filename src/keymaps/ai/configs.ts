@@ -5,8 +5,7 @@ export enum EditorType {
   CURSOR      = 'cursor',
   WINDSURF    = 'windsurf',
   TRAE_AI     = 'trae-ai',
-  FIREBASE    = 'firebase',
-  UNKNOWN     = 'unknown'
+  FIREBASE    = 'firebase'
 }
 
 // ─── Detection Signatures ────────────────────────────────────────────────────
@@ -17,8 +16,7 @@ export const EDITOR_SIGNATURES: Record<EditorType, string[]> = {
   [EditorType.CURSOR]:      ['composer.createNew',               'cursor.generateGitCommitMessage'],
   [EditorType.WINDSURF]:    ['windsurf.prioritized.chat.open',   'windsurf.generateCommitMessage'],
   [EditorType.TRAE_AI]:     ['icube.inlineChat.start',           'icube.gitGenerateCommitMessage'],
-  [EditorType.FIREBASE]:    ['workbench.action.terminal.chat.start'],
-  [EditorType.UNKNOWN]:     []
+  [EditorType.FIREBASE]:    ['workbench.action.terminal.chat.start']
 };
 
 // ─── Primary Setting per Editor (for toggle state source of truth) ────────────
@@ -29,8 +27,7 @@ export const EDITOR_PRIMARY_SETTING: Record<EditorType, string> = {
   [EditorType.CURSOR]:      'cursor.completions.enabled',
   [EditorType.WINDSURF]:    'editor.inlineSuggest.enabled',
   [EditorType.TRAE_AI]:     'trae.autocomplete.enabled',
-  [EditorType.FIREBASE]:    'cloudcode.duetAI.completions.enabled',
-  [EditorType.UNKNOWN]:     'editor.inlineSuggest.enabled',
+  [EditorType.FIREBASE]:    'cloudcode.duetAI.completions.enabled'
 };
 
 // ─── Action Keys ─────────────────────────────────────────────────────────────
@@ -65,7 +62,7 @@ export const AI_COMMANDS: Record<ActionKey, EditorCommandMap> = {
     [EditorType.ANTIGRAVITY]: 'antigravity.openAgent',
     [EditorType.VSCODE]:      'workbench.action.chat.toggle',
     [EditorType.KIRO]:        'workbench.action.toggleAuxiliaryBar',
-    [EditorType.CURSOR]:      'workbench.action.toggleAuxiliaryBar',
+    [EditorType.CURSOR]:      'workbench.action.toggleAgentsFromKeyboard',
     [EditorType.WINDSURF]:    'windsurf.prioritized.chat.open',
     [EditorType.TRAE_AI]:     'workbench.action.chat.icube.open',
     [EditorType.FIREBASE]:    'aichat.prompt',
@@ -97,8 +94,8 @@ export const AI_COMMANDS: Record<ActionKey, EditorCommandMap> = {
   selectCode: {
     [EditorType.ANTIGRAVITY]: 'antigravity.toggleChatFocus',
     // [EditorType.VSCODE]:   [no support]   
-    [EditorType.KIRO]:        'kiroAgent.focusContinueInputWithoutNewSession',
-    [EditorType.CURSOR]:      'aichat.newchataction',
+    [EditorType.KIRO]:        'kiroAgent.focusContinueInputWithoutSession',
+    [EditorType.CURSOR]:      'aichat.newchataction', // Note: Cursor command name verified as correct
     // [EditorType.WINDSURF]: [no support]
     // [EditorType.TRAE_AI]:  [no support]
     // [EditorType.FIREBASE]: [no support]
@@ -109,7 +106,7 @@ export const AI_COMMANDS: Record<ActionKey, EditorCommandMap> = {
     [EditorType.ANTIGRAVITY]: 'workbench.action.chat.toggleAgentMode',
     [EditorType.VSCODE]:      'workbench.action.chat.toggleAgentMode',
     // [EditorType.KIRO]:     [no support]
-    [EditorType.CURSOR]:      'workbench.action.toggleAuxiliaryBart',
+    [EditorType.CURSOR]:      'workbench.action.toggleAuxiliaryBar',
     [EditorType.WINDSURF]:    'windsurf.toggleAgentMode',
     // [EditorType.TRAE_AI]:  [no support]
     // [EditorType.FIREBASE]: [no support]

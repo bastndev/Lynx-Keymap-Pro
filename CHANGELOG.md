@@ -28,6 +28,71 @@ Lynx Keymap  — supercharges your workflow with curated keybindings for VSCode,
 <!-- --- -->
 
 ---
+## [2.2.9] - 2026-05-08
+
+### Fixed
+- **Critical Bug Fixes**: Resolved 5 critical issues affecting stability and reliability
+  - Fixed typo in `toggleAuxiliaryBar` command for Cursor editor (was `toggleAuxiliaryBart`)
+  - Fixed unhandled promise in word wrap toggle causing silent failures
+  - Fixed memory leak in startup timeout that could execute after extension deactivation
+  - Fixed race condition in AI command fallback that ignored priority order
+  - Fixed timing issue in startup cleanup with improved VS Code state verification
+
+### Improved
+- **Error Handling**: Enhanced error management across all managers
+  - Added try/catch blocks in `deactivate()` to ensure all managers dispose cleanly
+  - Improved error stringification to show readable messages instead of `[object Object]`
+  - Added comprehensive error handling in word wrap toggle with user-friendly messages
+  - Enhanced terminal command error reporting with proper error extraction
+
+- **Code Quality**: Major refactoring for maintainability and consistency
+  - Centralized `LOG_PREFIX` constant in `src/shared/constants.ts` to eliminate duplication
+  - Removed redundant `Promise.resolve()` wrappers in terminal managers
+  - Eliminated dead code (`EditorType.UNKNOWN` enum value)
+  - Fixed workspace settings being ignored in favor of global settings
+  - Improved AI command fallback to respect detection priority order
+
+- **API Modernization**: Migrated to current VS Code APIs
+  - Replaced deprecated `extensionPath` with `extensionUri`
+  - Migrated from synchronous `fs.readFileSync` to async `workspace.fs.readFile`
+  - Added error recovery flag to prevent infinite translation loading attempts
+
+- **ESLint Configuration**: Strengthened code quality checks
+  - Added `@typescript-eslint/no-unused-vars` to detect unused variables
+  - Added `@typescript-eslint/no-floating-promises` to catch unhandled promises
+  - Added `@typescript-eslint/await-thenable` to enforce proper async/await usage
+  - Added `no-console` rule allowing only `warn`, `error`, and `debug` levels
+  - Total rules increased from 4 to 9 for better code quality enforcement
+
+### Added
+- **Command Palette Integration**: All commands now discoverable via Command Palette (Ctrl+Shift+P)
+  - Added 10 missing command declarations to `package.json`
+  - Users can now search and execute commands without memorizing shortcuts
+  - Improved extension discoverability and user experience
+  - Commands include: AI Chat, Terminal toggles, AI Sessions, Model Selection, and more
+
+- **Performance Optimization**: Implemented AI detection warmup
+  - Added `warmup()` call in `activate()` to pre-cache editor detection
+  - First AI command execution is now instant (no detection delay)
+  - Reduced latency for initial AI-powered shortcuts
+
+- **Documentation**: Enhanced README with important notes
+  - Added "Disabled Default Shortcuts" section explaining Ctrl+P and Ctrl+Enter changes
+  - Documented alternative shortcuts for disabled commands
+  - Added "Known Limitations" section for Alt+CapsLock compatibility
+  - Provided instructions for re-enabling default shortcuts if needed
+
+### Changed
+- **File Naming**: Corrected typo in notification module
+  - Renamed `whith-buttons.ts` to `with-buttons.ts`
+  - Import statements automatically updated across the codebase
+
+- **Startup Behavior**: Improved auxiliary bar cleanup timing
+  - Increased timeout from 1500ms to 2000ms for better reliability
+  - Added VS Code state verification before executing cleanup command
+  - Enhanced error handling with debug logging for troubleshooting
+
+---
 ## [2.2.8] - 2026-05-08
 
 ### Added

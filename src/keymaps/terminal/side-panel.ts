@@ -32,13 +32,13 @@ export class TerminalManager extends BaseTerminalManager {
             // ── Open or Transition path ──
             const isTransition = current === PANEL_POSITIONS.BOTTOM;
 
-            const cleanupPromises: Promise<any>[] = [];
+            const cleanupPromises: unknown[] = [];
             if (current !== undefined) {
-              cleanupPromises.push(Promise.resolve(vscode.commands.executeCommand('workbench.action.closePanel')));
+              cleanupPromises.push(vscode.commands.executeCommand('workbench.action.closePanel'));
               // If it's NOT a transition (i.e. it was something else or error), restore?
               // Actually, if it's BOTTOM, we don't restore yet to avoid flicker.
             }
-            cleanupPromises.push(Promise.resolve(vscode.commands.executeCommand('workbench.action.closeAuxiliaryBar')));
+            cleanupPromises.push(vscode.commands.executeCommand('workbench.action.closeAuxiliaryBar'));
 
             await Promise.all(cleanupPromises);
 
@@ -65,7 +65,7 @@ export class TerminalManager extends BaseTerminalManager {
           }
         } catch (error) {
           console.error(`${LOG_PREFIX} Terminal left toggle failed:`, error);
-          vscode.window.showErrorMessage(`Terminal toggle failed: ${error}`);
+          vscode.window.showErrorMessage(`Terminal toggle failed: ${error instanceof Error ? error.message : String(error)}`);
         }
       }
     );
@@ -92,7 +92,7 @@ export class TerminalManager extends BaseTerminalManager {
           }
         } catch (error) {
           console.error(`${LOG_PREFIX} Smart close failed:`, error);
-          vscode.window.showErrorMessage(`Smart close failed: ${error}`);
+          vscode.window.showErrorMessage(`Smart close failed: ${error instanceof Error ? error.message : String(error)}`);
         }
       }
     );

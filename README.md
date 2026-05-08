@@ -182,6 +182,30 @@
 > ];
 > ```
 
+> [!NOTE]
+>
+> ### Disabled Default Shortcuts
+>
+> This extension intentionally disables the following default VS Code shortcuts to avoid conflicts:
+>
+> - **`Ctrl+P` / `⌘+P`** — Quick Open (disabled to prevent conflicts with custom shortcuts)
+>   - _Alternative_: Use `Shift+Alt+E` for Quick Open
+> - **`Ctrl+Enter` / `⌘+Enter`** — GitHub Copilot Generate (disabled)
+>   - _Reason_: Conflicts with terminal and git commit workflows
+>
+> If you need these shortcuts, you can re-enable them in your `keybindings.json`:
+>
+> ```json
+> [
+>   { "key": "ctrl+p", "command": "workbench.action.quickOpen" },
+>   { "key": "ctrl+enter", "command": "github.copilot.generate" }
+> ]
+> ```
+>
+> ### Known Limitations
+>
+> - **`Alt+CapsLock`** may not work on some Linux distributions or Windows systems where CapsLock is remapped at the OS level. If this shortcut doesn't work, check your system keyboard settings or use alternative shortcuts.
+
 ---
 
 ## Installation

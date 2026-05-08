@@ -122,7 +122,6 @@
 | تأكيد التغييرات (Commit)   | `⌥ + Return`     | `Alt + Enter`        | `Alt + Enter`        |
 | رفع التغييرات (Push)       | `⌘ + ⌥ + Return` | `Ctrl + Alt + Enter` | `Ctrl + Alt + Enter` |
 | عرض تغييرات Git            | `⌥ + L`          | `Alt + L`            | `Alt + L`            |
-| فتح GitLab                 | `⌘ + Q`          | `Ctrl + Q`           | `Ctrl + Q`           |
 
 ---
 
@@ -151,8 +150,8 @@
 
 ## 🧩 الإضافات [+]
 
-| الأمر          | 🍎 macOS | 🟦 Windows | 🐧 Linux  |
-| :------------- | :------- | :--------- | :-------- |
+| الأمر           | 🍎 macOS | 🟦 Windows | 🐧 Linux  |
+| :-------------- | :------- | :--------- | :-------- |
 | فتح لوحة GitLab | `⌥ + V`  | `Alt + V`  | `Alt + V` |
 
 <br>
@@ -180,6 +179,30 @@
 >   { Backquote: "" }, // والمزيد...
 > ];
 > ```
+
+> [!NOTE]
+>
+> ### اختصارات افتراضية معطلة
+>
+> يقوم هذا الامتداد بتعطيل اختصارات VS Code الافتراضية التالية عن قصد لتجنب التعارضات:
+>
+> - **`Ctrl+P` / `⌘+P`** — فتح سريع (معطل لمنع التعارضات مع الاختصارات المخصصة)
+>   - _البديل_: استخدم `Shift+Alt+E` للفتح السريع
+> - **`Ctrl+Enter` / `⌘+Enter`** — GitHub Copilot Generate (معطل)
+>   - _السبب_: يتعارض مع سير عمل المحطة الطرفية وتأكيد git
+>
+> إذا كنت بحاجة إلى هذه الاختصارات، يمكنك إعادة تمكينها في `keybindings.json`:
+>
+> ```json
+> [
+>   { "key": "ctrl+p", "command": "workbench.action.quickOpen" },
+>   { "key": "ctrl+enter", "command": "github.copilot.generate" }
+> ]
+> ```
+>
+> ### قيود معروفة
+>
+> - **`Alt+CapsLock`** قد لا يعمل على بعض توزيعات Linux أو أنظمة Windows حيث تم إعادة تعيين CapsLock على مستوى نظام التشغيل. إذا لم يعمل هذا الاختصار، تحقق من إعدادات لوحة المفاتيح في نظامك أو استخدم اختصارات بديلة.
 
 ---
 
@@ -224,11 +247,11 @@ ext install bastndev.lynx-keymap-pro
   إضافات تكميلية 🧩
 </h2>
 
-| الإضافة                                                                                                                                                                                                              | الاسم                                                          | الوصف                                                                                                                                                                  |
-| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| الإضافة                                                                                                                                                                                                                    | الاسم                                                         | الوصف                                                                                                                                    |
+| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
 | [![Lynx Keymap 75%](https://bastndev.gallerycdn.vsassets.io/extensions/bastndev/lynx-keymap-75/2.0.4/1777933884935/Microsoft.VisualStudio.Services.Icons.Default)](https://open-vsx.org/extension/bastndev/lynx-keymap-75) | [Lynx Keymap 75%](https://github.com/bastndev/Lynx-Keymap-75) | يوحّد اختصارات لوحة المفاتيح المحسّنة للوحات المفاتيح 75%. متوافق مع أي محرر كود. **`إذا كان لديك لوحة مفاتيح 75%، فهذه هي الأنسب لك.`** |
-| [![ATM](https://open-vsx.org/api/bastndev/atm/1.9.4/file/icon.png)](https://open-vsx.org/extension/bastndev/atm)                                                                                                     | [ATM](https://github.com/bastndev/ATM)                         | مجموعة أدوات شاملة 👻 تعزز سير عملك بميزات أساسية مثل Error Lens وGit Blame وحماية المتغيرات البيئية ولقطات الكود عبر المحررات الرئيسية.                               |
-| [![Lynx Theme Pro](https://bastndev.gallerycdn.vsassets.io/extensions/bastndev/lynx-theme/5.0.1/1777191854738/Microsoft.VisualStudio.Services.Icons.Default)](https://open-vsx.org/extension/bastndev/lynx-theme)    | [Lynx Theme Pro](https://github.com/bastndev/Lynx-Theme)       | إضافة احترافية تتضمن ستة سمات: داكن، فاتح، ليلي، Ghibli، قهوة، وKiro — مع أيقونات مدمجة. كل سمة مُحسّنة لتجربة بصرية أكثر متعة.                                        |
+| [![ATM](https://open-vsx.org/api/bastndev/atm/1.9.4/file/icon.png)](https://open-vsx.org/extension/bastndev/atm)                                                                                                           | [ATM](https://github.com/bastndev/ATM)                        | مجموعة أدوات شاملة 👻 تعزز سير عملك بميزات أساسية مثل Error Lens وGit Blame وحماية المتغيرات البيئية ولقطات الكود عبر المحررات الرئيسية. |
+| [![Lynx Theme Pro](https://bastndev.gallerycdn.vsassets.io/extensions/bastndev/lynx-theme/5.0.1/1777191854738/Microsoft.VisualStudio.Services.Icons.Default)](https://open-vsx.org/extension/bastndev/lynx-theme)          | [Lynx Theme Pro](https://github.com/bastndev/Lynx-Theme)      | إضافة احترافية تتضمن ستة سمات: داكن، فاتح، ليلي، Ghibli، قهوة، وKiro — مع أيقونات مدمجة. كل سمة مُحسّنة لتجربة بصرية أكثر متعة.          |
 
 <br>
 

@@ -122,7 +122,6 @@
 | Commit करें           | `⌥ + Return`     | `Alt + Enter`        | `Alt + Enter`        |
 | Push करें             | `⌘ + ⌥ + Return` | `Ctrl + Alt + Enter` | `Ctrl + Alt + Enter` |
 | Git बदलाव देखें       | `⌥ + L`          | `Alt + L`            | `Alt + L`            |
-| GitLab खोलें          | `⌘ + Q`          | `Ctrl + Q`           | `Ctrl + Q`           |
 
 ---
 
@@ -151,9 +150,9 @@
 
 ## 🧩 एक्सटेंशन [+]
 
-| कमांड               | 🍎 macOS | 🟦 Windows | 🐧 Linux  |
-| :------------------ | :------- | :--------- | :-------- |
-| GitLab पैनल खोलें   | `⌥ + V`  | `Alt + V`  | `Alt + V` |
+| कमांड             | 🍎 macOS | 🟦 Windows | 🐧 Linux  |
+| :---------------- | :------- | :--------- | :-------- |
+| GitLab पैनल खोलें | `⌥ + V`  | `Alt + V`  | `Alt + V` |
 
 <br>
 
@@ -180,6 +179,30 @@
 >   { Backquote: "" }, // और भी...
 > ];
 > ```
+
+> [!NOTE]
+>
+> ### अक्षम डिफ़ॉल्ट शॉर्टकट
+>
+> यह एक्सटेंशन जानबूझकर निम्नलिखित डिफ़ॉल्ट VS Code शॉर्टकट को अक्षम करता है ताकि विरोध से बचा जा सके:
+>
+> - **`Ctrl+P` / `⌘+P`** — Quick Open (कस्टम शॉर्टकट के साथ विरोध से बचने के लिए अक्षम)
+>   - _विकल्प_: Quick Open के लिए `Shift+Alt+E` का उपयोग करें
+> - **`Ctrl+Enter` / `⌘+Enter`** — GitHub Copilot Generate (अक्षम)
+>   - _कारण_: टर्मिनल और git commit वर्कफ़्लो के साथ विरोध
+>
+> यदि आपको इन शॉर्टकट की आवश्यकता है, तो आप उन्हें अपने `keybindings.json` में फिर से सक्षम कर सकते हैं:
+>
+> ```json
+> [
+>   { "key": "ctrl+p", "command": "workbench.action.quickOpen" },
+>   { "key": "ctrl+enter", "command": "github.copilot.generate" }
+> ]
+> ```
+>
+> ### ज्ञात सीमाएं
+>
+> - **`Alt+CapsLock`** कुछ Linux वितरणों या Windows सिस्टम पर काम नहीं कर सकता है जहां CapsLock को OS स्तर पर पुनः मैप किया गया है। यदि यह शॉर्टकट काम नहीं करता है, तो अपने सिस्टम कीबोर्ड सेटिंग्स की जांच करें या वैकल्पिक शॉर्टकट का उपयोग करें।
 
 ---
 
@@ -224,11 +247,11 @@ ext install bastndev.lynx-keymap-pro
   पूरक एक्सटेंशन 🧩
 </h2>
 
-| एक्सटेंशन                                                                                                                                                                                                            | नाम                                                            | विवरण                                                                                                                                                                          |
-| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| [![Lynx Keymap 75%](https://bastndev.gallerycdn.vsassets.io/extensions/bastndev/lynx-keymap-75/2.0.4/1777933884935/Microsoft.VisualStudio.Services.Icons.Default)](https://open-vsx.org/extension/bastndev/lynx-keymap-75) | [Lynx Keymap 75%](https://github.com/bastndev/Lynx-Keymap-75) | 75% कीबोर्ड के लिए अनुकूलित कीबोर्ड शॉर्टकट को मानकीकृत करता है। किसी भी कोड एडिटर के साथ संगत। **`यदि आपके पास 75% कीबोर्ड है, तो यही डाउनलोड करें।`** |
-| [![ATM](https://open-vsx.org/api/bastndev/atm/1.9.4/file/icon.png)](https://open-vsx.org/extension/bastndev/atm)                                                                                                     | [ATM](https://github.com/bastndev/ATM)                         | एक सर्वसमावेशी टूलकिट 👻 जो Error Lens, Git Blame, Env सुरक्षा और कोड स्क्रीनशॉट जैसी आवश्यक सुविधाओं के साथ आपके वर्कफ़्लो को बेहतर बनाता है।                                 |
-| [![Lynx Theme Pro](https://bastndev.gallerycdn.vsassets.io/extensions/bastndev/lynx-theme/5.0.1/1777191854738/Microsoft.VisualStudio.Services.Icons.Default)](https://open-vsx.org/extension/bastndev/lynx-theme)    | [Lynx Theme Pro](https://github.com/bastndev/Lynx-Theme)       | एक पेशेवर एक्सटेंशन जिसमें छह थीम हैं: Dark, Light, Night, Ghibli, Coffee और Kiro — एकीकृत आइकन के साथ। प्रत्येक थीम एक बेहतर दृश्य अनुभव के लिए अनुकूलित है।                  |
+| एक्सटेंशन                                                                                                                                                                                                                  | नाम                                                           | विवरण                                                                                                                                                         |
+| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [![Lynx Keymap 75%](https://bastndev.gallerycdn.vsassets.io/extensions/bastndev/lynx-keymap-75/2.0.4/1777933884935/Microsoft.VisualStudio.Services.Icons.Default)](https://open-vsx.org/extension/bastndev/lynx-keymap-75) | [Lynx Keymap 75%](https://github.com/bastndev/Lynx-Keymap-75) | 75% कीबोर्ड के लिए अनुकूलित कीबोर्ड शॉर्टकट को मानकीकृत करता है। किसी भी कोड एडिटर के साथ संगत। **`यदि आपके पास 75% कीबोर्ड है, तो यही डाउनलोड करें।`**       |
+| [![ATM](https://open-vsx.org/api/bastndev/atm/1.9.4/file/icon.png)](https://open-vsx.org/extension/bastndev/atm)                                                                                                           | [ATM](https://github.com/bastndev/ATM)                        | एक सर्वसमावेशी टूलकिट 👻 जो Error Lens, Git Blame, Env सुरक्षा और कोड स्क्रीनशॉट जैसी आवश्यक सुविधाओं के साथ आपके वर्कफ़्लो को बेहतर बनाता है।                |
+| [![Lynx Theme Pro](https://bastndev.gallerycdn.vsassets.io/extensions/bastndev/lynx-theme/5.0.1/1777191854738/Microsoft.VisualStudio.Services.Icons.Default)](https://open-vsx.org/extension/bastndev/lynx-theme)          | [Lynx Theme Pro](https://github.com/bastndev/Lynx-Theme)      | एक पेशेवर एक्सटेंशन जिसमें छह थीम हैं: Dark, Light, Night, Ghibli, Coffee और Kiro — एकीकृत आइकन के साथ। प्रत्येक थीम एक बेहतर दृश्य अनुभव के लिए अनुकूलित है। |
 
 <br>
 

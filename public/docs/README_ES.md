@@ -11,7 +11,6 @@
 
 <p align="center">
   <a href="https://github.com/bastndev/Lynx-Keymap-Pro/blob/main/README.md">English 🇺🇸</a> |
-  <a href="https://github.com/bastndev/Lynx-Keymap-Pro/blob/main/public/docs/README_ES.md">Español 🇪🇸</a> |
   <a href="https://github.com/bastndev/Lynx-Keymap-Pro/blob/main/public/docs/README_ZH.md">中文 🇨🇳</a> |
   <a href="https://github.com/bastndev/Lynx-Keymap-Pro/blob/main/public/docs/README_DE.md">Deutsch 🇩🇪</a> |
   <a href="https://github.com/bastndev/Lynx-Keymap-Pro/blob/main/public/docs/README_FR.md">Français 🇫🇷</a> |
@@ -36,12 +35,12 @@
 
 ## 🧪 Funciones Experimentales — `Nuevo`
 
-| Comando                      | 🍎 macOS         | 🟦 Windows       | 🐧 Linux         |
-| :--------------------------- | :--------------- | :--------------- | :--------------- |
-| Cambiar Terminal del Proyecto| `Alt + Q - W`    | `Alt + Q - W`    | `Alt + Q - W`    |
-| Cerrar Terminal              | `Alt + Q - E`    | `Alt + Q - E`    | `Alt + Q - E`    |
-| -                            | -                | -                | -                |
-| opencode/ClaudeCode          | `Alt + CapsLock` | `Alt + CapsLock` | `Alt + CapsLock` |
+| Comando                       | 🍎 macOS         | 🟦 Windows       | 🐧 Linux         |
+| :---------------------------- | :--------------- | :--------------- | :--------------- |
+| Cambiar Terminal del Proyecto | `Alt + Q - W`    | `Alt + Q - W`    | `Alt + Q - W`    |
+| Cerrar Terminal               | `Alt + Q - E`    | `Alt + Q - E`    | `Alt + Q - E`    |
+| -                             | -                | -                | -                |
+| opencode/ClaudeCode           | `Alt + CapsLock` | `Alt + CapsLock` | `Alt + CapsLock` |
 
 <details>
 <summary>👁️ Ver Captura de Pantalla</summary>
@@ -113,6 +112,8 @@
 
 ## 🔀 Git
 
+> Para usar estos comandos, primero debes ir a **Control de Código Fuente** (ya que no funcionan directamente) o presionar el atajo **_`Ctrl + 2`_**.
+
 | Comando                          | 🍎 macOS         | 🟦 Windows           | 🐧 Linux             |
 | :------------------------------- | :--------------- | :------------------- | :------------------- |
 | Preparar Todo (Stage)            | `⌥ + 1`          | `Alt + 1`            | `Alt + 1`            |
@@ -121,7 +122,6 @@
 | Commit                           | `⌥ + Return`     | `Alt + Enter`        | `Alt + Enter`        |
 | Push                             | `⌘ + ⌥ + Return` | `Ctrl + Alt + Enter` | `Ctrl + Alt + Enter` |
 | Ver Cambios de Git               | `⌥ + L`          | `Alt + L`            | `Alt + L`            |
-| Abrir GitLab                     | `⌘ + Q`          | `Ctrl + Q`           | `Ctrl + Q`           |
 
 ---
 
@@ -139,19 +139,19 @@
 
 ## ▶️ Depuración
 
-| Comando            | 🍎 macOS | 🟦 Windows | 🐧 Linux  |
-| :----------------- | :------- | :--------- | :-------- |
-| Iniciar Depuración | `⌥ + P`  | `Alt + P`  | `Alt + P` |
-| Reiniciar Depuración| `⌥ + O`  | `Alt + O`  | `Alt + O` |
-| Detener Depuración | `⌥ + I`  | `Alt + I`  | `Alt + I` |
+| Comando                     | 🍎 macOS | 🟦 Windows | 🐧 Linux  |
+| :-------------------------- | :------- | :--------- | :-------- |
+| Iniciar Depuración          | `⌥ + P`  | `Alt + P`  | `Alt + P` |
+| Reiniciar Depuración        | `⌥ + O`  | `Alt + O`  | `Alt + O` |
+| Detener Depuración          | `⌥ + I`  | `Alt + I`  | `Alt + I` |
 | Abrir Consola de Depuración | `⌥ + B`  | `Alt + B`  | `Alt + B` |
 
 ---
 
 ## 🧩 Extensiones [+]
 
-| Comando      | 🍎 macOS | 🟦 Windows | 🐧 Linux  |
-| :----------- | :------- | :--------- | :-------- |
+| Comando               | 🍎 macOS | 🟦 Windows | 🐧 Linux  |
+| :-------------------- | :------- | :--------- | :-------- |
 | Abrir panel de GitLab | `⌥ + V`  | `Alt + V`  | `Alt + V` |
 
 <br>
@@ -179,6 +179,30 @@
 >   { Backquote: "" }, // Y MÁS...
 > ];
 > ```
+
+> [!NOTE]
+>
+> ### Atajos Predeterminados Deshabilitados
+>
+> Esta extensión deshabilita intencionalmente los siguientes atajos predeterminados de VS Code para evitar conflictos:
+>
+> - **`Ctrl+P` / `⌘+P`** — Apertura Rápida (deshabilitado para evitar conflictos con atajos personalizados)
+>   - _Alternativa_: Use `Shift+Alt+E` para Apertura Rápida
+> - **`Ctrl+Enter` / `⌘+Enter`** — GitHub Copilot Generate (deshabilitado)
+>   - _Razón_: Conflictos con flujos de trabajo de terminal y commit de git
+>
+> Si necesita estos atajos, puede volver a habilitarlos en su `keybindings.json`:
+>
+> ```json
+> [
+>   { "key": "ctrl+p", "command": "workbench.action.quickOpen" },
+>   { "key": "ctrl+enter", "command": "github.copilot.generate" }
+> ]
+> ```
+>
+> ### Limitaciones Conocidas
+>
+> - **`Alt+CapsLock`** puede no funcionar en algunas distribuciones de Linux o sistemas Windows donde CapsLock está remapeado a nivel del sistema operativo. Si este atajo no funciona, verifique la configuración del teclado de su sistema o use atajos alternativos.
 
 ---
 
@@ -223,11 +247,11 @@ ext install bastndev.lynx-keymap-pro
   Extensiones Complementarias 🧩 
 </h2>
 
-| Extensión                                                                                                                                                                                                                  | Nombre/>                                                      | Descripción                                                                                                                                                                                                     |
-| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Extensión                                                                                                                                                                                                                  | Nombre/>                                                      | Descripción                                                                                                                                                                                                        |
+| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | [![Lynx Keymap 75%](https://bastndev.gallerycdn.vsassets.io/extensions/bastndev/lynx-keymap-75/2.0.4/1777933884935/Microsoft.VisualStudio.Services.Icons.Default)](https://open-vsx.org/extension/bastndev/lynx-keymap-75) | [Lynx Keymap 75%](https://github.com/bastndev/Lynx-Keymap-75) | Estandariza atajos de teclado optimizados para teclados 75%. Compatible con cualquier editor de código. Mejora la eficiencia y experiencia del desarrollador. **`Si tienes un teclado 75%, mejor descarga este.`** |
-| [![ATM](https://open-vsx.org/api/bastndev/atm/1.9.4/file/icon.png)](https://open-vsx.org/extension/bastndev/atm)                                                                                                           | [ATM](https://github.com/bastndev/ATM)                        | Un conjunto de herramientas todo en uno 👻 que potencia tu flujo de trabajo con funciones esenciales como Error Lens, Git Blame, Env Protection y capturas de código en los principales editores.                 |
-| [![Lynx Theme Pro](https://bastndev.gallerycdn.vsassets.io/extensions/bastndev/lynx-theme/5.0.1/1777191854738/Microsoft.VisualStudio.Services.Icons.Default)](https://open-vsx.org/extension/bastndev/lynx-theme)          | [Lynx Theme Pro](https://github.com/bastndev/Lynx-Theme)      | Una extensión profesional con seis temas disponibles: Dark, Light, Night, Ghibli, Coffee y Kiro—con iconos integrados. Cada tema está optimizado para ofrecer una experiencia visual más placentera.             |
+| [![ATM](https://open-vsx.org/api/bastndev/atm/1.9.4/file/icon.png)](https://open-vsx.org/extension/bastndev/atm)                                                                                                           | [ATM](https://github.com/bastndev/ATM)                        | Un conjunto de herramientas todo en uno 👻 que potencia tu flujo de trabajo con funciones esenciales como Error Lens, Git Blame, Env Protection y capturas de código en los principales editores.                  |
+| [![Lynx Theme Pro](https://bastndev.gallerycdn.vsassets.io/extensions/bastndev/lynx-theme/5.0.1/1777191854738/Microsoft.VisualStudio.Services.Icons.Default)](https://open-vsx.org/extension/bastndev/lynx-theme)          | [Lynx Theme Pro](https://github.com/bastndev/Lynx-Theme)      | Una extensión profesional con seis temas disponibles: Dark, Light, Night, Ghibli, Coffee y Kiro—con iconos integrados. Cada tema está optimizado para ofrecer una experiencia visual más placentera.               |
 
 <br>
 
