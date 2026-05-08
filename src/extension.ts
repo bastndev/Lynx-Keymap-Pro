@@ -1,8 +1,7 @@
 import * as vscode from 'vscode';
 import { AICommandsManager, AIToggleManager, BottomTerminalManager, DebugManager, TerminalManager, WordWrapManager } from './keymaps';
-import { STORAGE_KEYS, PANEL_POSITIONS } from './shared/constants';
+import { STORAGE_KEYS, PANEL_POSITIONS, LOG_PREFIX } from './shared/constants';
 import { promptInstallAtmExtension } from './notifications/with-buttons';
-import { LOG_PREFIX } from './shared/constants';
 
 let aiManager:             AICommandsManager     | undefined;
 let terminalManager:       TerminalManager       | undefined;
@@ -27,15 +26,13 @@ export async function activate(context: vscode.ExtensionContext) {
   wordWrapManager.registerCommands(context);
   debugManager.registerCommands(context);
 
-  // Warm up AI detection cache for instant first keypress
+  // Pre-detect the editor so the first keypress is instant.
   void aiManager.warmup().catch(error => {
     console.warn(`${LOG_PREFIX} AI detection warmup failed:`, error);
   });
 
-  // Register GitLab panel wrapper command
   const gitlabPanelCommand = vscode.commands.registerCommand('lynx-keymap.openGitlabPanel', async () => {
     const atmExtension = vscode.extensions.getExtension('bastndev.atm');
-
     if (atmExtension) {
       if (!atmExtension.isActive) {
         await atmExtension.activate();
@@ -50,19 +47,13 @@ export async function activate(context: vscode.ExtensionContext) {
   // Read previous position BEFORE resetting — needed for startup cleanup below.
   const prevPosition = context.workspaceState.get<string>(STORAGE_KEYS.PANEL_POSITION);
 
-  // Reset all panel state — extension always starts fresh.
   await context.workspaceState.update(STORAGE_KEYS.PANEL_POSITION,           undefined);
   await context.globalState.update(STORAGE_KEYS.ORIGINAL_TABS_ENABLED,       undefined);
   await context.globalState.update(STORAGE_KEYS.ORIGINAL_PANEL_SHOW_LABELS,  undefined);
 
-  // Some editors (e.g. Antigravity) aggressively restore the auxiliary bar
-  // at unpredictable points during startup, racing against our cleanup.
-  // Strategy: staggered retries up to 3 s — closeAuxiliaryBar is idempotent
-  // so multiple calls when already closed are always safe (no-ops).
-  //
-  // Only run cleanup when the terminal was explicitly left open in side mode.
-  // If prevPosition is undefined the user never used the side terminal this
-  // session, so we must NOT touch the auxiliary bar.
+  // If the terminal was left in side-panel mode, close the auxiliary bar on startup.
+  // Some editors restore it aggressively, so we retry at staggered intervals.
+  // closeAuxiliaryBar is idempotent — safe to call even when already closed.
   if (prevPosition === PANEL_POSITIONS.LEFT) {
     const closeAuxBar = async () => {
       try {
@@ -72,16 +63,9 @@ export async function activate(context: vscode.ExtensionContext) {
       }
     };
 
-    // Attempt 1 — instant, covers VSCode & fast editors
     setTimeout(closeAuxBar, 300);
-
-    // Attempt 2 — catches editors that restore the panel slightly later
     setTimeout(closeAuxBar, 800);
-
-    // Attempt 3 — mid-range safety net
     setTimeout(closeAuxBar, 1600);
-
-    // Attempt 4 — final safety net for slow editors (e.g. Antigravity)
     startupTimeoutId = setTimeout(async () => {
       try {
         await closeAuxBar();
@@ -93,15 +77,12 @@ export async function activate(context: vscode.ExtensionContext) {
 }
 
 export async function deactivate() {
-  // Clear pending startup timeout to prevent execution after deactivation
   if (startupTimeoutId) {
     clearTimeout(startupTimeoutId);
     startupTimeoutId = undefined;
   }
 
-  // Dispose all managers — individual try/catch ensures one failure won't
-  // block the cleanup of the remaining managers.
-  const managers: Array<{ name: string; ref: { dispose(): void } | undefined }> = [
+  const managers: Array<{ name: string; ref: vscode.Disposable | undefined }> = [
     { name: 'aiManager',             ref: aiManager             },
     { name: 'terminalManager',       ref: terminalManager       },
     { name: 'bottomTerminalManager', ref: bottomTerminalManager },

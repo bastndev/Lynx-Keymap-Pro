@@ -19,7 +19,6 @@ export class BottomTerminalManager extends BaseTerminalManager {
           const current = context.workspaceState.get<string>(STORAGE_KEYS.PANEL_POSITION);
 
           if (current === PANEL_POSITIONS.BOTTOM) {
-            // ── Close path ──
             await Promise.all([
               restoreOriginalSettings(context),
               context.workspaceState.update(STORAGE_KEYS.PANEL_POSITION, undefined),
@@ -27,25 +26,19 @@ export class BottomTerminalManager extends BaseTerminalManager {
             ]);
 
           } else {
-            // ── Open or Transition path ──
             const isTransition = current === PANEL_POSITIONS.LEFT;
 
             if (current !== undefined) {
               await vscode.commands.executeCommand('workbench.action.closePanel');
-              // If it was LEFT, we might want to re-open AI Chat later or now.
-              // But we don't restore settings yet to avoid flicker.
               if (isTransition) {
                 await vscode.commands.executeCommand('lynx-keymap.openAndCloseAIChat');
               }
             }
 
-            // Save only if we aren't already in a special mode
             if (!isTransition) {
               await saveOriginalSettings(context);
             }
 
-            // Restore the user's original tab location when switching to bottom mode.
-            // Falls back to 'left' (VS Code default) if no saved value exists.
             const originalTabsLocation = context.globalState.get<string>(
               STORAGE_KEYS.ORIGINAL_TABS_LOCATION, 'left'
             );

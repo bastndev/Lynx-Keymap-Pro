@@ -1,12 +1,6 @@
-/**
- * Shared constants used across the extension.
- * Centralizes common values to avoid duplication.
- */
-
 export const LOG_PREFIX = '[lynx-keymap]';
 
 // ─── Storage Keys ─────────────────────────────────────────────────────────────
-// Single source of truth for all persisted state keys used by the extension.
 export const STORAGE_KEYS = {
   LAST_ACTIVE_MODE:           'lynx-keymap:lastActiveMode',
   ORIGINAL_TABS_ENABLED:      'lynx-keymap:originalTabsEnabled',

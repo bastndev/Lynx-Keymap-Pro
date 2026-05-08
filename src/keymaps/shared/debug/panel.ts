@@ -11,12 +11,9 @@ export class DebugManager extends BaseTerminalManager {
   public registerCommands(context: vscode.ExtensionContext): void {
 
     // ─── Smart Debug Start ────────────────────────────────────────────────────
-    // Intercepts alt+p (debug.start).
-    // • Normal / BOTTOM state → positions panel at bottom first, then starts
-    //   debug. This ensures the Debug Console opens in the bottom panel instead
-    //   of the auxiliary bar (where the AI chat lives).
-    // • LEFT state (terminal in side panel) → the panel is already positioned
-    //   right; we leave layout untouched and just start debug normally.
+    // alt+p / F5 — anchors the main panel to bottom before starting debug
+    // so the Debug Console never opens inside the auxiliary bar (AI chat area).
+    // If the terminal is already in the side panel (LEFT), layout is fine as-is.
     const smartDebugStartCmd = vscode.commands.registerCommand(
       'lynx-keymap.smartDebugStart',
       async () => {
@@ -24,8 +21,6 @@ export class DebugManager extends BaseTerminalManager {
           const current = context.workspaceState.get<string>(STORAGE_KEYS.PANEL_POSITION);
 
           if (current !== PANEL_POSITIONS.LEFT && current !== PANEL_POSITIONS.BOTTOM) {
-            // Anchor the main panel to the bottom so the Debug Console
-            // does not float into the auxiliary bar.
             await vscode.commands.executeCommand('workbench.action.positionPanelBottom');
           }
 
