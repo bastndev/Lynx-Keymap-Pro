@@ -31,6 +31,7 @@ Lynx Keymap  — supercharges your workflow with curated keybindings for VSCode,
 ## [2.2.9] - 2026-05-08
 
 ### Fixed
+- **ESLint Compliance**: Resolved 2 `no-console` warnings in `esbuild.js` by migrating `console.log` to `console.debug`
 - **Critical Bug Fixes**: Resolved 5 critical issues affecting stability and reliability
   - Fixed typo in `toggleAuxiliaryBar` command for Cursor editor (was `toggleAuxiliaryBart`)
   - Fixed unhandled promise in word wrap toggle causing silent failures
@@ -39,6 +40,12 @@ Lynx Keymap  — supercharges your workflow with curated keybindings for VSCode,
   - Fixed timing issue in startup cleanup with improved VS Code state verification
 
 ### Improved
+- **Storage Key Consistency**: Migrated `'lynx.suggestionsEnabled'` bare string to `STORAGE_KEYS.SUGGESTIONS_ENABLED` (`lynx-keymap:suggestionsEnabled`) for unified naming with all other globalState keys
+- **Command Debugging**: Added `console.debug` logging in `tryExecute()` to surface failed AI commands instead of silently swallowing errors
+- **Dead Code Removal**: Eliminated unreachable code across the codebase
+  - Removed always-true `focused !== undefined` guard in startup cleanup (`extension.ts`)
+  - Changed `registerCommands()` return type from unused `Disposable[]` to `void` (`controller.ts`)
+
 - **Error Handling**: Enhanced error management across all managers
   - Added try/catch blocks in `deactivate()` to ensure all managers dispose cleanly
   - Improved error stringification to show readable messages instead of `[object Object]`
