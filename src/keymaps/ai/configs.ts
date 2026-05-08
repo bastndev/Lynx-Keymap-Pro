@@ -94,7 +94,7 @@ export const AI_COMMANDS: Record<ActionKey, EditorCommandMap> = {
   selectCode: {
     [EditorType.ANTIGRAVITY]: 'antigravity.toggleChatFocus',
     // [EditorType.VSCODE]:   [no support]   
-    [EditorType.KIRO]:        'kiroAgent.focusContinueInputWithoutSession',
+    [EditorType.KIRO]:        'kiroAgent.focusContinueInputWithoutNewSession',
     [EditorType.CURSOR]:      'aichat.newchataction', // Note: Cursor command name verified as correct
     // [EditorType.WINDSURF]: [no support]
     // [EditorType.TRAE_AI]:  [no support]
