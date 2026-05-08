@@ -23,7 +23,7 @@ export class DebugManager extends BaseTerminalManager {
         try {
           const current = context.workspaceState.get<string>(STORAGE_KEYS.PANEL_POSITION);
 
-          if (current !== PANEL_POSITIONS.LEFT) {
+          if (current !== PANEL_POSITIONS.LEFT && current !== PANEL_POSITIONS.BOTTOM) {
             // Anchor the main panel to the bottom so the Debug Console
             // does not float into the auxiliary bar.
             await vscode.commands.executeCommand('workbench.action.positionPanelBottom');
