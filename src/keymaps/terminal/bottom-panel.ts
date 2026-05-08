@@ -44,8 +44,14 @@ export class BottomTerminalManager extends BaseTerminalManager {
               await saveOriginalSettings(context);
             }
 
+            // Restore the user's original tab location when switching to bottom mode.
+            // Falls back to 'left' (VS Code default) if no saved value exists.
+            const originalTabsLocation = context.globalState.get<string>(
+              STORAGE_KEYS.ORIGINAL_TABS_LOCATION, 'left'
+            );
+
             await Promise.all([
-              applyTerminalSettings(true, true),
+              applyTerminalSettings(true, true, originalTabsLocation),
               context.workspaceState.update(STORAGE_KEYS.PANEL_POSITION, PANEL_POSITIONS.BOTTOM),
               vscode.commands.executeCommand('workbench.action.positionPanelBottom'),
             ]);

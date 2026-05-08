@@ -122,10 +122,14 @@ export class TerminalManager extends BaseTerminalManager {
             // Pre-close AuxBar so terminal.new finds a clean layout.
             await vscode.commands.executeCommand('workbench.action.closeAuxiliaryBar');
             await vscode.commands.executeCommand('workbench.action.terminal.new');
-            // VS Code may briefly re-assert the AuxBar after terminal.new.
-            // Wait for layout to settle, then close once more to catch that case.
+            // VS Code may briefly re-assert the AuxBar and re-enable the tab bar
+            // after terminal.new (it detects multiple terminals and wants to show tabs).
+            // Wait for layout to settle, then close the AuxBar and re-enforce tab settings.
             await new Promise<void>(resolve => setTimeout(resolve, LAYOUT_SETTLE_MS));
-            await vscode.commands.executeCommand('workbench.action.closeAuxiliaryBar');
+            await Promise.all([
+              vscode.commands.executeCommand('workbench.action.closeAuxiliaryBar'),
+              applyTerminalSettings(false, false),
+            ]);
           }
         } catch (error) {
           console.error(`${LOG_PREFIX} Smart new terminal failed:`, error);
