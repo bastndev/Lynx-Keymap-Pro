@@ -1,6 +1,6 @@
 {
   "displayName": "Lynx Keymap Pro (AI Orchestrator)",
-  "description": "The ultimate keyboard shortcut suite for AI-powered IDEs. ⚡️ Supercharge your workflow in VSCode, Cursor, Windsurf, Trae-ai, Kiro, Antigravity & Firebase.studio with intelligent AI orchestration, one-keystroke terminal switching, and battle-tested 75% keyboard layouts. Stop clicking. Start commanding.",
+  "description": "The ultimate keyboard shortcut suite for AI-powered IDEs. ⚡️ Supercharge your workflow in VSCode, Cursor, Windsurf, Trae-ai, Kiro, Antigravity & Firebase.studio with intelligent AI orchestration, one-keystroke terminal switching, and battle-tested keyboard layouts. Stop clicking. Start commanding.",
 
   "lynx.notification.ai.enabled": "({0}) AI Suggestions: ENABLED ✅",
   "lynx.notification.ai.disabled": "({0}) AI Suggestions: DISABLED ❌",

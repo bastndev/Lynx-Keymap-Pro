@@ -28,7 +28,7 @@
 
 <h2 align="center">Lynx Keymap Pro — <b>키바인딩 참조</b></h2>
 
-> VSCode · Cursor · Windsurf · Trae-ai · Kiro · Antigravity & Firebase.studio에서 **pro% 키보드**에 최적화되었습니다.
+> VSCode · Cursor · Windsurf · Trae-ai · Kiro · Antigravity & Firebase.studio에서 **Pro 키보드**에 최적화되었습니다.
 
 ---
 
@@ -199,7 +199,7 @@ ext install bastndev.lynx-keymap-pro
 ### 방법 2 — 확장 프로그램 보기
 
 1. 확장 프로그램 열기 (`Ctrl+Shift+X` / `⌘+Shift+X`)
-2. **"Lynx Keymap pro%"** 검색
+2. **"Lynx Keymap Pro"** 검색
 3. **설치** 클릭
 
 ---
@@ -233,7 +233,7 @@ ext install bastndev.lynx-keymap-pro
 
 <div align="center">
 
-**즐겁게 사용하세요 🎉 Lynx Keymap pro%가 설치되었습니다!**  
+**즐겁게 사용하세요 🎉 Lynx Keymap Pro가 설치되었습니다!**  
 _버그를 발견하거나 피드백이 있으신가요? [이슈 열기](https://github.com/bastndev/Lynx-Keymap-pro/issues/new)_
 
 <sub>🇵🇪에서 <a href="https://gohit.xyz">Gohit X</a> 제작 · <a href="https://github.com/bastndev/Lynx-Keymap-pro/blob/main/LICENSE">`MIT`</a> 라이선스로 배포됨</sub>

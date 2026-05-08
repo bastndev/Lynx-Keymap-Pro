@@ -21,7 +21,7 @@ See [CONTRIBUTING.md](https://github.com/bastndev/Lynx-Keymap-pro/blob/main/CONT
 Report violations to **bastndev@gohit.xyz** using the subject format:
 
 ```
-[Lynx Keymap pro%] — Brief description
+[Lynx Keymap Pro] — Brief description
 ```
 
 All reports are handled confidentially. Depending on severity:

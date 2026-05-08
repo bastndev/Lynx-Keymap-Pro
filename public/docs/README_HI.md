@@ -27,7 +27,7 @@
 
 <h2 align="center">Lynx Keymap Pro — <b>कीबाइंडिंग संदर्भ</b></h2>
 
-> VSCode · Cursor · Windsurf · Trae-ai · Kiro · Antigravity & Firebase.studio में **pro% कीबोर्ड** के लिए अनुकूलित।
+> VSCode · Cursor · Windsurf · Trae-ai · Kiro · Antigravity & Firebase.studio में **Pro कीबोर्ड** के लिए अनुकूलित।
 
 ---
 
@@ -200,7 +200,7 @@ ext install bastndev.lynx-keymap-pro
 ### तरीका 2 — एक्सटेंशन व्यू
 
 1. एक्सटेंशन खोलें (`Ctrl+Shift+X` / `⌘+Shift+X`)
-2. **"Lynx Keymap pro%"** खोजें
+2. **"Lynx Keymap Pro"** खोजें
 3. **इंस्टॉल करें** पर क्लिक करें
 
 ---
@@ -234,7 +234,7 @@ ext install bastndev.lynx-keymap-pro
 
 <div align="center">
 
-**आनंद लें 🎉 Lynx Keymap pro% अब इंस्टॉल हो गया है!**  
+**आनंद लें 🎉 Lynx Keymap Pro अब इंस्टॉल हो गया है!**  
 _बग मिला या फीडबैक है? [एक इश्यू खोलें](https://github.com/bastndev/Lynx-Keymap-pro/issues/new)_
 
 <sub>🇵🇪 में बनाया गया द्वारा <a href="https://gohit.xyz">Gohit X</a> · के तहत लाइसेंस प्राप्त <a href="https://github.com/bastndev/Lynx-Keymap-pro/blob/main/LICENSE">`MIT`</a></sub>

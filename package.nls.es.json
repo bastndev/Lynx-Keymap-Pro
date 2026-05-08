@@ -1,6 +1,6 @@
 {
   "displayName": "Lynx Keymap Pro (Orquestador de IA)",
-  "description": "La suite definitiva de atajos de teclado para IDEs impulsados por IA. ⚡️ Mejora tu flujo de trabajo en VSCode, Cursor, Windsurf, Trae-ai, Kiro, Antigravity y Firebase.studio con orquestación inteligente de IA, cambio de terminal con una tecla y distribuciones probadas para teclados 75%. Deja de hacer clic. Empieza a comandar.",
+  "description": "La suite definitiva de atajos de teclado para IDEs impulsados por IA. ⚡️ Mejora tu flujo de trabajo en VSCode, Cursor, Windsurf, Trae-ai, Kiro, Antigravity y Firebase.studio con orquestación inteligente de IA, cambio de terminal con una tecla y distribuciones probadas para cualquier teclado. Deja de hacer clic. Empieza a comandar.",
 
   "lynx.notification.ai.enabled": "({0}) Sugerencias IA: ACTIVADAS ✅",
   "lynx.notification.ai.disabled": "({0}) Sugerencias IA: DESACTIVADAS ❌",

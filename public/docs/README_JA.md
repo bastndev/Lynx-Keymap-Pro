@@ -28,7 +28,7 @@
 
 <h2 align="center">Lynx Keymap Pro — <b>キーバインド・リファレンス</b></h2>
 
-> VSCode · Cursor · Windsurf · Trae-ai · Kiro · Antigravity & Firebase.studio で、**pro% キーボード**向けに最適化されています。
+> VSCode · Cursor · Windsurf · Trae-ai · Kiro · Antigravity & Firebase.studio で、**Pro キーボード**向けに最適化されています。
 
 ---
 
@@ -199,7 +199,7 @@ ext install bastndev.lynx-keymap-pro
 ### 方法 2 — 拡張機能ビュー
 
 1. 拡張機能を開く (`Ctrl+Shift+X` / `⌘+Shift+X`)
-2. **「Lynx Keymap pro%」**を検索
+2. **「Lynx Keymap Pro」**を検索
 3. **インストール**をクリック
 
 ---
@@ -233,7 +233,7 @@ ext install bastndev.lynx-keymap-pro
 
 <div align="center">
 
-**お楽しみください 🎉 Lynx Keymap pro% がインストールされました！**  
+**お楽しみください 🎉 Lynx Keymap Pro がインストールされました！**  
 _バグを見つけた場合やフィードバックがある場合は、[Issue を作成](https://github.com/bastndev/Lynx-Keymap-pro/issues/new)してください_
 
 <sub>🇵🇪 の <a href="https://gohit.xyz">Gohit X</a> によって作成 · <a href="https://github.com/bastndev/Lynx-Keymap-pro/blob/main/LICENSE">`MIT`</a> ライセンス</sub>

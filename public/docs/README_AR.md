@@ -27,7 +27,7 @@
 
 <h2 align="center">Lynx Keymap Pro — <b>مرجع اختصارات لوحة المفاتيح</b></h2>
 
-> مُحسّن لـ **لوحات المفاتيح pro%** عبر VSCode · Cursor · Windsurf · Trae-ai · Kiro · Antigravity & Firebase.studio.
+> مُحسّن لـ **لوحات المفاتيح Pro** عبر VSCode · Cursor · Windsurf · Trae-ai · Kiro · Antigravity & Firebase.studio.
 
 ---
 
@@ -200,7 +200,7 @@ ext install bastndev.lynx-keymap-pro
 ### الطريقة 2 — عرض الإضافات
 
 1. افتح الإضافات (`Ctrl+Shift+X` / `⌘+Shift+X`)
-2. ابحث عن **"Lynx Keymap pro%"**
+2. ابحث عن **"Lynx Keymap Pro"**
 3. انقر على **تثبيت**
 
 ---
@@ -234,7 +234,7 @@ ext install bastndev.lynx-keymap-pro
 
 <div align="center">
 
-**استمتع 🎉 تم تثبيت Lynx Keymap pro% الآن!**  
+**استمتع 🎉 تم تثبيت Lynx Keymap Pro الآن!**  
 _هل وجدت خطأ أو لديك تعليق؟ [افتح مشكلة](https://github.com/bastndev/Lynx-Keymap-pro/issues/new)_
 
 <sub>صنع في 🇵🇪 بواسطة <a href="https://gohit.xyz">Gohit X</a> · مرخص بموجب <a href="https://github.com/bastndev/Lynx-Keymap-pro/blob/main/LICENSE">`MIT`</a></sub>

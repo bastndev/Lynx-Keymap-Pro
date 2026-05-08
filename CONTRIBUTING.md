@@ -54,7 +54,7 @@ Always include both `key` (Win/Linux) and `mac` mappings, and use `when` conditi
 </details>
 
 <details>
-<summary><strong>🖥️ 75% keyboard variants</strong></summary>
+<summary><strong>🖥️ Keyboard layout variants</strong></summary>
 <br>
 
 Adaptations for different layouts: alternative key combinations, modifier remapping, function key utilization, or macro key integration.
