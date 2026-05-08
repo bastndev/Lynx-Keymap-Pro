@@ -171,6 +171,10 @@
         "key"    : "alt+p",
         "mac"    : "alt+p",
         "command": "lynx-keymap.smartDebugStart"
+      },{
+        "key"    : "f5",
+        "mac"    : "f5",
+        "command": "lynx-keymap.smartDebugStart"
       },
 
 
