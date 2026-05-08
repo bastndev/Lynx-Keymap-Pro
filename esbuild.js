@@ -10,7 +10,7 @@ const esbuildProblemMatcherPlugin = {
   name: 'esbuild-problem-matcher',
   setup(build) {
     build.onStart(() => {
-      console.log('[watch] build started');
+      console.debug('[watch] build started');
     });
     build.onEnd((result) => {
       result.errors.forEach(({ text, location }) => {
@@ -21,7 +21,7 @@ const esbuildProblemMatcherPlugin = {
           );
         }
       });
-      console.log('[watch] build finished');
+      console.debug('[watch] build finished');
     });
   },
 };

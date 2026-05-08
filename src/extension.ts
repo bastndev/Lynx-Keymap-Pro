@@ -24,7 +24,7 @@ export async function activate(context: vscode.ExtensionContext) {
   wordWrapManager.registerCommands(context);
 
   // Warm up AI detection cache for instant first keypress
-  aiManager.warmup().catch(error => {
+  void aiManager.warmup().catch(error => {
     console.warn(`${LOG_PREFIX} AI detection warmup failed:`, error);
   });
 
@@ -36,9 +36,9 @@ export async function activate(context: vscode.ExtensionContext) {
       if (!atmExtension.isActive) {
         await atmExtension.activate();
       }
-      vscode.commands.executeCommand('workbench.view.extension.gitlab-panel');
+      void vscode.commands.executeCommand('workbench.view.extension.gitlab-panel');
     } else {
-      promptInstallAtmExtension();
+      void promptInstallAtmExtension();
     }
   });
   context.subscriptions.push(gitlabPanelCommand);

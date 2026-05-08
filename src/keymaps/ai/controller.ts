@@ -127,7 +127,7 @@ export class AICommandsManager {
    * Attempts to execute a command. Returns true on success, false on failure.
    * Does NOT check the cache — executeCommand itself is the source of truth.
    */
-  private async tryExecute(cmd: string, editor: EditorType | string): Promise<boolean> {
+  private async tryExecute(cmd: string, _editor: EditorType | string): Promise<boolean> {
     try {
       await vscode.commands.executeCommand(cmd);
       return true;
@@ -182,7 +182,7 @@ export class AIToggleManager {
     await this.applyAllSettings(newState);
     await this.applyEditorCommands(editor, newState);
 
-    notifyToggle(editor, newState);
+    void notifyToggle(editor, newState);
   }
 
   /** Updates all known AI suggestion settings across editors. Skips absent settings. */
@@ -212,7 +212,9 @@ export class AIToggleManager {
   /** Fires editor-specific commands where settings alone are insufficient. */
   private async applyEditorCommands(editor: EditorType, _newState: boolean): Promise<void> {
     const cmd = AI_COMMANDS.toggleSuggestionAI[editor];
-    if (cmd) { await this.safeExecute(cmd); }
+    if (cmd) { 
+      void this.safeExecute(cmd); 
+    }
   }
 
   private async safeExecute(command: string): Promise<boolean> {
