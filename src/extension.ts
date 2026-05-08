@@ -54,20 +54,40 @@ export async function activate(context: vscode.ExtensionContext) {
   await context.globalState.update(STORAGE_KEYS.ORIGINAL_TABS_ENABLED,       undefined);
   await context.globalState.update(STORAGE_KEYS.ORIGINAL_PANEL_SHOW_LABELS,  undefined);
 
-  // If terminal was on the side, VS Code may restore both panels on startup.
-  // Close the auxiliary bar after a delay to let VS Code finish loading.
-  // Use a longer delay to ensure VS Code workspace is fully initialized.
+  // Some editors (e.g. Antigravity) aggressively restore the auxiliary bar
+  // at unpredictable points during startup, racing against our cleanup.
+  // Strategy: staggered retries up to 3 s — closeAuxiliaryBar is idempotent
+  // so multiple calls when already closed are always safe (no-ops).
+  //
+  // Only run cleanup when the terminal was explicitly left open in side mode.
+  // If prevPosition is undefined the user never used the side terminal this
+  // session, so we must NOT touch the auxiliary bar.
   if (prevPosition === PANEL_POSITIONS.LEFT) {
-    startupTimeoutId = setTimeout(async () => {
+    const closeAuxBar = async () => {
       try {
         await vscode.commands.executeCommand('workbench.action.closeAuxiliaryBar');
       } catch (error) {
-        // Silently ignore - auxiliary bar may not be available or already closed
         console.debug(`${LOG_PREFIX} Auxiliary bar cleanup skipped:`, error);
+      }
+    };
+
+    // Attempt 1 — instant, covers VSCode & fast editors
+    setTimeout(closeAuxBar, 300);
+
+    // Attempt 2 — catches editors that restore the panel slightly later
+    setTimeout(closeAuxBar, 800);
+
+    // Attempt 3 — mid-range safety net
+    setTimeout(closeAuxBar, 1600);
+
+    // Attempt 4 — final safety net for slow editors (e.g. Antigravity)
+    startupTimeoutId = setTimeout(async () => {
+      try {
+        await closeAuxBar();
       } finally {
         startupTimeoutId = undefined;
       }
-    }, 2000); // Increased from 1500ms to 2000ms for better reliability
+    }, 3000);
   }
 }
 
