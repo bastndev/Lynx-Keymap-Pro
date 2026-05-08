@@ -45,9 +45,6 @@ export class WordWrapManager {
     );
 
     if (editors.length === 0) {
-      vscode.window.showInformationMessage(
-        `No supported editors open. Supported: ${[...WORD_WRAP_LANGUAGES].join(', ')}`
-      );
       return;
     }
 
@@ -63,12 +60,7 @@ export class WordWrapManager {
       );
     }
 
-    Promise.all(updates).then(() => {
-      const status = this.isWrapOn ? 'enabled' : 'disabled';
-      vscode.window.showInformationMessage(
-        `Word wrap ${status} for ${editors.length} editor(s) (${[...WORD_WRAP_LANGUAGES].join(', ')})`
-      );
-    });
+    Promise.all(updates);
   }
 
   dispose(): void {
