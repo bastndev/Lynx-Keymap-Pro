@@ -7,6 +7,7 @@ export const STORAGE_KEYS = {
   ORIGINAL_TABS_ENABLED:     'lynx-keymap:originalTabsEnabled',
   ORIGINAL_PANEL_SHOW_LABELS:'lynx-keymap:originalPanelShowLabels',
   PANEL_POSITION:            'lynx-keymap:terminalPanelPosition',
+  SUGGESTIONS_ENABLED:       'lynx-keymap:suggestionsEnabled',
 } as const;
 
 // Re-export LOG_PREFIX for backward compatibility

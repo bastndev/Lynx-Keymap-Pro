@@ -3,6 +3,7 @@ import {
   AI_COMMANDS, KEYMAP_CONFIG, EDITOR_SIGNATURES,
   EditorType, ActionKey, EDITOR_PRIMARY_SETTING
 } from './configs';
+import { STORAGE_KEYS } from '../terminal/shared';
 import { notifyToggle } from '../../notifications/info';
 import { LOG_PREFIX } from '../../shared/constants';
 
@@ -17,7 +18,7 @@ export class AICommandsManager {
 
   // ─── Public API ────────────────────────────────────────────────────────────
 
-  public registerCommands(context: vscode.ExtensionContext): vscode.Disposable[] {
+  public registerCommands(context: vscode.ExtensionContext): void {
     const disposables = KEYMAP_CONFIG.map(({ commandId, commandsKey, errorMessage }) =>
       vscode.commands.registerCommand(commandId, async () => {
         await this.executeForAction(commandsKey, errorMessage);
@@ -26,7 +27,6 @@ export class AICommandsManager {
 
     this.disposables = disposables;
     context.subscriptions.push(...disposables);
-    return disposables;
   }
 
   /** Detect editor eagerly on activation so first keypress is instant */
@@ -132,6 +132,7 @@ export class AICommandsManager {
       await vscode.commands.executeCommand(cmd);
       return true;
     } catch {
+      console.debug(`${LOG} Command failed: ${cmd}`);
       return false;
     }
   }
@@ -173,12 +174,12 @@ export class AIToggleManager {
   private async toggleAI(context: vscode.ExtensionContext): Promise<void> {
     const editor = await this.aiManager.detectEditor();
 
-    const storedState  = context.globalState.get<boolean>('lynx.suggestionsEnabled');
+    const storedState  = context.globalState.get<boolean>(STORAGE_KEYS.SUGGESTIONS_ENABLED);
     const config       = vscode.workspace.getConfiguration();
     const currentState = storedState ?? config.get<boolean>(EDITOR_PRIMARY_SETTING[editor], true);
     const newState     = !currentState;
 
-    await context.globalState.update('lynx.suggestionsEnabled', newState);
+    await context.globalState.update(STORAGE_KEYS.SUGGESTIONS_ENABLED, newState);
     await this.applyAllSettings(newState);
     await this.applyEditorCommands(editor, newState);
 

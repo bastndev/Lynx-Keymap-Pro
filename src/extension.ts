@@ -57,10 +57,7 @@ export async function activate(context: vscode.ExtensionContext) {
   if (prevPosition === PANEL_POSITIONS.LEFT) {
     startupTimeoutId = setTimeout(async () => {
       try {
-        // Verify VS Code is ready before executing command
-        if (vscode.window.state.focused !== undefined) {
-          await vscode.commands.executeCommand('workbench.action.closeAuxiliaryBar');
-        }
+        await vscode.commands.executeCommand('workbench.action.closeAuxiliaryBar');
       } catch (error) {
         // Silently ignore - auxiliary bar may not be available or already closed
         console.debug(`${LOG_PREFIX} Auxiliary bar cleanup skipped:`, error);
