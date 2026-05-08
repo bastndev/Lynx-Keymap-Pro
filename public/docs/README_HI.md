@@ -122,7 +122,6 @@
 | Commit करें           | `⌥ + Return`     | `Alt + Enter`        | `Alt + Enter`        |
 | Push करें             | `⌘ + ⌥ + Return` | `Ctrl + Alt + Enter` | `Ctrl + Alt + Enter` |
 | Git बदलाव देखें       | `⌥ + L`          | `Alt + L`            | `Alt + L`            |
-| GitLab खोलें          | `⌘ + Q`          | `Ctrl + Q`           | `Ctrl + Q`           |
 
 ---
 
@@ -180,6 +179,30 @@
 >   { Backquote: "" }, // और भी...
 > ];
 > ```
+
+> [!NOTE]
+>
+> ### अक्षम डिफ़ॉल्ट शॉर्टकट
+>
+> यह एक्सटेंशन जानबूझकर निम्नलिखित डिफ़ॉल्ट VS Code शॉर्टकट को अक्षम करता है ताकि विरोध से बचा जा सके:
+>
+> - **`Ctrl+P` / `⌘+P`** — Quick Open (कस्टम शॉर्टकट के साथ विरोध से बचने के लिए अक्षम)
+>   - _विकल्प_: Quick Open के लिए `Shift+Alt+E` का उपयोग करें
+> - **`Ctrl+Enter` / `⌘+Enter`** — GitHub Copilot Generate (अक्षम)
+>   - _कारण_: टर्मिनल और git commit वर्कफ़्लो के साथ विरोध
+>
+> यदि आपको इन शॉर्टकट की आवश्यकता है, तो आप उन्हें अपने `keybindings.json` में फिर से सक्षम कर सकते हैं:
+>
+> ```json
+> [
+>   { "key": "ctrl+p", "command": "workbench.action.quickOpen" },
+>   { "key": "ctrl+enter", "command": "github.copilot.generate" }
+> ]
+> ```
+>
+> ### ज्ञात सीमाएं
+>
+> - **`Alt+CapsLock`** कुछ Linux वितरणों या Windows सिस्टम पर काम नहीं कर सकता है जहां CapsLock को OS स्तर पर पुनः मैप किया गया है। यदि यह शॉर्टकट काम नहीं करता है, तो अपने सिस्टम कीबोर्ड सेटिंग्स की जांच करें या वैकल्पिक शॉर्टकट का उपयोग करें।
 
 ---
 

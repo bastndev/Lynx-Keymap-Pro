@@ -91,6 +91,7 @@
 | Terminal — Limpar Linha               | `⌘ + ⌥ + Backspace`     | `Ctrl + Alt + Backspace`     |    ✅     |
 | Terminal — Completar Palavra          | `⌥ + ,`                 | `Alt + ,`                    |    ✅     |
 | Maximizar / Minimizar Painel          | `⌘ + Esc`               | `Ctrl + Esc`                 |    ✅     |
+| Alternar Painel                       | `Page Down`             | `Page Down`                  |    ✅     |
 | -                                     | -                       | -                            |    N/A    |
 | **Fechamento Inteligente** — IA       | `⌘ + CapsLock`          | `Ctrl + CapsLock`            |    ✅     |
 | Criar Nova Sessão de IA               | `⌥ + A`                 | `Alt + A`                    |    ✅     |
@@ -113,6 +114,8 @@
 
 ## 🔀 Git
 
+> Para usar esses comandos, você deve primeiro ir para **Controle de Código Fonte** (pois eles não funcionam diretamente) ou pressionar o atalho **_`Ctrl + 2`_**.
+
 | Comando                          | 🍎 macOS         | 🟦 Windows           | 🐧 Linux             |
 | :------------------------------- | :--------------- | :------------------- | :------------------- |
 | Preparar Tudo (Stage)            | `⌥ + 1`          | `Alt + 1`            | `Alt + 1`            |
@@ -121,7 +124,6 @@
 | Commit                           | `⌥ + Return`     | `Alt + Enter`        | `Alt + Enter`        |
 | Push                             | `⌘ + ⌥ + Return` | `Ctrl + Alt + Enter` | `Ctrl + Alt + Enter` |
 | Ver Alterações do Git            | `⌥ + L`          | `Alt + L`            | `Alt + L`            |
-| Abrir GitLab                     | `⌘ + Q`          | `Ctrl + Q`           | `Ctrl + Q`           |
 
 ---
 
@@ -139,19 +141,19 @@
 
 ## ▶️ Depuração
 
-| Comando            | 🍎 macOS | 🟦 Windows | 🐧 Linux  |
-| :----------------- | :------- | :--------- | :-------- |
-| Iniciar Depuração  | `⌥ + P`  | `Alt + P`  | `Alt + P` |
-| Reiniciar Depuração| `⌥ + O`  | `Alt + O`  | `Alt + O` |
-| Parar Depuração    | `⌥ + I`  | `Alt + I`  | `Alt + I` |
-| Abrir Console de Depuração | `⌥ + B`  | `Alt + B`  | `Alt + B` |
+| Comando                        | 🍎 macOS | 🟦 Windows | 🐧 Linux  |
+| :----------------------------- | :------- | :--------- | :-------- |
+| Iniciar Depuração              | `⌥ + P`  | `Alt + P`  | `Alt + P` |
+| Reiniciar Depuração            | `⌥ + O`  | `Alt + O`  | `Alt + O` |
+| Parar Depuração                | `⌥ + I`  | `Alt + I`  | `Alt + I` |
+| Abrir Console de Depuração     | `⌥ + B`  | `Alt + B`  | `Alt + B` |
 
 ---
 
 ## 🧩 Extensões [+]
 
-| Comando     | 🍎 macOS | 🟦 Windows | 🐧 Linux  |
-| :---------- | :------- | :--------- | :-------- |
+| Comando                | 🍎 macOS | 🟦 Windows | 🐧 Linux  |
+| :--------------------- | :------- | :--------- | :-------- |
 | Abrir painel do GitLab | `⌥ + V`  | `Alt + V`  | `Alt + V` |
 
 <br>
@@ -179,6 +181,30 @@
 >   { Backquote: "" }, // E MAIS...
 > ];
 > ```
+
+> [!NOTE]
+>
+> ### Atalhos Padrão Desabilitados
+>
+> Esta extensão desabilita intencionalmente os seguintes atalhos padrão do VS Code para evitar conflitos:
+>
+> - **`Ctrl+P` / `⌘+P`** — Abertura Rápida (desabilitado para evitar conflitos com atalhos personalizados)
+>   - _Alternativa_: Use `Shift+Alt+E` para Abertura Rápida
+> - **`Ctrl+Enter` / `⌘+Enter`** — GitHub Copilot Generate (desabilitado)
+>   - _Razão_: Conflitos com fluxos de trabalho de terminal e commit do git
+>
+> Se você precisar desses atalhos, pode reativá-los em seu `keybindings.json`:
+>
+> ```json
+> [
+>   { "key": "ctrl+p", "command": "workbench.action.quickOpen" },
+>   { "key": "ctrl+enter", "command": "github.copilot.generate" }
+> ]
+> ```
+>
+> ### Limitações Conhecidas
+>
+> - **`Alt+CapsLock`** pode não funcionar em algumas distribuições Linux ou sistemas Windows onde o CapsLock é remapeado no nível do sistema operacional. Se este atalho não funcionar, verifique as configurações do teclado do seu sistema ou use atalhos alternativos.
 
 ---
 

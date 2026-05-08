@@ -91,6 +91,7 @@
 | 终端 — 清除行                         | `⌘ + ⌥ + Backspace`     | `Ctrl + Alt + Backspace`     |    ✅     |
 | 终端 — 自动补全单词                   | `⌥ + ,`                 | `Alt + ,`                    |    ✅     |
 | 最大化/最小化面板                     | `⌘ + Esc`               | `Ctrl + Esc`                 |    ✅     |
+| 切换面板                              | `Page Down`             | `Page Down`                  |    ✅     |
 | -                                     | -                       | -                            |    N/A    |
 | **智能关闭** — AI 聊天或终端          | `⌘ + CapsLock`          | `Ctrl + CapsLock`            |    ✅     |
 | 创建新 AI 会话                        | `⌥ + A`                 | `Alt + A`                    |    ✅     |
@@ -113,6 +114,8 @@
 
 ## 🔀 Git
 
+> 要使用这些命令，您必须首先转到 **源代码管理**（因为它们不能直接工作）或按快捷键 **_`Ctrl + 2`_**。
+
 | 命令                     | 🍎 macOS         | 🟦 Windows           | 🐧 Linux             |
 | :----------------------- | :--------------- | :------------------- | :------------------- |
 | 暂存所有                 | `⌥ + 1`          | `Alt + 1`            | `Alt + 1`            |
@@ -121,7 +124,6 @@
 | 提交                     | `⌥ + Return`     | `Alt + Enter`        | `Alt + Enter`        |
 | 推送                     | `⌘ + ⌥ + Return` | `Ctrl + Alt + Enter` | `Ctrl + Alt + Enter` |
 | 查看 Git 更改            | `⌥ + L`          | `Alt + L`            | `Alt + L`            |
-| 打开 GitLab              | `⌘ + Q`          | `Ctrl + Q`           | `Ctrl + Q`           |
 
 ---
 
@@ -139,19 +141,19 @@
 
 ## ▶️ 调试
 
-| 命令               | 🍎 macOS | 🟦 Windows | 🐧 Linux  |
-| :----------------- | :------- | :--------- | :-------- |
-| 开始调试           | `⌥ + P`  | `Alt + P`  | `Alt + P` |
-| 重新启动调试       | `⌥ + O`  | `Alt + O`  | `Alt + O` |
-| 停止调试           | `⌥ + I`  | `Alt + I`  | `Alt + I` |
+| 命令           | 🍎 macOS | 🟦 Windows | 🐧 Linux  |
+| :------------- | :------- | :--------- | :-------- |
+| 开始调试       | `⌥ + P`  | `Alt + P`  | `Alt + P` |
+| 重新启动调试   | `⌥ + O`  | `Alt + O`  | `Alt + O` |
+| 停止调试       | `⌥ + I`  | `Alt + I`  | `Alt + I` |
 | 打开调试控制台 | `⌥ + B`  | `Alt + B`  | `Alt + B` |
 
 ---
 
 ## 🧩 扩展 [+]
 
-| 命令     | 🍎 macOS | 🟦 Windows | 🐧 Linux  |
-| :------- | :------- | :--------- | :-------- |
+| 命令             | 🍎 macOS | 🟦 Windows | 🐧 Linux  |
+| :--------------- | :------- | :--------- | :-------- |
 | 打开 GitLab 面板 | `⌥ + V`  | `Alt + V`  | `Alt + V` |
 
 <br>
@@ -179,6 +181,30 @@
 >   { Backquote: "" }, // 还有更多...
 > ];
 > ```
+
+> [!NOTE]
+>
+> ### 已禁用的默认快捷键
+>
+> 此扩展有意禁用以下 VS Code 默认快捷键以避免冲突：
+>
+> - **`Ctrl+P` / `⌘+P`** — 快速打开（已禁用以防止与自定义快捷键冲突）
+>   - _替代方案_：使用 `Shift+Alt+E` 进行快速打开
+> - **`Ctrl+Enter` / `⌘+Enter`** — GitHub Copilot 生成（已禁用）
+>   - _原因_：与终端和 git 提交工作流冲突
+>
+> 如果您需要这些快捷键，可以在 `keybindings.json` 中重新启用它们：
+>
+> ```json
+> [
+>   { "key": "ctrl+p", "command": "workbench.action.quickOpen" },
+>   { "key": "ctrl+enter", "command": "github.copilot.generate" }
+> ]
+> ```
+>
+> ### 已知限制
+>
+> - **`Alt+CapsLock`** 在某些 Linux 发行版或 Windows 系统上可能无法工作，其中 CapsLock 在操作系统级别被重新映射。如果此快捷键不起作用，请检查您的系统键盘设置或使用替代快捷键。
 
 ---
 

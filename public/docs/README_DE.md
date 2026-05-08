@@ -91,6 +91,7 @@
 | Terminal — Zeile löschen              | `⌘ + ⌥ + Backspace`     | `Ctrl + Alt + Backspace`     |    ✅     |
 | Terminal — Wort vervollständigen      | `⌥ + ,`                 | `Alt + ,`                    |    ✅     |
 | Panel maximieren / minimieren         | `⌘ + Esc`               | `Ctrl + Esc`                 |    ✅     |
+| Panel umschalten                      | `Page Down`             | `Page Down`                  |    ✅     |
 | -                                     | -                       | -                            |    N/A    |
 | **Smart Close** — AI-Chat oder Terminal| `⌘ + CapsLock`          | `Ctrl + CapsLock`            |    ✅     |
 | Neue AI-Sitzung erstellen              | `⌥ + A`                 | `Alt + A`                    |    ✅     |
@@ -113,6 +114,8 @@
 
 ## 🔀 Git
 
+> Um diese Befehle zu verwenden, müssen Sie zuerst zur **Versionskontrolle** gehen (da sie nicht direkt funktionieren) oder die Tastenkombination **_`Ctrl + 2`_** drücken.
+
 | Befehl                         | 🍎 macOS         | 🟦 Windows           | 🐧 Linux             |
 | :----------------------------- | :--------------- | :------------------- | :------------------- |
 | Alles stagen                   | `⌥ + 1`          | `Alt + 1`            | `Alt + 1`            |
@@ -121,7 +124,6 @@
 | Commit                         | `⌥ + Return`     | `Alt + Enter`        | `Alt + Enter`        |
 | Push                           | `⌘ + ⌥ + Return` | `Ctrl + Alt + Enter` | `Ctrl + Alt + Enter` |
 | Git-Änderungen anzeigen        | `⌥ + L`          | `Alt + L`            | `Alt + L`            |
-| GitLab öffnen                  | `⌘ + Q`          | `Ctrl + Q`           | `Ctrl + Q`           |
 
 ---
 
@@ -139,19 +141,19 @@
 
 ## ▶️ Debugging
 
-| Befehl              | 🍎 macOS | 🟦 Windows | 🐧 Linux  |
-| :------------------ | :------- | :--------- | :-------- |
-| Debugging starten   | `⌥ + P`  | `Alt + P`  | `Alt + P` |
-| Debugging neu starten| `⌥ + O`  | `Alt + O`  | `Alt + O` |
-| Debugging stoppen   | `⌥ + I`  | `Alt + I`  | `Alt + I` |
-| Debug-Konsole öffnen | `⌥ + B`  | `Alt + B`  | `Alt + B` |
+| Befehl                | 🍎 macOS | 🟦 Windows | 🐧 Linux  |
+| :-------------------- | :------- | :--------- | :-------- |
+| Debugging starten     | `⌥ + P`  | `Alt + P`  | `Alt + P` |
+| Debugging neu starten | `⌥ + O`  | `Alt + O`  | `Alt + O` |
+| Debugging stoppen     | `⌥ + I`  | `Alt + I`  | `Alt + I` |
+| Debug-Konsole öffnen  | `⌥ + B`  | `Alt + B`  | `Alt + B` |
 
 ---
 
 ## 🧩 Erweiterungen [+]
 
-| Befehl     | 🍎 macOS | 🟦 Windows | 🐧 Linux  |
-| :--------- | :------- | :--------- | :-------- |
+| Befehl              | 🍎 macOS | 🟦 Windows | 🐧 Linux  |
+| :------------------ | :------- | :--------- | :-------- |
 | GitLab-Panel öffnen | `⌥ + V`  | `Alt + V`  | `Alt + V` |
 
 <br>
@@ -179,6 +181,30 @@
 >   { Backquote: "" }, // Und MEHR...
 > ];
 > ```
+
+> [!NOTE]
+>
+> ### Deaktivierte Standard-Tastenkombinationen
+>
+> Diese Erweiterung deaktiviert absichtlich die folgenden Standard-VS Code-Tastenkombinationen, um Konflikte zu vermeiden:
+>
+> - **`Ctrl+P` / `⌘+P`** — Schnelles Öffnen (deaktiviert, um Konflikte mit benutzerdefinierten Tastenkombinationen zu vermeiden)
+>   - _Alternative_: Verwenden Sie `Shift+Alt+E` für Schnelles Öffnen
+> - **`Ctrl+Enter` / `⌘+Enter`** — GitHub Copilot Generate (deaktiviert)
+>   - _Grund_: Konflikte mit Terminal- und Git-Commit-Workflows
+>
+> Wenn Sie diese Tastenkombinationen benötigen, können Sie sie in Ihrer `keybindings.json` wieder aktivieren:
+>
+> ```json
+> [
+>   { "key": "ctrl+p", "command": "workbench.action.quickOpen" },
+>   { "key": "ctrl+enter", "command": "github.copilot.generate" }
+> ]
+> ```
+>
+> ### Bekannte Einschränkungen
+>
+> - **`Alt+CapsLock`** funktioniert möglicherweise nicht auf einigen Linux-Distributionen oder Windows-Systemen, bei denen CapsLock auf Betriebssystemebene neu zugeordnet ist. Wenn diese Tastenkombination nicht funktioniert, überprüfen Sie Ihre Systemtastatureinstellungen oder verwenden Sie alternative Tastenkombinationen.
 
 ---
 

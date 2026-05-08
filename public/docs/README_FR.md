@@ -91,6 +91,7 @@
 | Terminal — Effacer la Ligne           | `⌘ + ⌥ + Backspace`     | `Ctrl + Alt + Backspace`     |       ✅       |
 | Terminal — Compléter le Mot           | `⌥ + ,`                 | `Alt + ,`                    |       ✅       |
 | Maximizer / Minimiser le Panneau      | `⌘ + Esc`               | `Ctrl + Esc`                 |       ✅       |
+| Basculer le Panneau                   | `Page Down`             | `Page Down`                  |       ✅       |
 | -                                     | -                       | -                            |      N/A       |
 | **Fermeture Intelligente** — Chat IA  | `⌘ + CapsLock`          | `Ctrl + CapsLock`            |       ✅       |
 | Créer une Nouvelle Session IA         | `⌥ + A`                 | `Alt + A`                    |       ✅       |
@@ -113,6 +114,8 @@
 
 ## 🔀 Git
 
+> Pour utiliser ces commandes, vous devez d'abord aller dans **Contrôle de Source** (car elles ne fonctionnent pas directement) ou appuyer sur le raccourci **_`Ctrl + 2`_**.
+
 | Commande                       | 🍎 macOS         | 🟦 Windows           | 🐧 Linux             |
 | :----------------------------- | :--------------- | :------------------- | :------------------- |
 | Tout indexer                   | `⌥ + 1`          | `Alt + 1`            | `Alt + 1`            |
@@ -121,7 +124,6 @@
 | Commit                         | `⌥ + Return`     | `Alt + Enter`        | `Alt + Enter`        |
 | Push                           | `⌘ + ⌥ + Return` | `Ctrl + Alt + Enter` | `Ctrl + Alt + Enter` |
 | Voir les changements Git       | `⌥ + L`          | `Alt + L`            | `Alt + L`            |
-| Ouvrir GitLab                  | `⌘ + Q`          | `Ctrl + Q`           | `Ctrl + Q`           |
 
 ---
 
@@ -139,19 +141,19 @@
 
 ## ▶️ Débogage
 
-| Commande               | 🍎 macOS | 🟦 Windows | 🐧 Linux  |
-| :--------------------- | :------- | :--------- | :-------- |
-| Démarrer le Débogage   | `⌥ + P`  | `Alt + P`  | `Alt + P` |
-| Redémarrer le Débogage | `⌥ + O`  | `Alt + O`  | `Alt + O` |
-| Arrêter le Débogage    | `⌥ + I`  | `Alt + I`  | `Alt + I` |
+| Commande                      | 🍎 macOS | 🟦 Windows | 🐧 Linux  |
+| :---------------------------- | :------- | :--------- | :-------- |
+| Démarrer le Débogage          | `⌥ + P`  | `Alt + P`  | `Alt + P` |
+| Redémarrer le Débogage        | `⌥ + O`  | `Alt + O`  | `Alt + O` |
+| Arrêter le Débogage           | `⌥ + I`  | `Alt + I`  | `Alt + I` |
 | Ouvrir la Console de Débogage | `⌥ + B`  | `Alt + B`  | `Alt + B` |
 
 ---
 
 ## 🧩 Extensions [+]
 
-| Commande     | 🍎 macOS | 🟦 Windows | 🐧 Linux  |
-| :----------- | :------- | :--------- | :-------- |
+| Commande                 | 🍎 macOS | 🟦 Windows | 🐧 Linux  |
+| :----------------------- | :------- | :--------- | :-------- |
 | Ouvrir le panneau GitLab | `⌥ + V`  | `Alt + V`  | `Alt + V` |
 
 <br>
@@ -179,6 +181,30 @@
 >   { Backquote: "" }, // Et PLUS...
 > ];
 > ```
+
+> [!NOTE]
+>
+> ### Raccourcis par Défaut Désactivés
+>
+> Cette extension désactive intentionnellement les raccourcis VS Code par défaut suivants pour éviter les conflits :
+>
+> - **`Ctrl+P` / `⌘+P`** — Ouverture Rapide (désactivé pour éviter les conflits avec les raccourcis personnalisés)
+>   - _Alternative_ : Utilisez `Shift+Alt+E` pour l'Ouverture Rapide
+> - **`Ctrl+Enter` / `⌘+Enter`** — GitHub Copilot Generate (désactivé)
+>   - _Raison_ : Conflits avec les flux de travail du terminal et des commits git
+>
+> Si vous avez besoin de ces raccourcis, vous pouvez les réactiver dans votre `keybindings.json` :
+>
+> ```json
+> [
+>   { "key": "ctrl+p", "command": "workbench.action.quickOpen" },
+>   { "key": "ctrl+enter", "command": "github.copilot.generate" }
+> ]
+> ```
+>
+> ### Limitations Connues
+>
+> - **`Alt+CapsLock`** peut ne pas fonctionner sur certaines distributions Linux ou systèmes Windows où CapsLock est remappé au niveau du système d'exploitation. Si ce raccourci ne fonctionne pas, vérifiez les paramètres du clavier de votre système ou utilisez des raccourcis alternatifs.
 
 ---
 
