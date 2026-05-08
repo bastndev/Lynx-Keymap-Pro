@@ -3,6 +3,7 @@ import {
   STORAGE_KEYS,
   LOG_PREFIX,
   PANEL_POSITIONS,
+  LAYOUT_SETTLE_MS,
   saveOriginalSettings,
   restoreOriginalSettings,
   applyTerminalSettings,
@@ -19,34 +20,27 @@ export class TerminalManager extends BaseTerminalManager {
           const current = context.workspaceState.get<string>(STORAGE_KEYS.PANEL_POSITION);
 
           if (current === PANEL_POSITIONS.LEFT) {
-            // ── Close path ──
             await Promise.all([
               restoreOriginalSettings(context),
               context.workspaceState.update(STORAGE_KEYS.PANEL_POSITION, undefined),
               vscode.commands.executeCommand('workbench.action.closePanel'),
             ]);
-            // Re-open AI when closing terminal (side effect, can be sequential or parallel depending on UX)
             await vscode.commands.executeCommand('lynx-keymap.openAndCloseAIChat');
 
           } else {
-            // ── Open or Transition path ──
             const isTransition = current === PANEL_POSITIONS.BOTTOM;
 
             const cleanupPromises: unknown[] = [];
             if (current !== undefined) {
               cleanupPromises.push(vscode.commands.executeCommand('workbench.action.closePanel'));
-              // If it's NOT a transition (i.e. it was something else or error), restore?
-              // Actually, if it's BOTTOM, we don't restore yet to avoid flicker.
             }
             cleanupPromises.push(vscode.commands.executeCommand('workbench.action.closeAuxiliaryBar'));
-
             await Promise.all(cleanupPromises);
 
             const sideBarLocation = vscode.workspace
               .getConfiguration('workbench')
               .get<string>('sideBar.location', PANEL_POSITIONS.LEFT);
 
-            // Save only if we aren't already in a special mode
             if (!isTransition) {
               await saveOriginalSettings(context);
             }
@@ -71,8 +65,8 @@ export class TerminalManager extends BaseTerminalManager {
     );
 
     // ─── Smart Close: Terminal lateral OR AI Chat ──────────────────────────────
-    // ctrl+capslock — if terminal is occupying the side panel, close it;
-    // otherwise fall through to the normal AI Chat toggle.
+    // ctrl+capslock — if terminal is in the side panel, close it;
+    // otherwise delegate to the AI Chat toggle.
     const smartCloseCmd = vscode.commands.registerCommand(
       'lynx-keymap.openAndCloseAIChatAndTerminal',
       async () => {
@@ -80,14 +74,12 @@ export class TerminalManager extends BaseTerminalManager {
           const current = context.workspaceState.get<string>(STORAGE_KEYS.PANEL_POSITION);
 
           if (current === PANEL_POSITIONS.LEFT) {
-            // Terminal is in the side → close it and restore settings
             await Promise.all([
               restoreOriginalSettings(context),
               context.workspaceState.update(STORAGE_KEYS.PANEL_POSITION, undefined),
             ]);
             await vscode.commands.executeCommand('workbench.action.closePanel');
           } else {
-            // AI Chat is showing (or nothing is open) → delegate to AI Chat toggle
             await vscode.commands.executeCommand('lynx-keymap.openAndCloseAIChat');
           }
         } catch (error) {
@@ -97,6 +89,37 @@ export class TerminalManager extends BaseTerminalManager {
       }
     );
 
-    this.register(context, toggleCmd, smartCloseCmd);
+    // ─── Smart New Terminal ────────────────────────────────────────────────────
+    // ctrl+backquote — BOTTOM: create terminal only, AI chat untouched.
+    // LEFT / undefined: close AuxBar first to avoid side-panel layout conflicts.
+    // Unknown state intentionally falls into the closing branch (safe default).
+    const smartNewTerminalCmd = vscode.commands.registerCommand(
+      'lynx-keymap.smartNewTerminal',
+      async () => {
+        try {
+          const current        = context.workspaceState.get<string>(STORAGE_KEYS.PANEL_POSITION);
+          const isInBottomPanel = current === PANEL_POSITIONS.BOTTOM;
+
+          if (isInBottomPanel) {
+            await vscode.commands.executeCommand('workbench.action.terminal.new');
+          } else {
+            await vscode.commands.executeCommand('workbench.action.closeAuxiliaryBar');
+            await vscode.commands.executeCommand('workbench.action.terminal.new');
+            // VS Code may briefly re-assert the AuxBar after terminal.new;
+            // wait for layout to settle then enforce the clean state.
+            await new Promise<void>(resolve => setTimeout(resolve, LAYOUT_SETTLE_MS));
+            await Promise.all([
+              vscode.commands.executeCommand('workbench.action.closeAuxiliaryBar'),
+              applyTerminalSettings(false, false),
+            ]);
+          }
+        } catch (error) {
+          console.error(`${LOG_PREFIX} Smart new terminal failed:`, error);
+          vscode.window.showErrorMessage(`New terminal failed: ${error instanceof Error ? error.message : String(error)}`);
+        }
+      }
+    );
+
+    this.register(context, toggleCmd, smartCloseCmd, smartNewTerminalCmd);
   }
 }

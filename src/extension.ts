@@ -1,13 +1,14 @@
 import * as vscode from 'vscode';
-import { AICommandsManager, AIToggleManager, BottomTerminalManager, TerminalManager, STORAGE_KEYS, PANEL_POSITIONS, WordWrapManager } from './keymaps';
+import { AICommandsManager, AIToggleManager, BottomTerminalManager, DebugManager, TerminalManager, WordWrapManager } from './keymaps';
+import { STORAGE_KEYS, PANEL_POSITIONS, LOG_PREFIX } from './shared/constants';
 import { promptInstallAtmExtension } from './notifications/with-buttons';
-import { LOG_PREFIX } from './shared/constants';
 
 let aiManager:             AICommandsManager     | undefined;
 let terminalManager:       TerminalManager       | undefined;
 let bottomTerminalManager: BottomTerminalManager | undefined;
 let aiToggleManager:       AIToggleManager       | undefined;
 let wordWrapManager:       WordWrapManager       | undefined;
+let debugManager:          DebugManager          | undefined;
 let startupTimeoutId:      NodeJS.Timeout        | undefined;
 
 export async function activate(context: vscode.ExtensionContext) {
@@ -16,22 +17,22 @@ export async function activate(context: vscode.ExtensionContext) {
   bottomTerminalManager = new BottomTerminalManager();
   aiToggleManager       = new AIToggleManager(aiManager);
   wordWrapManager       = new WordWrapManager();
+  debugManager          = new DebugManager();
 
   aiManager.registerCommands(context);
   terminalManager.registerCommands(context);
   bottomTerminalManager.registerCommands(context);
   aiToggleManager.registerCommands(context);
   wordWrapManager.registerCommands(context);
+  debugManager.registerCommands(context);
 
-  // Warm up AI detection cache for instant first keypress
+  // Pre-detect the editor so the first keypress is instant.
   void aiManager.warmup().catch(error => {
     console.warn(`${LOG_PREFIX} AI detection warmup failed:`, error);
   });
 
-  // Register GitLab panel wrapper command
   const gitlabPanelCommand = vscode.commands.registerCommand('lynx-keymap.openGitlabPanel', async () => {
     const atmExtension = vscode.extensions.getExtension('bastndev.atm');
-
     if (atmExtension) {
       if (!atmExtension.isActive) {
         await atmExtension.activate();
@@ -46,63 +47,55 @@ export async function activate(context: vscode.ExtensionContext) {
   // Read previous position BEFORE resetting — needed for startup cleanup below.
   const prevPosition = context.workspaceState.get<string>(STORAGE_KEYS.PANEL_POSITION);
 
-  // Reset all panel state — extension always starts fresh.
   await context.workspaceState.update(STORAGE_KEYS.PANEL_POSITION,           undefined);
   await context.globalState.update(STORAGE_KEYS.ORIGINAL_TABS_ENABLED,       undefined);
   await context.globalState.update(STORAGE_KEYS.ORIGINAL_PANEL_SHOW_LABELS,  undefined);
 
-  // If terminal was on the side, VS Code may restore both panels on startup.
-  // Close the auxiliary bar after a delay to let VS Code finish loading.
-  // Use a longer delay to ensure VS Code workspace is fully initialized.
+  // If the terminal was left in side-panel mode, close the auxiliary bar on startup.
+  // Some editors restore it aggressively, so we retry at staggered intervals.
+  // closeAuxiliaryBar is idempotent — safe to call even when already closed.
   if (prevPosition === PANEL_POSITIONS.LEFT) {
-    startupTimeoutId = setTimeout(async () => {
+    const closeAuxBar = async () => {
       try {
         await vscode.commands.executeCommand('workbench.action.closeAuxiliaryBar');
       } catch (error) {
-        // Silently ignore - auxiliary bar may not be available or already closed
         console.debug(`${LOG_PREFIX} Auxiliary bar cleanup skipped:`, error);
+      }
+    };
+
+    setTimeout(closeAuxBar, 300);
+    setTimeout(closeAuxBar, 800);
+    setTimeout(closeAuxBar, 1600);
+    startupTimeoutId = setTimeout(async () => {
+      try {
+        await closeAuxBar();
       } finally {
         startupTimeoutId = undefined;
       }
-    }, 2000); // Increased from 1500ms to 2000ms for better reliability
+    }, 3000);
   }
 }
 
 export async function deactivate() {
-  // Clear pending timeout to prevent execution after deactivation
   if (startupTimeoutId) {
     clearTimeout(startupTimeoutId);
     startupTimeoutId = undefined;
   }
 
-  // Dispose all managers with error handling
-  try {
-    aiManager?.dispose();
-  } catch (error) {
-    console.error(`${LOG_PREFIX} Error disposing aiManager:`, error);
-  }
+  const managers: Array<{ name: string; ref: vscode.Disposable | undefined }> = [
+    { name: 'aiManager',             ref: aiManager             },
+    { name: 'terminalManager',       ref: terminalManager       },
+    { name: 'bottomTerminalManager', ref: bottomTerminalManager },
+    { name: 'aiToggleManager',       ref: aiToggleManager       },
+    { name: 'wordWrapManager',       ref: wordWrapManager       },
+    { name: 'debugManager',          ref: debugManager          },
+  ];
 
-  try {
-    terminalManager?.dispose();
-  } catch (error) {
-    console.error(`${LOG_PREFIX} Error disposing terminalManager:`, error);
-  }
-
-  try {
-    bottomTerminalManager?.dispose();
-  } catch (error) {
-    console.error(`${LOG_PREFIX} Error disposing bottomTerminalManager:`, error);
-  }
-
-  try {
-    aiToggleManager?.dispose();
-  } catch (error) {
-    console.error(`${LOG_PREFIX} Error disposing aiToggleManager:`, error);
-  }
-
-  try {
-    wordWrapManager?.dispose();
-  } catch (error) {
-    console.error(`${LOG_PREFIX} Error disposing wordWrapManager:`, error);
+  for (const { name, ref } of managers) {
+    try {
+      ref?.dispose();
+    } catch (error) {
+      console.error(`${LOG_PREFIX} Error disposing ${name}:`, error);
+    }
   }
 }

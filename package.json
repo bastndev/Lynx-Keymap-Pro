@@ -2,7 +2,7 @@
   "name": "lynx-keymap",
   "displayName": "%displayName%",
   "description": "%description%",
-  "version": "2.2.9",
+  "version": "2.3.0",
   "publisher": "bastndev",
   "license": "MIT",
   "engines": {
@@ -170,7 +170,11 @@
       },{
         "key"    : "alt+p",
         "mac"    : "alt+p",
-        "command": "workbench.action.debug.start"
+        "command": "lynx-keymap.smartDebugStart"
+      },{
+        "key"    : "f5",
+        "mac"    : "f5",
+        "command": "lynx-keymap.smartDebugStart"
       },
 
 
@@ -300,7 +304,7 @@
       },{
         "key"    : "ctrl+[Backquote]",
         "mac"    : "cmd+[Backquote]",
-        "command": "workbench.action.terminal.new"
+        "command": "lynx-keymap.smartNewTerminal"
       },
       
       {
@@ -440,8 +444,14 @@
         "command": "lynx-keymap.toggleTerminalLeftAndRight",
         "title"  : "Toggle Terminal Left/Right"
       },{
+        "command": "lynx-keymap.smartNewTerminal",
+        "title"  : "Smart New Terminal (context-aware: closes AI Chat only in side-panel mode)"
+      },{
         "command": "lynx-keymap.toggleTerminalBottom",
         "title"  : "Toggle Terminal Bottom"
+      },{
+        "command": "lynx-keymap.smartDebugStart",
+        "title"  : "Smart Debug Start (always opens Debug Console at bottom panel)"
       },{
         "command": "lynx-keymap.openGitlabPanel",
         "title"  : "Open GitLab Panel"
