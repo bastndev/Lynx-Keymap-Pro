@@ -387,7 +387,7 @@
       {
         "key"    : "alt+z",
         "mac"    : "alt+z",
-        "command": "editor.action.toggleWordWrap"
+        "command": "lynx-keymap.toggleWordWrap"
       },
       
       {
@@ -411,40 +411,12 @@
       },
 
       {
-        "command": "lynx-keymap.openAndCloseAIChat",
-        "title"  : "Open and Close AI Chat"
-      },{
-        "command": "lynx-keymap.openAndCloseAIChatAndTerminal",
-        "title"  : "Smart Close: AI Chat or Terminal"
-      },{
-        "command": "lynx-keymap.createNewAISession",
-        "title"  : "Create New AI Session"
-      },{
-        "command": "lynx-keymap.showAIHistory",
-        "title"  : "Show AI Chat History"
-      },{
-        "command": "lynx-keymap.selectModels",
-        "title"  : "Select AI Model"
-      },{
-        "command": "lynx-keymap.toggleAgentMode",
-        "title"  : "Toggle AI Agent Mode"
-      },{
-        "command": "lynx.toggleSuggestionAI",
-        "title"  : "Toggle AI Suggestions"
-      },{
-        "command": "lynx-keymap.selectCode",
-        "title"  : "AI Select Code"
-      },
-
-      {
-        "command": "lynx-keymap.toggleTerminalLeftAndRight",
-        "title"  : "Toggle Terminal Left and Right"
-      },{
-        "command": "lynx-keymap.toggleTerminalBottom",
-        "title"  : "Toggle Terminal Bottom"
-      },{
         "command": "lynx-keymap.openGitlabPanel",
         "title"  : "Open GitLab Panel"
+      },
+      {
+        "command": "lynx-keymap.toggleWordWrap",
+        "title"  : "Toggle Word Wrap (Global)"
       }
     ]
   },
