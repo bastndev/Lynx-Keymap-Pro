@@ -1,4 +1,5 @@
 import * as vscode from 'vscode';
+import { LOG_PREFIX } from '../../shared/constants';
 
 // ─── Storage Keys ─────────────────────────────────────────────────────────────
 export const STORAGE_KEYS = {
@@ -8,8 +9,8 @@ export const STORAGE_KEYS = {
   PANEL_POSITION:            'lynx-keymap:terminalPanelPosition',
 } as const;
 
-// ─── Log Prefix ───────────────────────────────────────────────────────────────
-export const LOG_PREFIX = '[lynx-keymap]';
+// Re-export LOG_PREFIX for backward compatibility
+export { LOG_PREFIX };
 
 // ─── Panel Config ─────────────────────────────────────────────────────────────
 export const TERMINAL_CONFIG  = 'terminal.integrated';
@@ -26,10 +27,11 @@ export async function saveOriginalSettings(context: vscode.ExtensionContext): Pr
   const terminalConfig  = vscode.workspace.getConfiguration(TERMINAL_CONFIG);
   const workbenchConfig = vscode.workspace.getConfiguration(WORKBENCH_CONFIG);
 
-  const tabsEnabled     = terminalConfig.inspect<boolean>('tabs.enabled')?.globalValue    ?? true;
-  const panelShowLabels = workbenchConfig.inspect<boolean>('panel.showLabels')?.globalValue ?? true;
+  // Get effective value (respects workspace > global hierarchy)
+  const tabsEnabled     = terminalConfig.get<boolean>('tabs.enabled', true);
+  const panelShowLabels = workbenchConfig.get<boolean>('panel.showLabels', true);
 
-  // Only update if not already set or if values differ to avoid unnecessary writes
+  // Only update if not already set to avoid unnecessary writes
   const currentSavedTabs = context.globalState.get<boolean>(STORAGE_KEYS.ORIGINAL_TABS_ENABLED);
   const currentSavedLabels = context.globalState.get<boolean>(STORAGE_KEYS.ORIGINAL_PANEL_SHOW_LABELS);
 
@@ -51,13 +53,13 @@ export async function applyTerminalSettings(
   const currentTabs   = terminalConfig.get<boolean>('tabs.enabled');
   const currentLabels = workbenchConfig.get<boolean>('panel.showLabels');
 
-  const updates: Promise<void>[] = [];
+  const updates = [];
 
   if (currentTabs !== tabsEnabled) {
-    updates.push(Promise.resolve(terminalConfig.update('tabs.enabled', tabsEnabled, vscode.ConfigurationTarget.Global)));
+    updates.push(terminalConfig.update('tabs.enabled', tabsEnabled, vscode.ConfigurationTarget.Global));
   }
   if (currentLabels !== panelShowLabels) {
-    updates.push(Promise.resolve(workbenchConfig.update('panel.showLabels', panelShowLabels, vscode.ConfigurationTarget.Global)));
+    updates.push(workbenchConfig.update('panel.showLabels', panelShowLabels, vscode.ConfigurationTarget.Global));
   }
 
   if (updates.length > 0) {

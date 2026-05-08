@@ -20,10 +20,17 @@ export default [{
             selector: "import",
             format: ["camelCase", "PascalCase"],
         }],
+        "@typescript-eslint/no-unused-vars": ["warn", {
+            argsIgnorePattern: "^_",
+            varsIgnorePattern: "^_",
+        }],
+        "@typescript-eslint/no-floating-promises": "error",
+        "@typescript-eslint/await-thenable": "error",
 
         curly: "warn",
         eqeqeq: "warn",
         "no-throw-literal": "warn",
+        "no-console": ["warn", { allow: ["warn", "error", "debug"] }],
         semi: "warn",
     },
 }];

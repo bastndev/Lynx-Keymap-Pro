@@ -109,7 +109,7 @@ export const AI_COMMANDS: Record<ActionKey, EditorCommandMap> = {
     [EditorType.ANTIGRAVITY]: 'workbench.action.chat.toggleAgentMode',
     [EditorType.VSCODE]:      'workbench.action.chat.toggleAgentMode',
     // [EditorType.KIRO]:     [no support]
-    [EditorType.CURSOR]:      'workbench.action.toggleAuxiliaryBart',
+    [EditorType.CURSOR]:      'workbench.action.toggleAuxiliaryBar',
     [EditorType.WINDSURF]:    'windsurf.toggleAgentMode',
     // [EditorType.TRAE_AI]:  [no support]
     // [EditorType.FIREBASE]: [no support]

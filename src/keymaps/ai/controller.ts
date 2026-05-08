@@ -4,8 +4,9 @@ import {
   EditorType, ActionKey, EDITOR_PRIMARY_SETTING
 } from './configs';
 import { notifyToggle } from '../../notifications/info';
+import { LOG_PREFIX } from '../../shared/constants';
 
-const LOG = '[lynx-keymap]';
+const LOG = LOG_PREFIX;
 
 export class AICommandsManager {
   private disposables: vscode.Disposable[]  = [];
@@ -98,10 +99,22 @@ export class AICommandsManager {
       this.resetDetection();
     }
 
-    // 2. Fallback: try all other editors in order
-    const fallbackEditors = Object.entries(commandMap) as [EditorType, string][];
-    for (const [fallbackEditor, cmd] of fallbackEditors) {
+    // 2. Fallback: try all other editors in DETECTION_ORDER
+    const DETECTION_ORDER: EditorType[] = [
+      EditorType.ANTIGRAVITY,
+      EditorType.WINDSURF,
+      EditorType.CURSOR,
+      EditorType.TRAE_AI,
+      EditorType.KIRO,
+      EditorType.FIREBASE,
+      EditorType.VSCODE,
+    ];
+
+    for (const fallbackEditor of DETECTION_ORDER) {
       if (fallbackEditor === editor) {continue;} // already tried
+
+      const cmd = commandMap[fallbackEditor];
+      if (!cmd) {continue;} // no command for this editor
 
       const ok = await this.tryExecute(cmd, fallbackEditor);
       if (ok) {return;}

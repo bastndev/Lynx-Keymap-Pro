@@ -1,4 +1,5 @@
 import * as vscode from 'vscode';
+import { LOG_PREFIX } from '../../shared/constants';
 
 // ─── Supported Languages ─────────────────────────────────────────────────────
 // Add language IDs here to support word wrap toggle for more file types.
@@ -48,7 +49,7 @@ export class WordWrapManager {
     return WORD_WRAP_LANGUAGES.has(languageId);
   }
 
-  private toggleWordWrap(): void {
+  private async toggleWordWrap(): Promise<void> {
     this.isWrapOn = !this.isWrapOn;
     const value = this.isWrapOn ? 'on' : 'off';
 
@@ -60,7 +61,7 @@ export class WordWrapManager {
       return;
     }
 
-    const updates: Promise<void>[] = [];
+    const updates = [];
 
     for (const editor of editors) {
       const config = vscode.workspace.getConfiguration('editor', {
@@ -68,11 +69,16 @@ export class WordWrapManager {
         uri: editor.document.uri,
       });
       updates.push(
-        Promise.resolve(config.update('wordWrap', value, vscode.ConfigurationTarget.Global))
+        config.update('wordWrap', value, vscode.ConfigurationTarget.Global)
       );
     }
 
-    Promise.all(updates);
+    try {
+      await Promise.all(updates);
+    } catch (error) {
+      console.error(`${LOG_PREFIX} Failed to toggle word wrap:`, error);
+      vscode.window.showErrorMessage(`Word wrap toggle failed: ${error instanceof Error ? error.message : String(error)}`);
+    }
   }
 
   dispose(): void {

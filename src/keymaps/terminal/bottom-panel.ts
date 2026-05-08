@@ -53,7 +53,7 @@ export class BottomTerminalManager extends BaseTerminalManager {
           }
         } catch (error) {
           console.error(`${LOG_PREFIX} Terminal bottom toggle failed:`, error);
-          vscode.window.showErrorMessage(`Terminal toggle failed: ${error}`);
+          vscode.window.showErrorMessage(`Terminal toggle failed: ${error instanceof Error ? error.message : String(error)}`);
         }
       }
     );

@@ -2,10 +2,10 @@ import * as vscode from 'vscode';
 import { getTranslation } from './info';
 
 export async function promptInstallAtmExtension() {
-    const installAction = getTranslation('ATM.notification.install.action');
+    const installAction = await getTranslation('ATM.notification.install.action');
 
     const selection = await vscode.window.showInformationMessage(
-        getTranslation('ATM.notification.install.required'),
+        await getTranslation('ATM.notification.install.required'),
         installAction
     );
 
