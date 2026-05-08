@@ -62,7 +62,7 @@ export const AI_COMMANDS: Record<ActionKey, EditorCommandMap> = {
     [EditorType.ANTIGRAVITY]: 'antigravity.openAgent',
     [EditorType.VSCODE]:      'workbench.action.chat.toggle',
     [EditorType.KIRO]:        'workbench.action.toggleAuxiliaryBar',
-    [EditorType.CURSOR]:      'workbench.action.toggleAuxiliaryBar',
+    [EditorType.CURSOR]:      'workbench.action.toggleAgentsFromKeyboard',
     [EditorType.WINDSURF]:    'windsurf.prioritized.chat.open',
     [EditorType.TRAE_AI]:     'workbench.action.chat.icube.open',
     [EditorType.FIREBASE]:    'aichat.prompt',
