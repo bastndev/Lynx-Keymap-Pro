@@ -206,6 +206,8 @@
 >
 > - **`Alt+CapsLock`** may not work on some Linux distributions or Windows systems where CapsLock is remapped at the OS level. If this shortcut doesn't work, check your system keyboard settings or use alternative shortcuts.
 
+<br>
+
 ---
 
 ## Installation

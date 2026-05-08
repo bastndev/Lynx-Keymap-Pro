@@ -204,6 +204,8 @@
 >
 > - **`Alt+CapsLock`** có thể không hoạt động trên một số bản phân phối Linux hoặc hệ thống Windows nơi CapsLock được ánh xạ lại ở cấp độ hệ điều hành. Nếu phím tắt này không hoạt động, hãy kiểm tra cài đặt bàn phím hệ thống của bạn hoặc sử dụng phím tắt thay thế.
 
+<br>
+
 ---
 
 ## Cài đặt

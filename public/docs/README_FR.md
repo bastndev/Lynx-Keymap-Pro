@@ -204,6 +204,8 @@
 >
 > - **`Alt+CapsLock`** peut ne pas fonctionner sur certaines distributions Linux ou systèmes Windows où CapsLock est remappé au niveau du système d'exploitation. Si ce raccourci ne fonctionne pas, vérifiez les paramètres du clavier de votre système ou utilisez des raccourcis alternatifs.
 
+<br>
+
 ---
 
 ## Installation
