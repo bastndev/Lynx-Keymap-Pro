@@ -19,41 +19,47 @@ export class TerminalManager extends BaseTerminalManager {
           const current = context.workspaceState.get<string>(STORAGE_KEYS.PANEL_POSITION);
 
           if (current === PANEL_POSITIONS.LEFT) {
-            // ── Close path ── restore settings & state in parallel, then close UI
+            // ── Close path ──
             await Promise.all([
               restoreOriginalSettings(context),
               context.workspaceState.update(STORAGE_KEYS.PANEL_POSITION, undefined),
+              vscode.commands.executeCommand('workbench.action.closePanel'),
             ]);
-            await vscode.commands.executeCommand('workbench.action.closePanel');
-            await vscode.commands.executeCommand('lynx-keymap.openAndCloseAIChat'); // re-open AI when closing terminal
+            // Re-open AI when closing terminal (side effect, can be sequential or parallel depending on UX)
+            await vscode.commands.executeCommand('lynx-keymap.openAndCloseAIChat');
 
           } else {
-            if (current !== undefined) {
-              await vscode.commands.executeCommand('workbench.action.closePanel');
-              if (current === PANEL_POSITIONS.BOTTOM) {
-                await restoreOriginalSettings(context);
-              }
-            }
+            // ── Open or Transition path ──
+            const isTransition = current === PANEL_POSITIONS.BOTTOM;
 
-            // Explicit close — safe even if AI is already closed (no toggle side-effects)
-            await vscode.commands.executeCommand('workbench.action.closeAuxiliaryBar');
+            const cleanupPromises: Promise<any>[] = [];
+            if (current !== undefined) {
+              cleanupPromises.push(Promise.resolve(vscode.commands.executeCommand('workbench.action.closePanel')));
+              // If it's NOT a transition (i.e. it was something else or error), restore?
+              // Actually, if it's BOTTOM, we don't restore yet to avoid flicker.
+            }
+            cleanupPromises.push(Promise.resolve(vscode.commands.executeCommand('workbench.action.closeAuxiliaryBar')));
+
+            await Promise.all(cleanupPromises);
 
             const sideBarLocation = vscode.workspace
               .getConfiguration('workbench')
               .get<string>('sideBar.location', PANEL_POSITIONS.LEFT);
 
-            // ── Open path ── save settings, apply & persist state in parallel
+            // Save only if we aren't already in a special mode
+            if (!isTransition) {
+              await saveOriginalSettings(context);
+            }
+
             await Promise.all([
-              saveOriginalSettings(context),
               applyTerminalSettings(false, false),
               context.workspaceState.update(STORAGE_KEYS.PANEL_POSITION, PANEL_POSITIONS.LEFT),
+              vscode.commands.executeCommand(
+                sideBarLocation === PANEL_POSITIONS.LEFT
+                  ? 'workbench.action.positionPanelRight'
+                  : 'workbench.action.positionPanelLeft'
+              ),
             ]);
-
-            await vscode.commands.executeCommand(
-              sideBarLocation === PANEL_POSITIONS.LEFT
-                ? 'workbench.action.positionPanelRight'
-                : 'workbench.action.positionPanelLeft'
-            );
 
             await vscode.commands.executeCommand('workbench.action.terminal.focus');
           }

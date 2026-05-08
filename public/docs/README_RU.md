@@ -28,7 +28,7 @@
 
 <h2 align="center">Lynx Keymap Pro — <b>Справочник сочетаний клавиш</b></h2>
 
-> Оптимизировано для клавиатур **pro%** в VSCode · Cursor · Windsurf · Trae.ai · Kiro · Antigravity & Firebase.studio.
+> Оптимизировано для клавиатур **pro%** в VSCode · Cursor · Windsurf · Trae-ai · Kiro · Antigravity & Firebase.studio.
 
 ---
 

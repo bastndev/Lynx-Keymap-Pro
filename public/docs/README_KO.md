@@ -28,7 +28,7 @@
 
 <h2 align="center">Lynx Keymap Pro — <b>키바인딩 참조</b></h2>
 
-> VSCode · Cursor · Windsurf · Trae.ai · Kiro · Antigravity & Firebase.studio에서 **pro% 키보드**에 최적화되었습니다.
+> VSCode · Cursor · Windsurf · Trae-ai · Kiro · Antigravity & Firebase.studio에서 **pro% 키보드**에 최적화되었습니다.
 
 ---
 

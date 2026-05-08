@@ -28,7 +28,7 @@
 
 <h2 align="center">Lynx Keymap Pro — <b>快捷键参考</b></h2>
 
-> 针对 **pro% 键盘** 在 VSCode · Cursor · Windsurf · Trae.ai · Kiro · Antigravity & Firebase.studio 中进行了优化。
+> 针对 **pro% 键盘** 在 VSCode · Cursor · Windsurf · Trae-ai · Kiro · Antigravity & Firebase.studio 中进行了优化。
 
 ---
 

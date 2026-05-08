@@ -1,10 +1,10 @@
 {
   "displayName": "Lynx Keymap Pro (ИИ-Оркестратор)",
-  "description": "Идеальный набор сочетаний клавиш для IDE с искусственным интеллектом. ⚡️ Ускорьте свой рабочий процесс в VSCode, Cursor, Windsurf, Trae.ai и Kiro с помощью интеллектуального управления ИИ, переключения терминала одной клавишей и проверенных раскладок для 75% клавиатур. Хватит кликать. Начинайте командовать.",
+  "description": "Ультимативный набор сочетаний клавиш для IDE на базе ИИ. ⚡️ Ускорьте свой рабочий процесс в VSCode, Cursor, Windsurf, Trae-ai, Kiro, Antigravity и Firebase.studio с помощью интеллектуальной оркестровки ИИ, переключения терминала одним нажатием и проверенных раскладок для 75% клавиатур. Хватит кликать. Начните командовать.",
 
-  "lynx.notification.ai.enabled": "({0}) Предложения ИИ: ВКЛЮЧЕНЫ ✅",
-  "lynx.notification.ai.disabled": "({0}) Предложения ИИ: ОТКЛЮЧЕНЫ ❌",
+  "lynx.notification.ai.enabled": "({0}) ИИ-подсказки: ВКЛЮЧЕНЫ ✅",
+  "lynx.notification.ai.disabled": "({0}) ИИ-подсказки: ОТКЛЮЧЕНЫ ❌",
 
-  "ATM.notification.install.required": "Для использования панели GitLab необходимо установить расширение \"ATM\" (@gohitx).",
-  "ATM.notification.install.action": "📥 Скачать и установить ATM"
+  "ATM.notification.install.required": "Для использования панели GitLab необходимо установить расширение \"ATM\" от(@gohitx).",
+  "ATM.notification.install.action": "📥 Скачать ATM"
 }

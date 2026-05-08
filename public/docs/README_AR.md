@@ -27,7 +27,7 @@
 
 <h2 align="center">Lynx Keymap Pro — <b>مرجع اختصارات لوحة المفاتيح</b></h2>
 
-> مُحسّن لـ **لوحات المفاتيح pro%** عبر VSCode · Cursor · Windsurf · Trae.ai · Kiro · Antigravity & Firebase.studio.
+> مُحسّن لـ **لوحات المفاتيح pro%** عبر VSCode · Cursor · Windsurf · Trae-ai · Kiro · Antigravity & Firebase.studio.
 
 ---
 

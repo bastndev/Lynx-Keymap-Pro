@@ -28,7 +28,7 @@
 
 <h2 align="center">Lynx Keymap Pro — <b>Tastenkombinations-Referenz</b></h2>
 
-> Optimiert für **pro% Tastaturen** in VSCode · Cursor · Windsurf · Trae.ai · Kiro · Antigravity & Firebase.studio.
+> Optimiert für **pro% Tastaturen** in VSCode · Cursor · Windsurf · Trae-ai · Kiro · Antigravity & Firebase.studio.
 
 ---
 

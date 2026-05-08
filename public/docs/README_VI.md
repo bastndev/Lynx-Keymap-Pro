@@ -28,7 +28,7 @@
 
 <h2 align="center">Lynx Keymap Pro — <b>Tham chiếu phím tắt</b></h2>
 
-> Được tối ưu hóa cho bàn phím **pro%** trên VSCode · Cursor · Windsurf · Trae.ai · Kiro · Antigravity & Firebase.studio.
+> Được tối ưu hóa cho bàn phím **pro%** trên VSCode · Cursor · Windsurf · Trae-ai · Kiro · Antigravity & Firebase.studio.
 
 ---
 

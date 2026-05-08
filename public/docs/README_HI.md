@@ -27,7 +27,7 @@
 
 <h2 align="center">Lynx Keymap Pro — <b>कीबाइंडिंग संदर्भ</b></h2>
 
-> VSCode · Cursor · Windsurf · Trae.ai · Kiro · Antigravity & Firebase.studio में **pro% कीबोर्ड** के लिए अनुकूलित।
+> VSCode · Cursor · Windsurf · Trae-ai · Kiro · Antigravity & Firebase.studio में **pro% कीबोर्ड** के लिए अनुकूलित।
 
 ---
 

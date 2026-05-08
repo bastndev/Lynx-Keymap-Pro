@@ -28,7 +28,7 @@
 
 <h2 align="center">Lynx Keymap Pro — <b>Referência de Atalhos de Teclado</b></h2>
 
-> Otimizado para teclados **pro%** no VSCode · Cursor · Windsurf · Trae.ai · Kiro · Antigravity & Firebase.studio.
+> Otimizado para teclados **pro%** no VSCode · Cursor · Windsurf · Trae-ai · Kiro · Antigravity & Firebase.studio.
 
 ---
 

@@ -19,35 +19,36 @@ export class BottomTerminalManager extends BaseTerminalManager {
           const current = context.workspaceState.get<string>(STORAGE_KEYS.PANEL_POSITION);
 
           if (current === PANEL_POSITIONS.BOTTOM) {
-            // ── Close path ── restore settings & state in parallel, then close UI
+            // ── Close path ──
             await Promise.all([
               restoreOriginalSettings(context),
               context.workspaceState.update(STORAGE_KEYS.PANEL_POSITION, undefined),
+              vscode.commands.executeCommand('workbench.action.closePanel'),
             ]);
-            await vscode.commands.executeCommand('workbench.action.closePanel');
 
           } else {
-            // ── Transition: another panel was open ──────────────────────────────
+            // ── Open or Transition path ──
+            const isTransition = current === PANEL_POSITIONS.LEFT;
+
             if (current !== undefined) {
-              if (current === PANEL_POSITIONS.LEFT) {
-                // Close panel + restore settings in parallel, then re-open AI Chat
-                await Promise.all([
-                  vscode.commands.executeCommand('workbench.action.closePanel'),
-                  restoreOriginalSettings(context),
-                ]);
+              await vscode.commands.executeCommand('workbench.action.closePanel');
+              // If it was LEFT, we might want to re-open AI Chat later or now.
+              // But we don't restore settings yet to avoid flicker.
+              if (isTransition) {
                 await vscode.commands.executeCommand('lynx-keymap.openAndCloseAIChat');
-              } else {
-                await vscode.commands.executeCommand('workbench.action.closePanel');
               }
             }
 
-            // ── Open path ── save settings, apply & persist state in parallel
+            // Save only if we aren't already in a special mode
+            if (!isTransition) {
+              await saveOriginalSettings(context);
+            }
+
             await Promise.all([
-              saveOriginalSettings(context),
               applyTerminalSettings(true, true),
               context.workspaceState.update(STORAGE_KEYS.PANEL_POSITION, PANEL_POSITIONS.BOTTOM),
+              vscode.commands.executeCommand('workbench.action.positionPanelBottom'),
             ]);
-            await vscode.commands.executeCommand('workbench.action.positionPanelBottom');
             await vscode.commands.executeCommand('workbench.action.terminal.focus');
           }
         } catch (error) {

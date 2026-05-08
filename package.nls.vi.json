@@ -1,10 +1,10 @@
 {
   "displayName": "Lynx Keymap Pro (Trình điều phối AI)",
-  "description": "Bộ phím tắt tối thượng dành cho các IDE tích hợp AI. ⚡️ Tăng tốc quy trình làm việc của bạn trong VSCode, Cursor, Windsurf, Trae.ai & Kiro với khả năng điều phối AI thông minh, chuyển đổi terminal bằng một phím và bố cục bàn phím 75% đã được kiểm chứng. Ngừng nhấp chuột. Bắt đầu ra lệnh.",
+  "description": "Bộ phím tắt tối thượng dành cho các IDE hỗ trợ AI. ⚡️ Tăng tốc quy trình làm việc của bạn trong VSCode, Cursor, Windsurf, Trae-ai, Kiro, Antigravity & Firebase.studio với khả năng điều phối AI thông minh, chuyển đổi terminal bằng một phím và bố cục bàn phím 75% đã được kiểm chứng. Ngừng nhấp chuột. Bắt đầu ra lệnh.",
 
   "lynx.notification.ai.enabled": "({0}) Đề xuất AI: ĐÃ BẬT ✅",
   "lynx.notification.ai.disabled": "({0}) Đề xuất AI: ĐÃ TẮT ❌",
 
-  "ATM.notification.install.required": "Để sử dụng bảng điều khiển GitLab, bạn cần cài đặt tiện ích mở rộng \"ATM\" (@gohitx).",
-  "ATM.notification.install.action": "📥 Tải xuống và Cài đặt ATM"
+  "ATM.notification.install.required": "Để sử dụng bảng điều khiển GitLab, bạn cần cài đặt tiện ích mở rộng \"ATM\" bởi(@gohitx).",
+  "ATM.notification.install.action": "📥 Tải xuống ATM"
 }

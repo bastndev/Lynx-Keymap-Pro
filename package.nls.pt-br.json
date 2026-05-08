@@ -1,10 +1,10 @@
 {
   "displayName": "Lynx Keymap Pro (Orquestrador de IA)",
-  "description": "A suíte definitiva de atalhos de teclado para IDEs com IA. ⚡️ Acelere seu fluxo de trabalho no VSCode, Cursor, Windsurf, Trae.ai e Kiro com orquestração inteligente de IA, troca de terminal com uma tecla e layouts testados para teclados 75%. Pare de clicar. Comece a comandar.",
+  "description": "O conjunto definitivo de atalhos de teclado para IDEs baseadas em IA. ⚡️ Acelere seu fluxo de trabalho no VSCode, Cursor, Windsurf, Trae-ai, Kiro, Antigravity e Firebase.studio com orquestração inteligente de IA, alternância de terminal com uma tecla e layouts testados para teclados 75%. Pare de clicar. Comece a comandar.",
 
   "lynx.notification.ai.enabled": "({0}) Sugestões de IA: ATIVADAS ✅",
   "lynx.notification.ai.disabled": "({0}) Sugestões de IA: DESATIVADAS ❌",
 
-  "ATM.notification.install.required": "Para usar o painel do GitLab, você precisa instalar a extensão \"ATM\" (@gohitx).",
-  "ATM.notification.install.action": "📥 Baixar e Instalar ATM"
+  "ATM.notification.install.required": "Para usar o painel do GitLab, você precisa instalar a extensão \"ATM\" por(@gohitx).",
+  "ATM.notification.install.action": "📥 Baixar ATM"
 }
