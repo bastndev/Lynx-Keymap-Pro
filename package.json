@@ -170,7 +170,7 @@
       },{
         "key"    : "alt+p",
         "mac"    : "alt+p",
-        "command": "workbench.action.debug.start"
+        "command": "lynx-keymap.smartDebugStart"
       },
 
 
@@ -445,6 +445,9 @@
       },{
         "command": "lynx-keymap.toggleTerminalBottom",
         "title"  : "Toggle Terminal Bottom"
+      },{
+        "command": "lynx-keymap.smartDebugStart",
+        "title"  : "Smart Debug Start (always opens Debug Console at bottom panel)"
       },{
         "command": "lynx-keymap.openGitlabPanel",
         "title"  : "Open GitLab Panel"

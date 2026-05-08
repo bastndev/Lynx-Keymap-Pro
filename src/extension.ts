@@ -1,5 +1,5 @@
 import * as vscode from 'vscode';
-import { AICommandsManager, AIToggleManager, BottomTerminalManager, TerminalManager, STORAGE_KEYS, PANEL_POSITIONS, WordWrapManager } from './keymaps';
+import { AICommandsManager, AIToggleManager, BottomTerminalManager, DebugManager, TerminalManager, STORAGE_KEYS, PANEL_POSITIONS, WordWrapManager } from './keymaps';
 import { promptInstallAtmExtension } from './notifications/with-buttons';
 import { LOG_PREFIX } from './shared/constants';
 
@@ -8,6 +8,7 @@ let terminalManager:       TerminalManager       | undefined;
 let bottomTerminalManager: BottomTerminalManager | undefined;
 let aiToggleManager:       AIToggleManager       | undefined;
 let wordWrapManager:       WordWrapManager       | undefined;
+let debugManager:          DebugManager          | undefined;
 let startupTimeoutId:      NodeJS.Timeout        | undefined;
 
 export async function activate(context: vscode.ExtensionContext) {
@@ -16,12 +17,14 @@ export async function activate(context: vscode.ExtensionContext) {
   bottomTerminalManager = new BottomTerminalManager();
   aiToggleManager       = new AIToggleManager(aiManager);
   wordWrapManager       = new WordWrapManager();
+  debugManager          = new DebugManager();
 
   aiManager.registerCommands(context);
   terminalManager.registerCommands(context);
   bottomTerminalManager.registerCommands(context);
   aiToggleManager.registerCommands(context);
   wordWrapManager.registerCommands(context);
+  debugManager.registerCommands(context);
 
   // Warm up AI detection cache for instant first keypress
   void aiManager.warmup().catch(error => {
@@ -104,5 +107,11 @@ export async function deactivate() {
     wordWrapManager?.dispose();
   } catch (error) {
     console.error(`${LOG_PREFIX} Error disposing wordWrapManager:`, error);
+  }
+
+  try {
+    debugManager?.dispose();
+  } catch (error) {
+    console.error(`${LOG_PREFIX} Error disposing debugManager:`, error);
   }
 }
