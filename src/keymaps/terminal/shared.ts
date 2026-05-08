@@ -1,29 +1,13 @@
 import * as vscode from 'vscode';
-import { LOG_PREFIX } from '../../shared/constants';
+import { LOG_PREFIX, STORAGE_KEYS, PANEL_POSITIONS, PanelPosition } from '../../shared/constants';
 
-// ─── Storage Keys ─────────────────────────────────────────────────────────────
-export const STORAGE_KEYS = {
-  LAST_ACTIVE_MODE:           'lynx-keymap:lastActiveMode',
-  ORIGINAL_TABS_ENABLED:      'lynx-keymap:originalTabsEnabled',
-  ORIGINAL_TABS_LOCATION:     'lynx-keymap:originalTabsLocation',
-  ORIGINAL_PANEL_SHOW_LABELS: 'lynx-keymap:originalPanelShowLabels',
-  PANEL_POSITION:             'lynx-keymap:terminalPanelPosition',
-  SUGGESTIONS_ENABLED:        'lynx-keymap:suggestionsEnabled',
-} as const;
-
-// Re-export LOG_PREFIX for backward compatibility
-export { LOG_PREFIX };
+// Re-export so all existing terminal-domain consumers keep working unchanged.
+export { LOG_PREFIX, STORAGE_KEYS, PANEL_POSITIONS };
+export type { PanelPosition };
 
 // ─── Panel Config ─────────────────────────────────────────────────────────────
 export const TERMINAL_CONFIG  = 'terminal.integrated';
 export const WORKBENCH_CONFIG = 'workbench';
-
-export type PanelPosition = 'left' | 'bottom';
-
-export const PANEL_POSITIONS = {
-  LEFT:   'left',
-  BOTTOM: 'bottom',
-} as const;
 
 /**
  * Milliseconds to wait for the VS Code workbench layout to settle after

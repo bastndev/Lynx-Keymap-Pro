@@ -1,5 +1,6 @@
 import * as vscode from 'vscode';
-import { AICommandsManager, AIToggleManager, BottomTerminalManager, DebugManager, TerminalManager, STORAGE_KEYS, PANEL_POSITIONS, WordWrapManager } from './keymaps';
+import { AICommandsManager, AIToggleManager, BottomTerminalManager, DebugManager, TerminalManager, WordWrapManager } from './keymaps';
+import { STORAGE_KEYS, PANEL_POSITIONS } from './shared/constants';
 import { promptInstallAtmExtension } from './notifications/with-buttons';
 import { LOG_PREFIX } from './shared/constants';
 
@@ -92,46 +93,28 @@ export async function activate(context: vscode.ExtensionContext) {
 }
 
 export async function deactivate() {
-  // Clear pending timeout to prevent execution after deactivation
+  // Clear pending startup timeout to prevent execution after deactivation
   if (startupTimeoutId) {
     clearTimeout(startupTimeoutId);
     startupTimeoutId = undefined;
   }
 
-  // Dispose all managers with error handling
-  try {
-    aiManager?.dispose();
-  } catch (error) {
-    console.error(`${LOG_PREFIX} Error disposing aiManager:`, error);
-  }
+  // Dispose all managers — individual try/catch ensures one failure won't
+  // block the cleanup of the remaining managers.
+  const managers: Array<{ name: string; ref: { dispose(): void } | undefined }> = [
+    { name: 'aiManager',             ref: aiManager             },
+    { name: 'terminalManager',       ref: terminalManager       },
+    { name: 'bottomTerminalManager', ref: bottomTerminalManager },
+    { name: 'aiToggleManager',       ref: aiToggleManager       },
+    { name: 'wordWrapManager',       ref: wordWrapManager       },
+    { name: 'debugManager',          ref: debugManager          },
+  ];
 
-  try {
-    terminalManager?.dispose();
-  } catch (error) {
-    console.error(`${LOG_PREFIX} Error disposing terminalManager:`, error);
-  }
-
-  try {
-    bottomTerminalManager?.dispose();
-  } catch (error) {
-    console.error(`${LOG_PREFIX} Error disposing bottomTerminalManager:`, error);
-  }
-
-  try {
-    aiToggleManager?.dispose();
-  } catch (error) {
-    console.error(`${LOG_PREFIX} Error disposing aiToggleManager:`, error);
-  }
-
-  try {
-    wordWrapManager?.dispose();
-  } catch (error) {
-    console.error(`${LOG_PREFIX} Error disposing wordWrapManager:`, error);
-  }
-
-  try {
-    debugManager?.dispose();
-  } catch (error) {
-    console.error(`${LOG_PREFIX} Error disposing debugManager:`, error);
+  for (const { name, ref } of managers) {
+    try {
+      ref?.dispose();
+    } catch (error) {
+      console.error(`${LOG_PREFIX} Error disposing ${name}:`, error);
+    }
   }
 }

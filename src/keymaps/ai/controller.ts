@@ -3,17 +3,27 @@ import {
   AI_COMMANDS, KEYMAP_CONFIG, EDITOR_SIGNATURES,
   EditorType, ActionKey, EDITOR_PRIMARY_SETTING
 } from './configs';
-import { STORAGE_KEYS } from '../terminal/shared';
+import { STORAGE_KEYS } from '../../shared/constants';
 import { notifyToggle } from '../../notifications/info';
 import { LOG_PREFIX } from '../../shared/constants';
 
-const LOG = LOG_PREFIX;
+// ─── Detection Order ──────────────────────────────────────────────────────────
+// Priority: most specific forks first; plain VSCode is the final fallback.
+const DETECTION_ORDER: EditorType[] = [
+  EditorType.ANTIGRAVITY,
+  EditorType.WINDSURF,
+  EditorType.CURSOR,
+  EditorType.TRAE_AI,
+  EditorType.KIRO,
+  EditorType.FIREBASE,
+  EditorType.VSCODE,
+];
 
 export class AICommandsManager {
-  private disposables: vscode.Disposable[]  = [];
-  private detectedEditor: EditorType | null = null;
-  private allCommandsCache: string[] | null = null;
-  private cacheTimestamp: number            = 0;
+  private disposables: vscode.Disposable[]   = [];
+  private detectedEditor: EditorType | null  = null;
+  private allCommandsCache: Set<string> | null = null;  // Set for O(1) .has() lookups
+  private cacheTimestamp: number             = 0;
   private readonly CACHE_EXPIRY             = 5 * 60 * 1000; // 5 min
 
   // ─── Public API ────────────────────────────────────────────────────────────
@@ -56,19 +66,9 @@ export class AICommandsManager {
 
     const allCommands = await this.getAllCommands();
 
-    const DETECTION_ORDER: EditorType[] = [
-      EditorType.ANTIGRAVITY,
-      EditorType.WINDSURF,
-      EditorType.CURSOR,
-      EditorType.TRAE_AI,
-      EditorType.KIRO,
-      EditorType.FIREBASE,
-      EditorType.VSCODE,
-    ];
-
     for (const editor of DETECTION_ORDER) {
       const signatures = EDITOR_SIGNATURES[editor];
-      const detected   = signatures.some(sig => allCommands.includes(sig));
+      const detected   = signatures.some(sig => allCommands.has(sig));
 
       if (detected) {
         this.detectedEditor = editor;
@@ -78,7 +78,7 @@ export class AICommandsManager {
 
     // Ultimate fallback
     this.detectedEditor = EditorType.VSCODE;
-    console.warn(`${LOG} Editor not detected, defaulting to VSCode`);
+    console.warn(`${LOG_PREFIX} Editor not detected, defaulting to VSCode`);
     return this.detectedEditor;
   }
 
@@ -91,32 +91,22 @@ export class AICommandsManager {
     // 1. Try the exact command for detected editor
     const primaryCmd = commandMap[editor];
     if (primaryCmd) {
-      const ok = await this.tryExecute(primaryCmd, editor);
+      const ok = await this.tryExecute(primaryCmd);
       if (ok) {return;}
 
       // Primary failed → reset detection so next call re-detects
-      console.warn(`${LOG} Primary command failed, resetting detection`);
+      console.warn(`${LOG_PREFIX} Primary command failed, resetting detection`);
       this.resetDetection();
     }
 
-    // 2. Fallback: try all other editors in DETECTION_ORDER
-    const DETECTION_ORDER: EditorType[] = [
-      EditorType.ANTIGRAVITY,
-      EditorType.WINDSURF,
-      EditorType.CURSOR,
-      EditorType.TRAE_AI,
-      EditorType.KIRO,
-      EditorType.FIREBASE,
-      EditorType.VSCODE,
-    ];
-
+    // 2. Fallback: try all other editors in priority order
     for (const fallbackEditor of DETECTION_ORDER) {
       if (fallbackEditor === editor) {continue;} // already tried
 
       const cmd = commandMap[fallbackEditor];
       if (!cmd) {continue;} // no command for this editor
 
-      const ok = await this.tryExecute(cmd, fallbackEditor);
+      const ok = await this.tryExecute(cmd);
       if (ok) {return;}
     }
 
@@ -127,30 +117,30 @@ export class AICommandsManager {
    * Attempts to execute a command. Returns true on success, false on failure.
    * Does NOT check the cache — executeCommand itself is the source of truth.
    */
-  private async tryExecute(cmd: string, _editor: EditorType | string): Promise<boolean> {
+  private async tryExecute(cmd: string): Promise<boolean> {
     try {
       await vscode.commands.executeCommand(cmd);
       return true;
     } catch {
-      console.debug(`${LOG} Command failed: ${cmd}`);
+      console.debug(`${LOG_PREFIX} Command failed: ${cmd}`);
       return false;
     }
   }
 
   // ─── Cache ─────────────────────────────────────────────────────────────────
 
-  private async getAllCommands(): Promise<string[]> {
+  private async getAllCommands(): Promise<Set<string>> {
     const now = Date.now();
     if (this.allCommandsCache && now - this.cacheTimestamp < this.CACHE_EXPIRY) {
       return this.allCommandsCache;
     }
     try {
-      this.allCommandsCache = await vscode.commands.getCommands(true);
+      this.allCommandsCache = new Set(await vscode.commands.getCommands(true));
       this.cacheTimestamp   = now;
       return this.allCommandsCache;
     } catch (error) {
-      console.error(`${LOG} Failed to get commands:`, error);
-      return this.allCommandsCache ?? [];
+      console.error(`${LOG_PREFIX} Failed to get commands:`, error);
+      return this.allCommandsCache ?? new Set();
     }
   }
 }
@@ -181,7 +171,7 @@ export class AIToggleManager {
 
     await context.globalState.update(STORAGE_KEYS.SUGGESTIONS_ENABLED, newState);
     await this.applyAllSettings(newState);
-    await this.applyEditorCommands(editor, newState);
+    await this.applyEditorCommands(editor);
 
     void notifyToggle(editor, newState);
   }
@@ -205,16 +195,16 @@ export class AIToggleManager {
           await config.update(setting, newState, vscode.ConfigurationTarget.Global);
         }
       } catch (e) {
-        console.error(`${LOG} Failed to update "${setting}":`, e);
+        console.error(`${LOG_PREFIX} Failed to update "${setting}":`, e);
       }
     }
   }
 
   /** Fires editor-specific commands where settings alone are insufficient. */
-  private async applyEditorCommands(editor: EditorType, _newState: boolean): Promise<void> {
+  private async applyEditorCommands(editor: EditorType): Promise<void> {
     const cmd = AI_COMMANDS.toggleSuggestionAI[editor];
-    if (cmd) { 
-      void this.safeExecute(cmd); 
+    if (cmd) {
+      void this.safeExecute(cmd);
     }
   }
 
