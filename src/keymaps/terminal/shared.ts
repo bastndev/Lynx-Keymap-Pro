@@ -22,7 +22,6 @@ export const PANEL_POSITIONS = {
   BOTTOM: 'bottom',
 } as const;
 
-// ─── Helpers ──────────────────────────────────────────────────────────────────
 export async function saveOriginalSettings(context: vscode.ExtensionContext): Promise<void> {
   const terminalConfig  = vscode.workspace.getConfiguration(TERMINAL_CONFIG);
   const workbenchConfig = vscode.workspace.getConfiguration(WORKBENCH_CONFIG);
@@ -30,10 +29,16 @@ export async function saveOriginalSettings(context: vscode.ExtensionContext): Pr
   const tabsEnabled     = terminalConfig.inspect<boolean>('tabs.enabled')?.globalValue    ?? true;
   const panelShowLabels = workbenchConfig.inspect<boolean>('panel.showLabels')?.globalValue ?? true;
 
-  await Promise.all([
-    context.globalState.update(STORAGE_KEYS.ORIGINAL_TABS_ENABLED,      tabsEnabled),
-    context.globalState.update(STORAGE_KEYS.ORIGINAL_PANEL_SHOW_LABELS, panelShowLabels),
-  ]);
+  // Only update if not already set or if values differ to avoid unnecessary writes
+  const currentSavedTabs = context.globalState.get<boolean>(STORAGE_KEYS.ORIGINAL_TABS_ENABLED);
+  const currentSavedLabels = context.globalState.get<boolean>(STORAGE_KEYS.ORIGINAL_PANEL_SHOW_LABELS);
+
+  if (currentSavedTabs === undefined || currentSavedLabels === undefined) {
+    await Promise.all([
+      context.globalState.update(STORAGE_KEYS.ORIGINAL_TABS_ENABLED,      tabsEnabled),
+      context.globalState.update(STORAGE_KEYS.ORIGINAL_PANEL_SHOW_LABELS, panelShowLabels),
+    ]);
+  }
 }
 
 export async function applyTerminalSettings(
@@ -43,10 +48,21 @@ export async function applyTerminalSettings(
   const terminalConfig  = vscode.workspace.getConfiguration(TERMINAL_CONFIG);
   const workbenchConfig = vscode.workspace.getConfiguration(WORKBENCH_CONFIG);
 
-  await Promise.all([
-    terminalConfig.update( 'tabs.enabled',    tabsEnabled,     vscode.ConfigurationTarget.Global),
-    workbenchConfig.update('panel.showLabels', panelShowLabels, vscode.ConfigurationTarget.Global),
-  ]);
+  const currentTabs   = terminalConfig.get<boolean>('tabs.enabled');
+  const currentLabels = workbenchConfig.get<boolean>('panel.showLabels');
+
+  const updates: Promise<void>[] = [];
+
+  if (currentTabs !== tabsEnabled) {
+    updates.push(Promise.resolve(terminalConfig.update('tabs.enabled', tabsEnabled, vscode.ConfigurationTarget.Global)));
+  }
+  if (currentLabels !== panelShowLabels) {
+    updates.push(Promise.resolve(workbenchConfig.update('panel.showLabels', panelShowLabels, vscode.ConfigurationTarget.Global)));
+  }
+
+  if (updates.length > 0) {
+    await Promise.all(updates);
+  }
 }
 
 export async function restoreOriginalSettings(context: vscode.ExtensionContext): Promise<void> {
@@ -54,6 +70,12 @@ export async function restoreOriginalSettings(context: vscode.ExtensionContext):
   const panelShowLabels = context.globalState.get<boolean>(STORAGE_KEYS.ORIGINAL_PANEL_SHOW_LABELS, true);
 
   await applyTerminalSettings(tabsEnabled, panelShowLabels);
+
+  // Clean up state after restoration
+  await Promise.all([
+    context.globalState.update(STORAGE_KEYS.ORIGINAL_TABS_ENABLED,      undefined),
+    context.globalState.update(STORAGE_KEYS.ORIGINAL_PANEL_SHOW_LABELS, undefined),
+  ]);
 }
 
 // ─── Base Manager ─────────────────────────────────────────────────────────────

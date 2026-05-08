@@ -28,7 +28,7 @@
 
 <h2 align="center">Lynx Keymap Pro — <b>Tham chiếu phím tắt</b></h2>
 
-> Được tối ưu hóa cho bàn phím **pro%** trên VSCode · Cursor · Windsurf · Trae.ai · Kiro · Antigravity & Firebase.studio.
+> Được tối ưu hóa cho bàn phím **Pro** trên VSCode · Cursor · Windsurf · Trae-ai · Kiro · Antigravity & Firebase.studio.
 
 ---
 
@@ -199,7 +199,7 @@ ext install bastndev.lynx-keymap-pro
 ### Cách 2 — Chế độ xem Tiện ích mở rộng
 
 1. Mở Tiện ích mở rộng (`Ctrl+Shift+X` / `⌘+Shift+X`)
-2. Tìm kiếm **"Lynx Keymap pro%"**
+2. Tìm kiếm **"Lynx Keymap Pro"**
 3. Nhấn **Cài đặt**
 
 ---
@@ -233,7 +233,7 @@ ext install bastndev.lynx-keymap-pro
 
 <div align="center">
 
-**Thưởng thức thôi 🎉 Lynx Keymap pro% đã được cài đặt!**  
+**Thưởng thức thôi 🎉 Lynx Keymap Pro đã được cài đặt!**  
 _Tìm thấy lỗi hoặc có phản hồi? [Mở một issue](https://github.com/bastndev/Lynx-Keymap-pro/issues/new)_
 
 <sub>Được thực hiện tại 🇵🇪 bởi <a href="https://gohit.xyz">Gohit X</a> · Được cấp phép theo <a href="https://github.com/bastndev/Lynx-Keymap-pro/blob/main/LICENSE">`MIT`</a></sub>

@@ -28,7 +28,7 @@
 
 <h2 align="center">Lynx Keymap Pro — <b>Referência de Atalhos de Teclado</b></h2>
 
-> Otimizado para teclados **pro%** no VSCode · Cursor · Windsurf · Trae.ai · Kiro · Antigravity & Firebase.studio.
+> Otimizado para teclados **Pro** no VSCode · Cursor · Windsurf · Trae-ai · Kiro · Antigravity & Firebase.studio.
 
 ---
 
@@ -199,7 +199,7 @@ ext install bastndev.lynx-keymap-pro
 ### Método 2 — Visualização de Extensões
 
 1. Abrir Extensões (`Ctrl+Shift+X` / `⌘+Shift+X`)
-2. Pesquisar **"Lynx Keymap pro%"**
+2. Pesquisar **"Lynx Keymap Pro"**
 3. Clicar em **Instalar**
 
 ---
@@ -233,7 +233,7 @@ ext install bastndev.lynx-keymap-pro
 
 <div align="center">
 
-**Aproveite 🎉 Lynx Keymap pro% já está instalado!**  
+**Aproveite 🎉 Lynx Keymap Pro já está instalado!**  
 _Encontrou um erro ou tem feedback? [Abra um problema](https://github.com/bastndev/Lynx-Keymap-pro/issues/new)_
 
 <sub>Feito no 🇵🇪 por <a href="https://gohit.xyz">Gohit X</a> · Sob licença <a href="https://github.com/bastndev/Lynx-Keymap-pro/blob/main/LICENSE">`MIT`</a></sub>

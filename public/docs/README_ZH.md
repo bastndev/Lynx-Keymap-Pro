@@ -28,7 +28,7 @@
 
 <h2 align="center">Lynx Keymap Pro — <b>快捷键参考</b></h2>
 
-> 针对 **pro% 键盘** 在 VSCode · Cursor · Windsurf · Trae.ai · Kiro · Antigravity & Firebase.studio 中进行了优化。
+> 针对 **Pro 键盘** 在 VSCode · Cursor · Windsurf · Trae-ai · Kiro · Antigravity & Firebase.studio 中进行了优化。
 
 ---
 
@@ -199,7 +199,7 @@ ext install bastndev.lynx-keymap-pro
 ### 方法 2 — 扩展视图
 
 1. 打开扩展 (`Ctrl+Shift+X` / `⌘+Shift+X`)
-2. 搜索 **"Lynx Keymap pro%"**
+2. 搜索 **"Lynx Keymap Pro"**
 3. 点击 **安装**
 
 ---
@@ -233,7 +233,7 @@ ext install bastndev.lynx-keymap-pro
 
 <div align="center">
 
-**尽情享受吧 🎉 Lynx Keymap pro% 已安装！**  
+**尽情享受吧 🎉 Lynx Keymap Pro 已安装！**  
 _发现错误或有反馈？ [提交 Issue](https://github.com/bastndev/Lynx-Keymap-pro/issues/new)_
 
 <sub>由 <a href="https://gohit.xyz">Gohit X</a> 在 🇵🇪 制作 · 采用 <a href="https://github.com/bastndev/Lynx-Keymap-pro/blob/main/LICENSE">`MIT`</a> 许可</sub>

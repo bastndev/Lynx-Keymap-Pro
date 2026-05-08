@@ -1,10 +1,10 @@
 {
   "displayName": "Lynx Keymap Pro (KI-Orchestrator)",
-  "description": "Die ultimative Tastaturkürzel-Suite für KI-gestützte IDEs. ⚡️ Beschleunigen Sie Ihren Workflow in VSCode, Cursor, Windsurf, Trae.ai & Kiro mit intelligenter KI-Orchestrierung, Terminalwechsel mit einem Tastendruck und bewährten 75%-Tastaturlayouts. Hören Sie auf zu klicken. Fangen Sie an zu befehlen.",
+  "description": "Die ultimative Tastenkombinations-Suite für KI-gestützte IDEs. ⚡️ Optimiere deinen Workflow in VSCode, Cursor, Windsurf, Trae-ai, Kiro, Antigravity & Firebase.studio mit intelligenter KI-Orchestrierung, Terminal-Umschaltung per Tastendruck und bewährten Tastaturlayouts. Hör auf zu klicken. Fang an zu steuern.",
 
   "lynx.notification.ai.enabled": "({0}) KI-Vorschläge: AKTIVIERT ✅",
   "lynx.notification.ai.disabled": "({0}) KI-Vorschläge: DEAKTIVIERT ❌",
 
-  "ATM.notification.install.required": "Um das GitLab-Panel zu verwenden, müssen Sie die Erweiterung \"ATM\" (@gohitx) installieren.",
-  "ATM.notification.install.action": "📥 ATM herunterladen und installieren"
+  "ATM.notification.install.required": "Um das GitLab-Panel zu verwenden, müssen Sie die Erweiterung \"ATM\" von(@gohitx) installieren.",
+  "ATM.notification.install.action": "📥 ATM herunterladen"
 }

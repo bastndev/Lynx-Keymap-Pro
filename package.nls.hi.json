@@ -1,10 +1,10 @@
 {
   "displayName": "Lynx Keymap Pro (AI ऑर्केस्ट्रेटर)",
-  "description": "AI-संचालित IDEs के लिए अंतिम कीबोर्ड शॉर्टकट सुइट। ⚡️ VSCode, Cursor, Windsurf, Trae.ai और Kiro में बुद्धिमान AI ऑर्केस्ट्रेशन, एक-कीस्ट्रोक टर्मिनल स्विचिंग, और युद्ध-परीक्षणित 75% कीबोर्ड लेआउट के साथ अपने वर्कफ़्लो को सुपरचार्ज करें। क्लिक करना बंद करें। कमांड देना शुरू करें।",
+  "description": "AI-संचालित IDEs के लिए अंतिम कीबोर्ड शॉर्टकट सुइट। ⚡️ VSCode, Cursor, Windsurf, Trae-ai, Kiro, Antigravity और Firebase.studio में बुद्धिमान AI ऑर्केस्ट्रेशन, एक-कीस्ट्रोक टर्मिनल स्विचिंग, और युद्ध-परीक्षणित कीबोर्ड लेआउट के साथ अपने वर्कफ़्लो को सुपरचार्ज करें। क्लिक करना बंद करें। कमांड देना शुरू करें।",
 
   "lynx.notification.ai.enabled": "({0}) AI सुझाव: सक्षम ✅",
   "lynx.notification.ai.disabled": "({0}) AI सुझाव: अक्षम ❌",
 
-  "ATM.notification.install.required": "GitLab पैनल का उपयोग करने के लिए, आपको \"ATM\" एक्सटेंशन (@gohitx) इंस्टॉल करना होगा।",
-  "ATM.notification.install.action": "📥 ATM डाउनलोड और इंस्टॉल करें"
+  "ATM.notification.install.required": "GitLab पैनल का उपयोग करने के लिए, आपको \"ATM\" एक्सटेंशन by(@gohitx) इंस्टॉल करना होगा।",
+  "ATM.notification.install.action": "📥 ATM डाउनलोड करें"
 }

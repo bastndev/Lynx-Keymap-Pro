@@ -28,7 +28,7 @@
 
 <h2 align="center">Lynx Keymap Pro — <b>Справочник сочетаний клавиш</b></h2>
 
-> Оптимизировано для клавиатур **pro%** в VSCode · Cursor · Windsurf · Trae.ai · Kiro · Antigravity & Firebase.studio.
+> Оптимизировано для клавиатур **Pro** в VSCode · Cursor · Windsurf · Trae-ai · Kiro · Antigravity & Firebase.studio.
 
 ---
 
@@ -199,7 +199,7 @@ ext install bastndev.lynx-keymap-pro
 ### Способ 2 — Представление расширений
 
 1. Открыть расширения (`Ctrl+Shift+X` / `⌘+Shift+X`)
-2. Найдите **"Lynx Keymap pro%"**
+2. Найдите **"Lynx Keymap Pro"**
 3. Нажмите **"Установить"**
 
 ---
@@ -233,7 +233,7 @@ ext install bastndev.lynx-keymap-pro
 
 <div align="center">
 
-**Приятного использования 🎉 Lynx Keymap pro% успешно установлено!**  
+**Приятного использования 🎉 Lynx Keymap Pro успешно установлено!**  
 _Нашли ошибку или есть предложения? [Откройте issue](https://github.com/bastndev/Lynx-Keymap-pro/issues/new)_
 
 <sub>Сделано в 🇵🇪 пользователем <a href="https://gohit.xyz">Gohit X</a> · Лицензия <a href="https://github.com/bastndev/Lynx-Keymap-pro/blob/main/LICENSE">`MIT`</a></sub>

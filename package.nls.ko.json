@@ -1,10 +1,10 @@
 {
   "displayName": "Lynx Keymap Pro (AI 오케스트레이터)",
-  "description": "AI 기반 IDE를 위한 최고의 키보드 단축키 모음. ⚡️ 지능형 AI 오케스트레이션, 원키 터미널 전환 및 검증된 75% 키보드 레이아웃으로 VSCode, Cursor, Windsurf, Trae.ai 및 Kiro에서 워크플로우를 강화하세요. 클릭은 멈추고, 명령을 시작하세요.",
+  "description": "AI 기반 IDE를 위한 궁극의 키보드 단축키 제품군입니다. ⚡️ 지능형 AI 오케스트레이션, 원키 터미널 전환 및 검증된 키보드 레이아웃을 통해 VSCode, Cursor, Windsurf, Trae-ai, Kiro, Antigravity 및 Firebase.studio에서 워크플로를 강화하세요. 클릭을 멈추고 명령을 시작하세요.",
 
-  "lynx.notification.ai.enabled": "({0}) AI 제안: 켜짐 ✅",
-  "lynx.notification.ai.disabled": "({0}) AI 제안: 꺼짐 ❌",
+  "lynx.notification.ai.enabled": "({0}) AI 추천: 활성화됨 ✅",
+  "lynx.notification.ai.disabled": "({0}) AI 추천: 비활성화됨 ❌",
 
-  "ATM.notification.install.required": "GitLab 패널을 사용하려면 \"ATM\" 확장 프로그램(@gohitx)을 설치해야 합니다.",
-  "ATM.notification.install.action": "📥 ATM 다운로드 및 설치"
+  "ATM.notification.install.required": "GitLab 패널을 사용하려면 \"ATM\" 확장 프로그램 by(@gohitx)을 설치해야 합니다。",
+  "ATM.notification.install.action": "📥 ATM 다운로드"
 }
