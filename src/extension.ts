@@ -50,6 +50,7 @@ export async function activate(context: vscode.ExtensionContext) {
   await context.workspaceState.update(STORAGE_KEYS.PANEL_POSITION,           undefined);
   await context.globalState.update(STORAGE_KEYS.ORIGINAL_TABS_ENABLED,       undefined);
   await context.globalState.update(STORAGE_KEYS.ORIGINAL_PANEL_SHOW_LABELS,  undefined);
+  await context.globalState.update(STORAGE_KEYS.ORIGINAL_TABS_LOCATION,      undefined);
 
   // If the terminal was left in side-panel mode, close the auxiliary bar on startup.
   // Some editors restore it aggressively, so we retry at staggered intervals.

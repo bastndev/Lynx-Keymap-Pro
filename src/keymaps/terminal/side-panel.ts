@@ -98,11 +98,9 @@ export class TerminalManager extends BaseTerminalManager {
       async () => {
         try {
           const current        = context.workspaceState.get<string>(STORAGE_KEYS.PANEL_POSITION);
-          const isInBottomPanel = current === PANEL_POSITIONS.BOTTOM;
+          const isInSidePanel  = current === PANEL_POSITIONS.LEFT;
 
-          if (isInBottomPanel) {
-            await vscode.commands.executeCommand('workbench.action.terminal.new');
-          } else {
+          if (isInSidePanel) {
             await vscode.commands.executeCommand('workbench.action.closeAuxiliaryBar');
             await vscode.commands.executeCommand('workbench.action.terminal.new');
             // VS Code may briefly re-assert the AuxBar after terminal.new;
@@ -112,6 +110,8 @@ export class TerminalManager extends BaseTerminalManager {
               vscode.commands.executeCommand('workbench.action.closeAuxiliaryBar'),
               applyTerminalSettings(false, false),
             ]);
+          } else {
+            await vscode.commands.executeCommand('workbench.action.terminal.new');
           }
         } catch (error) {
           console.error(`${LOG_PREFIX} Smart new terminal failed:`, error);
