@@ -35,6 +35,7 @@ Lynx Keymap  — supercharges your workflow with curated keybindings for VSCode,
 - **Change**: update README.md 👁️ to 🖼️.
 
 ### Improved
+- **Terminal bottom**: now is more smart.
 
 ---
 ## [2.3.0] - 2026-05-08
