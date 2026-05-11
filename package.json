@@ -2,7 +2,7 @@
   "name": "lynx-keymap",
   "displayName": "%displayName%",
   "description": "%description%",
-  "version": "2.3.0",
+  "version": "2.3.1",
   "publisher": "bastndev",
   "license": "MIT",
   "engines": {
@@ -12,13 +12,16 @@
   "keywords": [
     "AI Orchestrator",
     "productivity",
+    "claude code",
     "antigravity",
     "keybindings",
     "shortcuts",
+    "opencode",
     "windows",
     "keymap",
     "linux",
     "macos",
+    "codex",
     "2026",
     "ai"
   ],
