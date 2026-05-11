@@ -43,7 +43,7 @@
 | opencode/ClaudeCode           | `Alt + CapsLock` | `Alt + CapsLock` | `Alt + CapsLock` |
 
 <details>
-<summary>👁️ Ver Captura de Pantalla</summary>
+<summary>🖼️ Ver Captura de Pantalla</summary>
 <br>
 
 ![OpenCode / ClaudeCode](https://raw.githubusercontent.com/bastndev/Lynx-Keymap-pro/refs/heads/main/public/github/images/screenshot/CLI.webp)
