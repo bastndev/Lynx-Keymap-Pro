@@ -221,7 +221,7 @@
 Pegue el siguiente comando y presione `Enter`:
 
 ```
-ext install bastndev.lynx-keymap-pro
+ext install bastndev.lynx-keymap
 ```
 
 ### Método 2 — Vista de Extensiones
@@ -253,7 +253,7 @@ ext install bastndev.lynx-keymap-pro
 
 | Extensión                                                                                                                                                                                                                  | Nombre/>                                                      | Descripción                                                                                                                                                                                                        |
 | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| [![Lynx Keymap 75%](https://bastndev.gallerycdn.vsassets.io/extensions/bastndev/lynx-keymap-75/2.0.4/1777933884935/Microsoft.VisualStudio.Services.Icons.Default)](https://open-vsx.org/extension/bastndev/lynx-keymap-75) | [Lynx Keymap 75%](https://github.com/bastndev/Lynx-Keymap-75) | Estandariza atajos de teclado optimizados para teclados 75%. Compatible con cualquier editor de código. Mejora la eficiencia y experiencia del desarrollador. **`Si tienes un teclado 75%, mejor descarga este.`** |
+| [![My Skills](https://open-vsx.org/api/bastndev/my-skills/latest/file/icon.png)](https://open-vsx.org/extension/bastndev/my-skills) | [My Skills](https://github.com/bastndev/My-Skills) | Crea, instala y administra instrucciones de IA reutilizables para tus proyectos, para que tu asistente de programación ya conozca tu estilo, reglas y flujo de trabajo. |
 | [![ATM](https://open-vsx.org/api/bastndev/atm/1.9.4/file/icon.png)](https://open-vsx.org/extension/bastndev/atm)                                                                                                           | [ATM](https://github.com/bastndev/ATM)                        | Un conjunto de herramientas todo en uno 👻 que potencia tu flujo de trabajo con funciones esenciales como Error Lens, Git Blame, Env Protection y capturas de código en los principales editores.                  |
 | [![Lynx Theme Pro](https://bastndev.gallerycdn.vsassets.io/extensions/bastndev/lynx-theme/5.0.1/1777191854738/Microsoft.VisualStudio.Services.Icons.Default)](https://open-vsx.org/extension/bastndev/lynx-theme)          | [Lynx Theme Pro](https://github.com/bastndev/Lynx-Theme)      | Una extensión profesional con seis temas disponibles: Dark, Light, Night, Ghibli, Coffee y Kiro—con iconos integrados. Cada tema está optimizado para ofrecer una experiencia visual más placentera.               |
 

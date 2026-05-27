@@ -221,7 +221,7 @@
 다음 명령어를 붙여넣고 `Enter`를 누릅니다:
 
 ```
-ext install bastndev.lynx-keymap-pro
+ext install bastndev.lynx-keymap
 ```
 
 ### 방법 2 — 확장 프로그램 보기
@@ -253,7 +253,7 @@ ext install bastndev.lynx-keymap-pro
 
 | 확장 프로그램                                                                                                                                                                                                              | 이름/>                                                        | 설명                                                                                                                                                                               |
 | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [![Lynx Keymap 75%](https://bastndev.gallerycdn.vsassets.io/extensions/bastndev/lynx-keymap-75/2.0.4/1777933884935/Microsoft.VisualStudio.Services.Icons.Default)](https://open-vsx.org/extension/bastndev/lynx-keymap-75) | [Lynx Keymap 75%](https://github.com/bastndev/Lynx-Keymap-75) | 75% 키보드에 최적화된 표준 키보드 단축키입니다. 모든 코드 에디터와 호환되며 개발 효율성과 경험을 향상시킵니다. **`75% 키보드를 사용 중이라면 이것을 다운로드하는 것이 좋습니다.`** |
+| [![My Skills](https://open-vsx.org/api/bastndev/my-skills/latest/file/icon.png)](https://open-vsx.org/extension/bastndev/my-skills) | [My Skills](https://github.com/bastndev/My-Skills) | 프로젝트에서 재사용할 수 있는 AI 지침을 만들고, 설치하고, 관리하여 코딩 어시스턴트가 당신의 스타일, 규칙, 워크플로를 미리 알 수 있게 합니다. |
 | [![ATM](https://open-vsx.org/api/bastndev/atm/1.9.4/file/icon.png)](https://open-vsx.org/extension/bastndev/atm)                                                                                                           | [ATM](https://github.com/bastndev/ATM)                        | Error Lens, Git Blame, 환경 보호, 코드 스크린샷 등 핵심 기능을 통해 주요 에디터에서의 워크플로를 크게 향상시키는 올인원 툴킷 👻입니다.                                             |
 | [![Lynx Theme Pro](https://bastndev.gallerycdn.vsassets.io/extensions/bastndev/lynx-theme/5.0.1/1777191854738/Microsoft.VisualStudio.Services.Icons.Default)](https://open-vsx.org/extension/bastndev/lynx-theme)          | [Lynx Theme Pro](https://github.com/bastndev/Lynx-Theme)      | Dark, Light, Night, Ghibli, Coffee, Kiro 6가지 테마를 제공하는 전문 확장 프로그램입니다. 각 테마는 시각적 경험을 최적화하도록 설계되었습니다.                                      |
 

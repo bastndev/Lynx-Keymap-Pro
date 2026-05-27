@@ -221,7 +221,7 @@
 Dán lệnh sau và nhấn `Enter`:
 
 ```
-ext install bastndev.lynx-keymap-pro
+ext install bastndev.lynx-keymap
 ```
 
 ### Cách 2 — Chế độ xem Tiện ích mở rộng
@@ -253,7 +253,7 @@ ext install bastndev.lynx-keymap-pro
 
 | Tiện ích mở rộng                                                                                                                                                                                                           | Tên/>                                                         | Mô tả                                                                                                                                                                                                                |
 | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [![Lynx Keymap 75%](https://bastndev.gallerycdn.vsassets.io/extensions/bastndev/lynx-keymap-75/2.0.4/1777933884935/Microsoft.VisualStudio.Services.Icons.Default)](https://open-vsx.org/extension/bastndev/lynx-keymap-75) | [Lynx Keymap 75%](https://github.com/bastndev/Lynx-Keymap-75) | Chuẩn hóa các phím tắt được tối ưu hóa cho bàn phím 75%. Tương thích với bất kỳ trình chỉnh sửa mã nào. Nâng cao hiệu quả và trải nghiệm của nhà phát triển. **`Nếu bạn có bàn phím 75%, tốt hơn nên tải bản này.`** |
+| [![My Skills](https://open-vsx.org/api/bastndev/my-skills/latest/file/icon.png)](https://open-vsx.org/extension/bastndev/my-skills) | [My Skills](https://github.com/bastndev/My-Skills) | Tạo, cài đặt và quản lý các hướng dẫn AI có thể tái sử dụng cho dự án của bạn, để trợ lý lập trình đã biết sẵn phong cách, quy tắc và quy trình làm việc của bạn. |
 | [![ATM](https://open-vsx.org/api/bastndev/atm/1.9.4/file/icon.png)](https://open-vsx.org/extension/bastndev/atm)                                                                                                           | [ATM](https://github.com/bastndev/ATM)                        | Bộ công cụ tất cả trong một 👻 giúp tăng cường quy trình làm việc của bạn với các tính năng thiết yếu như Error Lens, Git Blame, bảo vệ Env và chụp ảnh màn hình mã trên các trình chỉnh sửa chính.                  |
 | [![Lynx Theme Pro](https://bastndev.gallerycdn.vsassets.io/extensions/bastndev/lynx-theme/5.0.1/1777191854738/Microsoft.VisualStudio.Services.Icons.Default)](https://open-vsx.org/extension/bastndev/lynx-theme)          | [Lynx Theme Pro](https://github.com/bastndev/Lynx-Theme)      | Một tiện ích mở rộng chuyên nghiệp với sáu chủ đề có sẵn: Dark, Light, Night, Ghibli, Coffee và Kiro — tích hợp các biểu tượng. Mỗi chủ đề được tối ưu hóa để mang lại trải nghiệm thị giác dễ chịu hơn.             |
 
