@@ -50,16 +50,16 @@
 
 </details>
 
----
-
 <br>
+
+## ⌨️ General Keybindings
 
 | Command                               | 🍎 macOS                | 🟦 Windows / 🐧 Linux        | Supported |
 | :------------------------------------ | :---------------------- | :--------------------------- | :-------: |
 | Open Explorer                         | `⌘ + 1`                 | `Ctrl + 1`                   |    ✅     |
 | Open Source Control                   | `⌘ + 2`                 | `Ctrl + 2`                   |    ✅     |
-| Open Extensions                       | `⌘ + 3`                 | `Ctrl + 3`                   |    ✅     |
-| Open F1-Quick Switch                  | `⌘ + 4`                 | `Ctrl + 4`                   |    ✅     |
+| SKILLS                                | `⌘ + 3`                 | `Ctrl + 3`                   |    ✅     |
+| Open Extensions                       | `⌘ + 4`                 | `Ctrl + 4`                   |    ✅     |
 | Toggle Sidebar                        | `⌘ + Tab`               | `Ctrl + Tab`                 |    ✅     |
 | Quick Open File                       | `⇧ + ⌥ + E`             | `Shift + Alt + E`            |    ✅     |
 | Go to Line                            | `⇧ + ⌥ + W`             | `Shift + Alt + W`            |    ✅     |
@@ -85,11 +85,10 @@
 | Terminal Bottom (toggle)              | `⌥ + E`                 | `Alt + E`                    |    ✅     |
 | Terminal Left/Right (toggle)          | `⌥ + CapsLock`          | `Alt + CapsLock`             |    ✅     |
 | Quick Open Terminal                   | `⌥ + W`                 | `Alt + W`                    |    ✅     |
-| New Terminal                          | <code>⌘ + \`</code>     | <code>Ctrl + \`</code>       |    ✅     |
+| Maximize / Minimize Panel             | <code>⌘ + \`</code>     | <code>Ctrl + \`</code>       |    ✅     |
 | Kill Terminal                         | <code>⌘ + ⌥ + \`</code> | <code>Ctrl + Alt + \`</code> |    ✅     |
 | Terminal — Clear Line                 | `⌘ + ⌥ + Backspace`     | `Ctrl + Alt + Backspace`     |    ✅     |
-| Terminal — Complete Word              | `⌥ + ,`                 | `Alt + ,`                    |    ✅     |
-| Maximize / Minimize Panel             | `⌘ + Esc`               | `Ctrl + Esc`                 |    ✅     |
+| Terminal — Complete Word              | `⌘ + ,`                 | `Ctrl + ,`                   |    ✅     |
 | -                                     | -                       | -                            |    N/A    |
 | **Smart Close** — AI Chat or Terminal | `⌘ + CapsLock`          | `Ctrl + CapsLock`            |    ✅     |
 | Create New AI Session                 | `⌥ + A`                 | `Alt + A`                    |    ✅     |
@@ -106,7 +105,7 @@
 > **Smart Close** (`Ctrl + CapsLock`) is context-aware:
 >
 > - If the **terminal** is occupying the side panel → closes the terminal.
-> - Otherwise → opens / closes the **AI Chat**.
+> - Otherwise → opens/closes the **AI Chat**.
 
 ---
 
@@ -114,14 +113,15 @@
 
 > To use these commands, you must first go to **Source Control** (as they do not work directly) or press the shortcut **_`Ctrl + 2`_**.
 
-| Command                    | 🍎 macOS         | 🟦 Windows           | 🐧 Linux             |
-| :------------------------- | :--------------- | :------------------- | :------------------- |
-| Stage All                  | `⌥ + 1`          | `Alt + 1`            | `Alt + 1`            |
-| Generate AI Commit Message | `⌥ + 2`          | `Alt + 2`            | `Alt + 2`            |
-| Unstage All                | `⌥ + 3`          | `Alt + 3`            | `Alt + 3`            |
-| Commit                     | `⌥ + Return`     | `Alt + Enter`        | `Alt + Enter`        |
-| Push                       | `⌘ + ⌥ + Return` | `Ctrl + Alt + Enter` | `Ctrl + Alt + Enter` |
-| View Git Changes           | `⌥ + L`          | `Alt + L`            | `Alt + L`            |
+| Command                    | 🍎 macOS                | 🟦 Windows                       | 🐧 Linux                         |
+| :------------------------- | :---------------------- | :------------------------------- | :------------------------------- |
+| Stage All                  | `⌥ + 1`                 | `Alt + 1`                        | `Alt + 1`                        |
+| Generate AI Commit Message | `⌥ + 2`                 | `Alt + 2`                        | `Alt + 2`                        |
+| Unstage All                | `⌥ + 3`                 | `Alt + 3`                        | `Alt + 3`                        |
+| Commit                     | `⌥ + Return`            | `Alt + Enter`                    | `Alt + Enter`                    |
+| Push                       | `⌘ + ⌥ + Return`        | `Ctrl + Alt + Enter`             | `Ctrl + Alt + Enter`             |
+| View Git Changes           | `⌥ + L`                 | `Alt + L`                        | `Alt + L`                        |
+| Git Reset Hard HEAD        | `⌘ + ⇧ + ⌥ + Backspace` | `Ctrl + Shift + Alt + Backspace` | `Ctrl + Shift + Alt + Backspace` |
 
 ---
 
@@ -139,22 +139,22 @@
 
 ## ▶️ Debugging
 
-| Command            | 🍎 macOS | 🟦 Windows | 🐧 Linux  |
-| :----------------- | :------- | :--------- | :-------- |
-| Start Debugging    | `⌥ + P`  | `Alt + P`  | `Alt + P` |
-| Restart Debugging  | `⌥ + O`  | `Alt + O`  | `Alt + O` |
-| Stop Debugging     | `⌥ + I`  | `Alt + I`  | `Alt + I` |
-| Open Debug Console | `⌥ + B`  | `Alt + B`  | `Alt + B` |
+| Command           | 🍎 macOS | 🟦 Windows | 🐧 Linux  |
+| :---------------- | :------- | :--------- | :-------- |
+| Start Debugging   | `⌥ + P`  | `Alt + P`  | `Alt + P` |
+| Restart Debugging | `⌥ + O`  | `Alt + O`  | `Alt + O` |
+| Stop Debugging    | `⌥ + I`  | `Alt + I`  | `Alt + I` |
 
 ---
 
-<br>
+## 🧩 Terminal [+]
 
-## 🧩 Extensions [+]
-
-| Command           | 🍎 macOS | 🟦 Windows | 🐧 Linux  |
-| :---------------- | :------- | :--------- | :-------- |
-| Open GitLab Panel | `⌥ + V`  | `Alt + V`  | `Alt + V` |
+| Command               | 🍎 macOS               | 🟦 Windows                    | 🐧 Linux                      |
+| :-------------------- | :--------------------- | :---------------------------- | :---------------------------- |
+| Swap Project Terminal | `Alt + Q - W`          | `Alt + Q - W`                 | `Alt + Q - W`                 |
+| Close Terminal        | `Alt + Q - E`          | `Alt + Q - E`                 | `Alt + Q - E`                 |
+| Smart New Terminal    | <code>⌘ + ⇧ + `</code> | <code>Ctrl + Shift + `</code> | <code>Ctrl + Shift + `</code> |
+| Kill Terminal         | <code>⌘ + ⌥ + `</code> | <code>Ctrl + Alt + `</code>   | <code>Ctrl + Alt + `</code>   |
 
 <br>
 
