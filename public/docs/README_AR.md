@@ -1,6 +1,6 @@
 <a name="readme-top"></a>
 
-![Lynx Keymap pro](https://raw.githubusercontent.com/bastndev/Lynx-Keymap-pro/refs/heads/main/public/github/images/banner.webp)
+![Lynx Keymap pro](https://raw.githubusercontent.com/bastndev/Lynx-Keymap-pro/refs/heads/main/public/github/banner.webp)
 
 <p align="center">
     <img src="https://vsmarketplacebadges.dev/version-short/bastndev.lynx-keymap.jpg?style=for-the-badge&colorA=fa9905&colorB=EEEEEE&color=000000&label=VERSION" alt="Version">&nbsp;
@@ -37,10 +37,10 @@
 
 | الأمر                        | 🍎 macOS         | 🟦 Windows       | 🐧 Linux         |
 | :--------------------------- | :--------------- | :--------------- | :--------------- |
-| تبديل المحطة الطرفية للمشروع | `Alt + Q - W`    | `Alt + Q - W`    | `Alt + Q - W`    |
-| إغلاق المحطة الطرفية         | `Alt + Q - E`    | `Alt + Q - E`    | `Alt + Q - E`    |
-| -                            | -                | -                | -                |
-| opencode/ClaudeCode          | `Alt + CapsLock` | `Alt + CapsLock` | `Alt + CapsLock` |
+| SKILLS | `⌘ + 3` | `Ctrl + 3` | `Ctrl + 3` |
+| GitLab | `Alt + B` | `Alt + B` | `Alt + B` |
+| - | - | - | - |
+| OpenCode / ClaudeCode | `Alt + CapsLock` | `Alt + CapsLock` | `Alt + CapsLock` |
 
 <details>
 <summary>🖼️ عرض لقطة الشاشة</summary>
@@ -50,16 +50,16 @@
 
 </details>
 
----
-
 <br>
+
+## ⌨️ اختصارات عامة Pro
 
 | الأمر                                       | 🍎 macOS                | 🟦 Windows / 🐧 Linux        | مدعوم |
 | :------------------------------------------ | :---------------------- | :--------------------------- | :---: |
 | فتح المستكشف                                | `⌘ + 1`                 | `Ctrl + 1`                   |  ✅   |
 | فتح التحكم بالمصدر                          | `⌘ + 2`                 | `Ctrl + 2`                   |  ✅   |
-| فتح الإضافات                                | `⌘ + 3`                 | `Ctrl + 3`                   |  ✅   |
-| فتح F1-Quick Switch                         | `⌘ + 4`                 | `Ctrl + 4`                   |  ✅   |
+| SKILLS | `⌘ + 3` | `Ctrl + 3` | ✅ |
+| فتح الإضافات | `⌘ + 4` | `Ctrl + 4` | ✅ |
 | تبديل الشريط الجانبي                        | `⌘ + Tab`               | `Ctrl + Tab`                 |  ✅   |
 | فتح ملف بسرعة                               | `⇧ + ⌥ + E`             | `Shift + Alt + E`            |  ✅   |
 | الانتقال إلى سطر                            | `⇧ + ⌥ + W`             | `Shift + Alt + W`            |  ✅   |
@@ -85,11 +85,10 @@
 | المحطة الطرفية السفلية (تبديل)              | `⌥ + E`                 | `Alt + E`                    |  ✅   |
 | المحطة الطرفية يسار/يمين (تبديل)            | `⌥ + CapsLock`          | `Alt + CapsLock`             |  ✅   |
 | فتح المحطة الطرفية بسرعة                    | `⌥ + W`                 | `Alt + W`                    |  ✅   |
-| محطة طرفية جديدة                            | <code>⌘ + \`</code>     | <code>Ctrl + \`</code>       |  ✅   |
+| تكبير / تصغير اللوحة | <code>⌘ + `</code> | <code>Ctrl + `</code> | ✅ |
 | إنهاء المحطة الطرفية                        | <code>⌘ + ⌥ + \`</code> | <code>Ctrl + Alt + \`</code> |  ✅   |
 | مسح السطر في المحطة الطرفية                 | `⌘ + ⌥ + Backspace`     | `Ctrl + Alt + Backspace`     |  ✅   |
-| إكمال الكلمة في المحطة الطرفية              | `⌥ + ,`                 | `Alt + ,`                    |  ✅   |
-| تكبير / تصغير اللوحة                        | `⌘ + Esc`               | `Ctrl + Esc`                 |  ✅   |
+| إكمال الكلمة في المحطة الطرفية              | `⌘ + ,`                 | `Ctrl + ,`                    |  ✅   |
 | -                                           | -                       | -                            |  N/A  |
 | **الإغلاق الذكي** — محادثة الذكاء أو المحطة | `⌘ + CapsLock`          | `Ctrl + CapsLock`            |  ✅   |
 | إنشاء جلسة ذكاء اصطناعي جديدة               | `⌥ + A`                 | `Alt + A`                    |  ✅   |
@@ -122,6 +121,7 @@
 | تأكيد التغييرات (Commit)   | `⌥ + Return`     | `Alt + Enter`        | `Alt + Enter`        |
 | رفع التغييرات (Push)       | `⌘ + ⌥ + Return` | `Ctrl + Alt + Enter` | `Ctrl + Alt + Enter` |
 | عرض تغييرات Git            | `⌥ + L`          | `Alt + L`            | `Alt + L`            |
+| Git Reset Hard HEAD     | `⌘ + ⇧ + ⌥ + Backspace` | `Ctrl + Shift + Alt + Backspace` | `Ctrl + Shift + Alt + Backspace` |
 
 ---
 
@@ -144,15 +144,17 @@
 | بدء تصحيح الأخطاء         | `⌥ + P`  | `Alt + P`  | `Alt + P` |
 | إعادة تشغيل تصحيح الأخطاء | `⌥ + O`  | `Alt + O`  | `Alt + O` |
 | إيقاف تصحيح الأخطاء       | `⌥ + I`  | `Alt + I`  | `Alt + I` |
-| فتح وحدة تحكم التصحيح     | `⌥ + B`  | `Alt + B`  | `Alt + B` |
 
 ---
 
-## 🧩 الإضافات [+]
+## 🧩 المحطة الطرفية [+]
 
-| الأمر           | 🍎 macOS | 🟦 Windows | 🐧 Linux  |
-| :-------------- | :------- | :--------- | :-------- |
-| فتح لوحة GitLab | `⌥ + V`  | `Alt + V`  | `Alt + V` |
+| الأمر | 🍎 macOS | 🟦 Windows | 🐧 Linux |
+| :------ | :------ | :--------- | :------- |
+| تبديل المحطة الطرفية للمشروع | `Alt + Q - W` | `Alt + Q - W` | `Alt + Q - W` |
+| إغلاق المحطة الطرفية | `Alt + Q - E` | `Alt + Q - E` | `Alt + Q - E` |
+| محطة طرفية ذكية جديدة | <code>⌘ + ⇧ + `</code> | <code>Ctrl + Shift + `</code> | <code>Ctrl + Shift + `</code> |
+| إنهاء المحطة الطرفية | <code>⌘ + ⌥ + `</code> | <code>Ctrl + Alt + `</code> | <code>Ctrl + Alt + `</code> |
 
 <br>
 

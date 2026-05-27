@@ -1,15 +1,9 @@
 import * as vscode from 'vscode';
-import {
-  STORAGE_KEYS,
-  LOG_PREFIX,
-  PANEL_POSITIONS,
-  saveOriginalSettings,
-  restoreOriginalSettings,
-  applyTerminalSettings,
-  BaseTerminalManager,
-} from './shared';
+import { STORAGE_KEYS, LOG_PREFIX, PANEL_POSITIONS } from '../../shared/constants';
+import { BaseManager } from '../../shared/base-manager';
+import { saveOriginalSettings, restoreOriginalSettings, applyTerminalSettings } from './settings';
 
-export class BottomTerminalManager extends BaseTerminalManager {
+export class BottomTerminalManager extends BaseManager {
 
   public registerCommands(context: vscode.ExtensionContext): void {
     const toggleCmd = vscode.commands.registerCommand(

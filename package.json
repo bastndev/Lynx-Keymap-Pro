@@ -2,7 +2,7 @@
   "name": "lynx-keymap",
   "displayName": "%displayName%",
   "description": "%description%",
-  "version": "2.3.1",
+  "version": "2.4.1",
   "publisher": "bastndev",
   "license": "MIT",
   "engines": {
@@ -51,7 +51,7 @@
     "onStartupFinished"
   ],
   "main": "./dist/extension.js",
-  
+
   "contributes": {
 "keybindings": [
         {
@@ -65,11 +65,9 @@
         "mac"    : "cmd+p",
         "command": "-workbench.action.quickOpen"
       },{
-        "key"    : "alt+,", 
-        "mac"    : "alt+,",
-        "command": "workbench.action.terminal.sendSequence",
-        "args"   : {"text": "\u001b[C"},
-        "when"   : "terminalFocus && !terminalSuggestWidgetVisible"
+        "key"    : "ctrl+,",
+        "mac"    : "cmd+,",
+        "command": "-workbench.action.openAntigravitySettings"
       },{
         "key"    : "ctrl+alt+backspace",
         "mac"    : "cmd+alt+backspace",
@@ -80,6 +78,10 @@
         "key"    : "ctrl+enter",
         "mac"    : "cmd+return",
         "command": "-github.copilot.generate"
+      },{
+        "key"    : "alt+b",
+        "mac"    : "alt+b",
+        "command": "-workbench.debug.action.toggleRepl"
       },
 
 
@@ -89,15 +91,14 @@
 
 
 
-      {
-        "key"    : "alt+v",
-        "mac"    : "alt+v",
-        "command": "lynx-keymap.openGitlabPanel"
-      },
       {
         "key"    : "alt+b",
         "mac"    : "alt+b",
-        "command": "workbench.debug.action.toggleRepl"
+        "command": "lynx-keymap.openGitlabPanel"
+      },{
+        "key"    : "ctrl+3",
+        "mac"    : "cmd+3",
+        "command": "lynx-keymap.openMySkillsPanel"
       },
 
 
@@ -213,7 +214,25 @@
         "mac"    : "alt+f",
         "command": "editor.action.formatDocument"
       },
-
+      
+      
+      {
+        "key"    : "ctrl+j",
+        "mac"    : "cmd+j",
+        "command": "workbench.action.openSettings"
+      },
+      {
+        "key"    : "ctrl+,", 
+        "mac"    : "cmd+,",
+        "command": "workbench.action.terminal.sendSequence",
+        "args"   : {"text": "\u001b[C"},
+        "when"   : "terminalFocus"
+      },
+      {
+        "key"    : "alt+j",
+        "mac"    : "alt+j",
+        "command": "workbench.action.openSettingsJson"
+      },
 
 
 
@@ -288,8 +307,8 @@
       
       
       {
-        "key"    : "ctrl+escape",
-        "mac"    : "cmd+escape",
+        "key"    : "ctrl+[Backquote]",
+        "mac"    : "cmd+[Backquote]",
         "command": "workbench.action.toggleMaximizedPanel"
       },
       {
@@ -305,8 +324,8 @@
         "mac"    : "cmd+alt+[Backquote]",
         "command": "workbench.action.terminal.kill"
       },{
-        "key"    : "ctrl+[Backquote]",
-        "mac"    : "cmd+[Backquote]",
+        "key"    : "ctrl+shift+[Backquote]",
+        "mac"    : "cmd+shift+[Backquote]",
         "command": "lynx-keymap.smartNewTerminal"
       },
       
@@ -358,6 +377,10 @@
         "command": "git.push",
         "when"   : "scmProvider == git"
       },{
+        "key"    : "ctrl+shift+alt+backspace",
+        "mac"    : "cmd+shift+alt+backspace",
+        "command": "lynx-keymap.gitResetHardHead"
+      },{
         "key"    : "alt+enter",
         "mac"    : "alt+return",
         "command": "git.commit",
@@ -398,8 +421,8 @@
       },
       
       {
-        "key"    : "ctrl+3",
-        "mac"    : "cmd+3",
+        "key"    : "ctrl+4",
+        "mac"    : "cmd+4",
         "command": "workbench.view.extensions"
       },{
         "key"    : "ctrl+2",
@@ -409,6 +432,171 @@
         "key"    : "ctrl+1",
         "mac"    : "cmd+1",
         "command": "workbench.view.explorer"
+      },
+      
+      
+      
+      
+      
+      
+      
+      
+      {
+        "key"    : "a",
+        "mac"    : "a",
+        "command": "workbench.action.terminal.sendSequence",
+        "args"   : {"text": "a"},
+        "when"   : "terminalFocus"
+      },{
+        "key"    : "b",
+        "mac"    : "b",
+        "command": "workbench.action.terminal.sendSequence",
+        "args"   : {"text": "b"},
+        "when"   : "terminalFocus"
+      },{
+        "key"    : "c",
+        "mac"    : "c",
+        "command": "workbench.action.terminal.sendSequence",
+        "args"   : {"text": "c"},
+        "when"   : "terminalFocus"
+      },{
+        "key"    : "d",
+        "mac"    : "d",
+        "command": "workbench.action.terminal.sendSequence",
+        "args"   : {"text": "d"},
+        "when"   : "terminalFocus"
+      },{
+        "key"    : "e",
+        "mac"    : "e",
+        "command": "workbench.action.terminal.sendSequence",
+        "args"   : {"text": "e"},
+        "when"   : "terminalFocus"
+      },{
+        "key"    : "f",
+        "mac"    : "f",
+        "command": "workbench.action.terminal.sendSequence",
+        "args"   : {"text": "f"},
+        "when"   : "terminalFocus"
+      },{
+        "key"    : "g",
+        "mac"    : "g",
+        "command": "workbench.action.terminal.sendSequence",
+        "args"   : {"text": "g"},
+        "when"   : "terminalFocus"
+      },{
+        "key"    : "h",
+        "mac"    : "h",
+        "command": "workbench.action.terminal.sendSequence",
+        "args"   : {"text": "h"},
+        "when"   : "terminalFocus"
+      },{
+        "key"    : "i",
+        "mac"    : "i",
+        "command": "workbench.action.terminal.sendSequence",
+        "args"   : {"text": "i"},
+        "when"   : "terminalFocus"
+      },{
+        "key"    : "j",
+        "mac"    : "j",
+        "command": "workbench.action.terminal.sendSequence",
+        "args"   : {"text": "j"},
+        "when"   : "terminalFocus"
+      },{
+        "key"    : "k",
+        "mac"    : "k",
+        "command": "workbench.action.terminal.sendSequence",
+        "args"   : {"text": "k"},
+        "when"   : "terminalFocus"
+      },{
+        "key"    : "l",
+        "mac"    : "l",
+        "command": "workbench.action.terminal.sendSequence",
+        "args"   : {"text": "l"},
+        "when"   : "terminalFocus"
+      },{
+        "key"    : "m",
+        "mac"    : "m",
+        "command": "workbench.action.terminal.sendSequence",
+        "args"   : {"text": "m"},
+        "when"   : "terminalFocus"
+      },{
+        "key"    : "n",
+        "mac"    : "n",
+        "command": "workbench.action.terminal.sendSequence",
+        "args"   : {"text": "n"},
+        "when"   : "terminalFocus"
+      },{
+        "key"    : "o",
+        "mac"    : "o",
+        "command": "workbench.action.terminal.sendSequence",
+        "args"   : {"text": "o"},
+        "when"   : "terminalFocus"
+      },{
+        "key"    : "p",
+        "mac"    : "p",
+        "command": "workbench.action.terminal.sendSequence",
+        "args"   : {"text": "p"},
+        "when"   : "terminalFocus"
+      },{
+        "key"    : "q",
+        "mac"    : "q",
+        "command": "workbench.action.terminal.sendSequence",
+        "args"   : {"text": "q"},
+        "when"   : "terminalFocus"
+      },{
+        "key"    : "r",
+        "mac"    : "r",
+        "command": "workbench.action.terminal.sendSequence",
+        "args"   : {"text": "r"},
+        "when"   : "terminalFocus"
+      },{
+        "key"    : "s",
+        "mac"    : "s",
+        "command": "workbench.action.terminal.sendSequence",
+        "args"   : {"text": "s"},
+        "when"   : "terminalFocus"
+      },{
+        "key"    : "t",
+        "mac"    : "t",
+        "command": "workbench.action.terminal.sendSequence",
+        "args"   : {"text": "t"},
+        "when"   : "terminalFocus"
+      },{
+        "key"    : "u",
+        "mac"    : "u",
+        "command": "workbench.action.terminal.sendSequence",
+        "args"   : {"text": "u"},
+        "when"   : "terminalFocus"
+      },{
+        "key"    : "v",
+        "mac"    : "v",
+        "command": "workbench.action.terminal.sendSequence",
+        "args"   : {"text": "v"},
+        "when"   : "terminalFocus"
+      },{
+        "key"    : "w",
+        "mac"    : "w",
+        "command": "workbench.action.terminal.sendSequence",
+        "args"   : {"text": "w"},
+        "when"   : "terminalFocus"
+      },{
+        "key"    : "x",
+        "mac"    : "x",
+        "command": "workbench.action.terminal.sendSequence",
+        "args"   : {"text": "x"},
+        "when"   : "terminalFocus"
+      },{
+        "key"    : "y",
+        "mac"    : "y",
+        "command": "workbench.action.terminal.sendSequence",
+        "args"   : {"text": "y"},
+        "when"   : "terminalFocus"
+      },{
+        "key"    : "z",
+        "mac"    : "z",
+        "command": "workbench.action.terminal.sendSequence",
+        "args"   : {"text": "z"},
+        "when"   : "terminalFocus"
       }
     ],
     "commands": [
@@ -418,8 +606,13 @@
       },
 
       {
+        "command": "lynx-keymap.gitResetHardHead",
+        "title"  : "Git: Reset Hard HEAD"
+      },
+
+      {
         "command": "lynx-keymap.openAndCloseAIChat",
-        "title"  : "Open/Close AI Chat"
+        "title"  : "Open and Close AI Chat"
       },{
         "command": "lynx-keymap.openAndCloseAIChatAndTerminal",
         "title"  : "Smart Close: AI Chat or Terminal"
@@ -436,33 +629,34 @@
         "command": "lynx-keymap.toggleAgentMode",
         "title"  : "Toggle AI Agent Mode"
       },{
-        "command": "lynx-keymap.selectCode",
-        "title"  : "AI Select Code"
-      },{
         "command": "lynx.toggleSuggestionAI",
         "title"  : "Toggle AI Suggestions"
+      },{
+        "command": "lynx-keymap.selectCode",
+        "title"  : "AI Select Code"
       },
 
       {
         "command": "lynx-keymap.toggleTerminalLeftAndRight",
-        "title"  : "Toggle Terminal Left/Right"
-      },{
-        "command": "lynx-keymap.smartNewTerminal",
-        "title"  : "Smart New Terminal (context-aware: closes AI Chat only in side-panel mode)"
+        "title"  : "Toggle Terminal Left and Right"
       },{
         "command": "lynx-keymap.toggleTerminalBottom",
         "title"  : "Toggle Terminal Bottom"
       },{
+        "command": "lynx-keymap.smartNewTerminal",
+        "title"  : "Smart New Terminal"
+      },{
+        "command": "lynx-keymap.toggleWordWrap",
+        "title"  : "Toggle Word Wrap"
+      },{
         "command": "lynx-keymap.smartDebugStart",
-        "title"  : "Smart Debug Start (always opens Debug Console at bottom panel)"
+        "title"  : "Smart Debug Start"
       },{
         "command": "lynx-keymap.openGitlabPanel",
         "title"  : "Open GitLab Panel"
-      },
-
-      {
-        "command": "lynx-keymap.toggleWordWrap",
-        "title"  : "Toggle Word Wrap (Global)"
+      },{
+        "command": "lynx-keymap.openMySkillsPanel",
+        "title"  : "Open My Skills Panel"
       }
     ]
   },

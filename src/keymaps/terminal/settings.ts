@@ -1,16 +1,6 @@
 import * as vscode from 'vscode';
-import { LOG_PREFIX, STORAGE_KEYS, PANEL_POSITIONS, PanelPosition } from '../../shared/constants';
-
-export { LOG_PREFIX, STORAGE_KEYS, PANEL_POSITIONS };
-export type { PanelPosition };
-
-// ─── Panel Config ─────────────────────────────────────────────────────────────
-export const TERMINAL_CONFIG  = 'terminal.integrated';
-export const WORKBENCH_CONFIG = 'workbench';
-
-// VS Code may briefly re-assert the auxiliary bar after panel commands;
-// this delay lets the layout settle before a follow-up close takes effect.
-export const LAYOUT_SETTLE_MS = 150;
+import { STORAGE_KEYS } from '../../shared/constants';
+import { TERMINAL_CONFIG, WORKBENCH_CONFIG } from './constants';
 
 export async function saveOriginalSettings(context: vscode.ExtensionContext): Promise<void> {
   const terminalConfig  = vscode.workspace.getConfiguration(TERMINAL_CONFIG);
@@ -74,23 +64,4 @@ export async function restoreOriginalSettings(context: vscode.ExtensionContext):
     context.globalState.update(STORAGE_KEYS.ORIGINAL_TABS_LOCATION,      undefined),
     context.globalState.update(STORAGE_KEYS.ORIGINAL_PANEL_SHOW_LABELS, undefined),
   ]);
-}
-
-// ─── Base Manager ─────────────────────────────────────────────────────────────
-export abstract class BaseTerminalManager {
-  protected disposables: vscode.Disposable[] = [];
-
-  abstract registerCommands(context: vscode.ExtensionContext): void;
-
-  protected register(context: vscode.ExtensionContext, ...cmds: vscode.Disposable[]): void {
-    this.disposables.push(...cmds);
-    context.subscriptions.push(...cmds);
-  }
-
-  public dispose(): void {
-    for (const d of this.disposables) {
-      d.dispose();
-    }
-    this.disposables = [];
-  }
 }

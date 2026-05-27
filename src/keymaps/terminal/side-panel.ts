@@ -1,16 +1,10 @@
 import * as vscode from 'vscode';
-import {
-  STORAGE_KEYS,
-  LOG_PREFIX,
-  PANEL_POSITIONS,
-  LAYOUT_SETTLE_MS,
-  saveOriginalSettings,
-  restoreOriginalSettings,
-  applyTerminalSettings,
-  BaseTerminalManager,
-} from './shared';
+import { STORAGE_KEYS, LOG_PREFIX, PANEL_POSITIONS } from '../../shared/constants';
+import { BaseManager } from '../../shared/base-manager';
+import { LAYOUT_SETTLE_MS } from './constants';
+import { saveOriginalSettings, restoreOriginalSettings, applyTerminalSettings } from './settings';
 
-export class TerminalManager extends BaseTerminalManager {
+export class TerminalManager extends BaseManager {
 
   public registerCommands(context: vscode.ExtensionContext): void {
     const toggleCmd = vscode.commands.registerCommand(

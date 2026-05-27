@@ -7,7 +7,7 @@ let nlsLoadError = false;
 export async function getTranslation(key: string, ...args: string[]): Promise<string> {
   if (!nlsData && !nlsLoadError) {
     try {
-      const ext = vscode.extensions.getExtension('bastndev.lynx-keymap');
+      const ext = vscode.extensions.getExtension('bastndev.lynx-keymap-75');
       if (ext) {
         const lang    = vscode.env.language;
         const rootUri = ext.extensionUri;
@@ -32,13 +32,4 @@ export async function getTranslation(key: string, ...args: string[]): Promise<st
   let text = nlsData?.[key] || key;
   args.forEach((arg, i) => { text = text.replace(`{${i}}`, arg); });
   return text;
-}
-
-export async function notifyToggle(editor: string, enabled: boolean): Promise<void> {
-  const name    = editor.charAt(0).toUpperCase() + editor.slice(1);
-  const message = enabled
-    ? await getTranslation('lynx.notification.ai.enabled',  name)
-    : await getTranslation('lynx.notification.ai.disabled', name);
-
-  vscode.window.showInformationMessage(message);
 }

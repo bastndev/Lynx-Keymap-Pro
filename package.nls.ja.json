@@ -6,5 +6,8 @@
   "lynx.notification.ai.disabled": "({0}) AI サジェスト: 無効 ❌",
 
   "ATM.notification.install.required": "GitLab パネルを使用するには、「ATM」拡張機能 by(@gohitx) をインストールする必要があります。",
-  "ATM.notification.install.action": "📥 ATM をダウンロード"
+  "ATM.notification.install.action": "📥 ATM をダウンロード",
+
+  "MySkills.notification.install.required": "Skills パネルを使用するには、「My Skills」拡張機能 by(@gohitx) をインストールする必要があります。",
+  "MySkills.notification.install.action": "📥 My Skills をダウンロード"
 }

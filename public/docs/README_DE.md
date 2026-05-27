@@ -1,6 +1,6 @@
 <a name="readme-top"></a>
 
-![Lynx Keymap pro](https://raw.githubusercontent.com/bastndev/Lynx-Keymap-pro/refs/heads/main/public/github/images/banner.webp)
+![Lynx Keymap pro](https://raw.githubusercontent.com/bastndev/Lynx-Keymap-pro/refs/heads/main/public/github/banner.webp)
 
 <p align="center">
     <img src="https://vsmarketplacebadges.dev/version-short/bastndev.lynx-keymap.jpg?style=for-the-badge&colorA=fa9905&colorB=EEEEEE&color=000000&label=VERSION" alt="Version">&nbsp;
@@ -37,10 +37,10 @@
 
 | Befehl                    | 🍎 macOS         | 🟦 Windows       | 🐧 Linux         |
 | :------------------------ | :--------------- | :--------------- | :--------------- |
-| Projekt-Terminal wechseln | `Alt + Q - W`    | `Alt + Q - W`    | `Alt + Q - W`    |
-| Terminal schließen        | `Alt + Q - E`    | `Alt + Q - E`    | `Alt + Q - E`    |
-| -                         | -                | -                | -                |
-| opencode/ClaudeCode       | `Alt + CapsLock` | `Alt + CapsLock` | `Alt + CapsLock` |
+| SKILLS | `⌘ + 3` | `Ctrl + 3` | `Ctrl + 3` |
+| GitLab | `Alt + B` | `Alt + B` | `Alt + B` |
+| - | - | - | - |
+| OpenCode / ClaudeCode | `Alt + CapsLock` | `Alt + CapsLock` | `Alt + CapsLock` |
 
 <details>
 <summary>🖼️ Screenshot anzeigen</summary>
@@ -50,16 +50,16 @@
 
 </details>
 
----
-
 <br>
+
+## ⌨️ Allgemeine Tastenkombinationen Pro
 
 | Befehl                                  | 🍎 macOS                | 🟦 Windows / 🐧 Linux        | Unterstützt |
 | :-------------------------------------- | :---------------------- | :--------------------------- | :---------: |
 | Explorer öffnen                         | `⌘ + 1`                 | `Ctrl + 1`                   |     ✅      |
 | Versionskontrolle öffnen                | `⌘ + 2`                 | `Ctrl + 2`                   |     ✅      |
-| Erweiterungen öffnen                    | `⌘ + 3`                 | `Ctrl + 3`                   |     ✅      |
-| F1-Schnellwechsel öffnen                | `⌘ + 4`                 | `Ctrl + 4`                   |     ✅      |
+| SKILLS | `⌘ + 3` | `Ctrl + 3` | ✅ |
+| Erweiterungen öffnen | `⌘ + 4` | `Ctrl + 4` | ✅ |
 | Seitenleiste umschalten                 | `⌘ + Tab`               | `Ctrl + Tab`                 |     ✅      |
 | Datei schnell öffnen                    | `⇧ + ⌥ + E`             | `Shift + Alt + E`            |     ✅      |
 | Gehe zu Zeile                           | `⇧ + ⌥ + W`             | `Shift + Alt + W`            |     ✅      |
@@ -85,11 +85,10 @@
 | Terminal unten (umschalten)             | `⌥ + E`                 | `Alt + E`                    |     ✅      |
 | Terminal Links/Rechts (umschalten)      | `⌥ + CapsLock`          | `Alt + CapsLock`             |     ✅      |
 | Terminal schnell öffnen                 | `⌥ + W`                 | `Alt + W`                    |     ✅      |
-| Neues Terminal                          | <code>⌘ + \`</code>     | <code>Ctrl + \`</code>       |     ✅      |
+| Panel maximieren / minimieren | <code>⌘ + `</code> | <code>Ctrl + `</code> | ✅ |
 | Terminal beenden                        | <code>⌘ + ⌥ + \`</code> | <code>Ctrl + Alt + \`</code> |     ✅      |
 | Terminal — Zeile löschen                | `⌘ + ⌥ + Backspace`     | `Ctrl + Alt + Backspace`     |     ✅      |
-| Terminal — Wort vervollständigen        | `⌥ + ,`                 | `Alt + ,`                    |     ✅      |
-| Panel maximieren / minimieren           | `⌘ + Esc`               | `Ctrl + Esc`                 |     ✅      |
+| Terminal — Wort vervollständigen        | `⌘ + ,`                 | `Ctrl + ,`                    |     ✅      |
 | -                                       | -                       | -                            |     N/A     |
 | **Smart Close** — AI-Chat oder Terminal | `⌘ + CapsLock`          | `Ctrl + CapsLock`            |     ✅      |
 | Neue AI-Sitzung erstellen               | `⌥ + A`                 | `Alt + A`                    |     ✅      |
@@ -122,6 +121,7 @@
 | Commit                         | `⌥ + Return`     | `Alt + Enter`        | `Alt + Enter`        |
 | Push                           | `⌘ + ⌥ + Return` | `Ctrl + Alt + Enter` | `Ctrl + Alt + Enter` |
 | Git-Änderungen anzeigen        | `⌥ + L`          | `Alt + L`            | `Alt + L`            |
+| Git Reset Hard HEAD       | `⌘ + ⇧ + ⌥ + Backspace` | `Ctrl + Shift + Alt + Backspace` | `Ctrl + Shift + Alt + Backspace` |
 
 ---
 
@@ -144,15 +144,17 @@
 | Debugging starten     | `⌥ + P`  | `Alt + P`  | `Alt + P` |
 | Debugging neu starten | `⌥ + O`  | `Alt + O`  | `Alt + O` |
 | Debugging stoppen     | `⌥ + I`  | `Alt + I`  | `Alt + I` |
-| Debug-Konsole öffnen  | `⌥ + B`  | `Alt + B`  | `Alt + B` |
 
 ---
 
-## 🧩 Erweiterungen [+]
+## 🧩 Terminal [+]
 
-| Befehl              | 🍎 macOS | 🟦 Windows | 🐧 Linux  |
-| :------------------ | :------- | :--------- | :-------- |
-| GitLab-Panel öffnen | `⌥ + V`  | `Alt + V`  | `Alt + V` |
+| Befehl | 🍎 macOS | 🟦 Windows | 🐧 Linux |
+| :------ | :------ | :--------- | :------- |
+| Projekt-Terminal wechseln | `Alt + Q - W` | `Alt + Q - W` | `Alt + Q - W` |
+| Terminal schließen | `Alt + Q - E` | `Alt + Q - E` | `Alt + Q - E` |
+| Smart New Terminal | <code>⌘ + ⇧ + `</code> | <code>Ctrl + Shift + `</code> | <code>Ctrl + Shift + `</code> |
+| Terminal beenden | <code>⌘ + ⌥ + `</code> | <code>Ctrl + Alt + `</code> | <code>Ctrl + Alt + `</code> |
 
 <br>
 

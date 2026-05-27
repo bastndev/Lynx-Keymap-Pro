@@ -1,6 +1,6 @@
 <a name="readme-top"></a>
 
-![Lynx Keymap pro](https://raw.githubusercontent.com/bastndev/Lynx-Keymap-pro/refs/heads/main/public/github/images/banner.webp)
+![Lynx Keymap pro](https://raw.githubusercontent.com/bastndev/Lynx-Keymap-pro/refs/heads/main/public/github/banner.webp)
 
 <p align="center">
     <img src="https://vsmarketplacebadges.dev/version-short/bastndev.lynx-keymap.jpg?style=for-the-badge&colorA=fa9905&colorB=EEEEEE&color=000000&label=VERSION" alt="Version">&nbsp;
@@ -37,10 +37,10 @@
 
 | 命令                | 🍎 macOS         | 🟦 Windows       | 🐧 Linux         |
 | :------------------ | :--------------- | :--------------- | :--------------- |
-| 切换项目终端        | `Alt + Q - W`    | `Alt + Q - W`    | `Alt + Q - W`    |
-| 关闭终端            | `Alt + Q - E`    | `Alt + Q - E`    | `Alt + Q - E`    |
-| -                   | -                | -                | -                |
-| opencode/ClaudeCode | `Alt + CapsLock` | `Alt + CapsLock` | `Alt + CapsLock` |
+| SKILLS | `⌘ + 3` | `Ctrl + 3` | `Ctrl + 3` |
+| GitLab | `Alt + B` | `Alt + B` | `Alt + B` |
+| - | - | - | - |
+| OpenCode / ClaudeCode | `Alt + CapsLock` | `Alt + CapsLock` | `Alt + CapsLock` |
 
 <details>
 <summary>🖼️ 查看截图</summary>
@@ -50,16 +50,16 @@
 
 </details>
 
----
-
 <br>
+
+## ⌨️ 通用快捷键 Pro
 
 | 命令                         | 🍎 macOS                | 🟦 Windows / 🐧 Linux        | 支持 |
 | :--------------------------- | :---------------------- | :--------------------------- | :--: |
 | 打开资源管理器               | `⌘ + 1`                 | `Ctrl + 1`                   |  ✅  |
 | 打开源代码管理               | `⌘ + 2`                 | `Ctrl + 2`                   |  ✅  |
-| 打开扩展                     | `⌘ + 3`                 | `Ctrl + 3`                   |  ✅  |
-| 打开 F1 快速切换             | `⌘ + 4`                 | `Ctrl + 4`                   |  ✅  |
+| SKILLS | `⌘ + 3` | `Ctrl + 3` | ✅ |
+| 打开扩展 | `⌘ + 4` | `Ctrl + 4` | ✅ |
 | 切换侧边栏                   | `⌘ + Tab`               | `Ctrl + Tab`                 |  ✅  |
 | 快速打开文件                 | `⇧ + ⌥ + E`             | `Shift + Alt + E`            |  ✅  |
 | 转到行                       | `⇧ + ⌥ + W`             | `Shift + Alt + W`            |  ✅  |
@@ -85,11 +85,10 @@
 | 底部终端（切换）             | `⌥ + E`                 | `Alt + E`                    |  ✅  |
 | 左/右终端（切换）            | `⌥ + CapsLock`          | `Alt + CapsLock`             |  ✅  |
 | 快速打开终端                 | `⌥ + W`                 | `Alt + W`                    |  ✅  |
-| 新建终端                     | <code>⌘ + \`</code>     | <code>Ctrl + \`</code>       |  ✅  |
+| 最大化/最小化面板 | <code>⌘ + `</code> | <code>Ctrl + `</code> | ✅ |
 | 终止终端                     | <code>⌘ + ⌥ + \`</code> | <code>Ctrl + Alt + \`</code> |  ✅  |
 | 终端 — 清除行                | `⌘ + ⌥ + Backspace`     | `Ctrl + Alt + Backspace`     |  ✅  |
-| 终端 — 自动补全单词          | `⌥ + ,`                 | `Alt + ,`                    |  ✅  |
-| 最大化/最小化面板            | `⌘ + Esc`               | `Ctrl + Esc`                 |  ✅  |
+| 终端 — 自动补全单词          | `⌘ + ,`                 | `Ctrl + ,`                    |  ✅  |
 | -                            | -                       | -                            | N/A  |
 | **智能关闭** — AI 聊天或终端 | `⌘ + CapsLock`          | `Ctrl + CapsLock`            |  ✅  |
 | 创建新 AI 会话               | `⌥ + A`                 | `Alt + A`                    |  ✅  |
@@ -122,6 +121,7 @@
 | 提交             | `⌥ + Return`     | `Alt + Enter`        | `Alt + Enter`        |
 | 推送             | `⌘ + ⌥ + Return` | `Ctrl + Alt + Enter` | `Ctrl + Alt + Enter` |
 | 查看 Git 更改    | `⌥ + L`          | `Alt + L`            | `Alt + L`            |
+| Git Reset Hard HEAD | `⌘ + ⇧ + ⌥ + Backspace` | `Ctrl + Shift + Alt + Backspace` | `Ctrl + Shift + Alt + Backspace` |
 
 ---
 
@@ -144,15 +144,17 @@
 | 开始调试       | `⌥ + P`  | `Alt + P`  | `Alt + P` |
 | 重新启动调试   | `⌥ + O`  | `Alt + O`  | `Alt + O` |
 | 停止调试       | `⌥ + I`  | `Alt + I`  | `Alt + I` |
-| 打开调试控制台 | `⌥ + B`  | `Alt + B`  | `Alt + B` |
 
 ---
 
-## 🧩 扩展 [+]
+## 🧩 终端 [+]
 
-| 命令             | 🍎 macOS | 🟦 Windows | 🐧 Linux  |
-| :--------------- | :------- | :--------- | :-------- |
-| 打开 GitLab 面板 | `⌥ + V`  | `Alt + V`  | `Alt + V` |
+| 命令 | 🍎 macOS | 🟦 Windows | 🐧 Linux |
+| :------ | :------ | :--------- | :------- |
+| 切换项目终端 | `Alt + Q - W` | `Alt + Q - W` | `Alt + Q - W` |
+| 关闭终端 | `Alt + Q - E` | `Alt + Q - E` | `Alt + Q - E` |
+| 智能新建终端 | <code>⌘ + ⇧ + `</code> | <code>Ctrl + Shift + `</code> | <code>Ctrl + Shift + `</code> |
+| 终止终端 | <code>⌘ + ⌥ + `</code> | <code>Ctrl + Alt + `</code> | <code>Ctrl + Alt + `</code> |
 
 <br>
 
