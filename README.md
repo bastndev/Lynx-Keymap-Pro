@@ -37,10 +37,10 @@
 
 | Command               | 🍎 macOS         | 🟦 Windows       | 🐧 Linux         |
 | :-------------------- | :--------------- | :--------------- | :--------------- |
-| Swap Project Terminal | `Alt + Q - W`    | `Alt + Q - W`    | `Alt + Q - W`    |
-| Close Terminal        | `Alt + Q - E`    | `Alt + Q - E`    | `Alt + Q - E`    |
+| SKILLS                | `⌘ + 3`          | `Ctrl + 3`       | `Ctrl + 3`       |
+| GitLab                | `Alt + B`        | `Alt + B`        | `Alt + B`        |
 | -                     | -                | -                | -                |
-| opencode/ClaudeCode   | `Alt + CapsLock` | `Alt + CapsLock` | `Alt + CapsLock` |
+| OpenCode / ClaudeCode | `Alt + CapsLock` | `Alt + CapsLock` | `Alt + CapsLock` |
 
 <details>
 <summary>🖼️ View Screenshot</summary>
