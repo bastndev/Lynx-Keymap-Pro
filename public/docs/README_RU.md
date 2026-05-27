@@ -221,7 +221,7 @@
 Вставьте следующую команду и нажмите `Enter`:
 
 ```
-ext install bastndev.lynx-keymap-pro
+ext install bastndev.lynx-keymap
 ```
 
 ### Способ 2 — Представление расширений
@@ -253,7 +253,7 @@ ext install bastndev.lynx-keymap-pro
 
 | Расширение                                                                                                                                                                                                                 | Название/>                                                    | Описание                                                                                                                                                                                                                |
 | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [![Lynx Keymap 75%](https://bastndev.gallerycdn.vsassets.io/extensions/bastndev/lynx-keymap-75/2.0.4/1777933884935/Microsoft.VisualStudio.Services.Icons.Default)](https://open-vsx.org/extension/bastndev/lynx-keymap-75) | [Lynx Keymap 75%](https://github.com/bastndev/Lynx-Keymap-75) | Стандартизирует сочетания клавиш, оптимизированные для 75% клавиатур. Совместимо с любым редактором кода. Повышает эффективность и удобство разработки. **`Если у вас 75% клавиатура, лучше скачайте это расширение.`** |
+| [![My Skills](https://open-vsx.org/api/bastndev/my-skills/latest/file/icon.png)](https://open-vsx.org/extension/bastndev/my-skills) | [My Skills](https://github.com/bastndev/My-Skills) | Создавайте, устанавливайте и управляйте повторно используемыми инструкциями ИИ для своих проектов, чтобы ваш ассистент программирования уже знал ваш стиль, правила и рабочий процесс. |
 | [![ATM](https://open-vsx.org/api/bastndev/atm/1.9.4/file/icon.png)](https://open-vsx.org/extension/bastndev/atm)                                                                                                           | [ATM](https://github.com/bastndev/ATM)                        | Универсальный набор инструментов 👻, который ускоряет ваш рабочий процесс с помощью таких важных функций, как Error Lens, Git Blame, защита окружения и скриншоты кода в основных редакторах.                           |
 | [![Lynx Theme Pro](https://bastndev.gallerycdn.vsassets.io/extensions/bastndev/lynx-theme/5.0.1/1777191854738/Microsoft.VisualStudio.Services.Icons.Default)](https://open-vsx.org/extension/bastndev/lynx-theme)          | [Lynx Theme Pro](https://github.com/bastndev/Lynx-Theme)      | Профессиональное расширение с шестью доступными темами: Dark, Light, Night, Ghibli, Coffee и Kiro — с интегрированными иконками. Каждая тема оптимизирована для приятного визуального восприятия.                       |
 

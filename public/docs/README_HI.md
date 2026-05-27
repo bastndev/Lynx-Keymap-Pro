@@ -221,7 +221,7 @@
 निम्नलिखित कमांड पेस्ट करें और `Enter` दबाएं:
 
 ```
-ext install bastndev.lynx-keymap-pro
+ext install bastndev.lynx-keymap
 ```
 
 ### तरीका 2 — एक्सटेंशन व्यू
@@ -253,7 +253,7 @@ ext install bastndev.lynx-keymap-pro
 
 | एक्सटेंशन                                                                                                                                                                                                                  | नाम                                                           | विवरण                                                                                                                                                         |
 | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [![Lynx Keymap 75%](https://bastndev.gallerycdn.vsassets.io/extensions/bastndev/lynx-keymap-75/2.0.4/1777933884935/Microsoft.VisualStudio.Services.Icons.Default)](https://open-vsx.org/extension/bastndev/lynx-keymap-75) | [Lynx Keymap 75%](https://github.com/bastndev/Lynx-Keymap-75) | 75% कीबोर्ड के लिए अनुकूलित कीबोर्ड शॉर्टकट को मानकीकृत करता है। किसी भी कोड एडिटर के साथ संगत। **`यदि आपके पास 75% कीबोर्ड है, तो यही डाउनलोड करें।`**       |
+| [![My Skills](https://open-vsx.org/api/bastndev/my-skills/latest/file/icon.png)](https://open-vsx.org/extension/bastndev/my-skills) | [My Skills](https://github.com/bastndev/My-Skills) | अपने प्रोजेक्ट्स के लिए पुन: उपयोग योग्य AI निर्देश बनाएं, इंस्टॉल करें और प्रबंधित करें, ताकि आपका कोडिंग असिस्टेंट पहले से ही आपकी शैली, नियम और वर्कफ़्लो जानता हो। |
 | [![ATM](https://open-vsx.org/api/bastndev/atm/1.9.4/file/icon.png)](https://open-vsx.org/extension/bastndev/atm)                                                                                                           | [ATM](https://github.com/bastndev/ATM)                        | एक सर्वसमावेशी टूलकिट 👻 जो Error Lens, Git Blame, Env सुरक्षा और कोड स्क्रीनशॉट जैसी आवश्यक सुविधाओं के साथ आपके वर्कफ़्लो को बेहतर बनाता है।                |
 | [![Lynx Theme Pro](https://bastndev.gallerycdn.vsassets.io/extensions/bastndev/lynx-theme/5.0.1/1777191854738/Microsoft.VisualStudio.Services.Icons.Default)](https://open-vsx.org/extension/bastndev/lynx-theme)          | [Lynx Theme Pro](https://github.com/bastndev/Lynx-Theme)      | एक पेशेवर एक्सटेंशन जिसमें छह थीम हैं: Dark, Light, Night, Ghibli, Coffee और Kiro — एकीकृत आइकन के साथ। प्रत्येक थीम एक बेहतर दृश्य अनुभव के लिए अनुकूलित है। |
 

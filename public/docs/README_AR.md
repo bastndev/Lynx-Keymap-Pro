@@ -221,7 +221,7 @@
 الصق الأمر التالي واضغط `Enter`:
 
 ```
-ext install bastndev.lynx-keymap-pro
+ext install bastndev.lynx-keymap
 ```
 
 ### الطريقة 2 — عرض الإضافات
@@ -253,7 +253,7 @@ ext install bastndev.lynx-keymap-pro
 
 | الإضافة                                                                                                                                                                                                                    | الاسم                                                         | الوصف                                                                                                                                    |
 | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
-| [![Lynx Keymap 75%](https://bastndev.gallerycdn.vsassets.io/extensions/bastndev/lynx-keymap-75/2.0.4/1777933884935/Microsoft.VisualStudio.Services.Icons.Default)](https://open-vsx.org/extension/bastndev/lynx-keymap-75) | [Lynx Keymap 75%](https://github.com/bastndev/Lynx-Keymap-75) | يوحّد اختصارات لوحة المفاتيح المحسّنة للوحات المفاتيح 75%. متوافق مع أي محرر كود. **`إذا كان لديك لوحة مفاتيح 75%، فهذه هي الأنسب لك.`** |
+| [![My Skills](https://open-vsx.org/api/bastndev/my-skills/latest/file/icon.png)](https://open-vsx.org/extension/bastndev/my-skills) | [My Skills](https://github.com/bastndev/My-Skills) | أنشئ وثبّت وأدر تعليمات ذكاء اصطناعي قابلة لإعادة الاستخدام لمشاريعك، حتى يعرف مساعد البرمجة أسلوبك وقواعدك وسير عملك مسبقاً. |
 | [![ATM](https://open-vsx.org/api/bastndev/atm/1.9.4/file/icon.png)](https://open-vsx.org/extension/bastndev/atm)                                                                                                           | [ATM](https://github.com/bastndev/ATM)                        | مجموعة أدوات شاملة 👻 تعزز سير عملك بميزات أساسية مثل Error Lens وGit Blame وحماية المتغيرات البيئية ولقطات الكود عبر المحررات الرئيسية. |
 | [![Lynx Theme Pro](https://bastndev.gallerycdn.vsassets.io/extensions/bastndev/lynx-theme/5.0.1/1777191854738/Microsoft.VisualStudio.Services.Icons.Default)](https://open-vsx.org/extension/bastndev/lynx-theme)          | [Lynx Theme Pro](https://github.com/bastndev/Lynx-Theme)      | إضافة احترافية تتضمن ستة سمات: داكن، فاتح، ليلي، Ghibli، قهوة، وKiro — مع أيقونات مدمجة. كل سمة مُحسّنة لتجربة بصرية أكثر متعة.          |
 
