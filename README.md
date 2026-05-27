@@ -221,7 +221,7 @@
 Paste the following command and press `Enter`:
 
 ```
-ext install bastndev.lynx-keymap-pro
+ext install bastndev.lynx-keymap
 ```
 
 ### Method 2 — Extensions View
