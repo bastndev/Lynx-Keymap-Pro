@@ -6,5 +6,8 @@
   "lynx.notification.ai.disabled": "({0}) اقتراحات الذكاء الاصطناعي: معطل ❌",
 
   "ATM.notification.install.required": "لاستخدام لوحة GitLab، تحتاج إلى تثبيت إضافة \"ATM\" بواسطة(@gohitx).",
-  "ATM.notification.install.action": "📥 تنزيل ATM"
+  "ATM.notification.install.action": "📥 تنزيل ATM",
+
+  "MySkills.notification.install.required": "لاستخدام لوحة Skills، تحتاج إلى تثبيت إضافة \"My Skills\" بواسطة(@gohitx).",
+  "MySkills.notification.install.action": "📥 تنزيل My Skills"
 }

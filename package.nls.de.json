@@ -6,5 +6,8 @@
   "lynx.notification.ai.disabled": "({0}) KI-Vorschläge: DEAKTIVIERT ❌",
 
   "ATM.notification.install.required": "Um das GitLab-Panel zu verwenden, müssen Sie die Erweiterung \"ATM\" von(@gohitx) installieren.",
-  "ATM.notification.install.action": "📥 ATM herunterladen"
+  "ATM.notification.install.action": "📥 ATM herunterladen",
+
+  "MySkills.notification.install.required": "Um das Skills-Panel zu verwenden, müssen Sie die Erweiterung \"My Skills\" von(@gohitx) installieren.",
+  "MySkills.notification.install.action": "📥 My Skills herunterladen"
 }

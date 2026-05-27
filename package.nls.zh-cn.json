@@ -6,5 +6,8 @@
   "lynx.notification.ai.disabled": "({0}) AI 建议：已禁用 ❌",
 
   "ATM.notification.install.required": "要使用 GitLab 面板，您需要安装 \"ATM\" 扩展 由(@gohitx)。",
-  "ATM.notification.install.action": "📥 下载 ATM"
+  "ATM.notification.install.action": "📥 下载 ATM",
+
+  "MySkills.notification.install.required": "要使用 Skills 面板，您需要安装 \"My Skills\" 扩展 由(@gohitx)。",
+  "MySkills.notification.install.action": "📥 下载 My Skills"
 }
