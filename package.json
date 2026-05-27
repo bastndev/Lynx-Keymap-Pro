@@ -2,7 +2,7 @@
   "name": "lynx-keymap",
   "displayName": "%displayName%",
   "description": "%description%",
-  "version": "2.4.1",
+  "version": "2.4.2",
   "publisher": "bastndev",
   "license": "MIT",
   "engines": {
@@ -61,6 +61,12 @@
         "args"   : { "text": "\u0000" },
         "when"   : "terminalFocus"
       },{
+        "key"    : "ctrl+alt+backspace",
+        "mac"    : "cmd+alt+backspace",
+        "command": "workbench.action.terminal.sendSequence",
+        "args"   : {"text": "\u0001\u000b"},
+        "when"   : "terminalFocus"
+      },{
         "key"    : "ctrl+p",
         "mac"    : "cmd+p",
         "command": "-workbench.action.quickOpen"
@@ -68,12 +74,6 @@
         "key"    : "ctrl+,",
         "mac"    : "cmd+,",
         "command": "-workbench.action.openAntigravitySettings"
-      },{
-        "key"    : "ctrl+alt+backspace",
-        "mac"    : "cmd+alt+backspace",
-        "command": "workbench.action.terminal.sendSequence",
-        "args"   : {"text": "\u0001\u000b"},
-        "when"   : "terminalFocus"
       },{
         "key"    : "ctrl+enter",
         "mac"    : "cmd+return",

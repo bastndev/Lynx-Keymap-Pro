@@ -27,7 +27,7 @@ const esbuildProblemMatcherPlugin = {
 };
 
 async function main() {
-  const ctx = await esbuild.context({
+  const buildOptions = {
     entryPoints: ['src/extension.ts'],
     bundle: true,
     format: 'cjs',
@@ -39,13 +39,13 @@ async function main() {
     external: ['vscode'],
     logLevel: 'silent',
     plugins: [esbuildProblemMatcherPlugin],
-  });
+  };
 
   if (watch) {
+    const ctx = await esbuild.context(buildOptions);
     await ctx.watch();
   } else {
-    await ctx.rebuild();
-    await ctx.dispose();
+    await esbuild.build(buildOptions);
   }
 }
 
