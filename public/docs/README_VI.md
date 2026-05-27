@@ -37,10 +37,10 @@
 
 | Lệnh                      | 🍎 macOS         | 🟦 Windows       | 🐧 Linux         |
 | :------------------------ | :--------------- | :--------------- | :--------------- |
-| Chuyển đổi Terminal dự án | `Alt + Q - W`    | `Alt + Q - W`    | `Alt + Q - W`    |
-| Đóng Terminal             | `Alt + Q - E`    | `Alt + Q - E`    | `Alt + Q - E`    |
-| -                         | -                | -                | -                |
-| opencode/ClaudeCode       | `Alt + CapsLock` | `Alt + CapsLock` | `Alt + CapsLock` |
+| SKILLS | `⌘ + 3` | `Ctrl + 3` | `Ctrl + 3` |
+| GitLab | `Alt + B` | `Alt + B` | `Alt + B` |
+| - | - | - | - |
+| OpenCode / ClaudeCode | `Alt + CapsLock` | `Alt + CapsLock` | `Alt + CapsLock` |
 
 <details>
 <summary>🖼️ Xem ảnh chụp màn hình</summary>
@@ -50,16 +50,16 @@
 
 </details>
 
----
-
 <br>
+
+## ⌨️ Phím tắt chung Pro
 
 | Lệnh                                    | 🍎 macOS                | 🟦 Windows / 🐧 Linux        | Hỗ trợ |
 | :-------------------------------------- | :---------------------- | :--------------------------- | :----: |
 | Mở Trình khám phá                       | `⌘ + 1`                 | `Ctrl + 1`                   |   ✅   |
 | Mở Kiểm soát mã nguồn                   | `⌘ + 2`                 | `Ctrl + 2`                   |   ✅   |
-| Mở Tiện ích mở rộng                     | `⌘ + 3`                 | `Ctrl + 3`                   |   ✅   |
-| Mở Chuyển đổi nhanh F1                  | `⌘ + 4`                 | `Ctrl + 4`                   |   ✅   |
+| SKILLS | `⌘ + 3` | `Ctrl + 3` | ✅ |
+| Mở Tiện ích mở rộng | `⌘ + 4` | `Ctrl + 4` | ✅ |
 | Bật/Tắt thanh bên                       | `⌘ + Tab`               | `Ctrl + Tab`                 |   ✅   |
 | Mở tệp nhanh                            | `⇧ + ⌥ + E`             | `Shift + Alt + E`            |   ✅   |
 | Đi đến dòng                             | `⇧ + ⌥ + W`             | `Shift + Alt + W`            |   ✅   |
@@ -85,11 +85,10 @@
 | Terminal dưới (bật/tắt)                 | `⌥ + E`                 | `Alt + E`                    |   ✅   |
 | Terminal Trái/Phải (bật/tắt)            | `⌥ + CapsLock`          | `Alt + CapsLock`             |   ✅   |
 | Mở Terminal nhanh                       | `⌥ + W`                 | `Alt + W`                    |   ✅   |
-| Terminal mới                            | <code>⌘ + \`</code>     | <code>Ctrl + \`</code>       |   ✅   |
+| Phóng to / Thu nhỏ Panel | <code>⌘ + `</code> | <code>Ctrl + `</code> | ✅ |
 | Đóng Terminal                           | <code>⌘ + ⌥ + \`</code> | <code>Ctrl + Alt + \`</code> |   ✅   |
 | Terminal — Xóa dòng                     | `⌘ + ⌥ + Backspace`     | `Ctrl + Alt + Backspace`     |   ✅   |
-| Terminal — Hoàn thành từ                | `⌥ + ,`                 | `Alt + ,`                    |   ✅   |
-| Phóng to / Thu nhỏ Panel                | `⌘ + Esc`               | `Ctrl + Esc`                 |   ✅   |
+| Terminal — Hoàn thành từ                | `⌘ + ,`                 | `Ctrl + ,`                    |   ✅   |
 | -                                       | -                       | -                            |  N/A   |
 | **Đóng thông minh** — AI hoặc Terminal  | `⌘ + CapsLock`          | `Ctrl + CapsLock`            |   ✅   |
 | Tạo phiên AI mới                        | `⌥ + A`                 | `Alt + A`                    |   ✅   |
@@ -122,6 +121,7 @@
 | Commit                      | `⌥ + Return`     | `Alt + Enter`        | `Alt + Enter`        |
 | Push                        | `⌘ + ⌥ + Return` | `Ctrl + Alt + Enter` | `Ctrl + Alt + Enter` |
 | Xem thay đổi Git            | `⌥ + L`          | `Alt + L`            | `Alt + L`            |
+| Git Reset Hard HEAD        | `⌘ + ⇧ + ⌥ + Backspace` | `Ctrl + Shift + Alt + Backspace` | `Ctrl + Shift + Alt + Backspace` |
 
 ---
 
@@ -144,15 +144,17 @@
 | Bắt đầu gỡ lỗi            | `⌥ + P`  | `Alt + P`  | `Alt + P` |
 | Khởi động lại gỡ lỗi      | `⌥ + O`  | `Alt + O`  | `Alt + O` |
 | Dừng gỡ lỗi               | `⌥ + I`  | `Alt + I`  | `Alt + I` |
-| Mở Bảng điều khiển Gỡ lỗi | `⌥ + B`  | `Alt + B`  | `Alt + B` |
 
 ---
 
-## 🧩 Tiện ích mở rộng [+]
+## 🧩 Terminal [+]
 
-| Lệnh           | 🍎 macOS | 🟦 Windows | 🐧 Linux  |
-| :------------- | :------- | :--------- | :-------- |
-| Mở bảng GitLab | `⌥ + V`  | `Alt + V`  | `Alt + V` |
+| Lệnh | 🍎 macOS | 🟦 Windows | 🐧 Linux |
+| :------ | :------ | :--------- | :------- |
+| Chuyển đổi Terminal dự án | `Alt + Q - W` | `Alt + Q - W` | `Alt + Q - W` |
+| Đóng Terminal | `Alt + Q - E` | `Alt + Q - E` | `Alt + Q - E` |
+| Terminal mới thông minh | <code>⌘ + ⇧ + `</code> | <code>Ctrl + Shift + `</code> | <code>Ctrl + Shift + `</code> |
+| Đóng Terminal | <code>⌘ + ⌥ + `</code> | <code>Ctrl + Alt + `</code> | <code>Ctrl + Alt + `</code> |
 
 <br>
 

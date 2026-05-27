@@ -37,10 +37,10 @@
 
 | कमांड                   | 🍎 macOS         | 🟦 Windows       | 🐧 Linux         |
 | :---------------------- | :--------------- | :--------------- | :--------------- |
-| प्रोजेक्ट टर्मिनल बदलें | `Alt + Q - W`    | `Alt + Q - W`    | `Alt + Q - W`    |
-| टर्मिनल बंद करें        | `Alt + Q - E`    | `Alt + Q - E`    | `Alt + Q - E`    |
-| -                       | -                | -                | -                |
-| opencode/ClaudeCode     | `Alt + CapsLock` | `Alt + CapsLock` | `Alt + CapsLock` |
+| SKILLS | `⌘ + 3` | `Ctrl + 3` | `Ctrl + 3` |
+| GitLab | `Alt + B` | `Alt + B` | `Alt + B` |
+| - | - | - | - |
+| OpenCode / ClaudeCode | `Alt + CapsLock` | `Alt + CapsLock` | `Alt + CapsLock` |
 
 <details>
 <summary>🖼️ स्क्रीनशॉट देखें</summary>
@@ -50,16 +50,16 @@
 
 </details>
 
----
-
 <br>
+
+## ⌨️ सामान्य कीबाइंडिंग Pro
 
 | कमांड                               | 🍎 macOS                | 🟦 Windows / 🐧 Linux        | समर्थित |
 | :---------------------------------- | :---------------------- | :--------------------------- | :-----: |
 | एक्सप्लोरर खोलें                    | `⌘ + 1`                 | `Ctrl + 1`                   |   ✅    |
 | सोर्स कंट्रोल खोलें                 | `⌘ + 2`                 | `Ctrl + 2`                   |   ✅    |
-| एक्सटेंशन खोलें                     | `⌘ + 3`                 | `Ctrl + 3`                   |   ✅    |
-| F1-Quick Switch खोलें               | `⌘ + 4`                 | `Ctrl + 4`                   |   ✅    |
+| SKILLS | `⌘ + 3` | `Ctrl + 3` | ✅ |
+| एक्सटेंशन खोलें | `⌘ + 4` | `Ctrl + 4` | ✅ |
 | साइडबार टॉगल करें                   | `⌘ + Tab`               | `Ctrl + Tab`                 |   ✅    |
 | फ़ाइल त्वरित खोलें                  | `⇧ + ⌥ + E`             | `Shift + Alt + E`            |   ✅    |
 | लाइन पर जाएं                        | `⇧ + ⌥ + W`             | `Shift + Alt + W`            |   ✅    |
@@ -85,11 +85,10 @@
 | टर्मिनल नीचे (टॉगल)                 | `⌥ + E`                 | `Alt + E`                    |   ✅    |
 | टर्मिनल बाएं/दाएं (टॉगल)            | `⌥ + CapsLock`          | `Alt + CapsLock`             |   ✅    |
 | टर्मिनल त्वरित खोलें                | `⌥ + W`                 | `Alt + W`                    |   ✅    |
-| नया टर्मिनल                         | <code>⌘ + \`</code>     | <code>Ctrl + \`</code>       |   ✅    |
+| पैनल बड़ा/छोटा करें | <code>⌘ + `</code> | <code>Ctrl + `</code> | ✅ |
 | टर्मिनल बंद करें (Kill)             | <code>⌘ + ⌥ + \`</code> | <code>Ctrl + Alt + \`</code> |   ✅    |
 | टर्मिनल — लाइन साफ करें             | `⌘ + ⌥ + Backspace`     | `Ctrl + Alt + Backspace`     |   ✅    |
-| टर्मिनल — शब्द पूरा करें            | `⌥ + ,`                 | `Alt + ,`                    |   ✅    |
-| पैनल बड़ा/छोटा करें                 | `⌘ + Esc`               | `Ctrl + Esc`                 |   ✅    |
+| टर्मिनल — शब्द पूरा करें            | `⌘ + ,`                 | `Ctrl + ,`                    |   ✅    |
 | -                                   | -                       | -                            |   N/A   |
 | **स्मार्ट बंद** — AI चैट या टर्मिनल | `⌘ + CapsLock`          | `Ctrl + CapsLock`            |   ✅    |
 | नया AI सत्र बनाएं                   | `⌥ + A`                 | `Alt + A`                    |   ✅    |
@@ -122,6 +121,7 @@
 | Commit करें           | `⌥ + Return`     | `Alt + Enter`        | `Alt + Enter`        |
 | Push करें             | `⌘ + ⌥ + Return` | `Ctrl + Alt + Enter` | `Ctrl + Alt + Enter` |
 | Git बदलाव देखें       | `⌥ + L`          | `Alt + L`            | `Alt + L`            |
+| Git Reset Hard HEAD | `⌘ + ⇧ + ⌥ + Backspace` | `Ctrl + Shift + Alt + Backspace` | `Ctrl + Shift + Alt + Backspace` |
 
 ---
 
@@ -144,15 +144,17 @@
 | डिबगिंग शुरू करें      | `⌥ + P`  | `Alt + P`  | `Alt + P` |
 | डिबगिंग पुनः शुरू करें | `⌥ + O`  | `Alt + O`  | `Alt + O` |
 | डिबगिंग रोकें          | `⌥ + I`  | `Alt + I`  | `Alt + I` |
-| डिबग कंसोल खोलें       | `⌥ + B`  | `Alt + B`  | `Alt + B` |
 
 ---
 
-## 🧩 एक्सटेंशन [+]
+## 🧩 टर्मिनल [+]
 
-| कमांड             | 🍎 macOS | 🟦 Windows | 🐧 Linux  |
-| :---------------- | :------- | :--------- | :-------- |
-| GitLab पैनल खोलें | `⌥ + V`  | `Alt + V`  | `Alt + V` |
+| कमांड | 🍎 macOS | 🟦 Windows | 🐧 Linux |
+| :------ | :------ | :--------- | :------- |
+| प्रोजेक्ट टर्मिनल बदलें | `Alt + Q - W` | `Alt + Q - W` | `Alt + Q - W` |
+| टर्मिनल बंद करें | `Alt + Q - E` | `Alt + Q - E` | `Alt + Q - E` |
+| स्मार्ट नया टर्मिनल | <code>⌘ + ⇧ + `</code> | <code>Ctrl + Shift + `</code> | <code>Ctrl + Shift + `</code> |
+| टर्मिनल समाप्त करें | <code>⌘ + ⌥ + `</code> | <code>Ctrl + Alt + `</code> | <code>Ctrl + Alt + `</code> |
 
 <br>
 

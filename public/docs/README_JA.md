@@ -37,10 +37,10 @@
 
 | コマンド                           | 🍎 macOS         | 🟦 Windows       | 🐧 Linux         |
 | :--------------------------------- | :--------------- | :--------------- | :--------------- |
-| プロジェクト・ターミナルの切り替え | `Alt + Q - W`    | `Alt + Q - W`    | `Alt + Q - W`    |
-| ターミナルを閉じる                 | `Alt + Q - E`    | `Alt + Q - E`    | `Alt + Q - E`    |
-| -                                  | -                | -                | -                |
-| opencode/ClaudeCode                | `Alt + CapsLock` | `Alt + CapsLock` | `Alt + CapsLock` |
+| SKILLS | `⌘ + 3` | `Ctrl + 3` | `Ctrl + 3` |
+| GitLab | `Alt + B` | `Alt + B` | `Alt + B` |
+| - | - | - | - |
+| OpenCode / ClaudeCode | `Alt + CapsLock` | `Alt + CapsLock` | `Alt + CapsLock` |
 
 <details>
 <summary>🖼️ スクリーンショットを表示</summary>
@@ -50,16 +50,16 @@
 
 </details>
 
----
-
 <br>
+
+## ⌨️ 一般キーバインド Pro
 
 | コマンド                                | 🍎 macOS                | 🟦 Windows / 🐧 Linux        | サポート状況 |
 | :-------------------------------------- | :---------------------- | :--------------------------- | :----------: |
 | エクスプローラーを開く                  | `⌘ + 1`                 | `Ctrl + 1`                   |      ✅      |
 | ソース管理を開く                        | `⌘ + 2`                 | `Ctrl + 2`                   |      ✅      |
-| 拡張機能を開く                          | `⌘ + 3`                 | `Ctrl + 3`                   |      ✅      |
-| F1 クイックスイッチを開く               | `⌘ + 4`                 | `Ctrl + 4`                   |      ✅      |
+| SKILLS | `⌘ + 3` | `Ctrl + 3` | ✅ |
+| 拡張機能を開く | `⌘ + 4` | `Ctrl + 4` | ✅ |
 | サイドバーの切り替え                    | `⌘ + Tab`               | `Ctrl + Tab`                 |      ✅      |
 | ファイルをすばやく開く                  | `⇧ + ⌥ + E`             | `Shift + Alt + E`            |      ✅      |
 | 指定行へ移動                            | `⇧ + ⌥ + W`             | `Shift + Alt + W`            |      ✅      |
@@ -85,11 +85,10 @@
 | 下部ターミナル（切り替え）              | `⌥ + E`                 | `Alt + E`                    |      ✅      |
 | 左右ターミナル（切り替え）              | `⌥ + CapsLock`          | `Alt + CapsLock`             |      ✅      |
 | ターミナルをすばやく開く                | `⌥ + W`                 | `Alt + W`                    |      ✅      |
-| 新規ターミナル                          | <code>⌘ + \`</code>     | <code>Ctrl + \`</code>       |      ✅      |
+| パネルの最大化 / 最小化 | <code>⌘ + `</code> | <code>Ctrl + `</code> | ✅ |
 | ターミナルを終了                        | <code>⌘ + ⌥ + \`</code> | <code>Ctrl + Alt + \`</code> |      ✅      |
 | ターミナル — 行をクリア                 | `⌘ + ⌥ + Backspace`     | `Ctrl + Alt + Backspace`     |      ✅      |
-| ターミナル — 単語補完                   | `⌥ + ,`                 | `Alt + ,`                    |      ✅      |
-| パネルの最大化 / 最小化                 | `⌘ + Esc`               | `Ctrl + Esc`                 |      ✅      |
+| ターミナル — 単語補完                   | `⌘ + ,`                 | `Ctrl + ,`                    |      ✅      |
 | -                                       | -                       | -                            |     N/A      |
 | **スマートクローズ** — AI or ターミナル | `⌘ + CapsLock`          | `Ctrl + CapsLock`            |      ✅      |
 | 新規 AI セッション作成                  | `⌥ + A`                 | `Alt + A`                    |      ✅      |
@@ -122,6 +121,7 @@
 | コミット                      | `⌥ + Return`     | `Alt + Enter`        | `Alt + Enter`        |
 | プッシュ                      | `⌘ + ⌥ + Return` | `Ctrl + Alt + Enter` | `Ctrl + Alt + Enter` |
 | Git の変更を表示              | `⌥ + L`          | `Alt + L`            | `Alt + L`            |
+| Git Reset Hard HEAD       | `⌘ + ⇧ + ⌥ + Backspace` | `Ctrl + Shift + Alt + Backspace` | `Ctrl + Shift + Alt + Backspace` |
 
 ---
 
@@ -144,15 +144,17 @@
 | デバッグ開始             | `⌥ + P`  | `Alt + P`  | `Alt + P` |
 | デバッグ再起動           | `⌥ + O`  | `Alt + O`  | `Alt + O` |
 | デバッグ停止             | `⌥ + I`  | `Alt + I`  | `Alt + I` |
-| デバッグコンソールを開く | `⌥ + B`  | `Alt + B`  | `Alt + B` |
 
 ---
 
-## 🧩 拡張機能 [+]
+## 🧩 ターミナル [+]
 
-| コマンド            | 🍎 macOS | 🟦 Windows | 🐧 Linux  |
-| :------------------ | :------- | :--------- | :-------- |
-| GitLab パネルを開く | `⌥ + V`  | `Alt + V`  | `Alt + V` |
+| コマンド | 🍎 macOS | 🟦 Windows | 🐧 Linux |
+| :------ | :------ | :--------- | :------- |
+| プロジェクト・ターミナルの切り替え | `Alt + Q - W` | `Alt + Q - W` | `Alt + Q - W` |
+| ターミナルを閉じる | `Alt + Q - E` | `Alt + Q - E` | `Alt + Q - E` |
+| Smart New Terminal | <code>⌘ + ⇧ + `</code> | <code>Ctrl + Shift + `</code> | <code>Ctrl + Shift + `</code> |
+| ターミナルを終了 | <code>⌘ + ⌥ + `</code> | <code>Ctrl + Alt + `</code> | <code>Ctrl + Alt + `</code> |
 
 <br>
 

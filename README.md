@@ -52,7 +52,7 @@
 
 <br>
 
-## ⌨️ General Keybindings
+## ⌨️ General Keybindings Pro
 
 | Command                               | 🍎 macOS                | 🟦 Windows / 🐧 Linux        | Supported |
 | :------------------------------------ | :---------------------- | :--------------------------- | :-------: |

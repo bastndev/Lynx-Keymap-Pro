@@ -37,10 +37,10 @@
 
 | Comando                       | 🍎 macOS         | 🟦 Windows       | 🐧 Linux         |
 | :---------------------------- | :--------------- | :--------------- | :--------------- |
-| Cambiar Terminal del Proyecto | `Alt + Q - W`    | `Alt + Q - W`    | `Alt + Q - W`    |
-| Cerrar Terminal               | `Alt + Q - E`    | `Alt + Q - E`    | `Alt + Q - E`    |
-| -                             | -                | -                | -                |
-| opencode/ClaudeCode           | `Alt + CapsLock` | `Alt + CapsLock` | `Alt + CapsLock` |
+| SKILLS | `⌘ + 3` | `Ctrl + 3` | `Ctrl + 3` |
+| GitLab | `Alt + B` | `Alt + B` | `Alt + B` |
+| - | - | - | - |
+| OpenCode / ClaudeCode | `Alt + CapsLock` | `Alt + CapsLock` | `Alt + CapsLock` |
 
 <details>
 <summary>🖼️ Ver Captura de Pantalla</summary>
@@ -50,16 +50,16 @@
 
 </details>
 
----
-
 <br>
+
+## ⌨️ Atajos Generales Pro
 
 | Comando                               | 🍎 macOS                | 🟦 Windows / 🐧 Linux        | Soportado |
 | :------------------------------------ | :---------------------- | :--------------------------- | :-------: |
 | Abrir Explorador                      | `⌘ + 1`                 | `Ctrl + 1`                   |    ✅     |
 | Abrir Control de Código Fuente        | `⌘ + 2`                 | `Ctrl + 2`                   |    ✅     |
-| Abrir Extensiones                     | `⌘ + 3`                 | `Ctrl + 3`                   |    ✅     |
-| Abrir Cambio Rápido F1                | `⌘ + 4`                 | `Ctrl + 4`                   |    ✅     |
+| SKILLS | `⌘ + 3` | `Ctrl + 3` | ✅ |
+| Abrir Extensiones | `⌘ + 4` | `Ctrl + 4` | ✅ |
 | Alternar Barra Lateral                | `⌘ + Tab`               | `Ctrl + Tab`                 |    ✅     |
 | Abrir Archivo Rápidamente             | `⇧ + ⌥ + E`             | `Shift + Alt + E`            |    ✅     |
 | Ir a la Línea                         | `⇧ + ⌥ + W`             | `Shift + Alt + W`            |    ✅     |
@@ -85,11 +85,10 @@
 | Terminal Inferior (alternar)          | `⌥ + E`                 | `Alt + E`                    |    ✅     |
 | Terminal Izquierda/Derecha (alternar) | `⌥ + CapsLock`          | `Alt + CapsLock`             |    ✅     |
 | Abrir Terminal Rápidamente            | `⌥ + W`                 | `Alt + W`                    |    ✅     |
-| Nueva Terminal                        | <code>⌘ + \`</code>     | <code>Ctrl + \`</code>       |    ✅     |
+| Maximizar / Minimizar Panel | <code>⌘ + `</code> | <code>Ctrl + `</code> | ✅ |
 | Finalizar Terminal                    | <code>⌘ + ⌥ + \`</code> | <code>Ctrl + Alt + \`</code> |    ✅     |
 | Terminal — Borrar Línea               | `⌘ + ⌥ + Backspace`     | `Ctrl + Alt + Backspace`     |    ✅     |
-| Terminal — Completar Palabra          | `⌥ + ,`                 | `Alt + ,`                    |    ✅     |
-| Maximizar / Minimizar Panel           | `⌘ + Esc`               | `Ctrl + Esc`                 |    ✅     |
+| Terminal — Completar Palabra          | `⌘ + ,`                 | `Ctrl + ,`                    |    ✅     |
 | -                                     | -                       | -                            |    N/A    |
 | **Cierre Inteligente** — Chat de IA   | `⌘ + CapsLock`          | `Ctrl + CapsLock`            |    ✅     |
 | Crear Nueva Sesión de IA              | `⌥ + A`                 | `Alt + A`                    |    ✅     |
@@ -122,6 +121,7 @@
 | Commit                           | `⌥ + Return`     | `Alt + Enter`        | `Alt + Enter`        |
 | Push                             | `⌘ + ⌥ + Return` | `Ctrl + Alt + Enter` | `Ctrl + Alt + Enter` |
 | Ver Cambios de Git               | `⌥ + L`          | `Alt + L`            | `Alt + L`            |
+| Git Reset Hard HEAD              | `⌘ + ⇧ + ⌥ + Backspace` | `Ctrl + Shift + Alt + Backspace` | `Ctrl + Shift + Alt + Backspace` |
 
 ---
 
@@ -144,15 +144,17 @@
 | Iniciar Depuración          | `⌥ + P`  | `Alt + P`  | `Alt + P` |
 | Reiniciar Depuración        | `⌥ + O`  | `Alt + O`  | `Alt + O` |
 | Detener Depuración          | `⌥ + I`  | `Alt + I`  | `Alt + I` |
-| Abrir Consola de Depuración | `⌥ + B`  | `Alt + B`  | `Alt + B` |
 
 ---
 
-## 🧩 Extensiones [+]
+## 🧩 Terminal [+]
 
-| Comando               | 🍎 macOS | 🟦 Windows | 🐧 Linux  |
-| :-------------------- | :------- | :--------- | :-------- |
-| Abrir panel de GitLab | `⌥ + V`  | `Alt + V`  | `Alt + V` |
+| Comando | 🍎 macOS | 🟦 Windows | 🐧 Linux |
+| :------ | :------ | :--------- | :------- |
+| Cambiar Terminal del Proyecto | `Alt + Q - W` | `Alt + Q - W` | `Alt + Q - W` |
+| Cerrar Terminal | `Alt + Q - E` | `Alt + Q - E` | `Alt + Q - E` |
+| Terminal Inteligente Nueva | <code>⌘ + ⇧ + `</code> | <code>Ctrl + Shift + `</code> | <code>Ctrl + Shift + `</code> |
+| Finalizar Terminal | <code>⌘ + ⌥ + `</code> | <code>Ctrl + Alt + `</code> | <code>Ctrl + Alt + `</code> |
 
 <br>
 

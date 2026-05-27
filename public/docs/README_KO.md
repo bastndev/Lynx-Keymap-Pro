@@ -37,10 +37,10 @@
 
 | 명령어               | 🍎 macOS         | 🟦 Windows       | 🐧 Linux         |
 | :------------------- | :--------------- | :--------------- | :--------------- |
-| 프로젝트 터미널 전환 | `Alt + Q - W`    | `Alt + Q - W`    | `Alt + Q - W`    |
-| 터미널 닫기          | `Alt + Q - E`    | `Alt + Q - E`    | `Alt + Q - E`    |
-| -                    | -                | -                | -                |
-| opencode/ClaudeCode  | `Alt + CapsLock` | `Alt + CapsLock` | `Alt + CapsLock` |
+| SKILLS | `⌘ + 3` | `Ctrl + 3` | `Ctrl + 3` |
+| GitLab | `Alt + B` | `Alt + B` | `Alt + B` |
+| - | - | - | - |
+| OpenCode / ClaudeCode | `Alt + CapsLock` | `Alt + CapsLock` | `Alt + CapsLock` |
 
 <details>
 <summary>🖼️ 스크린샷 보기</summary>
@@ -50,16 +50,16 @@
 
 </details>
 
----
-
 <br>
+
+## ⌨️ 일반 키바인딩 Pro
 
 | 명령어                                | 🍎 macOS                | 🟦 Windows / 🐧 Linux        | 지원 여부 |
 | :------------------------------------ | :---------------------- | :--------------------------- | :-------: |
 | 탐색기 열기                           | `⌘ + 1`                 | `Ctrl + 1`                   |    ✅     |
 | 소스 제어 열기                        | `⌘ + 2`                 | `Ctrl + 2`                   |    ✅     |
-| 확장 열기                             | `⌘ + 3`                 | `Ctrl + 3`                   |    ✅     |
-| F1-빠른 전환 열기                     | `⌘ + 4`                 | `Ctrl + 4`                   |    ✅     |
+| SKILLS | `⌘ + 3` | `Ctrl + 3` | ✅ |
+| 확장 열기 | `⌘ + 4` | `Ctrl + 4` | ✅ |
 | 사이드바 토글                         | `⌘ + Tab`               | `Ctrl + Tab`                 |    ✅     |
 | 빠른 파일 열기                        | `⇧ + ⌥ + E`             | `Shift + Alt + E`            |    ✅     |
 | 줄로 이동                             | `⇧ + ⌥ + W`             | `Shift + Alt + W`            |    ✅     |
@@ -85,11 +85,10 @@
 | 하단 터미널 (토글)                    | `⌥ + E`                 | `Alt + E`                    |    ✅     |
 | 좌우 터미널 (토글)                    | `⌥ + CapsLock`          | `Alt + CapsLock`             |    ✅     |
 | 빠른 터미널 열기                      | `⌥ + W`                 | `Alt + W`                    |    ✅     |
-| 새 터미널                             | <code>⌘ + \`</code>     | <code>Ctrl + \`</code>       |    ✅     |
+| 패널 최대화 / 최소화 | <code>⌘ + `</code> | <code>Ctrl + `</code> | ✅ |
 | 터미널 종료                           | <code>⌘ + ⌥ + \`</code> | <code>Ctrl + Alt + \`</code> |    ✅     |
 | 터미널 — 줄 지우기                    | `⌘ + ⌥ + Backspace`     | `Ctrl + Alt + Backspace`     |    ✅     |
-| 터미널 — 단어 자동 완성               | `⌥ + ,`                 | `Alt + ,`                    |    ✅     |
-| 패널 최대화 / 최소화                  | `⌘ + Esc`               | `Ctrl + Esc`                 |    ✅     |
+| 터미널 — 단어 자동 완성               | `⌘ + ,`                 | `Ctrl + ,`                    |    ✅     |
 | -                                     | -                       | -                            |    N/A    |
 | **스마트 닫기** — AI 채팅 또는 터미널 | `⌘ + CapsLock`          | `Ctrl + CapsLock`            |    ✅     |
 | 새 AI 세션 만들기                     | `⌥ + A`                 | `Alt + A`                    |    ✅     |
@@ -122,6 +121,7 @@
 | 커밋                | `⌥ + Return`     | `Alt + Enter`        | `Alt + Enter`        |
 | 푸시                | `⌘ + ⌥ + Return` | `Ctrl + Alt + Enter` | `Ctrl + Alt + Enter` |
 | Git 변경 사항 보기  | `⌥ + L`          | `Alt + L`            | `Alt + L`            |
+| Git Reset Hard HEAD       | `⌘ + ⇧ + ⌥ + Backspace` | `Ctrl + Shift + Alt + Backspace` | `Ctrl + Shift + Alt + Backspace` |
 
 ---
 
@@ -144,15 +144,17 @@
 | 디버깅 시작      | `⌥ + P`  | `Alt + P`  | `Alt + P` |
 | 디버깅 다시 시작 | `⌥ + O`  | `Alt + O`  | `Alt + O` |
 | 디버깅 중지      | `⌥ + I`  | `Alt + I`  | `Alt + I` |
-| 디버그 콘솔 열기 | `⌥ + B`  | `Alt + B`  | `Alt + B` |
 
 ---
 
-## 🧩 확장 프로그램 [+]
+## 🧩 터미널 [+]
 
-| 명령어           | 🍎 macOS | 🟦 Windows | 🐧 Linux  |
-| :--------------- | :------- | :--------- | :-------- |
-| GitLab 패널 열기 | `⌥ + V`  | `Alt + V`  | `Alt + V` |
+| 명령어 | 🍎 macOS | 🟦 Windows | 🐧 Linux |
+| :------ | :------ | :--------- | :------- |
+| 프로젝트 터미널 전환 | `Alt + Q - W` | `Alt + Q - W` | `Alt + Q - W` |
+| 터미널 닫기 | `Alt + Q - E` | `Alt + Q - E` | `Alt + Q - E` |
+| Smart New Terminal | <code>⌘ + ⇧ + `</code> | <code>Ctrl + Shift + `</code> | <code>Ctrl + Shift + `</code> |
+| 터미널 종료 | <code>⌘ + ⌥ + `</code> | <code>Ctrl + Alt + `</code> | <code>Ctrl + Alt + `</code> |
 
 <br>
 
