@@ -1,8 +1,8 @@
 {
-  "name": "lynx-keymap",
+  "name": "lynx-keymap2",
   "displayName": "%displayName%",
   "description": "%description%",
-  "version": "2.4.2",
+  "version": "2.5.0",
   "publisher": "bastndev",
   "license": "MIT",
   "engines": {
