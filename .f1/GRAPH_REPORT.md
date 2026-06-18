@@ -1,16 +1,16 @@
 # Graph Report - Lynx-Keymap-Pro  (2026-06-18)
 
 ## Corpus Check
-- 66 files · ~68,904 words
+- 67 files · ~71,753 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 483 nodes · 606 edges · 49 communities (47 shown, 2 thin omitted)
+- 490 nodes · 617 edges · 50 communities (47 shown, 3 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `928ff1f7`
+- Built from commit: `6f8e3391`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -63,9 +63,10 @@
 - [[_COMMUNITY_Community 46|Community 46]]
 - [[_COMMUNITY_Community 47|Community 47]]
 - [[_COMMUNITY_Community 48|Community 48]]
+- [[_COMMUNITY_Community 49|Community 49]]
 
 ## God Nodes (most connected - your core abstractions)
-1. `Communities (46 total, 3 thin omitted)` - 43 edges
+1. `Communities (49 total, 2 thin omitted)` - 47 edges
 2. `Lynx Keymap` - 32 edges
 3. `BaseManager` - 21 edges
 4. `EditorDetector` - 13 edges
@@ -77,8 +78,6 @@
 10. `AIToggleManager` - 8 edges
 
 ## Surprising Connections (you probably didn't know these)
-- `activate()` --calls--> `recoverSidePanelState()`  [EXTRACTED]
-  src/extension.ts → src/keymaps/terminal/startup-recovery.ts
 - `AICommandsManager` --inherits--> `BaseManager`  [EXTRACTED]
   src/keymaps/ai/commands-manager.ts → src/shared/base-manager.ts
 - `KeymapLayoutManager` --inherits--> `BaseManager`  [EXTRACTED]
@@ -87,15 +86,17 @@
   src/editor/debug/panel.ts → src/shared/base-manager.ts
 - `GitResetManager` --inherits--> `BaseManager`  [EXTRACTED]
   src/editor/git/reset-manager.ts → src/shared/base-manager.ts
+- `WordWrapManager` --inherits--> `BaseManager`  [EXTRACTED]
+  src/editor/wordwrap/manager.ts → src/shared/base-manager.ts
 
 ## Import Cycles
 - 1-file cycle: `esbuild.js -> esbuild.js`
 
-## Communities (49 total, 2 thin omitted)
+## Communities (50 total, 3 thin omitted)
 
 ### Community 0 - "Community 0"
 Cohesion: 0.09
-Nodes (22): AIToggleManager, DebugManager, execFileAsync, GitResetManager, LayoutMode, PANEL_CONFIGS, PanelCommandsManager, PanelConfig (+14 more)
+Nodes (24): AIToggleManager, DebugManager, execFileAsync, GitResetManager, LayoutMode, PANEL_CONFIGS, PanelCommandsManager, PanelConfig (+16 more)
 
 ### Community 1 - "Community 1"
 Cohesion: 0.11
@@ -106,8 +107,8 @@ Cohesion: 0.05
 Nodes (38): activationEvents, author, email, name, url, bugs, url, categories (+30 more)
 
 ### Community 3 - "Community 3"
-Cohesion: 0.10
-Nodes (19): [0.0.1] - 2025-04-26, [0.1.0] - 2025-06-20, [1.0.0] - 2025-07-11, [2.0.8] - 2025-07-24, [2.1.3] - 2025-08-03, [2.2.7] - 2026-05-07, [2.2.8] - 2026-05-08, [2.4.2] - 2026-05-27 (+11 more)
+Cohesion: 0.11
+Nodes (17): [0.0.1] - 2025-04-26, [0.1.0] - 2025-06-20, [1.0.0] - 2025-07-11, [2.0.8] - 2025-07-24, [2.1.3] - 2025-08-03, [2.2.8] - 2026-05-08, [2.4.2] - 2026-05-27, Added (+9 more)
 
 ### Community 4 - "Community 4"
 Cohesion: 0.16
@@ -262,8 +263,8 @@ Cohesion: 0.67
 Nodes (3): [2.3.1] - 2026-05-11, Fixed, Improved
 
 ### Community 43 - "Community 43"
-Cohesion: 0.05
-Nodes (43): Communities (46 total, 3 thin omitted), Community 0 - "Community 0", Community 10 - "Community 10", Community 11 - "Community 11", Community 12 - "Community 12", Community 13 - "Community 13", Community 14 - "Community 14", Community 15 - "Community 15" (+35 more)
+Cohesion: 0.04
+Nodes (47): Communities (49 total, 2 thin omitted), Community 0 - "Community 0", Community 10 - "Community 10", Community 11 - "Community 11", Community 12 - "Community 12", Community 13 - "Community 13", Community 14 - "Community 14", Community 15 - "Community 15" (+39 more)
 
 ### Community 46 - "Community 46"
 Cohesion: 0.18
@@ -278,23 +279,23 @@ Cohesion: 0.40
 Nodes (4): Dependency graph, Package, Project map, Top-level folders
 
 ## Knowledge Gaps
-- **307 isolated node(s):** `esbuild`, `production`, `esbuildProblemMatcherPlugin`, `name`, `displayName` (+302 more)
+- **312 isolated node(s):** `esbuild`, `production`, `esbuildProblemMatcherPlugin`, `name`, `displayName` (+307 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **2 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **3 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `Lynx Keymap` connect `Community 3` to `Community 23`, `Community 24`, `Community 26`, `Community 27`, `Community 28`, `Community 29`, `Community 30`, `Community 31`, `Community 32`, `Community 33`, `Community 34`, `Community 35`, `Community 36`, `Community 37`, `Community 38`, `Community 39`, `Community 40`, `Community 41`, `Community 42`?**
-  _High betweenness centrality (0.029) - this node is a cross-community bridge._
-- **Why does `Communities (46 total, 3 thin omitted)` connect `Community 43` to `Community 46`?**
-  _High betweenness centrality (0.011) - this node is a cross-community bridge._
+- **Why does `Lynx Keymap` connect `Community 3` to `Community 23`, `Community 24`, `Community 26`, `Community 27`, `Community 28`, `Community 29`, `Community 30`, `Community 31`, `Community 32`, `Community 33`, `Community 34`, `Community 35`, `Community 36`, `Community 37`, `Community 38`, `Community 39`, `Community 40`, `Community 41`, `Community 42`, `Community 49`?**
+  _High betweenness centrality (0.028) - this node is a cross-community bridge._
+- **Why does `Communities (49 total, 2 thin omitted)` connect `Community 43` to `Community 46`?**
+  _High betweenness centrality (0.013) - this node is a cross-community bridge._
 - **Why does `BaseManager` connect `Community 0` to `Community 1`, `Community 25`?**
   _High betweenness centrality (0.007) - this node is a cross-community bridge._
 - **What connects `esbuild`, `production`, `esbuildProblemMatcherPlugin` to the rest of the system?**
-  _307 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _312 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
-  _Cohesion score 0.09084556254367575 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.08583959899749373 - nodes in this community are weakly interconnected._
 - **Should `Community 1` be split into smaller, more focused modules?**
   _Cohesion score 0.1092436974789916 - nodes in this community are weakly interconnected._
 - **Should `Community 2` be split into smaller, more focused modules?**
