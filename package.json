@@ -168,15 +168,6 @@
         "mac"    : "cmd+alt+[Backquote]",
         "command": "workbench.action.terminal.kill"
       },
-{
-        "key"    : "ctrl+w",
-        "mac"    : "ctrl+w",
-        "command": "workbench.action.quickOpenTerm"
-      },{
-        "key"    : "ctrl+q",
-        "mac"    : "ctrl+q",
-        "command": "workbench.action.focusFirstEditorGroup"
-      },
 
 
 
