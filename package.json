@@ -81,7 +81,7 @@
         "command": "-github.copilot.generate"
       },{
         "key"    : "ctrl+e",
-        "mac"    : "ctrl+e",
+        "mac"    : "cmd+e",
         "command": "-workbench.debug.action.toggleRepl"
       },
 
@@ -127,15 +127,14 @@
         "command": "lynx-keymap.openAndCloseAIChatAndTerminal"
       },
       
-            {
-        "key"    : "alt+7",
-        "mac"    : "alt+7",
-        "command": "workbench.action.togglePanel"
-      },
       {
         "key"    : "alt+capslock",
         "mac"    : "alt+capslock",
         "command": "lynx-keymap.toggleTerminalLeftAndRight"
+      },{
+        "key"    : "ctrl+alt+capslock",
+        "mac"    : "ctrl+alt+capslock",
+        "command": "lynx-keymap.restoreDefaultLayout"
       },
 
 
@@ -244,10 +243,6 @@
         "key"    : "alt+0",
         "mac"    : "alt+0",
         "command": "lynx-keymap.toggleLayout"
-      },{
-        "key"    : "f5",
-        "mac"    : "f5",
-        "command": "lynx-keymap.smartDebugStart"
       },
       
       
@@ -700,6 +695,9 @@
       {
         "command": "lynx-keymap.toggleTerminalLeftAndRight",
         "title"  : "Toggle Terminal Left and Right"
+      },{
+        "command": "lynx-keymap.restoreDefaultLayout",
+        "title"  : "Restore Default Layout"
       },{
         "command": "lynx-keymap.smartNewTerminal",
         "title"  : "Smart New Terminal"

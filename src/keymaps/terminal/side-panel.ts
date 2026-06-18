@@ -49,7 +49,7 @@ export class TerminalManager extends BaseManager {
               ),
             ]);
 
-            await vscode.commands.executeCommand('workbench.action.terminal.focus');
+            await vscode.commands.executeCommand('workbench.action.focusPanel');
           }
         } catch (error) {
           console.error(`${LOG_PREFIX} Terminal left toggle failed:`, error);
@@ -58,9 +58,9 @@ export class TerminalManager extends BaseManager {
       }
     );
 
-    // ─── Smart Close: Terminal lateral OR AI Chat ──────────────────────────────
-    // ctrl+capslock — if terminal is in the side panel, close it;
-    // otherwise delegate to the AI Chat toggle.
+    // ─── Smart Toggle: side panel OR AI Chat ───────────────────────────────────
+    // ctrl+tab — in side mode, show/hide the side-docked panel (Terminal, Debug
+    // Console, …) keeping its last active tab; otherwise toggle the AI Chat.
     const smartCloseCmd = vscode.commands.registerCommand(
       'lynx-keymap.openAndCloseAIChatAndTerminal',
       async () => {
@@ -68,17 +68,16 @@ export class TerminalManager extends BaseManager {
           const current = context.workspaceState.get<string>(STORAGE_KEYS.PANEL_POSITION);
 
           if (current === PANEL_POSITIONS.LEFT) {
-            await Promise.all([
-              restoreOriginalSettings(context),
-              context.workspaceState.update(STORAGE_KEYS.PANEL_POSITION, undefined),
-            ]);
-            await vscode.commands.executeCommand('workbench.action.closePanel');
+            // Panel is side-docked — just show/hide it and stay in side mode.
+            // VS Code reopens the last active tab; exiting side mode is a
+            // separate command's job, not this one's.
+            await vscode.commands.executeCommand('workbench.action.togglePanel');
           } else {
             await vscode.commands.executeCommand('lynx-keymap.openAndCloseAIChat');
           }
         } catch (error) {
-          console.error(`${LOG_PREFIX} Smart close failed:`, error);
-          vscode.window.showErrorMessage(`Smart close failed: ${error instanceof Error ? error.message : String(error)}`);
+          console.error(`${LOG_PREFIX} Smart toggle failed:`, error);
+          vscode.window.showErrorMessage(`Smart toggle failed: ${error instanceof Error ? error.message : String(error)}`);
         }
       }
     );
@@ -114,6 +113,39 @@ export class TerminalManager extends BaseManager {
       }
     );
 
-    this.register(context, toggleCmd, smartCloseCmd, smartNewTerminalCmd);
+    // ─── Restore Default Layout ────────────────────────────────────────────────
+    // ctrl+alt+capslock — return to the normal layout: AI chat back on the side,
+    // the panel (terminal / last-opened tab) docked at the bottom.
+    const restoreLayoutCmd = vscode.commands.registerCommand(
+      'lynx-keymap.restoreDefaultLayout',
+      async () => {
+        try {
+          const wasSidePanel =
+            context.workspaceState.get<string>(STORAGE_KEYS.PANEL_POSITION) === PANEL_POSITIONS.LEFT;
+
+          if (wasSidePanel) {
+            await Promise.all([
+              restoreOriginalSettings(context),
+              context.workspaceState.update(STORAGE_KEYS.PANEL_POSITION, undefined),
+            ]);
+          }
+
+          await vscode.commands.executeCommand('workbench.action.positionPanelBottom');
+
+          // Side mode had closed the AI chat — bring it back. Only toggle when we
+          // came from side mode, so we never accidentally close an open chat.
+          if (wasSidePanel) {
+            await vscode.commands.executeCommand('lynx-keymap.openAndCloseAIChat');
+          }
+
+          await vscode.commands.executeCommand('workbench.action.focusPanel');
+        } catch (error) {
+          console.error(`${LOG_PREFIX} Restore default layout failed:`, error);
+          vscode.window.showErrorMessage(`Restore layout failed: ${error instanceof Error ? error.message : String(error)}`);
+        }
+      }
+    );
+
+    this.register(context, toggleCmd, smartCloseCmd, smartNewTerminalCmd, restoreLayoutCmd);
   }
 }
