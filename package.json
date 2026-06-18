@@ -120,16 +120,16 @@
 
 
 
-
-
-
-
-
       {
         "key"    : "alt+capslock",
         "mac"    : "alt+capslock",
         "command": "lynx-keymap.toggleTerminalLeftAndRight"
-      },{
+      }
+
+
+
+
+,{
         "key"    : "ctrl+tab",
         "mac"    : "cmd+tab",
         "command": "lynx-keymap.openAndCloseAIChatAndTerminal"
@@ -168,27 +168,19 @@
       
       
       
-      {
-        "key"    : "ctrl+[Backquote]",
-        "mac"    : "cmd+[Backquote]",
-        "command": "workbench.action.toggleMaximizedPanel"
-      },
+
       {
         "key"    : "shift+escape",
         "mac"    : "shift+escape",
         "command": "workbench.action.toggleMaximizedAuxiliaryBar"
       },
       
-      
-      
+
+
       {
-        "key"    : "ctrl+alt+[Backquote]",
-        "mac"    : "cmd+alt+[Backquote]",
-        "command": "workbench.action.terminal.kill"
-      },{
-        "key"    : "ctrl+shift+[Backquote]",
-        "mac"    : "cmd+shift+[Backquote]",
-        "command": "lynx-keymap.smartNewTerminal"
+        "key"    : "alt+capslock",
+        "mac"    : "alt+capslock",
+        "command": "lynx-keymap.toggleTerminalLeftAndRight"
       },
 
 
@@ -208,6 +200,22 @@
         "key"    : "alt+q",
         "mac"    : "alt+q",
         "command": "workbench.debug.action.toggleRepl"
+      },
+      
+      
+      
+      {
+        "key"    : "ctrl+[Backquote]",
+        "mac"    : "cmd+[Backquote]",
+        "command": "workbench.action.toggleMaximizedPanel"
+      },{
+        "key"    : "ctrl+shift+[Backquote]",
+        "mac"    : "cmd+shift+[Backquote]",
+        "command": "lynx-keymap.smartNewTerminal"
+      },{
+        "key"    : "ctrl+alt+[Backquote]",
+        "mac"    : "cmd+alt+[Backquote]",
+        "command": "workbench.action.terminal.kill"
       },
 
 
