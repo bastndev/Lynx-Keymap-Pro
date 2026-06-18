@@ -92,16 +92,30 @@
 
 
 
+ 
+
+
+
+
+
+
       {
+        "key"    : "alt+7",
+        "mac"    : "alt+7",
+        "command": "workbench.action.togglePanel"
+      },{
+        "key"    : "ctrl+w",
+        "mac"    : "ctrl+w",
+        "command": "workbench.action.quickOpenTerm"
+      },{
         "key"    : "ctrl+e",
         "mac"    : "ctrl+e",
         "command": "lynx-keymap.openGitlabPanel"
       },{
         "key"    : "ctrl+q",
         "mac"    : "ctrl+q",
-        "command": "workbench.debug.action.toggleRepl"
+        "command": "workbench.action.focusFirstEditorGroup"
       },
-      
 
 
 
@@ -111,18 +125,6 @@
 
 
 
-
-
-
-
-
-
-
-      {
-        "key"    : "alt+e",
-        "mac"    : "alt+e",
-        "command": "workbench.action.togglePanel"
-      },
       {
         "key"    : "alt+capslock",
         "mac"    : "alt+capslock",
@@ -193,14 +195,25 @@
         "key"    : "ctrl+capslock",
         "mac"    : "ctrl+capslock",
         "command": "lynx-keymap.toggleTerminalBottom"
+      },
+      
+      
+      {
+        "key"    : "alt+r",
+        "mac"    : "alt+r",
+        "command": "workbench.view.extension.gitlab-panel"
+      },{
+        "key"    : "alt+e",
+        "mac"    : "alt+e",
+        "command": "workbench.view.extension.myCliContainer"
       },{
         "key"    : "alt+w",
         "mac"    : "alt+w",
-        "command": "workbench.action.quickOpenTerm"
+        "command": "workbench.action.terminal.toggleTerminal"
       },{
         "key"    : "alt+q",
         "mac"    : "alt+q",
-        "command": "workbench.action.focusFirstEditorGroup"
+        "command": "workbench.debug.action.toggleRepl"
       },
 
 
@@ -308,6 +321,7 @@
         "command": "markdown.showPreviewToSide",
         "when"   : "lynx.keymap != 'compact'"
       },
+
 
 
 
