@@ -275,13 +275,11 @@
       
       
       
-      
       {
         "key"    : "f5",
         "mac"    : "f5",
         "command": "lynx-keymap.smartDebugStart"
       },
-      
       
       
       
