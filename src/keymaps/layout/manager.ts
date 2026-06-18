@@ -25,7 +25,7 @@ export class KeymapLayoutManager extends BaseManager {
       -1000,
     );
     this.statusItem.command = 'lynx-keymap.toggleLayout';
-    this.statusItem.tooltip = 'Switch Lynx keyboard layout (Normal / 75%)';
+    this.statusItem.tooltip = 'Switch Lynx Keymaps layout (Normal / 75%)';
     this.statusItem.show();
 
     // Apply the saved layout on startup (defaults to 'normal').
@@ -57,7 +57,7 @@ export class KeymapLayoutManager extends BaseManager {
 
     if (notify) {
       void vscode.window.showInformationMessage(
-        mode === 'compact' ? '⌨️  75% mode' : '⌨️  Normal mode',
+        mode === 'compact' ? '⌨️  75% keymap ~~~~~~~~~~~~~~~~~~~~~~~~~> (Active)' : '⌨️  Normal keymap ~~~~~~~~~~~~~~~~~~~~~~~~~> (Active)',
       );
     }
   }
