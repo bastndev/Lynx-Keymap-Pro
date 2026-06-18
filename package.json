@@ -81,7 +81,7 @@
         "command": "-github.copilot.generate"
       },{
         "key"    : "ctrl+e",
-        "mac"    : "ctrl+e",
+        "mac"    : "cmd+e",
         "command": "-workbench.debug.action.toggleRepl"
       },
 
