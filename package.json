@@ -124,16 +124,12 @@
         "key"    : "alt+capslock",
         "mac"    : "alt+capslock",
         "command": "lynx-keymap.toggleTerminalLeftAndRight"
-      }
+      },
 
 
 
 
-,{
-        "key"    : "ctrl+tab",
-        "mac"    : "cmd+tab",
-        "command": "lynx-keymap.openAndCloseAIChatAndTerminal"
-      },{
+{
         "key"    : "ctrl+shift+tab",
         "mac"    : "cmd+shift+tab",
         "command": "workbench.action.toggleSidebarVisibility"
@@ -165,15 +161,25 @@
         "mac"    : "alt+a",
         "command": "lynx-keymap.createNewAISession"
       },
-      
-      
-      
 
+
+
+
+      {
+        "key"    : "ctrl+tab",
+        "mac"    : "cmd+tab",
+        "command": "lynx-keymap.openAndCloseAIChatAndTerminal"
+      },
+      
+      
       {
         "key"    : "alt+capslock",
         "mac"    : "alt+capslock",
         "command": "lynx-keymap.toggleTerminalLeftAndRight"
       },
+
+
+
 
 
       {
