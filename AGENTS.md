@@ -1,5 +1,12 @@
 # AGENTS.md
 
+<!-- F1-MEMORY:START -->
+## Project context (F1 My Memory)
+
+This project ships a prebuilt context map at `./.f1/project-map.md`.
+Read it first to understand the project before scanning files — it saves tokens.
+<!-- F1-MEMORY:END -->
+
 ## What This Is
 
 Lynx Keymap Pro is a VS Code extension (also works in Cursor, Windsurf, Trae, Kiro, Firebase Studio, Antigravity) that unifies keyboard shortcuts across AI-powered editors. It detects which editor is running and maps a single Lynx command to the correct native command via a priority-based fallback system.

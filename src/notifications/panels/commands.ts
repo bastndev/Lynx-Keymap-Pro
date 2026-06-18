@@ -21,7 +21,7 @@ const PANEL_CONFIGS: PanelConfig[] = [
   },
   {
     commandId:    'lynx-keymap.openMySkillsPanel',
-    extensionId:  'bastndev.my-skills',
+    extensionId:  'bastndev.f1',
     focusCommand: 'myskills-panel.focus',
     messageKey:   'MySkills.notification.install.required',
     actionKey:    'MySkills.notification.install.action',

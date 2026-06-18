@@ -97,14 +97,13 @@
         "mac"    : "ctrl+e",
         "command": "lynx-keymap.openGitlabPanel"
       },{
-        "key"    : "ctrl+3",
-        "mac"    : "cmd+3",
-        "command": "lynx-keymap.openMySkillsPanel"
-      },
-      {
         "key"    : "ctrl+q",
         "mac"    : "ctrl+q",
         "command": "workbench.debug.action.toggleRepl"
+      },{
+        "key"    : "ctrl+3",
+        "mac"    : "cmd+3",
+        "command": "lynx-keymap.openMySkillsPanel"
       },
       {
         "key"    : "alt+0",
