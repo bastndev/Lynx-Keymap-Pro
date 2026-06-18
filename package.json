@@ -270,53 +270,20 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-      {
-        "key"    : "end",
-        "mac"    : "end",
-        "command": "workbench.action.quit"
-      },
-
       {
         "key"    : "alt+l",
         "mac"    : "alt+l",
         "command": "git.viewChanges",
         "when"   : "lynx.keymap != 'compact'"
       },{
-        "key"    : "pageup",
-        "mac"    : "pageup",
-        "command": "git.viewChanges",
-        "when"   : "lynx.keymap == 'compact'"
-      },
-
-      {
         "key"    : "alt+m",
         "mac"    : "alt+m",
         "command": "markdown.showPreviewToSide",
         "when"   : "lynx.keymap != 'compact'"
-      },{
-        "key"    : "pagedown",
-        "mac"    : "pagedown",
-        "command": "markdown.showPreviewToSide",
-        "when"   : "lynx.keymap == 'compact'"
       },
       
       
-
-
-
-
-
-
+      
       {
         "key"    : "ctrl+insert",
         "mac"    : "cmd+insert",
@@ -362,7 +329,20 @@
         "command": "workbench.action.debug.stop",
         "when"   : "lynx.keymap != 'compact'"
       },
-
+      
+      
+      
+      {
+        "key"    : "pagedown",
+        "mac"    : "pagedown",
+        "command": "markdown.showPreviewToSide",
+        "when"   : "lynx.keymap == 'compact'"
+      },{
+        "key"    : "pageup",
+        "mac"    : "pageup",
+        "command": "git.viewChanges",
+        "when"   : "lynx.keymap == 'compact'"
+      },
 
 
 
