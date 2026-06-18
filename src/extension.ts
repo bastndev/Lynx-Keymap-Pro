@@ -4,6 +4,7 @@ import { AICommandsManager }           from './keymaps/ai/commands-manager';
 import { AIToggleManager }             from './keymaps/ai/toggle-manager';
 import { TerminalManager }             from './keymaps/terminal/side-panel';
 import { BottomTerminalManager }       from './keymaps/terminal/bottom-panel';
+import { KeymapLayoutManager }         from './keymaps/layout/manager';
 import { GitResetManager }             from './editor/git/reset-manager';
 import { DebugManager }                from './editor/debug/panel';
 import { WordWrapManager }             from './editor/wordwrap/manager';
@@ -22,6 +23,7 @@ export async function activate(context: vscode.ExtensionContext) {
   const wordWrapManager    = new WordWrapManager();
   const debugManager       = new DebugManager();
   const panelCommandsMgr   = new PanelCommandsManager();
+  const layoutManager      = new KeymapLayoutManager();
 
   managers.push(
     { name: 'aiManager',         ref: aiManager         },
@@ -32,6 +34,7 @@ export async function activate(context: vscode.ExtensionContext) {
     { name: 'wordWrapManager',   ref: wordWrapManager   },
     { name: 'debugManager',      ref: debugManager      },
     { name: 'panelCommandsMgr',  ref: panelCommandsMgr  },
+    { name: 'layoutManager',     ref: layoutManager     },
   );
 
   aiManager.registerCommands(context);
@@ -42,6 +45,7 @@ export async function activate(context: vscode.ExtensionContext) {
   wordWrapManager.registerCommands(context);
   debugManager.registerCommands(context);
   panelCommandsMgr.registerCommands(context);
+  layoutManager.registerCommands(context);
 
   await recoverSidePanelState(context);
 }
