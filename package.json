@@ -117,6 +117,16 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
       {
         "key"    : "alt+e",
         "mac"    : "alt+e",
@@ -202,13 +212,6 @@
         "command": "workbench.action.focusFirstEditorGroup"
       },
 
-
-
-
-
-
-
-      
 
 
 
@@ -312,6 +315,7 @@
         "command": "markdown.showPreviewToSide",
         "when"   : "lynx.keymap != 'compact'"
       },
+
 
 
 
