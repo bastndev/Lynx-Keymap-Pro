@@ -117,7 +117,11 @@
 
 
 
-
+      {
+        "key"    : "alt+e",
+        "mac"    : "alt+e",
+        "command": "workbench.action.togglePanel"
+      },
       {
         "key"    : "alt+capslock",
         "mac"    : "alt+capslock",
@@ -288,32 +292,7 @@
 
 
 
-      {
-        "key"    : "shift+alt+t",
-        "mac"    : "shift+alt+t",
-        "command": "workbench.action.selectTheme"
-      },{
-        "key"    : "shift+alt+r",
-        "mac"    : "shift+alt+r",
-        "command": "workbench.action.reloadWindow"
-      },{
-        "key"    : "shift+alt+e",
-        "mac"    : "shift+alt+e",
-        "command": "workbench.action.quickOpen"
-      },
-      {
-        "key"    : "alt+e",
-        "mac"    : "alt+e",
-        "command": "workbench.action.togglePanel"
-      },{
-        "key"    : "shift+alt+w",
-        "mac"    : "shift+alt+w",
-        "command": "workbench.action.gotoLine"
-      },{
-        "key"    : "shift+alt+q",
-        "mac"    : "shift+alt+q",
-        "command": "expandLineSelection"
-      },
+
 
 
 
@@ -398,10 +377,27 @@
 
 
 
-
-
-
-      
+      {
+        "key"    : "shift+alt+t",
+        "mac"    : "shift+alt+t",
+        "command": "workbench.action.selectTheme"
+      },{
+        "key"    : "shift+alt+r",
+        "mac"    : "shift+alt+r",
+        "command": "workbench.action.reloadWindow"
+      },{
+        "key"    : "shift+alt+e",
+        "mac"    : "shift+alt+e",
+        "command": "workbench.action.quickOpen"
+      },{
+        "key"    : "shift+alt+w",
+        "mac"    : "shift+alt+w",
+        "command": "workbench.action.gotoLine"
+      },{
+        "key"    : "shift+alt+q",
+        "mac"    : "shift+alt+q",
+        "command": "expandLineSelection"
+      },
       
       
       
