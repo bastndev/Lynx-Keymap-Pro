@@ -170,14 +170,6 @@
       
 
       {
-        "key"    : "shift+escape",
-        "mac"    : "shift+escape",
-        "command": "workbench.action.toggleMaximizedAuxiliaryBar"
-      },
-      
-
-
-      {
         "key"    : "alt+capslock",
         "mac"    : "alt+capslock",
         "command": "lynx-keymap.toggleTerminalLeftAndRight"
