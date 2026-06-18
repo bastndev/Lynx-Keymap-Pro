@@ -127,15 +127,14 @@
         "command": "lynx-keymap.openAndCloseAIChatAndTerminal"
       },
       
-            {
-        "key"    : "alt+7",
-        "mac"    : "alt+7",
-        "command": "workbench.action.togglePanel"
-      },
       {
         "key"    : "alt+capslock",
         "mac"    : "alt+capslock",
         "command": "lynx-keymap.toggleTerminalLeftAndRight"
+      },{
+        "key"    : "ctrl+alt+capslock",
+        "mac"    : "ctrl+alt+capslock",
+        "command": "lynx-keymap.restoreDefaultLayout"
       },
 
 
@@ -700,6 +699,9 @@
       {
         "command": "lynx-keymap.toggleTerminalLeftAndRight",
         "title"  : "Toggle Terminal Left and Right"
+      },{
+        "command": "lynx-keymap.restoreDefaultLayout",
+        "title"  : "Restore Default Layout"
       },{
         "command": "lynx-keymap.smartNewTerminal",
         "title"  : "Smart New Terminal"

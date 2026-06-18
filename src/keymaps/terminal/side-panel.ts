@@ -113,6 +113,39 @@ export class TerminalManager extends BaseManager {
       }
     );
 
-    this.register(context, toggleCmd, smartCloseCmd, smartNewTerminalCmd);
+    // ─── Restore Default Layout ────────────────────────────────────────────────
+    // ctrl+alt+capslock — return to the normal layout: AI chat back on the side,
+    // the panel (terminal / last-opened tab) docked at the bottom.
+    const restoreLayoutCmd = vscode.commands.registerCommand(
+      'lynx-keymap.restoreDefaultLayout',
+      async () => {
+        try {
+          const wasSidePanel =
+            context.workspaceState.get<string>(STORAGE_KEYS.PANEL_POSITION) === PANEL_POSITIONS.LEFT;
+
+          if (wasSidePanel) {
+            await Promise.all([
+              restoreOriginalSettings(context),
+              context.workspaceState.update(STORAGE_KEYS.PANEL_POSITION, undefined),
+            ]);
+          }
+
+          await vscode.commands.executeCommand('workbench.action.positionPanelBottom');
+
+          // Side mode had closed the AI chat — bring it back. Only toggle when we
+          // came from side mode, so we never accidentally close an open chat.
+          if (wasSidePanel) {
+            await vscode.commands.executeCommand('lynx-keymap.openAndCloseAIChat');
+          }
+
+          await vscode.commands.executeCommand('workbench.action.focusPanel');
+        } catch (error) {
+          console.error(`${LOG_PREFIX} Restore default layout failed:`, error);
+          vscode.window.showErrorMessage(`Restore layout failed: ${error instanceof Error ? error.message : String(error)}`);
+        }
+      }
+    );
+
+    this.register(context, toggleCmd, smartCloseCmd, smartNewTerminalCmd, restoreLayoutCmd);
   }
 }
