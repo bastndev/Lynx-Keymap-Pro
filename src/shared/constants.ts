@@ -7,6 +7,7 @@ export const STORAGE_KEYS = {
   ORIGINAL_TABS_LOCATION:     'lynx-keymap:originalTabsLocation',
   ORIGINAL_PANEL_SHOW_LABELS: 'lynx-keymap:originalPanelShowLabels',
   PANEL_POSITION:             'lynx-keymap:terminalPanelPosition',
+  LAYOUT_MODE:                'lynx-keymap:layoutMode',
 } as const;
 
 // ─── Panel Positions ──────────────────────────────────────────────────────────
