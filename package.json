@@ -101,12 +101,7 @@
         "mac"    : "ctrl+q",
         "command": "workbench.debug.action.toggleRepl"
       },
-      {
-        "key"    : "alt+0",
-        "mac"    : "alt+0",
-        "command": "lynx-keymap.toggleLayout"
-      },
-
+      
 
 
 
@@ -272,6 +267,10 @@
       
       
       {
+        "key"    : "alt+0",
+        "mac"    : "alt+0",
+        "command": "lynx-keymap.toggleLayout"
+      },{
         "key"    : "f5",
         "mac"    : "f5",
         "command": "lynx-keymap.smartDebugStart"
