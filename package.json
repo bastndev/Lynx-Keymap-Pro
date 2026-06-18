@@ -123,21 +123,6 @@
 
 
       {
-        "key"    : "shift+alt+d",
-        "mac"    : "shift+alt+d",
-        "command": "lynx.toggleSuggestionAI"
-      },{
-        "key"    : "shift+alt+s",
-        "mac"    : "shift+alt+s",
-        "command": "lynx-keymap.selectModels"
-      },{
-        "key"    : "shift+alt+a",
-        "mac"    : "shift+alt+a",
-        "command": "lynx-keymap.toggleAgentMode"
-      },
-      
-      
-      {
         "key"    : "alt+d",
         "mac"    : "alt+d",
         "command": "lynx-keymap.selectCode"
