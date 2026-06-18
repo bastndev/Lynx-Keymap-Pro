@@ -1,3 +1,32 @@
+# Archived: Bottom Terminal Manager
+
+> Removed from the active extension on 2026-06-18. Preserved here in case the
+> "terminal at the bottom" toggle logic is needed again. Git history also holds
+> the original at `src/keymaps/terminal/bottom-panel.ts`.
+
+## What it did
+
+Command `lynx-keymap.toggleTerminalBottom` (was bound to `ctrl+capslock`).
+
+Toggled the integrated terminal into a **bottom panel** layout and back:
+
+- If panel position was already `bottom` → restore the user's original terminal
+  settings and close the panel (returns to `undefined`).
+- Otherwise → move the panel to the bottom, enabling terminal tabs + panel
+  labels (`applyTerminalSettings(true, true, originalTabsLocation)`), and store
+  position `bottom` in `workspaceState`.
+- The `left → bottom` transition (`isTransition`) reused the already-saved
+  original settings instead of re-saving, and re-opened the AI chat that the
+  side-panel mode had displaced.
+
+It paired with `TerminalManager` (side-panel / left-right mode) and shared the
+`saveOriginalSettings` / `restoreOriginalSettings` / `applyTerminalSettings`
+helpers in `src/keymaps/terminal/settings.ts`, plus `STORAGE_KEYS.PANEL_POSITION`
+and `PANEL_POSITIONS` from `src/shared/constants.ts`.
+
+## Original source
+
+```ts
 import * as vscode from 'vscode';
 import { STORAGE_KEYS, LOG_PREFIX, PANEL_POSITIONS } from '../../shared/constants';
 import { BaseManager } from '../../shared/base-manager';
@@ -54,3 +83,12 @@ export class BottomTerminalManager extends BaseManager {
     this.register(context, toggleCmd);
   }
 }
+```
+
+## To restore
+
+1. Recreate `src/keymaps/terminal/bottom-panel.ts` with the source above.
+2. Re-export it in `src/keymaps/index.ts`.
+3. In `src/extension.ts`: import it, instantiate `bottomTerminalMgr`, add it to
+   the `managers` array, and call `bottomTerminalMgr.registerCommands(context)`.
+4. Re-add the `commands` contribution and a keybinding in `package.json`.

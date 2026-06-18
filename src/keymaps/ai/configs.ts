@@ -78,7 +78,7 @@ export const AI_COMMANDS: Record<ActionKey, EditorCommandMap> = {
     // [EditorType.FIREBASE]: [no support]
   },
 
-  // MARK:[Alt+S]
+  // MARK:[unbound]  (was Alt+S; keybinding removed 2026-06-18)
   selectModels: {
     [EditorType.ANTIGRAVITY]: 'antigravity.toggleModelSelector',
     [EditorType.VSCODE]:      'workbench.action.chat.openModelPicker',
@@ -100,7 +100,7 @@ export const AI_COMMANDS: Record<ActionKey, EditorCommandMap> = {
     // [EditorType.FIREBASE]: [no support]
   },
 
-  // MARK:[Shift+Alt+A] ---
+  // MARK:[unbound]  (was Shift+Alt+A; keybinding removed 2026-06-18)
   toggleAgentMode: {
     [EditorType.ANTIGRAVITY]: 'workbench.action.chat.toggleAgentMode',
     [EditorType.VSCODE]:      'workbench.action.chat.toggleAgentMode',
@@ -111,7 +111,7 @@ export const AI_COMMANDS: Record<ActionKey, EditorCommandMap> = {
     // [EditorType.FIREBASE]: [no support]
   },
 
-  // MARK:[Shift+Alt+S]
+  // MARK:[Alt+S]
   showAIHistory: {
     [EditorType.ANTIGRAVITY]: 'antigravity.openConversationPicker',
     [EditorType.VSCODE]:      'workbench.action.chat.history',
