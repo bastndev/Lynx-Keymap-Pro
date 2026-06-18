@@ -89,11 +89,7 @@
 
 
 
-{
-        "key"    : "ctrl+shift+tab",
-        "mac"    : "cmd+shift+tab",
-        "command": "workbench.action.toggleSidebarVisibility"
-      }, 
+
 
 
 
@@ -503,6 +499,13 @@
         "mac"    : "cmd+1",
         "command": "workbench.view.explorer"
       },
+
+
+      {
+        "key"    : "ctrl+shift+tab",
+        "mac"    : "cmd+shift+tab",
+        "command": "workbench.action.toggleSidebarVisibility"
+      }, 
       
       
       
