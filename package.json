@@ -118,6 +118,24 @@
 
 
 
+      {
+        "key"    : "alt+capslock",
+        "mac"    : "alt+capslock",
+        "command": "lynx-keymap.toggleTerminalLeftAndRight"
+      },{
+        "key"    : "ctrl+tab",
+        "mac"    : "cmd+tab",
+        "command": "lynx-keymap.openAndCloseAIChatAndTerminal"
+      },{
+        "key"    : "ctrl+shift+tab",
+        "mac"    : "cmd+shift+tab",
+        "command": "workbench.action.toggleSidebarVisibility"
+      },
+
+
+
+
+
 
       {
         "key"    : "alt+shift+audiovolumedown",
@@ -256,49 +274,10 @@
 
 
 
-      {
-        "key"    : "alt+/",
-        "mac"    : "alt+/",
-        "command": "editor.action.blockComment"
-      },{
-        "key"    : "ctrl+/",
-        "mac"    : "cmd+/",
-        "command": "editor.action.commentLine"
-      },
+
       
       
-      {
-        "key"    : "shift+alt+f",
-        "mac"    : "shift+alt+f",
-        "command": "editor.action.organizeImports"
-      },{
-        "key"    : "ctrl+alt+f",
-        "mac"    : "cmd+alt+f",
-        "command": "editor.action.formatSelection.multiple"
-      },{
-        "key"    : "alt+f",
-        "mac"    : "alt+f",
-        "command": "editor.action.formatDocument"
-      },
-      
-      
-      {
-        "key"    : "ctrl+j",
-        "mac"    : "cmd+j",
-        "command": "workbench.action.openSettings"
-      },
-      {
-        "key"    : "ctrl+,", 
-        "mac"    : "cmd+,",
-        "command": "workbench.action.terminal.sendSequence",
-        "args"   : {"text": "\u001b[C"},
-        "when"   : "terminalFocus"
-      },
-      {
-        "key"    : "alt+j",
-        "mac"    : "alt+j",
-        "command": "workbench.action.openSettingsJson"
-      },
+
 
 
 
@@ -414,6 +393,14 @@
         "command": "workbench.action.focusFirstEditorGroup"
       },
       
+
+
+
+
+
+
+
+
       
       
       
@@ -422,20 +409,56 @@
       
       
       {
-        "key"    : "alt+capslock",
-        "mac"    : "alt+capslock",
-        "command": "lynx-keymap.toggleTerminalLeftAndRight"
+        "key"    : "shift+alt+f",
+        "mac"    : "shift+alt+f",
+        "command": "editor.action.organizeImports"
       },{
-        "key"    : "ctrl+tab",
-        "mac"    : "cmd+tab",
-        "command": "lynx-keymap.openAndCloseAIChatAndTerminal"
+        "key"    : "ctrl+alt+f",
+        "mac"    : "cmd+alt+f",
+        "command": "editor.action.formatSelection.multiple"
       },{
-        "key"    : "ctrl+shift+tab",
-        "mac"    : "cmd+shift+tab",
-        "command": "workbench.action.toggleSidebarVisibility"
+        "key"    : "alt+f",
+        "mac"    : "alt+f",
+        "command": "editor.action.formatDocument"
       },
       
       
+      
+      
+      
+      
+      {
+        "key"    : "ctrl+j",
+        "mac"    : "cmd+j",
+        "command": "workbench.action.openSettings"
+      },
+      {
+        "key"    : "ctrl+,", 
+        "mac"    : "cmd+,",
+        "command": "workbench.action.terminal.sendSequence",
+        "args"   : {"text": "\u001b[C"},
+        "when"   : "terminalFocus"
+      },
+      {
+        "key"    : "alt+j",
+        "mac"    : "alt+j",
+        "command": "workbench.action.openSettingsJson"
+      },
+      
+      
+      
+      
+      
+      
+      {
+        "key"    : "alt+/",
+        "mac"    : "alt+/",
+        "command": "editor.action.blockComment"
+      },{
+        "key"    : "ctrl+/",
+        "mac"    : "cmd+/",
+        "command": "editor.action.commentLine"
+      },
       
       
       
@@ -670,6 +693,7 @@
         "when"   : "terminalFocus"
       }
     ],
+
     "commands": [
       {
         "command": "lynx-keymap.generateAICommit",
