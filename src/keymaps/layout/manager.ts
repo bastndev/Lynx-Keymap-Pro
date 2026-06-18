@@ -57,7 +57,7 @@ export class KeymapLayoutManager extends BaseManager {
 
     if (notify) {
       void vscode.window.showInformationMessage(
-        mode === 'compact' ? '⌨️  75% keymap ~~~~~~~~~~~~~~~~~~~~~~~~~> (Active)' : '⌨️  Normal keymap ~~~~~~~~~~~~~~~~~~~~~~~~~> (Active)',
+        mode === 'compact' ? '⌨️  75% keymap ~~~~~~~~~~~~~~~~~~~~~~~~~~~> (Active)' : '⌨️  Normal keymap ~~~~~~~~~~~~~~~~~~~~~~~~~> (Active)',
       );
     }
   }
