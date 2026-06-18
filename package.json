@@ -89,6 +89,11 @@
 
 
 
+{
+        "key"    : "ctrl+shift+tab",
+        "mac"    : "cmd+shift+tab",
+        "command": "workbench.action.toggleSidebarVisibility"
+      }, 
 
 
 
@@ -99,18 +104,10 @@
 
 
 
-      {
-        "key"    : "alt+7",
-        "mac"    : "alt+7",
-        "command": "workbench.action.togglePanel"
-      },{
+{
         "key"    : "ctrl+w",
         "mac"    : "ctrl+w",
         "command": "workbench.action.quickOpenTerm"
-      },{
-        "key"    : "ctrl+e",
-        "mac"    : "ctrl+e",
-        "command": "lynx-keymap.openGitlabPanel"
       },{
         "key"    : "ctrl+q",
         "mac"    : "ctrl+q",
@@ -120,27 +117,19 @@
 
 
 
+
+
+
+
+
       {
-        "key"    : "alt+capslock",
-        "mac"    : "alt+capslock",
-        "command": "lynx-keymap.toggleTerminalLeftAndRight"
-      },
-
-
-
-
-{
-        "key"    : "ctrl+shift+tab",
-        "mac"    : "cmd+shift+tab",
-        "command": "workbench.action.toggleSidebarVisibility"
-      },      {
         "key"    : "shift+alt+d",
         "mac"    : "shift+alt+d",
         "command": "lynx.toggleSuggestionAI"
       },{
         "key"    : "shift+alt+s",
         "mac"    : "shift+alt+s",
-        "command": "lynx-keymap.showAIHistory"
+        "command": "lynx-keymap.selectModels"
       },{
         "key"    : "shift+alt+a",
         "mac"    : "shift+alt+a",
@@ -155,7 +144,7 @@
       },{
         "key"    : "alt+s",
         "mac"    : "alt+s",
-        "command": "lynx-keymap.selectModels"
+        "command": "lynx-keymap.showAIHistory"
       },{
         "key"    : "alt+a",
         "mac"    : "alt+a",
@@ -171,7 +160,11 @@
         "command": "lynx-keymap.openAndCloseAIChatAndTerminal"
       },
       
-      
+            {
+        "key"    : "alt+7",
+        "mac"    : "alt+7",
+        "command": "workbench.action.togglePanel"
+      },
       {
         "key"    : "alt+capslock",
         "mac"    : "alt+capslock",
