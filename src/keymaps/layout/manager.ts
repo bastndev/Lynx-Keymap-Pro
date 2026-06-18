@@ -22,7 +22,7 @@ export class KeymapLayoutManager extends BaseManager {
   registerCommands(context: vscode.ExtensionContext): void {
     this.statusItem = vscode.window.createStatusBarItem(
       vscode.StatusBarAlignment.Right,
-      50,
+      -1000,
     );
     this.statusItem.command = 'lynx-keymap.toggleLayout';
     this.statusItem.tooltip = 'Switch Lynx keyboard layout (Normal / 75%)';
@@ -67,6 +67,6 @@ export class KeymapLayoutManager extends BaseManager {
       return;
     }
     this.statusItem.text =
-      mode === 'compact' ? '$(keyboard) Lynx: 75%' : '$(keyboard) Lynx: Normal';
+      mode === 'compact' ? '$(keyboard): 75%' : '$(keyboard): Pro';
   }
 }
