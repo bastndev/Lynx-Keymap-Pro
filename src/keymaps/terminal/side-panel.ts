@@ -58,9 +58,9 @@ export class TerminalManager extends BaseManager {
       }
     );
 
-    // ─── Smart Close: Terminal lateral OR AI Chat ──────────────────────────────
-    // ctrl+capslock — if terminal is in the side panel, close it;
-    // otherwise delegate to the AI Chat toggle.
+    // ─── Smart Toggle: side panel OR AI Chat ───────────────────────────────────
+    // ctrl+tab — in side mode, show/hide the side-docked panel (Terminal, Debug
+    // Console, …) keeping its last active tab; otherwise toggle the AI Chat.
     const smartCloseCmd = vscode.commands.registerCommand(
       'lynx-keymap.openAndCloseAIChatAndTerminal',
       async () => {
@@ -68,17 +68,16 @@ export class TerminalManager extends BaseManager {
           const current = context.workspaceState.get<string>(STORAGE_KEYS.PANEL_POSITION);
 
           if (current === PANEL_POSITIONS.LEFT) {
-            await Promise.all([
-              restoreOriginalSettings(context),
-              context.workspaceState.update(STORAGE_KEYS.PANEL_POSITION, undefined),
-            ]);
-            await vscode.commands.executeCommand('workbench.action.closePanel');
+            // Panel is side-docked — just show/hide it and stay in side mode.
+            // VS Code reopens the last active tab; exiting side mode is a
+            // separate command's job, not this one's.
+            await vscode.commands.executeCommand('workbench.action.togglePanel');
           } else {
             await vscode.commands.executeCommand('lynx-keymap.openAndCloseAIChat');
           }
         } catch (error) {
-          console.error(`${LOG_PREFIX} Smart close failed:`, error);
-          vscode.window.showErrorMessage(`Smart close failed: ${error instanceof Error ? error.message : String(error)}`);
+          console.error(`${LOG_PREFIX} Smart toggle failed:`, error);
+          vscode.window.showErrorMessage(`Smart toggle failed: ${error instanceof Error ? error.message : String(error)}`);
         }
       }
     );
