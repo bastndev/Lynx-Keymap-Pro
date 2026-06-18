@@ -190,14 +190,8 @@
         "mac"    : "cmd+shift+[Backquote]",
         "command": "lynx-keymap.smartNewTerminal"
       },
-      
-      {
-        "key"    : "ctrl+capslock",
-        "mac"    : "ctrl+capslock",
-        "command": "lynx-keymap.toggleTerminalBottom"
-      },
-      
-      
+
+
       {
         "key"    : "alt+r",
         "mac"    : "alt+r",
@@ -732,9 +726,6 @@
       {
         "command": "lynx-keymap.toggleTerminalLeftAndRight",
         "title"  : "Toggle Terminal Left and Right"
-      },{
-        "command": "lynx-keymap.toggleTerminalBottom",
-        "title"  : "Toggle Terminal Bottom"
       },{
         "command": "lynx-keymap.smartNewTerminal",
         "title"  : "Smart New Terminal"
