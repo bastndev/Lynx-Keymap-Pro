@@ -10,6 +10,7 @@ import { DebugManager }                from './editor/debug/panel';
 import { WordWrapManager }             from './editor/wordwrap/manager';
 import { PanelCommandsManager }        from './notifications/panels/commands';
 import { recoverSidePanelState }       from './keymaps/terminal/startup-recovery';
+import { ensureCommandsSkipShell }      from './keymaps/terminal/skip-shell';
 
 const managers: Array<{ name: string; ref: vscode.Disposable | undefined }> = [];
 
@@ -48,6 +49,7 @@ export async function activate(context: vscode.ExtensionContext) {
   layoutManager.registerCommands(context);
 
   await recoverSidePanelState(context);
+  await ensureCommandsSkipShell();
 }
 
 export function deactivate(): void {

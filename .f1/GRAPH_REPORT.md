@@ -1,16 +1,16 @@
 # Graph Report - Lynx-Keymap-Pro  (2026-06-18)
 
 ## Corpus Check
-- 63 files · ~48,439 words
+- 66 files · ~68,904 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 423 nodes · 548 edges · 46 communities (43 shown, 3 thin omitted)
+- 483 nodes · 606 edges · 49 communities (47 shown, 2 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `fa2c27a6`
+- Built from commit: `928ff1f7`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -60,51 +60,54 @@
 - [[_COMMUNITY_Community 42|Community 42]]
 - [[_COMMUNITY_Community 43|Community 43]]
 - [[_COMMUNITY_Community 44|Community 44]]
+- [[_COMMUNITY_Community 46|Community 46]]
+- [[_COMMUNITY_Community 47|Community 47]]
+- [[_COMMUNITY_Community 48|Community 48]]
 
 ## God Nodes (most connected - your core abstractions)
-1. `Lynx Keymap` - 32 edges
-2. `BaseManager` - 21 edges
-3. `EditorDetector` - 13 edges
-4. `compilerOptions` - 11 edges
-5. `WordWrapManager` - 9 edges
-6. `EditorType` - 9 edges
-7. `AICommandsManager` - 8 edges
-8. `AIToggleManager` - 8 edges
-9. `scripts` - 7 edges
-10. `KeymapLayoutManager` - 7 edges
+1. `Communities (46 total, 3 thin omitted)` - 43 edges
+2. `Lynx Keymap` - 32 edges
+3. `BaseManager` - 21 edges
+4. `EditorDetector` - 13 edges
+5. `compilerOptions` - 11 edges
+6. `Graph Report - Lynx-Keymap-Pro  (2026-06-18)` - 11 edges
+7. `WordWrapManager` - 9 edges
+8. `EditorType` - 9 edges
+9. `AICommandsManager` - 8 edges
+10. `AIToggleManager` - 8 edges
 
 ## Surprising Connections (you probably didn't know these)
 - `activate()` --calls--> `recoverSidePanelState()`  [EXTRACTED]
   src/extension.ts → src/keymaps/terminal/startup-recovery.ts
 - `AICommandsManager` --inherits--> `BaseManager`  [EXTRACTED]
   src/keymaps/ai/commands-manager.ts → src/shared/base-manager.ts
-- `AIToggleManager` --inherits--> `BaseManager`  [EXTRACTED]
-  src/keymaps/ai/toggle-manager.ts → src/shared/base-manager.ts
 - `KeymapLayoutManager` --inherits--> `BaseManager`  [EXTRACTED]
   src/keymaps/layout/manager.ts → src/shared/base-manager.ts
 - `DebugManager` --inherits--> `BaseManager`  [EXTRACTED]
   src/editor/debug/panel.ts → src/shared/base-manager.ts
+- `GitResetManager` --inherits--> `BaseManager`  [EXTRACTED]
+  src/editor/git/reset-manager.ts → src/shared/base-manager.ts
 
 ## Import Cycles
 - 1-file cycle: `esbuild.js -> esbuild.js`
 
-## Communities (46 total, 3 thin omitted)
+## Communities (49 total, 2 thin omitted)
 
 ### Community 0 - "Community 0"
 Cohesion: 0.09
-Nodes (21): DebugManager, execFileAsync, GitResetManager, LayoutMode, PANEL_CONFIGS, PanelCommandsManager, PanelConfig, BaseManager (+13 more)
+Nodes (22): AIToggleManager, DebugManager, execFileAsync, GitResetManager, LayoutMode, PANEL_CONFIGS, PanelCommandsManager, PanelConfig (+14 more)
 
 ### Community 1 - "Community 1"
-Cohesion: 0.09
-Nodes (22): AICommandsManager, ActionKey, AI_COMMANDS, EDITOR_PRIMARY_SETTING, EDITOR_SIGNATURES, EditorCommandMap, EditorType, KEYMAP_CONFIG (+14 more)
+Cohesion: 0.11
+Nodes (18): AICommandsManager, ActionKey, AI_COMMANDS, EDITOR_PRIMARY_SETTING, EDITOR_SIGNATURES, EditorCommandMap, EditorType, KEYMAP_CONFIG (+10 more)
 
 ### Community 2 - "Community 2"
 Cohesion: 0.05
 Nodes (38): activationEvents, author, email, name, url, bugs, url, categories (+30 more)
 
 ### Community 3 - "Community 3"
-Cohesion: 0.11
-Nodes (17): [0.0.1] - 2025-04-26, [0.1.0] - 2025-06-20, [1.0.0] - 2025-07-11, [2.0.8] - 2025-07-24, [2.1.3] - 2025-08-03, [2.2.8] - 2026-05-08, [2.4.2] - 2026-05-27, Added (+9 more)
+Cohesion: 0.10
+Nodes (19): [0.0.1] - 2025-04-26, [0.1.0] - 2025-06-20, [1.0.0] - 2025-07-11, [2.0.8] - 2025-07-24, [2.1.3] - 2025-08-03, [2.2.7] - 2026-05-07, [2.2.8] - 2026-05-08, [2.4.2] - 2026-05-27 (+11 more)
 
 ### Community 4 - "Community 4"
 Cohesion: 0.16
@@ -159,8 +162,8 @@ Cohesion: 0.18
 Nodes (10): 🔀 Git, 关于我, 安装, 🧪 实验性功能 — `新`, 方法 1 — 快速打开, 方法 2 — 扩展视图, 🧩 终端 [+], 🛠️ 设置与窗口 (+2 more)
 
 ### Community 17 - "Community 17"
-Cohesion: 0.20
-Nodes (8): AI Command System (the core abstraction), Architecture, Build & Dev Commands, Conventions, Extension ID, Panel position state, Terminal Panel Management, What This Is
+Cohesion: 0.18
+Nodes (9): AI Command System (the core abstraction), Architecture, Build & Dev Commands, Conventions, Extension ID, Panel position state, Project context (F1 My Memory), Terminal Panel Management (+1 more)
 
 ### Community 18 - "Community 18"
 Cohesion: 0.20
@@ -258,25 +261,41 @@ Nodes (3): [2.3.0] - 2026-05-08, Added, Improved
 Cohesion: 0.67
 Nodes (3): [2.3.1] - 2026-05-11, Fixed, Improved
 
+### Community 43 - "Community 43"
+Cohesion: 0.05
+Nodes (43): Communities (46 total, 3 thin omitted), Community 0 - "Community 0", Community 10 - "Community 10", Community 11 - "Community 11", Community 12 - "Community 12", Community 13 - "Community 13", Community 14 - "Community 14", Community 15 - "Community 15" (+35 more)
+
+### Community 46 - "Community 46"
+Cohesion: 0.18
+Nodes (10): Community Hubs (Navigation), Corpus Check, God Nodes (most connected - your core abstractions), Graph Freshness, Graph Report - Lynx-Keymap-Pro  (2026-06-18), Import Cycles, Knowledge Gaps, Suggested Questions (+2 more)
+
+### Community 47 - "Community 47"
+Cohesion: 0.60
+Nodes (3): getTranslation(), promptInstallExtension(), notifyToggle()
+
+### Community 48 - "Community 48"
+Cohesion: 0.40
+Nodes (4): Dependency graph, Package, Project map, Top-level folders
+
 ## Knowledge Gaps
-- **252 isolated node(s):** `esbuild`, `production`, `esbuildProblemMatcherPlugin`, `name`, `displayName` (+247 more)
+- **307 isolated node(s):** `esbuild`, `production`, `esbuildProblemMatcherPlugin`, `name`, `displayName` (+302 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **3 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **2 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `Lynx Keymap` connect `Community 3` to `Community 23`, `Community 24`, `Community 26`, `Community 27`, `Community 28`, `Community 29`, `Community 30`, `Community 31`, `Community 32`, `Community 33`, `Community 34`, `Community 35`, `Community 36`, `Community 37`, `Community 38`, `Community 39`, `Community 40`, `Community 41`, `Community 42`, `Community 43`?**
-  _High betweenness centrality (0.038) - this node is a cross-community bridge._
+- **Why does `Lynx Keymap` connect `Community 3` to `Community 23`, `Community 24`, `Community 26`, `Community 27`, `Community 28`, `Community 29`, `Community 30`, `Community 31`, `Community 32`, `Community 33`, `Community 34`, `Community 35`, `Community 36`, `Community 37`, `Community 38`, `Community 39`, `Community 40`, `Community 41`, `Community 42`?**
+  _High betweenness centrality (0.029) - this node is a cross-community bridge._
+- **Why does `Communities (46 total, 3 thin omitted)` connect `Community 43` to `Community 46`?**
+  _High betweenness centrality (0.011) - this node is a cross-community bridge._
 - **Why does `BaseManager` connect `Community 0` to `Community 1`, `Community 25`?**
-  _High betweenness centrality (0.010) - this node is a cross-community bridge._
-- **Why does `devDependencies` connect `Community 4` to `Community 2`?**
-  _High betweenness centrality (0.006) - this node is a cross-community bridge._
+  _High betweenness centrality (0.007) - this node is a cross-community bridge._
 - **What connects `esbuild`, `production`, `esbuildProblemMatcherPlugin` to the rest of the system?**
-  _252 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _307 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
-  _Cohesion score 0.09411764705882353 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.09084556254367575 - nodes in this community are weakly interconnected._
 - **Should `Community 1` be split into smaller, more focused modules?**
-  _Cohesion score 0.09408033826638477 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.1092436974789916 - nodes in this community are weakly interconnected._
 - **Should `Community 2` be split into smaller, more focused modules?**
   _Cohesion score 0.05128205128205128 - nodes in this community are weakly interconnected._
