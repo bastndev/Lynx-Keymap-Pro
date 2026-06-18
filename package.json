@@ -271,15 +271,15 @@
 
 
       {
-        "key"    : "alt+l",
-        "mac"    : "alt+l",
-        "command": "git.viewChanges",
-        "when"   : "lynx.keymap != 'compact'"
-      },{
-        "key"    : "alt+m",
-        "mac"    : "alt+m",
+        "key"    : "pagedown",
+        "mac"    : "pagedown",
         "command": "markdown.showPreviewToSide",
-        "when"   : "lynx.keymap != 'compact'"
+        "when"   : "lynx.keymap == 'compact'"
+      },{
+        "key"    : "pageup",
+        "mac"    : "pageup",
+        "command": "git.viewChanges",
+        "when"   : "lynx.keymap == 'compact'"
       },
       
       
@@ -333,16 +333,17 @@
       
       
       {
-        "key"    : "pagedown",
-        "mac"    : "pagedown",
-        "command": "markdown.showPreviewToSide",
-        "when"   : "lynx.keymap == 'compact'"
-      },{
-        "key"    : "pageup",
-        "mac"    : "pageup",
+        "key"    : "alt+l",
+        "mac"    : "alt+l",
         "command": "git.viewChanges",
-        "when"   : "lynx.keymap == 'compact'"
+        "when"   : "lynx.keymap != 'compact'"
+      },{
+        "key"    : "alt+m",
+        "mac"    : "alt+m",
+        "command": "markdown.showPreviewToSide",
+        "when"   : "lynx.keymap != 'compact'"
       },
+
 
 
 
