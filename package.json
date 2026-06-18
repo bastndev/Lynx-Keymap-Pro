@@ -207,6 +207,24 @@
 
 
 
+
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
       {
         "key"    : "alt+shift+audiovolumedown",
         "mac"    : "alt+shift+audiovolumedown",
@@ -220,56 +238,7 @@
       },
       
       
-      {
-        "key"    : "ctrl+backspace",
-        "mac"    : "cmd+backspace",
-        "command": "deleteWordLeft",
-        "when"   : "editorTextFocus"
-      },{
-        "key"    : "ctrl+delete",
-        "mac"    : "cmd+delete",
-        "command": "workbench.action.closeFolder"
-      },
       
-      
-      {
-        "key"    : "alt+shift+down",
-        "mac"    : "alt+shift+down",
-        "command": "editor.action.copyLinesDownAction"
-      },{
-        "key"    : "alt+shift+up",
-        "mac"    : "alt+shift+up",
-        "command": "editor.action.copyLinesUpAction"
-      },{
-        "key"    : "alt+enter",
-        "mac"    : "alt+return",
-        "command": "inlineChat.close",
-        "when"   : "inlineChatFocused"
-      },      {
-        "key"    : "ctrl+down",
-        "mac"    : "cmd+down",
-        "command": "editor.action.insertCursorBelow"
-      },{
-        "key"    : "ctrl+up",
-        "mac"    : "cmd+up",
-        "command": "editor.action.insertCursorAbove"
-      },
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
       {
         "key"    : "pagedown",
         "mac"    : "pagedown",
@@ -387,6 +356,7 @@
       
       
       
+      
       {
         "key"    : "shift+alt+f",
         "mac"    : "shift+alt+f",
@@ -400,8 +370,6 @@
         "mac"    : "alt+f",
         "command": "editor.action.formatDocument"
       },
-      
-      
       
       
       
@@ -424,6 +392,44 @@
         "command": "workbench.action.openSettingsJson"
       },
       
+      
+      
+      
+      
+      {
+        "key"    : "ctrl+delete",
+        "mac"    : "cmd+delete",
+        "command": "workbench.action.closeFolder"
+      },{
+        "key"    : "ctrl+backspace",
+        "mac"    : "cmd+backspace",
+        "command": "deleteWordLeft",
+        "when"   : "editorTextFocus"
+      },
+      
+      
+      {
+        "key"    : "alt+shift+down",
+        "mac"    : "alt+shift+down",
+        "command": "editor.action.copyLinesDownAction"
+      },{
+        "key"    : "alt+shift+up",
+        "mac"    : "alt+shift+up",
+        "command": "editor.action.copyLinesUpAction"
+      },{
+        "key"    : "alt+enter",
+        "mac"    : "alt+return",
+        "command": "inlineChat.close",
+        "when"   : "inlineChatFocused"
+      },      {
+        "key"    : "ctrl+down",
+        "mac"    : "cmd+down",
+        "command": "editor.action.insertCursorBelow"
+      },{
+        "key"    : "ctrl+up",
+        "mac"    : "cmd+up",
+        "command": "editor.action.insertCursorAbove"
+      },
       
       
       
