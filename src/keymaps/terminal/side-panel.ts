@@ -49,7 +49,7 @@ export class TerminalManager extends BaseManager {
               ),
             ]);
 
-            await vscode.commands.executeCommand('workbench.action.terminal.focus');
+            await vscode.commands.executeCommand('workbench.action.focusPanel');
           }
         } catch (error) {
           console.error(`${LOG_PREFIX} Terminal left toggle failed:`, error);
