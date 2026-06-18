@@ -6,17 +6,18 @@
   "publisher": "bastndev",
   "license": "MIT",
   "engines": {
-		"vscode": "^1.75.0"
+    "vscode": "^1.75.0"
   },
   "categories": ["Keymaps","Other"],
   "keywords": [
     "AI Orchestrator",
     "productivity",
-    "claude code",
     "antigravity",
+    "claude code",
     "keybindings",
     "shortcuts",
     "opencode",
+    "keyboard",
     "windows",
     "keymap",
     "linux",
@@ -51,7 +52,7 @@
     "onStartupFinished"
   ],
   "main": "./dist/extension.js",
-
+  
   "contributes": {
 "keybindings": [
         {
@@ -79,8 +80,8 @@
         "mac"    : "cmd+return",
         "command": "-github.copilot.generate"
       },{
-        "key"    : "alt+b",
-        "mac"    : "alt+b",
+        "key"    : "ctrl+e",
+        "mac"    : "ctrl+e",
         "command": "-workbench.debug.action.toggleRepl"
       },
 
@@ -92,13 +93,18 @@
 
 
       {
-        "key"    : "alt+b",
-        "mac"    : "alt+b",
+        "key"    : "ctrl+e",
+        "mac"    : "ctrl+e",
         "command": "lynx-keymap.openGitlabPanel"
       },{
         "key"    : "ctrl+3",
         "mac"    : "cmd+3",
         "command": "lynx-keymap.openMySkillsPanel"
+      },
+      {
+        "key"    : "ctrl+q",
+        "mac"    : "ctrl+q",
+        "command": "workbench.debug.action.toggleRepl"
       },
 
 
@@ -109,6 +115,19 @@
 
 
 
+      {
+        "key"    : "alt+shift+audiovolumedown",
+        "mac"    : "alt+shift+audiovolumedown",
+        "command": "workbench.action.zoomOut",
+        "when"   : "editorTextFocus || !inputFocus"
+      },{
+        "key"    : "alt+shift+audiovolumeup",
+        "mac"    : "alt+shift+audiovolumeup",
+        "command": "workbench.action.zoomIn",
+        "when"   : "editorTextFocus || !inputFocus"
+      },
+      
+      
       {
         "key"    : "ctrl+backspace",
         "mac"    : "cmd+backspace",
@@ -152,28 +171,33 @@
 
 
 
+
       {
-        "key"    : "alt+m",
-        "mac"    : "alt+m",
-        "command": "markdown.showPreviewToSide"
+        "key"    : "end",
+        "mac"    : "end",
+        "command": "workbench.action.quit"
       },{
-        "key"    : "alt+l",
-        "mac"    : "alt+l",
+        "key"    : "pageup",
+        "mac"    : "pageup",
         "command": "git.viewChanges"
+      },{
+        "key"    : "pagedown",
+        "mac"    : "pagedown",
+        "command": "markdown.showPreviewToSide"
       },
       
       
       {
-        "key"    : "alt+i",
-        "mac"    : "alt+i",
+        "key"    : "ctrl+insert",
+        "mac"    : "cmd+insert",
         "command": "workbench.action.debug.stop"
       },{
-        "key"    : "alt+o",
-        "mac"    : "alt+o",
+        "key"    : "alt+insert",
+        "mac"    : "alt+insert",
         "command": "workbench.action.debug.restart"
       },{
-        "key"    : "alt+p",
-        "mac"    : "alt+p",
+        "key"    : "insert",
+        "mac"    : "insert",
         "command": "lynx-keymap.smartDebugStart"
       },{
         "key"    : "f5",
@@ -255,6 +279,11 @@
         "key"    : "shift+alt+e",
         "mac"    : "shift+alt+e",
         "command": "workbench.action.quickOpen"
+      },
+      {
+        "key"    : "alt+e",
+        "mac"    : "alt+e",
+        "command": "workbench.action.togglePanel"
       },{
         "key"    : "shift+alt+w",
         "mac"    : "shift+alt+w",
@@ -330,8 +359,8 @@
       },
       
       {
-        "key"    : "alt+e",
-        "mac"    : "alt+e",
+        "key"    : "ctrl+capslock",
+        "mac"    : "ctrl+capslock",
         "command": "lynx-keymap.toggleTerminalBottom"
       },{
         "key"    : "alt+w",
@@ -355,12 +384,12 @@
         "mac"    : "alt+capslock",
         "command": "lynx-keymap.toggleTerminalLeftAndRight"
       },{
-        "key"    : "ctrl+capslock",
-        "mac"    : "cmd+capslock",
-        "command": "lynx-keymap.openAndCloseAIChatAndTerminal"
-      },{
         "key"    : "ctrl+tab",
         "mac"    : "cmd+tab",
+        "command": "lynx-keymap.openAndCloseAIChatAndTerminal"
+      },{
+        "key"    : "ctrl+shift+tab",
+        "mac"    : "cmd+shift+tab",
         "command": "workbench.action.toggleSidebarVisibility"
       },
       
@@ -662,9 +691,9 @@
   },
   "scripts": {
     "vscode:prepublish": "bun run package",
-    "compile": "bun esbuild.js",
-    "watch": "bun esbuild.js --watch",
-    "package": "bun esbuild.js --production",
+    "compile": "node esbuild.js",
+    "watch": "node esbuild.js --watch",
+    "package": "node esbuild.js --production",
     "lint": "eslint .",
     "check-types": "tsc --noEmit"
   },

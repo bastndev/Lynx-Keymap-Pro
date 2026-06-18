@@ -6,6 +6,10 @@ import { LOG_PREFIX } from '../../shared/constants';
 
 const execFileAsync = promisify(execFile);
 
+const GIT_HASH_DOTS = '~~~~~~~~~~~~~~~~~';
+
+const formatGitHash = (hash: string): string => `${GIT_HASH_DOTS} (${hash})`;
+
 export class GitResetManager extends BaseManager {
 
   public registerCommands(context: vscode.ExtensionContext): void {
@@ -34,7 +38,21 @@ export class GitResetManager extends BaseManager {
             maxBuffer: 1024 * 1024,
           });
 
-          const message = stdout.trim() || 'git reset --hard HEAD completed.';
+          const raw = stdout.trim();
+          let message = 'git reset --hard HEAD completed.';
+
+          const headMatch = raw.match(/HEAD is now at ([0-9a-fA-F]{4,40})/);
+          if (headMatch) {
+            message = `HEAD is now at ${formatGitHash(headMatch[1])} ♻️`;
+          } else if (raw) {
+            // Fallback: first line, hard truncated so notification stays short
+            const line = raw.split('\n')[0].slice(0, 60);
+            const hashInLine = line.match(/([0-9a-fA-F]{4,40})/);
+            message = hashInLine
+              ? line.replace(hashInLine[0], formatGitHash(hashInLine[0]))
+              : line;
+          }
+
           vscode.window.showInformationMessage(message);
         } catch (error) {
           console.error(`${LOG_PREFIX} Git reset --hard HEAD failed:`, error);
