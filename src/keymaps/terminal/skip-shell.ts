@@ -11,6 +11,9 @@ const COMMANDS_TO_SKIP_SHELL = [
   'workbench.view.extension.gitlab-panel',
   'workbench.view.extension.myCliContainer',
   'workbench.debug.action.toggleRepl',
+  // ctrl+tab — without this the terminal swallows it and the shell shows its
+  // tab-completion list instead of toggling the side panel / AI chat.
+  'lynx-keymap.openAndCloseAIChatAndTerminal',
 ];
 
 export async function ensureCommandsSkipShell(): Promise<void> {
