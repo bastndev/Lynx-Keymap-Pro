@@ -16,3 +16,10 @@ CONTRIBUTING.md
 src/**
 public/**
 dist/*.map
+
+# User requested and agent instructions
+.claude/**
+.f1/**
+graphify-out/**
+CLAUDE.md
+*.vsix
