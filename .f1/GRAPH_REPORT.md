@@ -1,7 +1,7 @@
 # Graph Report - Lynx-Keymap-Pro  (2026-06-18)
 
 ## Corpus Check
-- 67 files · ~71,753 words
+- 67 files · ~72,123 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
@@ -10,7 +10,7 @@
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `6f8e3391`
+- Built from commit: `37ee13ca`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -66,7 +66,7 @@
 - [[_COMMUNITY_Community 49|Community 49]]
 
 ## God Nodes (most connected - your core abstractions)
-1. `Communities (49 total, 2 thin omitted)` - 47 edges
+1. `Communities (50 total, 3 thin omitted)` - 47 edges
 2. `Lynx Keymap` - 32 edges
 3. `BaseManager` - 21 edges
 4. `EditorDetector` - 13 edges
@@ -264,7 +264,7 @@ Nodes (3): [2.3.1] - 2026-05-11, Fixed, Improved
 
 ### Community 43 - "Community 43"
 Cohesion: 0.04
-Nodes (47): Communities (49 total, 2 thin omitted), Community 0 - "Community 0", Community 10 - "Community 10", Community 11 - "Community 11", Community 12 - "Community 12", Community 13 - "Community 13", Community 14 - "Community 14", Community 15 - "Community 15" (+39 more)
+Nodes (47): Communities (50 total, 3 thin omitted), Community 0 - "Community 0", Community 10 - "Community 10", Community 11 - "Community 11", Community 12 - "Community 12", Community 13 - "Community 13", Community 14 - "Community 14", Community 15 - "Community 15" (+39 more)
 
 ### Community 46 - "Community 46"
 Cohesion: 0.18
@@ -288,7 +288,7 @@ _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `Lynx Keymap` connect `Community 3` to `Community 23`, `Community 24`, `Community 26`, `Community 27`, `Community 28`, `Community 29`, `Community 30`, `Community 31`, `Community 32`, `Community 33`, `Community 34`, `Community 35`, `Community 36`, `Community 37`, `Community 38`, `Community 39`, `Community 40`, `Community 41`, `Community 42`, `Community 49`?**
   _High betweenness centrality (0.028) - this node is a cross-community bridge._
-- **Why does `Communities (49 total, 2 thin omitted)` connect `Community 43` to `Community 46`?**
+- **Why does `Communities (50 total, 3 thin omitted)` connect `Community 43` to `Community 46`?**
   _High betweenness centrality (0.013) - this node is a cross-community bridge._
 - **Why does `BaseManager` connect `Community 0` to `Community 1`, `Community 25`?**
   _High betweenness centrality (0.007) - this node is a cross-community bridge._

@@ -11,6 +11,7 @@ import { WordWrapManager }             from './editor/wordwrap/manager';
 import { PanelCommandsManager }        from './notifications/panels/commands';
 import { recoverSidePanelState }       from './keymaps/terminal/startup-recovery';
 import { ensureCommandsSkipShell }      from './keymaps/terminal/skip-shell';
+import { ensureMenuBarMnemonicsDisabled } from './keymaps/menu/mnemonics';
 
 const managers: Array<{ name: string; ref: vscode.Disposable | undefined }> = [];
 
@@ -50,6 +51,7 @@ export async function activate(context: vscode.ExtensionContext) {
 
   await recoverSidePanelState(context);
   await ensureCommandsSkipShell();
+  await ensureMenuBarMnemonicsDisabled();
 }
 
 export function deactivate(): void {
