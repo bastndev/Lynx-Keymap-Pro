@@ -97,6 +97,12 @@
 
 
 
+
+
+
+
+
+
       {
         "key"    : "alt+d",
         "mac"    : "alt+d",
@@ -110,6 +116,7 @@
         "mac"    : "alt+a",
         "command": "lynx-keymap.createNewAISession"
       },
+
 
 
 
@@ -168,6 +175,10 @@
         "mac"    : "cmd+alt+[Backquote]",
         "command": "workbench.action.terminal.kill"
       },
+
+
+
+
 
 
 
