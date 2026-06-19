@@ -17,8 +17,12 @@ export class TerminalManager extends BaseManager {
             await Promise.all([
               restoreOriginalSettings(context),
               context.workspaceState.update(STORAGE_KEYS.PANEL_POSITION, undefined),
-              vscode.commands.executeCommand('workbench.action.closePanel'),
             ]);
+            // Re-home the panel to the bottom on exit, so the next plain toggle
+            // (alt+w / alt+q / …) opens it at the bottom instead of back on the
+            // side. Then close it and bring the AI chat back to the side.
+            await vscode.commands.executeCommand('workbench.action.positionPanelBottom');
+            await vscode.commands.executeCommand('workbench.action.closePanel');
             await vscode.commands.executeCommand('lynx-keymap.openAndCloseAIChat');
 
           } else {
