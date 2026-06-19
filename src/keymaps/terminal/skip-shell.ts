@@ -8,7 +8,7 @@ import { LOG_PREFIX } from '../../shared/constants';
 // from inside the terminal (alt+w already works — toggleTerminal is a
 // VS Code default skip command).
 const COMMANDS_TO_SKIP_SHELL = [
-  'workbench.view.extension.gitlab-panel',
+  'lynx-keymap.openGitlabPanel',
   'workbench.view.extension.myCliContainer',
   'workbench.debug.action.toggleRepl',
   // ctrl+tab — without this the terminal swallows it and the shell shows its

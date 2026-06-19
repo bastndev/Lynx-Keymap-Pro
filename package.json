@@ -144,7 +144,7 @@
       {
         "key"    : "alt+r",
         "mac"    : "alt+r",
-        "command": "workbench.view.extension.gitlab-panel"
+        "command": "lynx-keymap.openGitlabPanel"
       },{
         "key"    : "alt+e",
         "mac"    : "alt+e",
