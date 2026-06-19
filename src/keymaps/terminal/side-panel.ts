@@ -18,12 +18,18 @@ export class TerminalManager extends BaseManager {
               restoreOriginalSettings(context),
               context.workspaceState.update(STORAGE_KEYS.PANEL_POSITION, undefined),
             ]);
-            // Re-home the panel to the bottom on exit, so the next plain toggle
-            // (alt+w / alt+q / …) opens it at the bottom instead of back on the
-            // side. Then close it and bring the AI chat back to the side.
-            await vscode.commands.executeCommand('workbench.action.positionPanelBottom');
+            // Hide first, reposition while hidden. Closing the panel makes the
+            // terminal vanish in place (no visible slide); the AI chat then takes
+            // its spot on the side. Only after everything is hidden/settled do we
+            // re-home the panel to the bottom, so the next plain toggle (alt+w /
+            // alt+q / …) opens it at the bottom instead of fighting the side chat.
+            // The re-home happens off-screen, so the ugly side→bottom slide is gone.
             await vscode.commands.executeCommand('workbench.action.closePanel');
             await vscode.commands.executeCommand('lynx-keymap.openAndCloseAIChat');
+            await vscode.commands.executeCommand('workbench.action.positionPanelBottom');
+            // Insurance: positionPanelBottom can reveal the panel on some builds.
+            // closePanel is a no-op when already hidden, so this is safe either way.
+            await vscode.commands.executeCommand('workbench.action.closePanel');
 
           } else {
             await vscode.commands.executeCommand('workbench.action.closeAuxiliaryBar');
