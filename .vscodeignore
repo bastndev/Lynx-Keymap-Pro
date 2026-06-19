@@ -1,25 +1,40 @@
+# Editor and local workspace state
 .vscode/**
 .vscode-test/**
 .gitignore
+.vscodeignore
 
-# ignore, 2026 
+# Source, tests, and generated development maps
+src/**
+public/**
+**/__test__/**
+**/__tests__/**
+**/*.test.*
+**/*.spec.*
+dist/*.map
+
+# Build, lint, typecheck, and package-manager inputs
 .prettierignore
 bun.lock
 esbuild.js
 eslint.config.mjs
 tsconfig.json
-vsc-extension-quickstart.md
+
+# Project notes and contributor-only documentation
 AGENTS.md
 ARCHITECTURE.md
+CLAUDE.md
 CODE_OF_CONDUCT.md
 CONTRIBUTING.md
-src/**
-public/**
-dist/*.map
+NOTES.md
+vsc-extension-quickstart.md
 
-# User requested and agent instructions
+# Agent/context caches and graph analysis output
+.agents/**
 .claude/**
+.codex/**
 .f1/**
 graphify-out/**
-CLAUDE.md
+
+# Local package artifacts
 *.vsix
