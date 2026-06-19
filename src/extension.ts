@@ -11,10 +11,13 @@ import { PanelCommandsManager }        from './notifications/panels/commands';
 import { recoverSidePanelState }       from './keymaps/terminal/startup-recovery';
 import { ensureCommandsSkipShell }      from './keymaps/terminal/skip-shell';
 import { ensureMenuBarMnemonicsDisabled } from './keymaps/menu/mnemonics';
+import { initI18n }                     from './notifications/i18n';
 
 const managers: Array<{ name: string; ref: vscode.Disposable | undefined }> = [];
 
 export async function activate(context: vscode.ExtensionContext) {
+  initI18n(context.extensionUri);
+
   const detector           = new EditorDetector();
   const aiManager          = new AICommandsManager(detector);
   const aiToggleManager    = new AIToggleManager(detector);
@@ -45,9 +48,12 @@ export async function activate(context: vscode.ExtensionContext) {
   panelCommandsMgr.registerCommands(context);
   layoutManager.registerCommands(context);
 
-  await recoverSidePanelState(context);
-  await ensureCommandsSkipShell();
-  await ensureMenuBarMnemonicsDisabled();
+  // Independent startup tasks — run them together. Each handles its own errors.
+  await Promise.all([
+    recoverSidePanelState(context),
+    ensureCommandsSkipShell(),
+    ensureMenuBarMnemonicsDisabled(),
+  ]);
 }
 
 export function deactivate(): void {

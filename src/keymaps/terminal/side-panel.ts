@@ -22,22 +22,13 @@ export class TerminalManager extends BaseManager {
             await vscode.commands.executeCommand('lynx-keymap.openAndCloseAIChat');
 
           } else {
-            const isTransition = current === PANEL_POSITIONS.BOTTOM;
-
-            const cleanupPromises: unknown[] = [];
-            if (current !== undefined) {
-              cleanupPromises.push(vscode.commands.executeCommand('workbench.action.closePanel'));
-            }
-            cleanupPromises.push(vscode.commands.executeCommand('workbench.action.closeAuxiliaryBar'));
-            await Promise.all(cleanupPromises);
+            await vscode.commands.executeCommand('workbench.action.closeAuxiliaryBar');
 
             const sideBarLocation = vscode.workspace
               .getConfiguration('workbench')
               .get<string>('sideBar.location', PANEL_POSITIONS.LEFT);
 
-            if (!isTransition) {
-              await saveOriginalSettings(context);
-            }
+            await saveOriginalSettings(context);
 
             await Promise.all([
               applyTerminalSettings(false, false),
@@ -83,9 +74,9 @@ export class TerminalManager extends BaseManager {
     );
 
     // ─── Smart New Terminal ────────────────────────────────────────────────────
-    // ctrl+backquote — BOTTOM: create terminal only, AI chat untouched.
-    // LEFT / undefined: close AuxBar first to avoid side-panel layout conflicts.
-    // Unknown state intentionally falls into the closing branch (safe default).
+    // ctrl+backquote — in side mode (LEFT): close the AuxBar first (and re-assert
+    // it after the layout settles) so the new terminal doesn't fight the side
+    // panel. Otherwise: just create a new terminal.
     const smartNewTerminalCmd = vscode.commands.registerCommand(
       'lynx-keymap.smartNewTerminal',
       async () => {
