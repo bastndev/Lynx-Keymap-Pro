@@ -2,7 +2,6 @@ export const LOG_PREFIX = '[lynx-keymap]';
 
 // ─── Storage Keys ─────────────────────────────────────────────────────────────
 export const STORAGE_KEYS = {
-  LAST_ACTIVE_MODE:           'lynx-keymap:lastActiveMode',
   ORIGINAL_TABS_ENABLED:      'lynx-keymap:originalTabsEnabled',
   ORIGINAL_TABS_LOCATION:     'lynx-keymap:originalTabsLocation',
   ORIGINAL_PANEL_SHOW_LABELS: 'lynx-keymap:originalPanelShowLabels',
@@ -10,10 +9,9 @@ export const STORAGE_KEYS = {
   LAYOUT_MODE:                'lynx-keymap:layoutMode',
 } as const;
 
-// ─── Panel Positions ──────────────────────────────────────────────────────────
-export type PanelPosition = 'left' | 'bottom';
-
+// ─── Panel Position ───────────────────────────────────────────────────────────
+// The terminal panel is either side-docked ('left') or in its default bottom
+// position (tracked as `undefined`).
 export const PANEL_POSITIONS = {
-  LEFT:   'left',
-  BOTTOM: 'bottom',
+  LEFT: 'left',
 } as const;
