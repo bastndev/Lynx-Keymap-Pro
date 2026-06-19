@@ -16,7 +16,7 @@ export const EDITOR_SIGNATURES: Record<EditorType, string[]> = {
   [EditorType.CURSOR]:      ['composer.createNew',               'cursor.generateGitCommitMessage'],
   [EditorType.WINDSURF]:    ['windsurf.prioritized.chat.open',   'windsurf.generateCommitMessage'],
   [EditorType.TRAE_AI]:     ['icube.inlineChat.start',           'icube.gitGenerateCommitMessage'],
-  [EditorType.FIREBASE]:    ['workbench.action.terminal.chat.start']
+  [EditorType.FIREBASE]:    ['aichat.prompt']
 };
 
 // ─── Primary Setting per Editor (for toggle state source of truth) ────────────
@@ -59,7 +59,7 @@ export const AI_COMMANDS: Record<ActionKey, EditorCommandMap> = {
   // MARK:[ctrl+capslock]
   openAndCloseAIChat: {
     [EditorType.ANTIGRAVITY]: 'antigravity.openAgent',
-    [EditorType.VSCODE]:      'workbench.action.chat.toggle',
+    [EditorType.VSCODE]:      'workbench.panel.chat',
     [EditorType.KIRO]:        'workbench.action.toggleAuxiliaryBar',
     [EditorType.CURSOR]:      'workbench.action.toggleAgentsFromKeyboard',
     [EditorType.WINDSURF]:    'windsurf.prioritized.chat.open',
