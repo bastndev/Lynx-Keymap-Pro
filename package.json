@@ -144,11 +144,23 @@
       {
         "key"    : "alt+r",
         "mac"    : "alt+r",
-        "command": "lynx-keymap.openGitlabPanel"
+        "command": "lynx-keymap.openGitlabPanel",
+        "when"   : "activePanel != 'workbench.view.extension.gitlab-panel'"
+      },{
+        "key"    : "alt+r",
+        "mac"    : "alt+r",
+        "command": "workbench.action.togglePanel",
+        "when"   : "activePanel == 'workbench.view.extension.gitlab-panel'"
       },{
         "key"    : "alt+e",
         "mac"    : "alt+e",
-        "command": "workbench.view.extension.myCliContainer"
+        "command": "workbench.view.extension.myCliContainer",
+        "when"   : "activePanel != 'workbench.view.extension.myCliContainer'"
+      },{
+        "key"    : "alt+e",
+        "mac"    : "alt+e",
+        "command": "workbench.action.togglePanel",
+        "when"   : "activePanel == 'workbench.view.extension.myCliContainer'"
       },{
         "key"    : "alt+w",
         "mac"    : "alt+w",
