@@ -1,0 +1,10 @@
+{
+  "({0}) AI Suggestions: ENABLED ✅": "({0}) ИИ-подсказки: ВКЛЮЧЕНЫ ✅",
+  "({0}) AI Suggestions: DISABLED ❌": "({0}) ИИ-подсказки: ОТКЛЮЧЕНЫ ❌",
+
+  "To use the GitLab panel, you need to install the \"ATM\" extension by(@gohitx).": "Для использования панели GitLab необходимо установить расширение \"ATM\" от(@gohitx).",
+  "📥 Download ATM": "📥 Скачать ATM",
+
+  "To use the Skills panel, you need to install the \"My Skills\" extension by(@gohitx).": "Для использования панели Skills необходимо установить расширение \"My Skills\" от(@gohitx).",
+  "📥 Download My Skills": "📥 Скачать My Skills"
+}
