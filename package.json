@@ -51,8 +51,9 @@
   "activationEvents": [
     "onStartupFinished"
   ],
-  "main": "./dist/extension.js",
+
   "l10n": "./l10n",
+  "main": "./dist/extension.js",
 
   "contributes": {
 "keybindings": [
