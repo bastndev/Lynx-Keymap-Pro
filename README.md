@@ -38,8 +38,8 @@
 | Command               | 🍎 macOS         | 🟦 Windows       | 🐧 Linux         |
 | :-------------------- | :--------------- | :--------------- | :--------------- |
 | CLI                   | `Alt + E`        | `Alt + E`        | `Alt + E`        |
-| SKILLS                | `⌘ + 3`          | `Ctrl + 3`       | `Ctrl + 3`       |
 | GitLab                | `Alt + R`        | `Alt + R`        | `Alt + R`        |
+| SKILLS                | `⌘ + 3`          | `Ctrl + 3`       | `Ctrl + 3`       |
 | -                     | -                | -                | -                |
 | OpenCode / ClaudeCode | `Alt + CapsLock` | `Alt + CapsLock` | `Alt + CapsLock` |
 
@@ -72,7 +72,7 @@
 <br>
 <br>
 
-## ⌨️ General Keybindings — Pro
+<h2 align="center">⌨️ General Keybindings — Pro</h2>
 
 | Command                               | 🍎 macOS                | 🟦 Windows / 🐧 Linux        | Supported |
 | :------------------------------------ | :---------------------- | :--------------------------- | :-------: |
