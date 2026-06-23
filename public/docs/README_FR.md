@@ -60,13 +60,16 @@
 
 > Appuyez sur **`Alt + 0`** pour basculer entre la disposition standard et la **disposition compacte** — idéale pour les claviers sans ligne de fonctions ou touches fléchées. Les raccourcis ci-dessous ne sont actifs que lorsque la disposition compacte est activée.
 
-| Commande                  | 🍎 macOS     | 🟦 Windows      | 🐧 Linux        |
-| :------------------------ | :----------- | :-------------- | :-------------- |
-| Voir les Changements Git  | `PageUp`     | `PageUp`        | `PageUp`        |
-| Aperçu Markdown           | `PageDown`   | `PageDown`      | `PageDown`      |
-| Démarrer le Débogage      | `Insert`     | `Insert`        | `Insert`        |
-| Redémarrer le Débogage    | `⌥ + Insert` | `Alt + Insert`  | `Alt + Insert`  |
-| Arrêter le Débogage       | `⌘ + Insert` | `Ctrl + Insert` | `Ctrl + Insert` |
+| Commande                  | 🍎 macOS        | 🟦 Windows            | 🐧 Linux              |
+| :------------------------ | :-------------- | :-------------------- | :-------------------- |
+| Voir les Changements Git  | `PageUp`        | `PageUp`              | `PageUp`              |
+| Aperçu Markdown           | `PageDown`      | `PageDown`            | `PageDown`            |
+| Démarrer le Débogage      | `Insert`        | `Insert`              | `Insert`              |
+| Redémarrer le Débogage    | `⌥ + Insert`    | `Alt + Insert`        | `Alt + Insert`        |
+| Arrêter le Débogage       | `⌘ + Insert`    | `Ctrl + Insert`       | `Ctrl + Insert`       |
+| -                         | -               | -                     | -                     |
+| Zoom Avant ( 🛞 droite ) | `⇧ + ⌥ + Vol +` | `Shift + Alt + Vol +` | `Shift + Alt + Vol +` |
+| Zoom Arrière ( 🛞 gauche )| `⇧ + ⌥ + Vol -` | `Shift + Alt + Vol -` | `Shift + Alt + Vol -` |
 
 ---
 

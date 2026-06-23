@@ -59,13 +59,16 @@
 
 > Presiona **`Alt + 0`** para cambiar entre el diseño estándar y el **diseño compacto**, ideal para teclados sin fila de funciones o flechas direccionales. Los atajos a continuación solo están activos mientras el diseño compacto está habilitado.
 
-| Comando               | 🍎 macOS     | 🟦 Windows      | 🐧 Linux        |
-| :-------------------- | :----------- | :-------------- | :-------------- |
-| Ver Cambios de Git    | `PageUp`     | `PageUp`        | `PageUp`        |
-| Vista Previa Markdown | `PageDown`   | `PageDown`      | `PageDown`      |
-| Iniciar Depuración    | `Insert`     | `Insert`        | `Insert`        |
-| Reiniciar Depuración  | `⌥ + Insert` | `Alt + Insert`  | `Alt + Insert`  |
-| Detener Depuración    | `⌘ + Insert` | `Ctrl + Insert` | `Ctrl + Insert` |
+| Comando               | 🍎 macOS        | 🟦 Windows            | 🐧 Linux              |
+| :-------------------- | :-------------- | :-------------------- | :-------------------- |
+| Ver Cambios de Git    | `PageUp`        | `PageUp`              | `PageUp`              |
+| Vista Previa Markdown | `PageDown`      | `PageDown`            | `PageDown`            |
+| Iniciar Depuración    | `Insert`        | `Insert`              | `Insert`              |
+| Reiniciar Depuración  | `⌥ + Insert`    | `Alt + Insert`        | `Alt + Insert`        |
+| Detener Depuración    | `⌘ + Insert`    | `Ctrl + Insert`       | `Ctrl + Insert`       |
+| -                    | -               | -                     | -                     |
+| Acercar ( 🛞 der )   | `⇧ + ⌥ + Vol +` | `Shift + Alt + Vol +` | `Shift + Alt + Vol +` |
+| Alejar ( 🛞 izq )    | `⇧ + ⌥ + Vol -` | `Shift + Alt + Vol -` | `Shift + Alt + Vol -` |
 
 ---
 

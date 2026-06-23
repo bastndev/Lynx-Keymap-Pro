@@ -59,13 +59,16 @@
 
 > Pressione **`Alt + 0`** para alternar entre o layout padrão e o **layout compacto** — ideal para teclados sem a linha de funções ou setas direcionais. Os atalhos abaixo só ficam ativos enquanto o layout compacto está ativado.
 
-| Comando               | 🍎 macOS     | 🟦 Windows      | 🐧 Linux        |
-| :-------------------- | :----------- | :-------------- | :-------------- |
-| Ver Alterações do Git | `PageUp`     | `PageUp`        | `PageUp`        |
-| Visualização Markdown | `PageDown`   | `PageDown`      | `PageDown`      |
-| Iniciar Depuração     | `Insert`     | `Insert`        | `Insert`        |
-| Reiniciar Depuração   | `⌥ + Insert` | `Alt + Insert`  | `Alt + Insert`  |
-| Parar Depuração       | `⌘ + Insert` | `Ctrl + Insert` | `Ctrl + Insert` |
+| Comando                | 🍎 macOS        | 🟦 Windows            | 🐧 Linux              |
+| :--------------------- | :-------------- | :-------------------- | :-------------------- |
+| Ver Alterações do Git  | `PageUp`        | `PageUp`              | `PageUp`              |
+| Visualização Markdown  | `PageDown`      | `PageDown`            | `PageDown`            |
+| Iniciar Depuração      | `Insert`        | `Insert`              | `Insert`              |
+| Reiniciar Depuração    | `⌥ + Insert`    | `Alt + Insert`        | `Alt + Insert`        |
+| Parar Depuração        | `⌘ + Insert`    | `Ctrl + Insert`       | `Ctrl + Insert`       |
+| -                      | -               | -                     | -                     |
+| Ampliar ( 🛞 dir )      | `⇧ + ⌥ + Vol +` | `Shift + Alt + Vol +` | `Shift + Alt + Vol +` |
+| Reduzir ( 🛞 esq )     | `⇧ + ⌥ + Vol -` | `Shift + Alt + Vol -` | `Shift + Alt + Vol -` |
 
 ---
 
