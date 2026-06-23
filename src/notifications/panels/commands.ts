@@ -26,6 +26,13 @@ const PANEL_CONFIGS: PanelConfig[] = [
     message:      vscode.l10n.t("To use the Skills panel, you need to install the \"My Skills\" extension by(@gohitx)."),
     action:       vscode.l10n.t("📥 Download My Skills"),
   },
+  {
+    commandId:    'lynx-keymap.openMyCliPanel',
+    extensionId:  'bastndev.f1',
+    focusCommand: 'workbench.view.extension.myCliContainer',
+    message:      vscode.l10n.t("To use the CLI panel, you need to install the \"My Skills\" extension by(@gohitx)."),
+    action:       vscode.l10n.t("📥 Download CLI Hub"),
+  },
 ];
 
 export class PanelCommandsManager extends BaseManager {

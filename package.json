@@ -153,7 +153,7 @@
       },{
         "key"    : "alt+e",
         "mac"    : "alt+e",
-        "command": "workbench.view.extension.myCliContainer",
+        "command": "lynx-keymap.openMyCliPanel",
         "when"   : "activePanel != 'workbench.view.extension.myCliContainer'"
       },{
         "key"    : "alt+e",
@@ -724,6 +724,9 @@
       },{
         "command": "lynx-keymap.openMySkillsPanel",
         "title"  : "Open My Skills Panel"
+      },{
+        "command": "lynx-keymap.openMyCliPanel",
+        "title"  : "Open My CLI Panel"
       },{
         "command": "lynx-keymap.toggleLayout",
         "title"  : "Lynx: Switch Keyboard Layout"
