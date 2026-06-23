@@ -59,13 +59,16 @@
 
 > Press **`Alt + 0`** to swap between the standard layout and the **compact layout** — designed for keyboards without a function row or arrow cluster. The bindings below are only active while the compact layout is enabled.
 
-| Command           | 🍎 macOS     | 🟦 Windows      | 🐧 Linux        |
-| :---------------- | :----------- | :-------------- | :-------------- |
-| View Git Changes  | `PageUp`     | `PageUp`        | `PageUp`        |
-| Markdown Preview  | `PageDown`   | `PageDown`      | `PageDown`      |
-| Start Debugging   | `Insert`     | `Insert`        | `Insert`        |
-| Restart Debugging | `⌥ + Insert` | `Alt + Insert`  | `Alt + Insert`  |
-| Stop Debugging    | `⌘ + Insert` | `Ctrl + Insert` | `Ctrl + Insert` |
+| Command              | 🍎 macOS        | 🟦 Windows            | 🐧 Linux              |
+| :------------------- | :-------------- | :-------------------- | :-------------------- |
+| View Git Changes     | `PageUp`        | `PageUp`              | `PageUp`              |
+| Markdown Preview     | `PageDown`      | `PageDown`            | `PageDown`            |
+| Start Debugging      | `Insert`        | `Insert`              | `Insert`              |
+| Restart Debugging    | `⌥ + Insert`    | `Alt + Insert`        | `Alt + Insert`        |
+| Stop Debugging       | `⌘ + Insert`    | `Ctrl + Insert`       | `Ctrl + Insert`       |
+| -                    | -               | -                     | -                     |
+| Zoom In ( 🛞 right ) | `⇧ + ⌥ + Vol +` | `Shift + Alt + Vol +` | `Shift + Alt + Vol +` |
+| Zoom Out ( 🛞 left ) | `⇧ + ⌥ + Vol -` | `Shift + Alt + Vol -` | `Shift + Alt + Vol -` |
 
 ---
 

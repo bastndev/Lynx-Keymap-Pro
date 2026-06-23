@@ -1,6 +1,6 @@
 <a name="readme-top"></a>
 
-![Lynx Keymap pro](https://raw.githubusercontent.com/bastndev/Lynx-Keymap-pro/refs/heads/main/public/github/banner.webp)
+[![Lynx Keymap pro](https://raw.githubusercontent.com/bastndev/Lynx-Keymap-pro/refs/heads/main/public/github/banner.webp)](https://www.gohit.xyz/extension/lynx-keymap-pro)
 
 <p align="center">
     <img src="https://vsmarketplacebadges.dev/version-short/bastndev.lynx-keymap.jpg?style=for-the-badge&colorA=fa9905&colorB=EEEEEE&color=000000&label=VERSION" alt="Version">&nbsp;
@@ -52,7 +52,7 @@
 
 <br>
 
-## ⌨️ 通用快捷键 Pro
+<h2 align="center">⌨️ 通用快捷键 Pro</h2>
 
 | 命令                         | 🍎 macOS                | 🟦 Windows / 🐧 Linux        | 支持 |
 | :--------------------------- | :---------------------- | :--------------------------- | :--: |
