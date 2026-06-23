@@ -9,7 +9,7 @@ import { LOG_PREFIX } from '../../shared/constants';
 // VS Code default skip command).
 const COMMANDS_TO_SKIP_SHELL = [
   'lynx-keymap.openGitlabPanel',
-  'workbench.view.extension.myCliContainer',
+  'lynx-keymap.openMyCliPanel',
   'workbench.debug.action.toggleRepl',
   // ctrl+tab — without this the terminal swallows it and the shell shows its
   // tab-completion list instead of toggling the side panel / AI chat.
