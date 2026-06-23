@@ -1,19 +1,14 @@
 import * as vscode from 'vscode';
-import { getTranslation } from './i18n';
 import { LOG_PREFIX } from '../shared/constants';
 
 export async function promptInstallExtension(
   extensionId: string,
-  messageKey:  string,
-  actionKey:   string,
+  message:     string,
+  action:      string,
 ): Promise<void> {
-  const installAction = await getTranslation(actionKey);
-  const selection = await vscode.window.showInformationMessage(
-    await getTranslation(messageKey),
-    installAction
-  );
+  const selection = await vscode.window.showInformationMessage(message, action);
 
-  if (selection === installAction) {
+  if (selection === action) {
     try {
       await vscode.commands.executeCommand('workbench.extensions.installExtension', extensionId);
     } catch (error) {

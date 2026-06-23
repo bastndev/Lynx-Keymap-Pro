@@ -34,25 +34,24 @@
   "homepage": "https://github.com/bastndev/Lynx-Keymap-Pro#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/bastndev/Lynx-Keymap-Pro"
+    "url": "git+https://github.com/bastndev/Lynx-Keymap-Pro.git"
   },
   "bugs": {
     "url": "https://github.com/bastndev/Lynx-Keymap-Pro/issues/new"
   },
   "author": {
-    "name": "Gohit Bastian", 
+    "name": "Gohit (X) Bastian",
     "email": "bastndev@gohit.xyz",
     "url": "https://www.gohit.xyz/me"
   },
   "sponsor": {
-    "url": "https://github.com/sponsors/gohit.xyz"
+    "url": "https://github.com/sponsors/bastndev"
   },
   
-  "activationEvents": [
-    "onStartupFinished"
-  ],
+  "l10n": "./l10n",
+  "activationEvents": ["onStartupFinished"],
   "main": "./dist/extension.js",
-  
+
   "contributes": {
 "keybindings": [
         {

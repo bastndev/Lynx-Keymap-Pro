@@ -7,8 +7,8 @@ interface PanelConfig {
   commandId: string;
   extensionId: string;
   focusCommand: string;
-  messageKey: string;
-  actionKey: string;
+  message: string;
+  action: string;
 }
 
 const PANEL_CONFIGS: PanelConfig[] = [
@@ -16,15 +16,15 @@ const PANEL_CONFIGS: PanelConfig[] = [
     commandId:    'lynx-keymap.openGitlabPanel',
     extensionId:  'bastndev.atm',
     focusCommand: 'workbench.view.extension.gitlab-panel',
-    messageKey:   'ATM.notification.install.required',
-    actionKey:    'ATM.notification.install.action',
+    message:      vscode.l10n.t("To use the GitLab panel, you need to install the \"ATM\" extension by(@gohitx)."),
+    action:       vscode.l10n.t("📥 Download ATM"),
   },
   {
     commandId:    'lynx-keymap.openMySkillsPanel',
     extensionId:  'bastndev.f1',
     focusCommand: 'myskills-panel.focus',
-    messageKey:   'MySkills.notification.install.required',
-    actionKey:    'MySkills.notification.install.action',
+    message:      vscode.l10n.t("To use the Skills panel, you need to install the \"My Skills\" extension by(@gohitx)."),
+    action:       vscode.l10n.t("📥 Download My Skills"),
   },
 ];
 
@@ -39,7 +39,7 @@ export class PanelCommandsManager extends BaseManager {
             if (!ext.isActive) { await ext.activate(); }
             await vscode.commands.executeCommand(panel.focusCommand);
           } else {
-            await promptInstallExtension(panel.extensionId, panel.messageKey, panel.actionKey);
+            await promptInstallExtension(panel.extensionId, panel.message, panel.action);
           }
         } catch (error) {
           console.error(`${LOG_PREFIX} Failed to open panel "${panel.commandId}":`, error);

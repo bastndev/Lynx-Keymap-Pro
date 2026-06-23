@@ -1,5 +1,3 @@
-@AGENTS.md
-
 # Claude Code
 
 - Shared repository instructions live in `AGENTS.md`; keep this file limited to Claude-specific workflow notes.

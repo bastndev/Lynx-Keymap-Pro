@@ -1,13 +1,4 @@
 {
   "displayName": "Lynx Keymap Pro (KI-Orchestrator)",
-  "description": "Die ultimative Tastenkombinations-Suite für KI-gestützte IDEs. ⚡️ Optimiere deinen Workflow in VSCode, Cursor, Windsurf, Trae-ai, Kiro, Antigravity & Firebase.studio mit intelligenter KI-Orchestrierung, Terminal-Umschaltung per Tastendruck und bewährten Tastaturlayouts. Hör auf zu klicken. Fang an zu steuern.",
-
-  "lynx.notification.ai.enabled": "({0}) KI-Vorschläge: AKTIVIERT ✅",
-  "lynx.notification.ai.disabled": "({0}) KI-Vorschläge: DEAKTIVIERT ❌",
-
-  "ATM.notification.install.required": "Um das GitLab-Panel zu verwenden, müssen Sie die Erweiterung \"ATM\" von(@gohitx) installieren.",
-  "ATM.notification.install.action": "📥 ATM herunterladen",
-
-  "MySkills.notification.install.required": "Um das Skills-Panel zu verwenden, müssen Sie die Erweiterung \"My Skills\" von(@gohitx) installieren.",
-  "MySkills.notification.install.action": "📥 My Skills herunterladen"
+  "description": "Die ultimative Tastenkombinations-Suite für KI-gestützte IDEs. ⚡️ Optimiere deinen Workflow in VSCode, Cursor, Windsurf, Trae-ai, Kiro, Antigravity & Firebase.studio mit intelligenter KI-Orchestrierung, Terminal-Umschaltung per Tastendruck und bewährten Tastaturlayouts. Hör auf zu klicken. Fang an zu steuern."
 }
