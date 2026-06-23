@@ -13,10 +13,10 @@ Before contributing, read the [**Architecture Guide**](https://github.com/bastnd
 git clone https://github.com/YOUR-USERNAME/Lynx-Keymap-Pro.git
 cd Lynx-Keymap-Pro
 git checkout dev   # always work on dev
-code .             # press F5 to test your changes live
+code .             # press F5 to launch the Extension Host and test live
 ```
 
-> Submit all PRs to the `dev` branch. The maintainer handles `dev` → `main` merges.
+> Submit all PRs to the `dev` branch of the original repo. Never edit the version field in `package.json` — that's maintainer-only.
 
 ---
 
@@ -24,6 +24,7 @@ code .             # press F5 to test your changes live
 
 <details>
 <summary><strong>⌨️ New editor support</strong></summary>
+
 <br>
 
 **Currently supported:** VS Code · Cursor · Windsurf · Trae.ai · Kiro · Firebase Studio
@@ -33,15 +34,22 @@ code .             # press F5 to test your changes live
 - `src/keymaps/ai-keymap-config.js` — AI command configuration
 - `src/keymaps/ai-keymap-handler.js` — editor detection & execution
 
-**Process:** research the editor's commands → map to Lynx shortcuts → add AI integration → test fallback system → update docs.
+To add a new editor:
+
+1. Research the editor's native/default commands and identify conflicts.
+2. Map them to Lynx's existing shortcut scheme.
+3. Wire up AI integration and the fallback system.
+4. Test on both Windows/Linux and macOS key mappings.
 
 </details>
 
 <details>
 <summary><strong>🎹 Keybinding improvements</strong></summary>
+
 <br>
 
 Enhance any shortcut category:
+
 - **Navigation** (`Ctrl+1/2/3`, `Ctrl+Tab`)
 - **File Management** (`Alt+C/V`)
 - **Git Operations** (`Alt+1/2/3/4`, `Alt+Enter`)
@@ -49,12 +57,13 @@ Enhance any shortcut category:
 - **Development** (`Alt+F`, `Insert`, `Alt+Insert`)
 - **Visual Management** (`Ctrl+Alt+PgDn`, `Alt+Z`)
 
-Always include both `key` (Win/Linux) and `mac` mappings, and use `when` conditions to avoid conflicts.
+Always include both `key` (Win/Linux) and `mac` mappings, and use `when` conditions to avoid conflicts with editor defaults.
 
 </details>
 
 <details>
 <summary><strong>🖥️ Keyboard layout variants</strong></summary>
+
 <br>
 
 Adaptations for different layouts: alternative key combinations, modifier remapping, function key utilization, or macro key integration.
@@ -63,6 +72,7 @@ Adaptations for different layouts: alternative key combinations, modifier remapp
 
 <details>
 <summary><strong>📝 Documentation</strong></summary>
+
 <br>
 
 Target files: `README.md`, `ARCHITECTURE.md`, `CONTRIBUTING.md`, `CHANGELOG.md`, and inline code comments.
@@ -73,11 +83,14 @@ Target files: `README.md`, `ARCHITECTURE.md`, `CONTRIBUTING.md`, `CHANGELOG.md`,
 
 ## Submitting a PR
 
+Keep PRs small and focused on one editor, one keybinding category, or one fix. If you're touching many areas at once, split into separate PRs — it's faster to review and faster to merge.
+
 Your PR description should include:
 
 - **What** changed and why
 - **Editor(s)** tested (aim for at least VS Code + one more)
 - **Screenshots or video** if the change is visual or behavioral
+- Confirmation that key mappings work on **both Win/Linux and macOS**
 
 ---
 
