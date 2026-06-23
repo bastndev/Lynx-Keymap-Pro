@@ -1,10 +1,10 @@
 {
   "({0}) AI Suggestions: ENABLED ✅": "({0}) AI 추천: 활성화됨 ✅",
   "({0}) AI Suggestions: DISABLED ❌": "({0}) AI 추천: 비활성화됨 ❌",
-
   "To use the GitLab panel, you need to install the \"ATM\" extension by(@gohitx).": "GitLab 패널을 사용하려면 \"ATM\" 확장 프로그램 by(@gohitx)을 설치해야 합니다。",
   "📥 Download ATM": "📥 ATM 다운로드",
-
   "To use the Skills panel, you need to install the \"My Skills\" extension by(@gohitx).": "Skills 패널을 사용하려면 \"My Skills\" 확장 프로그램 by(@gohitx)을 설치해야 합니다。",
-  "📥 Download My Skills": "📥 My Skills 다운로드"
+  "📥 Download My Skills": "📥 My Skills 다운로드",
+  "To use the CLI panel, you need to install the \"CLI Hub\" extension by(@gohitx).": "CLI 패널을 사용하려면 (@gohitx)의 \"CLI Hub\" 확장 프로그램을 설치해야 합니다.",
+  "📥 Download CLI Hub": "📥 CLI Hub 다운로드"
 }
