@@ -253,12 +253,12 @@ ext install bastndev.lynx-keymap
 
 ## About Me
 
-| [![gohitx](https://github.com/gohitx.png?size=100)](https://gohit.xyz/me) |
-| :-----------------------------------------------------------------------: |
-|                     **[Gohit X](https://gohit.xyz)**                      |
-|                          _Creator & Maintainer_                           |
+| [![gohitx](https://github.com/gohitx.png?size=100)](https://gohit.xyz) |
+| :--------------------------------------------------------------------: |
+|                  **[Gohit X](https://gohit.xyz/me)**                   |
+|                         _Creator & Maintainer_                         |
 
-- 🐦 **[X](https://twitter.com/gohitx)** : For questions and discussions.
+- 🐦 **[X](https://x.com/intent/follow?screen_name=gohitx)** : For questions and discussions.
 - 🌱 **[IG](https://instagram.com/gohitx)** : **`new`** – Project previews & life updates.
 - 🔴 **[YouTube](https://www.youtube.com/@gohitx?sub_confirmation=1)** : Code, Software and development insights.
 
@@ -270,11 +270,11 @@ ext install bastndev.lynx-keymap
   Complementary Extensions 🧩 
 </h2>
 
-| Extension                                                                                                                                                                                                         | Name/>                                                   | Description                                                                                                                                                                                 |
-| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [![My Skills](https://open-vsx.org/api/bastndev/my-skills/latest/file/icon.png)](https://open-vsx.org/extension/bastndev/my-skills)                                                                               | [My Skills](https://github.com/bastndev/My-Skills)       | Create, install, and manage reusable AI instructions for your projects, so your coding assistant already knows your style, rules, and workflow.                                             |
-| [![ATM](https://open-vsx.org/api/bastndev/atm/1.9.4/file/icon.png)](https://open-vsx.org/extension/bastndev/atm)                                                                                                  | [ATM](https://github.com/bastndev/ATM)                   | An all-in-one toolkit 👻 that supercharges your workflow with essential features like Error Lens, Git Blame, Env Protection, and code screenshots across major editors.                     |
-| [![Lynx Theme Pro](https://bastndev.gallerycdn.vsassets.io/extensions/bastndev/lynx-theme/5.0.1/1777191854738/Microsoft.VisualStudio.Services.Icons.Default)](https://open-vsx.org/extension/bastndev/lynx-theme) | [Lynx Theme Pro](https://github.com/bastndev/Lynx-Theme) | A professional extension with six available themes: Dark, Light, Night, Ghibli, Coffee, and Kiro—with integrated icons. Each theme is optimized to offer a more pleasant visual experience. |
+| Extension                                                                                                                                 | Name/>                                                   | Description                                                                                                                                                                                          |
+| ----------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [![F1](https://open-vsx.org/api/bastndev/f1/1.0.0/file/icon.png)](https://open-vsx.org/extension/bastndev/f1)                             | [F1](https://github.com/bastndev/F1)                     | The ultimate AI control center. Centralize Claude, Copilot, or Cursor in interactive terminals, create custom workflows with 'My Skills', and give the AI instant codebase context with 'My Memory'. |
+| [![Lynx Theme Pro](https://open-vsx.org/api/bastndev/lynx-theme/5.0.0/file/icon.png)](https://open-vsx.org/extension/bastndev/lynx-theme) | [Lynx Theme Pro](https://github.com/bastndev/Lynx-Theme) | A professional extension with six available themes: Dark, Light, Night, Ghibli, Coffee, and Kiro—with integrated icons. Each theme is optimized to offer a more pleasant visual experience.          |
+| [![ATM](https://open-vsx.org/api/bastndev/atm/1.9.4/file/icon.png)](https://open-vsx.org/extension/bastndev/atm)                          | [ATM](https://github.com/bastndev/ATM)                   | An all-in-one toolkit 👻 that supercharges your workflow with essential features like Error Lens, Git Blame, Env Protection, and code screenshots across major editors.                              |
 
 <br>
 
