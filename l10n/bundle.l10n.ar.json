@@ -1,10 +1,14 @@
 {
   "({0}) AI Suggestions: ENABLED ✅": "({0}) اقتراحات الذكاء الاصطناعي: مفعل ✅",
   "({0}) AI Suggestions: DISABLED ❌": "({0}) اقتراحات الذكاء الاصطناعي: معطل ❌",
+
+
   "To use the GitLab panel, you need to install the \"ATM\" extension by(@gohitx).": "لاستخدام لوحة GitLab، تحتاج إلى تثبيت إضافة \"ATM\" بواسطة(@gohitx).",
   "📥 Download ATM": "📥 تنزيل ATM",
+
   "To use the Skills panel, you need to install the \"My Skills\" extension by(@gohitx).": "لاستخدام لوحة Skills، تحتاج إلى تثبيت إضافة \"My Skills\" بواسطة(@gohitx).",
   "📥 Download My Skills": "📥 تنزيل My Skills",
+
   "To use the CLI panel, you need to install the \"CLI Hub\" extension by(@gohitx).": "لاستخدام لوحة CLI، تحتاج إلى تثبيت إضافة \"CLI Hub\" بواسطة(@gohitx).",
   "📥 Download CLI Hub": "📥 تنزيل CLI Hub"
 }

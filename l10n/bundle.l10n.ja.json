@@ -1,10 +1,14 @@
 {
   "({0}) AI Suggestions: ENABLED ✅": "({0}) AI サジェスト: 有効 ✅",
   "({0}) AI Suggestions: DISABLED ❌": "({0}) AI サジェスト: 無効 ❌",
+
+
   "To use the GitLab panel, you need to install the \"ATM\" extension by(@gohitx).": "GitLab パネルを使用するには、「ATM」拡張機能 by(@gohitx) をインストールする必要があります。",
   "📥 Download ATM": "📥 ATM をダウンロード",
+
   "To use the Skills panel, you need to install the \"My Skills\" extension by(@gohitx).": "Skills パネルを使用するには、「My Skills」拡張機能 by(@gohitx) をインストールする必要があります。",
   "📥 Download My Skills": "📥 My Skills をダウンロード",
+
   "To use the CLI panel, you need to install the \"CLI Hub\" extension by(@gohitx).": "CLIパネルを使用するには、(@gohitx)の「CLI Hub」拡張機能をインストールする必要があります。",
   "📥 Download CLI Hub": "📥 CLI Hub をダウンロード"
 }

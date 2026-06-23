@@ -1,10 +1,14 @@
 {
   "({0}) AI Suggestions: ENABLED ✅": "({0}) Suggestions IA : ACTIVÉES ✅",
   "({0}) AI Suggestions: DISABLED ❌": "({0}) Suggestions IA : DÉSACTIVÉES ❌",
+
+
   "To use the GitLab panel, you need to install the \"ATM\" extension by(@gohitx).": "Pour utiliser le panneau GitLab, vous devez installer l'extension \"ATM\" par(@gohitx).",
   "📥 Download ATM": "📥 Télécharger ATM",
+
   "To use the Skills panel, you need to install the \"My Skills\" extension by(@gohitx).": "Pour utiliser le panneau Skills, vous devez installer l'extension \"My Skills\" par(@gohitx).",
   "📥 Download My Skills": "📥 Télécharger My Skills",
+
   "To use the CLI panel, you need to install the \"CLI Hub\" extension by(@gohitx).": "Pour utiliser le panneau CLI, vous devez installer l'extension \"CLI Hub\" par(@gohitx).",
   "📥 Download CLI Hub": "📥 Télécharger CLI Hub"
 }

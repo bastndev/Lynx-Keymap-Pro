@@ -1,10 +1,14 @@
 {
   "({0}) AI Suggestions: ENABLED ✅": "({0}) AI 建议：已启用 ✅",
   "({0}) AI Suggestions: DISABLED ❌": "({0}) AI 建议：已禁用 ❌",
+
+
   "To use the GitLab panel, you need to install the \"ATM\" extension by(@gohitx).": "要使用 GitLab 面板，您需要安装 \"ATM\" 扩展 由(@gohitx)。",
   "📥 Download ATM": "📥 下载 ATM",
+
   "To use the Skills panel, you need to install the \"My Skills\" extension by(@gohitx).": "要使用 Skills 面板，您需要安装 \"My Skills\" 扩展 由(@gohitx)。",
   "📥 Download My Skills": "📥 下载 My Skills",
+
   "To use the CLI panel, you need to install the \"CLI Hub\" extension by(@gohitx).": "要使用 CLI 面板，您需要安装 (@gohitx) 的“CLI Hub”扩展。",
   "📥 Download CLI Hub": "📥 下载 CLI Hub"
 }
