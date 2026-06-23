@@ -1,11 +1,11 @@
 <a name="readme-top"></a>
 
-![Lynx Keymap pro](https://raw.githubusercontent.com/bastndev/Lynx-Keymap-pro/refs/heads/main/public/github/banner.webp)
+[![Lynx Keymap pro](https://raw.githubusercontent.com/bastndev/Lynx-Keymap-pro/refs/heads/main/public/banner.webp)](https://www.gohit.xyz/extension/lynx-keymap-pro)
 
 <p align="center">
-    <img src="https://vsmarketplacebadges.dev/version-short/bastndev.lynx-keymap.jpg?style=for-the-badge&colorA=fa9905&colorB=EEEEEE&color=000000&label=VERSION" alt="Version">&nbsp;
-    <img src="https://vsmarketplacebadges.dev/rating-short/bastndev.lynx-keymap.jpg?style=for-the-badge&colorA=e06a1e&colorB=EEEEEE&color=000000&label=Rating" alt="Rating">&nbsp;
-    <img src="https://vsmarketplacebadges.dev/downloads-short/bastndev.lynx-keymap.jpg?style=for-the-badge&colorA=dd4636&colorB=EEEEEE&color=000000&label=Downloads" alt="Downloads">&nbsp;
+    <img src="https://vsmarketplacebadges.dev/version-short/bastndev.lynx-keymap.jpg?style=for-the-badge&colorA=ffffff&colorB=EEEEEE&color=fa9905&label=VERSION" alt="Version">&nbsp;
+    <img src="https://vsmarketplacebadges.dev/rating-short/bastndev.lynx-keymap.jpg?style=for-the-badge&colorA=ffffff&colorB=EEEEEE&color=e06a1e&label=Rating" alt="Rating">&nbsp;
+    <img src="https://vsmarketplacebadges.dev/downloads-short/bastndev.lynx-keymap.jpg?style=for-the-badge&colorA=ffffff&colorB=EEEEEE&color=dd4636&label=Downloads" alt="Downloads">&nbsp;
     <a href="https://github.com/bastndev/Lynx-Keymap-pro"><img src="https://raw.githubusercontent.com/bastndev/Lynx-Keymap-pro/refs/heads/main/public/github/icon/star.png" width="26.6px" alt="Github Star ⭐️"></a>
 </p>
 
@@ -27,43 +27,67 @@
 
 <h2 align="center">Lynx Keymap Pro — <b>キーバインド・リファレンス</b></h2>
 
-> VSCode · Cursor · Windsurf · Trae-ai · Kiro · Antigravity & Firebase.studio で、**Pro キーボード**向けに最適化されています。
+> VSCode · Cursor · Windsurf · Trae-ai · Kiro · Antigravity & Firebase.studio で **Pro キーボード**向けに最適化されています。
 
 ---
 
 <br>
 
-## 🧪 実験的機能 — `新機能`
+![実験的機能 — 新](https://raw.githubusercontent.com/bastndev/Lynx-Keymap-pro/refs/heads/main/public/github/images/img/t-3.webp)
 
-| コマンド                           | 🍎 macOS         | 🟦 Windows       | 🐧 Linux         |
-| :--------------------------------- | :--------------- | :--------------- | :--------------- |
-| SKILLS | `⌘ + 3` | `Ctrl + 3` | `Ctrl + 3` |
-| GitLab | `Alt + B` | `Alt + B` | `Alt + B` |
-| - | - | - | - |
+| コマンド              | 🍎 macOS         | 🟦 Windows       | 🐧 Linux         |
+| :-------------------- | :--------------- | :--------------- | :--------------- |
+| CLI                   | `Alt + E`        | `Alt + E`        | `Alt + E`        |
+| GitLab                | `Alt + R`        | `Alt + R`        | `Alt + R`        |
+| SKILLS                | `⌘ + 3`          | `Ctrl + 3`       | `Ctrl + 3`       |
+| -                     | -                | -                | -                |
 | OpenCode / ClaudeCode | `Alt + CapsLock` | `Alt + CapsLock` | `Alt + CapsLock` |
 
 <details>
-<summary>🖼️ スクリーンショットを表示</summary>
+<summary>🖼️ (クリック) スクリーンショットを表示</summary>
 <br>
 
-![OpenCode / ClaudeCode](https://raw.githubusercontent.com/bastndev/Lynx-Keymap-pro/refs/heads/main/public/github/images/screenshot/CLI.webp)
+![OpenCode / ClaudeCode](https://raw.githubusercontent.com/bastndev/Lynx-Keymap-pro/refs/heads/main/public/github/images/screenshot/CLI-SKILLS.webp)
 
 </details>
 
 <br>
 
-## ⌨️ 一般キーバインド Pro
+---
+
+## 🎛️ コンパクトモード — 75%
+
+> **`Alt + 0`** を押すと、標準レイアウトと**コンパクトレイアウト**を切り替えられます — ファンクションキー行や方向キーのないキーボード向けに設計されています。以下のショートカットはコンパクトレイアウトが有効な場合のみ機能します。
+
+| コマンド               | 🍎 macOS        | 🟦 Windows            | 🐧 Linux              |
+| :--------------------- | :-------------- | :-------------------- | :-------------------- |
+| Git の変更を表示       | `PageUp`        | `PageUp`              | `PageUp`              |
+| Markdown プレビュー    | `PageDown`      | `PageDown`            | `PageDown`            |
+| -                      | -               | -                     | -                     |
+| デバッグ開始           | `Insert`        | `Insert`              | `Insert`              |
+| デバッグ再起動         | `⌥ + Insert`    | `Alt + Insert`        | `Alt + Insert`        |
+| デバッグ停止           | `⌘ + Insert`    | `Ctrl + Insert`       | `Ctrl + Insert`       |
+| -                      | -               | -                     | -                     |
+| ズームイン ( 🛞 右 )   | `⇧ + ⌥ + Vol +` | `Shift + Alt + Vol +` | `Shift + Alt + Vol +` |
+| ズームアウト ( 🛞 左 ) | `⇧ + ⌥ + Vol -` | `Shift + Alt + Vol -` | `Shift + Alt + Vol -` |
+
+---
+
+<br>
+<br>
+
+<h2 align="center">⌨️ 一般キーバインド — Pro</h2>
 
 | コマンド                                | 🍎 macOS                | 🟦 Windows / 🐧 Linux        | サポート状況 |
 | :-------------------------------------- | :---------------------- | :--------------------------- | :----------: |
 | エクスプローラーを開く                  | `⌘ + 1`                 | `Ctrl + 1`                   |      ✅      |
 | ソース管理を開く                        | `⌘ + 2`                 | `Ctrl + 2`                   |      ✅      |
-| SKILLS | `⌘ + 3` | `Ctrl + 3` | ✅ |
-| 拡張機能を開く | `⌘ + 4` | `Ctrl + 4` | ✅ |
-| サイドバーの切り替え                    | `⌘ + Tab`               | `Ctrl + Tab`                 |      ✅      |
+| SKILLS                                  | `⌘ + 3`                 | `Ctrl + 3`                   |      ✅      |
+| 拡張機能を開く                          | `⌘ + 4`                 | `Ctrl + 4`                   |      ✅      |
+| サイドバーの切り替え                    | `⌘ + ⇧ + Tab`           | `Ctrl + Shift + Tab`         |      ✅      |
 | ファイルをすばやく開く                  | `⇧ + ⌥ + E`             | `Shift + Alt + E`            |      ✅      |
 | 指定行へ移動                            | `⇧ + ⌥ + W`             | `Shift + Alt + W`            |      ✅      |
-| 最初のエディターグループにフォーカス    | `⌥ + Q`                 | `Alt + Q`                    |      ✅      |
+| デバッグコンソールの切り替え (REPL)     | `⌥ + Q`                 | `Alt + Q`                    |      ✅      |
 | -                                       | -                       | -                            |     N/A      |
 | 新規ファイル                            | `⌥ + X`                 | `Alt + X`                    |      ✅      |
 | 新規フォルダー                          | `⌥ + C`                 | `Alt + C`                    |      ✅      |
@@ -82,58 +106,26 @@
 | 行コメントの切り替え                    | `⌘ + /`                 | `Ctrl + /`                   |      ✅      |
 | ブロックコメントの切り替え              | `⌥ + /`                 | `Alt + /`                    |      ✅      |
 | -                                       | -                       | -                            |     N/A      |
-| 下部ターミナル（切り替え）              | `⌥ + E`                 | `Alt + E`                    |      ✅      |
+| CLI パネル（切り替え）                  | `⌥ + E`                 | `Alt + E`                    |      ✅      |
 | 左右ターミナル（切り替え）              | `⌥ + CapsLock`          | `Alt + CapsLock`             |      ✅      |
+| デフォルトレイアウトを復元              | `⌘ + ⌥ + CapsLock`      | `Ctrl + Alt + CapsLock`      |      ✅      |
 | ターミナルをすばやく開く                | `⌥ + W`                 | `Alt + W`                    |      ✅      |
-| パネルの最大化 / 最小化 | <code>⌘ + `</code> | <code>Ctrl + `</code> | ✅ |
+| パネルの最大化 / 最小化                 | <code>⌘ + \`</code>     | <code>Ctrl + \`</code>       |      ✅      |
 | ターミナルを終了                        | <code>⌘ + ⌥ + \`</code> | <code>Ctrl + Alt + \`</code> |      ✅      |
 | ターミナル — 行をクリア                 | `⌘ + ⌥ + Backspace`     | `Ctrl + Alt + Backspace`     |      ✅      |
-| ターミナル — 単語補完                   | `⌘ + ,`                 | `Ctrl + ,`                    |      ✅      |
+| ターミナル — 単語補完                   | `⌘ + ,`                 | `Ctrl + ,`                   |      ✅      |
 | -                                       | -                       | -                            |     N/A      |
-| **スマートクローズ** — AI or ターミナル | `⌘ + CapsLock`          | `Ctrl + CapsLock`            |      ✅      |
+| **スマートクローズ** — AI or ターミナル | `⌘ + Tab`               | `Ctrl + Tab`                 |      ✅      |
 | 新規 AI セッション作成                  | `⌥ + A`                 | `Alt + A`                    |      ✅      |
-| AI モデルの選択                         | `⌥ + S`                 | `Alt + S`                    |      ✅      |
+| AI チャット履歴の表示                   | `⌥ + S`                 | `Alt + S`                    |      ✅      |
 | AI コード選択                           | `⌥ + D`                 | `Alt + D`                    |      ✅      |
 | -                                       | -                       | -                            |     N/A      |
-| AI エージェントモードの切り替え         | `⇧ + ⌥ + A`             | `Shift + Alt + A`            |      ✅      |
-| AI チャット履歴の表示                   | `⇧ + ⌥ + S`             | `Shift + Alt + S`            |      ✅      |
-| AI 提案の切り替え                       | `⇧ + ⌥ + D`             | `Shift + Alt + D`            |      ✅      |
-| -                                       | -                       | -                            |     N/A      |
 | インラインチャットのキャンセル          | `⌥ + Return`            | `Alt + Enter`                |      ✅      |
-| 補助バーの最大化 / 最小化               | `⇧ + Esc`               | `Shift + Esc`                |      ✅      |
 
-> **スマートクローズ** (`Ctrl + CapsLock`) はコンテキストを認識します:
+> **スマートクローズ** (`Ctrl + Tab`) はコンテキストを認識します:
 >
 > - **ターミナル**がサイドパネルにある場合 → ターミナルを閉じます。
 > - それ以外の場合 → **AI チャット**を開閉します。
-
----
-
-## 🔀 Git
-
-> これらのコマンドを使用するには、まず **ソース管理** に移動する必要があります（直接機能しないため）、またはショートカット **_`Ctrl + 2`_** を押してください。
-
-| コマンド                      | 🍎 macOS         | 🟦 Windows           | 🐧 Linux             |
-| :---------------------------- | :--------------- | :------------------- | :------------------- |
-| すべてをステージ              | `⌥ + 1`          | `Alt + 1`            | `Alt + 1`            |
-| AI でコミットメッセージを生成 | `⌥ + 2`          | `Alt + 2`            | `Alt + 2`            |
-| すべてのステージを解除        | `⌥ + 3`          | `Alt + 3`            | `Alt + 3`            |
-| コミット                      | `⌥ + Return`     | `Alt + Enter`        | `Alt + Enter`        |
-| プッシュ                      | `⌘ + ⌥ + Return` | `Ctrl + Alt + Enter` | `Ctrl + Alt + Enter` |
-| Git の変更を表示              | `⌥ + L`          | `Alt + L`            | `Alt + L`            |
-| Git Reset Hard HEAD       | `⌘ + ⇧ + ⌥ + Backspace` | `Ctrl + Shift + Alt + Backspace` | `Ctrl + Shift + Alt + Backspace` |
-
----
-
-## 🛠️ 設定とウィンドウ
-
-| コマンド                  | 🍎 macOS    | 🟦 Windows        | 🐧 Linux          |
-| :------------------------ | :---------- | :---------------- | :---------------- |
-| 設定を開く (UI)           | `⌘ + J`     | `Ctrl + J`        | `Ctrl + J`        |
-| 設定を開く (JSON)         | `⌥ + J`     | `Alt + J`         | `Alt + J`         |
-| テーマの選択              | `⇧ + ⌥ + T` | `Shift + Alt + T` | `Shift + Alt + T` |
-| ウィンドウの再読み込み    | `⇧ + ⌥ + R` | `Shift + Alt + R` | `Shift + Alt + R` |
-| Markdown プレビューの表示 | `⌥ + M`     | `Alt + M`         | `Alt + M`         |
 
 ---
 
@@ -147,14 +139,45 @@
 
 ---
 
+## 🔀 Git
+
+> これらのコマンドを使用するには、まず **ソース管理** に移動する必要があります（直接機能しないため）、またはショートカット **_`Ctrl + 2`_** を押してください。
+
+| コマンド                      | 🍎 macOS                | 🟦 Windows                       | 🐧 Linux                         |
+| :---------------------------- | :---------------------- | :------------------------------- | :------------------------------- |
+| すべてをステージ              | `⌥ + 1`                 | `Alt + 1`                        | `Alt + 1`                        |
+| AI でコミットメッセージを生成 | `⌥ + 2`                 | `Alt + 2`                        | `Alt + 2`                        |
+| すべてのステージを解除        | `⌥ + 3`                 | `Alt + 3`                        | `Alt + 3`                        |
+| コミット                      | `⌥ + Return`            | `Alt + Enter`                    | `Alt + Enter`                    |
+| プッシュ                      | `⌘ + ⌥ + Return`        | `Ctrl + Alt + Enter`             | `Ctrl + Alt + Enter`             |
+| Git の変更を表示              | `⌥ + L`                 | `Alt + L`                        | `Alt + L`                        |
+| Git Reset Hard HEAD           | `⌘ + ⇧ + ⌥ + Backspace` | `Ctrl + Shift + Alt + Backspace` | `Ctrl + Shift + Alt + Backspace` |
+
+---
+
+## 🛠️ 設定とウィンドウ
+
+| コマンド                  | 🍎 macOS          | 🟦 Windows              | 🐧 Linux                |
+| :------------------------ | :---------------- | :---------------------- | :---------------------- |
+| 設定を開く (UI)           | `⌘ + J`           | `Ctrl + J`              | `Ctrl + J`              |
+| 設定を開く (JSON)         | `⌥ + J`           | `Alt + J`               | `Alt + J`               |
+| テーマの選択              | `⇧ + ⌥ + T`       | `Shift + Alt + T`       | `Shift + Alt + T`       |
+| ウィンドウの再読み込み    | `⇧ + ⌥ + R`       | `Shift + Alt + R`       | `Shift + Alt + R`       |
+| Markdown プレビューの表示 | `⌥ + M`           | `Alt + M`               | `Alt + M`               |
+| キーボードレイアウトの切替| `⌥ + 0`           | `Alt + 0`               | `Alt + 0`               |
+| ズームイン                | `⇧ + ⌥ + VolUp`   | `Shift + Alt + VolUp`   | `Shift + Alt + VolUp`   |
+| ズームアウト              | `⇧ + ⌥ + VolDown` | `Shift + Alt + VolDown` | `Shift + Alt + VolDown` |
+
+---
+
 ## 🧩 ターミナル [+]
 
-| コマンド | 🍎 macOS | 🟦 Windows | 🐧 Linux |
-| :------ | :------ | :--------- | :------- |
-| プロジェクト・ターミナルの切り替え | `Alt + Q - W` | `Alt + Q - W` | `Alt + Q - W` |
-| ターミナルを閉じる | `Alt + Q - E` | `Alt + Q - E` | `Alt + Q - E` |
-| Smart New Terminal | <code>⌘ + ⇧ + `</code> | <code>Ctrl + Shift + `</code> | <code>Ctrl + Shift + `</code> |
-| ターミナルを終了 | <code>⌘ + ⌥ + `</code> | <code>Ctrl + Alt + `</code> | <code>Ctrl + Alt + `</code> |
+| コマンド                           | 🍎 macOS               | 🟦 Windows                    | 🐧 Linux                      |
+| :--------------------------------- | :--------------------- | :---------------------------- | :---------------------------- |
+| プロジェクト・ターミナルの切り替え | `Alt + Q - W`          | `Alt + Q - W`                 | `Alt + Q - W`                 |
+| ターミナルを閉じる                 | `Alt + Q - E`          | `Alt + Q - E`                 | `Alt + Q - E`                 |
+| スマート新規ターミナル             | <code>⌘ + ⇧ + `</code> | <code>Ctrl + Shift + `</code> | <code>Ctrl + Shift + `</code> |
+| ターミナルを終了                   | <code>⌘ + ⌥ + `</code> | <code>Ctrl + Alt + `</code>   | <code>Ctrl + Alt + `</code>   |
 
 <br>
 
@@ -234,12 +257,12 @@ ext install bastndev.lynx-keymap
 
 ## 私について
 
-| [![gohitx](https://github.com/gohitx.png?size=100)](https://gohit.xyz/me) |
-| :-----------------------------------------------------------------------: |
-|                     **[Gohit X](https://gohit.xyz)**                      |
+| [![gohitx](https://github.com/gohitx.png?size=100)](https://gohit.xyz) |
+| :--------------------------------------------------------------------: |
+|                  **[Gohit X](https://gohit.xyz/me)**                   |
 |                           _開発者・メンテナー_                            |
 
-- 🐦 **[X](https://twitter.com/gohitx)** : 質問や議論に。
+- 🐦 **[X](https://x.com/intent/follow?screen_name=gohitx)** : 質問や議論に。
 - 🌱 **[IG](https://instagram.com/gohitx)** : **`新着`** – プロジェクトのプレビューや近況。
 - 🔴 **[YouTube](https://www.youtube.com/@gohitx?sub_confirmation=1)** : コード、ソフトウェア、開発の知見。
 
@@ -251,11 +274,11 @@ ext install bastndev.lynx-keymap
   推奨拡張機能 🧩 
 </h2>
 
-| 拡張機能                                                                                                                                                                                                                   | 名前/>                                                        | 説明                                                                                                                                                                                                |
-| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [![My Skills](https://open-vsx.org/api/bastndev/my-skills/latest/file/icon.png)](https://open-vsx.org/extension/bastndev/my-skills) | [My Skills](https://github.com/bastndev/My-Skills) | プロジェクトで再利用できる AI 指示を作成、インストール、管理し、コーディングアシスタントがあなたのスタイル、ルール、ワークフローをあらかじめ理解できるようにします。 |
-| [![ATM](https://open-vsx.org/api/bastndev/atm/1.9.4/file/icon.png)](https://open-vsx.org/extension/bastndev/atm)                                                                                                           | [ATM](https://github.com/bastndev/ATM)                        | 主要なエディターで、Error Lens、Git Blame、環境保護、コードのスクリーンショットなどの必須機能を提供し、ワークフローを強化するオールインワンツールキット 👻。                                        |
-| [![Lynx Theme Pro](https://bastndev.gallerycdn.vsassets.io/extensions/bastndev/lynx-theme/5.0.1/1777191854738/Microsoft.VisualStudio.Services.Icons.Default)](https://open-vsx.org/extension/bastndev/lynx-theme)          | [Lynx Theme Pro](https://github.com/bastndev/Lynx-Theme)      | Dark、Light、Night、Ghibli、Coffee、Kiro の 6 つのテーマを提供するプロフェッショナルな拡張機能。各テーマは快適な視覚体験を実現するために最適化されています。                                        |
+| 拡張機能                                                                                                                                  | 名前/>                                                   | 説明                                                                                                                                                                                                |
+| ----------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [![F1](https://open-vsx.org/api/bastndev/f1/1.0.0/file/icon.png)](https://open-vsx.org/extension/bastndev/f1)                             | [F1](https://github.com/bastndev/F1)                     | 究極の AI コントロールセンター。Claude、Copilot、Cursor をインタラクティブなターミナルで一元管理し、「My Skills」でカスタムワークフローを作成、「My Memory」で AI にコードベースの即時コンテキストを提供。 |
+| [![Lynx Theme Pro](https://open-vsx.org/api/bastndev/lynx-theme/5.0.0/file/icon.png)](https://open-vsx.org/extension/bastndev/lynx-theme) | [Lynx Theme Pro](https://github.com/bastndev/Lynx-Theme) | Dark、Light、Night、Ghibli、Coffee、Kiro の 6 つのテーマを提供するプロフェッショナルな拡張機能—統合アイコン付き。各テーマは快適な視覚体験を実現するために最適化されています。                          |
+| [![ATM](https://open-vsx.org/api/bastndev/atm/1.9.4/file/icon.png)](https://open-vsx.org/extension/bastndev/atm)                          | [ATM](https://github.com/bastndev/ATM)                   | Error Lens、Git Blame、環境保護、コードスクリーンショットなどの必須機能を通じて、主要なエディターでのワークフローを強化するオールインワンツールキット 👻。                                              |
 
 <br>
 

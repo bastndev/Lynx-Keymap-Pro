@@ -1,11 +1,11 @@
 <a name="readme-top"></a>
 
-![Lynx Keymap pro](https://raw.githubusercontent.com/bastndev/Lynx-Keymap-pro/refs/heads/main/public/github/banner.webp)
+[![Lynx Keymap pro](https://raw.githubusercontent.com/bastndev/Lynx-Keymap-pro/refs/heads/main/public/banner.webp)](https://www.gohit.xyz/extension/lynx-keymap-pro)
 
 <p align="center">
-    <img src="https://vsmarketplacebadges.dev/version-short/bastndev.lynx-keymap.jpg?style=for-the-badge&colorA=fa9905&colorB=EEEEEE&color=000000&label=VERSION" alt="Version">&nbsp;
-    <img src="https://vsmarketplacebadges.dev/rating-short/bastndev.lynx-keymap.jpg?style=for-the-badge&colorA=e06a1e&colorB=EEEEEE&color=000000&label=Rating" alt="Rating">&nbsp;
-    <img src="https://vsmarketplacebadges.dev/downloads-short/bastndev.lynx-keymap.jpg?style=for-the-badge&colorA=dd4636&colorB=EEEEEE&color=000000&label=Downloads" alt="Downloads">&nbsp;
+    <img src="https://vsmarketplacebadges.dev/version-short/bastndev.lynx-keymap.jpg?style=for-the-badge&colorA=ffffff&colorB=EEEEEE&color=fa9905&label=VERSION" alt="Version">&nbsp;
+    <img src="https://vsmarketplacebadges.dev/rating-short/bastndev.lynx-keymap.jpg?style=for-the-badge&colorA=ffffff&colorB=EEEEEE&color=e06a1e&label=Rating" alt="Rating">&nbsp;
+    <img src="https://vsmarketplacebadges.dev/downloads-short/bastndev.lynx-keymap.jpg?style=for-the-badge&colorA=ffffff&colorB=EEEEEE&color=dd4636&label=Downloads" alt="Downloads">&nbsp;
     <a href="https://github.com/bastndev/Lynx-Keymap-pro"><img src="https://raw.githubusercontent.com/bastndev/Lynx-Keymap-pro/refs/heads/main/public/github/icon/star.png" width="26.6px" alt="Github Star ⭐️"></a>
 </p>
 
@@ -33,37 +33,61 @@
 
 <br>
 
-## 🧪 Tính năng thử nghiệm — `Mới`
+![Thử nghiệm — Mới](https://raw.githubusercontent.com/bastndev/Lynx-Keymap-pro/refs/heads/main/public/github/images/img/t-3.webp)
 
-| Lệnh                      | 🍎 macOS         | 🟦 Windows       | 🐧 Linux         |
-| :------------------------ | :--------------- | :--------------- | :--------------- |
-| SKILLS | `⌘ + 3` | `Ctrl + 3` | `Ctrl + 3` |
-| GitLab | `Alt + B` | `Alt + B` | `Alt + B` |
-| - | - | - | - |
+| Lệnh                  | 🍎 macOS         | 🟦 Windows       | 🐧 Linux         |
+| :-------------------- | :--------------- | :--------------- | :--------------- |
+| CLI                   | `Alt + E`        | `Alt + E`        | `Alt + E`        |
+| GitLab                | `Alt + R`        | `Alt + R`        | `Alt + R`        |
+| SKILLS                | `⌘ + 3`          | `Ctrl + 3`       | `Ctrl + 3`       |
+| -                     | -                | -                | -                |
 | OpenCode / ClaudeCode | `Alt + CapsLock` | `Alt + CapsLock` | `Alt + CapsLock` |
 
 <details>
-<summary>🖼️ Xem ảnh chụp màn hình</summary>
+<summary>🖼️ (Nhấp) Xem ảnh chụp màn hình</summary>
 <br>
 
-![OpenCode / ClaudeCode](https://raw.githubusercontent.com/bastndev/Lynx-Keymap-pro/refs/heads/main/public/github/images/screenshot/CLI.webp)
+![OpenCode / ClaudeCode](https://raw.githubusercontent.com/bastndev/Lynx-Keymap-pro/refs/heads/main/public/github/images/screenshot/CLI-SKILLS.webp)
 
 </details>
 
 <br>
 
-## ⌨️ Phím tắt chung Pro
+---
+
+## 🎛️ Chế độ Compact — 75%
+
+> Nhấn **`Alt + 0`** để chuyển đổi giữa bố cục tiêu chuẩn và **bố cục compact** — được thiết kế cho bàn phím không có hàng phím chức năng hoặc cụm phím mũi tên. Các phím tắt dưới đây chỉ hoạt động khi bố cục compact được bật.
+
+| Lệnh                       | 🍎 macOS        | 🟦 Windows            | 🐧 Linux              |
+| :------------------------- | :-------------- | :-------------------- | :-------------------- |
+| Xem thay đổi Git           | `PageUp`        | `PageUp`              | `PageUp`              |
+| Xem trước Markdown         | `PageDown`      | `PageDown`            | `PageDown`            |
+| -                          | -               | -                     | -                     |
+| Bắt đầu gỡ lỗi             | `Insert`        | `Insert`              | `Insert`              |
+| Khởi động lại gỡ lỗi       | `⌥ + Insert`    | `Alt + Insert`        | `Alt + Insert`        |
+| Dừng gỡ lỗi                | `⌘ + Insert`    | `Ctrl + Insert`       | `Ctrl + Insert`       |
+| -                          | -               | -                     | -                     |
+| Phóng to ( 🛞 phải )       | `⇧ + ⌥ + Vol +` | `Shift + Alt + Vol +` | `Shift + Alt + Vol +` |
+| Thu nhỏ ( 🛞 trái )        | `⇧ + ⌥ + Vol -` | `Shift + Alt + Vol -` | `Shift + Alt + Vol -` |
+
+---
+
+<br>
+<br>
+
+<h2 align="center">⌨️ Phím tắt chung — Pro</h2>
 
 | Lệnh                                    | 🍎 macOS                | 🟦 Windows / 🐧 Linux        | Hỗ trợ |
 | :-------------------------------------- | :---------------------- | :--------------------------- | :----: |
 | Mở Trình khám phá                       | `⌘ + 1`                 | `Ctrl + 1`                   |   ✅   |
 | Mở Kiểm soát mã nguồn                   | `⌘ + 2`                 | `Ctrl + 2`                   |   ✅   |
-| SKILLS | `⌘ + 3` | `Ctrl + 3` | ✅ |
-| Mở Tiện ích mở rộng | `⌘ + 4` | `Ctrl + 4` | ✅ |
-| Bật/Tắt thanh bên                       | `⌘ + Tab`               | `Ctrl + Tab`                 |   ✅   |
+| SKILLS                                  | `⌘ + 3`                 | `Ctrl + 3`                   |   ✅   |
+| Mở Tiện ích mở rộng                     | `⌘ + 4`                 | `Ctrl + 4`                   |   ✅   |
+| Bật/Tắt thanh bên                       | `⌘ + ⇧ + Tab`           | `Ctrl + Shift + Tab`         |   ✅   |
 | Mở tệp nhanh                            | `⇧ + ⌥ + E`             | `Shift + Alt + E`            |   ✅   |
 | Đi đến dòng                             | `⇧ + ⌥ + W`             | `Shift + Alt + W`            |   ✅   |
-| Tập trung vào nhóm trình chỉnh sửa số 1 | `⌥ + Q`                 | `Alt + Q`                    |   ✅   |
+| Bật/Tắt bảng điều khiển gỡ lỗi (REPL)  | `⌥ + Q`                 | `Alt + Q`                    |   ✅   |
 | -                                       | -                       | -                            |  N/A   |
 | Tệp mới                                 | `⌥ + X`                 | `Alt + X`                    |   ✅   |
 | Thư mục mới                             | `⌥ + C`                 | `Alt + C`                    |   ✅   |
@@ -82,58 +106,26 @@
 | Bật/Tắt chú thích dòng                  | `⌘ + /`                 | `Ctrl + /`                   |   ✅   |
 | Bật/Tắt chú thích khối                  | `⌥ + /`                 | `Alt + /`                    |   ✅   |
 | -                                       | -                       | -                            |  N/A   |
-| Terminal dưới (bật/tắt)                 | `⌥ + E`                 | `Alt + E`                    |   ✅   |
+| Bảng CLI (bật/tắt)                      | `⌥ + E`                 | `Alt + E`                    |   ✅   |
 | Terminal Trái/Phải (bật/tắt)            | `⌥ + CapsLock`          | `Alt + CapsLock`             |   ✅   |
+| Khôi phục bố cục mặc định               | `⌘ + ⌥ + CapsLock`      | `Ctrl + Alt + CapsLock`      |   ✅   |
 | Mở Terminal nhanh                       | `⌥ + W`                 | `Alt + W`                    |   ✅   |
-| Phóng to / Thu nhỏ Panel | <code>⌘ + `</code> | <code>Ctrl + `</code> | ✅ |
+| Phóng to / Thu nhỏ Panel               | <code>⌘ + \`</code>     | <code>Ctrl + \`</code>       |   ✅   |
 | Đóng Terminal                           | <code>⌘ + ⌥ + \`</code> | <code>Ctrl + Alt + \`</code> |   ✅   |
 | Terminal — Xóa dòng                     | `⌘ + ⌥ + Backspace`     | `Ctrl + Alt + Backspace`     |   ✅   |
-| Terminal — Hoàn thành từ                | `⌘ + ,`                 | `Ctrl + ,`                    |   ✅   |
+| Terminal — Hoàn thành từ                | `⌘ + ,`                 | `Ctrl + ,`                   |   ✅   |
 | -                                       | -                       | -                            |  N/A   |
-| **Đóng thông minh** — AI hoặc Terminal  | `⌘ + CapsLock`          | `Ctrl + CapsLock`            |   ✅   |
+| **Đóng thông minh** — AI hoặc Terminal  | `⌘ + Tab`               | `Ctrl + Tab`                 |   ✅   |
 | Tạo phiên AI mới                        | `⌥ + A`                 | `Alt + A`                    |   ✅   |
-| Chọn mô hình AI                         | `⌥ + S`                 | `Alt + S`                    |   ✅   |
-| IA chọn mã                              | `⌥ + D`                 | `Alt + D`                    |   ✅   |
-| -                                       | -                       | -                            |  N/A   |
-| Bật/Tắt chế độ AI Agent                 | `⇧ + ⌥ + A`             | `Shift + Alt + A`            |   ✅   |
-| Hiển thị lịch sử Chat AI                | `⇧ + ⌥ + S`             | `Shift + Alt + S`            |   ✅   |
-| Bật/Tắt gợi ý AI                        | `⇧ + ⌥ + D`             | `Shift + Alt + D`            |   ✅   |
+| Hiển thị lịch sử Chat AI               | `⌥ + S`                 | `Alt + S`                    |   ✅   |
+| AI chọn mã                              | `⌥ + D`                 | `Alt + D`                    |   ✅   |
 | -                                       | -                       | -                            |  N/A   |
 | Hủy Chat trực tiếp                      | `⌥ + Return`            | `Alt + Enter`                |   ✅   |
-| Phóng to / Thu nhỏ thanh phụ            | `⇧ + Esc`               | `Shift + Esc`                |   ✅   |
 
-> **Đóng thông minh** (`Ctrl + CapsLock`) nhận biết ngữ cảnh:
+> **Đóng thông minh** (`Ctrl + Tab`) nhận biết ngữ cảnh:
 >
 > - Nếu **terminal** đang ở thanh bên → đóng terminal.
 > - Ngược lại → mở / đóng **Chat AI**.
-
----
-
-## 🔀 Git
-
-> Để sử dụng các lệnh này, trước tiên bạn phải vào **Kiểm soát mã nguồn** (vì chúng không hoạt động trực tiếp) hoặc nhấn phím tắt **_`Ctrl + 2`_**.
-
-| Lệnh                        | 🍎 macOS         | 🟦 Windows           | 🐧 Linux             |
-| :-------------------------- | :--------------- | :------------------- | :------------------- |
-| Stage tất cả                | `⌥ + 1`          | `Alt + 1`            | `Alt + 1`            |
-| Tạo tin nhắn Commit bằng AI | `⌥ + 2`          | `Alt + 2`            | `Alt + 2`            |
-| Hủy Stage tất cả            | `⌥ + 3`          | `Alt + 3`            | `Alt + 3`            |
-| Commit                      | `⌥ + Return`     | `Alt + Enter`        | `Alt + Enter`        |
-| Push                        | `⌘ + ⌥ + Return` | `Ctrl + Alt + Enter` | `Ctrl + Alt + Enter` |
-| Xem thay đổi Git            | `⌥ + L`          | `Alt + L`            | `Alt + L`            |
-| Git Reset Hard HEAD        | `⌘ + ⇧ + ⌥ + Backspace` | `Ctrl + Shift + Alt + Backspace` | `Ctrl + Shift + Alt + Backspace` |
-
----
-
-## 🛠️ Cài đặt & Cửa sổ
-
-| Lệnh               | 🍎 macOS    | 🟦 Windows        | 🐧 Linux          |
-| :----------------- | :---------- | :---------------- | :---------------- |
-| Mở Cài đặt (UI)    | `⌘ + J`     | `Ctrl + J`        | `Ctrl + J`        |
-| Mở Cài đặt (JSON)  | `⌥ + J`     | `Alt + J`         | `Alt + J`         |
-| Chọn chủ đề        | `⇧ + ⌥ + T` | `Shift + Alt + T` | `Shift + Alt + T` |
-| Tải lại cửa sổ     | `⇧ + ⌥ + R` | `Shift + Alt + R` | `Shift + Alt + R` |
-| Xem trước Markdown | `⌥ + M`     | `Alt + M`         | `Alt + M`         |
 
 ---
 
@@ -147,14 +139,45 @@
 
 ---
 
+## 🔀 Git
+
+> Để sử dụng các lệnh này, trước tiên bạn phải vào **Kiểm soát mã nguồn** (vì chúng không hoạt động trực tiếp) hoặc nhấn phím tắt **_`Ctrl + 2`_**.
+
+| Lệnh                        | 🍎 macOS                | 🟦 Windows                       | 🐧 Linux                         |
+| :-------------------------- | :---------------------- | :------------------------------- | :------------------------------- |
+| Stage tất cả                | `⌥ + 1`                 | `Alt + 1`                        | `Alt + 1`                        |
+| Tạo tin nhắn Commit bằng AI | `⌥ + 2`                 | `Alt + 2`                        | `Alt + 2`                        |
+| Hủy Stage tất cả            | `⌥ + 3`                 | `Alt + 3`                        | `Alt + 3`                        |
+| Commit                      | `⌥ + Return`            | `Alt + Enter`                    | `Alt + Enter`                    |
+| Push                        | `⌘ + ⌥ + Return`        | `Ctrl + Alt + Enter`             | `Ctrl + Alt + Enter`             |
+| Xem thay đổi Git            | `⌥ + L`                 | `Alt + L`                        | `Alt + L`                        |
+| Git Reset Hard HEAD         | `⌘ + ⇧ + ⌥ + Backspace` | `Ctrl + Shift + Alt + Backspace` | `Ctrl + Shift + Alt + Backspace` |
+
+---
+
+## 🛠️ Cài đặt & Cửa sổ
+
+| Lệnh                   | 🍎 macOS          | 🟦 Windows              | 🐧 Linux                |
+| :--------------------- | :---------------- | :---------------------- | :---------------------- |
+| Mở Cài đặt (UI)        | `⌘ + J`           | `Ctrl + J`              | `Ctrl + J`              |
+| Mở Cài đặt (JSON)      | `⌥ + J`           | `Alt + J`               | `Alt + J`               |
+| Chọn chủ đề            | `⇧ + ⌥ + T`       | `Shift + Alt + T`       | `Shift + Alt + T`       |
+| Tải lại cửa sổ         | `⇧ + ⌥ + R`       | `Shift + Alt + R`       | `Shift + Alt + R`       |
+| Xem trước Markdown     | `⌥ + M`           | `Alt + M`               | `Alt + M`               |
+| Chuyển đổi bố cục bàn phím | `⌥ + 0`       | `Alt + 0`               | `Alt + 0`               |
+| Phóng to               | `⇧ + ⌥ + VolUp`   | `Shift + Alt + VolUp`   | `Shift + Alt + VolUp`   |
+| Thu nhỏ                | `⇧ + ⌥ + VolDown` | `Shift + Alt + VolDown` | `Shift + Alt + VolDown` |
+
+---
+
 ## 🧩 Terminal [+]
 
-| Lệnh | 🍎 macOS | 🟦 Windows | 🐧 Linux |
-| :------ | :------ | :--------- | :------- |
-| Chuyển đổi Terminal dự án | `Alt + Q - W` | `Alt + Q - W` | `Alt + Q - W` |
-| Đóng Terminal | `Alt + Q - E` | `Alt + Q - E` | `Alt + Q - E` |
-| Terminal mới thông minh | <code>⌘ + ⇧ + `</code> | <code>Ctrl + Shift + `</code> | <code>Ctrl + Shift + `</code> |
-| Đóng Terminal | <code>⌘ + ⌥ + `</code> | <code>Ctrl + Alt + `</code> | <code>Ctrl + Alt + `</code> |
+| Lệnh                      | 🍎 macOS               | 🟦 Windows                    | 🐧 Linux                      |
+| :------------------------ | :--------------------- | :---------------------------- | :---------------------------- |
+| Chuyển đổi Terminal dự án | `Alt + Q - W`          | `Alt + Q - W`                 | `Alt + Q - W`                 |
+| Đóng Terminal             | `Alt + Q - E`          | `Alt + Q - E`                 | `Alt + Q - E`                 |
+| Terminal mới thông minh   | <code>⌘ + ⇧ + `</code> | <code>Ctrl + Shift + `</code> | <code>Ctrl + Shift + `</code> |
+| Đóng Terminal (Kill)      | <code>⌘ + ⌥ + `</code> | <code>Ctrl + Alt + `</code>   | <code>Ctrl + Alt + `</code>   |
 
 <br>
 
@@ -234,12 +257,12 @@ ext install bastndev.lynx-keymap
 
 ## Về tôi
 
-| [![gohitx](https://github.com/gohitx.png?size=100)](https://github.com/gohitx) |
-| :----------------------------------------------------------------------------: |
-|                        **[Gohit X](https://gohit.xyz)**                        |
-|                           _Người sáng tạo & Bảo trì_                           |
+| [![gohitx](https://github.com/gohitx.png?size=100)](https://gohit.xyz) |
+| :--------------------------------------------------------------------: |
+|                  **[Gohit X](https://gohit.xyz/me)**                   |
+|                           _Người sáng tạo & Bảo trì_                   |
 
-- 🐦 **[X](https://twitter.com/gohitx)** : Dành cho các câu hỏi và thảo luận.
+- 🐦 **[X](https://x.com/intent/follow?screen_name=gohitx)** : Dành cho các câu hỏi và thảo luận.
 - 🌱 **[IG](https://instagram.com/gohitx)** : **`mới`** – Bản xem trước dự án & cập nhật.
 - 🔴 **[YouTube](https://www.youtube.com/@gohitx?sub_confirmation=1)** : Thông tin chi tiết về mã, phần mềm và phát triển.
 
@@ -251,11 +274,11 @@ ext install bastndev.lynx-keymap
   Tiện ích mở rộng bổ sung 🧩 
 </h2>
 
-| Tiện ích mở rộng                                                                                                                                                                                                           | Tên/>                                                         | Mô tả                                                                                                                                                                                                                |
-| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [![My Skills](https://open-vsx.org/api/bastndev/my-skills/latest/file/icon.png)](https://open-vsx.org/extension/bastndev/my-skills) | [My Skills](https://github.com/bastndev/My-Skills) | Tạo, cài đặt và quản lý các hướng dẫn AI có thể tái sử dụng cho dự án của bạn, để trợ lý lập trình đã biết sẵn phong cách, quy tắc và quy trình làm việc của bạn. |
-| [![ATM](https://open-vsx.org/api/bastndev/atm/1.9.4/file/icon.png)](https://open-vsx.org/extension/bastndev/atm)                                                                                                           | [ATM](https://github.com/bastndev/ATM)                        | Bộ công cụ tất cả trong một 👻 giúp tăng cường quy trình làm việc của bạn với các tính năng thiết yếu như Error Lens, Git Blame, bảo vệ Env và chụp ảnh màn hình mã trên các trình chỉnh sửa chính.                  |
-| [![Lynx Theme Pro](https://bastndev.gallerycdn.vsassets.io/extensions/bastndev/lynx-theme/5.0.1/1777191854738/Microsoft.VisualStudio.Services.Icons.Default)](https://open-vsx.org/extension/bastndev/lynx-theme)          | [Lynx Theme Pro](https://github.com/bastndev/Lynx-Theme)      | Một tiện ích mở rộng chuyên nghiệp với sáu chủ đề có sẵn: Dark, Light, Night, Ghibli, Coffee và Kiro — tích hợp các biểu tượng. Mỗi chủ đề được tối ưu hóa để mang lại trải nghiệm thị giác dễ chịu hơn.             |
+| Tiện ích mở rộng                                                                                                                          | Tên/>                                                    | Mô tả                                                                                                                                                                                                                |
+| ----------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [![F1](https://open-vsx.org/api/bastndev/f1/1.0.0/file/icon.png)](https://open-vsx.org/extension/bastndev/f1)                             | [F1](https://github.com/bastndev/F1)                     | Trung tâm điều khiển AI tối thượng. Tập trung Claude, Copilot hoặc Cursor trong các terminal tương tác, tạo quy trình làm việc tùy chỉnh với 'My Skills' và cung cấp cho AI ngữ cảnh mã tức thì với 'My Memory'. |
+| [![Lynx Theme Pro](https://open-vsx.org/api/bastndev/lynx-theme/5.0.0/file/icon.png)](https://open-vsx.org/extension/bastndev/lynx-theme) | [Lynx Theme Pro](https://github.com/bastndev/Lynx-Theme) | Tiện ích mở rộng chuyên nghiệp với sáu chủ đề có sẵn: Dark, Light, Night, Ghibli, Coffee và Kiro — tích hợp các biểu tượng. Mỗi chủ đề được tối ưu hóa để mang lại trải nghiệm thị giác dễ chịu hơn.             |
+| [![ATM](https://open-vsx.org/api/bastndev/atm/1.9.4/file/icon.png)](https://open-vsx.org/extension/bastndev/atm)                          | [ATM](https://github.com/bastndev/ATM)                   | Bộ công cụ tất cả trong một 👻 giúp tăng cường quy trình làm việc của bạn với các tính năng thiết yếu như Error Lens, Git Blame, bảo vệ Env và chụp ảnh màn hình mã trên các trình chỉnh sửa chính.              |
 
 <br>
 

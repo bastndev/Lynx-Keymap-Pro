@@ -38,13 +38,13 @@
 | Command               | 🍎 macOS         | 🟦 Windows       | 🐧 Linux         |
 | :-------------------- | :--------------- | :--------------- | :--------------- |
 | CLI                   | `Alt + E`        | `Alt + E`        | `Alt + E`        |
+| GitLab                | `Alt + R`        | `Alt + R`        | `Alt + R`        |
 | SKILLS                | `⌘ + 3`          | `Ctrl + 3`       | `Ctrl + 3`       |
-| GitLab                | `Alt + B`        | `Alt + B`        | `Alt + B`        |
 | -                     | -                | -                | -                |
 | OpenCode / ClaudeCode | `Alt + CapsLock` | `Alt + CapsLock` | `Alt + CapsLock` |
 
 <details>
-<summary>🖼️ View Screenshot</summary>
+<summary>🖼️ (𝗖𝗹𝗶𝗰𝗸)  View Screenshot</summary>
 <br>
 
 ![OpenCode / ClaudeCode](https://raw.githubusercontent.com/bastndev/Lynx-Keymap-pro/refs/heads/main/public/github/images/screenshot/CLI-SKILLS.webp)
@@ -53,7 +53,30 @@
 
 <br>
 
-## ⌨️ General Keybindings Pro
+---
+
+## 🎛️ Compact Mode — 75%
+
+> Press **`Alt + 0`** to swap between the standard layout and the **compact layout** — designed for keyboards without a function row or arrow cluster. The bindings below are only active while the compact layout is enabled.
+
+| Command              | 🍎 macOS        | 🟦 Windows            | 🐧 Linux              |
+| :------------------- | :-------------- | :-------------------- | :-------------------- |
+| View Git Changes     | `PageUp`        | `PageUp`              | `PageUp`              |
+| Markdown Preview     | `PageDown`      | `PageDown`            | `PageDown`            |
+| -                    | -               | -                     | -                     |
+| Start Debugging      | `Insert`        | `Insert`              | `Insert`              |
+| Restart Debugging    | `⌥ + Insert`    | `Alt + Insert`        | `Alt + Insert`        |
+| Stop Debugging       | `⌘ + Insert`    | `Ctrl + Insert`       | `Ctrl + Insert`       |
+| -                    | -               | -                     | -                     |
+| Zoom In ( 🛞 right ) | `⇧ + ⌥ + Vol +` | `Shift + Alt + Vol +` | `Shift + Alt + Vol +` |
+| Zoom Out ( 🛞 left ) | `⇧ + ⌥ + Vol -` | `Shift + Alt + Vol -` | `Shift + Alt + Vol -` |
+
+---
+
+<br>
+<br>
+
+<h2 align="center">⌨️ General Keybindings — Pro</h2>
 
 | Command                               | 🍎 macOS                | 🟦 Windows / 🐧 Linux        | Supported |
 | :------------------------------------ | :---------------------- | :--------------------------- | :-------: |
@@ -61,10 +84,10 @@
 | Open Source Control                   | `⌘ + 2`                 | `Ctrl + 2`                   |    ✅     |
 | SKILLS                                | `⌘ + 3`                 | `Ctrl + 3`                   |    ✅     |
 | Open Extensions                       | `⌘ + 4`                 | `Ctrl + 4`                   |    ✅     |
-| Toggle Sidebar                        | `⌘ + Tab`               | `Ctrl + Tab`                 |    ✅     |
+| Toggle Sidebar                        | `⌘ + ⇧ + Tab`           | `Ctrl + Shift + Tab`         |    ✅     |
 | Quick Open File                       | `⇧ + ⌥ + E`             | `Shift + Alt + E`            |    ✅     |
 | Go to Line                            | `⇧ + ⌥ + W`             | `Shift + Alt + W`            |    ✅     |
-| Focus First Editor Group              | `⌥ + Q`                 | `Alt + Q`                    |    ✅     |
+| Toggle Debug Console (REPL)           | `⌥ + Q`                 | `Alt + Q`                    |    ✅     |
 | -                                     | -                       | -                            |    N/A    |
 | New File                              | `⌥ + X`                 | `Alt + X`                    |    ✅     |
 | New Folder                            | `⌥ + C`                 | `Alt + C`                    |    ✅     |
@@ -83,30 +106,36 @@
 | Comment Line                          | `⌘ + /`                 | `Ctrl + /`                   |    ✅     |
 | Comment Block                         | `⌥ + /`                 | `Alt + /`                    |    ✅     |
 | -                                     | -                       | -                            |    N/A    |
-| Terminal Bottom (toggle)              | `⌥ + E`                 | `Alt + E`                    |    ✅     |
+| CLI Panel (toggle)                    | `⌥ + E`                 | `Alt + E`                    |    ✅     |
 | Terminal Left/Right (toggle)          | `⌥ + CapsLock`          | `Alt + CapsLock`             |    ✅     |
+| Restore Default Layout                | `⌘ + ⌥ + CapsLock`      | `Ctrl + Alt + CapsLock`      |    ✅     |
 | Quick Open Terminal                   | `⌥ + W`                 | `Alt + W`                    |    ✅     |
 | Maximize / Minimize Panel             | <code>⌘ + \`</code>     | <code>Ctrl + \`</code>       |    ✅     |
 | Kill Terminal                         | <code>⌘ + ⌥ + \`</code> | <code>Ctrl + Alt + \`</code> |    ✅     |
 | Terminal — Clear Line                 | `⌘ + ⌥ + Backspace`     | `Ctrl + Alt + Backspace`     |    ✅     |
 | Terminal — Complete Word              | `⌘ + ,`                 | `Ctrl + ,`                   |    ✅     |
 | -                                     | -                       | -                            |    N/A    |
-| **Smart Close** — AI Chat or Terminal | `⌘ + CapsLock`          | `Ctrl + CapsLock`            |    ✅     |
+| **Smart Close** — AI Chat or Terminal | `⌘ + Tab`               | `Ctrl + Tab`                 |    ✅     |
 | Create New AI Session                 | `⌥ + A`                 | `Alt + A`                    |    ✅     |
-| Select AI Model                       | `⌥ + S`                 | `Alt + S`                    |    ✅     |
+| Show AI Chat History                  | `⌥ + S`                 | `Alt + S`                    |    ✅     |
 | AI Select Code                        | `⌥ + D`                 | `Alt + D`                    |    ✅     |
 | -                                     | -                       | -                            |    N/A    |
-| Toggle AI Agent Mode                  | `⇧ + ⌥ + A`             | `Shift + Alt + A`            |    ✅     |
-| Show AI Chat History                  | `⇧ + ⌥ + S`             | `Shift + Alt + S`            |    ✅     |
-| Toggle AI Suggestions                 | `⇧ + ⌥ + D`             | `Shift + Alt + D`            |    ✅     |
-| -                                     | -                       | -                            |    N/A    |
 | Cancel Inline Chat                    | `⌥ + Return`            | `Alt + Enter`                |    ✅     |
-| Maximize / Minimize Auxiliary Bar     | `⇧ + Esc`               | `Shift + Esc`                |    ✅     |
 
-> **Smart Close** (`Ctrl + CapsLock`) is context-aware:
+> **Smart Close** (`Ctrl + Tab`) is context-aware:
 >
 > - If the **terminal** is occupying the side panel → closes the terminal.
 > - Otherwise → opens/closes the **AI Chat**.
+
+---
+
+## ▶️ Debugging
+
+| Command           | 🍎 macOS | 🟦 Windows | 🐧 Linux  |
+| :---------------- | :------- | :--------- | :-------- |
+| Start Debugging   | `⌥ + P`  | `Alt + P`  | `Alt + P` |
+| Restart Debugging | `⌥ + O`  | `Alt + O`  | `Alt + O` |
+| Stop Debugging    | `⌥ + I`  | `Alt + I`  | `Alt + I` |
 
 ---
 
@@ -128,23 +157,16 @@
 
 ## 🛠️ Settings & Window
 
-| Command               | 🍎 macOS    | 🟦 Windows        | 🐧 Linux          |
-| :-------------------- | :---------- | :---------------- | :---------------- |
-| Open Settings (UI)    | `⌘ + J`     | `Ctrl + J`        | `Ctrl + J`        |
-| Open Settings (JSON)  | `⌥ + J`     | `Alt + J`         | `Alt + J`         |
-| Select Theme          | `⇧ + ⌥ + T` | `Shift + Alt + T` | `Shift + Alt + T` |
-| Reload Window         | `⇧ + ⌥ + R` | `Shift + Alt + R` | `Shift + Alt + R` |
-| Show Markdown Preview | `⌥ + M`     | `Alt + M`         | `Alt + M`         |
-
----
-
-## ▶️ Debugging
-
-| Command           | 🍎 macOS | 🟦 Windows | 🐧 Linux  |
-| :---------------- | :------- | :--------- | :-------- |
-| Start Debugging   | `⌥ + P`  | `Alt + P`  | `Alt + P` |
-| Restart Debugging | `⌥ + O`  | `Alt + O`  | `Alt + O` |
-| Stop Debugging    | `⌥ + I`  | `Alt + I`  | `Alt + I` |
+| Command               | 🍎 macOS          | 🟦 Windows              | 🐧 Linux                |
+| :-------------------- | :---------------- | :---------------------- | :---------------------- |
+| Open Settings (UI)    | `⌘ + J`           | `Ctrl + J`              | `Ctrl + J`              |
+| Open Settings (JSON)  | `⌥ + J`           | `Alt + J`               | `Alt + J`               |
+| Select Theme          | `⇧ + ⌥ + T`       | `Shift + Alt + T`       | `Shift + Alt + T`       |
+| Reload Window         | `⇧ + ⌥ + R`       | `Shift + Alt + R`       | `Shift + Alt + R`       |
+| Show Markdown Preview | `⌥ + M`           | `Alt + M`               | `Alt + M`               |
+| Switch Keymap Layout  | `⌥ + 0`           | `Alt + 0`               | `Alt + 0`               |
+| Zoom In               | `⇧ + ⌥ + VolUp`   | `Shift + Alt + VolUp`   | `Shift + Alt + VolUp`   |
+| Zoom Out              | `⇧ + ⌥ + VolDown` | `Shift + Alt + VolDown` | `Shift + Alt + VolDown` |
 
 ---
 
@@ -235,12 +257,12 @@ ext install bastndev.lynx-keymap
 
 ## About Me
 
-| [![gohitx](https://github.com/gohitx.png?size=100)](https://gohit.xyz/me) |
-| :-----------------------------------------------------------------------: |
-|                     **[Gohit X](https://gohit.xyz)**                      |
-|                          _Creator & Maintainer_                           |
+| [![gohitx](https://github.com/gohitx.png?size=100)](https://gohit.xyz) |
+| :--------------------------------------------------------------------: |
+|                  **[Gohit X](https://gohit.xyz/me)**                   |
+|                         _Creator & Maintainer_                         |
 
-- 🐦 **[X](https://twitter.com/gohitx)** : For questions and discussions.
+- 🐦 **[X](https://x.com/intent/follow?screen_name=gohitx)** : For questions and discussions.
 - 🌱 **[IG](https://instagram.com/gohitx)** : **`new`** – Project previews & life updates.
 - 🔴 **[YouTube](https://www.youtube.com/@gohitx?sub_confirmation=1)** : Code, Software and development insights.
 
@@ -252,11 +274,11 @@ ext install bastndev.lynx-keymap
   Complementary Extensions 🧩 
 </h2>
 
-| Extension                                                                                                                                                                                                         | Name/>                                                   | Description                                                                                                                                                                                 |
-| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [![My Skills](https://open-vsx.org/api/bastndev/my-skills/latest/file/icon.png)](https://open-vsx.org/extension/bastndev/my-skills)                                                                               | [My Skills](https://github.com/bastndev/My-Skills)       | Create, install, and manage reusable AI instructions for your projects, so your coding assistant already knows your style, rules, and workflow.                                             |
-| [![ATM](https://open-vsx.org/api/bastndev/atm/1.9.4/file/icon.png)](https://open-vsx.org/extension/bastndev/atm)                                                                                                  | [ATM](https://github.com/bastndev/ATM)                   | An all-in-one toolkit 👻 that supercharges your workflow with essential features like Error Lens, Git Blame, Env Protection, and code screenshots across major editors.                     |
-| [![Lynx Theme Pro](https://bastndev.gallerycdn.vsassets.io/extensions/bastndev/lynx-theme/5.0.1/1777191854738/Microsoft.VisualStudio.Services.Icons.Default)](https://open-vsx.org/extension/bastndev/lynx-theme) | [Lynx Theme Pro](https://github.com/bastndev/Lynx-Theme) | A professional extension with six available themes: Dark, Light, Night, Ghibli, Coffee, and Kiro—with integrated icons. Each theme is optimized to offer a more pleasant visual experience. |
+| Extension                                                                                                                                 | Name/>                                                   | Description                                                                                                                                                                                          |
+| ----------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [![F1](https://open-vsx.org/api/bastndev/f1/1.0.0/file/icon.png)](https://open-vsx.org/extension/bastndev/f1)                             | [F1](https://github.com/bastndev/F1)                     | The ultimate AI control center. Centralize Claude, Copilot, or Cursor in interactive terminals, create custom workflows with 'My Skills', and give the AI instant codebase context with 'My Memory'. |
+| [![Lynx Theme Pro](https://open-vsx.org/api/bastndev/lynx-theme/5.0.0/file/icon.png)](https://open-vsx.org/extension/bastndev/lynx-theme) | [Lynx Theme Pro](https://github.com/bastndev/Lynx-Theme) | A professional extension with six available themes: Dark, Light, Night, Ghibli, Coffee, and Kiro—with integrated icons. Each theme is optimized to offer a more pleasant visual experience.          |
+| [![ATM](https://open-vsx.org/api/bastndev/atm/1.9.4/file/icon.png)](https://open-vsx.org/extension/bastndev/atm)                          | [ATM](https://github.com/bastndev/ATM)                   | An all-in-one toolkit 👻 that supercharges your workflow with essential features like Error Lens, Git Blame, Env Protection, and code screenshots across major editors.                              |
 
 <br>
 
