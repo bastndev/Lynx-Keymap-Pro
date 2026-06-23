@@ -53,7 +53,26 @@
 
 <br>
 
-## ⌨️ General Keybindings Pro
+---
+
+## 🎛️ Compact Mode — 75%
+
+> Press **`Alt + 0`** to swap between the standard layout and the **compact layout** — designed for keyboards without a function row or arrow cluster. The bindings below are only active while the compact layout is enabled.
+
+| Command           | 🍎 macOS     | 🟦 Windows      | 🐧 Linux        |
+| :---------------- | :----------- | :-------------- | :-------------- |
+| View Git Changes  | `PageUp`     | `PageUp`        | `PageUp`        |
+| Markdown Preview  | `PageDown`   | `PageDown`      | `PageDown`      |
+| Start Debugging   | `Insert`     | `Insert`        | `Insert`        |
+| Restart Debugging | `⌥ + Insert` | `Alt + Insert`  | `Alt + Insert`  |
+| Stop Debugging    | `⌘ + Insert` | `Ctrl + Insert` | `Ctrl + Insert` |
+
+---
+
+<br>
+<br>
+
+## ⌨️ General Keybindings — Pro
 
 | Command                               | 🍎 macOS                | 🟦 Windows / 🐧 Linux        | Supported |
 | :------------------------------------ | :---------------------- | :--------------------------- | :-------: |
@@ -103,20 +122,6 @@
 >
 > - If the **terminal** is occupying the side panel → closes the terminal.
 > - Otherwise → opens/closes the **AI Chat**.
-
----
-
-## 🎛️ Compact Mode — 75%
-
-> Press **`Alt + 0`** to swap between the standard layout and the **compact layout** — designed for keyboards without a function row or arrow cluster. The bindings below are only active while the compact layout is enabled.
-
-| Command           | 🍎 macOS     | 🟦 Windows      | 🐧 Linux        |
-| :---------------- | :----------- | :-------------- | :-------------- |
-| View Git Changes  | `PageUp`     | `PageUp`        | `PageUp`        |
-| Markdown Preview  | `PageDown`   | `PageDown`      | `PageDown`      |
-| Start Debugging   | `Insert`     | `Insert`        | `Insert`        |
-| Restart Debugging | `⌥ + Insert` | `Alt + Insert`  | `Alt + Insert`  |
-| Stop Debugging    | `⌘ + Insert` | `Ctrl + Insert` | `Ctrl + Insert` |
 
 ---
 
