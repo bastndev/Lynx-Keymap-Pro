@@ -47,7 +47,7 @@
 <summary>🖼️ View Screenshot</summary>
 <br>
 
-![OpenCode / ClaudeCode](https://raw.githubusercontent.com/bastndev/Lynx-Keymap-pro/refs/heads/main/public/github/images/screenshot/CLI.webp)
+![OpenCode / ClaudeCode](https://raw.githubusercontent.com/bastndev/Lynx-Keymap-pro/refs/heads/main/public/github/images/screenshot/CLI-SKILLS.webp)
 
 </details>
 
