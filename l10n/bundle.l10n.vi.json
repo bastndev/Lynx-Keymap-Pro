@@ -2,9 +2,13 @@
   "({0}) AI Suggestions: ENABLED ✅": "({0}) Đề xuất AI: ĐÃ BẬT ✅",
   "({0}) AI Suggestions: DISABLED ❌": "({0}) Đề xuất AI: ĐÃ TẮT ❌",
 
+
   "To use the GitLab panel, you need to install the \"ATM\" extension by(@gohitx).": "Để sử dụng bảng điều khiển GitLab, bạn cần cài đặt tiện ích mở rộng \"ATM\" bởi(@gohitx).",
   "📥 Download ATM": "📥 Tải xuống ATM",
 
   "To use the Skills panel, you need to install the \"My Skills\" extension by(@gohitx).": "Để sử dụng bảng Skills, bạn cần cài đặt tiện ích mở rộng \"My Skills\" bởi(@gohitx).",
-  "📥 Download My Skills": "📥 Tải xuống My Skills"
+  "📥 Download My Skills": "📥 Tải xuống My Skills",
+
+  "To use the CLI panel, you need to install the \"CLI Hub\" extension by(@gohitx).": "Để sử dụng bảng điều khiển CLI, bạn cần cài đặt tiện ích mở rộng \"CLI Hub\" của(@gohitx).",
+  "📥 Download CLI Hub": "📥 Tải xuống CLI Hub"
 }
