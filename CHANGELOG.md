@@ -22,7 +22,7 @@ Lynx Keymap  — supercharges your workflow with curated keybindings for VSCode,
 - **Experimental Features**: Cutting-edge shortcuts for the latest AI development tools
 - **Developer Optimized**: Carefully curated shortcuts for maximum productivity
 
-  Discover more extensions [here](https://gohit.xyz/)
+  Discover more extensions [here](https://gohit.xyz/extensions)
 
 <br>
 <!-- --- -->

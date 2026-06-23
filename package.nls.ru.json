@@ -1,13 +1,4 @@
 {
   "displayName": "Lynx Keymap Pro (ИИ-Оркестратор)",
-  "description": "Ультимативный набор сочетаний клавиш для IDE на базе ИИ. ⚡️ Ускорьте свой рабочий процесс в VSCode, Cursor, Windsurf, Trae-ai, Kiro, Antigravity и Firebase.studio с помощью интеллектуальной оркестровки ИИ, переключения терминала одним нажатием и проверенных раскладок для клавиатур. Хватит кликать. Начните командовать.",
-
-  "lynx.notification.ai.enabled": "({0}) ИИ-подсказки: ВКЛЮЧЕНЫ ✅",
-  "lynx.notification.ai.disabled": "({0}) ИИ-подсказки: ОТКЛЮЧЕНЫ ❌",
-
-  "ATM.notification.install.required": "Для использования панели GitLab необходимо установить расширение \"ATM\" от(@gohitx).",
-  "ATM.notification.install.action": "📥 Скачать ATM",
-
-  "MySkills.notification.install.required": "Для использования панели Skills необходимо установить расширение \"My Skills\" от(@gohitx).",
-  "MySkills.notification.install.action": "📥 Скачать My Skills"
+  "description": "Ультимативный набор сочетаний клавиш для IDE на базе ИИ. ⚡️ Ускорьте свой рабочий процесс в VSCode, Cursor, Windsurf, Trae-ai, Kiro, Antigravity и Firebase.studio с помощью интеллектуальной оркестровки ИИ, переключения терминала одним нажатием и проверенных раскладок для клавиатур. Хватит кликать. Начните командовать."
 }
