@@ -12,6 +12,8 @@ Lynx Keymap  — supercharges your workflow with curated keybindings for VSCode,
 - **Trae AI** - AI coding assistant
 - **Firebase Studio** - Google's development platform
 - **Kiro** - Modern code editor with AI-powered features
+- **Antigravity** - Modern code editor with AI-powered features
+- **MORE** - Future...
 
 ## Key Features
 
@@ -28,8 +30,9 @@ Lynx Keymap  — supercharges your workflow with curated keybindings for VSCode,
 <!-- --- -->
 
 ---
-## [2.6.1] - 2026-06-23
+## [2.6.2] - 2026-06-23
 - **better**:  ctrl+e now download & better readme.md.
+- **Refactor**:  ARCHITECTURE.md.
 
 ---
 ## [2.6.0] - 2026-06-22
