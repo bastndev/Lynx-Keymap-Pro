@@ -39,7 +39,7 @@
 | :-------------------- | :--------------- | :--------------- | :--------------- |
 | CLI                   | `Alt + E`        | `Alt + E`        | `Alt + E`        |
 | SKILLS                | `⌘ + 3`          | `Ctrl + 3`       | `Ctrl + 3`       |
-| GitLab                | `Alt + B`        | `Alt + B`        | `Alt + B`        |
+| GitLab                | `Alt + R`        | `Alt + R`        | `Alt + R`        |
 | -                     | -                | -                | -                |
 | OpenCode / ClaudeCode | `Alt + CapsLock` | `Alt + CapsLock` | `Alt + CapsLock` |
 
@@ -61,10 +61,10 @@
 | Open Source Control                   | `⌘ + 2`                 | `Ctrl + 2`                   |    ✅     |
 | SKILLS                                | `⌘ + 3`                 | `Ctrl + 3`                   |    ✅     |
 | Open Extensions                       | `⌘ + 4`                 | `Ctrl + 4`                   |    ✅     |
-| Toggle Sidebar                        | `⌘ + Tab`               | `Ctrl + Tab`                 |    ✅     |
+| Toggle Sidebar                        | `⌘ + ⇧ + Tab`           | `Ctrl + Shift + Tab`         |    ✅     |
 | Quick Open File                       | `⇧ + ⌥ + E`             | `Shift + Alt + E`            |    ✅     |
 | Go to Line                            | `⇧ + ⌥ + W`             | `Shift + Alt + W`            |    ✅     |
-| Focus First Editor Group              | `⌥ + Q`                 | `Alt + Q`                    |    ✅     |
+| Toggle Debug Console (REPL)           | `⌥ + Q`                 | `Alt + Q`                    |    ✅     |
 | -                                     | -                       | -                            |    N/A    |
 | New File                              | `⌥ + X`                 | `Alt + X`                    |    ✅     |
 | New Folder                            | `⌥ + C`                 | `Alt + C`                    |    ✅     |
@@ -83,30 +83,50 @@
 | Comment Line                          | `⌘ + /`                 | `Ctrl + /`                   |    ✅     |
 | Comment Block                         | `⌥ + /`                 | `Alt + /`                    |    ✅     |
 | -                                     | -                       | -                            |    N/A    |
-| Terminal Bottom (toggle)              | `⌥ + E`                 | `Alt + E`                    |    ✅     |
+| CLI Panel (toggle)                    | `⌥ + E`                 | `Alt + E`                    |    ✅     |
 | Terminal Left/Right (toggle)          | `⌥ + CapsLock`          | `Alt + CapsLock`             |    ✅     |
+| Restore Default Layout                | `⌘ + ⌥ + CapsLock`      | `Ctrl + Alt + CapsLock`      |    ✅     |
 | Quick Open Terminal                   | `⌥ + W`                 | `Alt + W`                    |    ✅     |
 | Maximize / Minimize Panel             | <code>⌘ + \`</code>     | <code>Ctrl + \`</code>       |    ✅     |
 | Kill Terminal                         | <code>⌘ + ⌥ + \`</code> | <code>Ctrl + Alt + \`</code> |    ✅     |
 | Terminal — Clear Line                 | `⌘ + ⌥ + Backspace`     | `Ctrl + Alt + Backspace`     |    ✅     |
 | Terminal — Complete Word              | `⌘ + ,`                 | `Ctrl + ,`                   |    ✅     |
 | -                                     | -                       | -                            |    N/A    |
-| **Smart Close** — AI Chat or Terminal | `⌘ + CapsLock`          | `Ctrl + CapsLock`            |    ✅     |
+| **Smart Close** — AI Chat or Terminal | `⌘ + Tab`               | `Ctrl + Tab`                 |    ✅     |
 | Create New AI Session                 | `⌥ + A`                 | `Alt + A`                    |    ✅     |
-| Select AI Model                       | `⌥ + S`                 | `Alt + S`                    |    ✅     |
+| Show AI Chat History                  | `⌥ + S`                 | `Alt + S`                    |    ✅     |
 | AI Select Code                        | `⌥ + D`                 | `Alt + D`                    |    ✅     |
 | -                                     | -                       | -                            |    N/A    |
-| Toggle AI Agent Mode                  | `⇧ + ⌥ + A`             | `Shift + Alt + A`            |    ✅     |
-| Show AI Chat History                  | `⇧ + ⌥ + S`             | `Shift + Alt + S`            |    ✅     |
-| Toggle AI Suggestions                 | `⇧ + ⌥ + D`             | `Shift + Alt + D`            |    ✅     |
-| -                                     | -                       | -                            |    N/A    |
 | Cancel Inline Chat                    | `⌥ + Return`            | `Alt + Enter`                |    ✅     |
-| Maximize / Minimize Auxiliary Bar     | `⇧ + Esc`               | `Shift + Esc`                |    ✅     |
 
-> **Smart Close** (`Ctrl + CapsLock`) is context-aware:
+> **Smart Close** (`Ctrl + Tab`) is context-aware:
 >
 > - If the **terminal** is occupying the side panel → closes the terminal.
 > - Otherwise → opens/closes the **AI Chat**.
+
+---
+
+## 🎛️ Compact Mode — 75%
+
+> Press **`Alt + 0`** to swap between the standard layout and the **compact layout** — designed for keyboards without a function row or arrow cluster. The bindings below are only active while the compact layout is enabled.
+
+| Command           | 🍎 macOS     | 🟦 Windows      | 🐧 Linux        |
+| :---------------- | :----------- | :-------------- | :-------------- |
+| View Git Changes  | `PageUp`     | `PageUp`        | `PageUp`        |
+| Markdown Preview  | `PageDown`   | `PageDown`      | `PageDown`      |
+| Start Debugging   | `Insert`     | `Insert`        | `Insert`        |
+| Restart Debugging | `⌥ + Insert` | `Alt + Insert`  | `Alt + Insert`  |
+| Stop Debugging    | `⌘ + Insert` | `Ctrl + Insert` | `Ctrl + Insert` |
+
+---
+
+## ▶️ Debugging
+
+| Command           | 🍎 macOS | 🟦 Windows | 🐧 Linux  |
+| :---------------- | :------- | :--------- | :-------- |
+| Start Debugging   | `⌥ + P`  | `Alt + P`  | `Alt + P` |
+| Restart Debugging | `⌥ + O`  | `Alt + O`  | `Alt + O` |
+| Stop Debugging    | `⌥ + I`  | `Alt + I`  | `Alt + I` |
 
 ---
 
@@ -128,23 +148,16 @@
 
 ## 🛠️ Settings & Window
 
-| Command               | 🍎 macOS    | 🟦 Windows        | 🐧 Linux          |
-| :-------------------- | :---------- | :---------------- | :---------------- |
-| Open Settings (UI)    | `⌘ + J`     | `Ctrl + J`        | `Ctrl + J`        |
-| Open Settings (JSON)  | `⌥ + J`     | `Alt + J`         | `Alt + J`         |
-| Select Theme          | `⇧ + ⌥ + T` | `Shift + Alt + T` | `Shift + Alt + T` |
-| Reload Window         | `⇧ + ⌥ + R` | `Shift + Alt + R` | `Shift + Alt + R` |
-| Show Markdown Preview | `⌥ + M`     | `Alt + M`         | `Alt + M`         |
-
----
-
-## ▶️ Debugging
-
-| Command           | 🍎 macOS | 🟦 Windows | 🐧 Linux  |
-| :---------------- | :------- | :--------- | :-------- |
-| Start Debugging   | `⌥ + P`  | `Alt + P`  | `Alt + P` |
-| Restart Debugging | `⌥ + O`  | `Alt + O`  | `Alt + O` |
-| Stop Debugging    | `⌥ + I`  | `Alt + I`  | `Alt + I` |
+| Command               | 🍎 macOS          | 🟦 Windows              | 🐧 Linux                |
+| :-------------------- | :---------------- | :---------------------- | :---------------------- |
+| Open Settings (UI)    | `⌘ + J`           | `Ctrl + J`              | `Ctrl + J`              |
+| Open Settings (JSON)  | `⌥ + J`           | `Alt + J`               | `Alt + J`               |
+| Select Theme          | `⇧ + ⌥ + T`       | `Shift + Alt + T`       | `Shift + Alt + T`       |
+| Reload Window         | `⇧ + ⌥ + R`       | `Shift + Alt + R`       | `Shift + Alt + R`       |
+| Show Markdown Preview | `⌥ + M`           | `Alt + M`               | `Alt + M`               |
+| Switch Keymap Layout  | `⌥ + 0`           | `Alt + 0`               | `Alt + 0`               |
+| Zoom In               | `⇧ + ⌥ + VolUp`   | `Shift + Alt + VolUp`   | `Shift + Alt + VolUp`   |
+| Zoom Out              | `⇧ + ⌥ + VolDown` | `Shift + Alt + VolDown` | `Shift + Alt + VolDown` |
 
 ---
 
