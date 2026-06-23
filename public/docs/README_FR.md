@@ -64,6 +64,7 @@
 | :------------------------ | :-------------- | :-------------------- | :-------------------- |
 | Voir les Changements Git  | `PageUp`        | `PageUp`              | `PageUp`              |
 | Aperçu Markdown           | `PageDown`      | `PageDown`            | `PageDown`            |
+| -                    | -               | -                     | -                     |
 | Démarrer le Débogage      | `Insert`        | `Insert`              | `Insert`              |
 | Redémarrer le Débogage    | `⌥ + Insert`    | `Alt + Insert`        | `Alt + Insert`        |
 | Arrêter le Débogage       | `⌘ + Insert`    | `Ctrl + Insert`       | `Ctrl + Insert`       |

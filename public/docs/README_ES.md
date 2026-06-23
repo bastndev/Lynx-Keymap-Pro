@@ -63,6 +63,7 @@
 | :-------------------- | :-------------- | :-------------------- | :-------------------- |
 | Ver Cambios de Git    | `PageUp`        | `PageUp`              | `PageUp`              |
 | Vista Previa Markdown | `PageDown`      | `PageDown`            | `PageDown`            |
+| -                    | -               | -                     | -                     |
 | Iniciar Depuración    | `Insert`        | `Insert`              | `Insert`              |
 | Reiniciar Depuración  | `⌥ + Insert`    | `Alt + Insert`        | `Alt + Insert`        |
 | Detener Depuración    | `⌘ + Insert`    | `Ctrl + Insert`       | `Ctrl + Insert`       |
