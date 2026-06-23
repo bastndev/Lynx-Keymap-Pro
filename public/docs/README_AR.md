@@ -3,9 +3,9 @@
 [![Lynx Keymap pro](https://raw.githubusercontent.com/bastndev/Lynx-Keymap-pro/refs/heads/main/public/banner.webp)](https://www.gohit.xyz/extension/lynx-keymap-pro)
 
 <p align="center">
-    <img src="https://vsmarketplacebadges.dev/version-short/bastndev.lynx-keymap.jpg?style=for-the-badge&colorA=ffffff&colorB=EEEEEE&color=fa9905&label=VERSION" alt="Version">&nbsp;
-    <img src="https://vsmarketplacebadges.dev/rating-short/bastndev.lynx-keymap.jpg?style=for-the-badge&colorA=ffffff&colorB=EEEEEE&color=e06a1e&label=Rating" alt="Rating">&nbsp;
-    <img src="https://vsmarketplacebadges.dev/downloads-short/bastndev.lynx-keymap.jpg?style=for-the-badge&colorA=ffffff&colorB=EEEEEE&color=dd4636&label=Downloads" alt="Downloads">&nbsp;
+    <img src="https://vsmarketplacebadges.dev/version-short/bastndev.lynx-keymap.jpg?style=for-the-badge&colorA=ffffff&colorB=EEEEEE&color=ffa116&label=VERSION" alt="Version">&nbsp;
+    <img src="https://vsmarketplacebadges.dev/rating-short/bastndev.lynx-keymap.jpg?style=for-the-badge&colorA=ffffff&colorB=EEEEEE&color=ec6321&label=Rating" alt="Rating">&nbsp;
+    <img src="https://vsmarketplacebadges.dev/downloads-short/bastndev.lynx-keymap.jpg?style=for-the-badge&colorA=ffffff&colorB=EEEEEE&color=c93822&label=Downloads" alt="Downloads">&nbsp;
     <a href="https://github.com/bastndev/Lynx-Keymap-pro"><img src="https://raw.githubusercontent.com/bastndev/Lynx-Keymap-pro/refs/heads/main/public/github/icon/star.png" width="26.6px" alt="Github Star ⭐️"></a>
 </p>
 
