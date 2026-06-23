@@ -1,11 +1,11 @@
 <a name="readme-top"></a>
 
-[![Lynx Keymap pro](https://raw.githubusercontent.com/bastndev/Lynx-Keymap-pro/refs/heads/main/public/github/banner.webp)](https://www.gohit.xyz/extension/lynx-keymap-pro)
+[![Lynx Keymap pro](https://raw.githubusercontent.com/bastndev/Lynx-Keymap-pro/refs/heads/main/public/banner.webp)](https://www.gohit.xyz/extension/lynx-keymap-pro)
 
 <p align="center">
-    <img src="https://vsmarketplacebadges.dev/version-short/bastndev.lynx-keymap.jpg?style=for-the-badge&colorA=fa9905&colorB=EEEEEE&color=000000&label=VERSION" alt="Version">&nbsp;
-    <img src="https://vsmarketplacebadges.dev/rating-short/bastndev.lynx-keymap.jpg?style=for-the-badge&colorA=e06a1e&colorB=EEEEEE&color=000000&label=Rating" alt="Rating">&nbsp;
-    <img src="https://vsmarketplacebadges.dev/downloads-short/bastndev.lynx-keymap.jpg?style=for-the-badge&colorA=dd4636&colorB=EEEEEE&color=000000&label=Downloads" alt="Downloads">&nbsp;
+    <img src="https://vsmarketplacebadges.dev/version-short/bastndev.lynx-keymap.jpg?style=for-the-badge&colorA=ffffff&colorB=EEEEEE&color=fa9905&label=VERSION" alt="Version">&nbsp;
+    <img src="https://vsmarketplacebadges.dev/rating-short/bastndev.lynx-keymap.jpg?style=for-the-badge&colorA=ffffff&colorB=EEEEEE&color=e06a1e&label=Rating" alt="Rating">&nbsp;
+    <img src="https://vsmarketplacebadges.dev/downloads-short/bastndev.lynx-keymap.jpg?style=for-the-badge&colorA=ffffff&colorB=EEEEEE&color=dd4636&label=Downloads" alt="Downloads">&nbsp;
     <a href="https://github.com/bastndev/Lynx-Keymap-pro"><img src="https://raw.githubusercontent.com/bastndev/Lynx-Keymap-pro/refs/heads/main/public/github/icon/star.png" width="26.6px" alt="Github Star ⭐️"></a>
 </p>
 
@@ -33,61 +33,61 @@
 
 <br>
 
-## 🧪 प्रायोगिक — `नया`
+![प्रयोगात्मक — नया](https://raw.githubusercontent.com/bastndev/Lynx-Keymap-pro/refs/heads/main/public/github/images/img/t-3.webp)
 
-| कमांड                   | 🍎 macOS         | 🟦 Windows       | 🐧 Linux         |
-| :---------------------- | :--------------- | :--------------- | :--------------- |
-| SKILLS | `⌘ + 3` | `Ctrl + 3` | `Ctrl + 3` |
-| GitLab | `Alt + B` | `Alt + B` | `Alt + B` |
-| - | - | - | - |
+| कमांड                 | 🍎 macOS         | 🟦 Windows       | 🐧 Linux         |
+| :-------------------- | :--------------- | :--------------- | :--------------- |
+| CLI                   | `Alt + E`        | `Alt + E`        | `Alt + E`        |
+| GitLab                | `Alt + R`        | `Alt + R`        | `Alt + R`        |
+| SKILLS                | `⌘ + 3`          | `Ctrl + 3`       | `Ctrl + 3`       |
+| -                     | -                | -                | -                |
 | OpenCode / ClaudeCode | `Alt + CapsLock` | `Alt + CapsLock` | `Alt + CapsLock` |
 
 <details>
-<summary>🖼️ स्क्रीनशॉट देखें</summary>
+<summary>🖼️ (क्लिक करें) स्क्रीनशॉट देखें</summary>
 <br>
 
-![OpenCode / ClaudeCode](https://raw.githubusercontent.com/bastndev/Lynx-Keymap-pro/refs/heads/main/public/github/images/screenshot/CLI.webp)
+![OpenCode / ClaudeCode](https://raw.githubusercontent.com/bastndev/Lynx-Keymap-pro/refs/heads/main/public/github/images/screenshot/CLI-SKILLS.webp)
 
 </details>
 
 <br>
 
-
 ---
 
-## 🎛️ Compact Mode — 75%
+## 🎛️ कॉम्पैक्ट मोड — 75%
 
-> Press **`Alt + 0`** to swap between the standard layout and the **compact layout** — designed for keyboards without a function row or arrow cluster. The bindings below are only active while the compact layout is enabled.
+> **`Alt + 0`** दबाएं मानक लेआउट और **कॉम्पैक्ट लेआउट** के बीच स्विच करने के लिए — फ़ंक्शन रो या ऐरो क्लस्टर के बिना कीबोर्ड के लिए डिज़ाइन किया गया। नीचे दिए गए शॉर्टकट केवल तभी सक्रिय होते हैं जब कॉम्पैक्ट लेआउट सक्षम हो।
 
-| Command              | 🍎 macOS        | 🟦 Windows            | 🐧 Linux              |
-| :------------------- | :-------------- | :-------------------- | :-------------------- |
-| View Git Changes     | `PageUp`        | `PageUp`              | `PageUp`              |
-| Markdown Preview     | `PageDown`      | `PageDown`            | `PageDown`            |
-| -                    | -               | -                     | -                     |
-| Start Debugging      | `Insert`        | `Insert`              | `Insert`              |
-| Restart Debugging    | `⌥ + Insert`    | `Alt + Insert`        | `Alt + Insert`        |
-| Stop Debugging       | `⌘ + Insert`    | `Ctrl + Insert`       | `Ctrl + Insert`       |
-| -                    | -               | -                     | -                     |
-| Zoom In ( 🛞 right ) | `⇧ + ⌥ + Vol +` | `Shift + Alt + Vol +` | `Shift + Alt + Vol +` |
-| Zoom Out ( 🛞 left ) | `⇧ + ⌥ + Vol -` | `Shift + Alt + Vol -` | `Shift + Alt + Vol -` |
+| कमांड                    | 🍎 macOS        | 🟦 Windows            | 🐧 Linux              |
+| :----------------------- | :-------------- | :-------------------- | :-------------------- |
+| Git बदलाव देखें          | `PageUp`        | `PageUp`              | `PageUp`              |
+| Markdown प्रीव्यू        | `PageDown`      | `PageDown`            | `PageDown`            |
+| -                        | -               | -                     | -                     |
+| डिबगिंग शुरू करें        | `Insert`        | `Insert`              | `Insert`              |
+| डिबगिंग पुनः शुरू करें   | `⌥ + Insert`    | `Alt + Insert`        | `Alt + Insert`        |
+| डिबगिंग रोकें            | `⌘ + Insert`    | `Ctrl + Insert`       | `Ctrl + Insert`       |
+| -                        | -               | -                     | -                     |
+| ज़ूम इन ( 🛞 दाएं )       | `⇧ + ⌥ + Vol +` | `Shift + Alt + Vol +` | `Shift + Alt + Vol +` |
+| ज़ूम आउट ( 🛞 बाएं )      | `⇧ + ⌥ + Vol -` | `Shift + Alt + Vol -` | `Shift + Alt + Vol -` |
 
 ---
 
 <br>
 <br>
 
-<h2 align="center">⌨️ सामान्य कीबाइंडिंग Pro</h2>
+<h2 align="center">⌨️ सामान्य कीबाइंडिंग — Pro</h2>
 
 | कमांड                               | 🍎 macOS                | 🟦 Windows / 🐧 Linux        | समर्थित |
 | :---------------------------------- | :---------------------- | :--------------------------- | :-----: |
 | एक्सप्लोरर खोलें                    | `⌘ + 1`                 | `Ctrl + 1`                   |   ✅    |
 | सोर्स कंट्रोल खोलें                 | `⌘ + 2`                 | `Ctrl + 2`                   |   ✅    |
-| SKILLS | `⌘ + 3` | `Ctrl + 3` | ✅ |
-| एक्सटेंशन खोलें | `⌘ + 4` | `Ctrl + 4` | ✅ |
-| साइडबार टॉगल करें                   | `⌘ + Tab`               | `Ctrl + Tab`                 |   ✅    |
+| SKILLS                              | `⌘ + 3`                 | `Ctrl + 3`                   |   ✅    |
+| एक्सटेंशन खोलें                     | `⌘ + 4`                 | `Ctrl + 4`                   |   ✅    |
+| साइडबार टॉगल करें                   | `⌘ + ⇧ + Tab`           | `Ctrl + Shift + Tab`         |   ✅    |
 | फ़ाइल त्वरित खोलें                  | `⇧ + ⌥ + E`             | `Shift + Alt + E`            |   ✅    |
 | लाइन पर जाएं                        | `⇧ + ⌥ + W`             | `Shift + Alt + W`            |   ✅    |
-| पहले एडिटर ग्रुप पर फोकस करें       | `⌥ + Q`                 | `Alt + Q`                    |   ✅    |
+| डिबग कंसोल टॉगल करें (REPL)         | `⌥ + Q`                 | `Alt + Q`                    |   ✅    |
 | -                                   | -                       | -                            |   N/A   |
 | नई फ़ाइल                            | `⌥ + X`                 | `Alt + X`                    |   ✅    |
 | नया फ़ोल्डर                         | `⌥ + C`                 | `Alt + C`                    |   ✅    |
@@ -106,58 +106,26 @@
 | लाइन कमेंट करें                     | `⌘ + /`                 | `Ctrl + /`                   |   ✅    |
 | ब्लॉक कमेंट करें                    | `⌥ + /`                 | `Alt + /`                    |   ✅    |
 | -                                   | -                       | -                            |   N/A   |
-| टर्मिनल नीचे (टॉगल)                 | `⌥ + E`                 | `Alt + E`                    |   ✅    |
+| CLI पैनल (टॉगल)                     | `⌥ + E`                 | `Alt + E`                    |   ✅    |
 | टर्मिनल बाएं/दाएं (टॉगल)            | `⌥ + CapsLock`          | `Alt + CapsLock`             |   ✅    |
+| डिफ़ॉल्ट लेआउट पुनर्स्थापित करें    | `⌘ + ⌥ + CapsLock`      | `Ctrl + Alt + CapsLock`      |   ✅    |
 | टर्मिनल त्वरित खोलें                | `⌥ + W`                 | `Alt + W`                    |   ✅    |
-| पैनल बड़ा/छोटा करें | <code>⌘ + `</code> | <code>Ctrl + `</code> | ✅ |
+| पैनल बड़ा/छोटा करें                 | <code>⌘ + \`</code>     | <code>Ctrl + \`</code>       |   ✅    |
 | टर्मिनल बंद करें (Kill)             | <code>⌘ + ⌥ + \`</code> | <code>Ctrl + Alt + \`</code> |   ✅    |
 | टर्मिनल — लाइन साफ करें             | `⌘ + ⌥ + Backspace`     | `Ctrl + Alt + Backspace`     |   ✅    |
-| टर्मिनल — शब्द पूरा करें            | `⌘ + ,`                 | `Ctrl + ,`                    |   ✅    |
+| टर्मिनल — शब्द पूरा करें            | `⌘ + ,`                 | `Ctrl + ,`                   |   ✅    |
 | -                                   | -                       | -                            |   N/A   |
-| **स्मार्ट बंद** — AI चैट या टर्मिनल | `⌘ + CapsLock`          | `Ctrl + CapsLock`            |   ✅    |
+| **स्मार्ट बंद** — AI चैट या टर्मिनल | `⌘ + Tab`               | `Ctrl + Tab`                 |   ✅    |
 | नया AI सत्र बनाएं                   | `⌥ + A`                 | `Alt + A`                    |   ✅    |
-| AI मॉडल चुनें                       | `⌥ + S`                 | `Alt + S`                    |   ✅    |
+| AI चैट इतिहास दिखाएं                | `⌥ + S`                 | `Alt + S`                    |   ✅    |
 | AI से कोड चुनें                     | `⌥ + D`                 | `Alt + D`                    |   ✅    |
 | -                                   | -                       | -                            |   N/A   |
-| AI एजेंट मोड टॉगल करें              | `⇧ + ⌥ + A`             | `Shift + Alt + A`            |   ✅    |
-| AI चैट इतिहास दिखाएं                | `⇧ + ⌥ + S`             | `Shift + Alt + S`            |   ✅    |
-| AI सुझाव टॉगल करें                  | `⇧ + ⌥ + D`             | `Shift + Alt + D`            |   ✅    |
-| -                                   | -                       | -                            |   N/A   |
 | इनलाइन चैट रद्द करें                | `⌥ + Return`            | `Alt + Enter`                |   ✅    |
-| सहायक बार बड़ा/छोटा करें            | `⇧ + Esc`               | `Shift + Esc`                |   ✅    |
 
-> **स्मार्ट बंद** (`Ctrl + CapsLock`) संदर्भ-आधारित है:
+> **स्मार्ट बंद** (`Ctrl + Tab`) संदर्भ-आधारित है:
 >
 > - यदि **टर्मिनल** साइड पैनल में है → टर्मिनल बंद करता है।
 > - अन्यथा → **AI चैट** खोलता / बंद करता है।
-
----
-
-## 🔀 Git
-
-> इन कमांड का उपयोग करने के लिए, आपको पहले **Source Control** पर जाना होगा (क्योंकि वे सीधे काम नहीं करते हैं) या शॉर्टकट **_`Ctrl + 2`_** दबाना होगा।
-
-| कमांड                 | 🍎 macOS         | 🟦 Windows           | 🐧 Linux             |
-| :-------------------- | :--------------- | :------------------- | :------------------- |
-| सभी स्टेज करें        | `⌥ + 1`          | `Alt + 1`            | `Alt + 1`            |
-| AI Commit संदेश बनाएं | `⌥ + 2`          | `Alt + 2`            | `Alt + 2`            |
-| सभी अनस्टेज करें      | `⌥ + 3`          | `Alt + 3`            | `Alt + 3`            |
-| Commit करें           | `⌥ + Return`     | `Alt + Enter`        | `Alt + Enter`        |
-| Push करें             | `⌘ + ⌥ + Return` | `Ctrl + Alt + Enter` | `Ctrl + Alt + Enter` |
-| Git बदलाव देखें       | `⌥ + L`          | `Alt + L`            | `Alt + L`            |
-| Git Reset Hard HEAD | `⌘ + ⇧ + ⌥ + Backspace` | `Ctrl + Shift + Alt + Backspace` | `Ctrl + Shift + Alt + Backspace` |
-
----
-
-## 🛠️ सेटिंग्स और विंडो
-
-| कमांड                    | 🍎 macOS    | 🟦 Windows        | 🐧 Linux          |
-| :----------------------- | :---------- | :---------------- | :---------------- |
-| सेटिंग्स खोलें (UI)      | `⌘ + J`     | `Ctrl + J`        | `Ctrl + J`        |
-| सेटिंग्स खोलें (JSON)    | `⌥ + J`     | `Alt + J`         | `Alt + J`         |
-| थीम चुनें                | `⇧ + ⌥ + T` | `Shift + Alt + T` | `Shift + Alt + T` |
-| विंडो पुनः लोड करें      | `⇧ + ⌥ + R` | `Shift + Alt + R` | `Shift + Alt + R` |
-| Markdown प्रीव्यू दिखाएं | `⌥ + M`     | `Alt + M`         | `Alt + M`         |
 
 ---
 
@@ -171,14 +139,45 @@
 
 ---
 
+## 🔀 Git
+
+> इन कमांड का उपयोग करने के लिए, आपको पहले **Source Control** पर जाना होगा (क्योंकि वे सीधे काम नहीं करते हैं) या शॉर्टकट **_`Ctrl + 2`_** दबाना होगा।
+
+| कमांड                 | 🍎 macOS                | 🟦 Windows                       | 🐧 Linux                         |
+| :-------------------- | :---------------------- | :------------------------------- | :------------------------------- |
+| सभी स्टेज करें        | `⌥ + 1`                 | `Alt + 1`                        | `Alt + 1`                        |
+| AI Commit संदेश बनाएं | `⌥ + 2`                 | `Alt + 2`                        | `Alt + 2`                        |
+| सभी अनस्टेज करें      | `⌥ + 3`                 | `Alt + 3`                        | `Alt + 3`                        |
+| Commit करें           | `⌥ + Return`            | `Alt + Enter`                    | `Alt + Enter`                    |
+| Push करें             | `⌘ + ⌥ + Return`        | `Ctrl + Alt + Enter`             | `Ctrl + Alt + Enter`             |
+| Git बदलाव देखें       | `⌥ + L`                 | `Alt + L`                        | `Alt + L`                        |
+| Git Reset Hard HEAD   | `⌘ + ⇧ + ⌥ + Backspace` | `Ctrl + Shift + Alt + Backspace` | `Ctrl + Shift + Alt + Backspace` |
+
+---
+
+## 🛠️ सेटिंग्स और विंडो
+
+| कमांड                    | 🍎 macOS          | 🟦 Windows              | 🐧 Linux                |
+| :----------------------- | :---------------- | :---------------------- | :---------------------- |
+| सेटिंग्स खोलें (UI)      | `⌘ + J`           | `Ctrl + J`              | `Ctrl + J`              |
+| सेटिंग्स खोलें (JSON)    | `⌥ + J`           | `Alt + J`               | `Alt + J`               |
+| थीम चुनें                | `⇧ + ⌥ + T`       | `Shift + Alt + T`       | `Shift + Alt + T`       |
+| विंडो पुनः लोड करें      | `⇧ + ⌥ + R`       | `Shift + Alt + R`       | `Shift + Alt + R`       |
+| Markdown प्रीव्यू दिखाएं | `⌥ + M`           | `Alt + M`               | `Alt + M`               |
+| कीबोर्ड लेआउट बदलें      | `⌥ + 0`           | `Alt + 0`               | `Alt + 0`               |
+| ज़ूम इन                  | `⇧ + ⌥ + VolUp`   | `Shift + Alt + VolUp`   | `Shift + Alt + VolUp`   |
+| ज़ूम आउट                 | `⇧ + ⌥ + VolDown` | `Shift + Alt + VolDown` | `Shift + Alt + VolDown` |
+
+---
+
 ## 🧩 टर्मिनल [+]
 
-| कमांड | 🍎 macOS | 🟦 Windows | 🐧 Linux |
-| :------ | :------ | :--------- | :------- |
-| प्रोजेक्ट टर्मिनल बदलें | `Alt + Q - W` | `Alt + Q - W` | `Alt + Q - W` |
-| टर्मिनल बंद करें | `Alt + Q - E` | `Alt + Q - E` | `Alt + Q - E` |
-| स्मार्ट नया टर्मिनल | <code>⌘ + ⇧ + `</code> | <code>Ctrl + Shift + `</code> | <code>Ctrl + Shift + `</code> |
-| टर्मिनल समाप्त करें | <code>⌘ + ⌥ + `</code> | <code>Ctrl + Alt + `</code> | <code>Ctrl + Alt + `</code> |
+| कमांड                    | 🍎 macOS               | 🟦 Windows                    | 🐧 Linux                      |
+| :----------------------- | :--------------------- | :---------------------------- | :---------------------------- |
+| प्रोजेक्ट टर्मिनल बदलें  | `Alt + Q - W`          | `Alt + Q - W`                 | `Alt + Q - W`                 |
+| टर्मिनल बंद करें          | `Alt + Q - E`          | `Alt + Q - E`                 | `Alt + Q - E`                 |
+| स्मार्ट नया टर्मिनल       | <code>⌘ + ⇧ + `</code> | <code>Ctrl + Shift + `</code> | <code>Ctrl + Shift + `</code> |
+| टर्मिनल समाप्त करें       | <code>⌘ + ⌥ + `</code> | <code>Ctrl + Alt + `</code>   | <code>Ctrl + Alt + `</code>   |
 
 <br>
 
@@ -188,20 +187,20 @@
 >
 > ```ts
 > exports.BACKTICK_EQUIVALENTS = [
->   { Backquote: "`" }, // English, US
->   { Backquote: "º" }, // Spanish (Spain)
->   { Backquote: "'" }, // French, German
->   { Backquote: "²" }, // French
->   { Backquote: "^" }, // German, Swiss
->   { Backquote: "ё" }, // Russian
->   { Backquote: "~" }, // Portuguese, Italian
->   { Backquote: "半角/全角" }, // Japanese
->   { Backquote: "|" }, // Spanish (Latin America)
->   { Backquote: "¬" }, // UK, Latin America
->   { Backquote: "¨" }, // German, Swedish
->   { Backquote: "´" }, // Portuguese (Latin America)
->   { Backquote: "₺" }, // Turkish
->   { Backquote: "₤" }, // Italian
+>   { Backquote: "`" }, // अंग्रेज़ी, US
+>   { Backquote: "º" }, // स्पेनिश (स्पेन)
+>   { Backquote: "'" }, // फ्रेंच, जर्मन
+>   { Backquote: "²" }, // फ्रेंच
+>   { Backquote: "^" }, // जर्मन, स्विस
+>   { Backquote: "ё" }, // रूसी
+>   { Backquote: "~" }, // पुर्तगाली, इतालवी
+>   { Backquote: "半角/全角" }, // जापानी
+>   { Backquote: "|" }, // स्पेनिश (लैटिन अमेरिका)
+>   { Backquote: "¬" }, // UK, लैटिन अमेरिका
+>   { Backquote: "¨" }, // जर्मन, स्वीडिश
+>   { Backquote: "´" }, // पुर्तगाली (लैटिन अमेरिका)
+>   { Backquote: "₺" }, // तुर्की
+>   { Backquote: "₤" }, // इतालवी
 >   { Backquote: "" }, // और भी...
 > ];
 > ```
@@ -258,12 +257,12 @@ ext install bastndev.lynx-keymap
 
 ## मेरे बारे में
 
-| [![gohitx](https://github.com/gohitx.png?size=100)](https://gohit.xyz/me) |
-| :-----------------------------------------------------------------------: |
-|                     **[Gohit X](https://gohit.xyz)**                      |
+| [![gohitx](https://github.com/gohitx.png?size=100)](https://gohit.xyz) |
+| :--------------------------------------------------------------------: |
+|                  **[Gohit X](https://gohit.xyz/me)**                   |
 |                          _निर्माता और अनुरक्षक_                           |
 
-- 🐦 **[X](https://twitter.com/gohitx)** : प्रश्नों और चर्चाओं के लिए।
+- 🐦 **[X](https://x.com/intent/follow?screen_name=gohitx)** : प्रश्नों और चर्चाओं के लिए।
 - 🌱 **[IG](https://instagram.com/gohitx)** : **`नया`** – प्रोजेक्ट प्रीव्यू और जीवन अपडेट।
 - 🔴 **[YouTube](https://www.youtube.com/@gohitx?sub_confirmation=1)** : कोड, सॉफ्टवेयर और विकास की जानकारी।
 
@@ -275,11 +274,11 @@ ext install bastndev.lynx-keymap
   पूरक एक्सटेंशन 🧩
 </h2>
 
-| एक्सटेंशन                                                                                                                                                                                                                  | नाम                                                           | विवरण                                                                                                                                                         |
-| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [![My Skills](https://open-vsx.org/api/bastndev/my-skills/latest/file/icon.png)](https://open-vsx.org/extension/bastndev/my-skills) | [My Skills](https://github.com/bastndev/My-Skills) | अपने प्रोजेक्ट्स के लिए पुन: उपयोग योग्य AI निर्देश बनाएं, इंस्टॉल करें और प्रबंधित करें, ताकि आपका कोडिंग असिस्टेंट पहले से ही आपकी शैली, नियम और वर्कफ़्लो जानता हो। |
-| [![ATM](https://open-vsx.org/api/bastndev/atm/1.9.4/file/icon.png)](https://open-vsx.org/extension/bastndev/atm)                                                                                                           | [ATM](https://github.com/bastndev/ATM)                        | एक सर्वसमावेशी टूलकिट 👻 जो Error Lens, Git Blame, Env सुरक्षा और कोड स्क्रीनशॉट जैसी आवश्यक सुविधाओं के साथ आपके वर्कफ़्लो को बेहतर बनाता है।                |
-| [![Lynx Theme Pro](https://bastndev.gallerycdn.vsassets.io/extensions/bastndev/lynx-theme/5.0.1/1777191854738/Microsoft.VisualStudio.Services.Icons.Default)](https://open-vsx.org/extension/bastndev/lynx-theme)          | [Lynx Theme Pro](https://github.com/bastndev/Lynx-Theme)      | एक पेशेवर एक्सटेंशन जिसमें छह थीम हैं: Dark, Light, Night, Ghibli, Coffee और Kiro — एकीकृत आइकन के साथ। प्रत्येक थीम एक बेहतर दृश्य अनुभव के लिए अनुकूलित है। |
+| एक्सटेंशन                                                                                                                                 | नाम/>                                                    | विवरण                                                                                                                                                                                                                          |
+| ----------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| [![F1](https://open-vsx.org/api/bastndev/f1/1.0.0/file/icon.png)](https://open-vsx.org/extension/bastndev/f1)                             | [F1](https://github.com/bastndev/F1)                     | परम AI नियंत्रण केंद्र। Claude, Copilot या Cursor को इंटरैक्टिव टर्मिनल में केंद्रीकृत करें, 'My Skills' के साथ कस्टम वर्कफ़्लो बनाएं, और 'My Memory' से AI को तुरंत कोडबेस संदर्भ दें। |
+| [![Lynx Theme Pro](https://open-vsx.org/api/bastndev/lynx-theme/5.0.0/file/icon.png)](https://open-vsx.org/extension/bastndev/lynx-theme) | [Lynx Theme Pro](https://github.com/bastndev/Lynx-Theme) | एक पेशेवर एक्सटेंशन जिसमें छह थीम हैं: Dark, Light, Night, Ghibli, Coffee और Kiro — एकीकृत आइकन के साथ। प्रत्येक थीम एक बेहतर दृश्य अनुभव के लिए अनुकूलित है।                                                             |
+| [![ATM](https://open-vsx.org/api/bastndev/atm/1.9.4/file/icon.png)](https://open-vsx.org/extension/bastndev/atm)                          | [ATM](https://github.com/bastndev/ATM)                   | एक सर्वसमावेशी टूलकिट 👻 जो Error Lens, Git Blame, Env सुरक्षा और कोड स्क्रीनशॉट जैसी आवश्यक सुविधाओं के साथ आपके वर्कफ़्लो को बेहतर बनाता है।                                                                              |
 
 <br>
 
