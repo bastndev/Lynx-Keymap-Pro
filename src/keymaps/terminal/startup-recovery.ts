@@ -36,6 +36,7 @@ export async function recoverSidePanelState(context: vscode.ExtensionContext): P
     setTimeout(closeAuxBar, 300);
     setTimeout(closeAuxBar, 800);
     setTimeout(closeAuxBar, 1600);
+    setTimeout(closeAuxBar, 3000);
     setTimeout(async () => {
       try {
         await closeAuxBar();
